@@ -172,7 +172,9 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurren
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#returnVariable">returnVariable</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#returnVariable">returnVariable</a></span></code>
+<div class="block">The name of the variable to use to store the result of the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#call--"><code>call()</code></a> method.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -191,7 +193,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurren
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#JarvisAction-T-fr.zelus.jarvis.core.session.JarvisContext-">JarvisAction</a></span>(<a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="type parameter in JarvisAction">T</a>&nbsp;containingModule,
             <a href="../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a>&nbsp;context)</code>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> with the provided <code>containingModule</code>.</div>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> with the provided <code>containingModule</code> and <code>context</code>.</div>
 </td>
 </tr>
 </table>
@@ -223,7 +225,9 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurren
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--">getReturnVariable</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--">getReturnVariable</a></span>()</code>
+<div class="block">Return the name of the variable to use to store the result of the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#call--"><code>call()</code></a> method.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -282,6 +286,15 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurren
 <li class="blockList">
 <h4>returnVariable</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> returnVariable</pre>
+<div class="block">The name of the variable to use to store the result of the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#call--"><code>call()</code></a> method.
+ <p>
+ The value of this attribute is used by <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#handleMessage-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-"><code>JarvisCore.handleMessage(String, JarvisSession)</code></a> to store the
+ result of each <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> in the variable defined in the provided orchestration model.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#handleMessage-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-"><code>JarvisCore.handleMessage(String, JarvisSession)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--"><code>getReturnVariable()</code></a></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -302,7 +315,7 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurren
 <h4>JarvisAction</h4>
 <pre>public&nbsp;JarvisAction(<a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="type parameter in JarvisAction">T</a>&nbsp;containingModule,
                     <a href="../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a>&nbsp;context)</pre>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> with the provided <code>containingModule</code>.</div>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> with the provided <code>containingModule</code> and <code>context</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>containingModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> containing this action</dd>
@@ -336,6 +349,16 @@ implements <a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurren
 <li class="blockList">
 <h4>getReturnVariable</h4>
 <pre>public final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getReturnVariable()</pre>
+<div class="block">Return the name of the variable to use to store the result of the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#call--"><code>call()</code></a> method.
+ <p>
+ This method is used by <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#handleMessage-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-"><code>JarvisCore.handleMessage(String, JarvisSession)</code></a> to store the result of each
+ <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> in the variable defined in the provided orchestration model.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the name of the variable to use to store the result of the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html#call--"><code>call()</code></a> method</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#handleMessage-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-"><code>JarvisCore.handleMessage(String, JarvisSession)</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getName--">

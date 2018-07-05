@@ -185,7 +185,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
          <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a>&nbsp;context,
          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
          fr.inria.atlanmod.commons.log.Level&nbsp;logLevel)</code>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogAction.html" title="class in fr.zelus.jarvis.plugins.log.module.action"><code>LogAction</code></a> with the provided <code>message</code> and <code>logLevel</code>.</div>
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogAction.html" title="class in fr.zelus.jarvis.plugins.log.module.action"><code>LogAction</code></a> with the provided <code>containingModule</code>, <code>context</code>, <code>message</code> and <code>LogLevel</code>.</div>
 </td>
 </tr>
 </table>
@@ -206,7 +206,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogAction.html#call--">call</a></span>()</code>
-<div class="block">Runs the action and returns its result.</div>
+<div class="block">Logs the provided <code>message</code> with the given <code>logLevel</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -282,7 +282,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
                  <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a>&nbsp;context,
                  <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
                  fr.inria.atlanmod.commons.log.Level&nbsp;logLevel)</pre>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogAction.html" title="class in fr.zelus.jarvis.plugins.log.module.action"><code>LogAction</code></a> with the provided <code>message</code> and <code>logLevel</code>.</div>
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogAction.html" title="class in fr.zelus.jarvis.plugins.log.module.action"><code>LogAction</code></a> with the provided <code>containingModule</code>, <code>context</code>, <code>message</code> and <code>LogLevel</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>containingModule</code> - the <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/LogModule.html" title="class in fr.zelus.jarvis.plugins.log.module"><code>LogModule</code></a> containing this action</dd>
@@ -290,7 +290,8 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
 <dd><code>message</code> - the message to log</dd>
 <dd><code>logLevel</code> - the severity <code>Level</code> of the message to log</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>message</code> or <code>logLevel</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code>, <code>context</code>, <code>message</code> or
+                              <code>logLevel</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>
@@ -323,16 +324,16 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
 <li class="blockList">
 <h4>call</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;call()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#call--">JarvisAction</a></code></span></div>
-<div class="block">Runs the action and returns its result.
+<div class="block">Logs the provided <code>message</code> with the given <code>logLevel</code>.
  <p>
- This method should not be called manually, and is handled by the <a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> component, that
- orchestrates the <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s returned by the registered <a href="../../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s.</div>
+ <b>Note</b>: this method always returns <code>null</code>, and it's result should not be stored in
+ orchestration model variables.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Callable.html?is-external=true#call--" title="class or interface in java.util.concurrent">call</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#call--">call</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/LogModule.html" title="class in fr.zelus.jarvis.plugins.log.module">LogModule</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a></dd>
 </dl>
