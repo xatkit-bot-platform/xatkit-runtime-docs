@@ -116,6 +116,18 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">MailModule</span>
 extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></pre>
+<div class="block">A <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> concrete implementation providing mailing functionality that can be used in orchestration
+ models.
+ <p>
+ This module defines a single action <a href="../../../../../../fr/zelus/jarvis/plugins/mail/module/action/SendMail.html" title="class in fr.zelus.jarvis.plugins.mail.module.action"><code>SendMail</code></a> that sends a mail
+ through the <code>Gmail</code> service to a given address.
+ <p>
+ This class is part of jarvis' core modules, and can be used in an orchestration model by importing the <i>core
+ .MailModule</i> package.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/zelus/jarvis/plugins/mail/module/action/SendMail.html" title="class in fr.zelus.jarvis.plugins.mail.module.action"><code>SendMail</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -149,7 +161,9 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/mail/module/MailModule.html#MailModule--">MailModule</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/mail/module/MailModule.html#MailModule--">MailModule</a></span>()</code>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/mail/module/MailModule.html" title="class in fr.zelus.jarvis.plugins.mail.module"><code>MailModule</code></a> and initializes the underlying <code>Gmail</code> service.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -168,7 +182,9 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>com.google.api.services.gmail.Gmail</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/mail/module/MailModule.html#getService--">getService</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/mail/module/MailModule.html#getService--">getService</a></span>()</code>
+<div class="block">Returns the <code>Gmail</code> service associated to this module.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -206,6 +222,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <li class="blockList">
 <h4>MailModule</h4>
 <pre>public&nbsp;MailModule()</pre>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/mail/module/MailModule.html" title="class in fr.zelus.jarvis.plugins.mail.module"><code>MailModule</code></a> and initializes the underlying <code>Gmail</code> service.</div>
 </li>
 </ul>
 </li>
@@ -223,6 +240,11 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <li class="blockList">
 <h4>getService</h4>
 <pre>public&nbsp;com.google.api.services.gmail.Gmail&nbsp;getService()</pre>
+<div class="block">Returns the <code>Gmail</code> service associated to this module.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <code>Gmail</code> service associated to this module</dd>
+</dl>
 </li>
 </ul>
 </li>
