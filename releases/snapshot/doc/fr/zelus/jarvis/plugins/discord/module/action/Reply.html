@@ -124,6 +124,16 @@
 <br>
 <pre>public class <span class="typeNameLabel">Reply</span>
 extends <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.discord.module.action">PostMessage</a></pre>
+<div class="block">A <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> that replies to a message using the input Discord channel.
+ <p>
+ This action relies on the provided <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> to retrieve the Discord <code>channel</code> associated to the
+ user input.
+ <p>
+ This class relies on the <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module"><code>DiscordModule</code></a>'s <code>JDA</code> client to connect to the Discord
+ API and post the reply message.
+ <p>
+ <b>Note:</b> this class requires that its containing <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module"><code>DiscordModule</code></a> has been loaded with a valid Discord
+ bot token in order to authenticate the bot and post messages.</div>
 </li>
 </ul>
 </div>
@@ -166,7 +176,9 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/act
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/action/Reply.html#Reply-fr.zelus.jarvis.plugins.discord.module.DiscordModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-">Reply</a></span>(<a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a>&nbsp;containingModule,
      <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
-     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>&nbsp;</td>
+     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/action/Reply.html" title="class in fr.zelus.jarvis.plugins.discord.module.action"><code>Reply</code></a> with the provided <code>containingModule</code>, <code>session</code>, and <code>message</code>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -228,6 +240,16 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/act
 <pre>public&nbsp;Reply(<a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a>&nbsp;containingModule,
              <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/action/Reply.html" title="class in fr.zelus.jarvis.plugins.discord.module.action"><code>Reply</code></a> with the provided <code>containingModule</code>, <code>session</code>, and <code>message</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>containingModule</code> - the <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module"><code>DiscordModule</code></a> containing this action</dd>
+<dd><code>session</code> - the <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to this action</dd>
+<dd><code>message</code> - the message to post</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> or <code>session</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>message</code> is <code>null</code> or empty</dd>
+</dl>
 </li>
 </ul>
 </li>

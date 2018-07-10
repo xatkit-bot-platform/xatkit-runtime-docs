@@ -118,8 +118,13 @@ var activeTableTab = "activeTableTab";
 extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></pre>
 <div class="block">A <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> class that connects and interacts with Discord.
  <p>
- This module manages a connection to the Discord API, and provides a single
- <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> to post messages on a given channel.
+ This module manages a connection to the Discord API, and provides a set of
+ <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s to interact with the Discord API:
+ <ul>
+ <li><a href="../../../../../../fr/zelus/jarvis/plugins/discord/module/action/Reply.html" title="class in fr.zelus.jarvis.plugins.discord.module.action"><code>Reply</code></a>: reply to a user input</li>
+ <li><a href="../../../../../../fr/zelus/jarvis/plugins/discord/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.discord.module.action"><code>PostMessage</code></a>: post a message to a given Discord
+ channel</li>
+ </ul>
  <p>
  This class is part of jarvis' core modules, and can be used in an orchestration model by importing the <i>core
  .DiscordModule</i> package.</div>
