@@ -145,7 +145,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></h3>
-<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#context">context</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#module">module</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#returnVariable">returnVariable</a></code></li>
+<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#module">module</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#returnVariable">returnVariable</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#session">session</a></code></li>
 </ul>
 </li>
 </ul>
@@ -161,12 +161,12 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/mail/module/action/SendMail.html#SendMail-fr.zelus.jarvis.plugins.mail.module.MailModule-fr.zelus.jarvis.core.session.JarvisContext-java.lang.String-java.lang.String-java.lang.String-">SendMail</a></span>(<a href="../../../../../../../fr/zelus/jarvis/plugins/mail/module/MailModule.html" title="class in fr.zelus.jarvis.plugins.mail.module">MailModule</a>&nbsp;containingModule,
-        <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a>&nbsp;context,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/mail/module/action/SendMail.html#SendMail-fr.zelus.jarvis.plugins.mail.module.MailModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-java.lang.String-">SendMail</a></span>(<a href="../../../../../../../fr/zelus/jarvis/plugins/mail/module/MailModule.html" title="class in fr.zelus.jarvis.plugins.mail.module">MailModule</a>&nbsp;containingModule,
+        <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;to,
         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;body)</code>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/mail/module/action/SendMail.html" title="class in fr.zelus.jarvis.plugins.mail.module.action"><code>SendMail</code></a> with the provided <code>containingModule</code>, <code>context</code>, <code>to</code>,
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/mail/module/action/SendMail.html" title="class in fr.zelus.jarvis.plugins.mail.module.action"><code>SendMail</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>to</code>,
  <code>title</code>, and <code>body</code>.</div>
 </td>
 </tr>
@@ -235,28 +235,28 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SendMail-fr.zelus.jarvis.plugins.mail.module.MailModule-fr.zelus.jarvis.core.session.JarvisContext-java.lang.String-java.lang.String-java.lang.String-">
+<a name="SendMail-fr.zelus.jarvis.plugins.mail.module.MailModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SendMail</h4>
 <pre>public&nbsp;SendMail(<a href="../../../../../../../fr/zelus/jarvis/plugins/mail/module/MailModule.html" title="class in fr.zelus.jarvis.plugins.mail.module">MailModule</a>&nbsp;containingModule,
-                <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a>&nbsp;context,
+                <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;to,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;body)</pre>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/mail/module/action/SendMail.html" title="class in fr.zelus.jarvis.plugins.mail.module.action"><code>SendMail</code></a> with the provided <code>containingModule</code>, <code>context</code>, <code>to</code>,
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/mail/module/action/SendMail.html" title="class in fr.zelus.jarvis.plugins.mail.module.action"><code>SendMail</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>to</code>,
  <code>title</code>, and <code>body</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>containingModule</code> - the <a href="../../../../../../../fr/zelus/jarvis/plugins/mail/module/MailModule.html" title="class in fr.zelus.jarvis.plugins.mail.module"><code>MailModule</code></a> containing this action</dd>
-<dd><code>context</code> - the <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> associated to this action</dd>
+<dd><code>session</code> - the <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to this action</dd>
 <dd><code>to</code> - the address to send the email to</dd>
 <dd><code>title</code> - the title of the email to send</dd>
 <dd><code>body</code> - the content of the email to send</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> or <code>context</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> or <code>session</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>

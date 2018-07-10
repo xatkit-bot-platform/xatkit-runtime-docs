@@ -144,7 +144,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></h3>
-<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#context">context</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#module">module</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#returnVariable">returnVariable</a></code></li>
+<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#module">module</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#returnVariable">returnVariable</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#session">session</a></code></li>
 </ul>
 </li>
 </ul>
@@ -160,10 +160,10 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogWarning.html#LogWarning-fr.zelus.jarvis.plugins.log.module.LogModule-fr.zelus.jarvis.core.session.JarvisContext-java.lang.String-">LogWarning</a></span>(<a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/LogModule.html" title="class in fr.zelus.jarvis.plugins.log.module">LogModule</a>&nbsp;containingModule,
-          <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a>&nbsp;context,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogWarning.html#LogWarning-fr.zelus.jarvis.plugins.log.module.LogModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-">LogWarning</a></span>(<a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/LogModule.html" title="class in fr.zelus.jarvis.plugins.log.module">LogModule</a>&nbsp;containingModule,
+          <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogWarning.html" title="class in fr.zelus.jarvis.plugins.log.module.action"><code>LogWarning</code></a> action from the provided <code>containingModule</code>, <code>context</code>,
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogWarning.html" title="class in fr.zelus.jarvis.plugins.log.module.action"><code>LogWarning</code></a> action from the provided <code>containingModule</code>, <code>session</code>,
  and <code>message</code>.</div>
 </td>
 </tr>
@@ -211,24 +211,24 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="LogWarning-fr.zelus.jarvis.plugins.log.module.LogModule-fr.zelus.jarvis.core.session.JarvisContext-java.lang.String-">
+<a name="LogWarning-fr.zelus.jarvis.plugins.log.module.LogModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>LogWarning</h4>
 <pre>public&nbsp;LogWarning(<a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/LogModule.html" title="class in fr.zelus.jarvis.plugins.log.module">LogModule</a>&nbsp;containingModule,
-                  <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a>&nbsp;context,
+                  <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogWarning.html" title="class in fr.zelus.jarvis.plugins.log.module.action"><code>LogWarning</code></a> action from the provided <code>containingModule</code>, <code>context</code>,
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/action/LogWarning.html" title="class in fr.zelus.jarvis.plugins.log.module.action"><code>LogWarning</code></a> action from the provided <code>containingModule</code>, <code>session</code>,
  and <code>message</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>containingModule</code> - the <a href="../../../../../../../fr/zelus/jarvis/plugins/log/module/LogModule.html" title="class in fr.zelus.jarvis.plugins.log.module"><code>LogModule</code></a> containing this action</dd>
-<dd><code>context</code> - the <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> associated to this action</dd>
+<dd><code>session</code> - the <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to this action</dd>
 <dd><code>message</code> - the message to log</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code>, <code>context</code>, or <code>message</code> is
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code>, <code>session</code>, or <code>message</code> is
                               <code>null</code></dd>
 </dl>
 </li>

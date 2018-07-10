@@ -116,8 +116,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">OrchestrationService.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/OrchestrationService.html#getActionsFromIntent-fr.zelus.jarvis.intent.RecognizedIntent-fr.zelus.jarvis.core.session.JarvisContext-">getActionsFromIntent</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a>&nbsp;recognizedIntent,
-                    <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a>&nbsp;context)</code>
+<td class="colLast"><span class="typeNameLabel">OrchestrationService.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/OrchestrationService.html#getActionsFromIntent-fr.zelus.jarvis.intent.RecognizedIntent-fr.zelus.jarvis.core.session.JarvisSession-">getActionsFromIntent</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a>&nbsp;recognizedIntent,
+                    <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
 <div class="block">Retrieves and instantiate the <a href="../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s associated to the provided <code>recognizedIntent</code>.</div>
 </td>
 </tr>
@@ -132,9 +132,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">JarvisModule.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.intent.RecognizedIntent-fr.zelus.jarvis.core.session.JarvisContext-">createJarvisAction</a></span>(<a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&nbsp;actionInstance,
+<td class="colLast"><span class="typeNameLabel">JarvisModule.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.intent.RecognizedIntent-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction</a></span>(<a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&nbsp;actionInstance,
                   <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a>&nbsp;intent,
-                  <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a>&nbsp;context)</code>
+                  <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
 <div class="block">Creates a new <a href="../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> instance from the provided <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>.</div>
 </td>
 </tr>
