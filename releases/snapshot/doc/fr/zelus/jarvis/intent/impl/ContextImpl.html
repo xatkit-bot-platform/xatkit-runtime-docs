@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -144,6 +144,7 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="i
  </p>
  <ul>
    <li><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getName--"><code><em>Name</em></code></a></li>
+   <li><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getLifeSpan--"><code><em>Life Span</em></code></a></li>
    <li><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getParameters--"><code><em>Parameters</em></code></a></li>
  </ul></div>
 <dl>
@@ -209,6 +210,18 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="i
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#LIFE_SPAN_EDEFAULT">LIFE_SPAN_EDEFAULT</a></span></code>
+<div class="block">The default value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getLifeSpan--"><code><em>Life Span</em></code></a>' attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#lifeSpan">lifeSpan</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getLifeSpan--"><code><em>Life Span</em></code></a>' attribute.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -320,18 +333,26 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#eUnset-int-">eUnset</a></span>(int&nbsp;featureID)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getLifeSpan--">getLifeSpan</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getParameters--">getParameters</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#setLifeSpan-int-">setLifeSpan</a></span>(int&nbsp;newLifeSpan)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#setName-java.lang.String-">setName</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newName)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -440,6 +461,41 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="i
 </dl>
 </li>
 </ul>
+<a name="LIFE_SPAN_EDEFAULT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LIFE_SPAN_EDEFAULT</h4>
+<pre>protected static final&nbsp;int LIFE_SPAN_EDEFAULT</pre>
+<div class="block">The default value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getLifeSpan--"><code><em>Life Span</em></code></a>' attribute.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getLifeSpan--"><code>getLifeSpan()</code></a>, 
+<a href="../../../../../constant-values.html#fr.zelus.jarvis.intent.impl.ContextImpl.LIFE_SPAN_EDEFAULT">Constant Field Values</a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="lifeSpan">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lifeSpan</h4>
+<pre>protected&nbsp;int lifeSpan</pre>
+<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getLifeSpan--"><code><em>Life Span</em></code></a>' attribute.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html#getLifeSpan--"><code>getLifeSpan()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
 <a name="parameters">
 <!--   -->
 </a>
@@ -540,6 +596,47 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="i
 <dd><code>newName</code> - the new value of the '<em>Name</em>' attribute.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/zelus/jarvis/intent/Context.html#getName--"><code>Context.getName()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getLifeSpan--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLifeSpan</h4>
+<pre>public&nbsp;int&nbsp;getLifeSpan()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/zelus/jarvis/intent/Context.html#getLifeSpan--">getLifeSpan</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Life Span</em>' attribute.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/intent/Context.html#setLifeSpan-int-"><code>Context.setLifeSpan(int)</code></a>, 
+<a href="../../../../../fr/zelus/jarvis/intent/IntentPackage.html#getContext_LifeSpan--"><code>IntentPackage.getContext_LifeSpan()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="setLifeSpan-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLifeSpan</h4>
+<pre>public&nbsp;void&nbsp;setLifeSpan(int&nbsp;newLifeSpan)</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/zelus/jarvis/intent/Context.html#setLifeSpan-int-">setLifeSpan</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newLifeSpan</code> - the new value of the '<em>Life Span</em>' attribute.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/intent/Context.html#getLifeSpan--"><code>Context.getLifeSpan()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

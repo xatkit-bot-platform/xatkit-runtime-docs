@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -120,6 +120,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
  </p>
  <ul>
    <li><a href="../../../../fr/zelus/jarvis/intent/Context.html#getName--"><code><em>Name</em></code></a></li>
+   <li><a href="../../../../fr/zelus/jarvis/intent/Context.html#getLifeSpan--"><code><em>Life Span</em></code></a></li>
    <li><a href="../../../../fr/zelus/jarvis/intent/Context.html#getParameters--"><code><em>Parameters</em></code></a></li>
  </ul></div>
 <dl>
@@ -146,18 +147,30 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#getLifeSpan--">getLifeSpan</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Life Span</b></em>' attribute.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Name</b></em>' attribute.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#getParameters--">getParameters</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Parameters</b></em>' containment reference list.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#setLifeSpan-int-">setLifeSpan</a></span>(int&nbsp;value)</code>
+<div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/Context.html#getLifeSpan--"><code><em>Life Span</em></code></a>' attribute.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#setName-java.lang.String-">setName</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/Context.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
@@ -231,6 +244,50 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dd><code>value</code> - the new value of the '<em>Name</em>' attribute.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/intent/Context.html#getName--"><code>getName()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getLifeSpan--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLifeSpan</h4>
+<pre>int&nbsp;getLifeSpan()</pre>
+<div class="block">Returns the value of the '<em><b>Life Span</b></em>' attribute.
+ The default value is <code>"5"</code>.
+ <!-- begin-user-doc -->
+ <p>
+ If the meaning of the '<em>Life Span</em>' attribute isn't clear,
+ there really should be more of a description here...
+ </p>
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Life Span</em>' attribute.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/intent/Context.html#setLifeSpan-int-"><code>setLifeSpan(int)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getContext_LifeSpan--"><code>IntentPackage.getContext_LifeSpan()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="setLifeSpan-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLifeSpan</h4>
+<pre>void&nbsp;setLifeSpan(int&nbsp;value)</pre>
+<div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/Context.html#getLifeSpan--"><code><em>Life Span</em></code></a>' attribute.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the new value of the '<em>Life Span</em>' attribute.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/intent/Context.html#getLifeSpan--"><code>getLifeSpan()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
