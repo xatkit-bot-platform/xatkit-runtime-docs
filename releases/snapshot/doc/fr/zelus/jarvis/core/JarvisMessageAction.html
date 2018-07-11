@@ -131,7 +131,7 @@ extends <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="clas
 <div class="block">An abstract <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> processing a message.
  <p>
  This class takes a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> message as its constructor parameter, and relies on
- <a href="../../../../fr/zelus/jarvis/utils/MessageUtils.html#fillContextValues-java.lang.String-fr.zelus.jarvis.core.session.JarvisContext-"><code>MessageUtils.fillContextValues(String, JarvisContext)</code></a> to pre-process it and replace context variable
+ <code>JarvisContext#(String)</code> to pre-process it and replace context variable
  accesses by their concrete value.
  <p>
  This class is only responsible of the pre-processing of the provided message, and does not provide any method to
@@ -139,7 +139,7 @@ extends <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="clas
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>, 
-<a href="../../../../fr/zelus/jarvis/utils/MessageUtils.html" title="class in fr.zelus.jarvis.utils"><code>MessageUtils</code></a></dd>
+<a href="../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -253,12 +253,12 @@ extends <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="clas
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> message</pre>
 <div class="block">The processed message.
  <p>
- This attribute is the result of calling <a href="../../../../fr/zelus/jarvis/utils/MessageUtils.html#fillContextValues-java.lang.String-fr.zelus.jarvis.core.session.JarvisContext-"><code>MessageUtils.fillContextValues(String, JarvisContext)</code></a> on the
+ This attribute is the result of calling <a href="../../../../fr/zelus/jarvis/core/session/JarvisContext.html#fillContextValues-java.lang.String-"><code>JarvisContext.fillContextValues(String)</code></a> on the
  <code>rawMessage</code> constructor parameter. Concrete subclasses can use this attribute to print the processed
  message to the end user.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/utils/MessageUtils.html#fillContextValues-java.lang.String-fr.zelus.jarvis.core.session.JarvisContext-"><code>MessageUtils.fillContextValues(String, JarvisContext)</code></a>, 
+<dd><a href="../../../../fr/zelus/jarvis/core/session/JarvisContext.html#fillContextValues-java.lang.String-"><code>JarvisContext.fillContextValues(String)</code></a>, 
 <a href="../../../../fr/zelus/jarvis/core/JarvisMessageAction.html#getMessage--"><code>getMessage()</code></a></dd>
 </dl>
 </li>
@@ -285,7 +285,7 @@ extends <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="clas
 <div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/JarvisMessageAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisMessageAction</code></a> with the provided <code>containingModule</code>, <code>session</code>, and
  <code>rawMessage</code>.
  <p>
- This constructor stores the result of calling <a href="../../../../fr/zelus/jarvis/utils/MessageUtils.html#fillContextValues-java.lang.String-fr.zelus.jarvis.core.session.JarvisContext-"><code>MessageUtils.fillContextValues(String, JarvisContext)</code></a> on
+ This constructor stores the result of calling <a href="../../../../fr/zelus/jarvis/core/session/JarvisContext.html#fillContextValues-java.lang.String-"><code>JarvisContext.fillContextValues(String)</code></a> on
  the <code>rawMessage</code> parameter. Concreted subclasses can use this attribute to print the processed message to
  the end user.</div>
 <dl>
