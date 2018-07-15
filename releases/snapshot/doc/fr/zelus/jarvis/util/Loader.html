@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -158,13 +158,23 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Class-java.lang.Class-java.lang.Object-java.lang.Object-">construct</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;clazz,
+         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;parameterType1,
+         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;parameterType2,
+         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;parameter1,
+         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;parameter2)</code>
+<div class="block">Constructs a new instance of the provided <code>clazz</code> with the given <code>parameter1</code> and <code>parameter2</code>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Class-java.lang.Object-">construct</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;clazz,
          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;parameterType,
          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;parameter)</code>
 <div class="block">Constructs a new instance of the provided <code>clazz</code> with the given <code>parameter</code>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.util.List-java.util.List-">construct</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;clazz,
          <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&gt;&nbsp;parameterTypes,
@@ -172,14 +182,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Constructs a new instance of the provided <code>clazz</code> with the given <code>parameters</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Object:A-">construct</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;clazz,
          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;parameters)</code>
 <div class="block">Constructs a new instance of <code>clazz</code> with the given <code>parameters</code>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/util/Loader.html#loadClass-java.lang.String-java.lang.Class-">loadClass</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qualifiedName,
          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;superClass)</code>
@@ -290,8 +300,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
                        throws <a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></pre>
 <div class="block">Constructs a new instance of the provided <code>clazz</code> using its default constructor.
  <p>
- Use <a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Class-java.lang.Object-"><code>construct(Class, Class, Object)</code></a>, <a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.util.List-java.util.List-"><code>construct(Class, List, List)</code></a>, or
- <a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Object:A-"><code>construct(Class, Object[])</code></a> to construct an instance of <code>clazz</code> with parameters.</div>
+ Use <a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Class-java.lang.Object-"><code>construct(Class, Class, Object)</code></a>, <a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Class-java.lang.Class-java.lang.Object-java.lang.Object-"><code>construct(Class, Class, Class, Object, Object)</code></a>,
+ <a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.util.List-java.util.List-"><code>construct(Class, List, List)</code></a>, or <a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Object:A-"><code>construct(Class, Object[])</code></a> to construct an instance of
+ <code>clazz</code> with parameters.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a> to construct an instance of</dd>
@@ -334,6 +345,43 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodException.html?is-external=true" title="class or interface in java.lang">NoSuchMethodException</a></code> - if the provided <code>clazz</code> does not define a constructor matching the
                                provided <code>parameterType</code></dd>
+<dd><code><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if an error occurred when calling the <code>clazz</code>'s constructor</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.util.List-java.util.List-"><code>construct(Class, List, List)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="construct-java.lang.Class-java.lang.Class-java.lang.Class-java.lang.Object-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>construct</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;construct(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;clazz,
+                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;parameterType1,
+                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;parameterType2,
+                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;parameter1,
+                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;parameter2)
+                       throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodException.html?is-external=true" title="class or interface in java.lang">NoSuchMethodException</a>,
+                              <a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></pre>
+<div class="block">Constructs a new instance of the provided <code>clazz</code> with the given <code>parameter1</code> and <code>parameter2</code>.
+ <p>
+ This method is equivalent to <code>construct(clazz, Arrays.asList(parameterType1, parameterType2), Arrays
+ .asList(parameter1, parameter2)</code>.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the type of the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a> to construct an instance of</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>clazz</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a> to construct a new instance of</dd>
+<dd><code>parameterType1</code> - the first parameter type in the constructor signature</dd>
+<dd><code>parameterType2</code> - the second parameter type in the constructor signature</dd>
+<dd><code>parameter1</code> - the first concrete parameter of the constructor to call</dd>
+<dd><code>parameter2</code> - the second concrete parameter of the constructor to call</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the constructed instance</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodException.html?is-external=true" title="class or interface in java.lang">NoSuchMethodException</a></code> - if the provided <code>clazz</code> does not define a constructor matching the
+                               provided <code>parameterType1</code> and <code>parameterType2</code></dd>
 <dd><code><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if an error occurred when calling the <code>clazz</code>'s constructor</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.util.List-java.util.List-"><code>construct(Class, List, List)</code></a></dd>

@@ -202,7 +202,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#basicSetReturnVariable-fr.zelus.jarvis.orchestration.VariableAccess-org.eclipse.emf.common.notify.NotificationChain-">basicSetReturnVariable(VariableAccess, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ActionInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#buildConfiguration-java.lang.String-java.lang.String-fr.zelus.jarvis.orchestration.OrchestrationModel-java.lang.Class-">buildConfiguration(String, String, OrchestrationModel, Class&lt;? extends InputProvider&gt;)</a></span> - Static method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#buildConfiguration-java.lang.String-java.lang.String-fr.zelus.jarvis.orchestration.OrchestrationModel-">buildConfiguration(String, String, OrchestrationModel)</a></span> - Static method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
 <div class="block">Builds a <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> holding the provided <code>projectId</code>, <code>languageCode</code>, and <code>orchestrationModel</code>.</div>
 </dd>
@@ -260,6 +260,10 @@
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Context Parameter Value</em>'.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/util/ModuleSwitch.html#caseInputProviderDefinition-fr.zelus.jarvis.module.InputProviderDefinition-">caseInputProviderDefinition(InputProviderDefinition)</a></span> - Method in class fr.zelus.jarvis.module.util.<a href="fr/zelus/jarvis/module/util/ModuleSwitch.html" title="class in fr.zelus.jarvis.module.util">ModuleSwitch</a></dt>
+<dd>
+<div class="block">Returns the result of interpreting the object as an instance of '<em>Input Provider Definition</em>'.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/util/IntentSwitch.html#caseIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">caseIntentDefinition(IntentDefinition)</a></span> - Method in class fr.zelus.jarvis.intent.util.<a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="class in fr.zelus.jarvis.intent.util">IntentSwitch</a></dt>
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Definition</em>'.</div>
@@ -314,14 +318,16 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/InputProvider.html#close--">close()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/InputProvider.html" title="class in fr.zelus.jarvis.io">InputProvider</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/io/DiscordInputProvider.html#close--">close()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.io.<a href="fr/zelus/jarvis/plugins/discord/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.io">DiscordInputProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html#close--">close()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordInputProvider</a></dt>
 <dd>
 <div class="block">Disconnects the underlying <code>JDA</code> client.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/io/SlackInputProvider.html#close--">close()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.io.<a href="fr/zelus/jarvis/plugins/slack/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.io">SlackInputProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/io/SlackInputProvider.html#close--">close()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.io.<a href="fr/zelus/jarvis/plugins/slack/module/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackInputProvider</a></dt>
 <dd>
 <div class="block">Disconnects the underlying Slack RTM client.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#configuration">configuration</a></span> - Variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Object:A-">construct(Class&lt;T&gt;, Object[])</a></span> - Static method in class fr.zelus.jarvis.util.<a href="fr/zelus/jarvis/util/Loader.html" title="class in fr.zelus.jarvis.util">Loader</a></dt>
 <dd>
 <div class="block">Constructs a new instance of <code>clazz</code> with the given <code>parameters</code>.</div>
@@ -333,6 +339,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Class-java.lang.Object-">construct(Class&lt;T&gt;, Class&lt;?&gt;, Object)</a></span> - Static method in class fr.zelus.jarvis.util.<a href="fr/zelus/jarvis/util/Loader.html" title="class in fr.zelus.jarvis.util">Loader</a></dt>
 <dd>
 <div class="block">Constructs a new instance of the provided <code>clazz</code> with the given <code>parameter</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Class-java.lang.Class-java.lang.Object-java.lang.Object-">construct(Class&lt;T&gt;, Class&lt;?&gt;, Class&lt;?&gt;, Object, Object)</a></span> - Static method in class fr.zelus.jarvis.util.<a href="fr/zelus/jarvis/util/Loader.html" title="class in fr.zelus.jarvis.util">Loader</a></dt>
+<dd>
+<div class="block">Constructs a new instance of the provided <code>clazz</code> with the given <code>parameter1</code> and <code>parameter2</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.util.List-java.util.List-">construct(Class&lt;T&gt;, List&lt;Class&lt;?&gt;&gt;, List&lt;Object&gt;)</a></span> - Static method in class fr.zelus.jarvis.util.<a href="fr/zelus/jarvis/util/Loader.html" title="class in fr.zelus.jarvis.util">Loader</a></dt>
 <dd>
@@ -576,6 +586,16 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#createInContextNames-java.util.List-">createInContextNames(List&lt;Context&gt;)</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleFactoryImpl.html#createInputProviderDefinition--">createInputProviderDefinition()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleFactoryImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleFactoryImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModuleFactory.html#createInputProviderDefinition--">createInputProviderDefinition()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModuleFactory.html" title="interface in fr.zelus.jarvis.module">ModuleFactory</a></dt>
+<dd>
+<div class="block">Returns a new object of class '<em>Input Provider Definition</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/util/ModuleAdapterFactory.html#createInputProviderDefinitionAdapter--">createInputProviderDefinitionAdapter()</a></span> - Method in class fr.zelus.jarvis.module.util.<a href="fr/zelus/jarvis/module/util/ModuleAdapterFactory.html" title="class in fr.zelus.jarvis.module.util">ModuleAdapterFactory</a></dt>
+<dd>
+<div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/module/InputProviderDefinition.html" title="interface in fr.zelus.jarvis.module"><code><em>Input Provider Definition</em></code></a>'.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createIntentDefinition--">createIntentDefinition()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentFactory.html#createIntentDefinition--">createIntentDefinition()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentFactory.html" title="interface in fr.zelus.jarvis.intent">IntentFactory</a></dt>
@@ -802,13 +822,13 @@
 <dd>
 <div class="block">The <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> variable key used to store discord username information.</div>
 </dd>
-<dt><a href="fr/zelus/jarvis/plugins/discord/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.io"><span class="typeNameLink">DiscordInputProvider</span></a> - Class in <a href="fr/zelus/jarvis/plugins/discord/io/package-summary.html">fr.zelus.jarvis.plugins.discord.io</a></dt>
+<dt><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><span class="typeNameLink">DiscordInputProvider</span></a> - Class in <a href="fr/zelus/jarvis/plugins/discord/module/io/package-summary.html">fr.zelus.jarvis.plugins.discord.module.io</a></dt>
 <dd>
 <div class="block">A Discord user input provider.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/io/DiscordInputProvider.html#DiscordInputProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">DiscordInputProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.io.<a href="fr/zelus/jarvis/plugins/discord/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.io">DiscordInputProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html#DiscordInputProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">DiscordInputProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordInputProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/discord/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.io"><code>DiscordInputProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordInputProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module"><span class="typeNameLink">DiscordModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/discord/module/package-summary.html">fr.zelus.jarvis.plugins.discord.module</a></dt>
 <dd>
@@ -849,6 +869,8 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html" title="class in fr.zelus.jarvis.intent.impl">RecognizedIntentImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -919,6 +941,8 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html" title="class in fr.zelus.jarvis.intent.impl">RecognizedIntentImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -998,6 +1022,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
@@ -1028,6 +1054,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
@@ -1057,6 +1085,8 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html" title="class in fr.zelus.jarvis.intent.impl">RecognizedIntentImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1122,11 +1152,11 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/discord/package-summary.html">fr.zelus.jarvis.plugins.discord</a> - package fr.zelus.jarvis.plugins.discord</dt>
 <dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/plugins/discord/io/package-summary.html">fr.zelus.jarvis.plugins.discord.io</a> - package fr.zelus.jarvis.plugins.discord.io</dt>
-<dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/discord/module/package-summary.html">fr.zelus.jarvis.plugins.discord.module</a> - package fr.zelus.jarvis.plugins.discord.module</dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/discord/module/action/package-summary.html">fr.zelus.jarvis.plugins.discord.module.action</a> - package fr.zelus.jarvis.plugins.discord.module.action</dt>
+<dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/plugins/discord/module/io/package-summary.html">fr.zelus.jarvis.plugins.discord.module.io</a> - package fr.zelus.jarvis.plugins.discord.module.io</dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/log/module/package-summary.html">fr.zelus.jarvis.plugins.log.module</a> - package fr.zelus.jarvis.plugins.log.module</dt>
 <dd>&nbsp;</dd>
@@ -1138,11 +1168,11 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/slack/package-summary.html">fr.zelus.jarvis.plugins.slack</a> - package fr.zelus.jarvis.plugins.slack</dt>
 <dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/plugins/slack/io/package-summary.html">fr.zelus.jarvis.plugins.slack.io</a> - package fr.zelus.jarvis.plugins.slack.io</dt>
-<dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/slack/module/package-summary.html">fr.zelus.jarvis.plugins.slack.module</a> - package fr.zelus.jarvis.plugins.slack.module</dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/slack/module/action/package-summary.html">fr.zelus.jarvis.plugins.slack.module.action</a> - package fr.zelus.jarvis.plugins.slack.module.action</dt>
+<dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/plugins/slack/module/io/package-summary.html">fr.zelus.jarvis.plugins.slack.module.io</a> - package fr.zelus.jarvis.plugins.slack.module.io</dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/util/package-summary.html">fr.zelus.jarvis.util</a> - package fr.zelus.jarvis.util</dt>
 <dd>&nbsp;</dd>
@@ -1350,17 +1380,29 @@
 <dd>
 <div class="block">Returns the value of the '<em><b>In Contexts</b></em>' containment reference list.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getInputProvider-java.lang.Object-">getInputProvider(Object)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html#getInputProviderDefinition--">getInputProviderDefinition()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html" title="class in fr.zelus.jarvis.module.impl">ModulePackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#getInputProviderDefinition--">getInputProviderDefinition()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
 <dd>
-<div class="block">Retrieves the <a href="fr/zelus/jarvis/io/InputProvider.html" title="class in fr.zelus.jarvis.io"><code>InputProvider</code></a> from the provided <code>property</code>.</div>
+<div class="block">Returns the meta object for class '<a href="fr/zelus/jarvis/module/InputProviderDefinition.html" title="interface in fr.zelus.jarvis.module"><code><em>Input Provider Definition</em></code></a>'.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getInputProvider--">getInputProvider()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html#getInputProviderDefinition_Name--">getInputProviderDefinition_Name()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html" title="class in fr.zelus.jarvis.module.impl">ModulePackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#getInputProviderDefinition_Name--">getInputProviderDefinition_Name()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
 <dd>
-<div class="block">Returns the <a href="fr/zelus/jarvis/io/InputProvider.html" title="class in fr.zelus.jarvis.io"><code>InputProvider</code></a> associated to this class.</div>
+<div class="block">Returns the meta object for the attribute '<a href="fr/zelus/jarvis/module/InputProviderDefinition.html#getName--"><code><em>Name</em></code></a>'.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getInputProviderThread--">getInputProviderThread()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#getInputProviderDefinitions--">getInputProviderDefinitions()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/Module.html#getInputProviderDefinitions--">getInputProviderDefinitions()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/Module.html" title="interface in fr.zelus.jarvis.module">Module</a></dt>
 <dd>
-<div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang"><code>Thread</code></a> used to run the <a href="fr/zelus/jarvis/io/InputProvider.html" title="class in fr.zelus.jarvis.io"><code>InputProvider</code></a>.</div>
+<div class="block">Returns the value of the '<em><b>Input Provider Definitions</b></em>' containment reference list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#getInputProviderDefinitions--">getInputProviderDefinitions()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html#getInputProviderDefinitions--">getInputProviderDefinitions()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a></dt>
+<dd>
+<div class="block">Returns the value of the '<em><b>Input Provider Definitions</b></em>' reference list.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getInstance--">getInstance()</a></span> - Static method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
@@ -1460,7 +1502,7 @@
 <dd>
 <div class="block">Returns the session's <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> holding context-related variables.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/io/PrivateMessageListener.html#getJarvisCore--">getJarvisCore()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.io.<a href="fr/zelus/jarvis/plugins/discord/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.io">PrivateMessageListener</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html#getJarvisCore--">getJarvisCore()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">PrivateMessageListener</a></dt>
 <dd>
 <div class="block">Returns the <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handled received messages.</div>
 </dd>
@@ -1490,13 +1532,13 @@
 <dd>
 <div class="block">Returns the <code>JDA</code> client associated to the provided <code>token</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/io/DiscordInputProvider.html#getJdaClient--">getJdaClient()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.io.<a href="fr/zelus/jarvis/plugins/discord/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.io">DiscordInputProvider</a></dt>
-<dd>
-<div class="block">Returns the <code>JDA</code> client associated to this class.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html#getJdaClient--">getJdaClient()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.<a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a></dt>
 <dd>
 <div class="block">Returns the <code>JDA</code> client managing the Discord connection.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html#getJdaClient--">getJdaClient()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordInputProvider</a></dt>
+<dd>
+<div class="block">Returns the <code>JDA</code> client associated to this class.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#getKey--">getKey()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1539,6 +1581,12 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#getModule_Actions--">getModule_Actions()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
 <dd>
 <div class="block">Returns the meta object for the containment reference list '<a href="fr/zelus/jarvis/module/Module.html#getActions--"><code><em>Actions</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html#getModule_InputProviderDefinitions--">getModule_InputProviderDefinitions()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html" title="class in fr.zelus.jarvis.module.impl">ModulePackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#getModule_InputProviderDefinitions--">getModule_InputProviderDefinitions()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for the containment reference list '<a href="fr/zelus/jarvis/module/Module.html#getInputProviderDefinitions--"><code><em>Input Provider Definitions</em></code></a>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html#getModule_IntentDefinitions--">getModule_IntentDefinitions()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html" title="class in fr.zelus.jarvis.module.impl">ModulePackageImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1606,8 +1654,14 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#getName--">getName()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#getName--">getName()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#getName--">getName()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/InputProviderDefinition.html#getName--">getName()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/InputProviderDefinition.html" title="interface in fr.zelus.jarvis.module">InputProviderDefinition</a></dt>
+<dd>
+<div class="block">Returns the value of the '<em><b>Name</b></em>' attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/Module.html#getName--">getName()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/Module.html" title="interface in fr.zelus.jarvis.module">Module</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Name</b></em>' attribute.</div>
@@ -1677,6 +1731,12 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getOrchestrationModel_Imports--">getOrchestrationModel_Imports()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
 <dd>
 <div class="block">Returns the meta object for the attribute list '<a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html#getImports--"><code><em>Imports</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getOrchestrationModel_InputProviderDefinitions--">getOrchestrationModel_InputProviderDefinitions()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getOrchestrationModel_InputProviderDefinitions--">getOrchestrationModel_InputProviderDefinitions()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for the reference list '<a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html#getInputProviderDefinitions--"><code><em>Input Provider Definitions</em></code></a>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getOrchestrationModel_OrchestrationLinks--">getOrchestrationModel_OrchestrationLinks()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1824,7 +1884,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getReturnVariable--">getReturnVariable()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ActionInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/io/SlackInputProvider.html#getRtmClient--">getRtmClient()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.io.<a href="fr/zelus/jarvis/plugins/slack/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.io">SlackInputProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/io/SlackInputProvider.html#getRtmClient--">getRtmClient()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.io.<a href="fr/zelus/jarvis/plugins/slack/module/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackInputProvider</a></dt>
 <dd>
 <div class="block">Returns the <code>RTMClient</code> associated to this class.</div>
 </dd>
@@ -1992,9 +2052,29 @@
 <dd>
 <div class="block">Complete the initialization of the package and its meta-model.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#INPUT_PROVIDER_KEY">INPUT_PROVIDER_KEY</a></span> - Static variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#INPUT_PROVIDER_DEFINITION">INPUT_PROVIDER_DEFINITION</a></span> - Static variable in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
 <dd>
-<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the <a href="fr/zelus/jarvis/io/InputProvider.html" title="class in fr.zelus.jarvis.io"><code>InputProvider</code></a> to use.</div>
+<div class="block">The meta object id for the '<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl"><code><em>Input Provider Definition</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.Literals.html#INPUT_PROVIDER_DEFINITION">INPUT_PROVIDER_DEFINITION</a></span> - Static variable in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.Literals.html" title="interface in fr.zelus.jarvis.module">ModulePackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl"><code><em>Input Provider Definition</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#INPUT_PROVIDER_DEFINITION__NAME">INPUT_PROVIDER_DEFINITION__NAME</a></span> - Static variable in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
+<dd>
+<div class="block">The feature id for the '<em><b>Name</b></em>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.Literals.html#INPUT_PROVIDER_DEFINITION__NAME">INPUT_PROVIDER_DEFINITION__NAME</a></span> - Static variable in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.Literals.html" title="interface in fr.zelus.jarvis.module">ModulePackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<em><b>Name</b></em>' attribute feature.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#INPUT_PROVIDER_DEFINITION_FEATURE_COUNT">INPUT_PROVIDER_DEFINITION_FEATURE_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
+<dd>
+<div class="block">The number of structural features of the '<em>Input Provider Definition</em>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#INPUT_PROVIDER_DEFINITION_OPERATION_COUNT">INPUT_PROVIDER_DEFINITION_OPERATION_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
+<dd>
+<div class="block">The number of operations of the '<em>Input Provider Definition</em>' class.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/io/InputProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">InputProvider</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
 <dd>
@@ -2008,6 +2088,26 @@
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/io/InputProvider.html" title="class in fr.zelus.jarvis.io"><code>InputProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
+<dt><a href="fr/zelus/jarvis/module/InputProviderDefinition.html" title="interface in fr.zelus.jarvis.module"><span class="typeNameLink">InputProviderDefinition</span></a> - Interface in <a href="fr/zelus/jarvis/module/package-summary.html">fr.zelus.jarvis.module</a></dt>
+<dd>
+<div class="block">A representation of the model object '<em><b>Input Provider Definition</b></em>'.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl"><span class="typeNameLink">InputProviderDefinitionImpl</span></a> - Class in <a href="fr/zelus/jarvis/module/impl/package-summary.html">fr.zelus.jarvis.module.impl</a></dt>
+<dd>
+<div class="block">An implementation of the model object '<em><b>Input Provider Definition</b></em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#InputProviderDefinitionImpl--">InputProviderDefinitionImpl()</a></span> - Constructor for class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#inputProviderDefinitions">inputProviderDefinitions</a></span> - Variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
+<dd>
+<div class="block">The cached value of the '<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#getInputProviderDefinitions--"><code><em>Input Provider Definitions</em></code></a>' containment reference list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#inputProviderDefinitions">inputProviderDefinitions</a></span> - Variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
+<dd>
+<div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#getInputProviderDefinitions--"><code><em>Input Provider Definitions</em></code></a>' reference list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#inputProviderMap">inputProviderMap</a></span> - Variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html#intent">intent</a></span> - Variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationLinkImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html#getIntent--"><code><em>Intent</em></code></a>' reference.</div>
@@ -2250,7 +2350,7 @@
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance from the provided <code>configuration</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#JarvisCore-java.lang.String-java.lang.String-fr.zelus.jarvis.orchestration.OrchestrationModel-java.lang.Class-">JarvisCore(String, String, OrchestrationModel, Class&lt;? extends InputProvider&gt;)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#JarvisCore-java.lang.String-java.lang.String-fr.zelus.jarvis.orchestration.OrchestrationModel-">JarvisCore(String, String, OrchestrationModel)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance with the provided <code>projectId</code>, <code>languageCode</code>, and
  <code>orchestrationModel</code>.</div>
@@ -2524,6 +2624,14 @@
 <dd>
 <div class="block">The feature id for the '<em><b>Actions</b></em>' containment reference list.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.Literals.html#MODULE__INPUT_PROVIDER_DEFINITIONS">MODULE__INPUT_PROVIDER_DEFINITIONS</a></span> - Static variable in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.Literals.html" title="interface in fr.zelus.jarvis.module">ModulePackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<em><b>Input Provider Definitions</b></em>' containment reference list feature.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#MODULE__INPUT_PROVIDER_DEFINITIONS">MODULE__INPUT_PROVIDER_DEFINITIONS</a></span> - Static variable in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
+<dd>
+<div class="block">The feature id for the '<em><b>Input Provider Definitions</b></em>' containment reference list.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.Literals.html#MODULE__INTENT_DEFINITIONS">MODULE__INTENT_DEFINITIONS</a></span> - Static variable in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.Literals.html" title="interface in fr.zelus.jarvis.module">ModulePackage.Literals</a></dt>
 <dd>
 <div class="block">The meta object literal for the '<em><b>Intent Definitions</b></em>' containment reference list feature.</div>
@@ -2632,6 +2740,10 @@
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/module/impl/ActionImpl.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#name">name</a></span> - Variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
+<dd>
+<div class="block">The cached value of the '<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#name">name</a></span> - Variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
@@ -2656,6 +2768,10 @@
 <dd>
 <div class="block">The default value of the '<a href="fr/zelus/jarvis/module/impl/ActionImpl.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#NAME_EDEFAULT">NAME_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
+<dd>
+<div class="block">The default value of the '<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#NAME_EDEFAULT">NAME_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>
 <div class="block">The default value of the '<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
@@ -2670,7 +2786,7 @@
 </a>
 <h2 class="title">O</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/io/PrivateMessageListener.html#onPrivateMessageReceived-net.dv8tion.jda.core.events.message.priv.PrivateMessageReceivedEvent-">onPrivateMessageReceived(PrivateMessageReceivedEvent)</a></span> - Method in class fr.zelus.jarvis.plugins.discord.io.<a href="fr/zelus/jarvis/plugins/discord/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.io">PrivateMessageListener</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html#onPrivateMessageReceived-net.dv8tion.jda.core.events.message.priv.PrivateMessageReceivedEvent-">onPrivateMessageReceived(PrivateMessageReceivedEvent)</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">PrivateMessageListener</a></dt>
 <dd>
 <div class="block">Handles the received private message event and forward it to the <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
 </dd>
@@ -2729,6 +2845,14 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_MODEL__IMPORTS">ORCHESTRATION_MODEL__IMPORTS</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
 <dd>
 <div class="block">The feature id for the '<em><b>Imports</b></em>' attribute list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#ORCHESTRATION_MODEL__INPUT_PROVIDER_DEFINITIONS">ORCHESTRATION_MODEL__INPUT_PROVIDER_DEFINITIONS</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<em><b>Input Provider Definitions</b></em>' reference list feature.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_MODEL__INPUT_PROVIDER_DEFINITIONS">ORCHESTRATION_MODEL__INPUT_PROVIDER_DEFINITIONS</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The feature id for the '<em><b>Input Provider Definitions</b></em>' reference list.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#ORCHESTRATION_MODEL__ORCHESTRATION_LINKS">ORCHESTRATION_MODEL__ORCHESTRATION_LINKS</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
 <dd>
@@ -2961,13 +3085,13 @@
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code> and <code>channel</code>.</div>
 </dd>
-<dt><a href="fr/zelus/jarvis/plugins/discord/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.io"><span class="typeNameLink">PrivateMessageListener</span></a> - Class in <a href="fr/zelus/jarvis/plugins/discord/io/package-summary.html">fr.zelus.jarvis.plugins.discord.io</a></dt>
+<dt><a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><span class="typeNameLink">PrivateMessageListener</span></a> - Class in <a href="fr/zelus/jarvis/plugins/discord/module/io/package-summary.html">fr.zelus.jarvis.plugins.discord.module.io</a></dt>
 <dd>
 <div class="block">A <code>ListenerAdapter</code> that listen private messages and send them to the underlying <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/io/PrivateMessageListener.html#PrivateMessageListener-fr.zelus.jarvis.core.JarvisCore-">PrivateMessageListener(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.io.<a href="fr/zelus/jarvis/plugins/discord/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.io">PrivateMessageListener</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html#PrivateMessageListener-fr.zelus.jarvis.core.JarvisCore-">PrivateMessageListener(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">PrivateMessageListener</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/discord/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.io"><code>PrivateMessageListener</code></a> from the provided <code>jarvisCore</code>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>PrivateMessageListener</code></a> from the provided <code>jarvisCore</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#PROJECT_ID_KEY">PROJECT_ID_KEY</a></span> - Static variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
@@ -3061,9 +3185,9 @@
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getReturnVariable--"><code><em>Return Variable</em></code></a>' containment reference.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/io/DiscordInputProvider.html#run--">run()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.io.<a href="fr/zelus/jarvis/plugins/discord/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.io">DiscordInputProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html#run--">run()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordInputProvider</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/io/SlackInputProvider.html#run--">run()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.io.<a href="fr/zelus/jarvis/plugins/slack/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.io">SlackInputProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/io/SlackInputProvider.html#run--">run()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.io.<a href="fr/zelus/jarvis/plugins/slack/module/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackInputProvider</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:S">
@@ -3166,8 +3290,14 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#setName-java.lang.String-">setName(String)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#setName-java.lang.String-">setName(String)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#setName-java.lang.String-">setName(String)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/InputProviderDefinition.html#setName-java.lang.String-">setName(String)</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/InputProviderDefinition.html" title="interface in fr.zelus.jarvis.module">InputProviderDefinition</a></dt>
+<dd>
+<div class="block">Sets the value of the '<a href="fr/zelus/jarvis/module/InputProviderDefinition.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/Module.html#setName-java.lang.String-">setName(String)</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/Module.html" title="interface in fr.zelus.jarvis.module">Module</a></dt>
 <dd>
 <div class="block">Sets the value of the '<a href="fr/zelus/jarvis/module/Module.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
@@ -3252,13 +3382,13 @@
 <dd>
 <div class="block">The <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> variable key used to store slack username information.</div>
 </dd>
-<dt><a href="fr/zelus/jarvis/plugins/slack/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.io"><span class="typeNameLink">SlackInputProvider</span></a> - Class in <a href="fr/zelus/jarvis/plugins/slack/io/package-summary.html">fr.zelus.jarvis.plugins.slack.io</a></dt>
+<dt><a href="fr/zelus/jarvis/plugins/slack/module/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io"><span class="typeNameLink">SlackInputProvider</span></a> - Class in <a href="fr/zelus/jarvis/plugins/slack/module/io/package-summary.html">fr.zelus.jarvis.plugins.slack.module.io</a></dt>
 <dd>
 <div class="block">A Slack user input provider.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/io/SlackInputProvider.html#SlackInputProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">SlackInputProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.slack.io.<a href="fr/zelus/jarvis/plugins/slack/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.io">SlackInputProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/io/SlackInputProvider.html#SlackInputProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">SlackInputProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.slack.module.io.<a href="fr/zelus/jarvis/plugins/slack/module/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackInputProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.io"><code>SlackInputProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/io/SlackInputProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io"><code>SlackInputProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><span class="typeNameLink">SlackModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/slack/module/package-summary.html">fr.zelus.jarvis.plugins.slack.module</a></dt>
 <dd>
@@ -3268,6 +3398,8 @@
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a> from the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#startInputProvider-fr.zelus.jarvis.module.InputProviderDefinition-fr.zelus.jarvis.core.JarvisCore-">startInputProvider(InputProviderDefinition, JarvisCore)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:T">
 <!--   -->
@@ -3295,6 +3427,8 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/InputProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">InputProviderDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>&nbsp;</dd>

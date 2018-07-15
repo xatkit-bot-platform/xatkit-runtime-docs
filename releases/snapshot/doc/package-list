@@ -15,15 +15,15 @@ fr.zelus.jarvis.orchestration.util
 fr.zelus.jarvis.plugins.core.module
 fr.zelus.jarvis.plugins.core.module.action
 fr.zelus.jarvis.plugins.discord
-fr.zelus.jarvis.plugins.discord.io
 fr.zelus.jarvis.plugins.discord.module
 fr.zelus.jarvis.plugins.discord.module.action
+fr.zelus.jarvis.plugins.discord.module.io
 fr.zelus.jarvis.plugins.log.module
 fr.zelus.jarvis.plugins.log.module.action
 fr.zelus.jarvis.plugins.mail.module
 fr.zelus.jarvis.plugins.mail.module.action
 fr.zelus.jarvis.plugins.slack
-fr.zelus.jarvis.plugins.slack.io
 fr.zelus.jarvis.plugins.slack.module
 fr.zelus.jarvis.plugins.slack.module.action
+fr.zelus.jarvis.plugins.slack.module.io
 fr.zelus.jarvis.util

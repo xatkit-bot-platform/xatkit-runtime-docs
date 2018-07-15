@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -149,6 +149,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">The <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> associated to this module.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisModule.html#configuration">configuration</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang">Thread</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisModule.html#inputProviderMap">inputProviderMap</a></span></code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -230,6 +238,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Returns the name of the module.</div>
 </td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisModule.html#startInputProvider-fr.zelus.jarvis.module.InputProviderDefinition-fr.zelus.jarvis.core.JarvisCore-">startInputProvider</a></span>(<a href="../../../../fr/zelus/jarvis/module/InputProviderDefinition.html" title="interface in fr.zelus.jarvis.module">InputProviderDefinition</a>&nbsp;inputProviderDefinition,
+                  <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore)</code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -252,10 +265,19 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="configuration">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>configuration</h4>
+<pre>protected&nbsp;<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a> configuration</pre>
+</li>
+</ul>
 <a name="actionMap">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>actionMap</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a>&gt;&gt; actionMap</pre>
@@ -268,6 +290,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAction-fr.zelus.jarvis.module.Action-"><code>disableAction(Action)</code></a>, 
 <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.intent.RecognizedIntent-fr.zelus.jarvis.core.session.JarvisSession-"><code>createJarvisAction(ActionInstance, RecognizedIntent, JarvisSession)</code></a></dd>
 </dl>
+</li>
+</ul>
+<a name="inputProviderMap">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>inputProviderMap</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang">Thread</a>&gt; inputProviderMap</pre>
 </li>
 </ul>
 </li>
@@ -341,6 +372,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
+<a name="startInputProvider-fr.zelus.jarvis.module.InputProviderDefinition-fr.zelus.jarvis.core.JarvisCore-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>startInputProvider</h4>
+<pre>public final&nbsp;void&nbsp;startInputProvider(<a href="../../../../fr/zelus/jarvis/module/InputProviderDefinition.html" title="interface in fr.zelus.jarvis.module">InputProviderDefinition</a>&nbsp;inputProviderDefinition,
+                                     <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore)</pre>
+</li>
+</ul>
 <a name="enableAction-fr.zelus.jarvis.module.Action-">
 <!--   -->
 </a>
@@ -352,12 +393,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <p>
  This method loads the corresponding <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> based on jarvis' naming convention. The
  <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> must be located under the <code>action</code> sub-package of the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>
- concrete subclass package (see <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html#loadJarvisActionClass-fr.zelus.jarvis.module.Action-"><code>loadJarvisActionClass(Action)</code></a>).</div>
+ concrete subclass package.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>action</code> - the <a href="../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a> definition representing the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> to enable</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/core/JarvisModule.html#loadJarvisActionClass-fr.zelus.jarvis.module.Action-"><code>loadJarvisActionClass(Action)</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/util/Loader.html#loadClass-java.lang.String-java.lang.Class-"><code>Loader.loadClass(String, Class)</code></a></dd>
 </dl>
 </li>
 </ul>
