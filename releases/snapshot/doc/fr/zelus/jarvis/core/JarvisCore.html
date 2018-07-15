@@ -468,15 +468,17 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <pre>public&nbsp;void&nbsp;shutdown()</pre>
 <div class="block">Shuts down the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and the underlying engines.
  <p>
- This method shuts down the underlying <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a>, unloads all the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s associated to
- this instance, unregisters the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> from the associated
+ This method shuts down the underlying <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a>, unloads and shuts down all the
+ <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s associated to this instance, unregisters the
+ <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> from the associated
  <a href="../../../../fr/zelus/jarvis/core/IntentDefinitionRegistry.html" title="class in fr.zelus.jarvis.core"><code>IntentDefinitionRegistry</code></a>, and shuts down the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#executorService"><code>executorService</code></a>.
  <p>
  <b>Note:</b> calling this method invalidates the DialogFlow connection, and thus shuts down intent detections
  and voice recognitions features. New <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s cannot be processed either.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#shutdown--"><code>DialogFlowApi.shutdown()</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/core/JarvisModule.html#shutdown--"><code>JarvisModule.shutdown()</code></a>, 
+<a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#shutdown--"><code>DialogFlowApi.shutdown()</code></a></dd>
 </dl>
 </li>
 </ul>
