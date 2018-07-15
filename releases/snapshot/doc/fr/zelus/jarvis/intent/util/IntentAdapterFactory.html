@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -225,23 +225,35 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/util/IntentAdapterFactory.html#createEventDefinitionAdapter--">createEventDefinitionAdapter</a></span>()</code>
+<div class="block">Creates a new adapter for an object of class '<a href="../../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code><em>Event Definition</em></code></a>'.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/util/IntentAdapterFactory.html#createEventInstanceAdapter--">createEventInstanceAdapter</a></span>()</code>
+<div class="block">Creates a new adapter for an object of class '<a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code><em>Event Instance</em></code></a>'.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/util/IntentAdapterFactory.html#createIntentDefinitionAdapter--">createIntentDefinitionAdapter</a></span>()</code>
 <div class="block">Creates a new adapter for an object of class '<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code><em>Definition</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/util/IntentAdapterFactory.html#createIntentParameterAdapter--">createIntentParameterAdapter</a></span>()</code>
 <div class="block">Creates a new adapter for an object of class '<a href="../../../../../fr/zelus/jarvis/intent/IntentParameter.html" title="interface in fr.zelus.jarvis.intent"><code><em>Parameter</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/util/IntentAdapterFactory.html#createRecognizedIntentAdapter--">createRecognizedIntentAdapter</a></span>()</code>
 <div class="block">Creates a new adapter for an object of class '<a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code><em>Recognized Intent</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/util/IntentAdapterFactory.html#isFactoryForType-java.lang.Object-">isFactoryForType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>
 <div class="block">Returns whether this factory is applicable for the type of the object.</div>
@@ -386,6 +398,27 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </dl>
 </li>
 </ul>
+<a name="createEventDefinitionAdapter--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createEventDefinitionAdapter</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a>&nbsp;createEventDefinitionAdapter()</pre>
+<div class="block">Creates a new adapter for an object of class '<a href="../../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code><em>Event Definition</em></code></a>'.
+ <!-- begin-user-doc -->
+ This default implementation returns null so that we can easily ignore cases;
+ it's useful to ignore a case when inheritance will catch all the cases anyway.
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new adapter.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
 <a name="createIntentDefinitionAdapter--">
 <!--   -->
 </a>
@@ -466,6 +499,27 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dd>the new adapter.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/zelus/jarvis/intent/IntentParameter.html" title="interface in fr.zelus.jarvis.intent"><code>IntentParameter</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="createEventInstanceAdapter--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createEventInstanceAdapter</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a>&nbsp;createEventInstanceAdapter()</pre>
+<div class="block">Creates a new adapter for an object of class '<a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code><em>Event Instance</em></code></a>'.
+ <!-- begin-user-doc -->
+ This default implementation returns null so that we can easily ignore cases;
+ it's useful to ignore a case when inheritance will catch all the cases anyway.
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new adapter.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

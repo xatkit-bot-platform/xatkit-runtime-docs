@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.org.eclipse.emf.ecore.impl.MinimalEObjectImpl.Container">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.fr.zelus.jarvis.intent.impl.EventInstanceImpl">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -112,7 +112,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/MinimalEObjectImpl.Container.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">org.eclipse.emf.ecore.impl.MinimalEObjectImpl.Container</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">fr.zelus.jarvis.intent.impl.EventInstanceImpl</a></li>
+<li>
+<ul class="inheritance">
 <li>fr.zelus.jarvis.intent.impl.RecognizedIntentImpl</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -129,23 +134,16 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notifier</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.Internal.DynamicValueHolder.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature.Internal.DynamicValueHolder</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a></dd>
+<dd><a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent">EventInstance</a>, <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notifier</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.Internal.DynamicValueHolder.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature.Internal.DynamicValueHolder</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">RecognizedIntentImpl</span>
-extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/MinimalEObjectImpl.Container.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">MinimalEObjectImpl.Container</a>
+extends <a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">EventInstanceImpl</a>
 implements <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a></pre>
 <div class="block"><!-- begin-user-doc -->
  An implementation of the model object '<em><b>Recognized Intent</b></em>'.
- <!-- end-user-doc -->
- <p>
- The following features are implemented:
- </p>
- <ul>
-   <li><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#getDefinition--"><code><em>Definition</em></code></a></li>
-   <li><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#getOutContextValues--"><code><em>Out Context Values</em></code></a></li>
- </ul></div>
+ <!-- end-user-doc --></div>
 <dl>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
@@ -204,25 +202,13 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html"
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#definition">definition</a></span></code>
-<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#getDefinition--"><code><em>Definition</em></code></a>' reference.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#outContextValues">outContextValues</a></span></code>
-<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#getOutContextValues--"><code><em>Out Context Values</em></code></a>' containment reference list.</div>
-</td>
-</tr>
-</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.fr.zelus.jarvis.intent.impl.EventInstanceImpl">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;fr.zelus.jarvis.intent.impl.<a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">EventInstanceImpl</a></h3>
+<code><a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#definition">definition</a>, <a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#outContextValues">outContextValues</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.org.eclipse.emf.ecore.impl.MinimalEObjectImpl.Container">
 <!--   -->
@@ -285,51 +271,17 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html"
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#basicGetDefinition--">basicGetDefinition</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#eGet-int-boolean-boolean-">eGet</a></span>(int&nbsp;featureID,
-    boolean&nbsp;resolve,
-    boolean&nbsp;coreType)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseRemove</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;otherEnd,
-              int&nbsp;featureID,
-              <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a>&nbsp;msgs)</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#eIsSet-int-">eIsSet</a></span>(int&nbsp;featureID)</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#eSet-int-java.lang.Object-">eSet</a></span>(int&nbsp;featureID,
-    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;newValue)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#eStaticClass--">eStaticClass</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#eUnset-int-">eUnset</a></span>(int&nbsp;featureID)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#getDefinition--">getDefinition</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#getOutContextValues--">getOutContextValues</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#setDefinition-fr.zelus.jarvis.intent.IntentDefinition-">setDefinition</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;newDefinition)</code>&nbsp;</td>
-</tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.fr.zelus.jarvis.intent.impl.EventInstanceImpl">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;fr.zelus.jarvis.intent.impl.<a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">EventInstanceImpl</a></h3>
+<code><a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#basicGetDefinition--">basicGetDefinition</a>, <a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#eGet-int-boolean-boolean-">eGet</a>, <a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseRemove</a>, <a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#eIsSet-int-">eIsSet</a>, <a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#eSet-int-java.lang.Object-">eSet</a>, <a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#eUnset-int-">eUnset</a>, <a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#getDefinition--">getDefinition</a>, <a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#getOutContextValues--">getOutContextValues</a>, <a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#setDefinition-fr.zelus.jarvis.intent.EventDefinition-">setDefinition</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.eclipse.emf.ecore.impl.MinimalEObjectImpl.Container">
 <!--   -->
@@ -366,6 +318,13 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html"
 <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.fr.zelus.jarvis.intent.EventInstance">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;fr.zelus.jarvis.intent.<a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent">EventInstance</a></h3>
+<code><a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html#getDefinition--">getDefinition</a>, <a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html#getOutContextValues--">getOutContextValues</a>, <a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html#setDefinition-fr.zelus.jarvis.intent.EventDefinition-">setDefinition</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.eclipse.emf.ecore.EObject">
 <!--   -->
 </a>
@@ -394,48 +353,6 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html"
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="definition">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>definition</h4>
-<pre>protected&nbsp;<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a> definition</pre>
-<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#getDefinition--"><code><em>Definition</em></code></a>' reference.
- <!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#getDefinition--"><code>getDefinition()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="outContextValues">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>outContextValues</h4>
-<pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a>&gt; outContextValues</pre>
-<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#getOutContextValues--"><code><em>Out Context Values</em></code></a>' containment reference list.
- <!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#getOutContextValues--"><code>getOutContextValues()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -467,7 +384,7 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html"
 <a name="eStaticClass--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>eStaticClass</h4>
 <pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eStaticClass()</pre>
@@ -475,183 +392,7 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html"
  <!-- end-user-doc --></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true#eStaticClass--" title="class or interface in org.eclipse.emf.ecore.impl">eStaticClass</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">BasicEObjectImpl</a></code></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="getDefinition--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDefinition</h4>
-<pre>public&nbsp;<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;getDefinition()</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html#getDefinition--">getDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value of the '<em>Definition</em>' reference.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html#setDefinition-fr.zelus.jarvis.intent.IntentDefinition-"><code>RecognizedIntent.setDefinition(IntentDefinition)</code></a>, 
-<a href="../../../../../fr/zelus/jarvis/intent/IntentPackage.html#getRecognizedIntent_Definition--"><code>IntentPackage.getRecognizedIntent_Definition()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="basicGetDefinition--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>basicGetDefinition</h4>
-<pre>public&nbsp;<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;basicGetDefinition()</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="setDefinition-fr.zelus.jarvis.intent.IntentDefinition-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setDefinition</h4>
-<pre>public&nbsp;void&nbsp;setDefinition(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;newDefinition)</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html#setDefinition-fr.zelus.jarvis.intent.IntentDefinition-">setDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>newDefinition</code> - the new value of the '<em>Definition</em>' reference.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html#getDefinition--"><code>RecognizedIntent.getDefinition()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="getOutContextValues--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getOutContextValues</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a>&gt;&nbsp;getOutContextValues()</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html#getOutContextValues--">getOutContextValues</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value of the '<em>Out Context Values</em>' containment reference list.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/zelus/jarvis/intent/IntentPackage.html#getRecognizedIntent_OutContextValues--"><code>IntentPackage.getRecognizedIntent_OutContextValues()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>eInverseRemove</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a>&nbsp;eInverseRemove(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;otherEnd,
-                                        int&nbsp;featureID,
-                                        <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a>&nbsp;msgs)</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-" title="class or interface in org.eclipse.emf.ecore.impl">eInverseRemove</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">BasicEObjectImpl</a></code></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="eGet-int-boolean-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>eGet</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;eGet(int&nbsp;featureID,
-                   boolean&nbsp;resolve,
-                   boolean&nbsp;coreType)</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true#eGet-int-boolean-boolean-" title="class or interface in org.eclipse.emf.ecore">eGet</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true#eGet-int-boolean-boolean-" title="class or interface in org.eclipse.emf.ecore.impl">eGet</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">BasicEObjectImpl</a></code></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true#eGet-org.eclipse.emf.ecore.EStructuralFeature-boolean-boolean-" title="class or interface in org.eclipse.emf.ecore"><code>InternalEObject.eGet(EStructuralFeature, boolean, boolean)</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="eSet-int-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>eSet</h4>
-<pre>public&nbsp;void&nbsp;eSet(int&nbsp;featureID,
-                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;newValue)</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true#eSet-int-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore">eSet</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true#eSet-int-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore.impl">eSet</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">BasicEObjectImpl</a></code></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eSet-org.eclipse.emf.ecore.EStructuralFeature-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore"><code>EObject.eSet(EStructuralFeature, Object)</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="eUnset-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>eUnset</h4>
-<pre>public&nbsp;void&nbsp;eUnset(int&nbsp;featureID)</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true#eUnset-int-" title="class or interface in org.eclipse.emf.ecore">eUnset</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true#eUnset-int-" title="class or interface in org.eclipse.emf.ecore.impl">eUnset</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">BasicEObjectImpl</a></code></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eUnset-org.eclipse.emf.ecore.EStructuralFeature-" title="class or interface in org.eclipse.emf.ecore"><code>EObject.eUnset(EStructuralFeature)</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="eIsSet-int-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>eIsSet</h4>
-<pre>public&nbsp;boolean&nbsp;eIsSet(int&nbsp;featureID)</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true#eIsSet-int-" title="class or interface in org.eclipse.emf.ecore">eIsSet</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true#eIsSet-int-" title="class or interface in org.eclipse.emf.ecore.impl">eIsSet</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">BasicEObjectImpl</a></code></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true#eIsSet-org.eclipse.emf.ecore.EStructuralFeature-" title="class or interface in org.eclipse.emf.ecore"><code>EObject.eIsSet(EStructuralFeature)</code></a></dd>
+<dd><code><a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#eStaticClass--">eStaticClass</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">EventInstanceImpl</a></code></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -710,13 +451,13 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html"
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.org.eclipse.emf.ecore.impl.MinimalEObjectImpl.Container">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.fr.zelus.jarvis.intent.impl.EventInstanceImpl">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

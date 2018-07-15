@@ -310,7 +310,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance from the provided <code>configuration</code>.
  <p>
  The provided <code>configuration</code> must provide values for the following key (note that additional values may
- be required according to the used <a href="../../../../fr/zelus/jarvis/io/InputProvider.html" title="class in fr.zelus.jarvis.io"><code>InputProvider</code></a>s and <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s):
+ be required according to the used <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>s and <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s):
  <ul>
  <li><b>jarvis.orchestration.model</b>: the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> defining the Intent to
  Action bindings (or the string representing its location)</li>
@@ -562,7 +562,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  the corresponding intent (if any).
  <p>
  The message is handled for a specific user, and can access the <code>session</code> information to retrieve stored
- context variables, extracted information, are additional information stored by the <a href="../../../../fr/zelus/jarvis/io/InputProvider.html" title="class in fr.zelus.jarvis.io"><code>InputProvider</code></a>.
+ context variables, extracted information, are additional information stored by the <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>.
  <p>
  This method relies on the <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> instance to retrieve the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>
  associated to the extracted intent. These <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s are then submitted to the local
