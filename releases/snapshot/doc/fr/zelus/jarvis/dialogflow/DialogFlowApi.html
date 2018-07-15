@@ -137,13 +137,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-java.lang.String-">DialogFlowApi</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;projectId)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-fr.zelus.jarvis.core.JarvisCore-java.lang.String-">DialogFlowApi</a></span>(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;projectId)</code>
 <div class="block">Constructs a <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> with the provided <code>projectId</code> and sets its language to
  <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DEFAULT_LANGUAGE_CODE"><code>DEFAULT_LANGUAGE_CODE</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-java.lang.String-java.lang.String-">DialogFlowApi</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;projectId,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-fr.zelus.jarvis.core.JarvisCore-java.lang.String-java.lang.String-">DialogFlowApi</a></span>(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;projectId,
              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;languageCode)</code>
 <div class="block">Constructs a <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> with the provided <code>projectId</code> and <code>languageCode</code>.</div>
 </td>
@@ -275,44 +277,49 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DialogFlowApi-java.lang.String-">
+<a name="DialogFlowApi-fr.zelus.jarvis.core.JarvisCore-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>DialogFlowApi</h4>
-<pre>public&nbsp;DialogFlowApi(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;projectId)</pre>
+<pre>public&nbsp;DialogFlowApi(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;projectId)</pre>
 <div class="block">Constructs a <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> with the provided <code>projectId</code> and sets its language to
  <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DEFAULT_LANGUAGE_CODE"><code>DEFAULT_LANGUAGE_CODE</code></a>.
  <p>
- See <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-java.lang.String-java.lang.String-"><code>DialogFlowApi(String, String)</code></a> to construct a <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> instance with a given <code>languageCode</code>.</div>
+ See <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-fr.zelus.jarvis.core.JarvisCore-java.lang.String-java.lang.String-"><code>DialogFlowApi(JarvisCore, String, String)</code></a> to construct a <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> instance with a
+ given <code>languageCode</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>jarvisCore</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance managing the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a></dd>
 <dd><code>projectId</code> - the unique identifier of the DialogFlow project</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>projectId</code> or <code>languageCode</code> is
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>jarvisCore</code>, <code>projectId</code> or <code>languageCode</code> is
                               <code>null</code>.</dd>
 <dd><code><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowException.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowException</a></code> - if the client failed to start a new session</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-java.lang.String-java.lang.String-"><code>DialogFlowApi(String, String)</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-fr.zelus.jarvis.core.JarvisCore-java.lang.String-java.lang.String-"><code>DialogFlowApi(JarvisCore, String, String)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="DialogFlowApi-java.lang.String-java.lang.String-">
+<a name="DialogFlowApi-fr.zelus.jarvis.core.JarvisCore-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DialogFlowApi</h4>
-<pre>public&nbsp;DialogFlowApi(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;projectId,
+<pre>public&nbsp;DialogFlowApi(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;projectId,
                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;languageCode)</pre>
 <div class="block">Constructs a <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> with the provided <code>projectId</code> and <code>languageCode</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>jarvisCore</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance managing the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a></dd>
 <dd><code>projectId</code> - the unique identifier of the DialogFlow project</dd>
 <dd><code>languageCode</code> - the code of the language processed by DialogFlow</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>projectId</code> or <code>languageCode</code> is
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>jarvisCore</code>, <code>projectId</code> or <code>languageCode</code> is
                               <code>null</code>.</dd>
 <dd><code><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowException.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowException</a></code> - if the client failed to start a new session</dd>
 </dl>
