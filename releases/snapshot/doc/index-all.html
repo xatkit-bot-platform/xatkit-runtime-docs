@@ -316,10 +316,6 @@
 <dd>
 <div class="block">Unregisters all the <a href="fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>s from this registry.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html#clearIntentDefinitions--">clearIntentDefinitions()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">IntentDefinitionRegistry</a></dt>
-<dd>
-<div class="block">Unregisters all the <a href="fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s from this registry.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModuleRegistry.html#clearJarvisModules--">clearJarvisModules()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core">JarvisModuleRegistry</a></dt>
 <dd>
 <div class="block">Unregisters all the <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s from this registry.</div>
@@ -1493,10 +1489,8 @@
 <dd>
 <div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing all the registered <a href="fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>s.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html#getAllIntentDefinitions--">getAllIntentDefinitions()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">IntentDefinitionRegistry</a></dt>
-<dd>
-<div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing all the registered <a href="fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s.</div>
-</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html#getAllIntentDefinitions--">getAllIntentDefinitions()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">EventDefinitionRegistry</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getContext--">getContext()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getContext--">getContext()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
@@ -1640,7 +1634,9 @@
 <div class="block">Returns the meta object for the containment reference list '<a href="fr/zelus/jarvis/intent/EventDefinition.html#getOutContexts--"><code><em>Out Contexts</em></code></a>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getEventDefinitionRegistry--">getEventDefinitionRegistry()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the <a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core"><code>EventDefinitionRegistry</code></a> associated to this instance.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/EventProviderDefinition.html#getEventDefinitions--">getEventDefinitions()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/EventProviderDefinition.html" title="interface in fr.zelus.jarvis.module">EventProviderDefinition</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Event Definitions</b></em>' containment reference list.</div>
@@ -1721,10 +1717,8 @@
 <dd>
 <div class="block">Returns the <a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from the provided <code>text</code></div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html#getIntentDefinition-java.lang.String-">getIntentDefinition(String)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">IntentDefinitionRegistry</a></dt>
-<dd>
-<div class="block">Returns the <a href="fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> matching the provided <code>name</code>.</div>
-</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html#getIntentDefinition-java.lang.String-">getIntentDefinition(String)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">EventDefinitionRegistry</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getIntentDefinition--">getIntentDefinition()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition--">getIntentDefinition()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
@@ -1742,10 +1736,6 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition_TrainingSentences--">getIntentDefinition_TrainingSentences()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
 <dd>
 <div class="block">Returns the meta object for the attribute list '<a href="fr/zelus/jarvis/intent/IntentDefinition.html#getTrainingSentences--"><code><em>Training Sentences</em></code></a>'.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getIntentDefinitionRegistry--">getIntentDefinitionRegistry()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
-<dd>
-<div class="block">Returns the <a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html" title="class in fr.zelus.jarvis.core"><code>IntentDefinitionRegistry</code></a> associated to this instance.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#getIntentDefinitions--">getIntentDefinitions()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -2455,14 +2445,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#IntentDefinitionImpl--">IntentDefinitionImpl()</a></span> - Constructor for class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">IntentDefinitionRegistry</span></a> - Class in <a href="fr/zelus/jarvis/core/package-summary.html">fr.zelus.jarvis.core</a></dt>
-<dd>
-<div class="block">A registry that stores <a href="fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html#IntentDefinitionRegistry--">IntentDefinitionRegistry()</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">IntentDefinitionRegistry</a></dt>
-<dd>
-<div class="block">Constructs a new instance of the registry and initializes its <a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html#intentDefinitionMap"><code>IntentDefinitionRegistry.intentDefinitionMap</code></a>.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#intentDefinitions">intentDefinitions</a></span> - Variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#getIntentDefinitions--"><code><em>Intent Definitions</em></code></a>' containment reference list.</div>
@@ -3380,10 +3362,6 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html#registerEventDefinition-fr.zelus.jarvis.intent.EventDefinition-">registerEventDefinition(EventDefinition)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">EventDefinitionRegistry</a></dt>
 <dd>
 <div class="block">Registers the provided <code>eventDefinition</code> using its <code>name</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html#registerIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">registerIntentDefinition(IntentDefinition)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/IntentDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">IntentDefinitionRegistry</a></dt>
-<dd>
-<div class="block">Registers the provided <code>intentDefinition</code> using its <code>name</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#registerIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">registerIntentDefinition(IntentDefinition)</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
