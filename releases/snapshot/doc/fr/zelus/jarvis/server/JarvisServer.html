@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -111,6 +111,15 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">JarvisServer</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">The REST server used to receive external webhooks.
+ <p>
+ The <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a> provides a simple REST API that accepts POST methods on port <code>5000</code>. Incoming
+ requests are parsed and sent to the registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s, that transform the
+ original request into <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s that can be used to trigger actions.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#registerWebhookEventProvider-fr.zelus.jarvis.io.WebhookEventProvider-"><code>registerWebhookEventProvider(WebhookEventProvider)</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -129,7 +138,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#JarvisServer--">JarvisServer</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#JarvisServer--">JarvisServer</a></span>()</code>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -148,7 +159,34 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#shutdown--">shutdown</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-">notifyWebhookEventProviders</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
+                           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)</code>
+<div class="block">Notifies the registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#registerWebhookEventProvider-fr.zelus.jarvis.io.WebhookEventProvider-">registerWebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
+<div class="block">Register a <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#start--">start</a></span>()</code>
+<div class="block">Starts the underlying <code>HttpServer</code>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#stop--">stop</a></span>()</code>
+<div class="block">Stops the underlying <code>HttpServer</code>.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#unregisterWebhookEventProvider-fr.zelus.jarvis.io.WebhookEventProvider-">unregisterWebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
+<div class="block">Unregistered a <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -179,6 +217,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>JarvisServer</h4>
 <pre>public&nbsp;JarvisServer()</pre>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a>.
+ <p>
+ <b>Note:</b> this method does not start the underlying <code>HttpServer</code>. Use <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#start--"><code>start()</code></a> to start the
+ <code>HttpServer</code> in a dedicated thread.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#start--"><code>start()</code></a>, 
+<a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#stop--"><code>stop()</code></a></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -189,13 +236,90 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="shutdown--">
+<a name="start--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>start</h4>
+<pre>public&nbsp;void&nbsp;start()</pre>
+<div class="block">Starts the underlying <code>HttpServer</code>.
+ <p>
+ This method registered a shutdown hook that is used to close the <code>HttpServer</code> when the application
+ terminates. To manually close the underlying <code>HttpServer</code> see <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#stop--"><code>stop()</code></a>.</div>
+</li>
+</ul>
+<a name="stop--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>stop</h4>
+<pre>public&nbsp;void&nbsp;stop()</pre>
+<div class="block">Stops the underlying <code>HttpServer</code>.</div>
+</li>
+</ul>
+<a name="registerWebhookEventProvider-fr.zelus.jarvis.io.WebhookEventProvider-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerWebhookEventProvider</h4>
+<pre>public&nbsp;void&nbsp;registerWebhookEventProvider(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</pre>
+<div class="block">Register a <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>.
+ <p>
+ The registered <code>webhookEventProvider</code> will be notified when a new request is received. If the provider
+ supports the request content type (see <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#acceptContentType-java.lang.String-"><code>WebhookEventProvider.acceptContentType(String)</code></a>, it will receive
+ the request content that will be used to create the associated <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>webhookEventProvider</code> - the <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> to register</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-"><code>notifyWebhookEventProviders(String, Object)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#acceptContentType-java.lang.String-"><code>WebhookEventProvider.acceptContentType(String)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#handleContent-java.lang.Object-"><code>WebhookEventProvider.handleContent(Object)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="unregisterWebhookEventProvider-fr.zelus.jarvis.io.WebhookEventProvider-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unregisterWebhookEventProvider</h4>
+<pre>public&nbsp;void&nbsp;unregisterWebhookEventProvider(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</pre>
+<div class="block">Unregistered a <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>.
+ <p>
+ The provided <code>webhookEventProvider</code> will not be notified when new request are received, and cannot be
+ used to create <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>webhookEventProvider</code> - the <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> to unregister</dd>
+</dl>
+</li>
+</ul>
+<a name="notifyWebhookEventProviders-java.lang.String-java.lang.Object-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>shutdown</h4>
-<pre>public&nbsp;void&nbsp;shutdown()</pre>
+<h4>notifyWebhookEventProviders</h4>
+<pre>public&nbsp;void&nbsp;notifyWebhookEventProviders(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
+                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)</pre>
+<div class="block">Notifies the registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.
+ <p>
+ This method asks each registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> if it accepts the given <code>contentType</code>. If
+ so, the provided <code>content</code> is sent to the <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> that will create the associated
+ <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>contentType</code> - the content type of the received request</dd>
+<dd><code>content</code> - the content of the received request</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#registerWebhookEventProvider-fr.zelus.jarvis.io.WebhookEventProvider-"><code>registerWebhookEventProvider(WebhookEventProvider)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#acceptContentType-java.lang.String-"><code>WebhookEventProvider.acceptContentType(String)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#handleContent-java.lang.Object-"><code>WebhookEventProvider.handleContent(Object)</code></a></dd>
+</dl>
 </li>
 </ul>
 </li>
