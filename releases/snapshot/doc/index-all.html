@@ -74,6 +74,10 @@
 </a>
 <h2 class="title">A</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#acceptContentType-java.lang.String-">acceptContentType(String)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
+<dd>
+<div class="block">Returns <code>true</code> if the provided <code>contentType</code> represents a Json content, <code>false</code> otherwise.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#acceptContentType-java.lang.String-">acceptContentType(String)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
 <dd>
 <div class="block">Returns whether the <a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> accepts the provided <code>contentType</code>.</div>
@@ -333,7 +337,9 @@
 <div class="block">Invalidates all the <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a>s and clear the session registry.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/EventProvider.html#close--">close()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Closes the <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> and releases internal resources.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html#close--">close()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordInputProvider</a></dt>
 <dd>
 <div class="block">Disconnects the underlying <code>JDA</code> client.</div>
@@ -2294,6 +2300,10 @@
 <dd>
 <div class="block">Handles an input <code>message</code> by executing the associated <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#handleParsedContent-com.google.gson.JsonElement-">handleParsedContent(JsonElement)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
+<dd>
+<div class="block">Handles the <code>JsonElement</code> representing the request content.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#handleParsedContent-T-">handleParsedContent(T)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
 <dd>
 <div class="block">Handles the parsed request content.</div>
@@ -2694,6 +2704,18 @@
 <dt><a href="fr/zelus/jarvis/plugins/wordpress/JarvisWordPressUtils.html" title="interface in fr.zelus.jarvis.plugins.wordpress"><span class="typeNameLink">JarvisWordPressUtils</span></a> - Interface in <a href="fr/zelus/jarvis/plugins/wordpress/package-summary.html">fr.zelus.jarvis.plugins.wordpress</a></dt>
 <dd>
 <div class="block">An utility interface that holds WordPress-related helpers.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">JsonWebhookEventProvider</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
+<dd>
+<div class="block">A Json <a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> that provides utility methods to parse and manipulate Json HTTP requests.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-">JsonWebhookEventProvider(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> from the provided <code>jarvisCore</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">JsonWebhookEventProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
 </dl>
 <a name="I:K">
@@ -3338,6 +3360,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#ParameterValueImpl--">ParameterValueImpl()</a></span> - Constructor for class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
+<dd>
+<div class="block">Parses the provided raw HTTP request content into a <code>JsonElement</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
 <dd>
 <div class="block">Parses the provided raw HTTP request content.</div>
