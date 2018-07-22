@@ -875,7 +875,7 @@
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><span class="typeNameLink">DiscordInputProvider</span></a> - Class in <a href="fr/zelus/jarvis/plugins/discord/module/io/package-summary.html">fr.zelus.jarvis.plugins.discord.module.io</a></dt>
 <dd>
-<div class="block">A Discord user input provider.</div>
+<div class="block">A Discord user <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html#DiscordInputProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">DiscordInputProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordInputProvider</a></dt>
 <dd>
@@ -2156,6 +2156,10 @@
 <dd>
 <div class="block">Returns the meta object for class '<a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code><em>Recognized Intent</em></code></a>'.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/IntentProvider.html#getRecognizedIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getRecognizedIntent(String, JarvisSession)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">IntentProvider</a></dt>
+<dd>
+<div class="block">Returns the <a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> from the provided user <code>input</code> and <code>session</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#getReferredVariable--">getReferredVariable()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/VariableAccess.html#getReferredVariable--">getReferredVariable()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration">VariableAccess</a></dt>
@@ -2296,10 +2300,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#handleEvent-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-">handleEvent(EventInstance, JarvisSession)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#handleMessage-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">handleMessage(String, JarvisSession)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
-<dd>
-<div class="block">Handles an input <code>message</code> by executing the associated <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#handleParsedContent-com.google.gson.JsonElement-">handleParsedContent(JsonElement)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
 <dd>
 <div class="block">Handles the <code>JsonElement</code> representing the request content.</div>
@@ -2536,6 +2536,19 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#IntentParameterImpl--">IntentParameterImpl()</a></span> - Constructor for class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">IntentProvider</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
+<dd>
+<div class="block">A specialised <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> that extracts <a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> from textual user inputs.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-fr.zelus.jarvis.core.JarvisCore-">IntentProvider(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">IntentProvider</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> from the provided <code>jarvisCore</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">IntentProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">IntentProvider</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>, <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>, and
+ <a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a>.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="class in fr.zelus.jarvis.intent.util"><span class="typeNameLink">IntentSwitch</span></a>&lt;<a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="type parameter in IntentSwitch">T</a>&gt; - Class in <a href="fr/zelus/jarvis/intent/util/package-summary.html">fr.zelus.jarvis.intent.util</a></dt>
 <dd>
 <div class="block">The <b>Switch</b> for the model's inheritance hierarchy.</div>
@@ -3388,9 +3401,9 @@
 <dd>
 <div class="block">A <code>ListenerAdapter</code> that listen private messages and send them to the underlying <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html#PrivateMessageListener-fr.zelus.jarvis.core.JarvisCore-">PrivateMessageListener(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">PrivateMessageListener</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html#PrivateMessageListener-fr.zelus.jarvis.core.JarvisCore-fr.zelus.jarvis.plugins.discord.module.io.DiscordInputProvider-">PrivateMessageListener(JarvisCore, DiscordInputProvider)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">PrivateMessageListener</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>PrivateMessageListener</code></a> from the provided <code>jarvisCore</code>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>PrivateMessageListener</code></a> from the provided <code>jarvisCore</code> and <code>discordInputProvider</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#PROJECT_ID_KEY">PROJECT_ID_KEY</a></span> - Static variable in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
