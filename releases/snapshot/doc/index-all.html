@@ -788,6 +788,10 @@
 <dd>
 <div class="block">The default language processed by DialogFlow.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/server/JarvisServer.html#DEFAULT_SERVER_PORT">DEFAULT_SERVER_PORT</a></span> - Static variable in class fr.zelus.jarvis.server.<a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server">JarvisServer</a></dt>
+<dd>
+<div class="block">The default port to use.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/util/IntentSwitch.html#defaultCase-org.eclipse.emf.ecore.EObject-">defaultCase(EObject)</a></span> - Method in class fr.zelus.jarvis.intent.util.<a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="class in fr.zelus.jarvis.intent.util">IntentSwitch</a></dt>
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>EObject</em>'.</div>
@@ -1719,6 +1723,10 @@
 <dd>
 <div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent"><code>ExecutorService</code></a> used to process <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/server/JarvisServer.html#getHttpServer--">getHttpServer()</a></span> - Method in class fr.zelus.jarvis.server.<a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server">JarvisServer</a></dt>
+<dd>
+<div class="block">Returns the underlying <code>HttpServer</code> used to receive requests.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#getImports--">getImports()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html#getImports--">getImports()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a></dt>
@@ -2174,6 +2182,10 @@
 <dd>
 <div class="block">Returns the full descriptions of the <code>Intent</code>s that are registered in the DialogFlow project.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/server/JarvisServer.html#getRegisteredWebhookEventProviders--">getRegisteredWebhookEventProviders()</a></span> - Method in class fr.zelus.jarvis.server.<a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server">JarvisServer</a></dt>
+<dd>
+<div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--">getReturnVariable()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></dt>
 <dd>
 <div class="block">Return the name of the variable to use to store the result of the <a href="fr/zelus/jarvis/core/JarvisAction.html#call--"><code>JarvisAction.call()</code></a> method.</div>
@@ -2577,6 +2589,10 @@
 <dd>
 <div class="block">Returns whether the DialogFlow client is shutdown.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/server/JarvisServer.html#isStarted--">isStarted()</a></span> - Method in class fr.zelus.jarvis.server.<a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server">JarvisServer</a></dt>
+<dd>
+<div class="block">Returns <code>true</code> if the <a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a> is started, <code>false</code> otherwise.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/util/IntentSwitch.html#isSwitchFor-org.eclipse.emf.ecore.EPackage-">isSwitchFor(EPackage)</a></span> - Method in class fr.zelus.jarvis.intent.util.<a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="class in fr.zelus.jarvis.intent.util">IntentSwitch</a></dt>
 <dd>
 <div class="block">Checks whether this is a switch for the given package.</div>
@@ -2698,9 +2714,9 @@
 <dd>
 <div class="block">The REST server used to receive external webhooks.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/server/JarvisServer.html#JarvisServer--">JarvisServer()</a></span> - Constructor for class fr.zelus.jarvis.server.<a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server">JarvisServer</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/server/JarvisServer.html#JarvisServer-org.apache.commons.configuration2.Configuration-">JarvisServer(Configuration)</a></span> - Constructor for class fr.zelus.jarvis.server.<a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server">JarvisServer</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a> with the given <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><span class="typeNameLink">JarvisSession</span></a> - Class in <a href="fr/zelus/jarvis/core/session/package-summary.html">fr.zelus.jarvis.core.session</a></dt>
 <dd>
@@ -3513,6 +3529,10 @@
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/mail/module/action/SendMail.html" title="class in fr.zelus.jarvis.plugins.mail.module.action"><code>SendMail</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>to</code>,
  <code>title</code>, and <code>body</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/server/JarvisServer.html#SERVER_PORT_KEY">SERVER_PORT_KEY</a></span> - Static variable in class fr.zelus.jarvis.server.<a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server">JarvisServer</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the server port to use.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisAction.html#session">session</a></span> - Variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></dt>
 <dd>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -126,6 +126,33 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#DEFAULT_SERVER_PORT">DEFAULT_SERVER_PORT</a></span></code>
+<div class="block">The default port to use.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#SERVER_PORT_KEY">SERVER_PORT_KEY</a></span></code>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the server port to use.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -138,8 +165,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#JarvisServer--">JarvisServer</a></span>()</code>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#JarvisServer-org.apache.commons.configuration2.Configuration-">JarvisServer</a></span>(<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a> with the given <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -158,31 +185,49 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected org.apache.http.impl.bootstrap.HttpServer</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#getHttpServer--">getHttpServer</a></span>()</code>
+<div class="block">Returns the underlying <code>HttpServer</code> used to receive requests.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#getRegisteredWebhookEventProviders--">getRegisteredWebhookEventProviders</a></span>()</code>
+<div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#isStarted--">isStarted</a></span>()</code>
+<div class="block">Returns <code>true</code> if the <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a> is started, <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-">notifyWebhookEventProviders</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)</code>
 <div class="block">Notifies the registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#registerWebhookEventProvider-fr.zelus.jarvis.io.WebhookEventProvider-">registerWebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
 <div class="block">Register a <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#start--">start</a></span>()</code>
 <div class="block">Starts the underlying <code>HttpServer</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#stop--">stop</a></span>()</code>
 <div class="block">Stops the underlying <code>HttpServer</code>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#unregisterWebhookEventProvider-fr.zelus.jarvis.io.WebhookEventProvider-">unregisterWebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
 <div class="block">Unregistered a <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>.</div>
@@ -204,24 +249,62 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="SERVER_PORT_KEY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SERVER_PORT_KEY</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> SERVER_PORT_KEY</pre>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the server port to use.</div>
+</li>
+</ul>
+<a name="DEFAULT_SERVER_PORT">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>DEFAULT_SERVER_PORT</h4>
+<pre>protected static&nbsp;int DEFAULT_SERVER_PORT</pre>
+<div class="block">The default port to use.
+ <p>
+ The server port can be customized in the constructor's <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> using the <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#SERVER_PORT_KEY"><code>SERVER_PORT_KEY</code></a>
+ key.</div>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="JarvisServer--">
+<a name="JarvisServer-org.apache.commons.configuration2.Configuration-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>JarvisServer</h4>
-<pre>public&nbsp;JarvisServer()</pre>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a>.
+<pre>public&nbsp;JarvisServer(<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a> with the given <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.
+ <p>
+ The provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> is used to specify the port the server should listen to (see
+ <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#SERVER_PORT_KEY"><code>SERVER_PORT_KEY</code></a>). If the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> does not specify a port the default value (<code>5000</code>) is used.
  <p>
  <b>Note:</b> this method does not start the underlying <code>HttpServer</code>. Use <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#start--"><code>start()</code></a> to start the
  <code>HttpServer</code> in a dedicated thread.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to initialize the <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>configuration</code> is <code>null</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#start--"><code>start()</code></a>, 
 <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#stop--"><code>stop()</code></a></dd>
@@ -236,6 +319,36 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getHttpServer--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHttpServer</h4>
+<pre>protected&nbsp;org.apache.http.impl.bootstrap.HttpServer&nbsp;getHttpServer()</pre>
+<div class="block">Returns the underlying <code>HttpServer</code> used to receive requests.
+ <p>
+ <b>Note:</b> this method is protected for testing purposes, and should not be called by client code.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <code>HttpServer</code> used to receive requests</dd>
+</dl>
+</li>
+</ul>
+<a name="isStarted--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isStarted</h4>
+<pre>public&nbsp;boolean&nbsp;isStarted()</pre>
+<div class="block">Returns <code>true</code> if the <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a> is started, <code>false</code> otherwise.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a> is started, <code>false</code> otherwise</dd>
+</dl>
+</li>
+</ul>
 <a name="start--">
 <!--   -->
 </a>
@@ -274,6 +387,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>webhookEventProvider</code> - the <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> to register</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>webhookEventProvider</code> is <code>null</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-"><code>notifyWebhookEventProviders(String, Object)</code></a>, 
 <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#acceptContentType-java.lang.String-"><code>WebhookEventProvider.acceptContentType(String)</code></a>, 
@@ -295,6 +410,22 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>webhookEventProvider</code> - the <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> to unregister</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>webhookEventProvider</code> is <code>null</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getRegisteredWebhookEventProviders--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRegisteredWebhookEventProviders</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&gt;&nbsp;getRegisteredWebhookEventProviders()</pre>
+<div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containiong the registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -376,13 +507,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
