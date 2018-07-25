@@ -142,6 +142,12 @@ extends <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" ti
 <div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a> from the provided <code>sessionName</code>.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html#DialogFlowSession-com.google.cloud.dialogflow.v2.SessionName-org.apache.commons.configuration2.Configuration-">DialogFlowSession</a></span>(com.google.cloud.dialogflow.v2.SessionName&nbsp;sessionName,
+                 <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a> from the provided <code>sessionName</code> and <code>configuration</code>.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -195,17 +201,41 @@ extends <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" ti
 <a name="DialogFlowSession-com.google.cloud.dialogflow.v2.SessionName-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>DialogFlowSession</h4>
 <pre>public&nbsp;DialogFlowSession(com.google.cloud.dialogflow.v2.SessionName&nbsp;sessionName)</pre>
 <div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a> from the provided <code>sessionName</code>.
  <p>
  This constructor sets the <code>sessionId</code> value by calling <code>SessionName.toString()</code>, that may not be
- unique in some rare cases. Use <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html#getSessionName--"><code>getSessionName()</code></a> to compare <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a>s.</div>
+ unique in some rare cases. Use <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html#getSessionName--"><code>getSessionName()</code></a> to compare <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a>s.
+ <p>
+ See <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html#DialogFlowSession-com.google.cloud.dialogflow.v2.SessionName-org.apache.commons.configuration2.Configuration-"><code>DialogFlowSession(SessionName, Configuration)</code></a> to construct a <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a> with a
+ given <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sessionName</code> - the raw DialogFlow session</dd>
+</dl>
+</li>
+</ul>
+<a name="DialogFlowSession-com.google.cloud.dialogflow.v2.SessionName-org.apache.commons.configuration2.Configuration-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>DialogFlowSession</h4>
+<pre>public&nbsp;DialogFlowSession(com.google.cloud.dialogflow.v2.SessionName&nbsp;sessionName,
+                         <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a> from the provided <code>sessionName</code> and <code>configuration</code>.
+ <p>
+ This constructor sets the <code>sessionId</code> value by calling <code>SessionName.toString()</code>, that may not be
+ unique in some rare cases? Use <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html#getSessionName--"><code>getSessionName()</code></a> to compare <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a>s.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sessionName</code> - the raw DialogFlow session</dd>
+<dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> parameterizing the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html#JarvisSession-java.lang.String-org.apache.commons.configuration2.Configuration-"><code>JarvisSession.JarvisSession(String, Configuration)</code></a></dd>
 </dl>
 </li>
 </ul>

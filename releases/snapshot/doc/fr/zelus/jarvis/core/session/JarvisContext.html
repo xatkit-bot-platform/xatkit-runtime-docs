@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -131,6 +131,27 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#VARIABLE_TIMEOUT_KEY">VARIABLE_TIMEOUT_KEY</a></span></code>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store maximum time to spend waiting for a context variable (in seconds).</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -145,6 +166,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#JarvisContext--">JarvisContext</a></span>()</code>
 <div class="block">Constructs a new empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#JarvisContext-org.apache.commons.configuration2.Configuration-">JarvisContext</a></span>(<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
+<div class="block">Constructs a new empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> with the given <code>configuration</code>.</div>
 </td>
 </tr>
 </table>
@@ -188,6 +214,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#getVariableTimeout--">getVariableTimeout</a></span>()</code>
+<div class="block">Returns the amount of time the <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> can spend waiting for a context variable (in seconds).</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#setContextValue-java.lang.String-java.lang.String-java.lang.Object-">setContextValue</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;context,
                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
@@ -211,6 +243,24 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="VARIABLE_TIMEOUT_KEY">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>VARIABLE_TIMEOUT_KEY</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> VARIABLE_TIMEOUT_KEY</pre>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store maximum time to spend waiting for a context variable (in seconds).</div>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -220,11 +270,37 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <a name="JarvisContext--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>JarvisContext</h4>
 <pre>public&nbsp;JarvisContext()</pre>
-<div class="block">Constructs a new empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a>.</div>
+<div class="block">Constructs a new empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a>.
+ <p>
+ See <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#JarvisContext-org.apache.commons.configuration2.Configuration-"><code>JarvisContext(Configuration)</code></a> to construct a <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> with a given
+ <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#JarvisContext-org.apache.commons.configuration2.Configuration-"><code>JarvisContext(Configuration)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="JarvisContext-org.apache.commons.configuration2.Configuration-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>JarvisContext</h4>
+<pre>public&nbsp;JarvisContext(<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
+<div class="block">Constructs a new empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> with the given <code>configuration</code>.
+ <p>
+ The provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> contains information to customize the <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> behavior, such
+ as the <code>timeout</code> to retrieve <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html?is-external=true" title="class or interface in java.util.concurrent"><code>Future</code></a> variables.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> parameterizing the <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>configuration</code> is <code>null</code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -235,6 +311,22 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getVariableTimeout--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getVariableTimeout</h4>
+<pre>public&nbsp;int&nbsp;getVariableTimeout()</pre>
+<div class="block">Returns the amount of time the <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> can spend waiting for a context variable (in seconds).
+ <p>
+ This value can be set in this class' <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> constructor parameter.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the amount of time the <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> can spend waiting for a context variable (in seconds)</dd>
+</dl>
+</li>
+</ul>
 <a name="setContextValue-java.lang.String-java.lang.String-java.lang.Object-">
 <!--   -->
 </a>
@@ -408,13 +500,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

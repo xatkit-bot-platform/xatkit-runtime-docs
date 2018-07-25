@@ -567,7 +567,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Creates a new <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> for the provided <code>userId</code>.
  <p>
  The created session wraps the internal DialogFlow session that is used on the DialogFlow project to retrieve
- conversation parts from a given user.</div>
+ conversation parts from a given user.
+ <p>
+ The returned <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> is configured by the global <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> provided in
+ <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-"><code>DialogFlowApi(JarvisCore, Configuration)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sessionId</code> - the identifier to create a session for</dd>

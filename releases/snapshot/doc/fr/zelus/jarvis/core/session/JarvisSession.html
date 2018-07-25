@@ -144,7 +144,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html#JarvisSession-java.lang.String-">JarvisSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
-<div class="block">Constructs a new, empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionID</code>.</div>
+<div class="block">Constructs a new, empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionId</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html#JarvisSession-java.lang.String-org.apache.commons.configuration2.Configuration-">JarvisSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId,
+             <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
+<div class="block">Constructs a new, empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionId</code> and <code>configuration</code>.</div>
 </td>
 </tr>
 </table>
@@ -199,16 +205,37 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <a name="JarvisSession-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>JarvisSession</h4>
 <pre>public&nbsp;JarvisSession(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</pre>
-<div class="block">Constructs a new, empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionID</code>.</div>
+<div class="block">Constructs a new, empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionId</code>.
+ See <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html#JarvisSession-java.lang.String-org.apache.commons.configuration2.Configuration-"><code>JarvisSession(String, Configuration)</code></a> to construct a <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> with a given
+ <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sessionId</code> - the unique identifier of the <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="JarvisSession-java.lang.String-org.apache.commons.configuration2.Configuration-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>JarvisSession</h4>
+<pre>public&nbsp;JarvisSession(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId,
+                     <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
+<div class="block">Constructs a new, empty <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionId</code> and <code>configuration</code>.
+ <p>
+ This constructor forwards the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> to the underlying <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> and can
+ be used to customize <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> properties.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sessionId</code> - the unique identifier of the <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a></dd>
+<dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> parameterizing the <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>sessionId</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>sessionId</code> or <code>configuration</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>

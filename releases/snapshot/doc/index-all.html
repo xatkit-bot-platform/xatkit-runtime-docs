@@ -853,6 +853,10 @@
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a> from the provided <code>sessionName</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowSession.html#DialogFlowSession-com.google.cloud.dialogflow.v2.SessionName-org.apache.commons.configuration2.Configuration-">DialogFlowSession(SessionName, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowSession</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowSession</code></a> from the provided <code>sessionName</code> and <code>configuration</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#disableAction-fr.zelus.jarvis.module.Action-">disableAction(Action)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
 <div class="block">Disables the <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a>.</div>
@@ -2302,6 +2306,10 @@
 <dd>
 <div class="block">Returns the value of the '<em><b>Variables</b></em>' containment reference list.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#getVariableTimeout--">getVariableTimeout()</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
+<dd>
+<div class="block">Returns the amount of time the <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> can spend waiting for a context variable (in seconds).</div>
+</dd>
 </dl>
 <a name="I:H">
 <!--   -->
@@ -2637,6 +2645,10 @@
 <dd>
 <div class="block">Constructs a new empty <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#JarvisContext-org.apache.commons.configuration2.Configuration-">JarvisContext(Configuration)</a></span> - Constructor for class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
+<dd>
+<div class="block">Constructs a new empty <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> with the given <code>configuration</code>.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">JarvisCore</span></a> - Class in <a href="fr/zelus/jarvis/core/package-summary.html">fr.zelus.jarvis.core</a></dt>
 <dd>
 <div class="block">The core component of the jarvis framework.</div>
@@ -2726,7 +2738,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisSession.html#JarvisSession-java.lang.String-">JarvisSession(String)</a></span> - Constructor for class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></dt>
 <dd>
-<div class="block">Constructs a new, empty <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionID</code>.</div>
+<div class="block">Constructs a new, empty <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionId</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisSession.html#JarvisSession-java.lang.String-org.apache.commons.configuration2.Configuration-">JarvisSession(String, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></dt>
+<dd>
+<div class="block">Constructs a new, empty <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionId</code> and <code>configuration</code>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in fr.zelus.jarvis.plugins.slack"><span class="typeNameLink">JarvisSlackUtils</span></a> - Interface in <a href="fr/zelus/jarvis/plugins/slack/package-summary.html">fr.zelus.jarvis.plugins.slack</a></dt>
 <dd>
@@ -3919,6 +3935,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE_OPERATION_COUNT">VARIABLE_OPERATION_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
 <dd>
 <div class="block">The number of operations of the '<em>Variable</em>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#VARIABLE_TIMEOUT_KEY">VARIABLE_TIMEOUT_KEY</a></span> - Static variable in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store maximum time to spend waiting for a context variable (in seconds).</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">VariableAccess</span></a> - Interface in <a href="fr/zelus/jarvis/orchestration/package-summary.html">fr.zelus.jarvis.orchestration</a></dt>
 <dd>
