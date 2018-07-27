@@ -145,11 +145,17 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#GOOGLE_CREDENTIALS_PATH_KEY">GOOGLE_CREDENTIALS_PATH_KEY</a></span></code>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the path of the <code>JSON</code> credential file for DialogFlow.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#LANGUAGE_CODE_KEY">LANGUAGE_CODE_KEY</a></span></code>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the code of the language processed by DialogFlow.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#PROJECT_ID_KEY">PROJECT_ID_KEY</a></span></code>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the unique identifier of the DialogFlow project.</div>
@@ -330,6 +336,23 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
+<a name="GOOGLE_CREDENTIALS_PATH_KEY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GOOGLE_CREDENTIALS_PATH_KEY</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> GOOGLE_CREDENTIALS_PATH_KEY</pre>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the path of the <code>JSON</code> credential file for DialogFlow.
+ <p>
+ If this key is not set the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> will use the <code>GOOGLE_APPLICATION_CREDENTIALS</code>
+ environment variable to retrieve the credentials file.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-"><code>DialogFlowApi(JarvisCore, Configuration)</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="DEFAULT_LANGUAGE_CODE">
 <!--   -->
 </a>
@@ -363,7 +386,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <li><b>jarvis.dialogflow.projectId</b>: the unique identifier of the DialogFlow project</li>
  </ul>
  The value <b>jarvis.dialogflow.language</b> is not mandatory: if no language code is provided in the
- <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> the default one (<a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DEFAULT_LANGUAGE_CODE"><code>DEFAULT_LANGUAGE_CODE</code></a> will be used.</div>
+ <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> the default one (<a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DEFAULT_LANGUAGE_CODE"><code>DEFAULT_LANGUAGE_CODE</code></a> will be used.
+ <p>
+ The value <b>jarvis.dialogflow.credentials.path</b> is not mandatory either: if no credential path is provided
+ in the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> will use the <code>GOOGLE_APPLICATION_CREDENTIALS</code>
+ environment variable to retrieve the credentials file.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>jarvisCore</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance managing the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a></dd>
