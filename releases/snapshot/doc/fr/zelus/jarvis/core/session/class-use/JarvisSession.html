@@ -103,14 +103,18 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#fr.zelus.jarvis.plugins.log.module.action">fr.zelus.jarvis.plugins.log.module.action</a></td>
+<td class="colFirst"><a href="#fr.zelus.jarvis.plugins.emf.module.action">fr.zelus.jarvis.plugins.emf.module.action</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#fr.zelus.jarvis.plugins.mail.module.action">fr.zelus.jarvis.plugins.mail.module.action</a></td>
+<td class="colFirst"><a href="#fr.zelus.jarvis.plugins.log.module.action">fr.zelus.jarvis.plugins.log.module.action</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#fr.zelus.jarvis.plugins.mail.module.action">fr.zelus.jarvis.plugins.mail.module.action</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#fr.zelus.jarvis.plugins.slack.module.action">fr.zelus.jarvis.plugins.slack.module.action</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -329,6 +333,35 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="fr.zelus.jarvis.plugins.emf.module.action">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a> in <a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/action/package-summary.html">fr.zelus.jarvis.plugins.emf.module.action</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/action/package-summary.html">fr.zelus.jarvis.plugins.emf.module.action</a> with parameters of type <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html#CreateResource-fr.zelus.jarvis.plugins.emf.module.EMFModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-org.eclipse.emf.ecore.EObject-">CreateResource</a></span>(<a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module">EMFModule</a>&nbsp;containingModule,
+              <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
+              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+              <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>&nbsp;contents)</code>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html" title="class in fr.zelus.jarvis.plugins.emf.module.action"><code>CreateResource</code></a> action from the provided <code>containingModule</code>, <code>session</code>,
+ <code>uri</code>, and <code>content</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html#SaveResourceInFile-fr.zelus.jarvis.plugins.emf.module.EMFModule-fr.zelus.jarvis.core.session.JarvisSession-org.eclipse.emf.ecore.resource.Resource-">SaveResourceInFile</a></span>(<a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module">EMFModule</a>&nbsp;containingModule,
+                  <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
+                  <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">Resource</a>&nbsp;resource)</code>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html" title="class in fr.zelus.jarvis.plugins.emf.module.action"><code>SaveResourceInFile</code></a> action from the provided <code>containingModule</code>, <code>session</code>, and <code>resource</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="fr.zelus.jarvis.plugins.log.module.action">
 <!--   -->
 </a>
@@ -406,6 +439,15 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#PostFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.io.File-java.lang.String-">PostFileMessage</a></span>(<a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a>&nbsp;containingModule,
+               <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
+               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+               <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
+               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</code>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostFileMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code>, <code>file</code>, and <code>channel</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html#PostMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-">PostMessage</a></span>(<a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a>&nbsp;containingModule,
            <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
@@ -413,11 +455,19 @@
 <div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code> and <code>channel</code>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/Reply.html#Reply-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-">Reply</a></span>(<a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a>&nbsp;containingModule,
      <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/Reply.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>Reply</code></a> with the provided <code>containingModule</code>, <code>session</code>, and <code>message</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/ReplyFileMessage.html#ReplyFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.io.File-">ReplyFileMessage</a></span>(<a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a>&nbsp;containingModule,
+                <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
+                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/ReplyFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>ReplyFileMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code>, and <code>file</code>.</div>
 </td>
 </tr>
 </tbody>

@@ -236,6 +236,14 @@
 <dd>
 <div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.emf.module.action.<a href="fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html" title="class in fr.zelus.jarvis.plugins.emf.module.action">CreateResource</a></dt>
+<dd>
+<div class="block">Creates the EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> with the provided <code>uri</code> and <code>contents</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.emf.module.action.<a href="fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html" title="class in fr.zelus.jarvis.plugins.emf.module.action">SaveResourceInFile</a></dt>
+<dd>
+<div class="block">Saves the EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and returns the persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/log/module/action/LogAction.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.log.module.action.<a href="fr/zelus/jarvis/plugins/log/module/action/LogAction.html" title="class in fr.zelus.jarvis.plugins.log.module.action">LogAction</a></dt>
 <dd>
 <div class="block">Logs the provided <code>message</code> with the given <code>logLevel</code>.</div>
@@ -243,6 +251,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/mail/module/action/SendMail.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.mail.module.action.<a href="fr/zelus/jarvis/plugins/mail/module/action/SendMail.html" title="class in fr.zelus.jarvis.plugins.mail.module.action">SendMail</a></dt>
 <dd>
 <div class="block">Sends an email to the provided <code>to</code> address with the given <code>title</code> and <code>body</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostFileMessage</a></dt>
+<dd>
+<div class="block">Uploads the provide <code>file</code> and post it with the associated <code>message</code> to the given <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostMessage</a></dt>
 <dd>
@@ -756,6 +768,15 @@
 <dd>
 <div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code><em>Recognized Intent</em></code></a>'.</div>
 </dd>
+<dt><a href="fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html" title="class in fr.zelus.jarvis.plugins.emf.module.action"><span class="typeNameLink">CreateResource</span></a> - Class in <a href="fr/zelus/jarvis/plugins/emf/module/action/package-summary.html">fr.zelus.jarvis.plugins.emf.module.action</a></dt>
+<dd>
+<div class="block">A <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> that creates an EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> with a given <code>uri</code> and <code>content</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html#CreateResource-fr.zelus.jarvis.plugins.emf.module.EMFModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-org.eclipse.emf.ecore.EObject-">CreateResource(EMFModule, JarvisSession, String, EObject)</a></span> - Constructor for class fr.zelus.jarvis.plugins.emf.module.action.<a href="fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html" title="class in fr.zelus.jarvis.plugins.emf.module.action">CreateResource</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html" title="class in fr.zelus.jarvis.plugins.emf.module.action"><code>CreateResource</code></a> action from the provided <code>containingModule</code>, <code>session</code>,
+ <code>uri</code>, and <code>content</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#createSession-java.lang.String-">createSession(String)</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">Creates a new <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> for the provided <code>userId</code>.</div>
@@ -1030,6 +1051,13 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module"><span class="typeNameLink">EMFModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/emf/module/package-summary.html">fr.zelus.jarvis.plugins.emf.module</a></dt>
+<dd>
+<div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> concrete implementation provided EMF-related functionality that can be used in
+ orchestration models.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/EMFModule.html#EMFModule--">EMFModule()</a></span> - Constructor for class fr.zelus.jarvis.plugins.emf.module.<a href="fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module">EMFModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction(Action)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
@@ -1417,6 +1445,10 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/discord/module/io/package-summary.html">fr.zelus.jarvis.plugins.discord.module.io</a> - package fr.zelus.jarvis.plugins.discord.module.io</dt>
 <dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/plugins/emf/module/package-summary.html">fr.zelus.jarvis.plugins.emf.module</a> - package fr.zelus.jarvis.plugins.emf.module</dt>
+<dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/plugins/emf/module/action/package-summary.html">fr.zelus.jarvis.plugins.emf.module.action</a> - package fr.zelus.jarvis.plugins.emf.module.action</dt>
+<dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/log/module/package-summary.html">fr.zelus.jarvis.plugins.log.module</a> - package fr.zelus.jarvis.plugins.log.module</dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/log/module/action/package-summary.html">fr.zelus.jarvis.plugins.log.module.action</a> - package fr.zelus.jarvis.plugins.log.module.action</dt>
@@ -1525,6 +1557,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html#getAllIntentDefinitions--">getAllIntentDefinitions()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">EventDefinitionRegistry</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/Reply.html#getChannel-fr.zelus.jarvis.core.session.JarvisContext-">getChannel(JarvisContext)</a></span> - Static method in class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/Reply.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">Reply</a></dt>
+<dd>
+<div class="block">Returns the Slack channel associated to the user input.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getContext--">getContext()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getContext--">getContext()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
@@ -3423,6 +3459,15 @@
 <dd>
 <div class="block">Parses the provided raw HTTP request content.</div>
 </dd>
+<dt><a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><span class="typeNameLink">PostFileMessage</span></a> - Class in <a href="fr/zelus/jarvis/plugins/slack/module/action/package-summary.html">fr.zelus.jarvis.plugins.slack.module.action</a></dt>
+<dd>
+<div class="block">A <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> that uploads a <code>file</code> with an associated <code>message</code> to a
+ given Slack <code>channel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#PostFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.io.File-java.lang.String-">PostFileMessage(SlackModule, JarvisSession, String, File, String)</a></span> - Constructor for class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostFileMessage</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostFileMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code>, <code>file</code>, and <code>channel</code>.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/plugins/discord/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.discord.module.action"><span class="typeNameLink">PostMessage</span></a> - Class in <a href="fr/zelus/jarvis/plugins/discord/module/action/package-summary.html">fr.zelus.jarvis.plugins.discord.module.action</a></dt>
 <dd>
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> that posts a <code>message</code> to a given Discord <code>channel</code>.</div>
@@ -3527,6 +3572,15 @@
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/action/Reply.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>Reply</code></a> with the provided <code>containingModule</code>, <code>session</code>, and <code>message</code>.</div>
 </dd>
+<dt><a href="fr/zelus/jarvis/plugins/slack/module/action/ReplyFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><span class="typeNameLink">ReplyFileMessage</span></a> - Class in <a href="fr/zelus/jarvis/plugins/slack/module/action/package-summary.html">fr.zelus.jarvis.plugins.slack.module.action</a></dt>
+<dd>
+<div class="block">A <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> that replies to a message by uploading a <code>file</code> using the input
+ Slack channel.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/ReplyFileMessage.html#ReplyFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.io.File-">ReplyFileMessage(SlackModule, JarvisSession, String, File)</a></span> - Constructor for class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/ReplyFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">ReplyFileMessage</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/action/ReplyFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>ReplyFileMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code>, and <code>file</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisAction.html#returnVariable">returnVariable</a></span> - Variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></dt>
 <dd>
 <div class="block">The name of the variable to use to store the result of the <a href="fr/zelus/jarvis/core/JarvisAction.html#call--"><code>JarvisAction.call()</code></a> method.</div>
@@ -3547,6 +3601,14 @@
 </a>
 <h2 class="title">S</h2>
 <dl>
+<dt><a href="fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html" title="class in fr.zelus.jarvis.plugins.emf.module.action"><span class="typeNameLink">SaveResourceInFile</span></a> - Class in <a href="fr/zelus/jarvis/plugins/emf/module/action/package-summary.html">fr.zelus.jarvis.plugins.emf.module.action</a></dt>
+<dd>
+<div class="block">A <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> that saves the provided EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and returns the persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html#SaveResourceInFile-fr.zelus.jarvis.plugins.emf.module.EMFModule-fr.zelus.jarvis.core.session.JarvisSession-org.eclipse.emf.ecore.resource.Resource-">SaveResourceInFile(EMFModule, JarvisSession, Resource)</a></span> - Constructor for class fr.zelus.jarvis.plugins.emf.module.action.<a href="fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html" title="class in fr.zelus.jarvis.plugins.emf.module.action">SaveResourceInFile</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html" title="class in fr.zelus.jarvis.plugins.emf.module.action"><code>SaveResourceInFile</code></a> action from the provided <code>containingModule</code>, <code>session</code>, and <code>resource</code>.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/plugins/mail/module/action/SendMail.html" title="class in fr.zelus.jarvis.plugins.mail.module.action"><span class="typeNameLink">SendMail</span></a> - Class in <a href="fr/zelus/jarvis/plugins/mail/module/action/package-summary.html">fr.zelus.jarvis.plugins.mail.module.action</a></dt>
 <dd>
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> that sends an email to the provided <code>address</code> with the given <code>body</code> and <code>title</code>.</div>
