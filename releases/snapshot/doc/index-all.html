@@ -204,7 +204,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html#basicGetEvent--">basicGetEvent()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationLinkImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#basicGetParameter--">basicGetParameter()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#basicGetParameter--">basicGetParameter()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#basicGetReferredVariable--">basicGetReferredVariable()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -300,10 +300,6 @@
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Definition</em>'.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/util/IntentSwitch.html#caseIntentParameter-fr.zelus.jarvis.intent.IntentParameter-">caseIntentParameter(IntentParameter)</a></span> - Method in class fr.zelus.jarvis.intent.util.<a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="class in fr.zelus.jarvis.intent.util">IntentSwitch</a></dt>
-<dd>
-<div class="block">Returns the result of interpreting the object as an instance of '<em>Parameter</em>'.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/util/ModuleSwitch.html#caseModule-fr.zelus.jarvis.module.Module-">caseModule(Module)</a></span> - Method in class fr.zelus.jarvis.module.util.<a href="fr/zelus/jarvis/module/util/ModuleSwitch.html" title="class in fr.zelus.jarvis.module.util">ModuleSwitch</a></dt>
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Module</em>'.</div>
@@ -320,13 +316,17 @@
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Parameter</em>'.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html#caseParameterValue-fr.zelus.jarvis.orchestration.ParameterValue-">caseParameterValue(ParameterValue)</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationSwitch</a></dt>
-<dd>
-<div class="block">Returns the result of interpreting the object as an instance of '<em>Parameter Value</em>'.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/util/IntentSwitch.html#caseRecognizedIntent-fr.zelus.jarvis.intent.RecognizedIntent-">caseRecognizedIntent(RecognizedIntent)</a></span> - Method in class fr.zelus.jarvis.intent.util.<a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="class in fr.zelus.jarvis.intent.util">IntentSwitch</a></dt>
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Recognized Intent</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html#caseStringValue-fr.zelus.jarvis.orchestration.StringValue-">caseStringValue(StringValue)</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationSwitch</a></dt>
+<dd>
+<div class="block">Returns the result of interpreting the object as an instance of '<em>String Value</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html#caseValue-fr.zelus.jarvis.orchestration.Value-">caseValue(Value)</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationSwitch</a></dt>
+<dd>
+<div class="block">Returns the result of interpreting the object as an instance of '<em>Value</em>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html#caseVariable-fr.zelus.jarvis.orchestration.Variable-">caseVariable(Variable)</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationSwitch</a></dt>
 <dd>
@@ -365,7 +365,9 @@
 <div class="block">Disconnects the underlying Slack RTM client.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#configuration">configuration</a></span> - Variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to initialize this class.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Object:A-">construct(Class&lt;T&gt;, Object[])</a></span> - Static method in class fr.zelus.jarvis.util.<a href="fr/zelus/jarvis/util/Loader.html" title="class in fr.zelus.jarvis.util">Loader</a></dt>
 <dd>
 <div class="block">Constructs a new instance of <code>clazz</code> with the given <code>parameters</code>.</div>
@@ -674,16 +676,6 @@
 <dd>
 <div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code><em>Definition</em></code></a>'.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createIntentParameter--">createIntentParameter()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentFactoryImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentFactory.html#createIntentParameter--">createIntentParameter()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentFactory.html" title="interface in fr.zelus.jarvis.intent">IntentFactory</a></dt>
-<dd>
-<div class="block">Returns a new object of class '<em>Parameter</em>'.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/util/IntentAdapterFactory.html#createIntentParameterAdapter--">createIntentParameterAdapter()</a></span> - Method in class fr.zelus.jarvis.intent.util.<a href="fr/zelus/jarvis/intent/util/IntentAdapterFactory.html" title="class in fr.zelus.jarvis.intent.util">IntentAdapterFactory</a></dt>
-<dd>
-<div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/intent/IntentParameter.html" title="interface in fr.zelus.jarvis.intent"><code><em>Parameter</em></code></a>'.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction(ActionInstance, JarvisSession)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
 <div class="block">Creates a new <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> instance from the provided <a href="fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>.</div>
@@ -748,16 +740,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#createParameters-java.util.List-">createParameters(List&lt;Context&gt;)</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationFactoryImpl.html#createParameterValue--">createParameterValue()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationFactoryImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationFactoryImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html#createParameterValue--">createParameterValue()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationFactory</a></dt>
-<dd>
-<div class="block">Returns a new object of class '<em>Parameter Value</em>'.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html#createParameterValueAdapter--">createParameterValueAdapter()</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationAdapterFactory</a></dt>
-<dd>
-<div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>Parameter Value</em></code></a>'.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createRecognizedIntent--">createRecognizedIntent()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentFactory.html#createRecognizedIntent--">createRecognizedIntent()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentFactory.html" title="interface in fr.zelus.jarvis.intent">IntentFactory</a></dt>
@@ -781,8 +763,22 @@
 <dd>
 <div class="block">Creates a new <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> for the provided <code>userId</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationFactoryImpl.html#createStringValue--">createStringValue()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationFactoryImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationFactoryImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html#createStringValue--">createStringValue()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationFactory</a></dt>
+<dd>
+<div class="block">Returns a new object of class '<em>String Value</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html#createStringValueAdapter--">createStringValueAdapter()</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationAdapterFactory</a></dt>
+<dd>
+<div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/orchestration/StringValue.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>String Value</em></code></a>'.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#createTrainingPhrase-java.lang.String-java.util.List-">createTrainingPhrase(String, List&lt;Context&gt;)</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html#createValueAdapter--">createValueAdapter()</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationAdapterFactory</a></dt>
+<dd>
+<div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/orchestration/Value.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>Value</em></code></a>'.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationFactoryImpl.html#createVariable--">createVariable()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationFactoryImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html#createVariable--">createVariable()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationFactory</a></dt>
@@ -952,8 +948,6 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">EventProviderDefinitionImpl</a></dt>
@@ -968,7 +962,9 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1030,8 +1026,6 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">EventProviderDefinitionImpl</a></dt>
@@ -1046,7 +1040,9 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1119,8 +1115,6 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">EventProviderDefinitionImpl</a></dt>
@@ -1135,7 +1129,9 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1152,8 +1148,6 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/EventInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">EventInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/RecognizedIntentImpl.html" title="class in fr.zelus.jarvis.intent.impl">RecognizedIntentImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1173,7 +1167,9 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1191,8 +1187,6 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">EventProviderDefinitionImpl</a></dt>
@@ -1207,7 +1201,9 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1232,14 +1228,6 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html#EVENT_DEFINITION__NAME">EVENT_DEFINITION__NAME</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html" title="interface in fr.zelus.jarvis.intent">IntentPackage.Literals</a></dt>
 <dd>
 <div class="block">The meta object literal for the '<em><b>Name</b></em>' attribute feature.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#EVENT_DEFINITION__OUT_CONTEXT_PARAMETERS">EVENT_DEFINITION__OUT_CONTEXT_PARAMETERS</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">The feature id for the '<em><b>Out Context Parameters</b></em>' containment reference list.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html#EVENT_DEFINITION__OUT_CONTEXT_PARAMETERS">EVENT_DEFINITION__OUT_CONTEXT_PARAMETERS</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html" title="interface in fr.zelus.jarvis.intent">IntentPackage.Literals</a></dt>
-<dd>
-<div class="block">The meta object literal for the '<em><b>Out Context Parameters</b></em>' containment reference list feature.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#EVENT_DEFINITION__OUT_CONTEXTS">EVENT_DEFINITION__OUT_CONTEXTS</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
 <dd>
@@ -1392,7 +1380,9 @@
 <div class="block">The <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing the <a href="fr/zelus/jarvis/core/JarvisModule.EventProviderThread.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule.EventProviderThread</code></a>s associated to this module.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.EventProviderThread.html#EventProviderThread-fr.zelus.jarvis.io.EventProvider-">EventProviderThread(EventProvider)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.EventProviderThread.html" title="class in fr.zelus.jarvis.core">JarvisModule.EventProviderThread</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisModule.EventProviderThread.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule.EventProviderThread</code></a> to run the provided <code>eventProvider</code></div>
+</dd>
 </dl>
 <a name="I:F">
 <!--   -->
@@ -1693,12 +1683,6 @@
 <dd>
 <div class="block">Returns the meta object for the attribute '<a href="fr/zelus/jarvis/intent/EventDefinition.html#getName--"><code><em>Name</em></code></a>'.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getEventDefinition_OutContextParameters--">getEventDefinition_OutContextParameters()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getEventDefinition_OutContextParameters--">getEventDefinition_OutContextParameters()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">Returns the meta object for the containment reference list '<a href="fr/zelus/jarvis/intent/EventDefinition.html#getOutContextParameters--"><code><em>Out Context Parameters</em></code></a>'.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getEventDefinition_OutContexts--">getEventDefinition_OutContexts()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getEventDefinition_OutContexts--">getEventDefinition_OutContexts()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
@@ -1738,7 +1722,9 @@
 <div class="block">Returns the meta object for the containment reference list '<a href="fr/zelus/jarvis/intent/EventInstance.html#getOutContextValues--"><code><em>Out Context Values</em></code></a>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.EventProviderThread.html#getEventProvider--">getEventProvider()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.EventProviderThread.html" title="class in fr.zelus.jarvis.core">JarvisModule.EventProviderThread</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> run by this <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang"><code>Thread</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html#getEventProviderDefinition--">getEventProviderDefinition()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html" title="class in fr.zelus.jarvis.module.impl">ModulePackageImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#getEventProviderDefinition--">getEventProviderDefinition()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
@@ -1841,24 +1827,6 @@
 <dd>
 <div class="block">Returns the package supported by this factory.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getIntentParameter--">getIntentParameter()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getIntentParameter--">getIntentParameter()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">Returns the meta object for class '<a href="fr/zelus/jarvis/intent/IntentParameter.html" title="interface in fr.zelus.jarvis.intent"><code><em>Parameter</em></code></a>'.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getIntentParameter_Key--">getIntentParameter_Key()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getIntentParameter_Key--">getIntentParameter_Key()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">Returns the meta object for the attribute '<a href="fr/zelus/jarvis/intent/IntentParameter.html#getKey--"><code><em>Key</em></code></a>'.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getIntentParameter_Type--">getIntentParameter_Type()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getIntentParameter_Type--">getIntentParameter_Type()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">Returns the meta object for the attribute '<a href="fr/zelus/jarvis/intent/IntentParameter.html#getType--"><code><em>Type</em></code></a>'.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisSession.html#getJarvisContext--">getJarvisContext()</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></dt>
 <dd>
 <div class="block">Returns the session's <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> holding context-related variables.</div>
@@ -1904,12 +1872,6 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html#getJdaClient--">getJdaClient()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordInputProvider</a></dt>
 <dd>
 <div class="block">Returns the <code>JDA</code> client associated to this class.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#getKey--">getKey()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentParameter.html#getKey--">getKey()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentParameter.html" title="interface in fr.zelus.jarvis.intent">IntentParameter</a></dt>
-<dd>
-<div class="block">Returns the value of the '<em><b>Key</b></em>' attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#getKey--">getKey()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -2119,12 +2081,6 @@
 <dd>
 <div class="block">Retrieves or creates the <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>sessionId</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/EventDefinition.html#getOutContextParameters--">getOutContextParameters()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent">EventDefinition</a></dt>
-<dd>
-<div class="block">Returns the value of the '<em><b>Out Context Parameters</b></em>' containment reference list.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html#getOutContextParameters--">getOutContextParameters()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">EventDefinitionImpl</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/EventDefinition.html#getOutContexts--">getOutContexts()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent">EventDefinition</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Out Contexts</b></em>' containment reference list.</div>
@@ -2160,9 +2116,9 @@
 <dd>
 <div class="block">Returns the meta object for class '<a href="fr/zelus/jarvis/module/Parameter.html" title="interface in fr.zelus.jarvis.module"><code><em>Parameter</em></code></a>'.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#getParameter--">getParameter()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#getParameter--">getParameter()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ValueImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/ParameterValue.html#getParameter--">getParameter()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration">ParameterValue</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/Value.html#getParameter--">getParameter()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/Value.html" title="interface in fr.zelus.jarvis.orchestration">Value</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Parameter</b></em>' reference.</div>
 </dd>
@@ -2190,24 +2146,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#getParameters--">getParameters()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getParameterValue--">getParameterValue()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getParameterValue--">getParameterValue()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
-<dd>
-<div class="block">Returns the meta object for class '<a href="fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>Parameter Value</em></code></a>'.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getParameterValue_Parameter--">getParameterValue_Parameter()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getParameterValue_Parameter--">getParameterValue_Parameter()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
-<dd>
-<div class="block">Returns the meta object for the reference '<a href="fr/zelus/jarvis/orchestration/ParameterValue.html#getParameter--"><code><em>Parameter</em></code></a>'.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getParameterValue_Value--">getParameterValue_Value()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getParameterValue_Value--">getParameterValue_Value()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
-<dd>
-<div class="block">Returns the meta object for the attribute '<a href="fr/zelus/jarvis/orchestration/ParameterValue.html#getValue--"><code><em>Value</em></code></a>'.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#getProjectId--">getProjectId()</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">Returns the DialogFlow project unique identifier.</div>
@@ -2274,6 +2212,18 @@
 <dd>
 <div class="block">Returns the Slack bot API token used to initialize this class.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getStringValue--">getStringValue()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getStringValue--">getStringValue()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for class '<a href="fr/zelus/jarvis/orchestration/StringValue.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>String Value</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getStringValue_Value--">getStringValue_Value()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getStringValue_Value--">getStringValue_Value()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for the attribute '<a href="fr/zelus/jarvis/orchestration/StringValue.html#getValue--"><code><em>Value</em></code></a>'.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/ContextParameter.html#getTextFragment--">getTextFragment()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Text Fragment</b></em>' attribute.</div>
@@ -2294,12 +2244,6 @@
 <dd>
 <div class="block">Returns the value of the '<em><b>Training Sentences</b></em>' attribute list.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#getType--">getType()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentParameter.html#getType--">getType()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentParameter.html" title="interface in fr.zelus.jarvis.intent">IntentParameter</a></dt>
-<dd>
-<div class="block">Returns the value of the '<em><b>Type</b></em>' attribute.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#getType--">getType()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/Parameter.html#getType--">getType()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/Parameter.html" title="interface in fr.zelus.jarvis.module">Parameter</a></dt>
@@ -2312,11 +2256,23 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#getValue--">getValue()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#getValue--">getValue()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getValue--">getValue()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/ParameterValue.html#getValue--">getValue()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration">ParameterValue</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#getValue--">getValue()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getValue--">getValue()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for class '<a href="fr/zelus/jarvis/orchestration/Value.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>Value</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/StringValue.html#getValue--">getValue()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/StringValue.html" title="interface in fr.zelus.jarvis.orchestration">StringValue</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Value</b></em>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getValue_Parameter--">getValue_Parameter()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getValue_Parameter--">getValue_Parameter()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for the reference '<a href="fr/zelus/jarvis/orchestration/Value.html#getParameter--"><code><em>Parameter</em></code></a>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/ActionInstance.html#getValues--">getValues()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a></dt>
 <dd>
@@ -2490,10 +2446,6 @@
 <dd>
 <div class="block">The feature id for the '<em><b>Name</b></em>' attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#INTENT_DEFINITION__OUT_CONTEXT_PARAMETERS">INTENT_DEFINITION__OUT_CONTEXT_PARAMETERS</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">The feature id for the '<em><b>Out Context Parameters</b></em>' containment reference list.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#INTENT_DEFINITION__OUT_CONTEXTS">INTENT_DEFINITION__OUT_CONTEXTS</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
 <dd>
 <div class="block">The feature id for the '<em><b>Out Contexts</b></em>' containment reference list.</div>
@@ -2513,38 +2465,6 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#INTENT_DEFINITION_OPERATION_COUNT">INTENT_DEFINITION_OPERATION_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
 <dd>
 <div class="block">The number of operations of the '<em>Definition</em>' class.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#INTENT_PARAMETER">INTENT_PARAMETER</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">The meta object id for the '<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl"><code><em>Parameter</em></code></a>' class.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html#INTENT_PARAMETER">INTENT_PARAMETER</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html" title="interface in fr.zelus.jarvis.intent">IntentPackage.Literals</a></dt>
-<dd>
-<div class="block">The meta object literal for the '<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl"><code><em>Parameter</em></code></a>' class.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#INTENT_PARAMETER__KEY">INTENT_PARAMETER__KEY</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">The feature id for the '<em><b>Key</b></em>' attribute.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html#INTENT_PARAMETER__KEY">INTENT_PARAMETER__KEY</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html" title="interface in fr.zelus.jarvis.intent">IntentPackage.Literals</a></dt>
-<dd>
-<div class="block">The meta object literal for the '<em><b>Key</b></em>' attribute feature.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#INTENT_PARAMETER__TYPE">INTENT_PARAMETER__TYPE</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">The feature id for the '<em><b>Type</b></em>' attribute.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html#INTENT_PARAMETER__TYPE">INTENT_PARAMETER__TYPE</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html" title="interface in fr.zelus.jarvis.intent">IntentPackage.Literals</a></dt>
-<dd>
-<div class="block">The meta object literal for the '<em><b>Type</b></em>' attribute feature.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#INTENT_PARAMETER_FEATURE_COUNT">INTENT_PARAMETER_FEATURE_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">The number of structural features of the '<em>Parameter</em>' class.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#INTENT_PARAMETER_OPERATION_COUNT">INTENT_PARAMETER_OPERATION_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
-<dd>
-<div class="block">The number of operations of the '<em>Parameter</em>' class.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/intent/util/IntentAdapterFactory.html" title="class in fr.zelus.jarvis.intent.util"><span class="typeNameLink">IntentAdapterFactory</span></a> - Class in <a href="fr/zelus/jarvis/intent/util/package-summary.html">fr.zelus.jarvis.intent.util</a></dt>
 <dd>
@@ -2600,16 +2520,6 @@
 <dd>
 <div class="block">An implementation of the model <b>Package</b>.</div>
 </dd>
-<dt><a href="fr/zelus/jarvis/intent/IntentParameter.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">IntentParameter</span></a> - Interface in <a href="fr/zelus/jarvis/intent/package-summary.html">fr.zelus.jarvis.intent</a></dt>
-<dd>
-<div class="block">A representation of the model object '<em><b>Parameter</b></em>'.</div>
-</dd>
-<dt><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl"><span class="typeNameLink">IntentParameterImpl</span></a> - Class in <a href="fr/zelus/jarvis/intent/impl/package-summary.html">fr.zelus.jarvis.intent.impl</a></dt>
-<dd>
-<div class="block">An implementation of the model object '<em><b>Parameter</b></em>'.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#IntentParameterImpl--">IntentParameterImpl()</a></span> - Constructor for class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">IntentProvider</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
 <dd>
 <div class="block">A specialised <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> that extracts <a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> from textual user inputs.</div>
@@ -2765,7 +2675,9 @@
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/core/JarvisModule.EventProviderThread.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">JarvisModule.EventProviderThread</span></a> - Class in <a href="fr/zelus/jarvis/core/package-summary.html">fr.zelus.jarvis.core</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">The <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang"><code>Thread</code></a> class used to start <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>s.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#jarvisModulePath">jarvisModulePath</a></span> - Variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html#getJarvisModulePath--"><code><em>Jarvis Module Path</em></code></a>' attribute.</div>
@@ -2824,17 +2736,9 @@
 </a>
 <h2 class="title">K</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#key">key</a></span> - Variable in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>
-<div class="block">The cached value of the '<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#getKey--"><code><em>Key</em></code></a>' attribute.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#key">key</a></span> - Variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#getKey--"><code><em>Key</em></code></a>' attribute.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#KEY_EDEFAULT">KEY_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>
-<div class="block">The default value of the '<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#getKey--"><code><em>Key</em></code></a>' attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#KEY_EDEFAULT">KEY_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>
@@ -3347,10 +3251,6 @@
 <dd>
 <div class="block">Creates an instance of the switch.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html#outContextParameters">outContextParameters</a></span> - Variable in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">EventDefinitionImpl</a></dt>
-<dd>
-<div class="block">The cached value of the '<a href="fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html#getOutContextParameters--"><code><em>Out Context Parameters</em></code></a>' containment reference list.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html#outContexts">outContexts</a></span> - Variable in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">EventDefinitionImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html#getOutContexts--"><code><em>Out Contexts</em></code></a>' containment reference list.</div>
@@ -3377,9 +3277,9 @@
 <dd>
 <div class="block">A representation of the model object '<em><b>Parameter</b></em>'.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#parameter">parameter</a></span> - Variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#parameter">parameter</a></span> - Variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ValueImpl</a></dt>
 <dd>
-<div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#getParameter--"><code><em>Parameter</em></code></a>' reference.</div>
+<div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#getParameter--"><code><em>Parameter</em></code></a>' reference.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.Literals.html#PARAMETER__KEY">PARAMETER__KEY</a></span> - Static variable in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.Literals.html" title="interface in fr.zelus.jarvis.module">ModulePackage.Literals</a></dt>
 <dd>
@@ -3405,38 +3305,6 @@
 <dd>
 <div class="block">The number of operations of the '<em>Parameter</em>' class.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#PARAMETER_VALUE">PARAMETER_VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
-<dd>
-<div class="block">The meta object literal for the '<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><code><em>Parameter Value</em></code></a>' class.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#PARAMETER_VALUE">PARAMETER_VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
-<dd>
-<div class="block">The meta object id for the '<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><code><em>Parameter Value</em></code></a>' class.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#PARAMETER_VALUE__PARAMETER">PARAMETER_VALUE__PARAMETER</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
-<dd>
-<div class="block">The meta object literal for the '<em><b>Parameter</b></em>' reference feature.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#PARAMETER_VALUE__PARAMETER">PARAMETER_VALUE__PARAMETER</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
-<dd>
-<div class="block">The feature id for the '<em><b>Parameter</b></em>' reference.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#PARAMETER_VALUE__VALUE">PARAMETER_VALUE__VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
-<dd>
-<div class="block">The meta object literal for the '<em><b>Value</b></em>' attribute feature.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#PARAMETER_VALUE__VALUE">PARAMETER_VALUE__VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
-<dd>
-<div class="block">The feature id for the '<em><b>Value</b></em>' attribute.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#PARAMETER_VALUE_FEATURE_COUNT">PARAMETER_VALUE_FEATURE_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
-<dd>
-<div class="block">The number of structural features of the '<em>Parameter Value</em>' class.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#PARAMETER_VALUE_OPERATION_COUNT">PARAMETER_VALUE_OPERATION_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
-<dd>
-<div class="block">The number of operations of the '<em>Parameter Value</em>' class.</div>
-</dd>
 <dt><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl"><span class="typeNameLink">ParameterImpl</span></a> - Class in <a href="fr/zelus/jarvis/module/impl/package-summary.html">fr.zelus.jarvis.module.impl</a></dt>
 <dd>
 <div class="block">An implementation of the model object '<em><b>Parameter</b></em>'.</div>
@@ -3451,16 +3319,6 @@
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/module/impl/ActionImpl.html#getParameters--"><code><em>Parameters</em></code></a>' containment reference list.</div>
 </dd>
-<dt><a href="fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">ParameterValue</span></a> - Interface in <a href="fr/zelus/jarvis/orchestration/package-summary.html">fr.zelus.jarvis.orchestration</a></dt>
-<dd>
-<div class="block">A representation of the model object '<em><b>Parameter Value</b></em>'.</div>
-</dd>
-<dt><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><span class="typeNameLink">ParameterValueImpl</span></a> - Class in <a href="fr/zelus/jarvis/orchestration/impl/package-summary.html">fr.zelus.jarvis.orchestration.impl</a></dt>
-<dd>
-<div class="block">An implementation of the model object '<em><b>Parameter Value</b></em>'.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#ParameterValueImpl--">ParameterValueImpl()</a></span> - Constructor for class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
 <dd>
 <div class="block">Parses the provided raw HTTP request content into a <code>JsonElement</code>.</div>
@@ -3680,12 +3538,6 @@
 <dd>
 <div class="block">Sets the value of the '<a href="fr/zelus/jarvis/module/Module.html#getJarvisModulePath--"><code><em>Jarvis Module Path</em></code></a>' attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#setKey-java.lang.String-">setKey(String)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentParameter.html#setKey-java.lang.String-">setKey(String)</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentParameter.html" title="interface in fr.zelus.jarvis.intent">IntentParameter</a></dt>
-<dd>
-<div class="block">Sets the value of the '<a href="fr/zelus/jarvis/intent/IntentParameter.html#getKey--"><code><em>Key</em></code></a>' attribute.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#setKey-java.lang.String-">setKey(String)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/Parameter.html#setKey-java.lang.String-">setKey(String)</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/Parameter.html" title="interface in fr.zelus.jarvis.module">Parameter</a></dt>
@@ -3744,11 +3596,11 @@
 <dd>
 <div class="block">Sets the created <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>'s output context parameter <code>contextKey</code> with the given <code>contextValue</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#setParameter-fr.zelus.jarvis.module.Parameter-">setParameter(Parameter)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#setParameter-fr.zelus.jarvis.module.Parameter-">setParameter(Parameter)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ValueImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/ParameterValue.html#setParameter-fr.zelus.jarvis.module.Parameter-">setParameter(Parameter)</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration">ParameterValue</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/Value.html#setParameter-fr.zelus.jarvis.module.Parameter-">setParameter(Parameter)</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/Value.html" title="interface in fr.zelus.jarvis.orchestration">Value</a></dt>
 <dd>
-<div class="block">Sets the value of the '<a href="fr/zelus/jarvis/orchestration/ParameterValue.html#getParameter--"><code><em>Parameter</em></code></a>' reference.</div>
+<div class="block">Sets the value of the '<a href="fr/zelus/jarvis/orchestration/Value.html#getParameter--"><code><em>Parameter</em></code></a>' reference.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#setReferredVariable-fr.zelus.jarvis.orchestration.Variable-">setReferredVariable(Variable)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -3770,12 +3622,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html#setTextFragment-java.lang.String-">setTextFragment(String)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#setType-java.lang.String-">setType(String)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentParameter.html#setType-java.lang.String-">setType(String)</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentParameter.html" title="interface in fr.zelus.jarvis.intent">IntentParameter</a></dt>
-<dd>
-<div class="block">Sets the value of the '<a href="fr/zelus/jarvis/intent/IntentParameter.html#getType--"><code><em>Type</em></code></a>' attribute.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#setType-java.lang.String-">setType(String)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/Parameter.html#setType-java.lang.String-">setType(String)</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/Parameter.html" title="interface in fr.zelus.jarvis.module">Parameter</a></dt>
@@ -3788,11 +3634,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#setValue-java.lang.String-">setValue(String)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#setValue-java.lang.String-">setValue(String)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#setValue-java.lang.String-">setValue(String)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/ParameterValue.html#setValue-java.lang.String-">setValue(String)</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration">ParameterValue</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/StringValue.html#setValue-java.lang.String-">setValue(String)</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/StringValue.html" title="interface in fr.zelus.jarvis.orchestration">StringValue</a></dt>
 <dd>
-<div class="block">Sets the value of the '<a href="fr/zelus/jarvis/orchestration/ParameterValue.html#getValue--"><code><em>Value</em></code></a>' attribute.</div>
+<div class="block">Sets the value of the '<a href="fr/zelus/jarvis/orchestration/StringValue.html#getValue--"><code><em>Value</em></code></a>' attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#shutdown--">shutdown()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
@@ -3850,6 +3696,44 @@
 <dd>
 <div class="block">Stops the underlying <code>HttpServer</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#STRING_VALUE">STRING_VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><code><em>String Value</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#STRING_VALUE">STRING_VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The meta object id for the '<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><code><em>String Value</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#STRING_VALUE__PARAMETER">STRING_VALUE__PARAMETER</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The feature id for the '<em><b>Parameter</b></em>' reference.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#STRING_VALUE__VALUE">STRING_VALUE__VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<em><b>Value</b></em>' attribute feature.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#STRING_VALUE__VALUE">STRING_VALUE__VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The feature id for the '<em><b>Value</b></em>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#STRING_VALUE_FEATURE_COUNT">STRING_VALUE_FEATURE_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The number of structural features of the '<em>String Value</em>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#STRING_VALUE_OPERATION_COUNT">STRING_VALUE_OPERATION_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The number of operations of the '<em>String Value</em>' class.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/orchestration/StringValue.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">StringValue</span></a> - Interface in <a href="fr/zelus/jarvis/orchestration/package-summary.html">fr.zelus.jarvis.orchestration</a></dt>
+<dd>
+<div class="block">A representation of the model object '<em><b>String Value</b></em>'.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><span class="typeNameLink">StringValueImpl</span></a> - Class in <a href="fr/zelus/jarvis/orchestration/impl/package-summary.html">fr.zelus.jarvis.orchestration.impl</a></dt>
+<dd>
+<div class="block">An implementation of the model object '<em><b>String Value</b></em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#StringValueImpl--">StringValueImpl()</a></span> - Constructor for class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:T">
 <!--   -->
@@ -3876,8 +3760,6 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">EventProviderDefinitionImpl</a></dt>
@@ -3888,7 +3770,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -3900,17 +3782,9 @@
 <dd>
 <div class="block">Sends a training query to the DialogFlow ML Engine and waits for its completion.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#type">type</a></span> - Variable in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>
-<div class="block">The cached value of the '<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#getType--"><code><em>Type</em></code></a>' attribute.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#type">type</a></span> - Variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#getType--"><code><em>Type</em></code></a>' attribute.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#TYPE_EDEFAULT">TYPE_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentParameterImpl</a></dt>
-<dd>
-<div class="block">The default value of the '<a href="fr/zelus/jarvis/intent/impl/IntentParameterImpl.html#getType--"><code><em>Type</em></code></a>' attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#TYPE_EDEFAULT">TYPE_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>
@@ -3944,18 +3818,52 @@
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#getValue--"><code><em>Value</em></code></a>' attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#value">value</a></span> - Variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#value">value</a></span> - Variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
 <dd>
-<div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#getValue--"><code><em>Value</em></code></a>' attribute.</div>
+<div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#getValue--"><code><em>Value</em></code></a>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#VALUE">VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><code><em>Value</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VALUE">VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The meta object id for the '<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><code><em>Value</em></code></a>' class.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/orchestration/Value.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">Value</span></a> - Interface in <a href="fr/zelus/jarvis/orchestration/package-summary.html">fr.zelus.jarvis.orchestration</a></dt>
+<dd>
+<div class="block">A representation of the model object '<em><b>Value</b></em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#VALUE__PARAMETER">VALUE__PARAMETER</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<em><b>Parameter</b></em>' reference feature.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VALUE__PARAMETER">VALUE__PARAMETER</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The feature id for the '<em><b>Parameter</b></em>' reference.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#VALUE_EDEFAULT">VALUE_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
 <dd>
 <div class="block">The default value of the '<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#getValue--"><code><em>Value</em></code></a>' attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#VALUE_EDEFAULT">VALUE_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#VALUE_EDEFAULT">VALUE_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringValueImpl</a></dt>
 <dd>
-<div class="block">The default value of the '<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#getValue--"><code><em>Value</em></code></a>' attribute.</div>
+<div class="block">The default value of the '<a href="fr/zelus/jarvis/orchestration/impl/StringValueImpl.html#getValue--"><code><em>Value</em></code></a>' attribute.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VALUE_FEATURE_COUNT">VALUE_FEATURE_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The number of structural features of the '<em>Value</em>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VALUE_OPERATION_COUNT">VALUE_OPERATION_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The number of operations of the '<em>Value</em>' class.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><span class="typeNameLink">ValueImpl</span></a> - Class in <a href="fr/zelus/jarvis/orchestration/impl/package-summary.html">fr.zelus.jarvis.orchestration.impl</a></dt>
+<dd>
+<div class="block">An implementation of the model object '<em><b>Value</b></em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html#ValueImpl--">ValueImpl()</a></span> - Constructor for class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ValueImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#values">values</a></span> - Variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ActionInstanceImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getValues--"><code><em>Values</em></code></a>' containment reference list.</div>
@@ -3999,10 +3907,6 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE_ACCESS__REFERRED_VARIABLE">VARIABLE_ACCESS__REFERRED_VARIABLE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
 <dd>
 <div class="block">The feature id for the '<em><b>Referred Variable</b></em>' reference.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE_ACCESS__VALUE">VARIABLE_ACCESS__VALUE</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
-<dd>
-<div class="block">The feature id for the '<em><b>Value</b></em>' attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE_ACCESS_FEATURE_COUNT">VARIABLE_ACCESS_FEATURE_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
 <dd>
