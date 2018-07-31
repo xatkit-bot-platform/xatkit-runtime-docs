@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -144,7 +144,6 @@ implements <a href="../../../../../fr/zelus/jarvis/module/Parameter.html" title=
  </p>
  <ul>
    <li><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getKey--"><code><em>Key</em></code></a></li>
-   <li><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getType--"><code><em>Type</em></code></a></li>
  </ul></div>
 <dl>
 <dt><span class="simpleTagLabel">Generated</span></dt>
@@ -220,18 +219,6 @@ implements <a href="../../../../../fr/zelus/jarvis/module/Parameter.html" title=
 <td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#KEY_EDEFAULT">KEY_EDEFAULT</a></span></code>
 <div class="block">The default value of the '<a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getKey--"><code><em>Key</em></code></a>' attribute.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#type">type</a></span></code>
-<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getType--"><code><em>Type</em></code></a>' attribute.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#TYPE_EDEFAULT">TYPE_EDEFAULT</a></span></code>
-<div class="block">The default value of the '<a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getType--"><code><em>Type</em></code></a>' attribute.</div>
 </td>
 </tr>
 </table>
@@ -324,18 +311,10 @@ implements <a href="../../../../../fr/zelus/jarvis/module/Parameter.html" title=
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getKey--">getKey</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getType--">getType</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#setKey-java.lang.String-">setKey</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newKey)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#setType-java.lang.String-">setType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newType)</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -430,7 +409,7 @@ implements <a href="../../../../../fr/zelus/jarvis/module/Parameter.html" title=
 <a name="key">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>key</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> key</pre>
@@ -440,40 +419,6 @@ implements <a href="../../../../../fr/zelus/jarvis/module/Parameter.html" title=
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getKey--"><code>getKey()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="TYPE_EDEFAULT">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>TYPE_EDEFAULT</h4>
-<pre>protected static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> TYPE_EDEFAULT</pre>
-<div class="block">The default value of the '<a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getType--"><code><em>Type</em></code></a>' attribute.
- <!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getType--"><code>getType()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="type">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>type</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> type</pre>
-<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getType--"><code><em>Type</em></code></a>' attribute.
- <!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/zelus/jarvis/module/impl/ParameterImpl.html#getType--"><code>getType()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -561,47 +506,6 @@ implements <a href="../../../../../fr/zelus/jarvis/module/Parameter.html" title=
 <dd><code>newKey</code> - the new value of the '<em>Key</em>' attribute.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/zelus/jarvis/module/Parameter.html#getKey--"><code>Parameter.getKey()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="getType--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getType</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getType()</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/zelus/jarvis/module/Parameter.html#getType--">getType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/module/Parameter.html" title="interface in fr.zelus.jarvis.module">Parameter</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value of the '<em>Type</em>' attribute.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/zelus/jarvis/module/Parameter.html#setType-java.lang.String-"><code>Parameter.setType(String)</code></a>, 
-<a href="../../../../../fr/zelus/jarvis/module/ModulePackage.html#getParameter_Type--"><code>ModulePackage.getParameter_Type()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="setType-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setType</h4>
-<pre>public&nbsp;void&nbsp;setType(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newType)</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/zelus/jarvis/module/Parameter.html#setType-java.lang.String-">setType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/module/Parameter.html" title="interface in fr.zelus.jarvis.module">Parameter</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>newType</code> - the new value of the '<em>Type</em>' attribute.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../fr/zelus/jarvis/module/Parameter.html#getType--"><code>Parameter.getType()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
