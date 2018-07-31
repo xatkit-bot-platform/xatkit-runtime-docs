@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../fr/zelus/jarvis/orchestration/Literal.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationLink.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -178,24 +178,30 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/orchestration/StringValue.html" title="interface in fr.zelus.jarvis.orchestration">StringValue</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationFactory.html#createStringValue--">createStringValue</a></span>()</code>
-<div class="block">Returns a new object of class '<em>String Value</em>'.</div>
+<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration">ParameterValue</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationFactory.html#createParameterValue--">createParameterValue</a></span>()</code>
+<div class="block">Returns a new object of class '<em>Parameter Value</em>'.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/orchestration/StringLiteral.html" title="interface in fr.zelus.jarvis.orchestration">StringLiteral</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationFactory.html#createStringLiteral--">createStringLiteral</a></span>()</code>
+<div class="block">Returns a new object of class '<em>String Literal</em>'.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/orchestration/Variable.html" title="interface in fr.zelus.jarvis.orchestration">Variable</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationFactory.html#createVariable--">createVariable</a></span>()</code>
 <div class="block">Returns a new object of class '<em>Variable</em>'.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration">VariableAccess</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationFactory.html#createVariableAccess--">createVariableAccess</a></span>()</code>
 <div class="block">Returns a new object of class '<em>Variable Access</em>'.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationFactory.html#getOrchestrationPackage--">getOrchestrationPackage</a></span>()</code>
 <div class="block">Returns the package supported by this factory.</div>
@@ -335,19 +341,36 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </dl>
 </li>
 </ul>
-<a name="createStringValue--">
+<a name="createParameterValue--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>createStringValue</h4>
-<pre><a href="../../../../fr/zelus/jarvis/orchestration/StringValue.html" title="interface in fr.zelus.jarvis.orchestration">StringValue</a>&nbsp;createStringValue()</pre>
-<div class="block">Returns a new object of class '<em>String Value</em>'.
+<h4>createParameterValue</h4>
+<pre><a href="../../../../fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration">ParameterValue</a>&nbsp;createParameterValue()</pre>
+<div class="block">Returns a new object of class '<em>Parameter Value</em>'.
  <!-- begin-user-doc -->
  <!-- end-user-doc --></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new object of class '<em>String Value</em>'.</dd>
+<dd>a new object of class '<em>Parameter Value</em>'.</dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="createStringLiteral--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createStringLiteral</h4>
+<pre><a href="../../../../fr/zelus/jarvis/orchestration/StringLiteral.html" title="interface in fr.zelus.jarvis.orchestration">StringLiteral</a>&nbsp;createStringLiteral()</pre>
+<div class="block">Returns a new object of class '<em>String Literal</em>'.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new object of class '<em>String Literal</em>'.</dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -414,7 +437,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../fr/zelus/jarvis/orchestration/Literal.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationLink.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
