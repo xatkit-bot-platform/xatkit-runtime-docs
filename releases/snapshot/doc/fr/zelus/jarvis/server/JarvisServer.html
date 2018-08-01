@@ -204,8 +204,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-">notifyWebhookEventProviders</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
-                           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-org.apache.http.Header:A-">notifyWebhookEventProviders</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
+                           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
+                           org.apache.http.Header[]&nbsp;headers)</code>
 <div class="block">Notifies the registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.</div>
 </td>
 </tr>
@@ -390,9 +391,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>webhookEventProvider</code> is <code>null</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-"><code>notifyWebhookEventProviders(String, Object)</code></a>, 
+<dd><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-org.apache.http.Header:A-"><code>notifyWebhookEventProviders(String, Object, Header[])</code></a>, 
 <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#acceptContentType-java.lang.String-"><code>WebhookEventProvider.acceptContentType(String)</code></a>, 
-<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#handleContent-java.lang.Object-"><code>WebhookEventProvider.handleContent(Object)</code></a></dd>
+<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#handleContent-java.lang.Object-org.apache.http.Header:A-"><code>WebhookEventProvider.handleContent(Object, Header[])</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -429,14 +430,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="notifyWebhookEventProviders-java.lang.String-java.lang.Object-">
+<a name="notifyWebhookEventProviders-java.lang.String-java.lang.Object-org.apache.http.Header:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>notifyWebhookEventProviders</h4>
 <pre>public&nbsp;void&nbsp;notifyWebhookEventProviders(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
-                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)</pre>
+                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
+                                        org.apache.http.Header[]&nbsp;headers)</pre>
 <div class="block">Notifies the registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.
  <p>
  This method asks each registered <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> if it accepts the given <code>contentType</code>. If
@@ -449,7 +451,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#registerWebhookEventProvider-fr.zelus.jarvis.io.WebhookEventProvider-"><code>registerWebhookEventProvider(WebhookEventProvider)</code></a>, 
 <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#acceptContentType-java.lang.String-"><code>WebhookEventProvider.acceptContentType(String)</code></a>, 
-<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#handleContent-java.lang.Object-"><code>WebhookEventProvider.handleContent(Object)</code></a></dd>
+<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#handleContent-java.lang.Object-org.apache.http.Header:A-"><code>WebhookEventProvider.handleContent(Object, Header[])</code></a></dd>
 </dl>
 </li>
 </ul>

@@ -20,6 +20,8 @@ fr.zelus.jarvis.plugins.discord.module.action
 fr.zelus.jarvis.plugins.discord.module.io
 fr.zelus.jarvis.plugins.emf.module
 fr.zelus.jarvis.plugins.emf.module.action
+fr.zelus.jarvis.plugins.github.module
+fr.zelus.jarvis.plugins.github.module.io
 fr.zelus.jarvis.plugins.log.module
 fr.zelus.jarvis.plugins.log.module.action
 fr.zelus.jarvis.plugins.mail.module
