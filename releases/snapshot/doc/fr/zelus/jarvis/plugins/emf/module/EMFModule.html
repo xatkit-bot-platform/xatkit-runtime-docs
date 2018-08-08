@@ -115,10 +115,10 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
  <p>
  This module defines the following <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s:
  <ul>
-     <li><a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html" title="class in fr.zelus.jarvis.plugins.emf.module.action"><code>CreateResource</code></a>: create an EMF
-     <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> at a given <code>uri</code> with the given <code>content</code>.</li>
-     <li><a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html" title="class in fr.zelus.jarvis.plugins.emf.module.action"><code>SaveResourceInFile</code></a>: save the provided EMF
-     <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and returns the persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a></li>
+ <li><a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html" title="class in fr.zelus.jarvis.plugins.emf.module.action"><code>CreateResource</code></a>: create an EMF
+ <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> at a given <code>uri</code> with the given <code>content</code>.</li>
+ <li><a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html" title="class in fr.zelus.jarvis.plugins.emf.module.action"><code>SaveResourceInFile</code></a>: save the provided EMF
+ <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and returns the persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a></li>
  </ul>
  This class is part of jarvis' core modules, and can be used in an orchestration model by importing the <i>core
  .EMFModule</i> package.</div>
@@ -159,7 +159,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></h3>
-<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#actionMap">actionMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#configuration">configuration</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#eventProviderMap">eventProviderMap</a></code></li>
+<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#actionMap">actionMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#configuration">configuration</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#eventProviderMap">eventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#jarvisCore">jarvisCore</a></code></li>
 </ul>
 </li>
 </ul>
@@ -175,7 +175,9 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/EMFModule.html#EMFModule--">EMFModule</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/EMFModule.html#EMFModule-fr.zelus.jarvis.core.JarvisCore-">EMFModule</a></span>(<a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore)</code>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module"><code>EMFModule</code></a> from the provided <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -191,7 +193,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></h3>
-<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAction-fr.zelus.jarvis.module.Action-">disableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAllActions--">disableAllActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getAction-java.lang.String-">getAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getActions--">getActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getEventProviderMap--">getEventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getName--">getName</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#shutdown--">shutdown</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#startEventProvider-fr.zelus.jarvis.module.EventProviderDefinition-fr.zelus.jarvis.core.JarvisCore-">startEventProvider</a></code></li>
+<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAction-fr.zelus.jarvis.module.Action-">disableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAllActions--">disableAllActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getAction-java.lang.String-">getAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getActions--">getActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getEventProviderMap--">getEventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getJarvisCore--">getJarvisCore</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getName--">getName</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#shutdown--">shutdown</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#startEventProvider-fr.zelus.jarvis.module.EventProviderDefinition-">startEventProvider</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -214,13 +216,20 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="EMFModule--">
+<a name="EMFModule-fr.zelus.jarvis.core.JarvisCore-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>EMFModule</h4>
-<pre>public&nbsp;EMFModule()</pre>
+<pre>public&nbsp;EMFModule(<a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore)</pre>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module"><code>EMFModule</code></a> from the provided <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>jarvisCore</code> - the <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance associated to this module</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>jarvisCore</code> is <code>null</code></dd>
+</dl>
 </li>
 </ul>
 </li>

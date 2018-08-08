@@ -99,19 +99,27 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#fr.zelus.jarvis.plugins.discord.module">fr.zelus.jarvis.plugins.discord.module</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#fr.zelus.jarvis.plugins.discord.module.action">fr.zelus.jarvis.plugins.discord.module.action</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#fr.zelus.jarvis.plugins.emf.module.action">fr.zelus.jarvis.plugins.emf.module.action</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#fr.zelus.jarvis.plugins.log.module.action">fr.zelus.jarvis.plugins.log.module.action</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#fr.zelus.jarvis.plugins.mail.module.action">fr.zelus.jarvis.plugins.mail.module.action</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#fr.zelus.jarvis.plugins.slack.module">fr.zelus.jarvis.plugins.slack.module</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -150,23 +158,21 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JarvisMessageAction.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/core/JarvisMessageAction.html#getClientSession--">getClientSession</a></span>()</code>
+<div class="block">Returns the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the client of the message to send.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
 <td class="colLast"><span class="typeNameLabel">JarvisCore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html#getJarvisSession-java.lang.String-">getJarvisSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
 <div class="block">Returns the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>sessionId</code></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
 <td class="colLast"><span class="typeNameLabel">JarvisCore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html#getOrCreateJarvisSession-java.lang.String-">getOrCreateJarvisSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
 <div class="block">Retrieves or creates the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>sessionId</code>.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
-<td class="colLast"><span class="typeNameLabel">JarvisCore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html#getOrCreateJarvisSession-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getOrCreateJarvisSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId,
-                        <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;baseSession)</code>
-<div class="block">Retrieves or creates the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>sessionId</code>, and merges its
- context with the provided <code>baseSession</code>.</div>
 </td>
 </tr>
 </tbody>
@@ -186,14 +192,6 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
-<td class="colLast"><span class="typeNameLabel">JarvisCore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html#getOrCreateJarvisSession-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getOrCreateJarvisSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId,
-                        <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;baseSession)</code>
-<div class="block">Retrieves or creates the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>sessionId</code>, and merges its
- context with the provided <code>baseSession</code>.</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">JarvisCore.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html#handleEvent-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-">handleEvent</a></span>(<a href="../../../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent">EventInstance</a>&nbsp;eventInstance,
            <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>&nbsp;</td>
@@ -320,10 +318,43 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="fr.zelus.jarvis.plugins.discord.module">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a> in <a href="../../../../../../fr/zelus/jarvis/plugins/discord/module/package-summary.html">fr.zelus.jarvis.plugins.discord.module</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../fr/zelus/jarvis/plugins/discord/module/package-summary.html">fr.zelus.jarvis.plugins.discord.module</a> that return <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
+<td class="colLast"><span class="typeNameLabel">DiscordModule.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html#createSessionFromChannel-net.dv8tion.jda.core.entities.MessageChannel-">createSessionFromChannel</a></span>(net.dv8tion.jda.core.entities.MessageChannel&nbsp;messageChannel)</code>
+<div class="block">Returns the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>MessageChannel</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="fr.zelus.jarvis.plugins.discord.module.action">
 <!--   -->
 </a>
 <h3>Uses of <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a> in <a href="../../../../../../fr/zelus/jarvis/plugins/discord/module/action/package-summary.html">fr.zelus.jarvis.plugins.discord.module.action</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../fr/zelus/jarvis/plugins/discord/module/action/package-summary.html">fr.zelus.jarvis.plugins.discord.module.action</a> that return <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PostMessage.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/discord/module/action/PostMessage.html#getClientSession--">getClientSession</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
 <caption><span>Constructors in <a href="../../../../../../fr/zelus/jarvis/plugins/discord/module/action/package-summary.html">fr.zelus.jarvis.plugins.discord.module.action</a> with parameters of type <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -443,10 +474,43 @@
 </tbody>
 </table>
 </li>
+<li class="blockList"><a name="fr.zelus.jarvis.plugins.slack.module">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a> in <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/package-summary.html">fr.zelus.jarvis.plugins.slack.module</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/package-summary.html">fr.zelus.jarvis.plugins.slack.module</a> that return <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SlackModule.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html#createSessionFromChannel-java.lang.String-">createSessionFromChannel</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</code>
+<div class="block">Returns the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>channel</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="fr.zelus.jarvis.plugins.slack.module.action">
 <!--   -->
 </a>
 <h3>Uses of <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a> in <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/package-summary.html">fr.zelus.jarvis.plugins.slack.module.action</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/package-summary.html">fr.zelus.jarvis.plugins.slack.module.action</a> that return <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PostMessage.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html#getClientSession--">getClientSession</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
 <caption><span>Constructors in <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/package-summary.html">fr.zelus.jarvis.plugins.slack.module.action</a> with parameters of type <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>

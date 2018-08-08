@@ -548,8 +548,10 @@
 <dd>
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> concrete implementation providing core functionality that can be used in orchestration models.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html#CoreModule--">CoreModule()</a></span> - Constructor for class fr.zelus.jarvis.plugins.core.module.<a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html" title="class in fr.zelus.jarvis.plugins.core.module">CoreModule</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html#CoreModule-fr.zelus.jarvis.core.JarvisCore-">CoreModule(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.plugins.core.module.<a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html" title="class in fr.zelus.jarvis.plugins.core.module">CoreModule</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html" title="class in fr.zelus.jarvis.plugins.core.module"><code>CoreModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#create-org.eclipse.emf.ecore.EClass-">create(EClass)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleFactoryImpl.html#create-org.eclipse.emf.ecore.EClass-">create(EClass)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleFactoryImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleFactoryImpl</a></dt>
@@ -791,6 +793,14 @@
 <dd>
 <div class="block">Creates a new <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> for the provided <code>userId</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html#createSessionFromChannel-net.dv8tion.jda.core.entities.MessageChannel-">createSessionFromChannel(MessageChannel)</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.<a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a></dt>
+<dd>
+<div class="block">Returns the <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>MessageChannel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html#createSessionFromChannel-java.lang.String-">createSessionFromChannel(String)</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.<a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a></dt>
+<dd>
+<div class="block">Returns the <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>channel</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationFactoryImpl.html#createStringLiteral--">createStringLiteral()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationFactoryImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html#createStringLiteral--">createStringLiteral()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationFactory</a></dt>
@@ -938,9 +948,9 @@
 <dd>
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> class that connects and interacts with Discord.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html#DiscordModule-org.apache.commons.configuration2.Configuration-">DiscordModule(Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.module.<a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html#DiscordModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">DiscordModule(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.module.<a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module"><code>DiscordModule</code></a> from the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module"><code>DiscordModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/util/IntentSwitch.html#doSwitch-int-org.eclipse.emf.ecore.EObject-">doSwitch(int, EObject)</a></span> - Method in class fr.zelus.jarvis.intent.util.<a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="class in fr.zelus.jarvis.intent.util">IntentSwitch</a></dt>
 <dd>
@@ -1079,8 +1089,10 @@
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> concrete implementation provided EMF-related functionality that can be used in
  orchestration models.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/EMFModule.html#EMFModule--">EMFModule()</a></span> - Constructor for class fr.zelus.jarvis.plugins.emf.module.<a href="fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module">EMFModule</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/EMFModule.html#EMFModule-fr.zelus.jarvis.core.JarvisCore-">EMFModule(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.plugins.emf.module.<a href="fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module">EMFModule</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module"><code>EMFModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction(Action)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
 <div class="block">Retrieves and loads the <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a>.</div>
@@ -1617,6 +1629,14 @@
 <dd>
 <div class="block">Returns the Slack channel associated to the user input.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisMessageAction.html#getClientSession--">getClientSession()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisMessageAction.html" title="class in fr.zelus.jarvis.core">JarvisMessageAction</a></dt>
+<dd>
+<div class="block">Returns the <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the client of the message to send.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.action.<a href="fr/zelus/jarvis/plugins/discord/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.discord.module.action">PostMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getContext--">getContext()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getContext--">getContext()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
@@ -1911,6 +1931,10 @@
 <dd>
 <div class="block">Returns the session's <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> holding context-related variables.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#getJarvisCore--">getJarvisCore()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
+<dd>
+<div class="block">Return the <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance associated to this module.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html#getJarvisCore--">getJarvisCore()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">PrivateMessageListener</a></dt>
 <dd>
 <div class="block">Returns the <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handled received messages.</div>
@@ -2171,11 +2195,6 @@
 <dd>
 <div class="block">Retrieves or creates the <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>sessionId</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getOrCreateJarvisSession-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getOrCreateJarvisSession(String, JarvisSession)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
-<dd>
-<div class="block">Retrieves or creates the <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>sessionId</code>, and merges its
- context with the provided <code>baseSession</code>.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/EventDefinition.html#getOutContexts--">getOutContexts()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent">EventDefinition</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Out Contexts</b></em>' containment reference list.</div>
@@ -2425,8 +2444,10 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><span class="typeNameLink">GithubModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/package-summary.html">fr.zelus.jarvis.plugins.github.module</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html#GithubModule--">GithubModule()</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.<a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html#GithubModule-fr.zelus.jarvis.core.JarvisCore-">GithubModule(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.<a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/io/GithubPullRequestEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io"><span class="typeNameLink">GithubPullRequestEventBuilder</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubPullRequestEventBuilder.html#GithubPullRequestEventBuilder--">GithubPullRequestEventBuilder()</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubPullRequestEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubPullRequestEventBuilder</a></dt>
@@ -2490,6 +2511,14 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#inContexts">inContexts</a></span> - Variable in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#getInContexts--"><code><em>In Contexts</em></code></a>' containment reference list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisAction.html#init--">init()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></dt>
+<dd>
+<div class="block">A hook method that is called after <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisMessageAction.html#init--">init()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisMessageAction.html" title="class in fr.zelus.jarvis.core">JarvisMessageAction</a></dt>
+<dd>
+<div class="block">Retrieve the <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the client of the message and merges it with the current one.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#init--">init()</a></span> - Static method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentFactoryImpl</a></dt>
 <dd>
@@ -2754,6 +2783,10 @@
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance from the provided <code>configuration</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#jarvisCore">jarvisCore</a></span> - Variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
+<dd>
+<div class="block">The <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance containing this module.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a></span> - Variable in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></dt>
 <dd>
 <div class="block">The <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle input messages.</div>
@@ -2801,13 +2834,13 @@
 <dd>
 <div class="block">The concrete implementation of a <a href="fr/zelus/jarvis/module/Module.html" title="interface in fr.zelus.jarvis.module"><code>Module</code></a> definition.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#JarvisModule-org.apache.commons.configuration2.Configuration-">JarvisModule(Configuration)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#JarvisModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">JarvisModule(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> from the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#JarvisModule--">JarvisModule()</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#JarvisModule-fr.zelus.jarvis.core.JarvisCore-">JarvisModule(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/core/JarvisModule.EventProviderThread.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">JarvisModule.EventProviderThread</span></a> - Class in <a href="fr/zelus/jarvis/core/package-summary.html">fr.zelus.jarvis.core</a></dt>
 <dd>
@@ -2969,9 +3002,9 @@
 <dd>
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> concrete implementation providing logging capabilities.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/log/module/LogModule.html#LogModule-org.apache.commons.configuration2.Configuration-">LogModule(Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.log.module.<a href="fr/zelus/jarvis/plugins/log/module/LogModule.html" title="class in fr.zelus.jarvis.plugins.log.module">LogModule</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/log/module/LogModule.html#LogModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">LogModule(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.log.module.<a href="fr/zelus/jarvis/plugins/log/module/LogModule.html" title="class in fr.zelus.jarvis.plugins.log.module">LogModule</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/log/module/LogModule.html" title="class in fr.zelus.jarvis.plugins.log.module"><code>LogModule</code></a> instance from the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/log/module/LogModule.html" title="class in fr.zelus.jarvis.plugins.log.module"><code>LogModule</code></a> instance from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/log/module/action/LogWarning.html" title="class in fr.zelus.jarvis.plugins.log.module.action"><span class="typeNameLink">LogWarning</span></a> - Class in <a href="fr/zelus/jarvis/plugins/log/module/action/package-summary.html">fr.zelus.jarvis.plugins.log.module.action</a></dt>
 <dd>
@@ -2993,9 +3026,10 @@
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> concrete implementation providing mailing functionality that can be used in orchestration
  models.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/mail/module/MailModule.html#MailModule--">MailModule()</a></span> - Constructor for class fr.zelus.jarvis.plugins.mail.module.<a href="fr/zelus/jarvis/plugins/mail/module/MailModule.html" title="class in fr.zelus.jarvis.plugins.mail.module">MailModule</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/mail/module/MailModule.html#MailModule-fr.zelus.jarvis.core.JarvisCore-">MailModule(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.plugins.mail.module.<a href="fr/zelus/jarvis/plugins/mail/module/MailModule.html" title="class in fr.zelus.jarvis.plugins.mail.module">MailModule</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/mail/module/MailModule.html" title="class in fr.zelus.jarvis.plugins.mail.module"><code>MailModule</code></a> and initializes the underlying <code>Gmail</code> service.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/mail/module/MailModule.html" title="class in fr.zelus.jarvis.plugins.mail.module"><code>MailModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and initializes the underlying
+ <code>Gmail</code> service.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/Jarvis.html#main-java.lang.String:A-">main(String[])</a></span> - Static method in class fr.zelus.jarvis.<a href="fr/zelus/jarvis/Jarvis.html" title="class in fr.zelus.jarvis">Jarvis</a></dt>
 <dd>&nbsp;</dd>
@@ -3889,15 +3923,15 @@
 <dd>
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> class that connect and interacts with the Slack API.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html#SlackModule-org.apache.commons.configuration2.Configuration-">SlackModule(Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.slack.module.<a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html#SlackModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">SlackModule(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.slack.module.<a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a> from the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/server/JarvisServer.html#start--">start()</a></span> - Method in class fr.zelus.jarvis.server.<a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server">JarvisServer</a></dt>
 <dd>
 <div class="block">Starts the underlying <code>HttpServer</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#startEventProvider-fr.zelus.jarvis.module.EventProviderDefinition-fr.zelus.jarvis.core.JarvisCore-">startEventProvider(EventProviderDefinition, JarvisCore)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#startEventProvider-fr.zelus.jarvis.module.EventProviderDefinition-">startEventProvider(EventProviderDefinition)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
 <div class="block">Starts the <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> corresponding to the provided <code>eventProviderDefinition</code>.</div>
 </dd>
@@ -4162,9 +4196,9 @@
 <dd>
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> class that connects and interacts with the WordPress REST API.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html#WordPressModule-org.apache.commons.configuration2.Configuration-">WordPressModule(Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.wordpress.module.<a href="fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html" title="class in fr.zelus.jarvis.plugins.wordpress.module">WordPressModule</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html#WordPressModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">WordPressModule(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.wordpress.module.<a href="fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html" title="class in fr.zelus.jarvis.plugins.wordpress.module">WordPressModule</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html" title="class in fr.zelus.jarvis.plugins.wordpress.module"><code>WordPressModule</code></a> from the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html" title="class in fr.zelus.jarvis.plugins.wordpress.module"><code>WordPressModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
 </dl>
 <a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;</div>

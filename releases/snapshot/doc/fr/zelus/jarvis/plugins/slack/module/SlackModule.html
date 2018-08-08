@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -159,7 +159,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></h3>
-<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#actionMap">actionMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#configuration">configuration</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#eventProviderMap">eventProviderMap</a></code></li>
+<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#actionMap">actionMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#configuration">configuration</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#eventProviderMap">eventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#jarvisCore">jarvisCore</a></code></li>
 </ul>
 </li>
 </ul>
@@ -175,8 +175,9 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html#SlackModule-org.apache.commons.configuration2.Configuration-">SlackModule</a></span>(<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
-<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a> from the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html#SlackModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">SlackModule</a></span>(<a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+           <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a> from the provided <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -195,12 +196,18 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html#createSessionFromChannel-java.lang.String-">createSessionFromChannel</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</code>
+<div class="block">Returns the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>channel</code>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>com.github.seratch.jslack.Slack</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html#getSlack--">getSlack</a></span>()</code>
 <div class="block">Returns the Slack API client used to post messages.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html#getSlackToken--">getSlackToken</a></span>()</code>
 <div class="block">Returns the Slack bot API token used to initialize this class.</div>
@@ -212,7 +219,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></h3>
-<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAction-fr.zelus.jarvis.module.Action-">disableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAllActions--">disableAllActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getAction-java.lang.String-">getAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getActions--">getActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getEventProviderMap--">getEventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getName--">getName</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#shutdown--">shutdown</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#startEventProvider-fr.zelus.jarvis.module.EventProviderDefinition-fr.zelus.jarvis.core.JarvisCore-">startEventProvider</a></code></li>
+<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAction-fr.zelus.jarvis.module.Action-">disableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAllActions--">disableAllActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getAction-java.lang.String-">getAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getActions--">getActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getEventProviderMap--">getEventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getJarvisCore--">getJarvisCore</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getName--">getName</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#shutdown--">shutdown</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#startEventProvider-fr.zelus.jarvis.module.EventProviderDefinition-">startEventProvider</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -235,14 +242,15 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SlackModule-org.apache.commons.configuration2.Configuration-">
+<a name="SlackModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SlackModule</h4>
-<pre>public&nbsp;SlackModule(<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
-<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a> from the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.
+<pre>public&nbsp;SlackModule(<a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+                   <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a> from the provided <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.
  <p>
  This constructor initializes the underlying <code>Slack</code> client with the Slack bot API token retrieved from
  the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.
@@ -251,9 +259,10 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
  default constructor will throw an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang"><code>IllegalArgumentException</code></a> when looking for the Slack bot API token.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>jarvisCore</code> - the <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance associated to this module</dd>
 <dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to retrieve the Slack bot API token</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>jarvisCore</code> or <code>configuration</code> is <code>null</code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided Slack bot API token is <code>null</code> or empty</dd>
 </dl>
 </li>
@@ -283,7 +292,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <a name="getSlack--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getSlack</h4>
 <pre>public&nbsp;com.github.seratch.jslack.Slack&nbsp;getSlack()</pre>
@@ -291,6 +300,22 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the Slack API client used to post messages</dd>
+</dl>
+</li>
+</ul>
+<a name="createSessionFromChannel-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>createSessionFromChannel</h4>
+<pre>public&nbsp;<a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;createSessionFromChannel(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</pre>
+<div class="block">Returns the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>channel</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>channel</code> - the <code>channel</code> identifier to retrieve the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>channel</code></dd>
 </dl>
 </li>
 </ul>

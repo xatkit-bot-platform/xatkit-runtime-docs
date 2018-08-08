@@ -143,7 +143,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></h3>
-<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#actionMap">actionMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#configuration">configuration</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#eventProviderMap">eventProviderMap</a></code></li>
+<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#actionMap">actionMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#configuration">configuration</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#eventProviderMap">eventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#jarvisCore">jarvisCore</a></code></li>
 </ul>
 </li>
 </ul>
@@ -159,8 +159,9 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html#WordPressModule-org.apache.commons.configuration2.Configuration-">WordPressModule</a></span>(<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
-<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html" title="class in fr.zelus.jarvis.plugins.wordpress.module"><code>WordPressModule</code></a> from the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html#WordPressModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">WordPressModule</a></span>(<a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+               <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html" title="class in fr.zelus.jarvis.plugins.wordpress.module"><code>WordPressModule</code></a> from the provided <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -177,7 +178,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></h3>
-<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAction-fr.zelus.jarvis.module.Action-">disableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAllActions--">disableAllActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getAction-java.lang.String-">getAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getActions--">getActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getEventProviderMap--">getEventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getName--">getName</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#shutdown--">shutdown</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#startEventProvider-fr.zelus.jarvis.module.EventProviderDefinition-fr.zelus.jarvis.core.JarvisCore-">startEventProvider</a></code></li>
+<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAction-fr.zelus.jarvis.module.Action-">disableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAllActions--">disableAllActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getAction-java.lang.String-">getAction</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getActions--">getActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getEventProviderMap--">getEventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getJarvisCore--">getJarvisCore</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getName--">getName</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#shutdown--">shutdown</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#startEventProvider-fr.zelus.jarvis.module.EventProviderDefinition-">startEventProvider</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -200,19 +201,21 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="WordPressModule-org.apache.commons.configuration2.Configuration-">
+<a name="WordPressModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>WordPressModule</h4>
-<pre>public&nbsp;WordPressModule(<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
-<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html" title="class in fr.zelus.jarvis.plugins.wordpress.module"><code>WordPressModule</code></a> from the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<pre>public&nbsp;WordPressModule(<a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+                       <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html" title="class in fr.zelus.jarvis.plugins.wordpress.module"><code>WordPressModule</code></a> from the provided <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>jarvisCore</code> - the <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance associated to this module</dd>
 <dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to retrieve the WordPress REST API information</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>configuration</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>jarvisCore</code> or <code>configuration</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>
