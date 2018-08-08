@@ -201,6 +201,16 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/actio
 <div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostFileMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code>, <code>file</code>, and <code>channel</code>.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#PostFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">PostFileMessage</a></span>(<a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a>&nbsp;containingModule,
+               <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
+               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;content,
+               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</code>
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostFileMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>title</code>, <code>message</code>, <code>content</code>, and <code>channel</code>.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -219,7 +229,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/actio
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#call--">call</a></span>()</code>
-<div class="block">Uploads the provide <code>file</code> and post it with the associated <code>message</code> to the given <code>channel</code>.</div>
+<div class="block">Uploads the provided <code>file</code> and post it with the associated <code>message</code> to the given <code>channel</code>.</div>
 </td>
 </tr>
 </table>
@@ -261,7 +271,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/actio
 <a name="PostFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.io.File-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>PostFileMessage</h4>
 <pre>public&nbsp;PostFileMessage(<a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a>&nbsp;containingModule,
@@ -269,7 +279,11 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/actio
                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
                        <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</pre>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostFileMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code>, <code>file</code>, and <code>channel</code>.</div>
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostFileMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code>, <code>file</code>, and <code>channel</code>.
+ <p>
+ This constructor builds a <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostFileMessage</code></a> action that uploads the provided <code>file</code> to the given
+ Slack <code>channel</code>. To upload a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> as a file see
+ <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#PostFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-"><code>PostFileMessage(SlackModule, JarvisSession, String, String, String, String)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>containingModule</code> - the <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a> containing this action</dd>
@@ -281,6 +295,41 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/actio
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> or <code>session</code> is <code>null</code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>message</code> or <code>channel</code> is <code>null</code> or empty,
                                   or if the provided <code>file</code> is <code>null</code> or does not exist</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#PostFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-"><code>PostFileMessage(SlackModule, JarvisSession, String, String, String, String)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="PostFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PostFileMessage</h4>
+<pre>public&nbsp;PostFileMessage(<a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a>&nbsp;containingModule,
+                       <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session,
+                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;title,
+                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;content,
+                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</pre>
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostFileMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>title</code>, <code>message</code>, <code>content</code>, and <code>channel</code>.
+ <p>
+ This constructor builds a <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostFileMessage</code></a> action that uploads the provided <code>content</code> as a file
+ to the given Slack <code>channel</code>. To upload an existing <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> see
+ <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#PostFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.io.File-java.lang.String-"><code>PostFileMessage(SlackModule, JarvisSession, String, File, String)</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>containingModule</code> - the <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a> containing this action</dd>
+<dd><code>session</code> - the <a href="../../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to this action</dd>
+<dd><code>title</code> - the title of the file to upload</dd>
+<dd><code>message</code> - the message to associate to the uploaded <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a></dd>
+<dd><code>content</code> - the content of the file to upload</dd>
+<dd><code>channel</code> - the Slack channel to upload the <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> to</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> or <code>session</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>title</code>, <code>message</code>, <code>content</code>, or <code>channel</code> is <code>null</code> or empty.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#PostFileMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.io.File-java.lang.String-"><code>PostFileMessage(SlackModule, JarvisSession, String, File, String)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -299,7 +348,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/actio
 <li class="blockList">
 <h4>call</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;call()</pre>
-<div class="block">Uploads the provide <code>file</code> and post it with the associated <code>message</code> to the given <code>channel</code>.
+<div class="block">Uploads the provided <code>file</code> and post it with the associated <code>message</code> to the given <code>channel</code>.
  <p>
  This method relies on the containing <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a>'s Slack bot API token to authenticate the bot and
  upload the <code>file</code> to the given <code>channel</code>.</div>
