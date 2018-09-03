@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 extends net.dv8tion.jda.core.hooks.ListenerAdapter</pre>
 <div class="block">A <code>ListenerAdapter</code> that listen private messages and send them to the underlying <a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.
  <p>
- This class is instantiated by its containing <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordInputProvider</code></a>, and is used to react to Discord
+ This class is instantiated by its containing <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordIntentProvider</code></a>, and is used to react to Discord
  messages. Note that this listener only forwards not empty, not <code>null</code> messages to the <a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>, in
  order to avoid useless calls to the underlying DialogFlow API.</div>
 </li>
@@ -143,9 +143,9 @@ extends net.dv8tion.jda.core.hooks.ListenerAdapter</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html#PrivateMessageListener-fr.zelus.jarvis.core.JarvisCore-fr.zelus.jarvis.plugins.discord.module.io.DiscordInputProvider-">PrivateMessageListener</a></span>(<a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
-                      <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordInputProvider</a>&nbsp;discordInputProvider)</code>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>PrivateMessageListener</code></a> from the provided <code>jarvisCore</code> and <code>discordInputProvider</code>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html#PrivateMessageListener-fr.zelus.jarvis.core.JarvisCore-fr.zelus.jarvis.plugins.discord.module.io.DiscordIntentProvider-">PrivateMessageListener</a></span>(<a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+                      <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordIntentProvider</a>&nbsp;discordIntentProvider)</code>
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>PrivateMessageListener</code></a> from the provided <code>jarvisCore</code> and <code>discordIntentProvider</code>.</div>
 </td>
 </tr>
 </table>
@@ -204,19 +204,19 @@ extends net.dv8tion.jda.core.hooks.ListenerAdapter</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PrivateMessageListener-fr.zelus.jarvis.core.JarvisCore-fr.zelus.jarvis.plugins.discord.module.io.DiscordInputProvider-">
+<a name="PrivateMessageListener-fr.zelus.jarvis.core.JarvisCore-fr.zelus.jarvis.plugins.discord.module.io.DiscordIntentProvider-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PrivateMessageListener</h4>
 <pre>public&nbsp;PrivateMessageListener(<a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
-                              <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordInputProvider</a>&nbsp;discordInputProvider)</pre>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>PrivateMessageListener</code></a> from the provided <code>jarvisCore</code> and <code>discordInputProvider</code>.</div>
+                              <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordIntentProvider</a>&nbsp;discordIntentProvider)</pre>
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>PrivateMessageListener</code></a> from the provided <code>jarvisCore</code> and <code>discordIntentProvider</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>jarvisCore</code> - the <a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handled received messages</dd>
-<dd><code>discordInputProvider</code> - the <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordInputProvider</code></a> managing this listener</dd>
+<dd><code>discordIntentProvider</code> - the <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordIntentProvider</code></a> managing this listener</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>jarvisCore</code> is <code>null</code></dd>
 </dl>
@@ -295,7 +295,7 @@ extends net.dv8tion.jda.core.hooks.ListenerAdapter</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordInputProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
