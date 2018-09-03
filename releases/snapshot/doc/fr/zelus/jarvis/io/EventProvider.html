@@ -93,20 +93,24 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">fr.zelus.jarvis.io</div>
-<h2 title="Class EventProvider" class="title">Class EventProvider</h2>
+<h2 title="Class EventProvider" class="title">Class EventProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>fr.zelus.jarvis.io.EventProvider</li>
+<li>fr.zelus.jarvis.io.EventProvider&lt;T&gt;</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the concrete <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> subclass type containing the provider</dd>
+</dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
 <dd><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a></dd>
@@ -117,13 +121,13 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public abstract class <span class="typeNameLabel">EventProvider</span>
+<pre>public abstract class <span class="typeNameLabel">EventProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt;</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a></pre>
 <div class="block">An abstract class representing user input providers.
  <p>
- Concrete implementations of this class are dynamically instantiated by the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> component, and
- and use it to notify the engine about new messages to handle. Note that <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> instances are
+ Concrete implementations of this class are dynamically instantiated by the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> component, and use
+ it to notify the engine about new messages to handle. Note that <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> instances are
  started in a dedicated <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang"><code>Thread</code></a>.
  <p>
  Instances of this class can be configured using the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>-based constructor, that enable to pass
@@ -147,9 +151,15 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="type parameter in EventProvider">T</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#containingModule">containingModule</a></span></code>
+<div class="block">The <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> subclass containing this action.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a></span></code>
-<div class="block">The <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle input messages.</div>
+<div class="block">The <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle events.</div>
 </td>
 </tr>
 </table>
@@ -167,14 +177,14 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#EventProvider-fr.zelus.jarvis.core.JarvisCore-">EventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore)</code>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#EventProvider-T-">EventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="type parameter in EventProvider">T</a>&nbsp;containingModule)</code>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> with the provided <code>containingModule</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#EventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">EventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#EventProvider-T-org.apache.commons.configuration2.Configuration-">EventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="type parameter in EventProvider">T</a>&nbsp;containingModule,
              <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> from the provided <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> with the provided <code>containingModule</code> and <code>configuration</code>.</div>
 </td>
 </tr>
 </table>
@@ -230,11 +240,23 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.
 <a name="jarvisCore">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>jarvisCore</h4>
 <pre>protected&nbsp;<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a> jarvisCore</pre>
-<div class="block">The <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle input messages.</div>
+<div class="block">The <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle events.
+ <p>
+ This attribute is a shortcut for <code>containingModule.getJarvisCore()</code>.</div>
+</li>
+</ul>
+<a name="containingModule">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>containingModule</h4>
+<pre>protected&nbsp;<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="type parameter in EventProvider">T</a> extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a> containingModule</pre>
+<div class="block">The <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> subclass containing this action.</div>
 </li>
 </ul>
 </li>
@@ -245,40 +267,48 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="EventProvider-fr.zelus.jarvis.core.JarvisCore-">
+<a name="EventProvider-fr.zelus.jarvis.core.JarvisModule-">
+<!--   -->
+</a><a name="EventProvider-T-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>EventProvider</h4>
-<pre>public&nbsp;EventProvider(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore)</pre>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>.
+<pre>public&nbsp;EventProvider(<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="type parameter in EventProvider">T</a>&nbsp;containingModule)</pre>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> with the provided <code>containingModule</code>.
  <p>
  <b>Note</b>: this constructor should be used by <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>s that do not require additional
- parameters to be initialized. In that case see <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#EventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-"><code>EventProvider(JarvisCore, Configuration)</code></a>.</div>
+ parameters to be initialized. In that case see <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#EventProvider-T-org.apache.commons.configuration2.Configuration-"><code>EventProvider(JarvisModule, Configuration)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>jarvisCore</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s.</dd>
+<dd><code>containingModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>
-<a name="EventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">
+<a name="EventProvider-fr.zelus.jarvis.core.JarvisModule-org.apache.commons.configuration2.Configuration-">
+<!--   -->
+</a><a name="EventProvider-T-org.apache.commons.configuration2.Configuration-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>EventProvider</h4>
-<pre>public&nbsp;EventProvider(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+<pre>public&nbsp;EventProvider(<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="type parameter in EventProvider">T</a>&nbsp;containingModule,
                      <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> from the provided <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> with the provided <code>containingModule</code> and <code>configuration</code>.
  <p>
  <b>Note</b>: this constructor will be called by jarvis internal engine when initializing the
  <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> component. Subclasses implementing this constructor typically
  need additional parameters to be initialized, that can be provided in the <code>configuration</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>jarvisCore</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle input messages</dd>
+<dd><code>containingModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a></dd>
 <dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to initialize the <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>

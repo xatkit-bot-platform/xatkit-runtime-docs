@@ -100,13 +100,13 @@ var activeTableTab = "activeTableTab";
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.EventProvider</a></li>
+<li><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.EventProvider</a>&lt;T&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.WebhookEventProvider</a>&lt;com.google.gson.JsonElement&gt;</li>
+<li><a href="../../../../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.WebhookEventProvider</a>&lt;T,com.google.gson.JsonElement&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.JsonWebhookEventProvider</a></li>
+<li><a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.JsonWebhookEventProvider</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>fr.zelus.jarvis.plugins.github.module.io.GithubWebhookEventProvider</li>
@@ -129,7 +129,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">GithubWebhookEventProvider</span>
-extends <a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></pre>
+extends <a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -162,7 +162,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvide
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.zelus.jarvis.io.<a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></h3>
-<code><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a></code></li>
+<code><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html#containingModule">containingModule</a>, <a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a></code></li>
 </ul>
 </li>
 </ul>
@@ -178,7 +178,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvide
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html#GithubWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-">GithubWebhookEventProvider</a></span>(<a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html#GithubWebhookEventProvider-fr.zelus.jarvis.plugins.github.module.GithubModule-">GithubWebhookEventProvider</a></span>(<a href="../../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a>&nbsp;containingModule)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -249,13 +249,13 @@ extends <a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvide
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="GithubWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-">
+<a name="GithubWebhookEventProvider-fr.zelus.jarvis.plugins.github.module.GithubModule-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>GithubWebhookEventProvider</h4>
-<pre>public&nbsp;GithubWebhookEventProvider(<a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore)</pre>
+<pre>public&nbsp;GithubWebhookEventProvider(<a href="../../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a>&nbsp;containingModule)</pre>
 </li>
 </ul>
 </li>
@@ -282,7 +282,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvide
  to <a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html#parseContent-java.lang.Object-"><code>JsonWebhookEventProvider.parseContent(Object)</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html#handleParsedContent-com.google.gson.JsonElement-org.apache.http.Header:A-">handleParsedContent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></code></dd>
+<dd><code><a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html#handleParsedContent-com.google.gson.JsonElement-org.apache.http.Header:A-">handleParsedContent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>parsedContent</code> - the <code>JsonElement</code> representing the request content to handle</dd>
 <dd><code>headers</code> - the HTTP headers of the received request</dd>

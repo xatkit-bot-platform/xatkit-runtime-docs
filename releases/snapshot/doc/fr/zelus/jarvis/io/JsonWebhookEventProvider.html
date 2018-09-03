@@ -93,20 +93,20 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">fr.zelus.jarvis.io</div>
-<h2 title="Class JsonWebhookEventProvider" class="title">Class JsonWebhookEventProvider</h2>
+<h2 title="Class JsonWebhookEventProvider" class="title">Class JsonWebhookEventProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.EventProvider</a></li>
+<li><a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.EventProvider</a>&lt;T&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.WebhookEventProvider</a>&lt;com.google.gson.JsonElement&gt;</li>
+<li><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.WebhookEventProvider</a>&lt;T,com.google.gson.JsonElement&gt;</li>
 <li>
 <ul class="inheritance">
-<li>fr.zelus.jarvis.io.JsonWebhookEventProvider</li>
+<li>fr.zelus.jarvis.io.JsonWebhookEventProvider&lt;T&gt;</li>
 </ul>
 </li>
 </ul>
@@ -118,6 +118,10 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the concrete <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> subclass type containing the provider</dd>
+</dl>
+<dl>
 <dt>All Implemented Interfaces:</dt>
 <dd><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a></dd>
 </dl>
@@ -127,8 +131,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public abstract class <span class="typeNameLabel">JsonWebhookEventProvider</span>
-extends <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&lt;com.google.gson.JsonElement&gt;</pre>
+<pre>public abstract class <span class="typeNameLabel">JsonWebhookEventProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt;</span>
+extends <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&lt;T,com.google.gson.JsonElement&gt;</pre>
 <div class="block">A Json <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> that provides utility methods to parse and manipulate Json HTTP requests.
  <p>
  This <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> should be extended by concrete providers that expect Json content in the HTTP
@@ -169,7 +173,7 @@ extends <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.zelus.jarvis.io.<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></h3>
-<code><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a></code></li>
+<code><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#containingModule">containingModule</a>, <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a></code></li>
 </ul>
 </li>
 </ul>
@@ -185,14 +189,15 @@ extends <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-">JsonWebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore)</code>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> from the provided <code>jarvisCore</code>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-T-">JsonWebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a>&nbsp;containingModule)</code>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> with the provided <code>containingModule</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">JsonWebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-T-org.apache.commons.configuration2.Configuration-">JsonWebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a>&nbsp;containingModule,
                         <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> from the provided <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> with the provided <code>containingModule</code> and
+ <code>configuration</code>.</div>
 </td>
 </tr>
 </table>
@@ -272,41 +277,50 @@ extends <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-">
+<a name="JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisModule-">
+<!--   -->
+</a><a name="JsonWebhookEventProvider-T-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>JsonWebhookEventProvider</h4>
-<pre>public&nbsp;JsonWebhookEventProvider(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore)</pre>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> from the provided <code>jarvisCore</code>.
+<pre>public&nbsp;JsonWebhookEventProvider(<a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a>&nbsp;containingModule)</pre>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> with the provided <code>containingModule</code>.
  <p>
  <b>Note:</b> this constructor should be used by <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a>s that do not require
  additional parameters to be initialized. In that case see
- <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-"><code>JsonWebhookEventProvider(JarvisCore, Configuration)</code></a>.</div>
+ <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-T-org.apache.commons.configuration2.Configuration-"><code>JsonWebhookEventProvider(JarvisModule, Configuration)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>jarvisCore</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s.</dd>
+<dd><code>containingModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>
-<a name="JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">
+<a name="JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisModule-org.apache.commons.configuration2.Configuration-">
+<!--   -->
+</a><a name="JsonWebhookEventProvider-T-org.apache.commons.configuration2.Configuration-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>JsonWebhookEventProvider</h4>
-<pre>public&nbsp;JsonWebhookEventProvider(<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+<pre>public&nbsp;JsonWebhookEventProvider(<a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a>&nbsp;containingModule,
                                 <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> from the provided <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> with the provided <code>containingModule</code> and
+ <code>configuration</code>.
  <p>
  <b>Note</b>: this constructor will be called by jarvis internal engine when initializing the
  <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> component. Subclasses implementing this constructor typically
  need additional parameters to be initialized, that can be provided in the <code>configuration</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>jarvisCore</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle input messages</dd>
+<dd><code>containingModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a></dd>
 <dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to initialize the <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>
@@ -328,7 +342,7 @@ extends <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title
 <div class="block">Returns <code>true</code> if the provided <code>contentType</code> represents a Json content, <code>false</code> otherwise.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#acceptContentType-java.lang.String-">acceptContentType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&lt;com.google.gson.JsonElement&gt;</code></dd>
+<dd><code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#acceptContentType-java.lang.String-">acceptContentType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&lt;<a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a> extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>,com.google.gson.JsonElement&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>contentType</code> - the content type to check</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -349,7 +363,7 @@ extends <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title
  <code>JsonElement</code> constructed from the raw request content.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#parseContent-java.lang.Object-">parseContent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&lt;com.google.gson.JsonElement&gt;</code></dd>
+<dd><code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#parseContent-java.lang.Object-">parseContent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&lt;<a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a> extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>,com.google.gson.JsonElement&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>content</code> - the raw HTTP request content to parse</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -376,7 +390,7 @@ extends <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title
  to <a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html#parseContent-java.lang.Object-"><code>parseContent(Object)</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#handleParsedContent-T-org.apache.http.Header:A-">handleParsedContent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&lt;com.google.gson.JsonElement&gt;</code></dd>
+<dd><code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#handleParsedContent-C-org.apache.http.Header:A-">handleParsedContent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a>&lt;<a href="../../../../fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a> extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>,com.google.gson.JsonElement&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>parsedContent</code> - the <code>JsonElement</code> representing the request content to handle</dd>
 <dd><code>headers</code> - the HTTP headers of the received request</dd>

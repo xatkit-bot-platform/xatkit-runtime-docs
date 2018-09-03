@@ -100,10 +100,10 @@ var activeTableTab = "activeTableTab";
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.EventProvider</a></li>
+<li><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.EventProvider</a>&lt;T&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.IntentProvider</a></li>
+<li><a href="../../../../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">fr.zelus.jarvis.io.IntentProvider</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>fr.zelus.jarvis.plugins.discord.module.io.DiscordIntentProvider</li>
@@ -124,7 +124,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DiscordIntentProvider</span>
-extends <a href="../../../../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">IntentProvider</a></pre>
+extends <a href="../../../../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">IntentProvider</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a>&gt;</pre>
 <div class="block">A Discord user <a href="../../../../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>.
  <p>
  This class relies on the <a href="https://github.com/DV8FromTheWorld/JDA">JDA library</a> to receive direct
@@ -156,7 +156,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/io/IntentProvider.html" ti
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.zelus.jarvis.io.<a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></h3>
-<code><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a></code></li>
+<code><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html#containingModule">containingModule</a>, <a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a></code></li>
 </ul>
 </li>
 </ul>
@@ -172,9 +172,10 @@ extends <a href="../../../../../../../fr/zelus/jarvis/io/IntentProvider.html" ti
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html#DiscordIntentProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">DiscordIntentProvider</a></span>(<a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html#DiscordIntentProvider-fr.zelus.jarvis.plugins.discord.module.DiscordModule-org.apache.commons.configuration2.Configuration-">DiscordIntentProvider</a></span>(<a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a>&nbsp;containingModule,
                      <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordIntentProvider</code></a> from the provided <a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordIntentProvider</code></a> from the provided <code>containingModule</code> and
+ <code>configuration</code>.</div>
 </td>
 </tr>
 </table>
@@ -237,15 +238,16 @@ extends <a href="../../../../../../../fr/zelus/jarvis/io/IntentProvider.html" ti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DiscordIntentProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">
+<a name="DiscordIntentProvider-fr.zelus.jarvis.plugins.discord.module.DiscordModule-org.apache.commons.configuration2.Configuration-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DiscordIntentProvider</h4>
-<pre>public&nbsp;DiscordIntentProvider(<a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+<pre>public&nbsp;DiscordIntentProvider(<a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a>&nbsp;containingModule,
                              <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
-<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordIntentProvider</code></a> from the provided <a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.
+<div class="block">Constructs a new <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordIntentProvider</code></a> from the provided <code>containingModule</code> and
+ <code>configuration</code>.
  <p>
  This constructor initializes the underlying <code>JDA</code> client and creates a message listener that forwards to
  the <code>jarvisCore</code> instance not empty direct messages sent by users (not bots) to the bot private channel
@@ -256,10 +258,10 @@ extends <a href="../../../../../../../fr/zelus/jarvis/io/IntentProvider.html" ti
  bot token.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>jarvisCore</code> - the <a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle messages</dd>
+<dd><code>containingModule</code> - the <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module"><code>DiscordModule</code></a> containing this <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordIntentProvider</code></a></dd>
 <dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to retrieve the Discord bot token</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> or <code>configuration</code> is <code>null</code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided Discord bot token is <code>null</code> or empty</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../../fr/zelus/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in fr.zelus.jarvis.plugins.discord"><code>JarvisDiscordUtils</code></a>, 
@@ -310,7 +312,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/io/IntentProvider.html" ti
 <div class="block">Disconnects the underlying <code>JDA</code> client.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html#close--">close</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></code></dd>
+<dd><code><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html#close--">close</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

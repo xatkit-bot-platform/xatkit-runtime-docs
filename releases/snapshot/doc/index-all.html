@@ -398,6 +398,10 @@
 <dd>
 <div class="block">Constructs a new instance of the provided <code>clazz</code> with the given <code>parameters</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/EventProvider.html#containingModule">containingModule</a></span> - Variable in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></dt>
+<dd>
+<div class="block">The <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> subclass containing this action.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">Context</span></a> - Interface in <a href="fr/zelus/jarvis/intent/package-summary.html">fr.zelus.jarvis.intent</a></dt>
 <dd>
 <div class="block">A representation of the model object '<em><b>Context</b></em>'.</div>
@@ -940,9 +944,10 @@
 <dd>
 <div class="block">A Discord user <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html#DiscordIntentProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">DiscordIntentProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordIntentProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html#DiscordIntentProvider-fr.zelus.jarvis.plugins.discord.module.DiscordModule-org.apache.commons.configuration2.Configuration-">DiscordIntentProvider(DiscordModule, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordIntentProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordIntentProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><code>DiscordIntentProvider</code></a> from the provided <code>containingModule</code> and
+ <code>configuration</code>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module"><span class="typeNameLink">DiscordModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/discord/module/package-summary.html">fr.zelus.jarvis.plugins.discord.module</a></dt>
 <dd>
@@ -1387,17 +1392,17 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#EventInstanceImpl--">EventInstanceImpl()</a></span> - Constructor for class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/EventInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">EventInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">EventProvider</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
+<dt><a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">EventProvider</span></a>&lt;<a href="fr/zelus/jarvis/io/EventProvider.html" title="type parameter in EventProvider">T</a> extends <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt; - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
 <dd>
 <div class="block">An abstract class representing user input providers.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/EventProvider.html#EventProvider-fr.zelus.jarvis.core.JarvisCore-">EventProvider(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/EventProvider.html#EventProvider-T-">EventProvider(T)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> with the provided <code>containingModule</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/EventProvider.html#EventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">EventProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/EventProvider.html#EventProvider-T-org.apache.commons.configuration2.Configuration-">EventProvider(T, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> with the provided <code>containingModule</code> and <code>configuration</code>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/module/EventProviderDefinition.html" title="interface in fr.zelus.jarvis.module"><span class="typeNameLink">EventProviderDefinition</span></a> - Interface in <a href="fr/zelus/jarvis/module/package-summary.html">fr.zelus.jarvis.module</a></dt>
 <dd>
@@ -2063,10 +2068,6 @@
 <dd>
 <div class="block">Returns all the <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s stored in this registry.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisAction.html#getName--">getName()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></dt>
-<dd>
-<div class="block">Returns the name of the action.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#getName--">getName()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
 <div class="block">Returns the name of the module.</div>
@@ -2454,7 +2455,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html" title="class in fr.zelus.jarvis.plugins.github.module.io"><span class="typeNameLink">GithubWebhookEventProvider</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html#GithubWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-">GithubWebhookEventProvider(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubWebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html#GithubWebhookEventProvider-fr.zelus.jarvis.plugins.github.module.GithubModule-">GithubWebhookEventProvider(GithubModule)</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubWebhookEventProvider</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#GOOGLE_CREDENTIALS_PATH_KEY">GOOGLE_CREDENTIALS_PATH_KEY</a></span> - Static variable in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
@@ -2488,7 +2489,7 @@
 <dd>
 <div class="block">Handles the <code>JsonElement</code> representing the request content.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#handleParsedContent-T-org.apache.http.Header:A-">handleParsedContent(T, Header[])</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#handleParsedContent-C-org.apache.http.Header:A-">handleParsedContent(C, Header[])</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
 <dd>
 <div class="block">Handles the parsed request content and headers.</div>
 </dd>
@@ -2684,18 +2685,17 @@
 <dd>
 <div class="block">An implementation of the model <b>Package</b>.</div>
 </dd>
-<dt><a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">IntentProvider</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
+<dt><a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">IntentProvider</span></a>&lt;<a href="fr/zelus/jarvis/io/IntentProvider.html" title="type parameter in IntentProvider">T</a> extends <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt; - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
 <dd>
 <div class="block">A specialised <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> that extracts <a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> from textual user inputs.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-fr.zelus.jarvis.core.JarvisCore-">IntentProvider(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">IntentProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-T-">IntentProvider(T)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">IntentProvider</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> from the provided <code>jarvisCore</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">IntentProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">IntentProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-T-org.apache.commons.configuration2.Configuration-">IntentProvider(T, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io">IntentProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>, <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>, and
- <a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> with the provided <code>containingModule</code> and <code>configuration</code>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="class in fr.zelus.jarvis.intent.util"><span class="typeNameLink">IntentSwitch</span></a>&lt;<a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="type parameter in IntentSwitch">T</a>&gt; - Class in <a href="fr/zelus/jarvis/intent/util/package-summary.html">fr.zelus.jarvis.intent.util</a></dt>
 <dd>
@@ -2789,7 +2789,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a></span> - Variable in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></dt>
 <dd>
-<div class="block">The <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle input messages.</div>
+<div class="block">The <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to handle events.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in fr.zelus.jarvis.plugins.discord"><span class="typeNameLink">JarvisDiscordUtils</span></a> - Class in <a href="fr/zelus/jarvis/plugins/discord/package-summary.html">fr.zelus.jarvis.plugins.discord</a></dt>
 <dd>
@@ -2888,17 +2888,18 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.JsonHelper.html#JsonHelper--">JsonHelper()</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.JsonHelper.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider.JsonHelper</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">JsonWebhookEventProvider</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
+<dt><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">JsonWebhookEventProvider</span></a>&lt;<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a> extends <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt; - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
 <dd>
 <div class="block">A Json <a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> that provides utility methods to parse and manipulate Json HTTP requests.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-">JsonWebhookEventProvider(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-T-">JsonWebhookEventProvider(T)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> from the provided <code>jarvisCore</code>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> with the provided <code>containingModule</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">JsonWebhookEventProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-T-org.apache.commons.configuration2.Configuration-">JsonWebhookEventProvider(T, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>JsonWebhookEventProvider</code></a> with the provided <code>containingModule</code> and
+ <code>configuration</code>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.JsonHelper.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">JsonWebhookEventProvider.JsonHelper</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
 <dd>&nbsp;</dd>
@@ -3915,9 +3916,10 @@
 <dd>
 <div class="block">A Slack user input provider.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html#SlackIntentProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">SlackIntentProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.slack.module.io.<a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackIntentProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html#SlackIntentProvider-fr.zelus.jarvis.plugins.slack.module.SlackModule-org.apache.commons.configuration2.Configuration-">SlackIntentProvider(SlackModule, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.slack.module.io.<a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackIntentProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io"><code>SlackIntentProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io"><code>SlackIntentProvider</code></a> from the provided <code>containingModule</code> and
+ <code>configuration</code>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><span class="typeNameLink">SlackModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/slack/module/package-summary.html">fr.zelus.jarvis.plugins.slack.module</a></dt>
 <dd>
@@ -3987,8 +3989,6 @@
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html#getTextFragment--"><code><em>Text Fragment</em></code></a>' attribute.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisAction.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterImpl</a></dt>
@@ -4147,18 +4147,19 @@
 </a>
 <h2 class="title">W</h2>
 <dl>
-<dt><a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">WebhookEventProvider</span></a>&lt;<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a>&gt; - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
+<dt><a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">WebhookEventProvider</span></a>&lt;<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a> extends <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>,<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">C</a>&gt; - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
 <dd>
 <div class="block">A specialised <a href="fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> that handles HTTP requests sent by the
  <a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#WebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-">WebhookEventProvider(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#WebhookEventProvider-T-">WebhookEventProvider(T)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> from the provided <code>jarvisCore</code>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> with the provided <code>containingModule</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#WebhookEventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">WebhookEventProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#WebhookEventProvider-T-org.apache.commons.configuration2.Configuration-">WebhookEventProvider(T, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> from the provided <code>containingModule</code> and
+ <code>configuration</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/wordpress/JarvisWordPressUtils.html#WORDPRESS_BASE_URL_KEY">WORDPRESS_BASE_URL_KEY</a></span> - Static variable in interface fr.zelus.jarvis.plugins.wordpress.<a href="fr/zelus/jarvis/plugins/wordpress/JarvisWordPressUtils.html" title="interface in fr.zelus.jarvis.plugins.wordpress">JarvisWordPressUtils</a></dt>
 <dd>
@@ -4190,7 +4191,7 @@
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/wordpress/module/io/WordPressEventProvider.html" title="class in fr.zelus.jarvis.plugins.wordpress.module.io"><span class="typeNameLink">WordPressEventProvider</span></a> - Class in <a href="fr/zelus/jarvis/plugins/wordpress/module/io/package-summary.html">fr.zelus.jarvis.plugins.wordpress.module.io</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/wordpress/module/io/WordPressEventProvider.html#WordPressEventProvider-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">WordPressEventProvider(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.wordpress.module.io.<a href="fr/zelus/jarvis/plugins/wordpress/module/io/WordPressEventProvider.html" title="class in fr.zelus.jarvis.plugins.wordpress.module.io">WordPressEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/wordpress/module/io/WordPressEventProvider.html#WordPressEventProvider-fr.zelus.jarvis.plugins.wordpress.module.WordPressModule-org.apache.commons.configuration2.Configuration-">WordPressEventProvider(WordPressModule, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.wordpress.module.io.<a href="fr/zelus/jarvis/plugins/wordpress/module/io/WordPressEventProvider.html" title="class in fr.zelus.jarvis.plugins.wordpress.module.io">WordPressEventProvider</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/wordpress/module/WordPressModule.html" title="class in fr.zelus.jarvis.plugins.wordpress.module"><span class="typeNameLink">WordPressModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/wordpress/module/package-summary.html">fr.zelus.jarvis.plugins.wordpress.module</a></dt>
 <dd>
