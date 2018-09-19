@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -142,31 +142,37 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#clear--">clear</a></span>()</code>
+<div class="block">Clears the builder and reset its internal fields.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#getEventDefinitionName--">getEventDefinitionName</a></span>()</code>
 <div class="block">Returns the name of the <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a> to bind to the created <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#getOutContextValues--">getOutContextValues</a></span>()</code>
 <div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing the output context parameters to bind to the
  <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#newBuilder-fr.zelus.jarvis.core.EventDefinitionRegistry-">newBuilder</a></span>(<a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">EventDefinitionRegistry</a>&nbsp;registry)</code>
 <div class="block">Creates a new <a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io"><code>EventInstanceBuilder</code></a> from the provided <code>registry</code>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#setEventDefinitionName-java.lang.String-">setEventDefinitionName</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;eventDefinitionName)</code>
 <div class="block">Sets the name of the <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a> to bind to the created <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#setOutContextValue-java.lang.String-java.lang.String-">setOutContextValue</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextKey,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextValue)</code>
@@ -293,7 +299,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <a name="build--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>build</h4>
 <pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent">EventInstance</a>&nbsp;build()</pre>
@@ -301,7 +307,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <p>
  This method validates the provided information before creating the <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>. The provided
  <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a> name is used to retrieve the associated <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a> from the <code>registry</code>, and the <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>'s <a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent"><code>ContextParameter</code></a>s are processed and matched against the
- provided output context parameters.</div>
+ provided output context parameters.
+ <p>
+ <b>Note:</b> the builder will be cleared after returning the created <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a> in order to allow
+ multiple <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a> creations from the same <a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io"><code>EventInstanceBuilder</code></a> (see <a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#clear--"><code>clear()</code></a>).</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the created <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a></dd>
@@ -311,8 +320,21 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
                          the provided ones</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#setEventDefinitionName-java.lang.String-"><code>setEventDefinitionName(String)</code></a>, 
-<a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#setOutContextValue-java.lang.String-java.lang.String-"><code>setOutContextValue(String, String)</code></a></dd>
+<a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#setOutContextValue-java.lang.String-java.lang.String-"><code>setOutContextValue(String, String)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#clear--"><code>clear()</code></a></dd>
 </dl>
+</li>
+</ul>
+<a name="clear--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>clear</h4>
+<pre>public&nbsp;void&nbsp;clear()</pre>
+<div class="block">Clears the builder and reset its internal fields.
+ <p>
+ <b>Note:</b> this method is automatically called after calling <a href="../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#build--"><code>build()</code></a>.</div>
 </li>
 </ul>
 </li>
