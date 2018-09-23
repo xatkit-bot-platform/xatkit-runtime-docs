@@ -795,7 +795,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#createSession-java.lang.String-">createSession(String)</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
-<div class="block">Creates a new <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> for the provided <code>userId</code>.</div>
+<div class="block">Creates a new <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> from the provided <code>sessionId</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#createSession-java.lang.String-">createSession(String)</a></span> - Method in interface fr.zelus.jarvis.recognition.<a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">Creates a new <a href="fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> from the provided <code>sessionId</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html#createSessionFromChannel-net.dv8tion.jda.core.entities.MessageChannel-">createSessionFromChannel(MessageChannel)</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.<a href="fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a></dt>
 <dd>
@@ -869,12 +873,15 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#deleteIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">deleteIntentDefinition(IntentDefinition)</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
-<div class="block">Deletes the <code>Intent</code> matching the provided <code>intentDefinition</code> from the DialogFlow project.</div>
+<div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent fr.zelus.jarvis.recognition provider.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#deleteIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">deleteIntentDefinition(IntentDefinition)</a></span> - Method in interface fr.zelus.jarvis.recognition.<a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent fr.zelus.jarvis.recognition provider.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><span class="typeNameLink">DialogFlowApi</span></a> - Class in <a href="fr/zelus/jarvis/dialogflow/package-summary.html">fr.zelus.jarvis.dialogflow</a></dt>
 <dd>
-<div class="block">A wrapper of the DialogFlow API that provides utility methods to connect to a given DialogFlow project, start
- sessions, manage registered intents, and detect intents instances from textual inputs.</div>
+<div class="block">A concrete wrapper for the DialogFlow API client.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">DialogFlowApi(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
@@ -1544,6 +1551,8 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/wordpress/module/io/package-summary.html">fr.zelus.jarvis.plugins.wordpress.module.io</a> - package fr.zelus.jarvis.plugins.wordpress.module.io</dt>
 <dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/recognition/package-summary.html">fr.zelus.jarvis.recognition</a> - package fr.zelus.jarvis.recognition</dt>
+<dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/server/package-summary.html">fr.zelus.jarvis.server</a> - package fr.zelus.jarvis.server</dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/util/package-summary.html">fr.zelus.jarvis.util</a> - package fr.zelus.jarvis.util</dt>
@@ -1892,7 +1901,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getIntent(String, JarvisSession)</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
-<div class="block">Returns the <a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from the provided <code>text</code></div>
+<div class="block">Returns the <a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#getIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getIntent(String, JarvisSession)</a></span> - Method in interface fr.zelus.jarvis.recognition.<a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">Returns the <a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html#getIntentDefinition-java.lang.String-">getIntentDefinition(String)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">EventDefinitionRegistry</a></dt>
 <dd>&nbsp;</dd>
@@ -2701,6 +2714,10 @@
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> with the provided <code>containingModule</code> and <code>configuration</code>.</div>
 </dd>
+<dt><a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><span class="typeNameLink">IntentRecognitionProvider</span></a> - Interface in <a href="fr/zelus/jarvis/recognition/package-summary.html">fr.zelus.jarvis.recognition</a></dt>
+<dd>
+<div class="block">A unified wrapper for concrete intent fr.zelus.jarvis.recognition providers.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="class in fr.zelus.jarvis.intent.util"><span class="typeNameLink">IntentSwitch</span></a>&lt;<a href="fr/zelus/jarvis/intent/util/IntentSwitch.html" title="type parameter in IntentSwitch">T</a>&gt; - Class in <a href="fr/zelus/jarvis/intent/util/package-summary.html">fr.zelus.jarvis.intent.util</a></dt>
 <dd>
 <div class="block">The <b>Switch</b> for the model's inheritance hierarchy.</div>
@@ -2727,7 +2744,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#isShutdown--">isShutdown()</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
-<div class="block">Returns whether the DialogFlow client is shutdown.</div>
+<div class="block">Returns whether the intent fr.zelus.jarvis.recognition provider client is shutdown.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#isShutdown--">isShutdown()</a></span> - Method in interface fr.zelus.jarvis.recognition.<a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">Returns whether the intent fr.zelus.jarvis.recognition provider client is shutdown.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/server/JarvisServer.html#isStarted--">isStarted()</a></span> - Method in class fr.zelus.jarvis.server.<a href="fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server">JarvisServer</a></dt>
 <dd>
@@ -3664,7 +3685,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#registerIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">registerIntentDefinition(IntentDefinition)</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
-<div class="block">Registers the provided <code>intentDefinition</code> in the DialogFlow project.</div>
+<div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent fr.zelus.jarvis.recognition provider.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#registerIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">registerIntentDefinition(IntentDefinition)</a></span> - Method in interface fr.zelus.jarvis.recognition.<a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent fr.zelus.jarvis.recognition provider.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModuleRegistry.html#registerJarvisModule-fr.zelus.jarvis.core.JarvisModule-">registerJarvisModule(JarvisModule)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core">JarvisModuleRegistry</a></dt>
 <dd>
@@ -3902,7 +3927,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#shutdown--">shutdown()</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
-<div class="block">Shuts down the DialogFlow clients and invalidates the session.</div>
+<div class="block">Shuts down the intent fr.zelus.jarvis.recognition provider client and invalidates the remaining sessions.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#shutdown--">shutdown()</a></span> - Method in interface fr.zelus.jarvis.recognition.<a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">Shuts down the intent fr.zelus.jarvis.recognition provider client and invalidates the remaining sessions.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/JarvisSlackUtils.html#SLACK_CHANNEL_CONTEXT_KEY">SLACK_CHANNEL_CONTEXT_KEY</a></span> - Static variable in interface fr.zelus.jarvis.plugins.slack.<a href="fr/zelus/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in fr.zelus.jarvis.plugins.slack">JarvisSlackUtils</a></dt>
 <dd>
@@ -4027,7 +4056,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html#trainMLEngine--">trainMLEngine()</a></span> - Method in class fr.zelus.jarvis.dialogflow.<a href="fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dt>
 <dd>
-<div class="block">Sends a training query to the DialogFlow ML Engine and waits for its completion.</div>
+<div class="block">Trains the underlying intent fr.zelus.jarvis.recognition provider.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--">trainMLEngine()</a></span> - Method in interface fr.zelus.jarvis.recognition.<a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">Trains the underlying intent fr.zelus.jarvis.recognition provider.</div>
 </dd>
 </dl>
 <a name="I:U">

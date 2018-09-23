@@ -126,6 +126,10 @@
 <td class="colFirst"><a href="#fr.zelus.jarvis.plugins.slack.module.action">fr.zelus.jarvis.plugins.slack.module.action</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#fr.zelus.jarvis.recognition">fr.zelus.jarvis.recognition</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -250,7 +254,7 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
 <td class="colLast"><span class="typeNameLabel">DialogFlowApi.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#createSession-java.lang.String-">createSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
-<div class="block">Creates a new <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> for the provided <code>userId</code>.</div>
+<div class="block">Creates a new <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> from the provided <code>sessionId</code>.</div>
 </td>
 </tr>
 </tbody>
@@ -264,9 +268,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DialogFlowApi.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+<td class="colLast"><span class="typeNameLabel">DialogFlowApi.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
          <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
-<div class="block">Returns the <a href="../../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from the provided <code>text</code></div>
+<div class="block">Returns the <a href="../../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
 </td>
 </tr>
 </tbody>
@@ -557,6 +561,42 @@
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>
 <div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/slack/module/action/ReplyFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>ReplyFileMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code>, and <code>file</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="fr.zelus.jarvis.recognition">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a> in <a href="../../../../../../fr/zelus/jarvis/recognition/package-summary.html">fr.zelus.jarvis.recognition</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../fr/zelus/jarvis/recognition/package-summary.html">fr.zelus.jarvis.recognition</a> that return <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IntentRecognitionProvider.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#createSession-java.lang.String-">createSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
+<div class="block">Creates a new <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> from the provided <code>sessionId</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../fr/zelus/jarvis/recognition/package-summary.html">fr.zelus.jarvis.recognition</a> with parameters of type <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a></code></td>
+<td class="colLast"><span class="typeNameLabel">IntentRecognitionProvider.</span><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#getIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+         <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
+<div class="block">Returns the <a href="../../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
 </td>
 </tr>
 </tbody>

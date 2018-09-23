@@ -107,16 +107,23 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DialogFlowApi</span>
-extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">A wrapper of the DialogFlow API that provides utility methods to connect to a given DialogFlow project, start
- sessions, manage registered intents, and detect intents instances from textual inputs.
+extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></pre>
+<div class="block">A concrete wrapper for the DialogFlow API client.
  <p>
- This class is used to easily setup a connection to a given DialogFlow project. Note that in addition to the
- constructor parameters, the <code>GOOGLE_APPLICATION_CREDENTIALS</code> environment variable must be set and point to
- the DialogFlow project's key. See
+ This class is used to easily setup a connection to a given DialogFlow agent. Note that in addition to the
+ constructor parameters, the DialogFlow <code>projectId</code> (see <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#PROJECT_ID_KEY"><code>PROJECT_ID_KEY</code></a>), language code (see
+ <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#LANGUAGE_CODE_KEY"><code>LANGUAGE_CODE_KEY</code></a>), and the location of the DialogFlow project's key file ((see
+ <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#GOOGLE_CREDENTIALS_PATH_KEY"><code>GOOGLE_CREDENTIALS_PATH_KEY</code></a>) should be provided in the constructor's <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>. The
+ DialogFlow project's key file location can also be provided in the <code>GOOGLE_APPLICATION_CREDENTIALS</code>
+ environment variable. See
  <a href="https://cloud.google.com/dialogflow-enterprise/docs/reference/libraries">DialogFlow documentation</a> for
  further information.</div>
 </li>
@@ -211,7 +218,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#createSession-java.lang.String-">createSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
-<div class="block">Creates a new <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> for the provided <code>userId</code>.</div>
+<div class="block">Creates a new <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> from the provided <code>sessionId</code>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -222,7 +229,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#deleteIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">deleteIntentDefinition</a></span>(<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
-<div class="block">Deletes the <code>Intent</code> matching the provided <code>intentDefinition</code> from the DialogFlow project.</div>
+<div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent fr.zelus.jarvis.recognition provider.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
@@ -233,9 +240,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
          <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
-<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from the provided <code>text</code></div>
+<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
@@ -265,25 +272,25 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#isShutdown--">isShutdown</a></span>()</code>
-<div class="block">Returns whether the DialogFlow client is shutdown.</div>
+<div class="block">Returns whether the intent fr.zelus.jarvis.recognition provider client is shutdown.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#registerIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></span>(<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
-<div class="block">Registers the provided <code>intentDefinition</code> in the DialogFlow project.</div>
+<div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent fr.zelus.jarvis.recognition provider.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#shutdown--">shutdown</a></span>()</code>
-<div class="block">Shuts down the DialogFlow clients and invalidates the session.</div>
+<div class="block">Shuts down the intent fr.zelus.jarvis.recognition provider client and invalidates the remaining sessions.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#trainMLEngine--">trainMLEngine</a></span>()</code>
-<div class="block">Sends a training query to the DialogFlow ML Engine and waits for its completion.</div>
+<div class="block">Trains the underlying intent fr.zelus.jarvis.recognition provider.</div>
 </td>
 </tr>
 </table>
@@ -488,22 +495,25 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>registerIntentDefinition</h4>
 <pre>public&nbsp;void&nbsp;registerIntentDefinition(<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</pre>
-<div class="block">Registers the provided <code>intentDefinition</code> in the DialogFlow project.
+<div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent fr.zelus.jarvis.recognition provider.
+ <p>
+ <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
+ learning engine, so multiple intent registrations does not generate multiple training calls. Once all the
+ <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s have been registered in the underlying intent fr.zelus.jarvis.recognition provider use
+ <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a> to train the ML engine.
  <p>
  This method reuses the information contained in the provided <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to create a new
- DialogFlow <code>Intent</code> and add it to the current project.
- <p>
- <b>Note:</b> this method does not train the underlying DialogFlow Machine Learning Engine, so multiple calls
- to this method are not generating multiple training calls. Once all the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s have been
- registered to the DialogFlow project use <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#trainMLEngine--"><code>trainMLEngine()</code></a> to train the ML Engine.</div>
+ DialogFlow <code>Intent</code> and add it to the current project.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#registerIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>intentDefinition</code> - the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to register to the DialogFlow project</dd>
+<dd><code>intentDefinition</code> - the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to register to the underlying intent fr.zelus.jarvis.recognition provider</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowException.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowException</a></code> - if the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> is shutdown, or if the <code>Intent</code> already exists in
                              the DialogFlow project</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#trainMLEngine--"><code>trainMLEngine()</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -551,18 +561,21 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>deleteIntentDefinition</h4>
 <pre>public&nbsp;void&nbsp;deleteIntentDefinition(<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</pre>
-<div class="block">Deletes the <code>Intent</code> matching the provided <code>intentDefinition</code> from the DialogFlow project.
+<div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent fr.zelus.jarvis.recognition provider.
  <p>
- <b>Note:</b> this method does not train the underlying DialogFlow Machine Learning Engine, so multiple calls
- to this method are not generating multiple training calls. Once all the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s have been
- deleted from the DialogFlow project use <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#trainMLEngine--"><code>trainMLEngine()</code></a> to train the ML Engine.</div>
+ <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
+ learning engine, so multiple intent deletion does not generate multiple training calls. Once all the
+ <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s have been deleted from the underlying intent fr.zelus.jarvis.recognition provider use
+ <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a> to train the ML engine.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#deleteIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">deleteIntentDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>intentDefinition</code> - the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to delete from the DialogFlow project</dd>
+<dd><code>intentDefinition</code> - the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to delete from the underlying intent fr.zelus.jarvis.recognition provider</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowException.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowException</a></code> - if the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> is shutdown</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#trainMLEngine--"><code>trainMLEngine()</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -573,12 +586,17 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>trainMLEngine</h4>
 <pre>public&nbsp;void&nbsp;trainMLEngine()</pre>
-<div class="block">Sends a training query to the DialogFlow ML Engine and waits for its completion.
+<div class="block">Trains the underlying intent fr.zelus.jarvis.recognition provider.
+ <p>
+ <b>Note:</b> this method returns once the intent fr.zelus.jarvis.recognition provider's training is complete. However, the
+ propagation of the training information may not be complete when this method returns.
  <p>
  This method checks every second whether the underlying ML Engine has finished its training. Note that this
  method is blocking as long as the ML Engine training is not terminated, and may not terminate if an issue
  occurred on the DialogFlow side.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--">trainMLEngine</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowException.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowException</a></code> - if the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> is shutdown</dd>
 </dl>
@@ -591,7 +609,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>createSession</h4>
 <pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;createSession(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</pre>
-<div class="block">Creates a new <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> for the provided <code>userId</code>.
+<div class="block">Creates a new <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> from the provided <code>sessionId</code>.
  <p>
  The created session wraps the internal DialogFlow session that is used on the DialogFlow project to retrieve
  conversation parts from a given user.
@@ -599,10 +617,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  The returned <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> is configured by the global <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> provided in
  <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#DialogFlowApi-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-"><code>DialogFlowApi(JarvisCore, Configuration)</code></a>.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#createSession-java.lang.String-">createSession</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>sessionId</code> - the identifier to create a session for</dd>
+<dd><code>sessionId</code> - the identifier to create a session from</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> for the provided <code>userId</code></dd>
+<dd>a new <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> for the provided <code>sessionId</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowException.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowException</a></code> - if the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> is shutdown</dd>
 </dl>
@@ -615,10 +635,14 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>shutdown</h4>
 <pre>public&nbsp;void&nbsp;shutdown()</pre>
-<div class="block">Shuts down the DialogFlow clients and invalidates the session.
+<div class="block">Shuts down the intent fr.zelus.jarvis.recognition provider client and invalidates the remaining sessions.
  <p>
- <b>Note:</b> calling this method invalidates the DialogFlow connection, and thus this class cannot be used to
- access DialogFlow API anymore.</div>
+ <b>Note:</b> calling this method invalidates the intent fr.zelus.jarvis.recognition provider client connection, and thus this
+ class cannot be used to access the intent fr.zelus.jarvis.recognition provider anymore.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#shutdown--">shutdown</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="isShutdown--">
@@ -628,10 +652,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>isShutdown</h4>
 <pre>public&nbsp;boolean&nbsp;isShutdown()</pre>
-<div class="block">Returns whether the DialogFlow client is shutdown.</div>
+<div class="block">Returns whether the intent fr.zelus.jarvis.recognition provider client is shutdown.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#isShutdown--">isShutdown</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if the DialogFlow client is shutdown, <code>false</code> otherwise</dd>
+<dd><code>true</code> if the intent fr.zelus.jarvis.recognition provider client is shutdown, <code>false</code> otherwise</dd>
 </dl>
 </li>
 </ul>
@@ -641,27 +667,28 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getIntent</h4>
-<pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a>&nbsp;getIntent(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
+<pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a>&nbsp;getIntent(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
                                   <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</pre>
-<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from the provided <code>text</code>
+<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.
+ <p>
+ This method uses the provided <code>session</code> to extract contextual intents, such as follow-up or
+ context-based intents.
  <p>
  The returned <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> is constructed from the raw <code>Intent</code> returned by the DialogFlow
  API, using the mapping defined in <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#convertDialogFlowIntentToRecognizedIntent-com.google.cloud.dialogflow.v2.QueryResult-"><code>convertDialogFlowIntentToRecognizedIntent(QueryResult)</code></a>.
- <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s are used
- to wrap the Intents returned by the Intent Recognition APIs and decouple the application from the concrete API
- used.
- <p>
- This method uses the provided <code>session</code> to extract contextual <code>Intent</code>s, such as follow-up
- or context-based <code>Intent</code>s.</div>
+ <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s are used to wrap the Intents returned by the Intent Recognition APIs and
+ decouple the application from the concrete API used.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#getIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getIntent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>text</code> - a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representing the textual input to process and extract the <code>Intent</code> from</dd>
-<dd><code>session</code> - the <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> wrapping the underlying DialogFlow session</dd>
+<dd><code>input</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representing the textual input to process and extract the intent from</dd>
+<dd><code>session</code> - the <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> used to access context information</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from the provided input <code>text</code></dd>
+<dd>the <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from the provided <code>input</code> and <code>session</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>text</code> or <code>session</code> is <code>null</code></dd>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>text</code> is empty</dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>input</code> or <code>session</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>input</code> is empty</dd>
 <dd><code><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowException.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowException</a></code> - if the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> is shutdown or if an exception is thrown by the
                                   underlying DialogFlow engine</dd>
 </dl>

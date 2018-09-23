@@ -110,6 +110,10 @@
 <td class="colFirst"><a href="#fr.zelus.jarvis.module.impl">fr.zelus.jarvis.module.impl</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#fr.zelus.jarvis.recognition">fr.zelus.jarvis.recognition</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -160,13 +164,13 @@
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">DialogFlowApi.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#deleteIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">deleteIntentDefinition</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
-<div class="block">Deletes the <code>Intent</code> matching the provided <code>intentDefinition</code> from the DialogFlow project.</div>
+<div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent fr.zelus.jarvis.recognition provider.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">DialogFlowApi.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html#registerIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
-<div class="block">Registers the provided <code>intentDefinition</code> in the DialogFlow project.</div>
+<div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent fr.zelus.jarvis.recognition provider.</div>
 </td>
 </tr>
 </tbody>
@@ -294,6 +298,32 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">ModuleImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/module/impl/ModuleImpl.html#getIntentDefinitions--">getIntentDefinitions</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="fr.zelus.jarvis.recognition">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a> in <a href="../../../../../fr/zelus/jarvis/recognition/package-summary.html">fr.zelus.jarvis.recognition</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../fr/zelus/jarvis/recognition/package-summary.html">fr.zelus.jarvis.recognition</a> with parameters of type <a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">IntentRecognitionProvider.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#deleteIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">deleteIntentDefinition</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
+<div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent fr.zelus.jarvis.recognition provider.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">IntentRecognitionProvider.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#registerIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
+<div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent fr.zelus.jarvis.recognition provider.</div>
+</td>
 </tr>
 </tbody>
 </table>
