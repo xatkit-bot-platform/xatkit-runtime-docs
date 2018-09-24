@@ -49,8 +49,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../../fr/zelus/jarvis/recognition/DefaultIntentRecognitionProvider.html" title="class in fr.zelus.jarvis.recognition"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProviderException.html" title="class in fr.zelus.jarvis.recognition"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" target="_top">Frames</a></li>
@@ -101,14 +101,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowApi</a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/recognition/DefaultIntentRecognitionProvider.html" title="class in fr.zelus.jarvis.recognition">DefaultIntentRecognitionProvider</a>, <a href="../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.recognition.dialogflow">DialogFlowApi</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IntentRecognitionProvider</span></pre>
-<div class="block">A unified wrapper for concrete intent fr.zelus.jarvis.recognition providers.
+<div class="block">A unified wrapper for concrete intent recognition providers.
  <p>
- This interface provides utility methods to connect to a given intent fr.zelus.jarvis.recognition provider, register and delete
+ This interface provides utility methods to connect to a given intent recognition provider, register and delete
  <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s, create <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a>s, and compute the <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> from a given
  input text.</div>
 </li>
@@ -138,7 +138,7 @@ var activeTableTab = "activeTableTab";
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#deleteIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">deleteIntentDefinition</a></span>(<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
-<div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent fr.zelus.jarvis.recognition provider.</div>
+<div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent recognition provider.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -151,25 +151,25 @@ var activeTableTab = "activeTableTab";
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#isShutdown--">isShutdown</a></span>()</code>
-<div class="block">Returns whether the intent fr.zelus.jarvis.recognition provider client is shutdown.</div>
+<div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#registerIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></span>(<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
-<div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent fr.zelus.jarvis.recognition provider.</div>
+<div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#shutdown--">shutdown</a></span>()</code>
-<div class="block">Shuts down the intent fr.zelus.jarvis.recognition provider client and invalidates the remaining sessions.</div>
+<div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--">trainMLEngine</a></span>()</code>
-<div class="block">Trains the underlying intent fr.zelus.jarvis.recognition provider.</div>
+<div class="block">Trains the underlying intent recognition provider.</div>
 </td>
 </tr>
 </table>
@@ -194,15 +194,15 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>registerIntentDefinition</h4>
 <pre>void&nbsp;registerIntentDefinition(<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</pre>
-<div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent fr.zelus.jarvis.recognition provider.
+<div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.
  <p>
  <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
  learning engine, so multiple intent registrations does not generate multiple training calls. Once all the
- <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s have been registered in the underlying intent fr.zelus.jarvis.recognition provider use
+ <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s have been registered in the underlying intent recognition provider use
  <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>trainMLEngine()</code></a> to train the ML engine.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>intentDefinition</code> - the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to register to the underlying intent fr.zelus.jarvis.recognition provider</dd>
+<dd><code>intentDefinition</code> - the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to register to the underlying intent recognition provider</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>trainMLEngine()</code></a></dd>
 </dl>
@@ -215,15 +215,15 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>deleteIntentDefinition</h4>
 <pre>void&nbsp;deleteIntentDefinition(<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</pre>
-<div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent fr.zelus.jarvis.recognition provider.
+<div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent recognition provider.
  <p>
  <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
  learning engine, so multiple intent deletion does not generate multiple training calls. Once all the
- <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s have been deleted from the underlying intent fr.zelus.jarvis.recognition provider use
+ <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s have been deleted from the underlying intent recognition provider use
  <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>trainMLEngine()</code></a> to train the ML engine.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>intentDefinition</code> - the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to delete from the underlying intent fr.zelus.jarvis.recognition provider</dd>
+<dd><code>intentDefinition</code> - the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to delete from the underlying intent recognition provider</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>trainMLEngine()</code></a></dd>
 </dl>
@@ -236,9 +236,9 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>trainMLEngine</h4>
 <pre>void&nbsp;trainMLEngine()</pre>
-<div class="block">Trains the underlying intent fr.zelus.jarvis.recognition provider.
+<div class="block">Trains the underlying intent recognition provider.
  <p>
- <b>Note:</b> this method returns once the intent fr.zelus.jarvis.recognition provider's training is complete. However, the
+ <b>Note:</b> this method returns once the intent recognition provider's training is complete. However, the
  propagation of the training information may not be complete when this method returns.</div>
 </li>
 </ul>
@@ -265,10 +265,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>shutdown</h4>
 <pre>void&nbsp;shutdown()</pre>
-<div class="block">Shuts down the intent fr.zelus.jarvis.recognition provider client and invalidates the remaining sessions.
+<div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.
  <p>
- <b>Note:</b> calling this method invalidates the intent fr.zelus.jarvis.recognition provider client connection, and thus this
- class cannot be used to access the intent fr.zelus.jarvis.recognition provider anymore.</div>
+ <b>Note:</b> calling this method invalidates the intent recognition provider client connection, and thus this
+ class cannot be used to access the intent recognition provider anymore.</div>
 </li>
 </ul>
 <a name="isShutdown--">
@@ -278,10 +278,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>isShutdown</h4>
 <pre>boolean&nbsp;isShutdown()</pre>
-<div class="block">Returns whether the intent fr.zelus.jarvis.recognition provider client is shutdown.</div>
+<div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if the intent fr.zelus.jarvis.recognition provider client is shutdown, <code>false</code> otherwise</dd>
+<dd><code>true</code> if the intent recognition provider client is shutdown, <code>false</code> otherwise</dd>
 </dl>
 </li>
 </ul>
@@ -334,8 +334,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../../fr/zelus/jarvis/recognition/DefaultIntentRecognitionProvider.html" title="class in fr.zelus.jarvis.recognition"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProviderException.html" title="class in fr.zelus.jarvis.recognition"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" target="_top">Frames</a></li>

@@ -1,7 +1,6 @@
 fr.zelus.jarvis
 fr.zelus.jarvis.core
 fr.zelus.jarvis.core.session
-fr.zelus.jarvis.dialogflow
 fr.zelus.jarvis.intent
 fr.zelus.jarvis.intent.impl
 fr.zelus.jarvis.intent.util
@@ -34,5 +33,6 @@ fr.zelus.jarvis.plugins.wordpress
 fr.zelus.jarvis.plugins.wordpress.module
 fr.zelus.jarvis.plugins.wordpress.module.io
 fr.zelus.jarvis.recognition
+fr.zelus.jarvis.recognition.dialogflow
 fr.zelus.jarvis.server
 fr.zelus.jarvis.util

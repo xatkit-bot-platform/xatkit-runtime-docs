@@ -130,10 +130,11 @@ var activeTableTab = "activeTableTab";
 extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a>&lt;T&gt;</pre>
 <div class="block">A specialised <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> that extracts <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> from textual user inputs.
  <p>
- This class wraps a <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> instance that is used to extract <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s from textual
- user inputs. Note that the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> instance is not directly accessible by subclasses to avoid
- uncontrolled accesses such as intent creation, removal, and context manipulation. Subclasses should use
- <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html#getRecognizedIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-"><code>getRecognizedIntent(String, JarvisSession)</code></a> to retrieve <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s from textual user inputs.</div>
+ This class wraps a <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> instance that is used to extract <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s
+ from textual user inputs. Note that the <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> instance is not directly accessible by
+ subclasses to avoid uncontrolled accesses such as intent creation, removal, and context manipulation. Subclasses
+ should use <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html#getRecognizedIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-"><code>getRecognizedIntent(String, JarvisSession)</code></a> to retrieve <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s from textual
+ user inputs.</div>
 </li>
 </ul>
 </div>
@@ -246,8 +247,8 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <pre>public&nbsp;IntentProvider(<a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="type parameter in IntentProvider">T</a>&nbsp;containingModule)</pre>
 <div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> from the provided <code>jarvisCore</code>.
  <p>
- This constructor sets the internal <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> instance that is used to parse user input and
- retrieve <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s.
+ This constructor sets the internal <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> instance that is used to parse user input
+ and retrieve <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s.
  <p>
  <b>Note</b>: this constructor should be used by <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>s that do not require additional
  parameters to be initialized. In that case see <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-T-org.apache.commons.configuration2.Configuration-"><code>IntentProvider(JarvisModule, Configuration)</code></a>.</div>
@@ -271,8 +272,8 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
                       <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
 <div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> with the provided <code>containingModule</code> and <code>configuration</code>.
  <p>
- This constructor sets the internal <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> instance that is used to parse user input and
- retrieve <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s.
+ This constructor sets the internal <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> instance that is used to parse user input
+ and retrieve <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s.
  <p>
  <b>Note</b>: this constructor will be called by jarvis internal engine when initializing the
  <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> component. Subclasses implementing this constructor typically
@@ -302,19 +303,23 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
                                                   <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</pre>
 <div class="block">Returns the <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> from the provided user <code>input</code> and <code>session</code>.
  <p>
- This method wraps the access to the underlying <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a>, and avoid uncontrolled accesses to the
- <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> from <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>s (such as intent creation, removal, and context manipulation).</div>
+ This method wraps the access to the underlying <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a>, and avoid uncontrolled
+ accesses to the <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> from <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>s (such as intent creation,
+ removal, and context manipulation).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>input</code> - the textual user input to extract the <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> from</dd>
-<dd><code>session</code> - the <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> wrapping the underlying DialogFlow session</dd>
+<dd><code>session</code> - the <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> wrapping the underlying <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a>'s session</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> computed by the <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>text</code> or <code>session</code> is
-                                                        <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>text</code> or <code>session</code> is <code>null</code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>text</code> is empty</dd>
-<dd><code><a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowException.html" title="class in fr.zelus.jarvis.dialogflow">DialogFlowException</a></code> - if the <a href="../../../../fr/zelus/jarvis/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.dialogflow"><code>DialogFlowApi</code></a> is shutdown or if an
-                                                        exception is thrown by the underlying DialogFlow engine</dd>
+<dd><code><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProviderException.html" title="class in fr.zelus.jarvis.recognition">IntentRecognitionProviderException</a></code> - if the
+                                                                        <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> is
+                                                                        shutdown or if an exception is thrown
+                                                                        by the underlying intent recognition
+                                                                        engine</dd>
 </dl>
 </li>
 </ul>
