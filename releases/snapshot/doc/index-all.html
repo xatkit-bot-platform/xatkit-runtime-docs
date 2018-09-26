@@ -190,6 +190,10 @@
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html#getActions--"><code><em>Actions</em></code></a>' containment reference list.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.html#addMatchableEvent-fr.zelus.jarvis.io.JsonEventMatcher.HeaderValue-fr.zelus.jarvis.io.JsonEventMatcher.FieldValue-java.lang.String-">addMatchableEvent(JsonEventMatcher.HeaderValue, JsonEventMatcher.FieldValue, String)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher</a></dt>
+<dd>
+<div class="block">Registers a new <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a> to match from the provided <code>headerValue</code> and <code>fieldValue</code>.</div>
+</dd>
 </dl>
 <a name="I:B">
 <!--   -->
@@ -548,6 +552,14 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#ContextParameterValueImpl--">ContextParameterValueImpl()</a></span> - Constructor for class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.html#convertJsonObjectToOutContext-com.google.gson.JsonObject-fr.zelus.jarvis.io.EventInstanceBuilder-">convertJsonObjectToOutContext(JsonObject, EventInstanceBuilder)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher</a></dt>
+<dd>
+<div class="block">Converts the provided <code>jsonObject</code>'s fields into out context values set in the provided <code>builder</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.html#convertJsonObjectToOutContext-java.lang.String-com.google.gson.JsonObject-fr.zelus.jarvis.io.EventInstanceBuilder-">convertJsonObjectToOutContext(String, JsonObject, EventInstanceBuilder)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher</a></dt>
+<dd>
+<div class="block">Converts the provided <code>jsonObject</code>'s field into out context values set in the provided <code>builder</code>.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html" title="class in fr.zelus.jarvis.plugins.core.module"><span class="typeNameLink">CoreModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/core/module/package-summary.html">fr.zelus.jarvis.plugins.core.module</a></dt>
 <dd>
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> concrete implementation providing core functionality that can be used in orchestration models.</div>
@@ -655,6 +667,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentFactory.html#createEventInstance--">createEventInstance()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentFactory.html" title="interface in fr.zelus.jarvis.intent">IntentFactory</a></dt>
 <dd>
 <div class="block">Returns a new object of class '<em>Event Instance</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.html#createEventInstance-java.lang.String-com.google.gson.JsonElement-">createEventInstance(String, JsonElement)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher</a></dt>
+<dd>
+<div class="block">Creates an <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a> from the provided <code>eventDefinitionName</code> and <code>content</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/util/IntentAdapterFactory.html#createEventInstanceAdapter--">createEventInstanceAdapter()</a></span> - Method in class fr.zelus.jarvis.intent.util.<a href="fr/zelus/jarvis/intent/util/IntentAdapterFactory.html" title="class in fr.zelus.jarvis.intent.util">IntentAdapterFactory</a></dt>
 <dd>
@@ -1125,6 +1141,10 @@
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module"><code>EMFModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#EMPTY_FIELD_VALUE">EMPTY_FIELD_VALUE</a></span> - Static variable in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.FieldValue</a></dt>
+<dd>
+<div class="block">A static <a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a> used to match requests without inspecting its Json fields.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction(Action)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
 <div class="block">Retrieves and loads the <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a>.</div>
@@ -1172,6 +1192,14 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html#entityType">entityType</a></span> - Variable in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html#getEntityType--"><code><em>Entity Type</em></code></a>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.FieldValue</a></dt>
+<dd>
+<div class="block">Checks if the provided <code>obj</code> is equal to this <a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.HeaderValue</a></dt>
+<dd>
+<div class="block">Checks if the provided <code>obj</code> is equal to this <a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.HeaderValue</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1413,6 +1441,10 @@
 <dd>
 <div class="block">A fluent <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a> builder.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.html#eventInstanceBuilder">eventInstanceBuilder</a></span> - Variable in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher</a></dt>
+<dd>
+<div class="block">The <a href="fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io"><code>EventInstanceBuilder</code></a> used to reify the received payloads into <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/intent/impl/EventInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl"><span class="typeNameLink">EventInstanceImpl</span></a> - Class in <a href="fr/zelus/jarvis/intent/impl/package-summary.html">fr.zelus.jarvis.intent.impl</a></dt>
 <dd>
 <div class="block">An implementation of the model object '<em><b>Event Instance</b></em>'.</div>
@@ -1493,6 +1525,10 @@
 </a>
 <h2 class="title">F</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#FieldValue-java.lang.String-java.lang.String-">FieldValue(String, String)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.FieldValue</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a> from the provided <code>key</code> and <code>value</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#fillContextValues-java.lang.String-">fillContextValues(String)</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
 <dd>
 <div class="block">Replace declared variables from <code>message</code> by their context values.</div>
@@ -2027,6 +2063,14 @@
 <dd>
 <div class="block">Returns the <code>JsonElement</code> associated to the given <code>key</code> in the provided <code>object</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#getKey--">getKey()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.FieldValue</a></dt>
+<dd>
+<div class="block">Returns the key of the <a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html#getKey--">getKey()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.HeaderValue</a></dt>
+<dd>
+<div class="block">Returns the key of the <a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.HeaderValue</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#getKey--">getKey()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/Parameter.html#getKey--">getKey()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/Parameter.html" title="interface in fr.zelus.jarvis.module">Parameter</a></dt>
@@ -2422,6 +2466,14 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#getValue--">getValue()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#getValue--">getValue()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.FieldValue</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html#getValue--">getValue()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.HeaderValue</a></dt>
+<dd>
+<div class="block">Returns the value of the <a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.HeaderValue</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringLiteralImpl.html#getValue--">getValue()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringLiteralImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringLiteralImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/StringLiteral.html#getValue--">getValue()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/StringLiteral.html" title="interface in fr.zelus.jarvis.orchestration">StringLiteral</a></dt>
@@ -2468,39 +2520,15 @@
 <dd>
 <div class="block">Returns the amount of time the <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> can spend waiting for a context variable (in seconds).</div>
 </dd>
-<dt><a href="fr/zelus/jarvis/plugins/github/module/io/GithubForkEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io"><span class="typeNameLink">GithubForkEventBuilder</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubForkEventBuilder.html#GithubForkEventBuilder--">GithubForkEventBuilder()</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubForkEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubForkEventBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/plugins/github/module/io/GithubGollumEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io"><span class="typeNameLink">GithubGollumEventBuilder</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubGollumEventBuilder.html#GithubGollumEventBuilder--">GithubGollumEventBuilder()</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubGollumEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubGollumEventBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/plugins/github/module/io/GithubIssueCommentEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io"><span class="typeNameLink">GithubIssueCommentEventBuilder</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubIssueCommentEventBuilder.html#GithubIssueCommentEventBuilder--">GithubIssueCommentEventBuilder()</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubIssueCommentEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubIssueCommentEventBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/plugins/github/module/io/GithubIssueEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io"><span class="typeNameLink">GithubIssueEventBuilder</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubIssueEventBuilder.html#GithubIssueEventBuilder--">GithubIssueEventBuilder()</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubIssueEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubIssueEventBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/plugins/github/module/io/GithubLabelEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io"><span class="typeNameLink">GithubLabelEventBuilder</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubLabelEventBuilder.html#GithubLabelEventBuilder--">GithubLabelEventBuilder()</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubLabelEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubLabelEventBuilder</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><span class="typeNameLink">GithubModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/package-summary.html">fr.zelus.jarvis.plugins.github.module</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html#GithubModule-fr.zelus.jarvis.core.JarvisCore-">GithubModule(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.<a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html#GithubModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">GithubModule(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.<a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
 </dd>
-<dt><a href="fr/zelus/jarvis/plugins/github/module/io/GithubPullRequestEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io"><span class="typeNameLink">GithubPullRequestEventBuilder</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubPullRequestEventBuilder.html#GithubPullRequestEventBuilder--">GithubPullRequestEventBuilder()</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubPullRequestEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubPullRequestEventBuilder</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html" title="class in fr.zelus.jarvis.plugins.github.module.io"><span class="typeNameLink">GithubWebhookEventProvider</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html#GithubWebhookEventProvider-fr.zelus.jarvis.plugins.github.module.GithubModule-">GithubWebhookEventProvider(GithubModule)</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubWebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html#GithubWebhookEventProvider-fr.zelus.jarvis.plugins.github.module.GithubModule-org.apache.commons.configuration2.Configuration-">GithubWebhookEventProvider(GithubModule, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubWebhookEventProvider</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#GOOGLE_CREDENTIALS_PATH_KEY">GOOGLE_CREDENTIALS_PATH_KEY</a></span> - Static variable in class fr.zelus.jarvis.recognition.dialogflow.<a href="fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
@@ -2518,18 +2546,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#handleEvent-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-">handleEvent(EventInstance, JarvisSession)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubForkEventBuilder.html#handleForkEvent-com.google.gson.JsonElement-fr.zelus.jarvis.core.EventDefinitionRegistry-">handleForkEvent(JsonElement, EventDefinitionRegistry)</a></span> - Static method in class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubForkEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubForkEventBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubGollumEventBuilder.html#handleGithubGollumEvent-com.google.gson.JsonElement-fr.zelus.jarvis.core.EventDefinitionRegistry-">handleGithubGollumEvent(JsonElement, EventDefinitionRegistry)</a></span> - Static method in class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubGollumEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubGollumEventBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubIssueCommentEventBuilder.html#handleGithubIssueCommentEvent-com.google.gson.JsonElement-fr.zelus.jarvis.core.EventDefinitionRegistry-">handleGithubIssueCommentEvent(JsonElement, EventDefinitionRegistry)</a></span> - Static method in class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubIssueCommentEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubIssueCommentEventBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubIssueEventBuilder.html#handleGithubIssuesEvent-com.google.gson.JsonElement-fr.zelus.jarvis.core.EventDefinitionRegistry-">handleGithubIssuesEvent(JsonElement, EventDefinitionRegistry)</a></span> - Static method in class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubIssueEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubIssueEventBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubLabelEventBuilder.html#handleGithubLabelEvent-com.google.gson.JsonElement-fr.zelus.jarvis.core.EventDefinitionRegistry-">handleGithubLabelEvent(JsonElement, EventDefinitionRegistry)</a></span> - Static method in class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubLabelEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubLabelEventBuilder</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubPullRequestEventBuilder.html#handleGithubPullRequestEvent-com.google.gson.JsonElement-fr.zelus.jarvis.core.EventDefinitionRegistry-">handleGithubPullRequestEvent(JsonElement, EventDefinitionRegistry)</a></span> - Static method in class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubPullRequestEventBuilder.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubPullRequestEventBuilder</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#handleParsedContent-com.google.gson.JsonElement-org.apache.http.Header:A-">handleParsedContent(JsonElement, Header[])</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
 <dd>
 <div class="block">Handles the <code>JsonElement</code> representing the request content.</div>
@@ -2540,6 +2556,18 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html#handleParsedContent-com.google.gson.JsonElement-org.apache.http.Header:A-">handleParsedContent(JsonElement, Header[])</a></span> - Method in class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubWebhookEventProvider</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#hashCode--">hashCode()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.FieldValue</a></dt>
+<dd>
+<div class="block">Computes the hash code associated to this <a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html#hashCode--">hashCode()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.HeaderValue</a></dt>
+<dd>
+<div class="block">Computes the hash code associated to this <a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.HeaderValue</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html#HeaderValue-java.lang.String-java.lang.String-">HeaderValue(String, String)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.HeaderValue</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.HeaderValue</code></a> from the provided <code>key</code> and <code>value</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/JarvisSlackUtils.html#HELLO_TYPE">HELLO_TYPE</a></span> - Static variable in interface fr.zelus.jarvis.plugins.slack.<a href="fr/zelus/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in fr.zelus.jarvis.plugins.slack">JarvisSlackUtils</a></dt>
 <dd>
 <div class="block">The Slack API answer type representing a successful authentication.</div>
@@ -2974,6 +3002,22 @@
 <dd>
 <div class="block">An utility interface that holds WordPress-related helpers.</div>
 </dd>
+<dt><a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">JsonEventMatcher</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
+<dd>
+<div class="block">A matcher that created <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s from Json webhook calls.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.html#JsonEventMatcher-fr.zelus.jarvis.io.EventInstanceBuilder-org.apache.commons.configuration2.Configuration-">JsonEventMatcher(EventInstanceBuilder, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher</code></a> with the provided <a href="fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io"><code>EventInstanceBuilder</code></a>.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">JsonEventMatcher.FieldValue</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
+<dd>
+<div class="block">A pair representing a field value to match.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">JsonEventMatcher.HeaderValue</span></a> - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
+<dd>
+<div class="block">A pair representing a <code>Header</code> value to match.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.JsonHelper.html#JsonHelper--">JsonHelper()</a></span> - Constructor for class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.JsonHelper.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider.JsonHelper</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><span class="typeNameLink">JsonWebhookEventProvider</span></a>&lt;<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a> extends <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt; - Class in <a href="fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></dt>
@@ -3122,6 +3166,14 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/Jarvis.html#main-java.lang.String:A-">main(String[])</a></span> - Static method in class fr.zelus.jarvis.<a href="fr/zelus/jarvis/Jarvis.html" title="class in fr.zelus.jarvis">Jarvis</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.html#match-org.apache.http.Header:A-com.google.gson.JsonElement-">match(Header[], JsonElement)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher</a></dt>
+<dd>
+<div class="block">Matches the provided <code>headers</code> and <code>content</code> against the registered <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.html#matchableEvents">matchableEvents</a></span> - Variable in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher</a></dt>
+<dd>
+<div class="block">The internal <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> used to store the header and field values to match.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#merge-fr.zelus.jarvis.core.session.JarvisContext-">merge(JarvisContext)</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
 <dd>
 <div class="block">Merges the provided <code>other</code> <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> into this one.</div>
@@ -3378,6 +3430,14 @@
 </a>
 <h2 class="title">O</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#of-java.lang.String-java.lang.String-">of(String, String)</a></span> - Static method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.FieldValue</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a> from the provided <code>key</code> and <code>value</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html#of-java.lang.String-java.lang.String-">of(String, String)</a></span> - Static method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.HeaderValue</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.HeaderValue</code></a> from the provided <code>key</code> and <code>value</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html#onPrivateMessageReceived-net.dv8tion.jda.core.events.message.priv.PrivateMessageReceivedEvent-">onPrivateMessageReceived(PrivateMessageReceivedEvent)</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">PrivateMessageListener</a></dt>
 <dd>
 <div class="block">Handles the received private message event and forward it to the <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
@@ -3685,6 +3745,20 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html#PostMessage-fr.zelus.jarvis.plugins.slack.module.SlackModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-">PostMessage(SlackModule, JarvisSession, String, String)</a></span> - Constructor for class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostMessage</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><code>PostMessage</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>message</code> and <code>channel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/EventInstanceBuilder.html#prettyPrintEventDefinition--">prettyPrintEventDefinition()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a></dt>
+<dd>
+<div class="block">Prints a pretty representation of the current <a href="fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a> to instantiate with this builder.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.html#PRINT_BUILDER_CONTENT_KEY">PRINT_BUILDER_CONTENT_KEY</a></span> - Static variable in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store whether to print the <a href="fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io"><code>EventInstanceBuilder</code></a> content before
+ building the matched <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.html#printBuilder">printBuilder</a></span> - Variable in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher</a></dt>
+<dd>
+<div class="block">A flag telling whether to print the <a href="fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io"><code>EventInstanceBuilder</code></a> content before building the matched
+ <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/discord/module/io/PrivateMessageListener.html" title="class in fr.zelus.jarvis.plugins.discord.module.io"><span class="typeNameLink">PrivateMessageListener</span></a> - Class in <a href="fr/zelus/jarvis/plugins/discord/module/io/package-summary.html">fr.zelus.jarvis.plugins.discord.module.io</a></dt>
 <dd>
@@ -4107,6 +4181,14 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.FieldValue</a></dt>
+<dd>
+<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representation of this <a href="fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io">JsonEventMatcher.HeaderValue</a></dt>
+<dd>
+<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representation of this <a href="fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.HeaderValue</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ActionImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ActionImpl.html" title="class in fr.zelus.jarvis.module.impl">ActionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/EventProviderDefinitionImpl.html" title="class in fr.zelus.jarvis.module.impl">EventProviderDefinitionImpl</a></dt>

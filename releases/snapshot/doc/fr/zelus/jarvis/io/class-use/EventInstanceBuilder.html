@@ -95,6 +95,21 @@
 <!--   -->
 </a>
 <h3>Uses of <a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a> in <a href="../../../../../fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a> declared as <a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a></code></td>
+<td class="colLast"><span class="typeNameLabel">JsonEventMatcher.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/io/JsonEventMatcher.html#eventInstanceBuilder">eventInstanceBuilder</a></span></code>
+<div class="block">The <a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io"><code>EventInstanceBuilder</code></a> used to reify the received payloads into <a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s.</div>
+</td>
+</tr>
+</tbody>
+</table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../../fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a> that return <a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -119,6 +134,44 @@
 <td class="colLast"><span class="typeNameLabel">EventInstanceBuilder.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html#setOutContextValue-java.lang.String-java.lang.String-">setOutContextValue</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextKey,
                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextValue)</code>
 <div class="block">Sets the created <a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>'s output context parameter <code>contextKey</code> with the given <code>contextValue</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a> with parameters of type <a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><span class="typeNameLabel">JsonEventMatcher.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/io/JsonEventMatcher.html#convertJsonObjectToOutContext-com.google.gson.JsonObject-fr.zelus.jarvis.io.EventInstanceBuilder-">convertJsonObjectToOutContext</a></span>(com.google.gson.JsonObject&nbsp;jsonObject,
+                             <a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a>&nbsp;builder)</code>
+<div class="block">Converts the provided <code>jsonObject</code>'s fields into out context values set in the provided <code>builder</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><span class="typeNameLabel">JsonEventMatcher.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/io/JsonEventMatcher.html#convertJsonObjectToOutContext-java.lang.String-com.google.gson.JsonObject-fr.zelus.jarvis.io.EventInstanceBuilder-">convertJsonObjectToOutContext</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;parentKey,
+                             com.google.gson.JsonObject&nbsp;jsonObject,
+                             <a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a>&nbsp;builder)</code>
+<div class="block">Converts the provided <code>jsonObject</code>'s field into out context values set in the provided <code>builder</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../fr/zelus/jarvis/io/package-summary.html">fr.zelus.jarvis.io</a> with parameters of type <a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/io/JsonEventMatcher.html#JsonEventMatcher-fr.zelus.jarvis.io.EventInstanceBuilder-org.apache.commons.configuration2.Configuration-">JsonEventMatcher</a></span>(<a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io">EventInstanceBuilder</a>&nbsp;eventInstanceBuilder,
+                <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
+<div class="block">Constructs a new <a href="../../../../../fr/zelus/jarvis/io/JsonEventMatcher.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher</code></a> with the provided <a href="../../../../../fr/zelus/jarvis/io/EventInstanceBuilder.html" title="class in fr.zelus.jarvis.io"><code>EventInstanceBuilder</code></a>.</div>
 </td>
 </tr>
 </tbody>
