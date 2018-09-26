@@ -377,11 +377,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>headerValue</code>, <code>fieldValue</code>, or <code>eventTypeName</code>
                               is <code>null</code></dd>
 <dd><code><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if the provided <code>headerValue</code> and <code>fieldValue</code> are already associated to
-                              another <code>eventTypeName</code>, or if the provided <code>headerValue</code> is
-                              associated to the <a href="../../../../fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#EMPTY_FIELD_VALUE"><code>JsonEventMatcher.FieldValue.EMPTY_FIELD_VALUE</code></a> and the provided <code>fieldValue</code> is not the <a href="../../../../fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#EMPTY_FIELD_VALUE"><code>JsonEventMatcher.FieldValue.EMPTY_FIELD_VALUE</code></a> one.</dd>
+                              another <code>eventTypeName</code>, or if calling this method would associate the
+                              <a href="../../../../fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#EMPTY_FIELD_VALUE"><code>JsonEventMatcher.FieldValue.EMPTY_FIELD_VALUE</code></a> and specialized <a href="../../../../fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a>s to the
+                              provided <code>headerValue</code>.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/io/JsonEventMatcher.HeaderValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.HeaderValue</code></a>, 
-<a href="../../../../fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a></dd>
+<a href="../../../../fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html" title="class in fr.zelus.jarvis.io"><code>JsonEventMatcher.FieldValue</code></a>, 
+<a href="../../../../fr/zelus/jarvis/io/JsonEventMatcher.FieldValue.html#EMPTY_FIELD_VALUE"><code>JsonEventMatcher.FieldValue.EMPTY_FIELD_VALUE</code></a></dd>
 </dl>
 </li>
 </ul>
