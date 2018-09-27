@@ -122,7 +122,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordIntentProvider</a>, <a href="../../../../fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackIntentProvider</a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordIntentProvider</a>, <a href="../../../../fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.io">GenericChatIntentProvider</a>, <a href="../../../../fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackIntentProvider</a></dd>
 </dl>
 <hr>
 <br>
@@ -282,6 +282,8 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>containingModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a></dd>
 <dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to initialize the <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>

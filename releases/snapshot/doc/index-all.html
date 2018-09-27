@@ -250,6 +250,10 @@
 <dd>
 <div class="block">Saves the EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and returns the persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.generic_chat.module.action.<a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action">GenericChatAction</a></dt>
+<dd>
+<div class="block">Calls all the concrete chatting <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> associated to this <a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action"><code>GenericChatAction</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/log/module/action/LogAction.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.log.module.action.<a href="fr/zelus/jarvis/plugins/log/module/action/LogAction.html" title="class in fr.zelus.jarvis.plugins.log.module.action">LogAction</a></dt>
 <dd>
 <div class="block">Logs the provided <code>message</code> with the given <code>logLevel</code>.</div>
@@ -378,9 +382,25 @@
 <dd>
 <div class="block">Disconnects the underlying <code>JDA</code> client.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html#close--">close()</a></span> - Method in class fr.zelus.jarvis.plugins.generic_chat.module.io.<a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.io">GenericChatIntentProvider</a></dt>
+<dd>
+<div class="block">Closes the underlying <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html#close--">close()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.io.<a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackIntentProvider</a></dt>
 <dd>
 <div class="block">Disconnects the underlying Slack RTM client.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html#CONCRETE_CHAT_INTENT_PROVIDER_KEY">CONCRETE_CHAT_INTENT_PROVIDER_KEY</a></span> - Static variable in class fr.zelus.jarvis.plugins.generic_chat.module.io.<a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.io">GenericChatIntentProvider</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the concrete <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> to use.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#CONCRETE_CHAT_MODULES_KEY">CONCRETE_CHAT_MODULES_KEY</a></span> - Static variable in class fr.zelus.jarvis.plugins.generic_chat.module.<a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module">GenericChatModule</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the concrete chat sub-module to use.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#CONCRETE_CHAT_PROPERTY_PREFIX_KEY">CONCRETE_CHAT_PROPERTY_PREFIX_KEY</a></span> - Static variable in class fr.zelus.jarvis.plugins.generic_chat.module.<a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module">GenericChatModule</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix used to bound specific values to generic action parameters.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#configuration">configuration</a></span> - Variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
@@ -726,6 +746,11 @@
 <dd>
 <div class="block">Creates a new <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> instance from the provided <a href="fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction(ActionInstance, JarvisSession)</a></span> - Method in class fr.zelus.jarvis.plugins.generic_chat.module.<a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module">GenericChatModule</a></dt>
+<dd>
+<div class="block">Creates a <a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action"><code>GenericChatAction</code></a> wrapping the concrete sub-module <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s corresponding to
+ the provided <a href="fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html#createLiteralAdapter--">createLiteralAdapter()</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationAdapterFactory</a></dt>
 <dd>
 <div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/orchestration/Literal.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>Literal</em></code></a>'.</div>
@@ -973,6 +998,10 @@
 <dd>
 <div class="block">Disables the <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#disableAction-fr.zelus.jarvis.module.Action-">disableAction(Action)</a></span> - Method in class fr.zelus.jarvis.plugins.generic_chat.module.<a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module">GenericChatModule</a></dt>
+<dd>
+<div class="block">Disables the <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a> in all the sub-modules.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#disableAllActions--">disableAllActions()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
 <div class="block">Disables all the <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s of the <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>.</div>
@@ -1158,6 +1187,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction(Action)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
 <div class="block">Retrieves and loads the <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction(Action)</a></span> - Method in class fr.zelus.jarvis.plugins.generic_chat.module.<a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module">GenericChatModule</a></dt>
+<dd>
+<div class="block">Retrieves an loads the <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a> in all the sub-modules.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#eNAME">eNAME</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
 <dd>
@@ -1589,6 +1622,12 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/emf/module/action/package-summary.html">fr.zelus.jarvis.plugins.emf.module.action</a> - package fr.zelus.jarvis.plugins.emf.module.action</dt>
 <dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/plugins/generic_chat/module/package-summary.html">fr.zelus.jarvis.plugins.generic_chat.module</a> - package fr.zelus.jarvis.plugins.generic_chat.module</dt>
+<dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/plugins/generic_chat/module/action/package-summary.html">fr.zelus.jarvis.plugins.generic_chat.module.action</a> - package fr.zelus.jarvis.plugins.generic_chat.module.action</dt>
+<dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/plugins/generic_chat/module/io/package-summary.html">fr.zelus.jarvis.plugins.generic_chat.module.io</a> - package fr.zelus.jarvis.plugins.generic_chat.module.io</dt>
+<dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/package-summary.html">fr.zelus.jarvis.plugins.github.module</a> - package fr.zelus.jarvis.plugins.github.module</dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a> - package fr.zelus.jarvis.plugins.github.module.io</dt>
@@ -1629,6 +1668,31 @@
 </a>
 <h2 class="title">G</h2>
 <dl>
+<dt><a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action"><span class="typeNameLink">GenericChatAction</span></a> - Class in <a href="fr/zelus/jarvis/plugins/generic_chat/module/action/package-summary.html">fr.zelus.jarvis.plugins.generic_chat.module.action</a></dt>
+<dd>
+<div class="block">A generic <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> wrapping concrete chatting sub-module <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html#GenericChatAction-fr.zelus.jarvis.plugins.generic_chat.module.GenericChatModule-fr.zelus.jarvis.core.session.JarvisSession-java.util.List-">GenericChatAction(GenericChatModule, JarvisSession, List&lt;JarvisAction&gt;)</a></span> - Constructor for class fr.zelus.jarvis.plugins.generic_chat.module.action.<a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action">GenericChatAction</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action"><code>GenericChatAction</code></a> from the provided <code>containingModule</code>, <code>session</code>, and
+ <code>concreteActions</code>.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.io"><span class="typeNameLink">GenericChatIntentProvider</span></a> - Class in <a href="fr/zelus/jarvis/plugins/generic_chat/module/io/package-summary.html">fr.zelus.jarvis.plugins.generic_chat.module.io</a></dt>
+<dd>
+<div class="block">A generic <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> that wraps a concrete chatting <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html#GenericChatIntentProvider-fr.zelus.jarvis.plugins.generic_chat.module.GenericChatModule-org.apache.commons.configuration2.Configuration-">GenericChatIntentProvider(GenericChatModule, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.generic_chat.module.io.<a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.io">GenericChatIntentProvider</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.io"><code>GenericChatIntentProvider</code></a> with the provided <code>containingModule</code> and <code>configuration</code>.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module"><span class="typeNameLink">GenericChatModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/generic_chat/module/package-summary.html">fr.zelus.jarvis.plugins.generic_chat.module</a></dt>
+<dd>
+<div class="block">A generic <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> class that wraps concrete chatting sub-modules.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#GenericChatModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">GenericChatModule(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.generic_chat.module.<a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module">GenericChatModule</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module"><code>GenericChatModule</code></a> from the provided <code>jarvisCore</code> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html#getAction--">getAction()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModulePackageImpl.html" title="class in fr.zelus.jarvis.module.impl">ModulePackageImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModulePackage.html#getAction--">getAction()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.html" title="interface in fr.zelus.jarvis.module">ModulePackage</a></dt>
@@ -2447,6 +2511,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getStringLiteral_Value--">getStringLiteral_Value()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
 <dd>
 <div class="block">Returns the meta object for the attribute '<a href="fr/zelus/jarvis/orchestration/StringLiteral.html#getValue--"><code><em>Value</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#getSubModules--">getSubModules()</a></span> - Method in class fr.zelus.jarvis.plugins.generic_chat.module.<a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module">GenericChatModule</a></dt>
+<dd>
+<div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of sub-modules managed by the <a href="fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module"><code>GenericChatModule</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/ContextParameter.html#getTextFragment--">getTextFragment()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a></dt>
 <dd>
@@ -3883,6 +3951,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html#run--">run()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.io.<a href="fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordIntentProvider</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html#run--">run()</a></span> - Method in class fr.zelus.jarvis.plugins.generic_chat.module.io.<a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.io">GenericChatIntentProvider</a></dt>
+<dd>
+<div class="block">Runs the underlying <a href="fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html#run--">run()</a></span> - Method in class fr.zelus.jarvis.plugins.github.module.io.<a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html" title="class in fr.zelus.jarvis.plugins.github.module.io">GithubWebhookEventProvider</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html#run--">run()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.io.<a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackIntentProvider</a></dt>
