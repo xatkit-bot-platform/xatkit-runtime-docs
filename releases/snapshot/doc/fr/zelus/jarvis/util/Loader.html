@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -190,6 +190,24 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/util/Loader.html#constructEventProvider-java.lang.Class-fr.zelus.jarvis.core.JarvisModule-org.apache.commons.configuration2.Configuration-">constructEventProvider</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a>&gt;&nbsp;eventProviderClass,
+                      <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&nbsp;jarvisModule,
+                      <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
+<div class="block">Constructs a new instance of the provided <code>eventProviderClass</code> with the given <code>jarvisCore</code> and
+ <code>configuration</code>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/util/Loader.html#constructJarvisModule-java.lang.Class-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">constructJarvisModule</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt;&nbsp;jarvisModuleClass,
+                     <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+                     <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
+<div class="block">Constructs a new instance of the provided <code>jarvisModuleClass</code> with the given <code>jarvisCore</code> and
+ <code>configuration</code>.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/util/Loader.html#loadClass-java.lang.String-java.lang.Class-">loadClass</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qualifiedName,
          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;superClass)</code>
@@ -391,7 +409,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <a name="construct-java.lang.Class-java.util.List-java.util.List-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>construct</h4>
 <pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;construct(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;clazz,
@@ -415,6 +433,74 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodException.html?is-external=true" title="class or interface in java.lang">NoSuchMethodException</a></code> - if the provided <code>clazz</code> does not define a constructor matching the
                                provided <code>parameterTypes</code></dd>
 <dd><code><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if an error occurred when calling the <code>clazz</code>'s constructor</dd>
+</dl>
+</li>
+</ul>
+<a name="constructJarvisModule-java.lang.Class-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>constructJarvisModule</h4>
+<pre>public static&nbsp;<a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&nbsp;constructJarvisModule(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt;&nbsp;jarvisModuleClass,
+                                                 <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+                                                 <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
+<div class="block">Constructs a new instance of the provided <code>jarvisModuleClass</code> with the given <code>jarvisCore</code> and
+ <code>configuration</code>.
+ <p>
+ This method first tries to construct an instance of the provided <code>jarvisModuleClass</code> with the provided
+ <code>jarvisCore</code> and <code>configuration</code>. If the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> does not define such constructor,
+ the method logs a warning and tries to construct an instance with only the <code>jarvisCore</code> parameter.
+ <p>
+ The <code>jarvisModuleClass</code> parameter can be loaded by using this class' <a href="../../../../fr/zelus/jarvis/util/Loader.html#loadClass-java.lang.String-java.lang.Class-"><code>loadClass(String, Class)</code></a>
+ utility method.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>jarvisModuleClass</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a> to construct a new instance of</dd>
+<dd><code>jarvisCore</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance used to construct the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a></dd>
+<dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> instance used to construct the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the constructed <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> does not define a constructor matching the provided
+                         parameters.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Class-java.lang.Class-java.lang.Object-java.lang.Object-"><code>construct(Class, Class, Class, Object, Object)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/util/Loader.html#loadClass-java.lang.String-java.lang.Class-"><code>loadClass(String, Class)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="constructEventProvider-java.lang.Class-fr.zelus.jarvis.core.JarvisModule-org.apache.commons.configuration2.Configuration-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>constructEventProvider</h4>
+<pre>public static&nbsp;<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a>&nbsp;constructEventProvider(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a>&gt;&nbsp;eventProviderClass,
+                                                   <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&nbsp;jarvisModule,
+                                                   <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
+<div class="block">Constructs a new instance of the provided <code>eventProviderClass</code> with the given <code>jarvisCore</code> and
+ <code>configuration</code>.
+ <p>
+ This method first tries to construct an instance of the provided <code>eventProviderClass</code> with the provided
+ <code>jarvisCore</code> and <code>configuration</code>. If the <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> does not define such constructor,
+ the method logs a warning and tries to construct an instance with only the <code>jarvisCore</code> parameter.
+ <p>
+ The <code>eventProviderClass</code> parameter can be loaded by using this class" <a href="../../../../fr/zelus/jarvis/util/Loader.html#loadClass-java.lang.String-java.lang.Class-"><code>loadClass(String, Class)</code></a>
+ utility method.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eventProviderClass</code> - the <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a> to construct a new instance of</dd>
+<dd><code>jarvisModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> instance used to construct the <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a></dd>
+<dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> instance used to construct the <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the constructed <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if the <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> does not define a constructor matching the provided
+                         parameters.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/util/Loader.html#construct-java.lang.Class-java.lang.Class-java.lang.Class-java.lang.Object-java.lang.Object-"><code>construct(Class, Class, Class, Object, Object)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/util/Loader.html#loadClass-java.lang.String-java.lang.Class-"><code>loadClass(String, Class)</code></a></dd>
 </dl>
 </li>
 </ul>
