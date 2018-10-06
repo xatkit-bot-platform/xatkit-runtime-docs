@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":41,"i10":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":41,"i15":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -290,48 +290,72 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html" ti
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#convertEntityTypeToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-">convertEntityTypeToString</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EDataType.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EDataType</a>&nbsp;eDataType,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;instanceValue)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#convertToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-">convertToString</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EDataType.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EDataType</a>&nbsp;eDataType,
+               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;instanceValue)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#create-org.eclipse.emf.ecore.EClass-">create</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a>&nbsp;eClass)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/BaseEntityDefinition.html" title="interface in fr.zelus.jarvis.intent">BaseEntityDefinition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createBaseEntityDefinition--">createBaseEntityDefinition</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createContext--">createContext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createContextParameter--">createContextParameter</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createContextParameterValue--">createContextParameterValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/EntityType.html" title="enum in fr.zelus.jarvis.intent">EntityType</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createEntityTypeFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-">createEntityTypeFromString</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EDataType.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EDataType</a>&nbsp;eDataType,
+                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;initialValue)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent">EventDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createEventDefinition--">createEventDefinition</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent">EventInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createEventInstance--">createEventInstance</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-">createFromString</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EDataType.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EDataType</a>&nbsp;eDataType,
+                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;initialValue)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createIntentDefinition--">createIntentDefinition</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createRecognizedIntent--">createRecognizedIntent</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#getIntentPackage--">getIntentPackage</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#getPackage--">getPackage</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;&nbsp;</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html" title="interface in fr.zelus.jarvis.intent">IntentFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#init--">init</a></span>()</code>
 <div class="block">Creates the default factory implementation.</div>
@@ -343,7 +367,7 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html" ti
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.eclipse.emf.ecore.impl.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">EFactoryImpl</a></h3>
-<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#basicCreate-org.eclipse.emf.ecore.EClass-" title="class or interface in org.eclipse.emf.ecore.impl">basicCreate</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#basicSetEPackage-org.eclipse.emf.ecore.EPackage-org.eclipse.emf.common.notify.NotificationChain-" title="class or interface in org.eclipse.emf.ecore.impl">basicSetEPackage</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#collapseWhiteSpace-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.impl">collapseWhiteSpace</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#convertToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore.impl">convertToString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#convertToString-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore.impl">convertToString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#create-org.eclipse.emf.ecore.EDataType-" title="class or interface in org.eclipse.emf.ecore.impl">create</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#createFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.impl">createFromString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#createFromString-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.impl">createFromString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eGet-int-boolean-boolean-" title="class or interface in org.eclipse.emf.ecore.impl">eGet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eInverseAdd-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-" title="class or interface in org.eclipse.emf.ecore.impl">eInverseAdd</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-" title="class or interface in org.eclipse.emf.ecore.impl">eInverseRemove</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eInvoke-int-org.eclipse.emf.common.util.EList-" title="class or interface in org.eclipse.emf.ecore.impl">eInvoke</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eIsSet-int-" title="class or interface in org.eclipse.emf.ecore.impl">eIsSet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eSet-int-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore.impl">eSet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eStaticClass--" title="class or interface in org.eclipse.emf.ecore.impl">eStaticClass</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eUnset-int-" title="class or interface in org.eclipse.emf.ecore.impl">eUnset</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#getEPackage--" title="class or interface in org.eclipse.emf.ecore.impl">getEPackage</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#replaceWhiteSpace-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.impl">replaceWhiteSpace</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#setEPackage-org.eclipse.emf.ecore.EPackage-" title="class or interface in org.eclipse.emf.ecore.impl">setEPackage</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#split-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.impl">split</a></code></li>
+<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#basicCreate-org.eclipse.emf.ecore.EClass-" title="class or interface in org.eclipse.emf.ecore.impl">basicCreate</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#basicSetEPackage-org.eclipse.emf.ecore.EPackage-org.eclipse.emf.common.notify.NotificationChain-" title="class or interface in org.eclipse.emf.ecore.impl">basicSetEPackage</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#collapseWhiteSpace-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.impl">collapseWhiteSpace</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#convertToString-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore.impl">convertToString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#create-org.eclipse.emf.ecore.EDataType-" title="class or interface in org.eclipse.emf.ecore.impl">create</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#createFromString-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.impl">createFromString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eGet-int-boolean-boolean-" title="class or interface in org.eclipse.emf.ecore.impl">eGet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eInverseAdd-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-" title="class or interface in org.eclipse.emf.ecore.impl">eInverseAdd</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-" title="class or interface in org.eclipse.emf.ecore.impl">eInverseRemove</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eInvoke-int-org.eclipse.emf.common.util.EList-" title="class or interface in org.eclipse.emf.ecore.impl">eInvoke</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eIsSet-int-" title="class or interface in org.eclipse.emf.ecore.impl">eIsSet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eSet-int-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore.impl">eSet</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eStaticClass--" title="class or interface in org.eclipse.emf.ecore.impl">eStaticClass</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#eUnset-int-" title="class or interface in org.eclipse.emf.ecore.impl">eUnset</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#getEPackage--" title="class or interface in org.eclipse.emf.ecore.impl">getEPackage</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#replaceWhiteSpace-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.impl">replaceWhiteSpace</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#setEPackage-org.eclipse.emf.ecore.EPackage-" title="class or interface in org.eclipse.emf.ecore.impl">setEPackage</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#split-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.impl">split</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.eclipse.emf.ecore.impl.EModelElementImpl">
@@ -392,7 +416,7 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html" ti
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.eclipse.emf.ecore.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EFactory</a></h3>
-<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true#convertToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore">convertToString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true#createFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-" title="class or interface in org.eclipse.emf.ecore">createFromString</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true#getEPackage--" title="class or interface in org.eclipse.emf.ecore">getEPackage</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true#setEPackage-org.eclipse.emf.ecore.EPackage-" title="class or interface in org.eclipse.emf.ecore">setEPackage</a></code></li>
+<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true#getEPackage--" title="class or interface in org.eclipse.emf.ecore">getEPackage</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true#setEPackage-org.eclipse.emf.ecore.EPackage-" title="class or interface in org.eclipse.emf.ecore">setEPackage</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.eclipse.emf.ecore.EModelElement">
@@ -493,6 +517,56 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html" ti
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new instance of the class.
  <!-- end-user-doc --></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="createFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createFromString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;createFromString(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EDataType.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EDataType</a>&nbsp;eDataType,
+                               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;initialValue)</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true#createFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-" title="class or interface in org.eclipse.emf.ecore">createFromString</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EFactory</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#createFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-" title="class or interface in org.eclipse.emf.ecore.impl">createFromString</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">EFactoryImpl</a></code></dd>
+<dd><code>initialValue</code> - literal value of the instance.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an instance of the data type.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true#convertToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore"><code>EFactory.convertToString(EDataType, Object)</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="convertToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>convertToString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;convertToString(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EDataType.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EDataType</a>&nbsp;eDataType,
+                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;instanceValue)</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true#convertToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore">convertToString</a></code>&nbsp;in interface&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EFactory</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true#convertToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-" title="class or interface in org.eclipse.emf.ecore.impl">convertToString</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/EFactoryImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">EFactoryImpl</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eDataType</code> - the data type of the value.</dd>
+<dd><code>instanceValue</code> - the value.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the literal value of the instance.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EFactory.html?is-external=true#createFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-" title="class or interface in org.eclipse.emf.ecore"><code>EFactory.createFromString(EDataType, String)</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -619,6 +693,54 @@ implements <a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html" ti
 <dd><code><a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html#createContextParameterValue--">createContextParameterValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html" title="interface in fr.zelus.jarvis.intent">IntentFactory</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new object of class '<em>Context Parameter Value</em>'.</dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="createBaseEntityDefinition--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createBaseEntityDefinition</h4>
+<pre>public&nbsp;<a href="../../../../../fr/zelus/jarvis/intent/BaseEntityDefinition.html" title="interface in fr.zelus.jarvis.intent">BaseEntityDefinition</a>&nbsp;createBaseEntityDefinition()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html#createBaseEntityDefinition--">createBaseEntityDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html" title="interface in fr.zelus.jarvis.intent">IntentFactory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new object of class '<em>Base Entity Definition</em>'.</dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="createEntityTypeFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createEntityTypeFromString</h4>
+<pre>public&nbsp;<a href="../../../../../fr/zelus/jarvis/intent/EntityType.html" title="enum in fr.zelus.jarvis.intent">EntityType</a>&nbsp;createEntityTypeFromString(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EDataType.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EDataType</a>&nbsp;eDataType,
+                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;initialValue)</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="convertEntityTypeToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>convertEntityTypeToString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;convertEntityTypeToString(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EDataType.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EDataType</a>&nbsp;eDataType,
+                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;instanceValue)</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

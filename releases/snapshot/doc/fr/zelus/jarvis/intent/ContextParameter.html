@@ -121,7 +121,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
  <ul>
    <li><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getName--"><code><em>Name</em></code></a></li>
    <li><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getTextFragment--"><code><em>Text Fragment</em></code></a></li>
-   <li><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getEntityType--"><code><em>Entity Type</em></code></a></li>
+   <li><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getEntity--"><code><em>Entity</em></code></a></li>
  </ul></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -147,9 +147,9 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getEntityType--">getEntityType</a></span>()</code>
-<div class="block">Returns the value of the '<em><b>Entity Type</b></em>' attribute.</div>
+<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/EntityDefinition.html" title="interface in fr.zelus.jarvis.intent">EntityDefinition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getEntity--">getEntity</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Entity</b></em>' containment reference.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -166,8 +166,8 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#setEntityType-java.lang.String-">setEntityType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
-<div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getEntityType--"><code><em>Entity Type</em></code></a>' attribute.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#setEntity-fr.zelus.jarvis.intent.EntityDefinition-">setEntity</a></span>(<a href="../../../../fr/zelus/jarvis/intent/EntityDefinition.html" title="interface in fr.zelus.jarvis.intent">EntityDefinition</a>&nbsp;value)</code>
+<div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getEntity--"><code><em>Entity</em></code></a>' containment reference.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -297,45 +297,45 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </dl>
 </li>
 </ul>
-<a name="getEntityType--">
+<a name="getEntity--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getEntityType</h4>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getEntityType()</pre>
-<div class="block">Returns the value of the '<em><b>Entity Type</b></em>' attribute.
+<h4>getEntity</h4>
+<pre><a href="../../../../fr/zelus/jarvis/intent/EntityDefinition.html" title="interface in fr.zelus.jarvis.intent">EntityDefinition</a>&nbsp;getEntity()</pre>
+<div class="block">Returns the value of the '<em><b>Entity</b></em>' containment reference.
  <!-- begin-user-doc -->
  <p>
- If the meaning of the '<em>Entity Type</em>' attribute isn't clear,
+ If the meaning of the '<em>Entity</em>' containment reference isn't clear,
  there really should be more of a description here...
  </p>
  <!-- end-user-doc --></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value of the '<em>Entity Type</em>' attribute.</dd>
+<dd>the value of the '<em>Entity</em>' containment reference.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#setEntityType-java.lang.String-"><code>setEntityType(String)</code></a>, 
-<a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getContextParameter_EntityType--"><code>IntentPackage.getContextParameter_EntityType()</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#setEntity-fr.zelus.jarvis.intent.EntityDefinition-"><code>setEntity(EntityDefinition)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getContextParameter_Entity--"><code>IntentPackage.getContextParameter_Entity()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
 </ul>
-<a name="setEntityType-java.lang.String-">
+<a name="setEntity-fr.zelus.jarvis.intent.EntityDefinition-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>setEntityType</h4>
-<pre>void&nbsp;setEntityType(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
-<div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getEntityType--"><code><em>Entity Type</em></code></a>' attribute.
+<h4>setEntity</h4>
+<pre>void&nbsp;setEntity(<a href="../../../../fr/zelus/jarvis/intent/EntityDefinition.html" title="interface in fr.zelus.jarvis.intent">EntityDefinition</a>&nbsp;value)</pre>
+<div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getEntity--"><code><em>Entity</em></code></a>' containment reference.
  <!-- begin-user-doc -->
  <!-- end-user-doc --></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>value</code> - the new value of the '<em>Entity Type</em>' attribute.</dd>
+<dd><code>value</code> - the new value of the '<em>Entity</em>' containment reference.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getEntityType--"><code>getEntityType()</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html#getEntity--"><code>getEntity()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
