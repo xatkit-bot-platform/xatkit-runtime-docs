@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -423,6 +423,18 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#INTENT_DEFINITION__FOLLOWED_BY">INTENT_DEFINITION__FOLLOWED_BY</a></span></code>
+<div class="block">The feature id for the '<em><b>Followed By</b></em>' reference list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#INTENT_DEFINITION__FOLLOWS">INTENT_DEFINITION__FOLLOWS</a></span></code>
+<div class="block">The feature id for the '<em><b>Follows</b></em>' reference.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#INTENT_DEFINITION__IN_CONTEXTS">INTENT_DEFINITION__IN_CONTEXTS</a></span></code>
 <div class="block">The feature id for the '<em><b>In Contexts</b></em>' containment reference list.</div>
 </td>
@@ -630,29 +642,41 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition_FollowedBy--">getIntentDefinition_FollowedBy</a></span>()</code>
+<div class="block">Returns the meta object for the reference list '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollowedBy--"><code><em>Followed By</em></code></a>'.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition_Follows--">getIntentDefinition_Follows</a></span>()</code>
+<div class="block">Returns the meta object for the reference '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--"><code><em>Follows</em></code></a>'.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition_InContexts--">getIntentDefinition_InContexts</a></span>()</code>
 <div class="block">Returns the meta object for the containment reference list '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getInContexts--"><code><em>In Contexts</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition_TrainingSentences--">getIntentDefinition_TrainingSentences</a></span>()</code>
 <div class="block">Returns the meta object for the attribute list '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getTrainingSentences--"><code><em>Training Sentences</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition--">getIntentDefinition</a></span>()</code>
 <div class="block">Returns the meta object for class '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code><em>Definition</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/IntentFactory.html" title="interface in fr.zelus.jarvis.intent">IntentFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getIntentFactory--">getIntentFactory</a></span>()</code>
 <div class="block">Returns the factory that creates the instances of the model.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getRecognizedIntent--">getRecognizedIntent</a></span>()</code>
 <div class="block">Returns the meta object for class '<a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code><em>Recognized Intent</em></code></a>'.</div>
@@ -910,6 +934,40 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../constant-values.html#fr.zelus.jarvis.intent.IntentPackage.INTENT_DEFINITION__OUT_CONTEXTS">Constant Field Values</a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="INTENT_DEFINITION__FOLLOWS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INTENT_DEFINITION__FOLLOWS</h4>
+<pre>static final&nbsp;int INTENT_DEFINITION__FOLLOWS</pre>
+<div class="block">The feature id for the '<em><b>Follows</b></em>' reference.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#fr.zelus.jarvis.intent.IntentPackage.INTENT_DEFINITION__FOLLOWS">Constant Field Values</a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="INTENT_DEFINITION__FOLLOWED_BY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INTENT_DEFINITION__FOLLOWED_BY</h4>
+<pre>static final&nbsp;int INTENT_DEFINITION__FOLLOWED_BY</pre>
+<div class="block">The feature id for the '<em><b>Followed By</b></em>' reference list.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#fr.zelus.jarvis.intent.IntentPackage.INTENT_DEFINITION__FOLLOWED_BY">Constant Field Values</a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -1675,6 +1733,46 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dd>the meta object for class '<em>Definition</em>'.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getIntentDefinition_Follows--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIntentDefinition_Follows</h4>
+<pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;getIntentDefinition_Follows()</pre>
+<div class="block">Returns the meta object for the reference '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--"><code><em>Follows</em></code></a>'.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the meta object for the reference '<em>Follows</em>'.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--"><code>IntentDefinition.getFollows()</code></a>, 
+<a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition--"><code>getIntentDefinition()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getIntentDefinition_FollowedBy--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIntentDefinition_FollowedBy</h4>
+<pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;getIntentDefinition_FollowedBy()</pre>
+<div class="block">Returns the meta object for the reference list '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollowedBy--"><code><em>Followed By</em></code></a>'.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the meta object for the reference list '<em>Followed By</em>'.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollowedBy--"><code>IntentDefinition.getFollowedBy()</code></a>, 
+<a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition--"><code>getIntentDefinition()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

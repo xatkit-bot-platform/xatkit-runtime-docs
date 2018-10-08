@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -119,6 +119,8 @@ extends <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title=
  The following features are supported:
  </p>
  <ul>
+   <li><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--"><code><em>Follows</em></code></a></li>
+   <li><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollowedBy--"><code><em>Followed By</em></code></a></li>
    <li><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getInContexts--"><code><em>In Contexts</em></code></a></li>
    <li><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getTrainingSentences--"><code><em>Training Sentences</em></code></a></li>
  </ul></div>
@@ -146,15 +148,33 @@ extends <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title=
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollowedBy--">getFollowedBy</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Followed By</b></em>' reference list.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--">getFollows</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Follows</b></em>' reference.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getInContexts--">getInContexts</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>In Contexts</b></em>' containment reference list.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getTrainingSentences--">getTrainingSentences</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Training Sentences</b></em>' attribute list.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#setFollows-fr.zelus.jarvis.intent.IntentDefinition-">setFollows</a></span>(<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;value)</code>
+<div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--"><code><em>Follows</em></code></a>' reference.</div>
 </td>
 </tr>
 </table>
@@ -193,6 +213,77 @@ extends <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title=
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getFollows--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFollows</h4>
+<pre><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;getFollows()</pre>
+<div class="block">Returns the value of the '<em><b>Follows</b></em>' reference.
+ It is bidirectional and its opposite is '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollowedBy--"><code><em>Followed By</em></code></a>'.
+ <!-- begin-user-doc -->
+ <p>
+ If the meaning of the '<em>Follows</em>' reference isn't clear,
+ there really should be more of a description here...
+ </p>
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Follows</em>' reference.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#setFollows-fr.zelus.jarvis.intent.IntentDefinition-"><code>setFollows(IntentDefinition)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition_Follows--"><code>IntentPackage.getIntentDefinition_Follows()</code></a>, 
+<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollowedBy--"><code>getFollowedBy()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="setFollows-fr.zelus.jarvis.intent.IntentDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFollows</h4>
+<pre>void&nbsp;setFollows(<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;value)</pre>
+<div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--"><code><em>Follows</em></code></a>' reference.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the new value of the '<em>Follows</em>' reference.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--"><code>getFollows()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getFollowedBy--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFollowedBy</h4>
+<pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&gt;&nbsp;getFollowedBy()</pre>
+<div class="block">Returns the value of the '<em><b>Followed By</b></em>' reference list.
+ The list contents are of type <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>.
+ It is bidirectional and its opposite is '<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--"><code><em>Follows</em></code></a>'.
+ <!-- begin-user-doc -->
+ <p>
+ If the meaning of the '<em>Followed By</em>' reference list isn't clear,
+ there really should be more of a description here...
+ </p>
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Followed By</em>' reference list.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getIntentDefinition_FollowedBy--"><code>IntentPackage.getIntentDefinition_FollowedBy()</code></a>, 
+<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--"><code>getFollows()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
 <a name="getInContexts--">
 <!--   -->
 </a>
