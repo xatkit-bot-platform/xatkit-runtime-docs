@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../fr/zelus/jarvis/intent/BaseEntityDefinition.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../fr/zelus/jarvis/intent/ContextInstance.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?fr/zelus/jarvis/intent/Context.html" target="_top">Frames</a></li>
@@ -147,30 +147,34 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#getContextParameter-java.lang.String-">getContextParameter</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;parameterName)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#getLifeSpan--">getLifeSpan</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Life Span</b></em>' attribute.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Name</b></em>' attribute.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#getParameters--">getParameters</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Parameters</b></em>' containment reference list.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#setLifeSpan-int-">setLifeSpan</a></span>(int&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/Context.html#getLifeSpan--"><code><em>Life Span</em></code></a>' attribute.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/Context.html#setName-java.lang.String-">setName</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/Context.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
@@ -295,7 +299,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <a name="getParameters--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getParameters</h4>
 <pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a>&gt;&nbsp;getParameters()</pre>
@@ -312,6 +316,20 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dd>the value of the '<em>Parameters</em>' containment reference list.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getContext_Parameters--"><code>IntentPackage.getContext_Parameters()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getContextParameter-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getContextParameter</h4>
+<pre><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a>&nbsp;getContextParameter(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;parameterName)</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -345,7 +363,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../fr/zelus/jarvis/intent/BaseEntityDefinition.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../fr/zelus/jarvis/intent/ContextInstance.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?fr/zelus/jarvis/intent/Context.html" target="_top">Frames</a></li>

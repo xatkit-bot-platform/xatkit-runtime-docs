@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -233,6 +233,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#setContextValue-fr.zelus.jarvis.intent.ContextParameterValue-">setContextValue</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a>&nbsp;contextParameterValue)</code>
+<div class="block">Stores the provided <code>contextParameterValue</code> in the context.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#setContextValue-java.lang.String-java.lang.String-java.lang.Object-">setContextValue</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;context,
                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
@@ -374,6 +380,29 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#getContextVariables-java.lang.String-"><code>getContextVariables(String)</code></a>, 
 <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#getContextValue-java.lang.String-java.lang.String-"><code>getContextValue(String, String)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="setContextValue-fr.zelus.jarvis.intent.ContextParameterValue-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setContextValue</h4>
+<pre>public&nbsp;void&nbsp;setContextValue(<a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a>&nbsp;contextParameterValue)</pre>
+<div class="block">Stores the provided <code>contextParameterValue</code> in the context.
+ <p>
+ This method extracts the context name and parameter key from the provided <a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent"><code>ContextParameterValue</code></a>, by
+ navigating its <a href="../../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent"><code>ContextParameter</code></a> and <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a> references. This method is
+ used as syntactic sugar to register <a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent"><code>ContextParameterValue</code></a>s received from <a href="../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>s, see
+ <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#setContextValue-java.lang.String-java.lang.String-java.lang.Object-"><code>setContextValue(String, String, Object)</code></a> to register a context value from <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> values.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>contextParameterValue</code> - the <a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent"><code>ContextParameterValue</code></a> to store in the context.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>contextParameterValue</code> is <code>null</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#setContextValue-java.lang.String-java.lang.String-java.lang.Object-"><code>setContextValue(String, String, Object)</code></a></dd>
 </dl>
 </li>
 </ul>

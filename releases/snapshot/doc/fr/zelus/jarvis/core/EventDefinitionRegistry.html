@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -111,7 +111,10 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">EventDefinitionRegistry</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">A registry that stores <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>s.</div>
+<div class="block">A registry that stores <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>s and provide utility methods to retrieve them.
+ <p>
+ This class provides methods to retrieve specific <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>s, filter <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s, and
+ retrieve an existing <a href="../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a> stored in a registered <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>.</div>
 </li>
 </ul>
 </div>
@@ -163,7 +166,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#getAllIntentDefinitions--">getAllIntentDefinitions</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#getAllIntentDefinitions--">getAllIntentDefinitions</a></span>()</code>
+<div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing all the registered <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent">EventDefinition</a></code></td>
@@ -172,16 +177,25 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#getIntentDefinition-java.lang.String-">getIntentDefinition</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#getEventDefinitionOutContext-java.lang.String-">getEventDefinitionOutContext</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextName)</code>
+<div class="block">Retrieve the <a href="../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a> matching the provided <code>contextName</code> from the registered
+ <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>s.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#getIntentDefinition-java.lang.String-">getIntentDefinition</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> matching the provided <code>name</code>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#registerEventDefinition-fr.zelus.jarvis.intent.EventDefinition-">registerEventDefinition</a></span>(<a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent">EventDefinition</a>&nbsp;eventDefinition)</code>
 <div class="block">Registers the provided <code>eventDefinition</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#unregisterEventDefinition-fr.zelus.jarvis.intent.EventDefinition-">unregisterEventDefinition</a></span>(<a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent">EventDefinition</a>&nbsp;eventDefinition)</code>
 <div class="block">Unregisters the provided <code>eventDefinition</code>.</div>
@@ -280,6 +294,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>getIntentDefinition</h4>
 <pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;getIntentDefinition(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> matching the provided <code>name</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the name of the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to retrieve</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> matching the provided <code>name</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#getAllIntentDefinitions--"><code>getAllIntentDefinitions()</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="getAllEventDefinitions--">
@@ -305,6 +328,40 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>getAllIntentDefinitions</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&gt;&nbsp;getAllIntentDefinitions()</pre>
+<div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing all the registered <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s.
+ <p>
+ This method returns a subset of the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> returned by <a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#getAllEventDefinitions--"><code>getAllEventDefinitions()</code></a> that
+ contains only <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> instances.
+ <p>
+ To retrieve a single <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> from its <code>name</code> see <a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#getIntentDefinition-java.lang.String-"><code>getIntentDefinition(String)</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing all the registered <a href="../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>s</dd>
+</dl>
+</li>
+</ul>
+<a name="getEventDefinitionOutContext-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEventDefinitionOutContext</h4>
+<pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a>&nbsp;getEventDefinitionOutContext(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextName)</pre>
+<div class="block">Retrieve the <a href="../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a> matching the provided <code>contextName</code> from the registered
+ <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>s.
+ <p>
+ This method performs a lookup on the registered <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a> and searches for an output
+ <a href="../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a> matching the provided <code>contextName</code>. <b>Note that name comparison is not case
+ sensitive.</b>
+ <p>
+ If there are multiple output <a href="../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a> that match the provided <code>contextName</code> the first one is
+ returned.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>contextName</code> - the name of the output <a href="../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a> to retrieve</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the output <a href="../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a> matching the provided <code>contextName</code></dd>
+</dl>
 </li>
 </ul>
 <a name="clearEventDefinitions--">

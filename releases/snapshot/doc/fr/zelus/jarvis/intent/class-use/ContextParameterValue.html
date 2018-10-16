@@ -83,14 +83,18 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="#fr.zelus.jarvis.intent">fr.zelus.jarvis.intent</a></td>
+<td class="colFirst"><a href="#fr.zelus.jarvis.core.session">fr.zelus.jarvis.core.session</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#fr.zelus.jarvis.intent.impl">fr.zelus.jarvis.intent.impl</a></td>
+<td class="colFirst"><a href="#fr.zelus.jarvis.intent">fr.zelus.jarvis.intent</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#fr.zelus.jarvis.intent.impl">fr.zelus.jarvis.intent.impl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#fr.zelus.jarvis.intent.util">fr.zelus.jarvis.intent.util</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -99,6 +103,26 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="fr.zelus.jarvis.core.session">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a> in <a href="../../../../../fr/zelus/jarvis/core/session/package-summary.html">fr.zelus.jarvis.core.session</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../fr/zelus/jarvis/core/session/package-summary.html">fr.zelus.jarvis.core.session</a> with parameters of type <a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">JarvisContext.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html#setContextValue-fr.zelus.jarvis.intent.ContextParameterValue-">setContextValue</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a>&nbsp;contextParameterValue)</code>
+<div class="block">Stores the provided <code>contextParameterValue</code> in the context.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="fr.zelus.jarvis.intent">
 <!--   -->
 </a>
@@ -127,8 +151,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">EventInstance.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/EventInstance.html#getOutContextValues--">getOutContextValues</a></span>()</code>
-<div class="block">Returns the value of the '<em><b>Out Context Values</b></em>' containment reference list.</div>
+<td class="colLast"><span class="typeNameLabel">ContextInstance.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/ContextInstance.html#getValues--">getValues</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Values</b></em>' containment reference list.</div>
 </td>
 </tr>
 </tbody>
@@ -162,8 +186,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">EventInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#outContextValues">outContextValues</a></span></code>
-<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#getOutContextValues--"><code><em>Out Context Values</em></code></a>' containment reference list.</div>
+<td class="colLast"><span class="typeNameLabel">ContextInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#values">values</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#getValues--"><code><em>Values</em></code></a>' containment reference list.</div>
 </td>
 </tr>
 </tbody>
@@ -190,7 +214,7 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">EventInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/EventInstanceImpl.html#getOutContextValues--">getOutContextValues</a></span>()</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ContextInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#getValues--">getValues</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

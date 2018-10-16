@@ -83,14 +83,18 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="#fr.zelus.jarvis.intent">fr.zelus.jarvis.intent</a></td>
+<td class="colFirst"><a href="#fr.zelus.jarvis.core">fr.zelus.jarvis.core</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#fr.zelus.jarvis.intent.impl">fr.zelus.jarvis.intent.impl</a></td>
+<td class="colFirst"><a href="#fr.zelus.jarvis.intent">fr.zelus.jarvis.intent</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#fr.zelus.jarvis.intent.impl">fr.zelus.jarvis.intent.impl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#fr.zelus.jarvis.intent.util">fr.zelus.jarvis.intent.util</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -99,6 +103,27 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="fr.zelus.jarvis.core">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a> in <a href="../../../../../fr/zelus/jarvis/core/package-summary.html">fr.zelus.jarvis.core</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../fr/zelus/jarvis/core/package-summary.html">fr.zelus.jarvis.core</a> that return <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></td>
+<td class="colLast"><span class="typeNameLabel">EventDefinitionRegistry.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#getEventDefinitionOutContext-java.lang.String-">getEventDefinitionOutContext</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextName)</code>
+<div class="block">Retrieve the <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a> matching the provided <code>contextName</code> from the registered
+ <a href="../../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>s.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="fr.zelus.jarvis.intent">
 <!--   -->
 </a>
@@ -115,6 +140,16 @@
 <td class="colLast"><span class="typeNameLabel">IntentFactory.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/IntentFactory.html#createContext--">createContext</a></span>()</code>
 <div class="block">Returns a new object of class '<em>Context</em>'.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ContextInstance.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/ContextInstance.html#getDefinition--">getDefinition</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Definition</b></em>' reference.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></td>
+<td class="colLast"><span class="typeNameLabel">EventDefinition.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/EventDefinition.html#getOutContext-java.lang.String-">getOutContext</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextName)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -139,6 +174,21 @@
 </tr>
 </tbody>
 </table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../fr/zelus/jarvis/intent/package-summary.html">fr.zelus.jarvis.intent</a> with parameters of type <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">ContextInstance.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/ContextInstance.html#setDefinition-fr.zelus.jarvis.intent.Context-">setDefinition</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a>&nbsp;value)</code>
+<div class="block">Sets the value of the '<a href="../../../../../fr/zelus/jarvis/intent/ContextInstance.html#getDefinition--"><code><em>Definition</em></code></a>' reference.</div>
+</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li class="blockList"><a name="fr.zelus.jarvis.intent.impl">
 <!--   -->
@@ -155,6 +205,21 @@
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextImpl</a></span></code>
 <div class="block">An implementation of the model object '<em><b>Context</b></em>'.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../fr/zelus/jarvis/intent/impl/package-summary.html">fr.zelus.jarvis.intent.impl</a> declared as <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ContextInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#definition">definition</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#getDefinition--"><code><em>Definition</em></code></a>' reference.</div>
 </td>
 </tr>
 </tbody>
@@ -189,7 +254,19 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ContextInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#basicGetDefinition--">basicGetDefinition</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IntentFactoryImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createContext--">createContext</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ContextInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#getDefinition--">getDefinition</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></code></td>
+<td class="colLast"><span class="typeNameLabel">EventDefinitionImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html#getOutContext-java.lang.String-">getOutContext</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextName)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -207,6 +284,19 @@
 <tr class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">EventDefinitionImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html#getOutContexts--">getOutContexts</a></span>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../fr/zelus/jarvis/intent/impl/package-summary.html">fr.zelus.jarvis.intent.impl</a> with parameters of type <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">ContextInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#setDefinition-fr.zelus.jarvis.intent.Context-">setDefinition</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a>&nbsp;newDefinition)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
