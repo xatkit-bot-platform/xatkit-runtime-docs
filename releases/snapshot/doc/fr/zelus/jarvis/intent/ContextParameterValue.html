@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -119,6 +119,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
  The following features are supported:
  </p>
  <ul>
+   <li><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getContextInstance--"><code><em>Context Instance</em></code></a></li>
    <li><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getContextParameter--"><code><em>Context Parameter</em></code></a></li>
    <li><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getValue--"><code><em>Value</em></code></a></li>
  </ul></div>
@@ -146,24 +147,36 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/ContextInstance.html" title="interface in fr.zelus.jarvis.intent">ContextInstance</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getContextInstance--">getContextInstance</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Context Instance</b></em>' container reference.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getContextParameter--">getContextParameter</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Context Parameter</b></em>' reference.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getValue--">getValue</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Value</b></em>' attribute.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#setContextInstance-fr.zelus.jarvis.intent.ContextInstance-">setContextInstance</a></span>(<a href="../../../../fr/zelus/jarvis/intent/ContextInstance.html" title="interface in fr.zelus.jarvis.intent">ContextInstance</a>&nbsp;value)</code>
+<div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getContextInstance--"><code><em>Context Instance</em></code></a>' container reference.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#setContextParameter-fr.zelus.jarvis.intent.ContextParameter-">setContextParameter</a></span>(<a href="../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent">ContextParameter</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getContextParameter--"><code><em>Context Parameter</em></code></a>' reference.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#setValue-java.lang.String-">setValue</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getValue--"><code><em>Value</em></code></a>' attribute.</div>
@@ -198,6 +211,51 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getContextInstance--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContextInstance</h4>
+<pre><a href="../../../../fr/zelus/jarvis/intent/ContextInstance.html" title="interface in fr.zelus.jarvis.intent">ContextInstance</a>&nbsp;getContextInstance()</pre>
+<div class="block">Returns the value of the '<em><b>Context Instance</b></em>' container reference.
+ It is bidirectional and its opposite is '<a href="../../../../fr/zelus/jarvis/intent/ContextInstance.html#getValues--"><code><em>Values</em></code></a>'.
+ <!-- begin-user-doc -->
+ <p>
+ If the meaning of the '<em>Context Instance</em>' container reference isn't clear,
+ there really should be more of a description here...
+ </p>
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Context Instance</em>' container reference.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#setContextInstance-fr.zelus.jarvis.intent.ContextInstance-"><code>setContextInstance(ContextInstance)</code></a>, 
+<a href="../../../../fr/zelus/jarvis/intent/IntentPackage.html#getContextParameterValue_ContextInstance--"><code>IntentPackage.getContextParameterValue_ContextInstance()</code></a>, 
+<a href="../../../../fr/zelus/jarvis/intent/ContextInstance.html#getValues--"><code>ContextInstance.getValues()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="setContextInstance-fr.zelus.jarvis.intent.ContextInstance-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setContextInstance</h4>
+<pre>void&nbsp;setContextInstance(<a href="../../../../fr/zelus/jarvis/intent/ContextInstance.html" title="interface in fr.zelus.jarvis.intent">ContextInstance</a>&nbsp;value)</pre>
+<div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getContextInstance--"><code><em>Context Instance</em></code></a>' container reference.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the new value of the '<em>Context Instance</em>' container reference.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/intent/ContextParameterValue.html#getContextInstance--"><code>getContextInstance()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
 <a name="getContextParameter--">
 <!--   -->
 </a>

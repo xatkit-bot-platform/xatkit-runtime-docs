@@ -244,6 +244,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#basicGetAction--">basicGetAction()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ActionInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#basicGetContextInstance--">basicGetContextInstance()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#basicGetContextParameter--">basicGetContextParameter()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#basicGetDefinition--">basicGetDefinition()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextInstanceImpl</a></dt>
@@ -257,6 +259,8 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html#basicGetParameter--">basicGetParameter()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ParameterValueImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#basicGetReferredVariable--">basicGetReferredVariable()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#basicSetContextInstance-fr.zelus.jarvis.intent.ContextInstance-org.eclipse.emf.common.notify.NotificationChain-">basicSetContextInstance(ContextInstance, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html#basicSetEntity-fr.zelus.jarvis.intent.EntityDefinition-org.eclipse.emf.common.notify.NotificationChain-">basicSetEntity(EntityDefinition, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -641,6 +645,14 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html#CONTEXT_PARAMETER_VALUE">CONTEXT_PARAMETER_VALUE</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html" title="interface in fr.zelus.jarvis.intent">IntentPackage.Literals</a></dt>
 <dd>
 <div class="block">The meta object literal for the '<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl"><code><em>Context Parameter Value</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#CONTEXT_PARAMETER_VALUE__CONTEXT_INSTANCE">CONTEXT_PARAMETER_VALUE__CONTEXT_INSTANCE</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
+<dd>
+<div class="block">The feature id for the '<em><b>Context Instance</b></em>' container reference.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html#CONTEXT_PARAMETER_VALUE__CONTEXT_INSTANCE">CONTEXT_PARAMETER_VALUE__CONTEXT_INSTANCE</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html" title="interface in fr.zelus.jarvis.intent">IntentPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<em><b>Context Instance</b></em>' container reference feature.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#CONTEXT_PARAMETER_VALUE__CONTEXT_PARAMETER">CONTEXT_PARAMETER_VALUE__CONTEXT_PARAMETER</a></span> - Static variable in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
 <dd>
@@ -1050,6 +1062,10 @@
 </a>
 <h2 class="title">D</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#decrementLifespanCounts--">decrementLifespanCounts()</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
+<dd>
+<div class="block">Decrements the lifespanCount of all the stored contexts, and remove them if there lifespanCount decreases to 0.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#DEFAULT_LANGUAGE_CODE">DEFAULT_LANGUAGE_CODE</a></span> - Static variable in class fr.zelus.jarvis.recognition.dialogflow.<a href="fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">The default language processed by DialogFlow.</div>
@@ -1209,6 +1225,8 @@
 </a>
 <h2 class="title">E</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#eBasicRemoveFromContainerFeature-org.eclipse.emf.common.notify.NotificationChain-">eBasicRemoveFromContainerFeature(NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/BaseEntityDefinitionImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/BaseEntityDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">BaseEntityDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextImpl</a></dt>
@@ -1271,6 +1289,10 @@
 <dd>
 <div class="block">The singleton instance of the package.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#eInverseAdd-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseAdd(InternalEObject, int, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextInstanceImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#eInverseAdd-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseAdd(InternalEObject, int, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#eInverseAdd-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseAdd(InternalEObject, int, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextImpl.html#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseRemove(InternalEObject, int, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextImpl</a></dt>
@@ -1278,6 +1300,8 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseRemove(InternalEObject, int, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseRemove(InternalEObject, int, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseRemove(InternalEObject, int, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseRemove(InternalEObject, int, NotificationChain)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/EventDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">EventDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -2113,6 +2137,12 @@
 <dd>
 <div class="block">Returns the meta object for the containment reference list '<a href="fr/zelus/jarvis/intent/Context.html#getParameters--"><code><em>Parameters</em></code></a>'.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/ContextParameterValue.html#getContextInstance--">getContextInstance()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a></dt>
+<dd>
+<div class="block">Returns the value of the '<em><b>Context Instance</b></em>' container reference.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#getContextInstance--">getContextInstance()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getContextInstance--">getContextInstance()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getContextInstance--">getContextInstance()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
@@ -2136,6 +2166,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getContextInstance_Values--">getContextInstance_Values()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
 <dd>
 <div class="block">Returns the meta object for the containment reference list '<a href="fr/zelus/jarvis/intent/ContextInstance.html#getValues--"><code><em>Values</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#getContextLifespanCount-java.lang.String-">getContextLifespanCount(String)</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
+<dd>
+<div class="block">Returns the lifespan count of the provided <code>context</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#getContextMap--">getContextMap()</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
 <dd>
@@ -2180,6 +2214,12 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getContextParameterValue--">getContextParameterValue()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
 <dd>
 <div class="block">Returns the meta object for class '<a href="fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent"><code><em>Context Parameter Value</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getContextParameterValue_ContextInstance--">getContextParameterValue_ContextInstance()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentPackage.html#getContextParameterValue_ContextInstance--">getContextParameterValue_ContextInstance()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.html" title="interface in fr.zelus.jarvis.intent">IntentPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for the container reference '<a href="fr/zelus/jarvis/intent/ContextParameterValue.html#getContextInstance--"><code><em>Context Instance</em></code></a>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html#getContextParameterValue_ContextParameter--">getContextParameterValue_ContextParameter()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentPackageImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentPackageImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -2574,6 +2614,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html#getLifespanCount--">getLifespanCount()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextInstanceImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#getLifespanCountsMap--">getLifespanCountsMap()</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
+<dd>
+<div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> representing the stored lifespan counts.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/EntityType.html#getLiteral--">getLiteral()</a></span> - Method in enum fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/EntityType.html" title="enum in fr.zelus.jarvis.intent">EntityType</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getLiteral--">getLiteral()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
@@ -4474,15 +4518,21 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#setAction-fr.zelus.jarvis.module.Action-">setAction(Action)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ActionInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/ContextParameterValue.html#setContextInstance-fr.zelus.jarvis.intent.ContextInstance-">setContextInstance(ContextInstance)</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a></dt>
+<dd>
+<div class="block">Sets the value of the '<a href="fr/zelus/jarvis/intent/ContextParameterValue.html#getContextInstance--"><code><em>Context Instance</em></code></a>' container reference.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#setContextInstance-fr.zelus.jarvis.intent.ContextInstance-">setContextInstance(ContextInstance)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/ContextParameterValue.html#setContextParameter-fr.zelus.jarvis.intent.ContextParameter-">setContextParameter(ContextParameter)</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a></dt>
 <dd>
 <div class="block">Sets the value of the '<a href="fr/zelus/jarvis/intent/ContextParameterValue.html#getContextParameter--"><code><em>Context Parameter</em></code></a>' reference.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html#setContextParameter-fr.zelus.jarvis.intent.ContextParameter-">setContextParameter(ContextParameter)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterValueImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#setContextValue-java.lang.String-java.lang.String-java.lang.Object-">setContextValue(String, String, Object)</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#setContextValue-java.lang.String-int-java.lang.String-java.lang.Object-">setContextValue(String, int, String, Object)</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
 <dd>
-<div class="block">Stores the provided <code>value</code> in the given <code>context</code> with the provided <code>key</code>.</div>
+<div class="block">Stores the provided <code>value</code> in the given <code>context</code> with the provided <code>key</code> and <code>lifespanCount</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/session/JarvisContext.html#setContextValue-fr.zelus.jarvis.intent.ContextParameterValue-">setContextValue(ContextParameterValue)</a></span> - Method in class fr.zelus.jarvis.core.session.<a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session">JarvisContext</a></dt>
 <dd>

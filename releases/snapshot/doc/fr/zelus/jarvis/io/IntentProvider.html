@@ -307,7 +307,12 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
  <p>
  This method wraps the access to the underlying <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a>, and avoid uncontrolled
  accesses to the <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> from <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>s (such as intent creation,
- removal, and context manipulation).</div>
+ removal, and context manipulation).
+ <p>
+ <b>Note:</b> this method decrements the lifespan counts of the variables in the current context (context
+ lifespan are used to represent the number of user interaction to handled before deleting the variable).
+ <b>Client classes must call this method before setting any context variable</b> otherwise there lifespan
+ counts may be inconsistent from their expected values (e.g. context variables with a lifespan count of <code>1</code> will be immediately removed by the <a href="../../../../fr/zelus/jarvis/core/session/JarvisContext.html#decrementLifespanCounts--"><code>JarvisContext.decrementLifespanCounts()</code></a> call).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>input</code> - the textual user input to extract the <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> from</dd>
