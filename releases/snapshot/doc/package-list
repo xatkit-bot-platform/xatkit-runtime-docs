@@ -26,8 +26,6 @@ fr.zelus.jarvis.plugins.github.module
 fr.zelus.jarvis.plugins.github.module.io
 fr.zelus.jarvis.plugins.log.module
 fr.zelus.jarvis.plugins.log.module.action
-fr.zelus.jarvis.plugins.mail.module
-fr.zelus.jarvis.plugins.mail.module.action
 fr.zelus.jarvis.plugins.slack
 fr.zelus.jarvis.plugins.slack.module
 fr.zelus.jarvis.plugins.slack.module.action
