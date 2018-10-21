@@ -419,7 +419,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
  This method iterates the sub-module list and calls their
  <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>JarvisModule.createJarvisAction(ActionInstance, JarvisSession)</code></a> method with the provided <code>actionInstance</code> and <code>session</code>. The returned <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s are then wrapped into a
  <a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action"><code>GenericChatAction</code></a> that takes care of executing them through the regular
- <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html#handleEvent-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>JarvisCore.handleEvent(EventInstance, JarvisSession)</code></a> process.</div>
+ <code>JarvisCore#handleEvent(EventInstance, JarvisSession)</code> process.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></code></dd>

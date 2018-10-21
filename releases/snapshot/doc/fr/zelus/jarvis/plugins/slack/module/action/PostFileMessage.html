@@ -124,7 +124,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</dd>
+<dd><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core">JarvisActionResult</a>&gt;</dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -228,7 +228,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/actio
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#call--">call</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#compute--">compute</a></span>()</code>
 <div class="block">Uploads the provided <code>file</code> and post it with the associated <code>message</code> to the given <code>channel</code>.</div>
 </td>
 </tr>
@@ -252,7 +252,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/actio
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></h3>
-<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--">getReturnVariable</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#setReturnVariable-java.lang.String-">setReturnVariable</a></code></li>
+<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#call--">call</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--">getReturnVariable</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#setReturnVariable-java.lang.String-">setReturnVariable</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -348,26 +348,22 @@ extends <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/actio
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="call--">
+<a name="compute--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>call</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;call()</pre>
+<h4>compute</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;compute()</pre>
 <div class="block">Uploads the provided <code>file</code> and post it with the associated <code>message</code> to the given <code>channel</code>.
  <p>
  This method relies on the containing <a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><code>SlackModule</code></a>'s Slack bot API token to authenticate the bot and
  upload the <code>file</code> to the given <code>channel</code>.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true#call--" title="class or interface in java.util.concurrent">call</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html#call--">call</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostMessage</a></code></dd>
+<dd><code><a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html#compute--">compute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostMessage</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>null</code></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a></dd>
 </dl>
 </li>
 </ul>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -111,15 +111,19 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">OrchestrationService</span>
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
-<div class="block">Reads an <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> and returns the <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s associated to the provided
- <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s.
+<div class="block">A service that handles <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s and executes the corresponding <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s defined in the
+ provided <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>.
  <p>
- This class is used by <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> to create the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> to execute when a
- <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> has been computed from an user input.</div>
+ This class defines Jarvis' execution logic: <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>s typically call the
+ <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>handleEventInstance(EventInstance, JarvisSession)</code></a> method to process a retrieved <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>,
+ and trigger the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s that are associated to it in the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>.
+ <p>
+ The <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> is initialized by the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance, that loads the
+ <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> and initializes the <a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>, 
-<a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>, 
+<a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>, 
 <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a></dd>
 </dl>
 </li>
@@ -140,8 +144,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#OrchestrationService-fr.zelus.jarvis.orchestration.OrchestrationModel-">OrchestrationService</a></span>(<a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a>&nbsp;orchestrationModel)</code>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> based on the provided <code>orchestrationModel</code>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#OrchestrationService-fr.zelus.jarvis.orchestration.OrchestrationModel-fr.zelus.jarvis.core.JarvisModuleRegistry-">OrchestrationService</a></span>(<a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a>&nbsp;orchestrationModel,
+                    <a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core">JarvisModuleRegistry</a>&nbsp;jarvisModuleRegistry)</code>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> based on the provided <code>orchestrationModel</code> and <code>jarvisModuleRegistry</code>.</div>
 </td>
 </tr>
 </table>
@@ -160,15 +165,41 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#getActionsFromEvent-fr.zelus.jarvis.intent.EventInstance-">getActionsFromEvent</a></span>(<a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent">EventInstance</a>&nbsp;eventInstance)</code>
-<div class="block">Retrieves the <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s associated to the provided <code>eventInstance</code>.</div>
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent">ExecutorService</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#getExecutorService--">getExecutorService</a></span>()</code>
+<div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent"><code>ExecutorService</code></a> used to process <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core">JarvisModuleRegistry</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#getJarvisModuleRegistry--">getJarvisModuleRegistry</a></span>()</code>
+<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a> associated to this <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#getOrchestrationModel--">getOrchestrationModel</a></span>()</code>
-<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> associated to this class.</div>
+<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> associated to this <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-">handleEventInstance</a></span>(<a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent">EventInstance</a>&nbsp;eventInstance,
+                   <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
+<div class="block">Handles the provided <code>eventInstance</code> and executed the corresponding <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s defined in the
+ <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#isShutdown--">isShutdown</a></span>()</code>
+<div class="block">Returns whether the <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> is shutdown.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#shutdown--">shutdown</a></span>()</code>
+<div class="block">Shuts down the underlying <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent"><code>ExecutorService</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -193,17 +224,26 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="OrchestrationService-fr.zelus.jarvis.orchestration.OrchestrationModel-">
+<a name="OrchestrationService-fr.zelus.jarvis.orchestration.OrchestrationModel-fr.zelus.jarvis.core.JarvisModuleRegistry-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>OrchestrationService</h4>
-<pre>public&nbsp;OrchestrationService(<a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a>&nbsp;orchestrationModel)</pre>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> based on the provided <code>orchestrationModel</code>.</div>
+<pre>public&nbsp;OrchestrationService(<a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a>&nbsp;orchestrationModel,
+                            <a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core">JarvisModuleRegistry</a>&nbsp;jarvisModuleRegistry)</pre>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> based on the provided <code>orchestrationModel</code> and <code>jarvisModuleRegistry</code>.
+ <p>
+ This constructor also takes care of resolving all the proxies in the provided <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>,
+ ensuring that concurrent accesses of the model will not produce unexpected behaviors (see
+ <a href="https://www.eclipse.org/forums/index.php/t/1095731/">this post</a>)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>orchestrationModel</code> - the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> representing the intent-to-action bindings to use</dd>
+<dd><code>jarvisModuleRegistry</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a> used to create the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s to execute</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>orchestrationModel</code> or <code>jarvisModuleRegistry</code> is
+                              <code>null</code></dd>
 </dl>
 </li>
 </ul>
@@ -215,6 +255,24 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getExecutorService--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExecutorService</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent">ExecutorService</a>&nbsp;getExecutorService()</pre>
+<div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent"><code>ExecutorService</code></a> used to process <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.
+ <p>
+ <b>Note:</b> this method is designed to ease testing, and should not be accessed by client applications.
+ Manipulating <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>'s <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent"><code>ExecutorService</code></a> may create consistency issues on currently executed
+ <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent"><code>ExecutorService</code></a> used to process <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s</dd>
+</dl>
+</li>
+</ul>
 <a name="getOrchestrationModel--">
 <!--   -->
 </a>
@@ -222,32 +280,83 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>getOrchestrationModel</h4>
 <pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a>&nbsp;getOrchestrationModel()</pre>
-<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> associated to this class.</div>
+<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> associated to this <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> associated to this class</dd>
+<dd>the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> associated to this <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="getActionsFromEvent-fr.zelus.jarvis.intent.EventInstance-">
+<a name="getJarvisModuleRegistry--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getJarvisModuleRegistry</h4>
+<pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core">JarvisModuleRegistry</a>&nbsp;getJarvisModuleRegistry()</pre>
+<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a> associated to this <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a> associated to this <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleEventInstance</h4>
+<pre>public&nbsp;void&nbsp;handleEventInstance(<a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent">EventInstance</a>&nbsp;eventInstance,
+                                <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</pre>
+<div class="block">Handles the provided <code>eventInstance</code> and executed the corresponding <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s defined in the
+ <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>.
+ <p>
+ This method creates an asynchronous task that retrieves the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s to execute from the
+ <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>, and executes them sequentially. Note that all the <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s are
+ executed in the same <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang"><code>Thread</code></a>, in order to ensure that their pre-conditions are respected (i.e. the
+ context variables defined by an action are available for the next ones).
+ <p>
+ Exceptions thrown from the computed <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s are logged and ignored, so the calling
+ <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> does not have to handle the exception, and can process the next event.
+ <p>
+ The created task also registers the output context values to the provided <code>session</code>, making them
+ available for the computed actions.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eventInstance</code> - the <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a> to handle</dd>
+<dd><code>session</code> - the <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> used to define and access context variables</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>eventInstance</code> or <code>session</code> is <code>null</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#executeJarvisAction-fr.zelus.jarvis.core.JarvisAction-fr.zelus.jarvis.core.session.JarvisSession-"><code>executeJarvisAction(JarvisAction, JarvisSession)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="shutdown--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shutdown</h4>
+<pre>public&nbsp;void&nbsp;shutdown()</pre>
+<div class="block">Shuts down the underlying <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent"><code>ExecutorService</code></a>.
+ <p>
+ Shutting down the <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> invalidates it and does not allow to process new
+ <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
+</li>
+</ul>
+<a name="isShutdown--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getActionsFromEvent</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&gt;&nbsp;getActionsFromEvent(<a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent">EventInstance</a>&nbsp;eventInstance)</pre>
-<div class="block">Retrieves the <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s associated to the provided <code>eventInstance</code>.
- <p>
- This class navigates the underlying <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> and retrieves the <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s
- associated to the provided <code>eventInstance</code>. These <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s are used by the core
- component to create the concrete <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> to execute.</div>
+<h4>isShutdown</h4>
+<pre>public&nbsp;boolean&nbsp;isShutdown()</pre>
+<div class="block">Returns whether the <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> is shutdown.</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>eventInstance</code> - the <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a> to retrieve the <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s from</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> containing the instantiated <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s associated to the provided <code>recognizedIntent</code>.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>JarvisModule.createJarvisAction(ActionInstance, JarvisSession)</code></a></dd>
+<dd>whether the <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> is shutdown</dd>
 </dl>
 </li>
 </ul>

@@ -114,7 +114,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</dd>
+<dd><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core">JarvisActionResult</a>&gt;</dd>
 </dl>
 <hr>
 <br>
@@ -177,7 +177,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html#call--">call</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html#compute--">compute</a></span>()</code>
 <div class="block">Saves the EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and returns the persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>.</div>
 </td>
 </tr>
@@ -187,7 +187,7 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></h3>
-<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--">getReturnVariable</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#init--">init</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#setReturnVariable-java.lang.String-">setReturnVariable</a></code></li>
+<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#call--">call</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--">getReturnVariable</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#init--">init</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#setReturnVariable-java.lang.String-">setReturnVariable</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -240,24 +240,20 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" ti
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="call--">
+<a name="compute--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>call</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;call()</pre>
+<h4>compute</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;compute()</pre>
 <div class="block">Saves the EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and returns the persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true#call--" title="class or interface in java.util.concurrent">call</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html?is-external=true" title="class or interface in java.util.concurrent">Callable</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#call--">call</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module">EMFModule</a>&gt;</code></dd>
+<dd><code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#compute--">compute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/plugins/emf/module/EMFModule.html" title="class in fr.zelus.jarvis.plugins.emf.module">EMFModule</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>, or <code>null</code> if an error occurred when saving the provided
  <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a></dd>
 </dl>
 </li>
 </ul>

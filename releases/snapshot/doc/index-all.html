@@ -282,43 +282,7 @@
 <dl>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisAction.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></dt>
 <dd>
-<div class="block">Runs the action and returns its result.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/core/module/action/GetDate.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.core.module.action.<a href="fr/zelus/jarvis/plugins/core/module/action/GetDate.html" title="class in fr.zelus.jarvis.plugins.core.module.action">GetDate</a></dt>
-<dd>
-<div class="block">Retrieves the current date and formats it.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/core/module/action/GetTime.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.core.module.action.<a href="fr/zelus/jarvis/plugins/core/module/action/GetTime.html" title="class in fr.zelus.jarvis.plugins.core.module.action">GetTime</a></dt>
-<dd>
-<div class="block">Retrieves the current time and formats it.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/action/PostMessage.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.action.<a href="fr/zelus/jarvis/plugins/discord/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.discord.module.action">PostMessage</a></dt>
-<dd>
-<div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.emf.module.action.<a href="fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html" title="class in fr.zelus.jarvis.plugins.emf.module.action">CreateResource</a></dt>
-<dd>
-<div class="block">Creates the EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> with the provided <code>uri</code> and <code>contents</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.emf.module.action.<a href="fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html" title="class in fr.zelus.jarvis.plugins.emf.module.action">SaveResourceInFile</a></dt>
-<dd>
-<div class="block">Saves the EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and returns the persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.generic_chat.module.action.<a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action">GenericChatAction</a></dt>
-<dd>
-<div class="block">Calls all the concrete chatting <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> associated to this <a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action"><code>GenericChatAction</code></a>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/log/module/action/LogAction.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.log.module.action.<a href="fr/zelus/jarvis/plugins/log/module/action/LogAction.html" title="class in fr.zelus.jarvis.plugins.log.module.action">LogAction</a></dt>
-<dd>
-<div class="block">Logs the provided <code>message</code> with the given <code>logLevel</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostFileMessage</a></dt>
-<dd>
-<div class="block">Uploads the provided <code>file</code> and post it with the associated <code>message</code> to the given <code>channel</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html#call--">call()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostMessage</a></dt>
-<dd>
-<div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
+<div class="block">Runs the action and returns its result wrapped in a <a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core"><code>JarvisActionResult</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/util/ModuleSwitch.html#caseAction-fr.zelus.jarvis.module.Action-">caseAction(Action)</a></span> - Method in class fr.zelus.jarvis.module.util.<a href="fr/zelus/jarvis/module/util/ModuleSwitch.html" title="class in fr.zelus.jarvis.module.util">ModuleSwitch</a></dt>
 <dd>
@@ -455,6 +419,46 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html#close--">close()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.io.<a href="fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackIntentProvider</a></dt>
 <dd>
 <div class="block">Disconnects the underlying Slack RTM client.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisAction.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></dt>
+<dd>
+<div class="block">The concrete implementation of the <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>'s computation.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/core/module/action/GetDate.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.core.module.action.<a href="fr/zelus/jarvis/plugins/core/module/action/GetDate.html" title="class in fr.zelus.jarvis.plugins.core.module.action">GetDate</a></dt>
+<dd>
+<div class="block">Retrieves the current date and formats it.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/core/module/action/GetTime.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.core.module.action.<a href="fr/zelus/jarvis/plugins/core/module/action/GetTime.html" title="class in fr.zelus.jarvis.plugins.core.module.action">GetTime</a></dt>
+<dd>
+<div class="block">Retrieves the current time and formats it.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/discord/module/action/PostMessage.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.discord.module.action.<a href="fr/zelus/jarvis/plugins/discord/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.discord.module.action">PostMessage</a></dt>
+<dd>
+<div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.emf.module.action.<a href="fr/zelus/jarvis/plugins/emf/module/action/CreateResource.html" title="class in fr.zelus.jarvis.plugins.emf.module.action">CreateResource</a></dt>
+<dd>
+<div class="block">Creates the EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> with the provided <code>uri</code> and <code>contents</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.emf.module.action.<a href="fr/zelus/jarvis/plugins/emf/module/action/SaveResourceInFile.html" title="class in fr.zelus.jarvis.plugins.emf.module.action">SaveResourceInFile</a></dt>
+<dd>
+<div class="block">Saves the EMF <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> and returns the persisted <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.generic_chat.module.action.<a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action">GenericChatAction</a></dt>
+<dd>
+<div class="block">Calls all the concrete chatting <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> associated to this <a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action"><code>GenericChatAction</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/log/module/action/LogAction.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.log.module.action.<a href="fr/zelus/jarvis/plugins/log/module/action/LogAction.html" title="class in fr.zelus.jarvis.plugins.log.module.action">LogAction</a></dt>
+<dd>
+<div class="block">Logs the provided <code>message</code> with the given <code>logLevel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostFileMessage</a></dt>
+<dd>
+<div class="block">Uploads the provided <code>file</code> and post it with the associated <code>message</code> to the given <code>channel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.slack.module.action.<a href="fr/zelus/jarvis/plugins/slack/module/action/PostMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action">PostMessage</a></dt>
+<dd>
+<div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html#CONCRETE_CHAT_INTENT_PROVIDER_KEY">CONCRETE_CHAT_INTENT_PROVIDER_KEY</a></span> - Static variable in class fr.zelus.jarvis.plugins.generic_chat.module.io.<a href="fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.io">GenericChatIntentProvider</a></dt>
 <dd>
@@ -2051,10 +2055,6 @@
 <dd>
 <div class="block">Returns the value of the '<em><b>Actions</b></em>' containment reference list.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/OrchestrationService.html#getActionsFromEvent-fr.zelus.jarvis.intent.EventInstance-">getActionsFromEvent(EventInstance)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></dt>
-<dd>
-<div class="block">Retrieves the <a href="fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s associated to the provided <code>eventInstance</code>.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html#getAllEventDefinitions--">getAllEventDefinitions()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">EventDefinitionRegistry</a></dt>
 <dd>
 <div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing all the registered <a href="fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a>s.</div>
@@ -2384,7 +2384,11 @@
 <dd>
 <div class="block">Returns <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing the <a href="fr/zelus/jarvis/core/JarvisModule.EventProviderThread.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule.EventProviderThread</code></a>s associated to this module.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getExecutorService--">getExecutorService()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisActionResult.html#getExecutionTime--">getExecutionTime()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core">JarvisActionResult</a></dt>
+<dd>
+<div class="block">Returns the execution time value (in milliseconds) stored in this <a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core"><code>JarvisActionResult</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/OrchestrationService.html#getExecutorService--">getExecutorService()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></dt>
 <dd>
 <div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent"><code>ExecutorService</code></a> used to process <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
 </dd>
@@ -2543,6 +2547,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getJarvisModuleRegistry--">getJarvisModuleRegistry()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
 <div class="block">Returns the <a href="fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a> associated to this instance.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/OrchestrationService.html#getJarvisModuleRegistry--">getJarvisModuleRegistry()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></dt>
+<dd>
+<div class="block">Returns the <a href="fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a> associated to this <a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getJarvisServer--">getJarvisServer()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
@@ -2770,13 +2778,9 @@
 <dd>
 <div class="block">Retrieves the <a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> from the provided <code>property</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getOrchestrationModel--">getOrchestrationModel()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
-<dd>
-<div class="block">Returns the <a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> associated to this class' <a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/OrchestrationService.html#getOrchestrationModel--">getOrchestrationModel()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></dt>
 <dd>
-<div class="block">Returns the <a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> associated to this class.</div>
+<div class="block">Returns the <a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> associated to this <a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getOrchestrationModel--">getOrchestrationModel()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -2807,6 +2811,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html#getOrchestrationPackage--">getOrchestrationPackage()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationFactory</a></dt>
 <dd>
 <div class="block">Returns the package supported by this factory.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getOrchestrationService--">getOrchestrationService()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dd>
+<div class="block">Returns the underlying <a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#getOrCreateJarvisSession-java.lang.String-">getOrCreateJarvisSession(String)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
@@ -2921,6 +2929,10 @@
 <dd>
 <div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisActionResult.html#getResult--">getResult()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core">JarvisActionResult</a></dt>
+<dd>
+<div class="block">Returns the raw result stored in this <a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core"><code>JarvisActionResult</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--">getReturnVariable()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></dt>
 <dd>
 <div class="block">Return the name of the variable to use to store the result of the <a href="fr/zelus/jarvis/core/JarvisAction.html#call--"><code>JarvisAction.call()</code></a> method.</div>
@@ -2973,6 +2985,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html#getTextFragment--">getTextFragment()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/ContextParameterImpl.html" title="class in fr.zelus.jarvis.intent.impl">ContextParameterImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisActionResult.html#getThrownException--">getThrownException()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core">JarvisActionResult</a></dt>
+<dd>
+<div class="block">Return the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang"><code>Exception</code></a> that has been thrown during the computation.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/plugins/core/module/action/GetTime.html" title="class in fr.zelus.jarvis.plugins.core.module.action"><span class="typeNameLink">GetTime</span></a> - Class in <a href="fr/zelus/jarvis/plugins/core/module/action/package-summary.html">fr.zelus.jarvis.plugins.core.module.action</a></dt>
 <dd>
 <div class="block">A <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> that retrieves the current time and returns it.</div>
@@ -3079,8 +3095,11 @@
 <dd>
 <div class="block">Handles the raw HTTP request content and headers.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#handleEvent-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-">handleEvent(EventInstance, JarvisSession)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
-<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/OrchestrationService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-">handleEventInstance(EventInstance, JarvisSession)</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></dt>
+<dd>
+<div class="block">Handles the provided <code>eventInstance</code> and executed the corresponding <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s defined in the
+ <a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html#handleParsedContent-com.google.gson.JsonElement-org.apache.http.Header:A-">handleParsedContent(JsonElement, Header[])</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/JsonWebhookEventProvider.html" title="class in fr.zelus.jarvis.io">JsonWebhookEventProvider</a></dt>
 <dd>
 <div class="block">Handles the <code>JsonElement</code> representing the request content.</div>
@@ -3368,6 +3387,10 @@
 <dd>
 <div class="block">Creates an instance of the switch.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisActionResult.html#isError--">isError()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core">JarvisActionResult</a></dt>
+<dd>
+<div class="block">Returns whether the <a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core"><code>JarvisActionResult</code></a> represents an errored computation.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/util/IntentAdapterFactory.html#isFactoryForType-java.lang.Object-">isFactoryForType(Object)</a></span> - Method in class fr.zelus.jarvis.intent.util.<a href="fr/zelus/jarvis/intent/util/IntentAdapterFactory.html" title="class in fr.zelus.jarvis.intent.util">IntentAdapterFactory</a></dt>
 <dd>
 <div class="block">Returns whether this factory is applicable for the type of the object.</div>
@@ -3383,6 +3406,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#isShutdown--">isShutdown()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
 <div class="block">Returns whether the <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> client is shutdown.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/OrchestrationService.html#isShutdown--">isShutdown()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></dt>
+<dd>
+<div class="block">Returns whether the <a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> is shutdown.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/DefaultIntentRecognitionProvider.html#isShutdown--">isShutdown()</a></span> - Method in class fr.zelus.jarvis.recognition.<a href="fr/zelus/jarvis/recognition/DefaultIntentRecognitionProvider.html" title="class in fr.zelus.jarvis.recognition">DefaultIntentRecognitionProvider</a></dt>
 <dd>
@@ -3435,6 +3462,19 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisAction.html#JarvisAction-T-fr.zelus.jarvis.core.session.JarvisSession-">JarvisAction(T, JarvisSession)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> with the provided <code>containingModule</code> and <code>session</code>.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">JarvisActionResult</span></a> - Class in <a href="fr/zelus/jarvis/core/package-summary.html">fr.zelus.jarvis.core</a></dt>
+<dd>
+<div class="block">Stores the result of a computation and provides utility methods to manipulate it.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisActionResult.html#JarvisActionResult-java.lang.Object-long-">JarvisActionResult(Object, long)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core">JarvisActionResult</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core"><code>JarvisActionResult</code></a> from the provided <code>result</code> and <code>executionTime</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisActionResult.html#JarvisActionResult-java.lang.Object-java.lang.Exception-long-">JarvisActionResult(Object, Exception, long)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core">JarvisActionResult</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core"><code>JarvisActionResult</code></a> from the provided <code>partialResult</code>, <code>thrownException</code>,
+ and <code>executionTime</code>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><span class="typeNameLink">JarvisContext</span></a> - Class in <a href="fr/zelus/jarvis/core/session/package-summary.html">fr.zelus.jarvis.core.session</a></dt>
 <dd>
@@ -4152,14 +4192,19 @@
 <dd>
 <div class="block">An implementation of the model <b>Package</b>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#orchestrationService">orchestrationService</a></span> - Variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dd>
+<div class="block">The <a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> used to handle <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s and execute the associated
+ <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">OrchestrationService</span></a> - Class in <a href="fr/zelus/jarvis/core/package-summary.html">fr.zelus.jarvis.core</a></dt>
 <dd>
-<div class="block">Reads an <a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> and returns the <a href="fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s associated to the provided
- <a href="fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s.</div>
+<div class="block">A service that handles <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s and executes the corresponding <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s defined in the
+ provided <a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/OrchestrationService.html#OrchestrationService-fr.zelus.jarvis.orchestration.OrchestrationModel-">OrchestrationService(OrchestrationModel)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/OrchestrationService.html#OrchestrationService-fr.zelus.jarvis.orchestration.OrchestrationModel-fr.zelus.jarvis.core.JarvisModuleRegistry-">OrchestrationService(OrchestrationModel, JarvisModuleRegistry)</a></span> - Constructor for class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> based on the provided <code>orchestrationModel</code>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> based on the provided <code>orchestrationModel</code> and <code>jarvisModuleRegistry</code>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html" title="class in fr.zelus.jarvis.orchestration.util"><span class="typeNameLink">OrchestrationSwitch</span></a>&lt;<a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html" title="type parameter in OrchestrationSwitch">T</a>&gt; - Class in <a href="fr/zelus/jarvis/orchestration/util/package-summary.html">fr.zelus.jarvis.orchestration.util</a></dt>
 <dd>
@@ -4664,6 +4709,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisModule.html#shutdown--">shutdown()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></dt>
 <dd>
 <div class="block">Shuts down the <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/OrchestrationService.html#shutdown--">shutdown()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></dt>
+<dd>
+<div class="block">Shuts down the underlying <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html?is-external=true" title="class or interface in java.util.concurrent"><code>ExecutorService</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/DefaultIntentRecognitionProvider.html#shutdown--">shutdown()</a></span> - Method in class fr.zelus.jarvis.recognition.<a href="fr/zelus/jarvis/recognition/DefaultIntentRecognitionProvider.html" title="class in fr.zelus.jarvis.recognition">DefaultIntentRecognitionProvider</a></dt>
 <dd>
