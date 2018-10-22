@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -122,6 +122,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
    <li><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getAction--"><code><em>Action</em></code></a></li>
    <li><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getValues--"><code><em>Values</em></code></a></li>
    <li><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getReturnVariable--"><code><em>Return Variable</em></code></a></li>
+   <li><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getOnError--"><code><em>On Error</em></code></a></li>
  </ul></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -153,24 +154,30 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getOnError--">getOnError</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>On Error</b></em>' containment reference list.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration">VariableAccess</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getReturnVariable--">getReturnVariable</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Return Variable</b></em>' containment reference.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration">ParameterValue</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getValues--">getValues</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Values</b></em>' containment reference list.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#setAction-fr.zelus.jarvis.module.Action-">setAction</a></span>(<a href="../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module">Action</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getAction--"><code><em>Action</em></code></a>' reference.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#setReturnVariable-fr.zelus.jarvis.orchestration.VariableAccess-">setReturnVariable</a></span>(<a href="../../../../fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration">VariableAccess</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getReturnVariable--"><code><em>Return Variable</em></code></a>' containment reference.</div>
@@ -299,7 +306,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <a name="setReturnVariable-fr.zelus.jarvis.orchestration.VariableAccess-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setReturnVariable</h4>
 <pre>void&nbsp;setReturnVariable(<a href="../../../../fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration">VariableAccess</a>&nbsp;value)</pre>
@@ -311,6 +318,30 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dd><code>value</code> - the new value of the '<em>Return Variable</em>' containment reference.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getReturnVariable--"><code>getReturnVariable()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getOnError--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getOnError</h4>
+<pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&gt;&nbsp;getOnError()</pre>
+<div class="block">Returns the value of the '<em><b>On Error</b></em>' containment reference list.
+ The list contents are of type <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>.
+ <!-- begin-user-doc -->
+ <p>
+ If the meaning of the '<em>On Error</em>' containment reference list isn't clear,
+ there really should be more of a description here...
+ </p>
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>On Error</em>' containment reference list.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getActionInstance_OnError--"><code>OrchestrationPackage.getActionInstance_OnError()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

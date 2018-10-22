@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,6 +146,7 @@ implements <a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.
    <li><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getAction--"><code><em>Action</em></code></a></li>
    <li><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getValues--"><code><em>Values</em></code></a></li>
    <li><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getReturnVariable--"><code><em>Return Variable</em></code></a></li>
+   <li><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getOnError--"><code><em>On Error</em></code></a></li>
  </ul></div>
 <dl>
 <dt><span class="simpleTagLabel">Generated</span></dt>
@@ -218,12 +219,18 @@ implements <a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#onError">onError</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getOnError--"><code><em>On Error</em></code></a>' containment reference list.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../../fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration">VariableAccess</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#returnVariable">returnVariable</a></span></code>
 <div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getReturnVariable--"><code><em>Return Variable</em></code></a>' containment reference.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration">ParameterValue</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#values">values</a></span></code>
 <div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getValues--"><code><em>Values</em></code></a>' containment reference list.</div>
@@ -334,18 +341,22 @@ implements <a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getOnError--">getOnError</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration">VariableAccess</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getReturnVariable--">getReturnVariable</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration">ParameterValue</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getValues--">getValues</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#setAction-fr.zelus.jarvis.module.Action-">setAction</a></span>(<a href="../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module">Action</a>&nbsp;newAction)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#setReturnVariable-fr.zelus.jarvis.orchestration.VariableAccess-">setReturnVariable</a></span>(<a href="../../../../../fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration">VariableAccess</a>&nbsp;newReturnVariable)</code>&nbsp;</td>
 </tr>
@@ -457,7 +468,7 @@ implements <a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.
 <a name="returnVariable">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>returnVariable</h4>
 <pre>protected&nbsp;<a href="../../../../../fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration">VariableAccess</a> returnVariable</pre>
@@ -467,6 +478,23 @@ implements <a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getReturnVariable--"><code>getReturnVariable()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="onError">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>onError</h4>
+<pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&gt; onError</pre>
+<div class="block">The cached value of the '<a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getOnError--"><code><em>On Error</em></code></a>' containment reference list.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#getOnError--"><code>getOnError()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -644,6 +672,26 @@ implements <a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.
 <dd><code>newReturnVariable</code> - the new value of the '<em>Return Variable</em>' containment reference.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getReturnVariable--"><code>ActionInstance.getReturnVariable()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getOnError--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOnError</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&gt;&nbsp;getOnError()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getOnError--">getOnError</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>On Error</em>' containment reference list.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getActionInstance_OnError--"><code>OrchestrationPackage.getActionInstance_OnError()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
