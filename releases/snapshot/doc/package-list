@@ -28,9 +28,6 @@ fr.zelus.jarvis.plugins.slack
 fr.zelus.jarvis.plugins.slack.module
 fr.zelus.jarvis.plugins.slack.module.action
 fr.zelus.jarvis.plugins.slack.module.io
-fr.zelus.jarvis.plugins.wordpress
-fr.zelus.jarvis.plugins.wordpress.module
-fr.zelus.jarvis.plugins.wordpress.module.io
 fr.zelus.jarvis.recognition
 fr.zelus.jarvis.recognition.dialogflow
 fr.zelus.jarvis.server
