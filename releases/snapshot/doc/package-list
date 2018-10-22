@@ -17,8 +17,6 @@ fr.zelus.jarvis.plugins.discord
 fr.zelus.jarvis.plugins.discord.module
 fr.zelus.jarvis.plugins.discord.module.action
 fr.zelus.jarvis.plugins.discord.module.io
-fr.zelus.jarvis.plugins.emf.module
-fr.zelus.jarvis.plugins.emf.module.action
 fr.zelus.jarvis.plugins.generic_chat.module
 fr.zelus.jarvis.plugins.generic_chat.module.action
 fr.zelus.jarvis.plugins.generic_chat.module.io
