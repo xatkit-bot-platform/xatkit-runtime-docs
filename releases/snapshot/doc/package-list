@@ -1,6 +1,7 @@
 fr.zelus.jarvis
 fr.zelus.jarvis.core
 fr.zelus.jarvis.core.session
+fr.zelus.jarvis.core_modules
 fr.zelus.jarvis.intent
 fr.zelus.jarvis.intent.impl
 fr.zelus.jarvis.intent.util
