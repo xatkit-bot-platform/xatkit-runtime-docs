@@ -370,7 +370,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  that case, the method attempts to load the model at the provided location and returns it.
  <p>
  This method supports loading of model path defined by <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>s and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s. Support for additional
- types is planned in the next releases.</div>
+ types is planned in the next releases.
+ <p>
+ This method loads Jarvis core module <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a>s and add them to the local <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>ResourceSet</code></a>, enabling
+ EMF proxy resolution from the loaded <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> to Jarvis core modules.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>property</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> representing the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> to extract</dd>
@@ -382,6 +385,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
                               <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> top-level
                               element, or if the loaded <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> is empty.</dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>property</code> is <code>null</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#loadJarvisCoreModuleResources-org.eclipse.emf.ecore.resource.ResourceSet-"><code>loadJarvisCoreModuleResources(ResourceSet)</code></a></dd>
 </dl>
 </li>
 </ul>
