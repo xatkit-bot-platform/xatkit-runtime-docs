@@ -75,7 +75,7 @@
 <ul class="horizontal">
 <li><a href="fr/zelus/jarvis/package-tree.html">fr.zelus.jarvis</a>, </li>
 <li><a href="fr/zelus/jarvis/core/package-tree.html">fr.zelus.jarvis.core</a>, </li>
-<li><a href="fr/zelus/jarvis/core_modules/package-tree.html">fr.zelus.jarvis.core_modules</a>, </li>
+<li><a href="fr/zelus/jarvis/core_modules/utils/package-tree.html">fr.zelus.jarvis.core_modules.utils</a>, </li>
 <li><a href="fr/zelus/jarvis/core/session/package-tree.html">fr.zelus.jarvis.core.session</a>, </li>
 <li><a href="fr/zelus/jarvis/intent/package-tree.html">fr.zelus.jarvis.intent</a>, </li>
 <li><a href="fr/zelus/jarvis/intent/impl/package-tree.html">fr.zelus.jarvis.intent.impl</a>, </li>
@@ -188,6 +188,7 @@
 <li type="circle">fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><span class="typeNameLink">VariableAccessImpl</span></a> (implements fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration">VariableAccess</a>)</li>
 </ul>
 </li>
+<li type="circle">fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><span class="typeNameLink">ImportDeclarationImpl</span></a> (implements fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html" title="interface in fr.zelus.jarvis.orchestration">ImportDeclaration</a>)</li>
 <li type="circle">fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleImpl.html" title="class in fr.zelus.jarvis.module.impl"><span class="typeNameLink">ModuleImpl</span></a> (implements fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/Module.html" title="interface in fr.zelus.jarvis.module">Module</a>)</li>
 <li type="circle">fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><span class="typeNameLink">OrchestrationLinkImpl</span></a> (implements fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationLink.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationLink</a>)</li>
 <li type="circle">fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><span class="typeNameLink">OrchestrationModelImpl</span></a> (implements fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a>)</li>
@@ -332,11 +333,11 @@
 </ul>
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
-<li type="circle">fr.zelus.jarvis.core_modules.<a href="fr/zelus/jarvis/core_modules/CoreModulesUtils.html" title="interface in fr.zelus.jarvis.core_modules"><span class="typeNameLink">CoreModulesUtils</span></a></li>
 <li type="circle">fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentPackage.Literals.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">IntentPackage.Literals</span></a></li>
 <li type="circle">fr.zelus.jarvis.recognition.<a href="fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><span class="typeNameLink">IntentRecognitionProvider</span></a></li>
 <li type="circle">fr.zelus.jarvis.plugins.slack.<a href="fr/zelus/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in fr.zelus.jarvis.plugins.slack"><span class="typeNameLink">JarvisSlackUtils</span></a></li>
 <li type="circle">fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModulePackage.Literals.html" title="interface in fr.zelus.jarvis.module"><span class="typeNameLink">ModulePackage.Literals</span></a></li>
+<li type="circle">fr.zelus.jarvis.core_modules.utils.<a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html" title="interface in fr.zelus.jarvis.core_modules.utils"><span class="typeNameLink">ModulesLoaderUtils</span></a></li>
 <li type="circle">org.eclipse.emf.common.notify.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify"><span class="typeNameLink">Notifier</span></a>
 <ul>
 <li type="circle">fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><span class="typeNameLink">Action</span></a></li>
@@ -516,6 +517,7 @@
 <li type="circle">fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">VariableAccess</span></a></li>
 </ul>
 </li>
+<li type="circle">fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">ImportDeclaration</span></a></li>
 <li type="circle">fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/InputProviderDefinition.html" title="interface in fr.zelus.jarvis.module"><span class="typeNameLink">InputProviderDefinition</span></a></li>
 <li type="circle">fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">IntentDefinition</span></a></li>
 <li type="circle">fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentFactory.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">IntentFactory</span></a></li>
@@ -573,6 +575,7 @@
 <li type="circle">fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/VariableAccess.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">VariableAccess</span></a></li>
 </ul>
 </li>
+<li type="circle">fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">ImportDeclaration</span></a></li>
 <li type="circle">fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/InputProviderDefinition.html" title="interface in fr.zelus.jarvis.module"><span class="typeNameLink">InputProviderDefinition</span></a></li>
 <li type="circle">fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">IntentDefinition</span></a></li>
 <li type="circle">fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentFactory.html" title="interface in fr.zelus.jarvis.intent"><span class="typeNameLink">IntentFactory</span></a></li>

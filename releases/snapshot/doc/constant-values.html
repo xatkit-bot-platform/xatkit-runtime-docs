@@ -83,7 +83,7 @@
 <ul class="blockList">
 <li class="blockList">
 <table class="constantsSummary" border="0" cellpadding="3" cellspacing="0" summary="Constant Field Values table, listing constant fields, and values">
-<caption><span>fr.zelus.jarvis.core_modules.<a href="fr/zelus/jarvis/core_modules/CoreModulesUtils.html" title="interface in fr.zelus.jarvis.core_modules">CoreModulesUtils</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>fr.zelus.jarvis.core_modules.utils.<a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html" title="interface in fr.zelus.jarvis.core_modules.utils">ModulesLoaderUtils</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th scope="col">Constant Field</th>
@@ -91,11 +91,18 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a name="fr.zelus.jarvis.core_modules.CoreModulesUtils.CORE_MODULE_PATHMAP">
+<td class="colFirst"><a name="fr.zelus.jarvis.core_modules.utils.ModulesLoaderUtils.CORE_MODULE_PATHMAP">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td><code><a href="fr/zelus/jarvis/core_modules/CoreModulesUtils.html#CORE_MODULE_PATHMAP">CORE_MODULE_PATHMAP</a></code></td>
+<td><code><a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html#CORE_MODULE_PATHMAP">CORE_MODULE_PATHMAP</a></code></td>
 <td class="colLast"><code>"pathmap://JARVIS_CORE_MODULES/"</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a name="fr.zelus.jarvis.core_modules.utils.ModulesLoaderUtils.CUSTOM_MODULE_PATHMAP">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td><code><a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html#CUSTOM_MODULE_PATHMAP">CUSTOM_MODULE_PATHMAP</a></code></td>
+<td class="colLast"><code>"pathmap://JARVIS_CUSTOM_MODULES/"</code></td>
 </tr>
 </tbody>
 </table>
@@ -868,7 +875,7 @@
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ACTION_INSTANCE">ACTION_INSTANCE</a></code></td>
-<td class="colLast"><code>2</code></td>
+<td class="colLast"><code>3</code></td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ACTION_INSTANCE__ACTION">
@@ -938,7 +945,7 @@
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#EXPRESSION">EXPRESSION</a></code></td>
-<td class="colLast"><code>5</code></td>
+<td class="colLast"><code>6</code></td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.EXPRESSION_FEATURE_COUNT">
@@ -955,223 +962,258 @@
 <td class="colLast"><code>0</code></td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.IMPORT_DECLARATION">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
+<td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#IMPORT_DECLARATION">IMPORT_DECLARATION</a></code></td>
+<td class="colLast"><code>1</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.IMPORT_DECLARATION__ALIAS">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
+<td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#IMPORT_DECLARATION__ALIAS">IMPORT_DECLARATION__ALIAS</a></code></td>
+<td class="colLast"><code>1</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.IMPORT_DECLARATION__PATH">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
+<td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#IMPORT_DECLARATION__PATH">IMPORT_DECLARATION__PATH</a></code></td>
+<td class="colLast"><code>0</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.IMPORT_DECLARATION_FEATURE_COUNT">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
+<td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#IMPORT_DECLARATION_FEATURE_COUNT">IMPORT_DECLARATION_FEATURE_COUNT</a></code></td>
+<td class="colLast"><code>2</code></td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.IMPORT_DECLARATION_OPERATION_COUNT">
+<!--   -->
+</a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
+<td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#IMPORT_DECLARATION_OPERATION_COUNT">IMPORT_DECLARATION_OPERATION_COUNT</a></code></td>
+<td class="colLast"><code>0</code></td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.LITERAL">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#LITERAL">LITERAL</a></code></td>
-<td class="colLast"><code>6</code></td>
+<td class="colLast"><code>7</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.LITERAL_FEATURE_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#LITERAL_FEATURE_COUNT">LITERAL_FEATURE_COUNT</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.LITERAL_OPERATION_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#LITERAL_OPERATION_COUNT">LITERAL_OPERATION_COUNT</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_LINK">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_LINK">ORCHESTRATION_LINK</a></code></td>
-<td class="colLast"><code>1</code></td>
+<td class="colLast"><code>2</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_LINK__ACTIONS">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_LINK__ACTIONS">ORCHESTRATION_LINK__ACTIONS</a></code></td>
 <td class="colLast"><code>1</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_LINK__EVENT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_LINK__EVENT">ORCHESTRATION_LINK__EVENT</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_LINK__VARIABLES">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_LINK__VARIABLES">ORCHESTRATION_LINK__VARIABLES</a></code></td>
 <td class="colLast"><code>2</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_LINK_FEATURE_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_LINK_FEATURE_COUNT">ORCHESTRATION_LINK_FEATURE_COUNT</a></code></td>
 <td class="colLast"><code>3</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_LINK_OPERATION_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_LINK_OPERATION_COUNT">ORCHESTRATION_LINK_OPERATION_COUNT</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_MODEL">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_MODEL">ORCHESTRATION_MODEL</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_MODEL__EVENT_PROVIDER_DEFINITIONS">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_MODEL__EVENT_PROVIDER_DEFINITIONS">ORCHESTRATION_MODEL__EVENT_PROVIDER_DEFINITIONS</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_MODEL__IMPORTS">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_MODEL__IMPORTS">ORCHESTRATION_MODEL__IMPORTS</a></code></td>
 <td class="colLast"><code>2</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_MODEL__ORCHESTRATION_LINKS">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_MODEL__ORCHESTRATION_LINKS">ORCHESTRATION_MODEL__ORCHESTRATION_LINKS</a></code></td>
 <td class="colLast"><code>1</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_MODEL_FEATURE_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_MODEL_FEATURE_COUNT">ORCHESTRATION_MODEL_FEATURE_COUNT</a></code></td>
 <td class="colLast"><code>3</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.ORCHESTRATION_MODEL_OPERATION_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_MODEL_OPERATION_COUNT">ORCHESTRATION_MODEL_OPERATION_COUNT</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.PARAMETER_VALUE">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#PARAMETER_VALUE">PARAMETER_VALUE</a></code></td>
-<td class="colLast"><code>4</code></td>
+<td class="colLast"><code>5</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.PARAMETER_VALUE__EXPRESSION">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#PARAMETER_VALUE__EXPRESSION">PARAMETER_VALUE__EXPRESSION</a></code></td>
 <td class="colLast"><code>1</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.PARAMETER_VALUE__PARAMETER">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#PARAMETER_VALUE__PARAMETER">PARAMETER_VALUE__PARAMETER</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.PARAMETER_VALUE_FEATURE_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#PARAMETER_VALUE_FEATURE_COUNT">PARAMETER_VALUE_FEATURE_COUNT</a></code></td>
 <td class="colLast"><code>2</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.PARAMETER_VALUE_OPERATION_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#PARAMETER_VALUE_OPERATION_COUNT">PARAMETER_VALUE_OPERATION_COUNT</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.STRING_LITERAL">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#STRING_LITERAL">STRING_LITERAL</a></code></td>
-<td class="colLast"><code>7</code></td>
+<td class="colLast"><code>8</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.STRING_LITERAL__VALUE">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#STRING_LITERAL__VALUE">STRING_LITERAL__VALUE</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.STRING_LITERAL_FEATURE_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#STRING_LITERAL_FEATURE_COUNT">STRING_LITERAL_FEATURE_COUNT</a></code></td>
 <td class="colLast"><code>1</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.STRING_LITERAL_OPERATION_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#STRING_LITERAL_OPERATION_COUNT">STRING_LITERAL_OPERATION_COUNT</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.VARIABLE">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE">VARIABLE</a></code></td>
-<td class="colLast"><code>3</code></td>
+<td class="colLast"><code>4</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.VARIABLE__NAME">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE__NAME">VARIABLE__NAME</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.VARIABLE_ACCESS">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE_ACCESS">VARIABLE_ACCESS</a></code></td>
-<td class="colLast"><code>8</code></td>
+<td class="colLast"><code>9</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.VARIABLE_ACCESS__REFERRED_VARIABLE">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE_ACCESS__REFERRED_VARIABLE">VARIABLE_ACCESS__REFERRED_VARIABLE</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.VARIABLE_ACCESS_FEATURE_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE_ACCESS_FEATURE_COUNT">VARIABLE_ACCESS_FEATURE_COUNT</a></code></td>
 <td class="colLast"><code>1</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.VARIABLE_ACCESS_OPERATION_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE_ACCESS_OPERATION_COUNT">VARIABLE_ACCESS_OPERATION_COUNT</a></code></td>
 <td class="colLast"><code>0</code></td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.VARIABLE_FEATURE_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>
 <td><code><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#VARIABLE_FEATURE_COUNT">VARIABLE_FEATURE_COUNT</a></code></td>
 <td class="colLast"><code>1</code></td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a name="fr.zelus.jarvis.orchestration.OrchestrationPackage.VARIABLE_OPERATION_COUNT">
 <!--   -->
 </a><code>public&nbsp;static&nbsp;final&nbsp;int</code></td>

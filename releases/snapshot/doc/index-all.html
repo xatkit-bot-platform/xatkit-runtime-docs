@@ -206,6 +206,14 @@
 <dd>
 <div class="block">Registers a new <a href="fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a> to match from the provided <code>headerValue</code> and <code>fieldValue</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#alias">alias</a></span> - Variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>
+<div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#getAlias--"><code><em>Alias</em></code></a>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#ALIAS_EDEFAULT">ALIAS_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>
+<div class="block">The default value of the '<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#getAlias--"><code><em>Alias</em></code></a>' attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/EntityType.html#ANY_VALUE">ANY_VALUE</a></span> - Static variable in enum fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/EntityType.html" title="enum in fr.zelus.jarvis.intent">EntityType</a></dt>
 <dd>
 <div class="block">The '<em><b>ANY</b></em>' literal value.</div>
@@ -339,6 +347,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html#caseExpression-fr.zelus.jarvis.orchestration.Expression-">caseExpression(Expression)</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationSwitch</a></dt>
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Expression</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html#caseImportDeclaration-fr.zelus.jarvis.orchestration.ImportDeclaration-">caseImportDeclaration(ImportDeclaration)</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationSwitch.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationSwitch</a></dt>
+<dd>
+<div class="block">Returns the result of interpreting the object as an instance of '<em>Import Declaration</em>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/util/ModuleSwitch.html#caseInputProviderDefinition-fr.zelus.jarvis.module.InputProviderDefinition-">caseInputProviderDefinition(InputProviderDefinition)</a></span> - Method in class fr.zelus.jarvis.module.util.<a href="fr/zelus/jarvis/module/util/ModuleSwitch.html" title="class in fr.zelus.jarvis.module.util">ModuleSwitch</a></dt>
 <dd>
@@ -730,9 +742,9 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#convertToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-">convertToString(EDataType, Object)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core_modules/CoreModulesUtils.html#CORE_MODULE_PATHMAP">CORE_MODULE_PATHMAP</a></span> - Static variable in interface fr.zelus.jarvis.core_modules.<a href="fr/zelus/jarvis/core_modules/CoreModulesUtils.html" title="interface in fr.zelus.jarvis.core_modules">CoreModulesUtils</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html#CORE_MODULE_PATHMAP">CORE_MODULE_PATHMAP</a></span> - Static variable in interface fr.zelus.jarvis.core_modules.utils.<a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html" title="interface in fr.zelus.jarvis.core_modules.utils">ModulesLoaderUtils</a></dt>
 <dd>
-<div class="block">The <code>pathmap</code> prefix used to map core module resources to their concrete URI.</div>
+<div class="block">The <code>pathmap</code> prefix used to map core module resources to their concrete URIs.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html" title="class in fr.zelus.jarvis.plugins.core.module"><span class="typeNameLink">CoreModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/core/module/package-summary.html">fr.zelus.jarvis.plugins.core.module</a></dt>
 <dd>
@@ -741,10 +753,6 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html#CoreModule-fr.zelus.jarvis.core.JarvisCore-">CoreModule(JarvisCore)</a></span> - Constructor for class fr.zelus.jarvis.plugins.core.module.<a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html" title="class in fr.zelus.jarvis.plugins.core.module">CoreModule</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html" title="class in fr.zelus.jarvis.plugins.core.module"><code>CoreModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
-</dd>
-<dt><a href="fr/zelus/jarvis/core_modules/CoreModulesUtils.html" title="interface in fr.zelus.jarvis.core_modules"><span class="typeNameLink">CoreModulesUtils</span></a> - Interface in <a href="fr/zelus/jarvis/core_modules/package-summary.html">fr.zelus.jarvis.core_modules</a></dt>
-<dd>
-<div class="block">An interface providing <code>pathmap</code> utility methods to dynamically load core modules.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#create-org.eclipse.emf.ecore.EClass-">create(EClass)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -892,6 +900,16 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#createFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-">createFromString(EDataType, String)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationFactoryImpl.html#createImportDeclaration--">createImportDeclaration()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationFactoryImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationFactoryImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html#createImportDeclaration--">createImportDeclaration()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationFactory.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationFactory</a></dt>
+<dd>
+<div class="block">Returns a new object of class '<em>Import Declaration</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html#createImportDeclarationAdapter--">createImportDeclarationAdapter()</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationAdapterFactory</a></dt>
+<dd>
+<div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>Import Declaration</em></code></a>'.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ModuleFactoryImpl.html#createInputProviderDefinition--">createInputProviderDefinition()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ModuleFactoryImpl.html" title="class in fr.zelus.jarvis.module.impl">ModuleFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/ModuleFactory.html#createInputProviderDefinition--">createInputProviderDefinition()</a></span> - Method in interface fr.zelus.jarvis.module.<a href="fr/zelus/jarvis/module/ModuleFactory.html" title="interface in fr.zelus.jarvis.module">ModuleFactory</a></dt>
@@ -1046,6 +1064,14 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html#createVariableAdapter--">createVariableAdapter()</a></span> - Method in class fr.zelus.jarvis.orchestration.util.<a href="fr/zelus/jarvis/orchestration/util/OrchestrationAdapterFactory.html" title="class in fr.zelus.jarvis.orchestration.util">OrchestrationAdapterFactory</a></dt>
 <dd>
 <div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/orchestration/Variable.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>Variable</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html#CUSTOM_MODULE_PATHMAP">CUSTOM_MODULE_PATHMAP</a></span> - Static variable in interface fr.zelus.jarvis.core_modules.utils.<a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html" title="interface in fr.zelus.jarvis.core_modules.utils">ModulesLoaderUtils</a></dt>
+<dd>
+<div class="block">The <code>pathmap</code> prefix used to map custom module resources to their concrete URIs.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#CUSTOM_MODULES_KEY_PREFIX">CUSTOM_MODULES_KEY_PREFIX</a></span> - Static variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the custom module paths.</div>
 </dd>
 </dl>
 <a name="I:D">
@@ -1244,6 +1270,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ActionInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationLinkImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
@@ -1345,6 +1373,8 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ActionInstanceImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationLinkImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1512,6 +1542,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ActionInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationLinkImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
@@ -1558,6 +1590,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ExpressionImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ExpressionImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ExpressionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/LiteralImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/LiteralImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">LiteralImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationLinkImpl</a></dt>
@@ -1597,6 +1631,8 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ActionInstanceImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationLinkImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1870,7 +1906,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/core/session/package-summary.html">fr.zelus.jarvis.core.session</a> - package fr.zelus.jarvis.core.session</dt>
 <dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/core_modules/package-summary.html">fr.zelus.jarvis.core_modules</a> - package fr.zelus.jarvis.core_modules</dt>
+<dt><a href="fr/zelus/jarvis/core_modules/utils/package-summary.html">fr.zelus.jarvis.core_modules.utils</a> - package fr.zelus.jarvis.core_modules.utils</dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/intent/package-summary.html">fr.zelus.jarvis.intent</a> - package fr.zelus.jarvis.intent</dt>
 <dd>&nbsp;</dd>
@@ -2042,6 +2078,12 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationLink.html#getActions--">getActions()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationLink.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationLink</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Actions</b></em>' containment reference list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#getAlias--">getAlias()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html#getAlias--">getAlias()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html" title="interface in fr.zelus.jarvis.orchestration">ImportDeclaration</a></dt>
+<dd>
+<div class="block">Returns the value of the '<em><b>Alias</b></em>' attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html#getAllEventDefinitions--">getAllEventDefinitions()</a></span> - Method in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core">EventDefinitionRegistry</a></dt>
 <dd>
@@ -2412,11 +2454,29 @@
 <dd>
 <div class="block">Returns the underlying <code>HttpServer</code> used to receive requests.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getImportDeclaration--">getImportDeclaration()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getImportDeclaration--">getImportDeclaration()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for class '<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>Import Declaration</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getImportDeclaration_Alias--">getImportDeclaration_Alias()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getImportDeclaration_Alias--">getImportDeclaration_Alias()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for the attribute '<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html#getAlias--"><code><em>Alias</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getImportDeclaration_Path--">getImportDeclaration_Path()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getImportDeclaration_Path--">getImportDeclaration_Path()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for the attribute '<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html#getPath--"><code><em>Path</em></code></a>'.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#getImports--">getImports()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html#getImports--">getImports()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a></dt>
 <dd>
-<div class="block">Returns the value of the '<em><b>Imports</b></em>' attribute list.</div>
+<div class="block">Returns the value of the '<em><b>Imports</b></em>' containment reference list.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#getInContexts--">getInContexts()</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -2792,7 +2852,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getOrchestrationModel_Imports--">getOrchestrationModel_Imports()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
 <dd>
-<div class="block">Returns the meta object for the attribute list '<a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html#getImports--"><code><em>Imports</em></code></a>'.</div>
+<div class="block">Returns the meta object for the containment reference list '<a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html#getImports--"><code><em>Imports</em></code></a>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html#getOrchestrationModel_OrchestrationLinks--">getOrchestrationModel_OrchestrationLinks()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationPackageImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -2898,6 +2958,12 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#getParameterValue_Parameter--">getParameterValue_Parameter()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
 <dd>
 <div class="block">Returns the meta object for the reference '<a href="fr/zelus/jarvis/orchestration/ParameterValue.html#getParameter--"><code><em>Parameter</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#getPath--">getPath()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html#getPath--">getPath()</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html" title="interface in fr.zelus.jarvis.orchestration">ImportDeclaration</a></dt>
+<dd>
+<div class="block">Returns the value of the '<em><b>Path</b></em>' attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#getProjectId--">getProjectId()</a></span> - Method in class fr.zelus.jarvis.recognition.dialogflow.<a href="fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html" title="class in fr.zelus.jarvis.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
@@ -3126,9 +3192,51 @@
 </a>
 <h2 class="title">I</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#IMPORT_DECLARATION">IMPORT_DECLARATION</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The meta object id for the '<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><code><em>Import Declaration</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#IMPORT_DECLARATION">IMPORT_DECLARATION</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><code><em>Import Declaration</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#IMPORT_DECLARATION__ALIAS">IMPORT_DECLARATION__ALIAS</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The feature id for the '<em><b>Alias</b></em>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#IMPORT_DECLARATION__ALIAS">IMPORT_DECLARATION__ALIAS</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<em><b>Alias</b></em>' attribute feature.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#IMPORT_DECLARATION__PATH">IMPORT_DECLARATION__PATH</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The feature id for the '<em><b>Path</b></em>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#IMPORT_DECLARATION__PATH">IMPORT_DECLARATION__PATH</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<em><b>Path</b></em>' attribute feature.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#IMPORT_DECLARATION_FEATURE_COUNT">IMPORT_DECLARATION_FEATURE_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The number of structural features of the '<em>Import Declaration</em>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#IMPORT_DECLARATION_OPERATION_COUNT">IMPORT_DECLARATION_OPERATION_COUNT</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
+<dd>
+<div class="block">The number of operations of the '<em>Import Declaration</em>' class.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html" title="interface in fr.zelus.jarvis.orchestration"><span class="typeNameLink">ImportDeclaration</span></a> - Interface in <a href="fr/zelus/jarvis/orchestration/package-summary.html">fr.zelus.jarvis.orchestration</a></dt>
+<dd>
+<div class="block">A representation of the model object '<em><b>Import Declaration</b></em>'.</div>
+</dd>
+<dt><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><span class="typeNameLink">ImportDeclarationImpl</span></a> - Class in <a href="fr/zelus/jarvis/orchestration/impl/package-summary.html">fr.zelus.jarvis.orchestration.impl</a></dt>
+<dd>
+<div class="block">An implementation of the model object '<em><b>Import Declaration</b></em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#ImportDeclarationImpl--">ImportDeclarationImpl()</a></span> - Constructor for class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#imports">imports</a></span> - Variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
 <dd>
-<div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#getImports--"><code><em>Imports</em></code></a>' attribute list.</div>
+<div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#getImports--"><code><em>Imports</em></code></a>' containment reference list.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html#inContexts">inContexts</a></span> - Variable in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>
@@ -3938,6 +4046,10 @@
 <dd>
 <div class="block">An implementation of the model <b>Package</b>.</div>
 </dd>
+<dt><a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html" title="interface in fr.zelus.jarvis.core_modules.utils"><span class="typeNameLink">ModulesLoaderUtils</span></a> - Interface in <a href="fr/zelus/jarvis/core_modules/utils/package-summary.html">fr.zelus.jarvis.core_modules.utils</a></dt>
+<dd>
+<div class="block">An interface providing <code>pathmap</code> utility methods to dynamically load modules.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/module/util/ModuleSwitch.html" title="class in fr.zelus.jarvis.module.util"><span class="typeNameLink">ModuleSwitch</span></a>&lt;<a href="fr/zelus/jarvis/module/util/ModuleSwitch.html" title="type parameter in ModuleSwitch">T</a>&gt; - Class in <a href="fr/zelus/jarvis/module/util/package-summary.html">fr.zelus.jarvis.module.util</a></dt>
 <dd>
 <div class="block">The <b>Switch</b> for the model's inheritance hierarchy.</div>
@@ -4096,11 +4208,11 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#ORCHESTRATION_MODEL__IMPORTS">ORCHESTRATION_MODEL__IMPORTS</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
 <dd>
-<div class="block">The meta object literal for the '<em><b>Imports</b></em>' attribute list feature.</div>
+<div class="block">The meta object literal for the '<em><b>Imports</b></em>' containment reference list feature.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html#ORCHESTRATION_MODEL__IMPORTS">ORCHESTRATION_MODEL__IMPORTS</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage</a></dt>
 <dd>
-<div class="block">The feature id for the '<em><b>Imports</b></em>' attribute list.</div>
+<div class="block">The feature id for the '<em><b>Imports</b></em>' containment reference list.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#ORCHESTRATION_MODEL__ORCHESTRATION_LINKS">ORCHESTRATION_MODEL__ORCHESTRATION_LINKS</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
 <dd>
@@ -4185,6 +4297,10 @@
 <dt><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationPackageImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><span class="typeNameLink">OrchestrationPackageImpl</span></a> - Class in <a href="fr/zelus/jarvis/orchestration/impl/package-summary.html">fr.zelus.jarvis.orchestration.impl</a></dt>
 <dd>
 <div class="block">An implementation of the model <b>Package</b>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#orchestrationResourceSet">orchestrationResourceSet</a></span> - Variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dd>
+<div class="block">The <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>ResourceSet</code></a> used to load the <a href="fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> and the referenced models.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#orchestrationService">orchestrationService</a></span> - Variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
@@ -4317,6 +4433,14 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
 <dd>
 <div class="block">Parses the provided raw HTTP request content.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#path">path</a></span> - Variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>
+<div class="block">The cached value of the '<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#getPath--"><code><em>Path</em></code></a>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#PATH_EDEFAULT">PATH_EDEFAULT</a></span> - Static variable in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>
+<div class="block">The default value of the '<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#getPath--"><code><em>Path</em></code></a>' attribute.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/slack/module/action/PostFileMessage.html" title="class in fr.zelus.jarvis.plugins.slack.module.action"><span class="typeNameLink">PostFileMessage</span></a> - Class in <a href="fr/zelus/jarvis/plugins/slack/module/action/package-summary.html">fr.zelus.jarvis.plugins.slack.module.action</a></dt>
 <dd>
@@ -4508,6 +4632,12 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html#setAction-fr.zelus.jarvis.module.Action-">setAction(Action)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ActionInstanceImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ActionInstanceImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#setAlias-java.lang.String-">setAlias(String)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html#setAlias-java.lang.String-">setAlias(String)</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html" title="interface in fr.zelus.jarvis.orchestration">ImportDeclaration</a></dt>
+<dd>
+<div class="block">Sets the value of the '<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html#getAlias--"><code><em>Alias</em></code></a>' attribute.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/ContextParameterValue.html#setContextInstance-fr.zelus.jarvis.intent.ContextInstance-">setContextInstance(ContextInstance)</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/ContextParameterValue.html" title="interface in fr.zelus.jarvis.intent">ContextParameterValue</a></dt>
 <dd>
 <div class="block">Sets the value of the '<a href="fr/zelus/jarvis/intent/ContextParameterValue.html#getContextInstance--"><code><em>Context Instance</em></code></a>' container reference.</div>
@@ -4653,6 +4783,12 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/ParameterValue.html#setParameter-fr.zelus.jarvis.module.Parameter-">setParameter(Parameter)</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ParameterValue.html" title="interface in fr.zelus.jarvis.orchestration">ParameterValue</a></dt>
 <dd>
 <div class="block">Sets the value of the '<a href="fr/zelus/jarvis/orchestration/ParameterValue.html#getParameter--"><code><em>Parameter</em></code></a>' reference.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#setPath-java.lang.String-">setPath(String)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html#setPath-java.lang.String-">setPath(String)</a></span> - Method in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html" title="interface in fr.zelus.jarvis.orchestration">ImportDeclaration</a></dt>
+<dd>
+<div class="block">Sets the value of the '<a href="fr/zelus/jarvis/orchestration/ImportDeclaration.html#getPath--"><code><em>Path</em></code></a>' attribute.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html#setReferredVariable-fr.zelus.jarvis.orchestration.Variable-">setReferredVariable(Variable)</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/VariableAccessImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">VariableAccessImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -4837,7 +4973,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/module/impl/ParameterImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.module.impl.<a href="fr/zelus/jarvis/module/impl/ParameterImpl.html" title="class in fr.zelus.jarvis.module.impl">ParameterImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationModelImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">OrchestrationModelImpl</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/ImportDeclarationImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">ImportDeclarationImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/impl/StringLiteralImpl.html#toString--">toString()</a></span> - Method in class fr.zelus.jarvis.orchestration.impl.<a href="fr/zelus/jarvis/orchestration/impl/StringLiteralImpl.html" title="class in fr.zelus.jarvis.orchestration.impl">StringLiteralImpl</a></dt>
 <dd>&nbsp;</dd>
