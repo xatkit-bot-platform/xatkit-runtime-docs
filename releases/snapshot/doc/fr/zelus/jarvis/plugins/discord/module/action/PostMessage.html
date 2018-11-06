@@ -216,14 +216,14 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisMessageAction.h
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../../fr/zelus/jarvis/core/JarvisMessageAction.html" title="class in fr.zelus.jarvis.core">JarvisMessageAction</a></h3>
-<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisMessageAction.html#getMessage--">getMessage</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisMessageAction.html#init--">init</a></code></li>
+<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisMessageAction.html#call--">call</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisMessageAction.html#getMessage--">getMessage</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisMessageAction.html#init--">init</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.zelus.jarvis.core.JarvisAction">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a></h3>
-<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#call--">call</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--">getReturnVariable</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#setReturnVariable-java.lang.String-">setReturnVariable</a></code></li>
+<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#getReturnVariable--">getReturnVariable</a>, <a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#setReturnVariable-java.lang.String-">setReturnVariable</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -283,16 +283,23 @@ extends <a href="../../../../../../../fr/zelus/jarvis/core/JarvisMessageAction.h
 <ul class="blockList">
 <li class="blockList">
 <h4>compute</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;compute()</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;compute()
+               throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
 <div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.
  <p>
  This method relies on the containing <a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module"><code>DiscordModule</code></a>'s Discord <code>JDA</code> client
- to authenticate the bot and post the <code>message</code> to the given <code>channel</code>.</div>
+ to authenticate the bot and post the <code>message</code> to the given <code>channel</code>.
+ <p>
+ This method is not executed asynchronously and waits for the response from the Discord platform in order to
+ detect potential connection issues and throw an <a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io"><code>IOException</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html#compute--">compute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a>&lt;<a href="../../../../../../../fr/zelus/jarvis/plugins/discord/module/DiscordModule.html" title="class in fr.zelus.jarvis.plugins.discord.module">DiscordModule</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>null</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if a network error occurred when sending the message</dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code> - if any other error occurred when sending the message</dd>
 </dl>
 </li>
 </ul>
