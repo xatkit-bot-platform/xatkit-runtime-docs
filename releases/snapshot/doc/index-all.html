@@ -464,6 +464,10 @@
 <dd>
 <div class="block">Calls all the concrete chatting <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> associated to this <a href="fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action"><code>GenericChatAction</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/action/OpenIssue.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.github.module.action.<a href="fr/zelus/jarvis/plugins/github/module/action/OpenIssue.html" title="class in fr.zelus.jarvis.plugins.github.module.action">OpenIssue</a></dt>
+<dd>
+<div class="block">Opens a new issue on the given <code>repository</code> with the provided <code>issueTitle</code> and <code>issueContent</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/log/module/action/LogAction.html#compute--">compute()</a></span> - Method in class fr.zelus.jarvis.plugins.log.module.action.<a href="fr/zelus/jarvis/plugins/log/module/action/LogAction.html" title="class in fr.zelus.jarvis.plugins.log.module.action">LogAction</a></dt>
 <dd>
 <div class="block">Logs the provided <code>message</code> with the given <code>logLevel</code>.</div>
@@ -1952,6 +1956,8 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/package-summary.html">fr.zelus.jarvis.plugins.github.module</a> - package fr.zelus.jarvis.plugins.github.module</dt>
 <dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/plugins/github/module/action/package-summary.html">fr.zelus.jarvis.plugins.github.module.action</a> - package fr.zelus.jarvis.plugins.github.module.action</dt>
+<dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a> - package fr.zelus.jarvis.plugins.github.module.io</dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/plugins/log/module/package-summary.html">fr.zelus.jarvis.plugins.log.module</a> - package fr.zelus.jarvis.plugins.log.module</dt>
@@ -2449,6 +2455,10 @@
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/IntentDefinition.html#getFollows--">getFollows()</a></span> - Method in interface fr.zelus.jarvis.intent.<a href="fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Follows</b></em>' reference.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html#getGithubClient--">getGithubClient()</a></span> - Method in class fr.zelus.jarvis.plugins.github.module.<a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a></dt>
+<dd>
+<div class="block">Returns the <code>Github</code> client used to access the Github API.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/io/WebhookEventProvider.html#getHeaderValue-org.apache.http.Header:A-java.lang.String-">getHeaderValue(Header[], String)</a></span> - Method in class fr.zelus.jarvis.io.<a href="fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io">WebhookEventProvider</a></dt>
 <dd>
@@ -3135,11 +3145,25 @@
 <dd>
 <div class="block">Returns the amount of time the <a href="fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> can spend waiting for a context variable (in seconds).</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_OAUTH_TOKEN">GITHUB_OAUTH_TOKEN</a></span> - Static variable in class fr.zelus.jarvis.plugins.github.module.<a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Github oauth token.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_PASSWORD_KEY">GITHUB_PASSWORD_KEY</a></span> - Static variable in class fr.zelus.jarvis.plugins.github.module.<a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Github password associated to the defined username.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_USERNAME_KEY">GITHUB_USERNAME_KEY</a></span> - Static variable in class fr.zelus.jarvis.plugins.github.module.<a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Github username.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><span class="typeNameLink">GithubModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/package-summary.html">fr.zelus.jarvis.plugins.github.module</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> class that connects and interacts with the Github API.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html#GithubModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">GithubModule(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.<a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module">GithubModule</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> from the provided <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/github/module/io/GithubWebhookEventProvider.html" title="class in fr.zelus.jarvis.plugins.github.module.io"><span class="typeNameLink">GithubWebhookEventProvider</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/io/package-summary.html">fr.zelus.jarvis.plugins.github.module.io</a></dt>
 <dd>&nbsp;</dd>
@@ -4154,6 +4178,16 @@
 <dd>
 <div class="block">Handles the received private message event and forward it to the <a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
 </dd>
+<dt><a href="fr/zelus/jarvis/plugins/github/module/action/OpenIssue.html" title="class in fr.zelus.jarvis.plugins.github.module.action"><span class="typeNameLink">OpenIssue</span></a> - Class in <a href="fr/zelus/jarvis/plugins/github/module/action/package-summary.html">fr.zelus.jarvis.plugins.github.module.action</a></dt>
+<dd>
+<div class="block">A <a href="fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> that opens a new issue on the given <code>repository</code> with the provided <code>issueTitle</code>
+ and <code>issueContent</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/github/module/action/OpenIssue.html#OpenIssue-fr.zelus.jarvis.plugins.github.module.GithubModule-fr.zelus.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">OpenIssue(GithubModule, JarvisSession, String, String, String, String)</a></span> - Constructor for class fr.zelus.jarvis.plugins.github.module.action.<a href="fr/zelus/jarvis/plugins/github/module/action/OpenIssue.html" title="class in fr.zelus.jarvis.plugins.github.module.action">OpenIssue</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="fr/zelus/jarvis/plugins/github/module/action/OpenIssue.html" title="class in fr.zelus.jarvis.plugins.github.module.action"><code>OpenIssue</code></a> with the provided <code>containingModule</code>, <code>session</code>, <code>user</code>,
+ <code>repository</code>, <code>issueTitle</code>, and <code>issueContent</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html#ORCHESTRATION_LINK">ORCHESTRATION_LINK</a></span> - Static variable in interface fr.zelus.jarvis.orchestration.<a href="fr/zelus/jarvis/orchestration/OrchestrationPackage.Literals.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationPackage.Literals</a></dt>
 <dd>
 <div class="block">The meta object literal for the '<a href="fr/zelus/jarvis/orchestration/impl/OrchestrationLinkImpl.html" title="class in fr.zelus.jarvis.orchestration.impl"><code><em>Link</em></code></a>' class.</div>
@@ -4877,7 +4911,7 @@
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module"><span class="typeNameLink">SlackModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/slack/module/package-summary.html">fr.zelus.jarvis.plugins.slack.module</a></dt>
 <dd>
-<div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> class that connect and interacts with the Slack API.</div>
+<div class="block">A <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> class that connects and interacts with the Slack API.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html#SlackModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">SlackModule(JarvisCore, Configuration)</a></span> - Constructor for class fr.zelus.jarvis.plugins.slack.module.<a href="fr/zelus/jarvis/plugins/slack/module/SlackModule.html" title="class in fr.zelus.jarvis.plugins.slack.module">SlackModule</a></dt>
 <dd>

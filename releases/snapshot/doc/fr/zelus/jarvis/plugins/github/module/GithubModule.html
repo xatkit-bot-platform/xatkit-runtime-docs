@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -69,15 +75,15 @@
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.fr.zelus.jarvis.core.JarvisModule">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.fr.zelus.jarvis.core.JarvisModule">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.fr.zelus.jarvis.core.JarvisModule">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -110,6 +116,16 @@
 <br>
 <pre>public class <span class="typeNameLabel">GithubModule</span>
 extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></pre>
+<div class="block">A <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> class that connects and interacts with the Github API.
+ <p>
+ This module manages a output connection to the Github API, and provides a set of
+ <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s to interact with the Github API:
+ <ul>
+     <li><a href="../../../../../../fr/zelus/jarvis/plugins/github/module/action/OpenIssue.html" title="class in fr.zelus.jarvis.plugins.github.module.action"><code>OpenIssue</code></a>: open an issue on a given repository</li>
+ </ul>
+ <p>
+ This class is part of jarvis' core modules, and can be used in an orchestration model by importing the
+ <i>GithubModule</i> package.</div>
 </li>
 </ul>
 </div>
@@ -137,6 +153,31 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_OAUTH_TOKEN">GITHUB_OAUTH_TOKEN</a></span></code>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Github oauth token.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_PASSWORD_KEY">GITHUB_PASSWORD_KEY</a></span></code>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Github password associated to the defined username.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_USERNAME_KEY">GITHUB_USERNAME_KEY</a></span></code>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Github username.</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.fr.zelus.jarvis.core.JarvisModule">
 <!--   -->
@@ -160,7 +201,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#GithubModule-fr.zelus.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">GithubModule</a></span>(<a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
             <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
-<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> from the provided <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> from the provided <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -172,6 +213,19 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>com.jcabi.github.Github</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#getGithubClient--">getGithubClient</a></span>()</code>
+<div class="block">Returns the <code>Github</code> client used to access the Github API.</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.zelus.jarvis.core.JarvisModule">
 <!--   -->
@@ -194,6 +248,68 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="GITHUB_USERNAME_KEY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GITHUB_USERNAME_KEY</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> GITHUB_USERNAME_KEY</pre>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Github username.
+ <p>
+ The <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> can handle <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> with username/password as well as oauth token. Note
+ that if an username/password is provided it will be used instead of the oauth token to initialize the client.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_PASSWORD_KEY"><code>GITHUB_PASSWORD_KEY</code></a>, 
+<a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_OAUTH_TOKEN"><code>GITHUB_OAUTH_TOKEN</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="GITHUB_PASSWORD_KEY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GITHUB_PASSWORD_KEY</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> GITHUB_PASSWORD_KEY</pre>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Github password associated to the defined username.
+ <p>
+ The <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> can handle <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> with username/password as well as oauth token. Note
+ that if an username/password is provided it will be used instead of the oauth token to initialize the client.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_USERNAME_KEY"><code>GITHUB_USERNAME_KEY</code></a>, 
+<a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_OAUTH_TOKEN"><code>GITHUB_OAUTH_TOKEN</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="GITHUB_OAUTH_TOKEN">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>GITHUB_OAUTH_TOKEN</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> GITHUB_OAUTH_TOKEN</pre>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Github oauth token.
+ <p>
+ The <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> can handle <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> with username/password as well as oauth token. Note
+ that if an username/password is provided it will be used instead of the oauth token to initialize the client.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_USERNAME_KEY"><code>GITHUB_USERNAME_KEY</code></a>, 
+<a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html#GITHUB_PASSWORD_KEY"><code>GITHUB_PASSWORD_KEY</code></a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -208,13 +324,53 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <h4>GithubModule</h4>
 <pre>public&nbsp;GithubModule(<a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
                     <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
-<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> from the provided <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a>.</div>
+<div class="block">Constructs a new <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> from the provided <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.
+ <p>
+ This constructor tries to initialize the <code>Github</code> client used to access the Github API by looking for
+ the username/login or oauth token in the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>. If no authentication credentials can
+ be found the <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> is still initialized, but will not be able to access and manipulate the
+ Github API.
+ <p>
+ <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> initialized with no credentials can still be used to construct Github-related
+ <a href="../../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>s, that will work as expected. Note that if the provided
+ <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> defines credentials the constructed <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> will check that these
+ credentials are valid.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>jarvisCore</code> - the <a href="../../../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance associated to this module</dd>
 <dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to customize Github events and actions</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>jarvisCore</code> or <code>configuration</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> contains a <code>username</code> but does not
+                                  contain a valid <code>password</code></dd>
+<dd><code><a href="../../../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if the provided credentials are not valid or if a network error occurred when
+                                  accessing the Github API.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getGithubClient--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getGithubClient</h4>
+<pre>public&nbsp;com.jcabi.github.Github&nbsp;getGithubClient()</pre>
+<div class="block">Returns the <code>Github</code> client used to access the Github API.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <code>Github</code> client used to access the Github API</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if the <a href="../../../../../../fr/zelus/jarvis/plugins/github/module/GithubModule.html" title="class in fr.zelus.jarvis.plugins.github.module"><code>GithubModule</code></a> does not define a valid <code>Github</code> client (i.e. if the
+                         provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> does not contain any credentials information or if the
+                         authentication failed).</dd>
 </dl>
 </li>
 </ul>
@@ -272,15 +428,15 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li><a href="#nested.classes.inherited.from.class.fr.zelus.jarvis.core.JarvisModule">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.fr.zelus.jarvis.core.JarvisModule">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.fr.zelus.jarvis.core.JarvisModule">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
