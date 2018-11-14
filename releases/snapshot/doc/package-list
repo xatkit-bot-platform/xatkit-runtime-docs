@@ -6,12 +6,12 @@ fr.zelus.jarvis.intent
 fr.zelus.jarvis.intent.impl
 fr.zelus.jarvis.intent.util
 fr.zelus.jarvis.io
-fr.zelus.jarvis.module
-fr.zelus.jarvis.module.impl
-fr.zelus.jarvis.module.util
 fr.zelus.jarvis.orchestration
 fr.zelus.jarvis.orchestration.impl
 fr.zelus.jarvis.orchestration.util
+fr.zelus.jarvis.platform
+fr.zelus.jarvis.platform.impl
+fr.zelus.jarvis.platform.util
 fr.zelus.jarvis.plugins.core.module
 fr.zelus.jarvis.plugins.core.module.action
 fr.zelus.jarvis.plugins.discord

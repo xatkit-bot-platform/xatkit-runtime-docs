@@ -231,14 +231,14 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#disableAction-fr.zelus.jarvis.module.Action-">disableAction</a></span>(<a href="../../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module">Action</a>&nbsp;action)</code>
-<div class="block">Disables the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a> in all the sub-modules.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#disableAction-fr.zelus.jarvis.platform.Action-">disableAction</a></span>(<a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform">Action</a>&nbsp;action)</code>
+<div class="block">Disables the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> in all the sub-modules.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction</a></span>(<a href="../../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module">Action</a>&nbsp;action)</code>
-<div class="block">Retrieves an loads the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a> in all the sub-modules.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/module/GenericChatModule.html#enableAction-fr.zelus.jarvis.platform.Action-">enableAction</a></span>(<a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform">Action</a>&nbsp;action)</code>
+<div class="block">Retrieves an loads the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> in all the sub-modules.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -253,7 +253,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.zelus.jarvis.core.<a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></h3>
-<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAllActions--">disableAllActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getActions--">getActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getEventProviderMap--">getEventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getJarvisCore--">getJarvisCore</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getName--">getName</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#shutdown--">shutdown</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#startEventProvider-fr.zelus.jarvis.module.EventProviderDefinition-">startEventProvider</a></code></li>
+<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAllActions--">disableAllActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getActions--">getActions</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getEventProviderMap--">getEventProviderMap</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getJarvisCore--">getJarvisCore</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#getName--">getName</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#shutdown--">shutdown</a>, <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#startEventProvider-fr.zelus.jarvis.platform.EventProviderDefinition-">startEventProvider</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -369,38 +369,38 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
 </dl>
 </li>
 </ul>
-<a name="enableAction-fr.zelus.jarvis.module.Action-">
+<a name="enableAction-fr.zelus.jarvis.platform.Action-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>enableAction</h4>
-<pre>public&nbsp;void&nbsp;enableAction(<a href="../../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module">Action</a>&nbsp;action)</pre>
-<div class="block">Retrieves an loads the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a> in all the sub-modules.</div>
+<pre>public&nbsp;void&nbsp;enableAction(<a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform">Action</a>&nbsp;action)</pre>
+<div class="block">Retrieves an loads the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> in all the sub-modules.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.module.Action-">enableAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></code></dd>
+<dd><code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#enableAction-fr.zelus.jarvis.platform.Action-">enableAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>action</code> - the <a href="../../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a> definition representing the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> to enable in all the
+<dd><code>action</code> - the <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> definition representing the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> to enable in all the
                sub-modules</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/zelus/jarvis/util/Loader.html#loadClass-java.lang.String-java.lang.Class-"><code>Loader.loadClass(String, Class)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="disableAction-fr.zelus.jarvis.module.Action-">
+<a name="disableAction-fr.zelus.jarvis.platform.Action-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>disableAction</h4>
-<pre>public&nbsp;void&nbsp;disableAction(<a href="../../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module">Action</a>&nbsp;action)</pre>
-<div class="block">Disables the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a> in all the sub-modules.</div>
+<pre>public&nbsp;void&nbsp;disableAction(<a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform">Action</a>&nbsp;action)</pre>
+<div class="block">Disables the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> in all the sub-modules.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAction-fr.zelus.jarvis.module.Action-">disableAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></code></dd>
+<dd><code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#disableAction-fr.zelus.jarvis.platform.Action-">disableAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>action</code> - the <a href="../../../../../../fr/zelus/jarvis/module/Action.html" title="interface in fr.zelus.jarvis.module"><code>Action</code></a> definition representing the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> to disable in all the
+<dd><code>action</code> - the <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> definition representing the <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> to disable in all the
                sub-modules</dd>
 </dl>
 </li>
@@ -419,7 +419,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title
  This method iterates the sub-module list and calls their
  <a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>JarvisModule.createJarvisAction(ActionInstance, JarvisSession)</code></a> method with the provided <code>actionInstance</code> and <code>session</code>. The returned <a href="../../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s are then wrapped into a
  <a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/module/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.action"><code>GenericChatAction</code></a> that takes care of executing them through the regular
- <code>JarvisCore#handleEvent(EventInstance, JarvisSession)</code> process.</div>
+ <a href="../../../../../../fr/zelus/jarvis/core/OrchestrationService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>OrchestrationService.handleEventInstance(EventInstance, JarvisSession)</code></a> process.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html#createJarvisAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createJarvisAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></code></dd>
