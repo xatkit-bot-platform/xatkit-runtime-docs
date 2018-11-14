@@ -750,9 +750,9 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html#convertToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-">convertToString(EDataType, Object)</a></span> - Method in class fr.zelus.jarvis.intent.impl.<a href="fr/zelus/jarvis/intent/impl/IntentFactoryImpl.html" title="class in fr.zelus.jarvis.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html#CORE_MODULE_PATHMAP">CORE_MODULE_PATHMAP</a></span> - Static variable in interface fr.zelus.jarvis.core_modules.utils.<a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html" title="interface in fr.zelus.jarvis.core_modules.utils">ModulesLoaderUtils</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core_platforms/utils/PlatformLoaderUtils.html#CORE_PLATFORM_PATHMAP">CORE_PLATFORM_PATHMAP</a></span> - Static variable in interface fr.zelus.jarvis.core_platforms.utils.<a href="fr/zelus/jarvis/core_platforms/utils/PlatformLoaderUtils.html" title="interface in fr.zelus.jarvis.core_platforms.utils">PlatformLoaderUtils</a></dt>
 <dd>
-<div class="block">The <code>pathmap</code> prefix used to map core module resources to their concrete URIs.</div>
+<div class="block">The <code>pathmap</code> prefix used to map core platform resources to their concrete URIs.</div>
 </dd>
 <dt><a href="fr/zelus/jarvis/plugins/core/module/CoreModule.html" title="class in fr.zelus.jarvis.plugins.core.module"><span class="typeNameLink">CoreModule</span></a> - Class in <a href="fr/zelus/jarvis/plugins/core/module/package-summary.html">fr.zelus.jarvis.plugins.core.module</a></dt>
 <dd>
@@ -1073,11 +1073,11 @@
 <dd>
 <div class="block">Creates a new adapter for an object of class '<a href="fr/zelus/jarvis/orchestration/Variable.html" title="interface in fr.zelus.jarvis.orchestration"><code><em>Variable</em></code></a>'.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html#CUSTOM_MODULE_PATHMAP">CUSTOM_MODULE_PATHMAP</a></span> - Static variable in interface fr.zelus.jarvis.core_modules.utils.<a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html" title="interface in fr.zelus.jarvis.core_modules.utils">ModulesLoaderUtils</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core_platforms/utils/PlatformLoaderUtils.html#CUSTOM_PLATFORM_PATHMAP">CUSTOM_PLATFORM_PATHMAP</a></span> - Static variable in interface fr.zelus.jarvis.core_platforms.utils.<a href="fr/zelus/jarvis/core_platforms/utils/PlatformLoaderUtils.html" title="interface in fr.zelus.jarvis.core_platforms.utils">PlatformLoaderUtils</a></dt>
 <dd>
-<div class="block">The <code>pathmap</code> prefix used to map custom module resources to their concrete URIs.</div>
+<div class="block">The <code>pathmap</code> prefix used to map custom platforms resources to their concrete URIs.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#CUSTOM_MODULES_KEY_PREFIX">CUSTOM_MODULES_KEY_PREFIX</a></span> - Static variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
+<dt><span class="memberNameLink"><a href="fr/zelus/jarvis/core/JarvisCore.html#CUSTOM_PLATFORMS_KEY_PREFIX">CUSTOM_PLATFORMS_KEY_PREFIX</a></span> - Static variable in class fr.zelus.jarvis.core.<a href="fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></dt>
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the custom module paths.</div>
 </dd>
@@ -1914,7 +1914,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/core/session/package-summary.html">fr.zelus.jarvis.core.session</a> - package fr.zelus.jarvis.core.session</dt>
 <dd>&nbsp;</dd>
-<dt><a href="fr/zelus/jarvis/core_modules/utils/package-summary.html">fr.zelus.jarvis.core_modules.utils</a> - package fr.zelus.jarvis.core_modules.utils</dt>
+<dt><a href="fr/zelus/jarvis/core_platforms/utils/package-summary.html">fr.zelus.jarvis.core_platforms.utils</a> - package fr.zelus.jarvis.core_platforms.utils</dt>
 <dd>&nbsp;</dd>
 <dt><a href="fr/zelus/jarvis/intent/package-summary.html">fr.zelus.jarvis.intent</a> - package fr.zelus.jarvis.intent</dt>
 <dd>&nbsp;</dd>
@@ -3960,10 +3960,6 @@
 <dd>
 <div class="block">The <a href="fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> subclass containing this action.</div>
 </dd>
-<dt><a href="fr/zelus/jarvis/core_modules/utils/ModulesLoaderUtils.html" title="interface in fr.zelus.jarvis.core_modules.utils"><span class="typeNameLink">ModulesLoaderUtils</span></a> - Interface in <a href="fr/zelus/jarvis/core_modules/utils/package-summary.html">fr.zelus.jarvis.core_modules.utils</a></dt>
-<dd>
-<div class="block">An interface providing <code>pathmap</code> utility methods to dynamically load modules.</div>
-</dd>
 </dl>
 <a name="I:N">
 <!--   -->
@@ -4444,6 +4440,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/zelus/jarvis/platform/impl/PlatformImpl.html#PlatformImpl--">PlatformImpl()</a></span> - Constructor for class fr.zelus.jarvis.platform.impl.<a href="fr/zelus/jarvis/platform/impl/PlatformImpl.html" title="class in fr.zelus.jarvis.platform.impl">PlatformImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="fr/zelus/jarvis/core_platforms/utils/PlatformLoaderUtils.html" title="interface in fr.zelus.jarvis.core_platforms.utils"><span class="typeNameLink">PlatformLoaderUtils</span></a> - Interface in <a href="fr/zelus/jarvis/core_platforms/utils/package-summary.html">fr.zelus.jarvis.core_platforms.utils</a></dt>
+<dd>
+<div class="block">An interface providing <code>pathmap</code> utility methods to dynamically load modules.</div>
+</dd>
 <dt><a href="fr/zelus/jarvis/platform/PlatformPackage.html" title="interface in fr.zelus.jarvis.platform"><span class="typeNameLink">PlatformPackage</span></a> - Interface in <a href="fr/zelus/jarvis/platform/package-summary.html">fr.zelus.jarvis.platform</a></dt>
 <dd>
 <div class="block">The <b>Package</b> for the model.</div>
