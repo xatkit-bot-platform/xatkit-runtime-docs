@@ -93,7 +93,7 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">fr.zelus.jarvis.io</div>
-<h2 title="Class IntentProvider" class="title">Class IntentProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt;</h2>
+<h2 title="Class IntentProvider" class="title">Class IntentProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a>&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
@@ -114,7 +114,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - the concrete <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> subclass type containing the provider</dd>
+<dd><code>T</code> - the concrete <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a> subclass type containing the provider</dd>
 </dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
@@ -122,11 +122,11 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../fr/zelus/jarvis/plugins/discord/module/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.module.io">DiscordIntentProvider</a>, <a href="../../../../fr/zelus/jarvis/plugins/generic_chat/module/io/GenericChatIntentProvider.html" title="class in fr.zelus.jarvis.plugins.generic_chat.module.io">GenericChatIntentProvider</a>, <a href="../../../../fr/zelus/jarvis/plugins/slack/module/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.module.io">SlackIntentProvider</a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in fr.zelus.jarvis.plugins.discord.platform.io">DiscordIntentProvider</a>, <a href="../../../../fr/zelus/jarvis/plugins/generic_chat/platform/io/GenericChatIntentProvider.html" title="class in fr.zelus.jarvis.plugins.generic_chat.platform.io">GenericChatIntentProvider</a>, <a href="../../../../fr/zelus/jarvis/plugins/slack/platform/io/SlackIntentProvider.html" title="class in fr.zelus.jarvis.plugins.slack.platform.io">SlackIntentProvider</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public abstract class <span class="typeNameLabel">IntentProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt;</span>
+<pre>public abstract class <span class="typeNameLabel">IntentProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a>&gt;</span>
 extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a>&lt;T&gt;</pre>
 <div class="block">A specialised <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> that extracts <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> from textual user inputs.
  <p>
@@ -152,7 +152,7 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.zelus.jarvis.io.<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></h3>
-<code><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a>, <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#module">module</a></code></li>
+<code><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a>, <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#runtimePlatform">runtimePlatform</a></code></li>
 </ul>
 </li>
 </ul>
@@ -168,14 +168,14 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-T-">IntentProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="type parameter in IntentProvider">T</a>&nbsp;containingModule)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-T-">IntentProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="type parameter in IntentProvider">T</a>&nbsp;runtimePlatform)</code>
 <div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> from the provided <code>jarvisCore</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-T-org.apache.commons.configuration2.Configuration-">IntentProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="type parameter in IntentProvider">T</a>&nbsp;containingModule,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-T-org.apache.commons.configuration2.Configuration-">IntentProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="type parameter in IntentProvider">T</a>&nbsp;runtimePlatform,
               <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> with the provided <code>containingModule</code> and <code>configuration</code>.</div>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> with the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
 </td>
 </tr>
 </table>
@@ -206,7 +206,7 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.zelus.jarvis.io.<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></h3>
-<code><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#close--">close</a>, <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#getModule--">getModule</a></code></li>
+<code><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#close--">close</a>, <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#getRuntimePlatform--">getRuntimePlatform</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -236,7 +236,7 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="IntentProvider-fr.zelus.jarvis.core.JarvisModule-">
+<a name="IntentProvider-fr.zelus.jarvis.core.RuntimePlatform-">
 <!--   -->
 </a><a name="IntentProvider-T-">
 <!--   -->
@@ -244,23 +244,23 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <ul class="blockList">
 <li class="blockList">
 <h4>IntentProvider</h4>
-<pre>public&nbsp;IntentProvider(<a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="type parameter in IntentProvider">T</a>&nbsp;containingModule)</pre>
+<pre>public&nbsp;IntentProvider(<a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="type parameter in IntentProvider">T</a>&nbsp;runtimePlatform)</pre>
 <div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> from the provided <code>jarvisCore</code>.
  <p>
  This constructor sets the internal <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> instance that is used to parse user input
  and retrieve <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s.
  <p>
  <b>Note</b>: this constructor should be used by <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a>s that do not require additional
- parameters to be initialized. In that case see <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-T-org.apache.commons.configuration2.Configuration-"><code>IntentProvider(JarvisModule, Configuration)</code></a>.</div>
+ parameters to be initialized. In that case see <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html#IntentProvider-T-org.apache.commons.configuration2.Configuration-"><code>IntentProvider(RuntimePlatform, Configuration)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>containingModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a></dd>
+<dd><code>runtimePlatform</code> - the <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>runtimePlatform</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>
-<a name="IntentProvider-fr.zelus.jarvis.core.JarvisModule-org.apache.commons.configuration2.Configuration-">
+<a name="IntentProvider-fr.zelus.jarvis.core.RuntimePlatform-org.apache.commons.configuration2.Configuration-">
 <!--   -->
 </a><a name="IntentProvider-T-org.apache.commons.configuration2.Configuration-">
 <!--   -->
@@ -268,9 +268,9 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IntentProvider</h4>
-<pre>public&nbsp;IntentProvider(<a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="type parameter in IntentProvider">T</a>&nbsp;containingModule,
+<pre>public&nbsp;IntentProvider(<a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="type parameter in IntentProvider">T</a>&nbsp;runtimePlatform,
                       <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> with the provided <code>containingModule</code> and <code>configuration</code>.
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a> with the provided <code>runtimePlatform</code> and <code>configuration</code>.
  <p>
  This constructor sets the internal <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> instance that is used to parse user input
  and retrieve <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>s.
@@ -280,10 +280,10 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
  need additional parameters to be initialized, that can be provided in the <code>configuration</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>containingModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a></dd>
+<dd><code>runtimePlatform</code> - the <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a></dd>
 <dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to initialize the <a href="../../../../fr/zelus/jarvis/io/IntentProvider.html" title="class in fr.zelus.jarvis.io"><code>IntentProvider</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>runtimePlatform</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>

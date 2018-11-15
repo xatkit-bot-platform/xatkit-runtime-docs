@@ -89,52 +89,52 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core">JarvisAction</a>&lt;T extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt;</td>
-<td class="colLast">
-<div class="block">The concrete implementation of an <code>fr.zelus.jarvis.module.Action</code> definition.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core">JarvisActionResult</a></td>
-<td class="colLast">
-<div class="block">Stores the result of a computation and provides utility methods to manipulate it.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core">JarvisCore</a></td>
 <td class="colLast">
 <div class="block">The core component of the jarvis framework.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/JarvisMessageAction.html" title="class in fr.zelus.jarvis.core">JarvisMessageAction</a>&lt;T extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>&gt;</td>
+<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></td>
 <td class="colLast">
-<div class="block">An abstract <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> processing a message.</div>
+<div class="block">A service that handles <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s and executes the corresponding <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s defined in the
+ provided <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a></td>
+<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core">RuntimeAction</a>&lt;T extends <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a>&gt;</td>
+<td class="colLast">
+<div class="block">The concrete implementation of an <a href="../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> definition.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/RuntimeActionResult.html" title="class in fr.zelus.jarvis.core">RuntimeActionResult</a></td>
+<td class="colLast">
+<div class="block">Stores the result of a computation and provides utility methods to manipulate it.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/RuntimeMessageAction.html" title="class in fr.zelus.jarvis.core">RuntimeMessageAction</a>&lt;T extends <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a>&gt;</td>
+<td class="colLast">
+<div class="block">An abstract <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> processing a message.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a></td>
 <td class="colLast">
 <div class="block">The concrete implementation of a <a href="../../../../fr/zelus/jarvis/platform/Platform.html" title="interface in fr.zelus.jarvis.platform"><code>Platform</code></a> definition.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/JarvisModule.EventProviderThread.html" title="class in fr.zelus.jarvis.core">JarvisModule.EventProviderThread</a></td>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.EventProviderThread.html" title="class in fr.zelus.jarvis.core">RuntimePlatform.EventProviderThread</a></td>
 <td class="colLast">
 <div class="block">The <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang"><code>Thread</code></a> class used to start <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>s.</div>
 </td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core">JarvisModuleRegistry</a></td>
-<td class="colLast">
-<div class="block">A registry that stores <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s.</div>
-</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></td>
+<td class="colFirst"><a href="../../../../fr/zelus/jarvis/core/RuntimePlatformRegistry.html" title="class in fr.zelus.jarvis.core">RuntimePlatformRegistry</a></td>
 <td class="colLast">
-<div class="block">A service that handles <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s and executes the corresponding <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s defined in the
- provided <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>.</div>
+<div class="block">A registry that stores <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a>s.</div>
 </td>
 </tr>
 </tbody>

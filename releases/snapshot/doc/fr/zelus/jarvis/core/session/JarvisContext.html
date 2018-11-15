@@ -114,16 +114,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">A variable container bound to a <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a>.
  <p>
  This class stores the different variables that can be set during user input processing and accessed by executed
- <a href="../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>. <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> is used to store:
+ <a href="../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>. <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a> is used to store:
  <ul>
  <li><b><a href="../../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> values</b> such as the user name, the channel where the
  message was received, etc</li>
  <li><b>Intent recognition values</b>, that are computed by the Intent recognition engine and used to pass
  information between messages</li>
- <li><b>Action values</b>, that are returned by <a href="../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s</li>
+ <li><b>Action values</b>, that are returned by <a href="../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s</li>
  </ul>
  <p>
- This class is heavily used by jarvis core component to pass <a href="../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a> parameters,
+ This class is heavily used by jarvis core component to pass <a href="../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> parameters,
  and replace output message variables by their concrete values.</div>
 </li>
 </ul>
@@ -542,7 +542,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  lifespan remains consistent in all the <a href="../../../../../fr/zelus/jarvis/core/session/JarvisContext.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisContext</code></a>s containing them.
  <p>
  However, note that the values stored in the context <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>s are not cloned, meaning that
- <a href="../../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s updating existing values will update them for all the merged
+ <a href="../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s updating existing values will update them for all the merged
  context (see #129).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

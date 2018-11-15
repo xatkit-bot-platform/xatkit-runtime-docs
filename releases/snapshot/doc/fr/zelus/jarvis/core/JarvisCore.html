@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -114,15 +114,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">The core component of the jarvis framework.
  <p>
  This class is constructed from an <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>, that defines the Intent to Action bindings that are
- executed by the application. Constructing an instance of this class will load the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s used by
- the provided <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>, and enable the corresponding <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s. It also creates an
+ executed by the application. Constructing an instance of this class will load the <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a>s used by
+ the provided <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>, and enable the corresponding <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s. It also creates an
  instance of <a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core"><code>EventDefinitionRegistry</code></a> that can be accessed to retrieve and manage <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a> .</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core"><code>EventDefinitionRegistry</code></a>, 
-<a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a>, 
+<a href="../../../../fr/zelus/jarvis/core/RuntimePlatformRegistry.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatformRegistry</code></a>, 
 <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>, 
-<a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a></dd>
+<a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -145,7 +145,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#CUSTOM_PLATFORMS_KEY_PREFIX">CUSTOM_PLATFORMS_KEY_PREFIX</a></span></code>
-<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the custom module paths.</div>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the custom platform paths.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -155,16 +155,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">ResourceSet</a></code></td>
+<td class="colFirst"><code>protected org.eclipse.emf.ecore.resource.ResourceSet</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#orchestrationResourceSet">orchestrationResourceSet</a></span></code>
-<div class="block">The <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>ResourceSet</code></a> used to load the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> and the referenced models.</div>
+<div class="block">The <code>ResourceSet</code> used to load the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> and the referenced models.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#orchestrationService">orchestrationService</a></span></code>
 <div class="block">The <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> used to handle <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s and execute the associated
- <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
+ <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s.</div>
 </td>
 </tr>
 </table>
@@ -220,39 +220,39 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core">JarvisModuleRegistry</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#getJarvisModuleRegistry--">getJarvisModuleRegistry</a></span>()</code>
-<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a> associated to this instance.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server">JarvisServer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#getJarvisServer--">getJarvisServer</a></span>()</code>
 <div class="block">Returns the <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a> used to capture incoming webhooks.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#getJarvisSession-java.lang.String-">getJarvisSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
 <div class="block">Returns the <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>sessionId</code></div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration">OrchestrationModel</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#getOrchestrationModel-java.lang.Object-">getOrchestrationModel</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;property)</code>
 <div class="block">Retrieves the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> from the provided <code>property</code>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#getOrchestrationService--">getOrchestrationService</a></span>()</code>
 <div class="block">Returns the underlying <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#getOrCreateJarvisSession-java.lang.String-">getOrCreateJarvisSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
 <div class="block">Retrieves or creates the <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>sessionId</code>.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/core/RuntimePlatformRegistry.html" title="class in fr.zelus.jarvis.core">RuntimePlatformRegistry</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#getRuntimePlatformRegistry--">getRuntimePlatformRegistry</a></span>()</code>
+<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/core/RuntimePlatformRegistry.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatformRegistry</code></a> associated to this instance.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -310,16 +310,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>CUSTOM_PLATFORMS_KEY_PREFIX</h4>
 <pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> CUSTOM_PLATFORMS_KEY_PREFIX</pre>
-<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the custom module paths.
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the custom platform paths.
  <p>
- This prefix is used to specify the paths of the custom modules that are needed by the provided
- <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>. Note that custom module path properties are only required if the
- <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> defines an <code>alias</code> for the imported module models.
+ This prefix is used to specify the paths of the custom platforms that are needed by the provided
+ <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>. Note that custom platform path properties are only required if the
+ <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> defines an <code>alias</code> for the imported platform models.
  <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>s relying on absolute paths are directly loaded from the file system, but are not
  portable.
  <p>
- Custom module properties must be set following this pattern: <code>CUSTOM_PLATFORMS_KEY_PREFIX + &lt;module alias&gt;
- = &lt;module path&gt;</code>.</div>
+ Custom platform properties must be set following this pattern: <code>CUSTOM_PLATFORMS_KEY_PREFIX + &lt;platform
+ alias&gt; = &lt;platform path&gt;</code>.</div>
 </li>
 </ul>
 <a name="orchestrationResourceSet">
@@ -328,11 +328,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>orchestrationResourceSet</h4>
-<pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">ResourceSet</a> orchestrationResourceSet</pre>
-<div class="block">The <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>ResourceSet</code></a> used to load the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> and the referenced models.
+<pre>protected&nbsp;org.eclipse.emf.ecore.resource.ResourceSet orchestrationResourceSet</pre>
+<div class="block">The <code>ResourceSet</code> used to load the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> and the referenced models.
  <p>
  The <code>orchestrationResourceSet</code> is initialized with the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#initializeOrchestrationResourceSet--"><code>initializeOrchestrationResourceSet()</code></a>
- method, that loads the core module models from the classpath, and dynamically retrieves the custom module
+ method, that loads the core platforms models from the classpath, and dynamically retrieves the custom platforms
  models.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -348,11 +348,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>orchestrationService</h4>
 <pre>protected&nbsp;<a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core">OrchestrationService</a> orchestrationService</pre>
 <div class="block">The <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> used to handle <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s and execute the associated
- <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.</div>
+ <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>OrchestrationService.handleEventInstance(EventInstance, JarvisSession)</code></a>, 
-<a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a></dd>
+<a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -374,17 +374,17 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> instance from the provided <code>configuration</code>.
  <p>
  The provided <code>configuration</code> must provide values for the following key (note that additional values may
- be required according to the used <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>s and <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s):
+ be required according to the used <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a>s and <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a>s):
  <ul>
  <li><b>jarvis.orchestration.model</b>: the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> defining the Intent to
  Action bindings (or the string representing its location)</li>
  </ul>
  <p>
  The provided <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> defines the Intent to Action bindings that are executed by the
- application. This constructor takes care of loading the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s associated to the provided
- <code>orchestrationModel</code> and enables the corresponding <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s.
+ application. This constructor takes care of loading the <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a>s associated to the provided
+ <code>orchestrationModel</code> and enables the corresponding <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s.
  <p>
- <b>Note:</b> the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s associated to the provided <code>orchestrationModel</code> have to be
+ <b>Note:</b> the <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a>s associated to the provided <code>orchestrationModel</code> have to be
  in the classpath in order to be dynamically loaded and instantiated.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -415,10 +415,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Retrieves the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> from the provided <code>property</code>.
  <p>
  This method checks if the provided <code>property</code> is already an in-memory <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a>
- instance, or if it is defined by a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> or an <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a> representing the path of the model. In
+ instance, or if it is defined by a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> or an <code>URI</code> representing the path of the model. In
  that case, the method attempts to load the model at the provided location and returns it.
  <p>
- This method supports loading of model path defined by <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>s and <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/URI.html?is-external=true" title="class or interface in org.eclipse.emf.common.util"><code>URI</code></a>s. Support for additional
+ This method supports loading of model path defined by <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>s and <code>URI</code>s. Support for additional
  types is planned in the next releases.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -427,7 +427,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dd>the <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> from the provided <code>property</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if the provided <code>property</code> type is not handled, if the
-                              underlying <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/Resource.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>Resource</code></a> cannot be loaded or if it does not contain an
+                              underlying <code>Resource</code> cannot be loaded or if it does not contain an
                               <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> top-level
                               element, or if the loaded <a href="../../../../fr/zelus/jarvis/orchestration/OrchestrationModel.html" title="interface in fr.zelus.jarvis.orchestration"><code>OrchestrationModel</code></a> is empty.</dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>property</code> is <code>null</code></dd>
@@ -459,7 +459,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <p>
  <b>Note:</b> this method is designed to ease debugging and testing, direct interactions with the
  <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> API may create consistency issues. In particular, jarvis does not ensure
- that <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s will be triggered in case of direct queries to the
+ that <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s will be triggered in case of direct queries to the
  <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> API.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -485,20 +485,20 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="getJarvisModuleRegistry--">
+<a name="getRuntimePlatformRegistry--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getJarvisModuleRegistry</h4>
-<pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core">JarvisModuleRegistry</a>&nbsp;getJarvisModuleRegistry()</pre>
-<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a> associated to this instance.
+<h4>getRuntimePlatformRegistry</h4>
+<pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/core/RuntimePlatformRegistry.html" title="class in fr.zelus.jarvis.core">RuntimePlatformRegistry</a>&nbsp;getRuntimePlatformRegistry()</pre>
+<div class="block">Returns the <a href="../../../../fr/zelus/jarvis/core/RuntimePlatformRegistry.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatformRegistry</code></a> associated to this instance.
  <p>
- This registry is used to cache loaded module, and provides utility method to retrieve, unregister, and clear
- them.</div>
+ This registry is used to cache loaded <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a>s, and provides utility method to retrieve,
+ unregister, and clear them.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="../../../../fr/zelus/jarvis/core/JarvisModuleRegistry.html" title="class in fr.zelus.jarvis.core"><code>JarvisModuleRegistry</code></a> associated to this instance</dd>
+<dd>the <a href="../../../../fr/zelus/jarvis/core/RuntimePlatformRegistry.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatformRegistry</code></a> associated to this instance</dd>
 </dl>
 </li>
 </ul>
@@ -526,15 +526,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Shuts down the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html" title="class in fr.zelus.jarvis.core"><code>JarvisCore</code></a> and the underlying engines.
  <p>
  This method shuts down the underlying <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a>, unloads and shuts down all the
- <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a>s associated to this instance, unregisters the <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a> from the associated
+ <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a>s associated to this instance, unregisters the <a href="../../../../fr/zelus/jarvis/intent/EventDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>EventDefinition</code></a> from the associated
  <a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core"><code>EventDefinitionRegistry</code></a>, shuts down the <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>, and stops the <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a>.
  <p>
  <b>Note:</b> calling this method invalidates the <a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html" title="interface in fr.zelus.jarvis.recognition"><code>IntentRecognitionProvider</code></a> connection, and thus shuts
- down intent recognition features. New <a href="../../../../fr/zelus/jarvis/core/JarvisAction.html" title="class in fr.zelus.jarvis.core"><code>JarvisAction</code></a>s cannot be processed either.</div>
+ down intent recognition features. New <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s cannot be processed either.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/recognition/IntentRecognitionProvider.html#shutdown--"><code>IntentRecognitionProvider.shutdown()</code></a>, 
-<a href="../../../../fr/zelus/jarvis/core/JarvisModule.html#shutdown--"><code>JarvisModule.shutdown()</code></a>, 
+<a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#shutdown--"><code>RuntimePlatform.shutdown()</code></a>, 
 <a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html#unregisterEventDefinition-fr.zelus.jarvis.intent.EventDefinition-"><code>EventDefinitionRegistry.unregisterEventDefinition(EventDefinition)</code></a>, 
 <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#shutdown--"><code>OrchestrationService.shutdown()</code></a>, 
 <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html#stop--"><code>JarvisServer.stop()</code></a></dd>
@@ -635,7 +635,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../fr/zelus/jarvis/core/JarvisActionResult.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../fr/zelus/jarvis/core/EventDefinitionRegistry.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

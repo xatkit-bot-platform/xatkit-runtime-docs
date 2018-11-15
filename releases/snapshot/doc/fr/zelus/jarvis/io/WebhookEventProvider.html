@@ -93,7 +93,7 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">fr.zelus.jarvis.io</div>
-<h2 title="Class WebhookEventProvider" class="title">Class WebhookEventProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>,C&gt;</h2>
+<h2 title="Class WebhookEventProvider" class="title">Class WebhookEventProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a>,C&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
@@ -114,7 +114,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>T</code> - the concrete <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> subclass type containing the provider</dd>
+<dd><code>T</code> - the concrete <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a> subclass type containing the provider</dd>
 <dd><code>C</code> - the type of the parsed HTTP request content</dd>
 </dl>
 <dl>
@@ -127,7 +127,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public abstract class <span class="typeNameLabel">WebhookEventProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core">JarvisModule</a>,C&gt;</span>
+<pre>public abstract class <span class="typeNameLabel">WebhookEventProvider&lt;T extends <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a>,C&gt;</span>
 extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a>&lt;T&gt;</pre>
 <div class="block">A specialised <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io"><code>EventProvider</code></a> that handles HTTP requests sent by the
  <a href="../../../../fr/zelus/jarvis/server/JarvisServer.html" title="class in fr.zelus.jarvis.server"><code>JarvisServer</code></a>.
@@ -151,7 +151,7 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;fr.zelus.jarvis.io.<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></h3>
-<code><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a>, <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#module">module</a></code></li>
+<code><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#jarvisCore">jarvisCore</a>, <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#runtimePlatform">runtimePlatform</a></code></li>
 </ul>
 </li>
 </ul>
@@ -167,14 +167,14 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#WebhookEventProvider-T-">WebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a>&nbsp;containingModule)</code>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> with the provided <code>containingModule</code>.</div>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#WebhookEventProvider-T-">WebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a>&nbsp;runtimePlatform)</code>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> with the provided <code>runtimePlatform</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#WebhookEventProvider-T-org.apache.commons.configuration2.Configuration-">WebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a>&nbsp;containingModule,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#WebhookEventProvider-T-org.apache.commons.configuration2.Configuration-">WebhookEventProvider</a></span>(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a>&nbsp;runtimePlatform,
                     <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> from the provided <code>containingModule</code> and
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> from the provided <code>runtimePlatform</code> and
  <code>configuration</code>.</div>
 </td>
 </tr>
@@ -232,7 +232,7 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;fr.zelus.jarvis.io.<a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class in fr.zelus.jarvis.io">EventProvider</a></h3>
-<code><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#close--">close</a>, <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#getModule--">getModule</a></code></li>
+<code><a href="../../../../fr/zelus/jarvis/io/EventProvider.html#close--">close</a>, <a href="../../../../fr/zelus/jarvis/io/EventProvider.html#getRuntimePlatform--">getRuntimePlatform</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -262,7 +262,7 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="WebhookEventProvider-fr.zelus.jarvis.core.JarvisModule-">
+<a name="WebhookEventProvider-fr.zelus.jarvis.core.RuntimePlatform-">
 <!--   -->
 </a><a name="WebhookEventProvider-T-">
 <!--   -->
@@ -270,20 +270,20 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <ul class="blockList">
 <li class="blockList">
 <h4>WebhookEventProvider</h4>
-<pre>public&nbsp;WebhookEventProvider(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a>&nbsp;containingModule)</pre>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> with the provided <code>containingModule</code>.
+<pre>public&nbsp;WebhookEventProvider(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a>&nbsp;runtimePlatform)</pre>
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> with the provided <code>runtimePlatform</code>.
  <p>
  <b>Note</b>: this constructor should be used by <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a>s that do not require additional
- parameters to be initialized. In that case see <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#WebhookEventProvider-T-org.apache.commons.configuration2.Configuration-"><code>WebhookEventProvider(JarvisModule, Configuration)</code></a>.</div>
+ parameters to be initialized. In that case see <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html#WebhookEventProvider-T-org.apache.commons.configuration2.Configuration-"><code>WebhookEventProvider(RuntimePlatform, Configuration)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>containingModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a></dd>
+<dd><code>runtimePlatform</code> - the <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>runtimePlatform</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>
-<a name="WebhookEventProvider-fr.zelus.jarvis.core.JarvisModule-org.apache.commons.configuration2.Configuration-">
+<a name="WebhookEventProvider-fr.zelus.jarvis.core.RuntimePlatform-org.apache.commons.configuration2.Configuration-">
 <!--   -->
 </a><a name="WebhookEventProvider-T-org.apache.commons.configuration2.Configuration-">
 <!--   -->
@@ -291,9 +291,9 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
 <ul class="blockListLast">
 <li class="blockList">
 <h4>WebhookEventProvider</h4>
-<pre>public&nbsp;WebhookEventProvider(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a>&nbsp;containingModule,
+<pre>public&nbsp;WebhookEventProvider(<a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a>&nbsp;runtimePlatform,
                             <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
-<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> from the provided <code>containingModule</code> and
+<div class="block">Constructs a new <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a> from the provided <code>runtimePlatform</code> and
  <code>configuration</code>.
  <p>
  <b>Note</b>: this constructor will be called by jarvis internal engine when initializing the
@@ -301,10 +301,10 @@ extends <a href="../../../../fr/zelus/jarvis/io/EventProvider.html" title="class
  need additional parameters to be initialized, that can be provided in the <code>configuration</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>containingModule</code> - the <a href="../../../../fr/zelus/jarvis/core/JarvisModule.html" title="class in fr.zelus.jarvis.core"><code>JarvisModule</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a></dd>
+<dd><code>runtimePlatform</code> - the <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a> containing this <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a></dd>
 <dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to initialize the <a href="../../../../fr/zelus/jarvis/io/WebhookEventProvider.html" title="class in fr.zelus.jarvis.io"><code>WebhookEventProvider</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>containingModule</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>runtimePlatform</code> is <code>null</code></dd>
 </dl>
 </li>
 </ul>
