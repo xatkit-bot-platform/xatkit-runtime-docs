@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../fr/zelus/jarvis/core/RuntimeActionResult.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -127,7 +127,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 <div class="block">The concrete implementation of an <a href="../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> definition.
  <p>
  A <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> represents an atomic action that are automatically executed by the
- <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>
+ <a href="../../../../fr/zelus/jarvis/core/ExecutionService.html" title="class in fr.zelus.jarvis.core"><code>ExecutionService</code></a>
  component. Instances of this class are created by the associated <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a> from an input
  <a href="../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a>.
  <p>
@@ -138,7 +138,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a>, 
-<a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>, 
+<a href="../../../../fr/zelus/jarvis/core/ExecutionService.html" title="class in fr.zelus.jarvis.core"><code>ExecutionService</code></a>, 
 <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a></dd>
 </dl>
 </li>
@@ -292,11 +292,11 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 <div class="block">The name of the variable to use to store the result of the <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html#call--"><code>call()</code></a> method.
  <p>
  The value of this attribute is used by
- <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>OrchestrationService.handleEventInstance(EventInstance, JarvisSession)</code></a> to store
- the result of each <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> in the variable defined in the provided orchestration model.</div>
+ <a href="../../../../fr/zelus/jarvis/core/ExecutionService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>ExecutionService.handleEventInstance(EventInstance, JarvisSession)</code></a> to store
+ the result of each <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> in the variable defined in the provided execution model.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>OrchestrationService.handleEventInstance(EventInstance, JarvisSession)</code></a>, 
+<dd><a href="../../../../fr/zelus/jarvis/core/ExecutionService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>ExecutionService.handleEventInstance(EventInstance, JarvisSession)</code></a>, 
 <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html#getReturnVariable--"><code>getReturnVariable()</code></a></dd>
 </dl>
 </li>
@@ -368,13 +368,13 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 <pre>public final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getReturnVariable()</pre>
 <div class="block">Return the name of the variable to use to store the result of the <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html#call--"><code>call()</code></a> method.
  <p>
- This method is used by <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>OrchestrationService.handleEventInstance(EventInstance, JarvisSession)</code></a>  to
- store the result of each <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> in the variable defined in the provided orchestration model.</div>
+ This method is used by <a href="../../../../fr/zelus/jarvis/core/ExecutionService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>ExecutionService.handleEventInstance(EventInstance, JarvisSession)</code></a>  to
+ store the result of each <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> in the variable defined in the provided execution model.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the name of the variable to use to store the result of the <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html#call--"><code>call()</code></a> method</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>OrchestrationService.handleEventInstance(EventInstance, JarvisSession)</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/core/ExecutionService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>ExecutionService.handleEventInstance(EventInstance, JarvisSession)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -387,7 +387,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 <pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/core/RuntimeActionResult.html" title="class in fr.zelus.jarvis.core">RuntimeActionResult</a>&nbsp;call()</pre>
 <div class="block">Runs the <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> and returns its result wrapped in a <a href="../../../../fr/zelus/jarvis/core/RuntimeActionResult.html" title="class in fr.zelus.jarvis.core"><code>RuntimeActionResult</code></a>.
  <p>
- This method should not be called manually, and is handled by the <a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a> component that
+ This method should not be called manually, and is handled by the <a href="../../../../fr/zelus/jarvis/core/ExecutionService.html" title="class in fr.zelus.jarvis.core"><code>ExecutionService</code></a> component that
  manages and executes <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s.
  <p>
  This method does not throw any <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang"><code>Exception</code></a> if the underlying <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>'s computation does not
@@ -399,7 +399,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="../../../../fr/zelus/jarvis/core/RuntimeActionResult.html" title="class in fr.zelus.jarvis.core"><code>RuntimeActionResult</code></a> containing the raw result of the computation and monitoring information</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><code>OrchestrationService</code></a>, 
+<dd><a href="../../../../fr/zelus/jarvis/core/ExecutionService.html" title="class in fr.zelus.jarvis.core"><code>ExecutionService</code></a>, 
 <a href="../../../../fr/zelus/jarvis/core/RuntimeActionResult.html" title="class in fr.zelus.jarvis.core"><code>RuntimeActionResult</code></a></dd>
 </dl>
 </li>
@@ -455,7 +455,7 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../fr/zelus/jarvis/core/OrchestrationService.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../fr/zelus/jarvis/core/RuntimeActionResult.html" title="class in fr.zelus.jarvis.core"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

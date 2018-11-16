@@ -118,9 +118,9 @@ var activeTableTab = "activeTableTab";
 extends <a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a></pre>
 <div class="block">A generic <a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a> class that wraps concrete chatting sub-platforms.
  <p>
- This class is used to define generic orchestration models that can be bound to specific chatting platforms through
- the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>. <a href="../../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s created by this runtimePlatform wraps concrete
- <a href="../../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>s defined in the concrete sub-platforms.
+ This class is used to define generic <a href="../../../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a>s that can be bound to specific chatting platforms through
+ the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>. <a href="../../../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a>s created by this runtimePlatform wraps concrete
+ <a href="../../../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a>s defined in the concrete sub-platforms.
  <p>
  This runtimePlatform provides the following generic <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s:
  <ul>
@@ -129,7 +129,7 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" ti
  <b>Note:</b> this runtimePlatform only provides a concrete implementation of <a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.platform.action"><code>GenericChatAction</code></a>, that is
  used to
  represent all the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s specified in the <i>GenericChatPlatform</i>. <a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.platform.action"><code>GenericChatAction</code></a>
- construction is handled by the <a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/GenericChatPlatform.html#createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a> method that overrides
+ construction is handled by the <a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/GenericChatPlatform.html#createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a> method that overrides
  the default behavior of <a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -224,11 +224,11 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" ti
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core">RuntimeAction</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/GenericChatPlatform.html#createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createRuntimeAction</a></span>(<a href="../../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&nbsp;actionInstance,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/GenericChatPlatform.html#createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createRuntimeAction</a></span>(<a href="../../../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
                    <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
 <div class="block">Creates a <a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.platform.action"><code>GenericChatAction</code></a> wrapping the concrete sub-platform <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s
  corresponding to
- the provided <a href="../../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>.</div>
+ the provided <a href="../../../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -410,33 +410,33 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" ti
 </dl>
 </li>
 </ul>
-<a name="createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">
+<a name="createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>createRuntimeAction</h4>
-<pre>public&nbsp;<a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core">RuntimeAction</a>&nbsp;createRuntimeAction(<a href="../../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&nbsp;actionInstance,
+<pre>public&nbsp;<a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core">RuntimeAction</a>&nbsp;createRuntimeAction(<a href="../../../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
                                          <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</pre>
 <div class="block">Creates a <a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.platform.action"><code>GenericChatAction</code></a> wrapping the concrete sub-platform <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s
  corresponding to
- the provided <a href="../../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>.
+ the provided <a href="../../../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a>.
  <p>
  This method iterates the sub-platform list and calls their
- <a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>RuntimePlatform.createRuntimeAction(ActionInstance, JarvisSession)</code></a> method with the provided <code>actionInstance</code> and <code>session</code>. The returned <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s are then wrapped into a
+ <a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>RuntimePlatform.createRuntimeAction(ActionInstance, JarvisSession)</code></a> method with the provided <code>actionInstance</code> and <code>session</code>. The returned <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s are then wrapped into a
  <a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.platform.action"><code>GenericChatAction</code></a> that takes care of executing them through the regular
- <a href="../../../../../../fr/zelus/jarvis/core/OrchestrationService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>OrchestrationService.handleEventInstance(EventInstance, JarvisSession)</code></a> process.</div>
+ <a href="../../../../../../fr/zelus/jarvis/core/ExecutionService.html#handleEventInstance-fr.zelus.jarvis.intent.EventInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>ExecutionService.handleEventInstance(EventInstance, JarvisSession)</code></a> process.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createRuntimeAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a></code></dd>
+<dd><code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createRuntimeAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>actionInstance</code> - the <a href="../../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a> representing the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> to create</dd>
+<dd><code>actionInstance</code> - the <a href="../../../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a> representing the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> to create</dd>
 <dd><code>session</code> - the <a href="../../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the action</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/action/GenericChatAction.html" title="class in fr.zelus.jarvis.plugins.generic_chat.platform.action"><code>GenericChatAction</code></a> wrapping the concrete sub-platform <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>actionInstance</code> or <code>session</code> is <code>null</code></dd>
-<dd><code><a href="../../../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if the provided <a href="../../../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a> does not match any <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>
+<dd><code><a href="../../../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if the provided <a href="../../../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a> does not match any <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>
                               for a sub-platform, or if an error occurred when building the
                               <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a></dd>
 <dt><span class="seeLabel">See Also:</span></dt>

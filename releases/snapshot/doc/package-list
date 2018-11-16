@@ -2,13 +2,13 @@ fr.zelus.jarvis
 fr.zelus.jarvis.core
 fr.zelus.jarvis.core.session
 fr.zelus.jarvis.core_platforms.utils
+fr.zelus.jarvis.execution
+fr.zelus.jarvis.execution.impl
+fr.zelus.jarvis.execution.util
 fr.zelus.jarvis.intent
 fr.zelus.jarvis.intent.impl
 fr.zelus.jarvis.intent.util
 fr.zelus.jarvis.io
-fr.zelus.jarvis.orchestration
-fr.zelus.jarvis.orchestration.impl
-fr.zelus.jarvis.orchestration.util
 fr.zelus.jarvis.platform
 fr.zelus.jarvis.platform.impl
 fr.zelus.jarvis.platform.util

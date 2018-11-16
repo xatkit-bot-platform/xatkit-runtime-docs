@@ -230,9 +230,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core">RuntimeAction</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createRuntimeAction</a></span>(<a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&nbsp;actionInstance,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">createRuntimeAction</a></span>(<a href="../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
                    <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
-<div class="block">Creates a new <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>.</div>
+<div class="block">Creates a new <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -335,7 +335,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#startEventProvider-fr.zelus.jarvis.platform.EventProviderDefinition-"><code>startEventProvider(EventProviderDefinition)</code></a>, 
-<a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a></dd>
+<a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -353,7 +353,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#enableAction-fr.zelus.jarvis.platform.Action-"><code>enableAction(Action)</code></a>, 
 <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#disableAction-fr.zelus.jarvis.platform.Action-"><code>disableAction(Action)</code></a>, 
-<a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a></dd>
+<a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -561,40 +561,40 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <p>
  This method returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a>es describing the <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>s associated to this platform. To
  construct a new <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> from a <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a> see
- <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a> .</div>
+ <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a> .</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>all the <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a>es associated to this <a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core"><code>RuntimePlatform</code></a></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="createRuntimeAction-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">
+<a name="createRuntimeAction-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisSession-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createRuntimeAction</h4>
-<pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core">RuntimeAction</a>&nbsp;createRuntimeAction(<a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration">ActionInstance</a>&nbsp;actionInstance,
+<pre>public&nbsp;<a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core">RuntimeAction</a>&nbsp;createRuntimeAction(<a href="../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
                                          <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</pre>
-<div class="block">Creates a new <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a>.
+<div class="block">Creates a new <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a>.
  <p>
  This methods attempts to construct a <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> defined by the provided <code>actionInstance</code> by
  matching the <code>eventInstance</code> variables to the <a href="../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a>'s parameters, and reusing the provided
- <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html#getValues--"><code>ActionInstance.getValues()</code></a>.</div>
+ <a href="../../../../fr/zelus/jarvis/execution/ActionInstance.html#getValues--"><code>ActionInstance.getValues()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>actionInstance</code> - the <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a> representing the <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> to create</dd>
+<dd><code>actionInstance</code> - the <a href="../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a> representing the <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> to create</dd>
 <dd><code>session</code> - the <a href="../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> associated to the action</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a></dd>
+<dd>a new <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>actionInstance</code> or <code>session</code> is <code>null</code></dd>
-<dd><code><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if the provided <a href="../../../../fr/zelus/jarvis/orchestration/ActionInstance.html" title="interface in fr.zelus.jarvis.orchestration"><code>ActionInstance</code></a> does not match any <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>,
+<dd><code><a href="../../../../fr/zelus/jarvis/core/JarvisException.html" title="class in fr.zelus.jarvis.core">JarvisException</a></code> - if the provided <a href="../../../../fr/zelus/jarvis/execution/ActionInstance.html" title="interface in fr.zelus.jarvis.execution"><code>ActionInstance</code></a> does not match any <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a>,
                               or if an error occurred when building the <a href="../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#getParameterValues-fr.zelus.jarvis.orchestration.ActionInstance-fr.zelus.jarvis.core.session.JarvisContext-"><code>getParameterValues(ActionInstance, JarvisContext)</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/core/RuntimePlatform.html#getParameterValues-fr.zelus.jarvis.execution.ActionInstance-fr.zelus.jarvis.core.session.JarvisContext-"><code>getParameterValues(ActionInstance, JarvisContext)</code></a></dd>
 </dl>
 </li>
 </ul>
