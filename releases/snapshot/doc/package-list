@@ -1,7 +1,7 @@
 fr.zelus.jarvis
 fr.zelus.jarvis.core
 fr.zelus.jarvis.core.session
-fr.zelus.jarvis.core_platforms.utils
+fr.zelus.jarvis.core_resources.utils
 fr.zelus.jarvis.execution
 fr.zelus.jarvis.execution.impl
 fr.zelus.jarvis.execution.util
