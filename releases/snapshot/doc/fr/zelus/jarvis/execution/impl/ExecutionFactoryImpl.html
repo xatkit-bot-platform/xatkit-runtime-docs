@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":41,"i11":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":41,"i12":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -306,36 +306,40 @@ implements <a href="../../../../../fr/zelus/jarvis/execution/ExecutionFactory.ht
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#createExecutionRule--">createExecutionRule</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/execution/ImportDeclaration.html" title="interface in fr.zelus.jarvis.execution">ImportDeclaration</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#createImportDeclaration--">createImportDeclaration</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/execution/LibraryImportDeclaration.html" title="interface in fr.zelus.jarvis.execution">LibraryImportDeclaration</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#createLibraryImportDeclaration--">createLibraryImportDeclaration</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/execution/ParameterValue.html" title="interface in fr.zelus.jarvis.execution">ParameterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#createParameterValue--">createParameterValue</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/execution/PlatformImportDeclaration.html" title="interface in fr.zelus.jarvis.execution">PlatformImportDeclaration</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#createPlatformImportDeclaration--">createPlatformImportDeclaration</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/execution/StringLiteral.html" title="interface in fr.zelus.jarvis.execution">StringLiteral</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#createStringLiteral--">createStringLiteral</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/execution/Variable.html" title="interface in fr.zelus.jarvis.execution">Variable</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#createVariable--">createVariable</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/execution/VariableAccess.html" title="interface in fr.zelus.jarvis.execution">VariableAccess</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#createVariableAccess--">createVariableAccess</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/execution/ExecutionPackage.html" title="interface in fr.zelus.jarvis.execution">ExecutionPackage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#getExecutionPackage--">getExecutionPackage</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../fr/zelus/jarvis/execution/ExecutionPackage.html" title="interface in fr.zelus.jarvis.execution">ExecutionPackage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#getPackage--">getPackage</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;&nbsp;</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../fr/zelus/jarvis/execution/ExecutionFactory.html" title="interface in fr.zelus.jarvis.execution">ExecutionFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/execution/impl/ExecutionFactoryImpl.html#init--">init</a></span>()</code>
 <div class="block">Creates the default factory implementation.</div>
@@ -519,20 +523,38 @@ implements <a href="../../../../../fr/zelus/jarvis/execution/ExecutionFactory.ht
 </dl>
 </li>
 </ul>
-<a name="createImportDeclaration--">
+<a name="createPlatformImportDeclaration--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>createImportDeclaration</h4>
-<pre>public&nbsp;<a href="../../../../../fr/zelus/jarvis/execution/ImportDeclaration.html" title="interface in fr.zelus.jarvis.execution">ImportDeclaration</a>&nbsp;createImportDeclaration()</pre>
+<h4>createPlatformImportDeclaration</h4>
+<pre>public&nbsp;<a href="../../../../../fr/zelus/jarvis/execution/PlatformImportDeclaration.html" title="interface in fr.zelus.jarvis.execution">PlatformImportDeclaration</a>&nbsp;createPlatformImportDeclaration()</pre>
 <div class="block"><!-- begin-user-doc -->
  <!-- end-user-doc --></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../fr/zelus/jarvis/execution/ExecutionFactory.html#createImportDeclaration--">createImportDeclaration</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/execution/ExecutionFactory.html" title="interface in fr.zelus.jarvis.execution">ExecutionFactory</a></code></dd>
+<dd><code><a href="../../../../../fr/zelus/jarvis/execution/ExecutionFactory.html#createPlatformImportDeclaration--">createPlatformImportDeclaration</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/execution/ExecutionFactory.html" title="interface in fr.zelus.jarvis.execution">ExecutionFactory</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new object of class '<em>Import Declaration</em>'.</dd>
+<dd>a new object of class '<em>Platform Import Declaration</em>'.</dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="createLibraryImportDeclaration--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createLibraryImportDeclaration</h4>
+<pre>public&nbsp;<a href="../../../../../fr/zelus/jarvis/execution/LibraryImportDeclaration.html" title="interface in fr.zelus.jarvis.execution">LibraryImportDeclaration</a>&nbsp;createLibraryImportDeclaration()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../fr/zelus/jarvis/execution/ExecutionFactory.html#createLibraryImportDeclaration--">createLibraryImportDeclaration</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../fr/zelus/jarvis/execution/ExecutionFactory.html" title="interface in fr.zelus.jarvis.execution">ExecutionFactory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new object of class '<em>Library Import Declaration</em>'.</dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

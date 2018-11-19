@@ -144,23 +144,29 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#CUSTOM_LIBRARIES_KEY_PREFIX">CUSTOM_LIBRARIES_KEY_PREFIX</a></span></code>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the custom library paths.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#CUSTOM_PLATFORMS_KEY_PREFIX">CUSTOM_PLATFORMS_KEY_PREFIX</a></span></code>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the custom platform paths.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#EXECUTION_MODEL_KEY">EXECUTION_MODEL_KEY</a></span></code>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a> to use.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource">ResourceSet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#executionResourceSet">executionResourceSet</a></span></code>
 <div class="block">The <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>ResourceSet</code></a> used to load the <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a> and the referenced models.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../fr/zelus/jarvis/core/ExecutionService.html" title="class in fr.zelus.jarvis.core">ExecutionService</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#executionService">executionService</a></span></code>
 <div class="block">The <a href="../../../../fr/zelus/jarvis/core/ExecutionService.html" title="class in fr.zelus.jarvis.core"><code>ExecutionService</code></a> used to handle <a href="../../../../fr/zelus/jarvis/intent/EventInstance.html" title="interface in fr.zelus.jarvis.intent"><code>EventInstance</code></a>s and execute the associated
@@ -314,12 +320,29 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <p>
  This prefix is used to specify the paths of the custom platforms that are needed by the provided
  <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a>. Note that custom platform path properties are only required if the
- <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a> defines an <code>alias</code> for the imported platform models.
- <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a>s relying on absolute paths are directly loaded from the file system, but are not
- portable.
+ <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a> defines an <code>alias</code> for the imported platform models. <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a>s
+ relying on absolute paths are directly loaded from the file system, but are not portable.
  <p>
  Custom platform properties must be set following this pattern: <code>CUSTOM_PLATFORMS_KEY_PREFIX + &lt;platform
  alias&gt; = &lt;platform path&gt;</code>.</div>
+</li>
+</ul>
+<a name="CUSTOM_LIBRARIES_KEY_PREFIX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CUSTOM_LIBRARIES_KEY_PREFIX</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> CUSTOM_LIBRARIES_KEY_PREFIX</pre>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the custom library paths.
+ <p>
+ This prefix is used to specify the paths of the custom libraries that are needed by the provided
+ <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a>. Note that custom library path properties are only required if the
+ <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a> defines an <code>alias</code> for the imported library models. <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a>s
+ relying on absolute paths are directly loaded from the file system, but are not portable.
+ <p>
+ Custom library properties must be set following this pattern: <code>CUSTOM_LIBRARIES_KEY_PREFIX + &lt;library
+ alias&gt; = &lt;library path&gt;</code>.</div>
 </li>
 </ul>
 <a name="executionResourceSet">
@@ -332,11 +355,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">The <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/resource/ResourceSet.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.resource"><code>ResourceSet</code></a> used to load the <a href="../../../../fr/zelus/jarvis/execution/ExecutionModel.html" title="interface in fr.zelus.jarvis.execution"><code>ExecutionModel</code></a> and the referenced models.
  <p>
  The <code>executionResourceSet</code> is initialized with the <a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#initializeExecutionResourceSet--"><code>initializeExecutionResourceSet()</code></a>
- method, that loads the core platforms models from the classpath, and dynamically retrieves the custom platforms
- models.</div>
+ method, that loads the core platforms models from the classpath, and dynamically retrieves the custom
+ platforms and library models.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#CUSTOM_PLATFORMS_KEY_PREFIX"><code>CUSTOM_PLATFORMS_KEY_PREFIX</code></a></dd>
+<dd><a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#CUSTOM_PLATFORMS_KEY_PREFIX"><code>CUSTOM_PLATFORMS_KEY_PREFIX</code></a>, 
+<a href="../../../../fr/zelus/jarvis/core/JarvisCore.html#CUSTOM_LIBRARIES_KEY_PREFIX"><code>CUSTOM_LIBRARIES_KEY_PREFIX</code></a></dd>
 </dl>
 </li>
 </ul>
