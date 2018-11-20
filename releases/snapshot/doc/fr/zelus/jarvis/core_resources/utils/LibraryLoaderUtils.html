@@ -117,6 +117,12 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core_resources/utils/LibraryLoaderUtils.html#CORE_LIBRARY_PATHMAP">CORE_LIBRARY_PATHMAP</a></span></code>
+<div class="block">The <code>pathmap</code> prefix used to map core library resources to their concrete URIs.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/core_resources/utils/LibraryLoaderUtils.html#CUSTOM_LIBRARY_PATHMAP">CUSTOM_LIBRARY_PATHMAP</a></span></code>
 <div class="block">The <code>pathmap</code> prefix used to map custom library resources to their concrete URIs.</div>
 </td>
@@ -136,6 +142,24 @@
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="CORE_LIBRARY_PATHMAP">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CORE_LIBRARY_PATHMAP</h4>
+<pre>static final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> CORE_LIBRARY_PATHMAP</pre>
+<div class="block">The <code>pathmap</code> prefix used to map core library resources to their concrete URIs.
+ <p>
+ References to core libraries can be built using the following code: <code>URI.createURI(CORE_LIBRARY_PATHMAP
+ + "MyLibrary.xmi"</code>. The JarvisCore engine will take care of dynamically loading the libraries and mapping
+ their <code>pathmap</code> to the concrete resources.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../constant-values.html#fr.zelus.jarvis.core_resources.utils.LibraryLoaderUtils.CORE_LIBRARY_PATHMAP">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
 <a name="CUSTOM_LIBRARY_PATHMAP">
 <!--   -->
 </a>
