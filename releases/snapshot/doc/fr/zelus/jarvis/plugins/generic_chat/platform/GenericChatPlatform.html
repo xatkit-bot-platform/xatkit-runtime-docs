@@ -233,14 +233,15 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" ti
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/GenericChatPlatform.html#disableAction-fr.zelus.jarvis.platform.Action-">disableAction</a></span>(<a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform">Action</a>&nbsp;action)</code>
-<div class="block">Disables the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> in all the sub-platforms.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/GenericChatPlatform.html#disableAction-fr.zelus.jarvis.platform.ActionDefinition-">disableAction</a></span>(<a href="../../../../../../fr/zelus/jarvis/platform/ActionDefinition.html" title="interface in fr.zelus.jarvis.platform">ActionDefinition</a>&nbsp;actionDefinition)</code>
+<div class="block">Disables the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/ActionDefinition.html" title="interface in fr.zelus.jarvis.platform"><code>ActionDefinition</code></a> in all the sub-platforms.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/GenericChatPlatform.html#enableAction-fr.zelus.jarvis.platform.Action-">enableAction</a></span>(<a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform">Action</a>&nbsp;action)</code>
-<div class="block">Retrieves an loads the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> in all the sub-platforms.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/zelus/jarvis/plugins/generic_chat/platform/GenericChatPlatform.html#enableAction-fr.zelus.jarvis.platform.ActionDefinition-">enableAction</a></span>(<a href="../../../../../../fr/zelus/jarvis/platform/ActionDefinition.html" title="interface in fr.zelus.jarvis.platform">ActionDefinition</a>&nbsp;action)</code>
+<div class="block">Retrieves an loads the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/ActionDefinition.html" title="interface in fr.zelus.jarvis.platform"><code>ActionDefinition</code></a> in all the
+ sub-platforms.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -374,39 +375,40 @@ extends <a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" ti
 </dl>
 </li>
 </ul>
-<a name="enableAction-fr.zelus.jarvis.platform.Action-">
+<a name="enableAction-fr.zelus.jarvis.platform.ActionDefinition-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>enableAction</h4>
-<pre>public&nbsp;void&nbsp;enableAction(<a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform">Action</a>&nbsp;action)</pre>
-<div class="block">Retrieves an loads the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> in all the sub-platforms.</div>
+<pre>public&nbsp;void&nbsp;enableAction(<a href="../../../../../../fr/zelus/jarvis/platform/ActionDefinition.html" title="interface in fr.zelus.jarvis.platform">ActionDefinition</a>&nbsp;action)</pre>
+<div class="block">Retrieves an loads the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/ActionDefinition.html" title="interface in fr.zelus.jarvis.platform"><code>ActionDefinition</code></a> in all the
+ sub-platforms.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html#enableAction-fr.zelus.jarvis.platform.Action-">enableAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a></code></dd>
+<dd><code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html#enableAction-fr.zelus.jarvis.platform.ActionDefinition-">enableAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>action</code> - the <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> definition representing the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> to enable in all the
+<dd><code>action</code> - the <a href="../../../../../../fr/zelus/jarvis/platform/ActionDefinition.html" title="interface in fr.zelus.jarvis.platform"><code>ActionDefinition</code></a> definition representing the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> to enable in all the
                sub-platforms</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../fr/zelus/jarvis/util/Loader.html#loadClass-java.lang.String-java.lang.Class-"><code>Loader.loadClass(String, Class)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="disableAction-fr.zelus.jarvis.platform.Action-">
+<a name="disableAction-fr.zelus.jarvis.platform.ActionDefinition-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>disableAction</h4>
-<pre>public&nbsp;void&nbsp;disableAction(<a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform">Action</a>&nbsp;action)</pre>
-<div class="block">Disables the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> in all the sub-platforms.</div>
+<pre>public&nbsp;void&nbsp;disableAction(<a href="../../../../../../fr/zelus/jarvis/platform/ActionDefinition.html" title="interface in fr.zelus.jarvis.platform">ActionDefinition</a>&nbsp;actionDefinition)</pre>
+<div class="block">Disables the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> defined by the provided <a href="../../../../../../fr/zelus/jarvis/platform/ActionDefinition.html" title="interface in fr.zelus.jarvis.platform"><code>ActionDefinition</code></a> in all the sub-platforms.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html#disableAction-fr.zelus.jarvis.platform.Action-">disableAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a></code></dd>
+<dd><code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html#disableAction-fr.zelus.jarvis.platform.ActionDefinition-">disableAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../fr/zelus/jarvis/core/RuntimePlatform.html" title="class in fr.zelus.jarvis.core">RuntimePlatform</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>action</code> - the <a href="../../../../../../fr/zelus/jarvis/platform/Action.html" title="interface in fr.zelus.jarvis.platform"><code>Action</code></a> definition representing the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> to disable in all the
-               sub-platforms</dd>
+<dd><code>actionDefinition</code> - the <a href="../../../../../../fr/zelus/jarvis/platform/ActionDefinition.html" title="interface in fr.zelus.jarvis.platform"><code>ActionDefinition</code></a> definition representing the <a href="../../../../../../fr/zelus/jarvis/core/RuntimeAction.html" title="class in fr.zelus.jarvis.core"><code>RuntimeAction</code></a> to
+                         disable in all the sub-platforms</dd>
 </dl>
 </li>
 </ul>
