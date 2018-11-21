@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -217,67 +217,92 @@ implements <a href="../../../../../fr/zelus/jarvis/recognition/IntentRecognition
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#createInContextNames-fr.zelus.jarvis.intent.IntentDefinition-">createInContextNames</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
+<div class="block">Creates the DialogFlow input <code>Context</code> names from the provided <code>intentDefinition</code>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;com.google.cloud.dialogflow.v2.Context&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#createOutContexts-fr.zelus.jarvis.intent.IntentDefinition-">createOutContexts</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
+<div class="block">Creates the DialogFlow output <code>Context</code>s from the provided <code>intentDefinition</code>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;com.google.cloud.dialogflow.v2.Intent.Parameter&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#createParameters-java.util.List-">createParameters</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a>&gt;&nbsp;contexts)</code>
+<div class="block">Creates the DialogFlow context parameters from the provided Jarvis <code>contexts</code>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#createSession-java.lang.String-">createSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
 <div class="block">Creates a new <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session"><code>JarvisSession</code></a> from the provided <code>sessionId</code>.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected com.google.cloud.dialogflow.v2.Intent.TrainingPhrase</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#createTrainingPhrase-java.lang.String-java.util.List-">createTrainingPhrase</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;trainingSentence,
+                    <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a>&gt;&nbsp;outContexts)</code>
+<div class="block">Creates the DialogFlow's <code>Intent.TrainingPhrase</code> from the provided <code>trainingSentence</code> and <code>outContexts</code>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#deleteIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">deleteIntentDefinition</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#finalize--">finalize</a></span>()</code>
 <div class="block">Closes the DialogFlow session if it is not shutdown yet.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent">RecognizedIntent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-fr.zelus.jarvis.core.session.JarvisSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
          <a href="../../../../../fr/zelus/jarvis/core/session/JarvisSession.html" title="class in fr.zelus.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
 <div class="block">Returns the <a href="../../../../../fr/zelus/jarvis/intent/RecognizedIntent.html" title="interface in fr.zelus.jarvis.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#getLanguageCode--">getLanguageCode</a></span>()</code>
 <div class="block">Returns the code of the language processed by DialogFlow.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#getProjectId--">getProjectId</a></span>()</code>
 <div class="block">Returns the DialogFlow project unique identifier.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#isShutdown--">isShutdown</a></span>()</code>
 <div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#mergeLocalSessionInDialogFlow-fr.zelus.jarvis.recognition.dialogflow.DialogFlowSession-">mergeLocalSessionInDialogFlow</a></span>(<a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.recognition.dialogflow">DialogFlowSession</a>&nbsp;dialogFlowSession)</code>
 <div class="block">Merges the local <a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowSession.html" title="class in fr.zelus.jarvis.recognition.dialogflow"><code>DialogFlowSession</code></a> in the remote DialogFlow API one.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#registerIntentDefinition-fr.zelus.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></span>(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#trainMLEngine--">trainMLEngine</a></span>()</code>
 <div class="block">Trains the underlying intent recognition provider.</div>
@@ -518,6 +543,104 @@ implements <a href="../../../../../fr/zelus/jarvis/recognition/IntentRecognition
 <dd><a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#createInContextNames-fr.zelus.jarvis.intent.IntentDefinition-"><code>createInContextNames(IntentDefinition)</code></a>, 
 <a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#createOutContexts-fr.zelus.jarvis.intent.IntentDefinition-"><code>createOutContexts(IntentDefinition)</code></a>, 
 <a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#createParameters-java.util.List-"><code>createParameters(List)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="createTrainingPhrase-java.lang.String-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createTrainingPhrase</h4>
+<pre>protected&nbsp;com.google.cloud.dialogflow.v2.Intent.TrainingPhrase&nbsp;createTrainingPhrase(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;trainingSentence,
+                                                                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a>&gt;&nbsp;outContexts)</pre>
+<div class="block">Creates the DialogFlow's <code>Intent.TrainingPhrase</code> from the provided <code>trainingSentence</code> and <code>outContexts</code>.
+ <p>
+ This method splits the provided <code>trainingSentence</code> into DialogFlow's
+ <code>Intent.TrainingPhrase.Part</code>s.
+ <code>Intent.TrainingPhrase.Part</code>s corresponding to output context parameters
+ are bound to the corresponding DialogFlow entities using the <a href="../../../../../fr/zelus/jarvis/recognition/dialogflow/DialogFlowApi.html#entityMapper"><code>entityMapper</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>trainingSentence</code> - the <a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>'s training sentence to create a
+                         <code>Intent.TrainingPhrase</code> from</dd>
+<dd><code>outContexts</code> - the <a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a>'s output <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a>s
+                         associated to the provided training sentence</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the created DialogFlow's <code>Intent.TrainingPhrase</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>trainingSentence</code> or <code>outContexts</code> <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> is
+                              <code>null</code>, or if one of the <a href="../../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent"><code>ContextParameter</code></a>'s name from the provided
+                              <code>outContexts</code> is <code>null</code></dd>
+</dl>
+</li>
+</ul>
+<a name="createInContextNames-fr.zelus.jarvis.intent.IntentDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createInContextNames</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;createInContextNames(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</pre>
+<div class="block">Creates the DialogFlow input <code>Context</code> names from the provided <code>intentDefinition</code>.
+ <p>
+ This method iterates the provided <code>intentDefinition</code>'s in <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a>s, and
+ maps them to their concrete DialogFlow <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> identifier. The returned <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> can be used to
+ refer to existing DialogFlow's <code>Context</code>s.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>intentDefinition</code> - the <a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to create the DialogFlow input <code>Context</code>s from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the created <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of DialogFlow <code>Context</code> identifiers</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>intentDefinition</code> is <code>null</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html#getInContexts--"><code>IntentDefinition.getInContexts()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="createOutContexts-fr.zelus.jarvis.intent.IntentDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createOutContexts</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;com.google.cloud.dialogflow.v2.Context&gt;&nbsp;createOutContexts(<a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</pre>
+<div class="block">Creates the DialogFlow output <code>Context</code>s from the provided <code>intentDefinition</code>.
+ <p>
+ This method iterates the provided <code>intentDefinition</code>'s out <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a>s, and
+ maps them to their concrete DialogFlow implementations.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>intentDefinition</code> - the <a href="../../../../../fr/zelus/jarvis/intent/IntentDefinition.html" title="interface in fr.zelus.jarvis.intent"><code>IntentDefinition</code></a> to create the DialogFlow output <code>Context</code>s from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the created <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of DialogFlow <code>Context</code>s</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>intentDefinition</code> is <code>null</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/zelus/jarvis/intent/EventDefinition.html#getOutContexts--"><code>EventDefinition.getOutContexts()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="createParameters-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createParameters</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;com.google.cloud.dialogflow.v2.Intent.Parameter&gt;&nbsp;createParameters(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent">Context</a>&gt;&nbsp;contexts)</pre>
+<div class="block">Creates the DialogFlow context parameters from the provided Jarvis <code>contexts</code>.
+ <p>
+ This method iterates the provided <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a>s, and maps their contained
+ parameter's entities to their concrete DialogFlow implementation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>contexts</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of Jarvis <a href="../../../../../fr/zelus/jarvis/intent/Context.html" title="interface in fr.zelus.jarvis.intent"><code>Context</code></a>s to create the parameters from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of DialogFlow context parameters</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>contexts</code> <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> is <code>null</code>, or if one of the
+                              provided <a href="../../../../../fr/zelus/jarvis/intent/ContextParameter.html" title="interface in fr.zelus.jarvis.intent"><code>ContextParameter</code></a>'s name is <code>null</code></dd>
 </dl>
 </li>
 </ul>
