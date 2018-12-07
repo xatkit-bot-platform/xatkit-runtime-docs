@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -145,8 +145,12 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefini
  <ul>
    <li><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getName--"><code><em>Name</em></code></a></li>
    <li><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getRuntimePath--"><code><em>Runtime Path</em></code></a></li>
+   <li><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#isAbstract--"><code><em>Abstract</em></code></a></li>
+   <li><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getExtends--"><code><em>Extends</em></code></a></li>
+   <li><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getExtendedBy--"><code><em>Extended By</em></code></a></li>
    <li><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getEventProviderDefinitions--"><code><em>Event Provider Definitions</em></code></a></li>
    <li><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getActions--"><code><em>Actions</em></code></a></li>
+   <li><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getImports--"><code><em>Imports</em></code></a></li>
  </ul></div>
 <dl>
 <dt><span class="simpleTagLabel">Generated</span></dt>
@@ -213,6 +217,18 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefini
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#abstract_">abstract_</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#isAbstract--"><code><em>Abstract</em></code></a>' attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#ABSTRACT_EDEFAULT">ABSTRACT_EDEFAULT</a></span></code>
+<div class="block">The default value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#isAbstract--"><code><em>Abstract</em></code></a>' attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/platform/ActionDefinition.html" title="interface in edu.uoc.som.jarvis.platform">ActionDefinition</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#actions">actions</a></span></code>
 <div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getActions--"><code><em>Actions</em></code></a>' containment reference list.</div>
@@ -225,24 +241,42 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefini
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#extendedBy">extendedBy</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getExtendedBy--"><code><em>Extended By</em></code></a>' reference list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#extends_">extends_</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getExtends--"><code><em>Extends</em></code></a>' reference.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/PlatformImportDeclaration.html" title="interface in edu.uoc.som.jarvis.intent">PlatformImportDeclaration</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#imports">imports</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getImports--"><code><em>Imports</em></code></a>' containment reference list.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#name">name</a></span></code>
 <div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#NAME_EDEFAULT">NAME_EDEFAULT</a></span></code>
 <div class="block">The default value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#RUNTIME_PATH_EDEFAULT">RUNTIME_PATH_EDEFAULT</a></span></code>
 <div class="block">The default value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getRuntimePath--"><code><em>Runtime Path</em></code></a>' attribute.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#runtimePath">runtimePath</a></span></code>
 <div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getRuntimePath--"><code><em>Runtime Path</em></code></a>' attribute.</div>
@@ -311,59 +345,87 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefini
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#basicGetExtends--">basicGetExtends</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#eGet-int-boolean-boolean-">eGet</a></span>(int&nbsp;featureID,
     boolean&nbsp;resolve,
     boolean&nbsp;coreType)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#eInverseRemove-org.eclipse.emf.ecore.InternalEObject-int-org.eclipse.emf.common.notify.NotificationChain-">eInverseRemove</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a>&nbsp;otherEnd,
               int&nbsp;featureID,
               <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a>&nbsp;msgs)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#eIsSet-int-">eIsSet</a></span>(int&nbsp;featureID)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#eSet-int-java.lang.Object-">eSet</a></span>(int&nbsp;featureID,
     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;newValue)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#eStaticClass--">eStaticClass</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#eUnset-int-">eUnset</a></span>(int&nbsp;featureID)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/platform/ActionDefinition.html" title="interface in edu.uoc.som.jarvis.platform">ActionDefinition</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getActions--">getActions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html" title="interface in edu.uoc.som.jarvis.platform">EventProviderDefinition</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getEventProviderDefinitions--">getEventProviderDefinitions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getExtendedBy--">getExtendedBy</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getExtends--">getExtends</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/PlatformImportDeclaration.html" title="interface in edu.uoc.som.jarvis.intent">PlatformImportDeclaration</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getImports--">getImports</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getRuntimePath--">getRuntimePath</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#isAbstract--">isAbstract</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#setAbstract-boolean-">setAbstract</a></span>(boolean&nbsp;newAbstract)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#setExtends-edu.uoc.som.jarvis.platform.PlatformDefinition-">setExtends</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a>&nbsp;newExtends)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#setName-java.lang.String-">setName</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newName)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#setRuntimePath-java.lang.String-">setRuntimePath</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newRuntimePath)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -506,6 +568,75 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefini
 </dl>
 </li>
 </ul>
+<a name="ABSTRACT_EDEFAULT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ABSTRACT_EDEFAULT</h4>
+<pre>protected static final&nbsp;boolean ABSTRACT_EDEFAULT</pre>
+<div class="block">The default value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#isAbstract--"><code><em>Abstract</em></code></a>' attribute.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#isAbstract--"><code>isAbstract()</code></a>, 
+<a href="../../../../../../constant-values.html#edu.uoc.som.jarvis.platform.impl.PlatformDefinitionImpl.ABSTRACT_EDEFAULT">Constant Field Values</a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="abstract_">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>abstract_</h4>
+<pre>protected&nbsp;boolean abstract_</pre>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#isAbstract--"><code><em>Abstract</em></code></a>' attribute.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#isAbstract--"><code>isAbstract()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="extends_">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>extends_</h4>
+<pre>protected&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a> extends_</pre>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getExtends--"><code><em>Extends</em></code></a>' reference.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getExtends--"><code>getExtends()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="extendedBy">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>extendedBy</h4>
+<pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a>&gt; extendedBy</pre>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getExtendedBy--"><code><em>Extended By</em></code></a>' reference list.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getExtendedBy--"><code>getExtendedBy()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
 <a name="eventProviderDefinitions">
 <!--   -->
 </a>
@@ -526,7 +657,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefini
 <a name="actions">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>actions</h4>
 <pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/platform/ActionDefinition.html" title="interface in edu.uoc.som.jarvis.platform">ActionDefinition</a>&gt; actions</pre>
@@ -536,6 +667,23 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefini
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getActions--"><code>getActions()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="imports">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>imports</h4>
+<pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/PlatformImportDeclaration.html" title="interface in edu.uoc.som.jarvis.intent">PlatformImportDeclaration</a>&gt; imports</pre>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getImports--"><code><em>Imports</em></code></a>' containment reference list.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getImports--"><code>getImports()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -668,6 +816,122 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefini
 </dl>
 </li>
 </ul>
+<a name="isAbstract--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAbstract</h4>
+<pre>public&nbsp;boolean&nbsp;isAbstract()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#isAbstract--">isAbstract</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Abstract</em>' attribute.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#setAbstract-boolean-"><code>PlatformDefinition.setAbstract(boolean)</code></a>, 
+<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_Abstract--"><code>PlatformPackage.getPlatformDefinition_Abstract()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="setAbstract-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAbstract</h4>
+<pre>public&nbsp;void&nbsp;setAbstract(boolean&nbsp;newAbstract)</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#setAbstract-boolean-">setAbstract</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newAbstract</code> - the new value of the '<em>Abstract</em>' attribute.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#isAbstract--"><code>PlatformDefinition.isAbstract()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getExtends--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExtends</h4>
+<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a>&nbsp;getExtends()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getExtends--">getExtends</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Extends</em>' reference.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#setExtends-edu.uoc.som.jarvis.platform.PlatformDefinition-"><code>PlatformDefinition.setExtends(PlatformDefinition)</code></a>, 
+<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_Extends--"><code>PlatformPackage.getPlatformDefinition_Extends()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="basicGetExtends--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>basicGetExtends</h4>
+<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a>&nbsp;basicGetExtends()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="setExtends-edu.uoc.som.jarvis.platform.PlatformDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setExtends</h4>
+<pre>public&nbsp;void&nbsp;setExtends(<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a>&nbsp;newExtends)</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#setExtends-edu.uoc.som.jarvis.platform.PlatformDefinition-">setExtends</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newExtends</code> - the new value of the '<em>Extends</em>' reference.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getExtends--"><code>PlatformDefinition.getExtends()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getExtendedBy--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExtendedBy</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a>&gt;&nbsp;getExtendedBy()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getExtendedBy--">getExtendedBy</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Extended By</em>' reference list.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_ExtendedBy--"><code>PlatformPackage.getPlatformDefinition_ExtendedBy()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
 <a name="getEventProviderDefinitions--">
 <!--   -->
 </a>
@@ -704,6 +968,26 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefini
 <dd>the value of the '<em>Actions</em>' containment reference list.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_Actions--"><code>PlatformPackage.getPlatformDefinition_Actions()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getImports--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getImports</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/PlatformImportDeclaration.html" title="interface in edu.uoc.som.jarvis.intent">PlatformImportDeclaration</a>&gt;&nbsp;getImports()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getImports--">getImports</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Imports</em>' containment reference list.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_Imports--"><code>PlatformPackage.getPlatformDefinition_Imports()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
