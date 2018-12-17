@@ -137,18 +137,6 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.generic_chat.platform">edu.uoc.som.jarvis.plugins.generic_chat.platform</a></td>
-<td class="colLast">
-<div class="block">Contains the platform implementation of the Jarvis Generic Chat plugin.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.generic_chat.platform.action">edu.uoc.som.jarvis.plugins.generic_chat.platform.action</a></td>
-<td class="colLast">
-<div class="block">Contains the actions implementations available in the Jarvis Generic Chat platform.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.github.platform.action">edu.uoc.som.jarvis.plugins.github.platform.action</a></td>
 <td class="colLast">
 <div class="block">Contains the action implementations available in the Jarvis Github platform.</div>
@@ -500,50 +488,6 @@
      <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session,
      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Constructs a new <a href="../../../../../../../edu/uoc/som/jarvis/plugins/discord/platform/action/Reply.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.action"><code>Reply</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>message</code>.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="edu.uoc.som.jarvis.plugins.generic_chat.platform">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a> in <a href="../../../../../../../edu/uoc/som/jarvis/plugins/generic_chat/platform/package-summary.html">edu.uoc.som.jarvis.plugins.generic_chat.platform</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../../edu/uoc/som/jarvis/plugins/generic_chat/platform/package-summary.html">edu.uoc.som.jarvis.plugins.generic_chat.platform</a> with parameters of type <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GenericChatPlatform.</span><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/plugins/generic_chat/platform/GenericChatPlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">createRuntimeAction</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
-                   <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
-<div class="block">Creates a <a href="../../../../../../../edu/uoc/som/jarvis/plugins/generic_chat/platform/action/GenericChatAction.html" title="class in edu.uoc.som.jarvis.plugins.generic_chat.platform.action"><code>GenericChatAction</code></a> wrapping the concrete sub-platform <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a>s
- corresponding to
- the provided <a href="../../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution"><code>ActionInstance</code></a>.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="edu.uoc.som.jarvis.plugins.generic_chat.platform.action">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a> in <a href="../../../../../../../edu/uoc/som/jarvis/plugins/generic_chat/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.generic_chat.platform.action</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructors in <a href="../../../../../../../edu/uoc/som/jarvis/plugins/generic_chat/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.generic_chat.platform.action</a> with parameters of type <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/plugins/generic_chat/platform/action/GenericChatAction.html#GenericChatAction-edu.uoc.som.jarvis.plugins.generic_chat.platform.GenericChatPlatform-edu.uoc.som.jarvis.core.session.JarvisSession-java.util.List-">GenericChatAction</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/plugins/generic_chat/platform/GenericChatPlatform.html" title="class in edu.uoc.som.jarvis.plugins.generic_chat.platform">GenericChatPlatform</a>&nbsp;runtimePlatform,
-                 <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session,
-                 <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeAction</a>&gt;&nbsp;concreteActions)</code>
-<div class="block">Constructs a new <a href="../../../../../../../edu/uoc/som/jarvis/plugins/generic_chat/platform/action/GenericChatAction.html" title="class in edu.uoc.som.jarvis.plugins.generic_chat.platform.action"><code>GenericChatAction</code></a> from the provided <code>runtimePlatform</code>, <code>session</code>, and
- <code>concreteActions</code>.</div>
 </td>
 </tr>
 </tbody>
