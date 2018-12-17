@@ -69,7 +69,7 @@
 <!--   -->
 </a></div>
 <!-- ========= END OF TOP NAVBAR ========= -->
-<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a name="I:A">
+<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a href="#I:Z">Z</a>&nbsp;<a name="I:A">
 <!--   -->
 </a>
 <h2 class="title">A</h2>
@@ -210,13 +210,25 @@
 <dd>
 <div class="block">The cached value of the '<a href="edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getActions--"><code><em>Actions</em></code></a>' containment reference list.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html#addEntityMapping-java.lang.String-java.lang.String-">addEntityMapping(String, String)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></dt>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html#addEntityMapping-edu.uoc.som.jarvis.intent.EntityType-java.lang.String-">addEntityMapping(EntityType, String)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></dt>
 <dd>
-<div class="block">Adds a new mapping between the provided <code>abstractEntity</code> and the given <code>concreteEntity</code>.</div>
+<div class="block">Adds a new mapping between the provided <code>abstractEntityType</code> and the given <code>concreteEntity</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.html#addMatchableEvent-edu.uoc.som.jarvis.core.platform.io.JsonEventMatcher.HeaderValue-edu.uoc.som.jarvis.core.platform.io.JsonEventMatcher.FieldValue-java.lang.String-">addMatchableEvent(JsonEventMatcher.HeaderValue, JsonEventMatcher.FieldValue, String)</a></span> - Method in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonEventMatcher</a></dt>
 <dd>
 <div class="block">Registers a new <a href="edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent"><code>EventInstance</code></a> to match from the provided <code>headerValue</code> and <code>fieldValue</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#ADDRESS_VALUE">ADDRESS_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>ADDRESS</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#AGE_VALUE">AGE_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>AGE</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#AIRPORT_VALUE">AIRPORT_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>AIRPORT</b></em>' literal value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/ImportDeclarationImpl.html#alias">alias</a></span> - Variable in class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/ImportDeclarationImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">ImportDeclarationImpl</a></dt>
 <dd>
@@ -317,6 +329,14 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RuntimeMessageAction.html#call--">call()</a></span> - Method in class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RuntimeMessageAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeMessageAction</a></dt>
 <dd>
 <div class="block">Runs the <a href="edu/uoc/som/jarvis/core/platform/action/RuntimeMessageAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeMessageAction</code></a> and returns its result wrapped in a <a href="edu/uoc/som/jarvis/core/platform/action/RuntimeActionResult.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeActionResult</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#CAPITAL_VALUE">CAPITAL_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>CAPITAL</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#CARDINAL_VALUE">CARDINAL_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>CARDINAL</b></em>' literal value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/platform/util/PlatformSwitch.html#caseActionDefinition-edu.uoc.som.jarvis.platform.ActionDefinition-">caseActionDefinition(ActionDefinition)</a></span> - Method in class edu.uoc.som.jarvis.platform.util.<a href="edu/uoc/som/jarvis/platform/util/PlatformSwitch.html" title="class in edu.uoc.som.jarvis.platform.util">PlatformSwitch</a></dt>
 <dd>
@@ -450,6 +470,14 @@
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/slack/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.io"><code>ChatProvider</code></a> from the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#CITY_GB_VALUE">CITY_GB_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>CITY GB</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#CITY_US_VALUE">CITY_US_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>CITY US</b></em>' literal value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#CITY_VALUE">CITY_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
 <dd>
 <div class="block">The '<em><b>CITY</b></em>' literal value.</div>
@@ -485,6 +513,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/platform/io/SlackIntentProvider.html#close--">close()</a></span> - Method in class edu.uoc.som.jarvis.plugins.slack.platform.io.<a href="edu/uoc/som/jarvis/plugins/slack/platform/io/SlackIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.io">SlackIntentProvider</a></dt>
 <dd>
 <div class="block">Disconnects the underlying Slack RTM client.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#COLOR_VALUE">COLOR_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>COLOR</b></em>' literal value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeAction</a></dt>
 <dd>
@@ -807,6 +839,22 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/core/platform/CorePlatform.html#CorePlatform-edu.uoc.som.jarvis.core.JarvisCore-">CorePlatform(JarvisCore)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.core.platform.<a href="edu/uoc/som/jarvis/plugins/core/platform/CorePlatform.html" title="class in edu.uoc.som.jarvis.plugins.core.platform">CorePlatform</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/core/platform/CorePlatform.html" title="class in edu.uoc.som.jarvis.plugins.core.platform"><code>CorePlatform</code></a> from the provided <a href="edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core"><code>JarvisCore</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#COUNTRY_CODE_VALUE">COUNTRY_CODE_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>COUNTRY CODE</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#COUNTRY_VALUE">COUNTRY_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>COUNTRY</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#COUNTY_GB_VALUE">COUNTY_GB_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>COUNTY GB</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#COUNTY_US_VALUE">COUNTY_US_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>COUNTY US</b></em>' literal value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/execution/impl/ExecutionFactoryImpl.html#create-org.eclipse.emf.ecore.EClass-">create(EClass)</a></span> - Method in class edu.uoc.som.jarvis.execution.impl.<a href="edu/uoc/som/jarvis/execution/impl/ExecutionFactoryImpl.html" title="class in edu.uoc.som.jarvis.execution.impl">ExecutionFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1182,6 +1230,18 @@
 </a>
 <h2 class="title">D</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#DATE_PERIOD_VALUE">DATE_PERIOD_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>DATE PERIOD</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#DATE_TIME_VALUE">DATE_TIME_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>DATE TIME</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#DATE_VALUE">DATE_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>DATE</b></em>' literal value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html#decrementLifespanCounts--">decrementLifespanCounts()</a></span> - Method in class edu.uoc.som.jarvis.core.session.<a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session">RuntimeContexts</a></dt>
 <dd>
 <div class="block">Decrements the lifespanCount of all the stored contexts, and remove them if there lifespanCount decreases to 0.</div>
@@ -1346,6 +1406,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/platform/util/PlatformSwitch.html#doSwitch-int-org.eclipse.emf.ecore.EObject-">doSwitch(int, EObject)</a></span> - Method in class edu.uoc.som.jarvis.platform.util.<a href="edu/uoc/som/jarvis/platform/util/PlatformSwitch.html" title="class in edu.uoc.som.jarvis.platform.util">PlatformSwitch</a></dt>
 <dd>
 <div class="block">Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#DURATION_VALUE">DURATION_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>DURATION</b></em>' literal value.</div>
 </dd>
 </dl>
 <a name="I:E">
@@ -1677,6 +1741,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class edu.uoc.som.jarvis.platform.impl.<a href="edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html" title="class in edu.uoc.som.jarvis.platform.impl">PlatformDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#EMAIL_VALUE">EMAIL_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>EMAIL</b></em>' literal value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.FieldValue.html#EMPTY_FIELD_VALUE">EMPTY_FIELD_VALUE</a></span> - Static variable in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.FieldValue.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonEventMatcher.FieldValue</a></dt>
 <dd>
 <div class="block">A static <a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.FieldValue.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>JsonEventMatcher.FieldValue</code></a> used to match requests without inspecting its Json fields.</div>
@@ -2365,6 +2433,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#finalize--">finalize()</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">Closes the DialogFlow session if it is not shutdown yet.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#FLIGHT_NUMBER_VALUE">FLIGHT_NUMBER_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>FLIGHT NUMBER</b></em>' literal value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/IntentDefinitionImpl.html#followedBy">followedBy</a></span> - Variable in class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>
@@ -3158,9 +3230,9 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#getLiteral--">getLiteral()</a></span> - Method in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-java.lang.String-">getMappingFor(String)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></dt>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-edu.uoc.som.jarvis.intent.EntityType-">getMappingFor(EntityType)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></dt>
 <dd>
-<div class="block">Returns the <code>concreteEntity</code> mapped to the provided <code>abstractEntity</code>.</div>
+<div class="block">Returns the <code>concreteEntity</code> mapped to the provided <code>abstractEntityType</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-edu.uoc.som.jarvis.intent.EntityDefinition-">getMappingFor(EntityDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></dt>
 <dd>
@@ -3623,6 +3695,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/github/platform/io/GithubWebhookEventProvider.html#GithubWebhookEventProvider-edu.uoc.som.jarvis.plugins.github.platform.GithubPlatform-org.apache.commons.configuration2.Configuration-">GithubWebhookEventProvider(GithubPlatform, Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.github.platform.io.<a href="edu/uoc/som/jarvis/plugins/github/platform/io/GithubWebhookEventProvider.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.io">GithubWebhookEventProvider</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#GIVEN_NAME_VALUE">GIVEN_NAME_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>GIVEN NAME</b></em>' literal value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#GOOGLE_CREDENTIALS_PATH_KEY">GOOGLE_CREDENTIALS_PATH_KEY</a></span> - Static variable in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the path of the <code>JSON</code> credential file for DialogFlow.</div>
@@ -3806,6 +3882,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/platform/impl/InputProviderDefinitionImpl.html#InputProviderDefinitionImpl--">InputProviderDefinitionImpl()</a></span> - Constructor for class edu.uoc.som.jarvis.platform.impl.<a href="edu/uoc/som/jarvis/platform/impl/InputProviderDefinitionImpl.html" title="class in edu.uoc.som.jarvis.platform.impl">InputProviderDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#INTEGER_VALUE">INTEGER_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>INTEGER</b></em>' literal value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/IntentPackage.html#INTENT_DEFINITION">INTENT_DEFINITION</a></span> - Static variable in interface edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/IntentPackage.html" title="interface in edu.uoc.som.jarvis.intent">IntentPackage</a></dt>
 <dd>
 <div class="block">The meta object id for the '<a href="edu/uoc/som/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in edu.uoc.som.jarvis.intent.impl"><code><em>Definition</em></code></a>' class.</div>
@@ -4156,6 +4236,14 @@
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the code of the language processed by DialogFlow.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#LANGUAGE_VALUE">LANGUAGE_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>LANGUAGE</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#LAST_NAME_VALUE">LAST_NAME_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>LAST NAME</b></em>' literal value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/IntentPackage.html#LIBRARY">LIBRARY</a></span> - Static variable in interface edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/IntentPackage.html" title="interface in edu.uoc.som.jarvis.intent">IntentPackage</a></dt>
 <dd>
 <div class="block">The meta object id for the '<a href="edu/uoc/som/jarvis/intent/impl/LibraryImpl.html" title="class in edu.uoc.som.jarvis.intent.impl"><code><em>Library</em></code></a>' class.</div>
@@ -4288,6 +4376,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/util/Loader.html#Loader--">Loader()</a></span> - Constructor for class edu.uoc.som.jarvis.util.<a href="edu/uoc/som/jarvis/util/Loader.html" title="class in edu.uoc.som.jarvis.util">Loader</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#LOCATION_VALUE">LOCATION_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>LOCATION</b></em>' literal value.</div>
+</dd>
 <dt><a href="edu/uoc/som/jarvis/plugins/log/platform/action/LogAction.html" title="class in edu.uoc.som.jarvis.plugins.log.platform.action"><span class="typeNameLink">LogAction</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/log/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.log.platform.action</a></dt>
 <dd>
 <div class="block">An abstract class representing logging actions.</div>
@@ -4414,6 +4506,14 @@
 <dd>
 <div class="block">The switch that delegates to the <code>createXXX</code> methods.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#MUSIC_ARTIST_VALUE">MUSIC_ARTIST_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>MUSIC ARTIST</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#MUSIC_GENRE_VALUE">MUSIC_GENRE_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>MUSIC GENRE</b></em>' literal value.</div>
+</dd>
 </dl>
 <a name="I:N">
 <!--   -->
@@ -4492,6 +4592,14 @@
 <dd>
 <div class="block">Notifies the registered <a href="edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#NUMBER_SEQUENCE_VALUE">NUMBER_SEQUENCE_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>NUMBER SEQUENCE</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#NUMBER_VALUE">NUMBER_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>NUMBER</b></em>' literal value.</div>
+</dd>
 </dl>
 <a name="I:O">
 <!--   -->
@@ -4523,6 +4631,10 @@
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/github/platform/action/OpenIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action"><code>OpenIssue</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>user</code>,
  <code>repository</code>, <code>issueTitle</code>, and <code>issueContent</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#ORDINAL_VALUE">ORDINAL_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>ORDINAL</b></em>' literal value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/EventInstanceImpl.html#outContextInstances">outContextInstances</a></span> - Variable in class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/EventInstanceImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">EventInstanceImpl</a></dt>
 <dd>
@@ -4641,6 +4753,26 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/ImportDeclarationImpl.html#PATH_EDEFAULT">PATH_EDEFAULT</a></span> - Static variable in class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/ImportDeclarationImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">ImportDeclarationImpl</a></dt>
 <dd>
 <div class="block">The default value of the '<a href="edu/uoc/som/jarvis/intent/impl/ImportDeclarationImpl.html#getPath--"><code><em>Path</em></code></a>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#PERCENTAGE_VALUE">PERCENTAGE_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>PERCENTAGE</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#PHONE_NUMBER_VALUE">PHONE_NUMBER_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>PHONE NUMBER</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#PLACE_ATTRACTION_GB_VALUE">PLACE_ATTRACTION_GB_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>PLACE ATTRACTION GB</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#PLACE_ATTRACTION_US_VALUE">PLACE_ATTRACTION_US_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>PLACE ATTRACTION US</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#PLACE_ATTRACTION_VALUE">PLACE_ATTRACTION_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>PLACE ATTRACTION</b></em>' literal value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/platform/PlatformPackage.Literals.html#PLATFORM_DEFINITION">PLATFORM_DEFINITION</a></span> - Static variable in interface edu.uoc.som.jarvis.platform.<a href="edu/uoc/som/jarvis/platform/PlatformPackage.Literals.html" title="interface in edu.uoc.som.jarvis.platform">PlatformPackage.Literals</a></dt>
 <dd>
@@ -5383,9 +5515,25 @@
 <dd>
 <div class="block">Starts the <a href="edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeEventProvider</code></a> corresponding to the provided <code>eventProviderDefinition</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#STATE_GB_VALUE">STATE_GB_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>STATE GB</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#STATE_US_VALUE">STATE_US_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>STATE US</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#STATE_VALUE">STATE_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>STATE</b></em>' literal value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#stop--">stop()</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
 <dd>
 <div class="block">Stops the underlying <code>HttpServer</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#STREET_ADDRESS_VALUE">STREET_ADDRESS_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>STREET ADDRESS</b></em>' literal value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/execution/ExecutionPackage.Literals.html#STRING_LITERAL">STRING_LITERAL</a></span> - Static variable in interface edu.uoc.som.jarvis.execution.<a href="edu/uoc/som/jarvis/execution/ExecutionPackage.Literals.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionPackage.Literals</a></dt>
 <dd>
@@ -5427,6 +5575,10 @@
 </a>
 <h2 class="title">T</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#TEMPERATURE_VALUE">TEMPERATURE_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>TEMPERATURE</b></em>' literal value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/ContextParameterImpl.html#TEXT_FRAGMENT_EDEFAULT">TEXT_FRAGMENT_EDEFAULT</a></span> - Static variable in class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/ContextParameterImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">ContextParameterImpl</a></dt>
 <dd>
 <div class="block">The default value of the '<a href="edu/uoc/som/jarvis/intent/impl/ContextParameterImpl.html#getTextFragment--"><code><em>Text Fragment</em></code></a>' attribute.</div>
@@ -5434,6 +5586,14 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/ContextParameterImpl.html#textFragment">textFragment</a></span> - Variable in class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/ContextParameterImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">ContextParameterImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="edu/uoc/som/jarvis/intent/impl/ContextParameterImpl.html#getTextFragment--"><code><em>Text Fragment</em></code></a>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#TIME_PERIOD_VALUE">TIME_PERIOD_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>TIME PERIOD</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#TIME_VALUE">TIME_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>TIME</b></em>' literal value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.FieldValue.html#toString--">toString()</a></span> - Method in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.FieldValue.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonEventMatcher.FieldValue</a></dt>
 <dd>
@@ -5499,6 +5659,34 @@
 </a>
 <h2 class="title">U</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#UNIT_AREA_VALUE">UNIT_AREA_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>UNIT AREA</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#UNIT_CURRENCY_VALUE">UNIT_CURRENCY_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>UNIT CURRENCY</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#UNIT_INFORMATION_VALUE">UNIT_INFORMATION_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>UNIT INFORMATION</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#UNIT_LENGTH_VALUE">UNIT_LENGTH_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>UNIT LENGTH</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#UNIT_SPEED_VALUE">UNIT_SPEED_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>UNIT SPEED</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#UNIT_VOLUME_VALUE">UNIT_VOLUME_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>UNIT VOLUME</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#UNIT_WEIGHT_VALUE">UNIT_WEIGHT_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>UNIT WEIGHT</b></em>' literal value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/EventDefinitionRegistry.html#unregisterEventDefinition-edu.uoc.som.jarvis.intent.EventDefinition-">unregisterEventDefinition(EventDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.<a href="edu/uoc/som/jarvis/core/EventDefinitionRegistry.html" title="class in edu.uoc.som.jarvis.core">EventDefinitionRegistry</a></dt>
 <dd>
 <div class="block">Unregisters the provided <code>eventDefinition</code>.</div>
@@ -5510,6 +5698,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#unregisterWebhookEventProvider-edu.uoc.som.jarvis.core.platform.io.WebhookEventProvider-">unregisterWebhookEventProvider(WebhookEventProvider)</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
 <dd>
 <div class="block">Unregistered a <a href="edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>WebhookEventProvider</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#URL_VALUE">URL_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>URL</b></em>' literal value.</div>
 </dd>
 </dl>
 <a name="I:V">
@@ -5651,7 +5843,17 @@ the order they are declared.</div>
  <code>configuration</code>.</div>
 </dd>
 </dl>
-<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;</div>
+<a name="I:Z">
+<!--   -->
+</a>
+<h2 class="title">Z</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#ZIP_CODE_VALUE">ZIP_CODE_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
+<dd>
+<div class="block">The '<em><b>ZIP CODE</b></em>' literal value.</div>
+</dd>
+</dl>
+<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:K">K</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:N">N</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a href="#I:Z">Z</a>&nbsp;</div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">
 <!--   -->

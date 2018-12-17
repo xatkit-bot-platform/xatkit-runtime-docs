@@ -83,12 +83,18 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#edu.uoc.som.jarvis.core.recognition">edu.uoc.som.jarvis.core.recognition</a></td>
+<td class="colLast">
+<div class="block">Contains the abstract classes to implement to provide custom intent recognition.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.intent">edu.uoc.som.jarvis.intent</a></td>
 <td class="colLast">
 <div class="block">Contains the interfaces to manipulate Intent models.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.intent.impl">edu.uoc.som.jarvis.intent.impl</a></td>
 <td class="colLast">
 <div class="block">Contains the implementation classes used to manipulate Intent models.</div>
@@ -99,6 +105,33 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="edu.uoc.som.jarvis.core.recognition">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a> in <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/package-summary.html">edu.uoc.som.jarvis.core.recognition</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/package-summary.html">edu.uoc.som.jarvis.core.recognition</a> with parameters of type <a href="../../../../../../edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">EntityMapper.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#addEntityMapping-edu.uoc.som.jarvis.intent.EntityType-java.lang.String-">addEntityMapping</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a>&nbsp;abstractEntityType,
+                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;concreteEntity)</code>
+<div class="block">Adds a new mapping between the provided <code>abstractEntityType</code> and the given <code>concreteEntity</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">EntityMapper.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-edu.uoc.som.jarvis.intent.EntityType-">getMappingFor</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a>&nbsp;abstractEntityType)</code>
+<div class="block">Returns the <code>concreteEntity</code> mapped to the provided <code>abstractEntityType</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="edu.uoc.som.jarvis.intent">
 <!--   -->
 </a>
