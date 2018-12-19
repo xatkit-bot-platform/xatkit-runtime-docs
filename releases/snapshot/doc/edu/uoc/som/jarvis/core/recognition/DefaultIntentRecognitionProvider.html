@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -176,36 +176,48 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/Intent
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#deleteIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">deleteIntentDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#deleteEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">deleteEntityDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</code>
 <div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#deleteIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">deleteIntentDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
+<div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent">RecognizedIntent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#getIntent-java.lang.String-edu.uoc.som.jarvis.core.session.JarvisSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
          <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
 <div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#isShutdown--">isShutdown</a></span>()</code>
 <div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">registerEntityDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</code>
+<div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#trainMLEngine--">trainMLEngine</a></span>()</code>
 <div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
@@ -255,6 +267,28 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/Intent
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerEntityDefinition</h4>
+<pre>public&nbsp;void&nbsp;registerEntityDefinition(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</pre>
+<div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.
+ <p>
+ Use valid <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition"><code>IntentRecognitionProvider</code></a>s to enable <a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a> registration.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">registerEntityDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityDefinition</code> - the <a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a> to register to the underlying intent recognition provider</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - when called</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">
 <!--   -->
 </a>
@@ -271,7 +305,29 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/Intent
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>intentDefinition</code> - the <a href="../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>IntentDefinition</code></a> to register to the underlying intent recognition provider</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProviderException.html" title="class in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProviderException</a></code> - when called</dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - when called</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="deleteEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>deleteEntityDefinition</h4>
+<pre>public&nbsp;void&nbsp;deleteEntityDefinition(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</pre>
+<div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.
+ <p>
+ Use valid <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition"><code>IntentRecognitionProvider</code></a>s to enable <a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a> deletion.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#deleteEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">deleteEntityDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityDefinition</code> - the <a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a> to delete from the underlying intent recognition provider</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - when called</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a></dd>
 </dl>
@@ -293,7 +349,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/Intent
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>intentDefinition</code> - the <a href="../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>IntentDefinition</code></a> to delete from the underlying intent recognition provider</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProviderException.html" title="class in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProviderException</a></code> - when called</dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - when called</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a></dd>
 </dl>
@@ -313,7 +369,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/Intent
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--">trainMLEngine</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProviderException.html" title="class in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProviderException</a></code> - when called</dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - when called</dd>
 </dl>
 </li>
 </ul>
@@ -388,7 +444,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/Intent
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this method throws an <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProviderException.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>IntentRecognitionProviderException</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProviderException.html" title="class in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProviderException</a></code> - when called</dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang">UnsupportedOperationException</a></code> - when called</dd>
 </dl>
 </li>
 </ul>

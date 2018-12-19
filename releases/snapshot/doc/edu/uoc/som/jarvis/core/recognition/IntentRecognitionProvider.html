@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -137,36 +137,48 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#deleteEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">deleteEntityDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</code>
+<div class="block">Deletes the provided <code>entityDefinition</code> from the underlying intent recognition provider.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#deleteIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">deleteIntentDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent">RecognizedIntent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#getIntent-java.lang.String-edu.uoc.som.jarvis.core.session.JarvisSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
          <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
 <div class="block">Returns the <a href="../../../../../../edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#isShutdown--">isShutdown</a></span>()</code>
 <div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">registerEntityDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</code>
+<div class="block">Registers the provided <code>entityDefinition</code> in the underlying intent recognition provider.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--">trainMLEngine</a></span>()</code>
 <div class="block">Trains the underlying intent recognition provider.</div>
@@ -187,6 +199,27 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerEntityDefinition</h4>
+<pre>void&nbsp;registerEntityDefinition(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</pre>
+<div class="block">Registers the provided <code>entityDefinition</code> in the underlying intent recognition provider.
+ <p>
+ <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
+ learning engine, so multiple entity registrations does not generate multiple training calls. Once all the
+ <a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a>s have been registered in the underlying intent recognition provider use
+ <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>trainMLEngine()</code></a> to train the ML engine.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityDefinition</code> - the <a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a> to delete from the underlying intent recognition provider</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>trainMLEngine()</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">
 <!--   -->
 </a>
@@ -203,6 +236,27 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>intentDefinition</code> - the <a href="../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>IntentDefinition</code></a> to register to the underlying intent recognition provider</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>trainMLEngine()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="deleteEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>deleteEntityDefinition</h4>
+<pre>void&nbsp;deleteEntityDefinition(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</pre>
+<div class="block">Deletes the provided <code>entityDefinition</code> from the underlying intent recognition provider.
+ <p>
+ <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
+ learning engine, so multiple entity deletion does not generate multiple training calls. Once all the
+ <a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a>s have been deleted from the underlying intent recognition provider use
+ <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>trainMLEngine()</code></a> to train the ML engine.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityDefinition</code> - the <a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a> to delete from the underlying intent recognition provider</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>trainMLEngine()</code></a></dd>
 </dl>

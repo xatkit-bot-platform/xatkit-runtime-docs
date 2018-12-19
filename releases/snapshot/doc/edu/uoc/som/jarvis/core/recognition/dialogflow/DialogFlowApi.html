@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -249,60 +249,72 @@ implements <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Int
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#deleteEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">deleteEntityDefinition</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</code>
+<div class="block">Deletes the provided <code>entityDefinition</code> from the underlying intent recognition provider.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#deleteIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">deleteIntentDefinition</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#finalize--">finalize</a></span>()</code>
 <div class="block">Closes the DialogFlow session if it is not shutdown yet.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent">RecognizedIntent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-edu.uoc.som.jarvis.core.session.JarvisSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
          <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
 <div class="block">Returns the <a href="../../../../../../../edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#getLanguageCode--">getLanguageCode</a></span>()</code>
 <div class="block">Returns the code of the language processed by DialogFlow.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#getProjectId--">getProjectId</a></span>()</code>
 <div class="block">Returns the DialogFlow project unique identifier.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#isShutdown--">isShutdown</a></span>()</code>
 <div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#mergeLocalSessionInDialogFlow-edu.uoc.som.jarvis.core.recognition.dialogflow.DialogFlowSession-">mergeLocalSessionInDialogFlow</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowSession.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowSession</a>&nbsp;dialogFlowSession)</code>
 <div class="block">Merges the local <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowSession.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowSession</code></a> in the remote DialogFlow API one.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">registerEntityDefinition</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</code>
+<div class="block">Registers the provided <code>entityDefinition</code> in the underlying intent recognition provider.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#trainMLEngine--">trainMLEngine</a></span>()</code>
 <div class="block">Trains the underlying intent recognition provider.</div>
@@ -515,6 +527,35 @@ implements <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Int
 </dl>
 </li>
 </ul>
+<a name="registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerEntityDefinition</h4>
+<pre>public&nbsp;void&nbsp;registerEntityDefinition(<a href="../../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</pre>
+<div class="block">Registers the provided <code>entityDefinition</code> in the underlying intent recognition provider.
+ <p>
+ <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
+ learning engine, so multiple entity registrations does not generate multiple training calls. Once all the
+ <a href="../../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a>s have been registered in the underlying intent recognition provider use
+ <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a> to train the ML engine.
+ <p>
+ This method reuses the information contained in the provided <a href="../../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a> to create a new
+ DialogFlow <code>EntityType</code> and add it to the current project.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">registerEntityDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityDefinition</code> - the <a href="../../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a> to register to the DialogFlow project</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowException.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowException</a></code> - if the <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a> is shutdown, or if the <code>EntityType</code> already
+                             exists in the DialogFlow project</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">
 <!--   -->
 </a>
@@ -535,7 +576,7 @@ implements <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Int
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>intentDefinition</code> - the <a href="../../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>IntentDefinition</code></a> to register to the underlying intent recognition provider</dd>
+<dd><code>intentDefinition</code> - the <a href="../../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>IntentDefinition</code></a> to register to the DialogFlow project</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowException.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowException</a></code> - if the <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a> is shutdown, or if the <code>Intent</code> already exists in
                              the DialogFlow project</dd>
@@ -642,6 +683,31 @@ implements <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Int
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>contexts</code> <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> is <code>null</code>, or if one of the
                               provided <a href="../../../../../../../edu/uoc/som/jarvis/intent/ContextParameter.html" title="interface in edu.uoc.som.jarvis.intent"><code>ContextParameter</code></a>'s name is <code>null</code></dd>
+</dl>
+</li>
+</ul>
+<a name="deleteEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>deleteEntityDefinition</h4>
+<pre>public&nbsp;void&nbsp;deleteEntityDefinition(<a href="../../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</pre>
+<div class="block">Deletes the provided <code>entityDefinition</code> from the underlying intent recognition provider.
+ <p>
+ <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
+ learning engine, so multiple entity deletion does not generate multiple training calls. Once all the
+ <a href="../../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a>s have been deleted from the underlying intent recognition provider use
+ <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a> to train the ML engine.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#deleteEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">deleteEntityDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityDefinition</code> - the <a href="../../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>EntityDefinition</code></a> to delete from the underlying intent recognition provider</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowException.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowException</a></code> - if the <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a> is shutdown</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a></dd>
 </dl>
 </li>
 </ul>

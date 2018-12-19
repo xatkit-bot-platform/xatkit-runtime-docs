@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -125,7 +125,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  that do not have a concrete mapping in the <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition"><code>IntentRecognitionProvider</code></a> platform.
  <p>
  The mapping for a given abstract entity can be retrieved by calling the <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-edu.uoc.som.jarvis.intent.EntityType-"><code>getMappingFor(EntityType)</code></a> with the
- <code>abstractEntity</code> name as parameter.</div>
+ <code>abstractEntity</code> type as parameter.
+ <p>
+ <b>Note:</b> this class does not support <a href="../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>CustomEntityDefinition</code></a> mapping (see
+ <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingForCustomEntity-edu.uoc.som.jarvis.intent.CustomEntityDefinition-"><code>getMappingForCustomEntity(CustomEntityDefinition)</code></a>). Since these entities are defined dynamically there is
+ no facilities to map them in a static way. Concrete <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>EntityMapper</code></a>s tailored to a given intent recognition
+ platform can override the method <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingForCustomEntity-edu.uoc.som.jarvis.intent.CustomEntityDefinition-"><code>getMappingForCustomEntity(CustomEntityDefinition)</code></a> to implement this
+ dynamic mapping.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition"><code>IntentRecognitionProvider</code></a></dd>
@@ -214,6 +220,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingForCustomEntity-edu.uoc.som.jarvis.intent.CustomEntityDefinition-">getMappingForCustomEntity</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinition</a>&nbsp;customEntityDefinition)</code>
+<div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representing the entity mapped from the provided <code>customEntityDefinition</code>.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#setFallbackEntityMapping-java.lang.String-">setFallbackEntityMapping</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;concreteEntity)</code>
 <div class="block">Sets the default mapping for <code>abstractEntities</code> that are not mapped to concrete implementations.</div>
@@ -375,7 +387,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <a name="getMappingFor-edu.uoc.som.jarvis.intent.EntityDefinition-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getMappingFor</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMappingFor(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;abstractEntity)</pre>
@@ -404,6 +416,30 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/JarvisException.html" title="class in edu.uoc.som.jarvis.core">JarvisException</a></code> - if the provided <code>abstractEntity</code> is not an instance of
                                   <a href="../../../../../../edu/uoc/som/jarvis/intent/BaseEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>BaseEntityDefinition</code></a> (see
                                   <href="https://github.com/gdaniel/jarvis/issues/145">#145</href="">)</dd>
+</dl>
+</li>
+</ul>
+<a name="getMappingForCustomEntity-edu.uoc.som.jarvis.intent.CustomEntityDefinition-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getMappingForCustomEntity</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMappingForCustomEntity(<a href="../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinition</a>&nbsp;customEntityDefinition)</pre>
+<div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representing the entity mapped from the provided <code>customEntityDefinition</code>.
+ <p>
+ <b>Note:</b> this class does not support <a href="../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>CustomEntityDefinition</code></a> mapping and this method throws a
+ <a href="../../../../../../edu/uoc/som/jarvis/core/JarvisException.html" title="class in edu.uoc.som.jarvis.core"><code>JarvisException</code></a>. Since these entities are defined dynamically there is no facilities to map them in a
+ static way. Concrete <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>EntityMapper</code></a>s tailored to a given intent recognition platform can override this
+ method to implement this dynamic mapping.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>customEntityDefinition</code> - the <a href="../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>CustomEntityDefinition</code></a> to retrieve the concrete entity
+                               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the mapped concrete entity <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/JarvisException.html" title="class in edu.uoc.som.jarvis.core">JarvisException</a></code> - when called</dd>
 </dl>
 </li>
 </ul>

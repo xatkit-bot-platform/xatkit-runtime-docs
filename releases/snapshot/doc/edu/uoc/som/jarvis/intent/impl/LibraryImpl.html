@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -144,6 +144,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/intent/Library.html" ti
  </p>
  <ul>
    <li><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getName--"><code><em>Name</em></code></a></li>
+   <li><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getCustomEntities--"><code><em>Custom Entities</em></code></a></li>
    <li><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getEventDefinitions--"><code><em>Event Definitions</em></code></a></li>
  </ul></div>
 <dl>
@@ -211,18 +212,24 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/intent/Library.html" ti
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinition</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#customEntities">customEntities</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getCustomEntities--"><code><em>Custom Entities</em></code></a>' containment reference list.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EventDefinition</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#eventDefinitions">eventDefinitions</a></span></code>
 <div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getEventDefinitions--"><code><em>Event Definitions</em></code></a>' containment reference list.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#name">name</a></span></code>
 <div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#NAME_EDEFAULT">NAME_EDEFAULT</a></span></code>
 <div class="block">The default value of the '<a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
@@ -320,18 +327,22 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/intent/Library.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#eUnset-int-">eUnset</a></span>(int&nbsp;featureID)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinition</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getCustomEntities--">getCustomEntities</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EventDefinition</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getEventDefinitions--">getEventDefinitions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#setName-java.lang.String-">setName</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newName)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -440,6 +451,23 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/intent/Library.html" ti
 </dl>
 </li>
 </ul>
+<a name="customEntities">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>customEntities</h4>
+<pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinition</a>&gt; customEntities</pre>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getCustomEntities--"><code><em>Custom Entities</em></code></a>' containment reference list.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/LibraryImpl.html#getCustomEntities--"><code>getCustomEntities()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
 <a name="eventDefinitions">
 <!--   -->
 </a>
@@ -540,6 +568,26 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/intent/Library.html" ti
 <dd><code>newName</code> - the new value of the '<em>Name</em>' attribute.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../edu/uoc/som/jarvis/intent/Library.html#getName--"><code>Library.getName()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getCustomEntities--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCustomEntities</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinition</a>&gt;&nbsp;getCustomEntities()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/intent/Library.html#getCustomEntities--">getCustomEntities</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/intent/Library.html" title="interface in edu.uoc.som.jarvis.intent">Library</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Custom Entities</em>' containment reference list.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentPackage.html#getLibrary_CustomEntities--"><code>IntentPackage.getLibrary_CustomEntities()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

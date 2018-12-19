@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -157,60 +157,74 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html" title="interface in edu.uoc.som.jarvis.platform">EventProviderDefinition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getEventProviderDefinition-java.lang.String-">getEventProviderDefinition</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;eventProviderName)</code>
+<div class="block">op ActionDefinition[] getAllActions() {
+                var list = newBasicEList()
+                list.addAll(actions)
+                if(^extends !== null) {
+                        list.addAll(^extends.actions)
+                }
+                return list
+        }
+ <!-- end-model-doc --></div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html" title="interface in edu.uoc.som.jarvis.platform">EventProviderDefinition</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getEventProviderDefinitions--">getEventProviderDefinitions</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Event Provider Definitions</b></em>' containment reference list.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getExtends--">getExtends</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Extends</b></em>' reference.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../edu/uoc/som/jarvis/intent/PlatformImportDeclaration.html" title="interface in edu.uoc.som.jarvis.intent">PlatformImportDeclaration</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getImports--">getImports</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Imports</b></em>' containment reference list.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Name</b></em>' attribute.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getRuntimePath--">getRuntimePath</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Runtime Path</b></em>' attribute.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#isAbstract--">isAbstract</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Abstract</b></em>' attribute.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#setAbstract-boolean-">setAbstract</a></span>(boolean&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#isAbstract--"><code><em>Abstract</em></code></a>' attribute.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#setExtends-edu.uoc.som.jarvis.platform.PlatformDefinition-">setExtends</a></span>(<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getExtends--"><code><em>Extends</em></code></a>' reference.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#setName-java.lang.String-">setName</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#setRuntimePath-java.lang.String-">setRuntimePath</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getRuntimePath--"><code><em>Runtime Path</em></code></a>' attribute.</div>
@@ -468,7 +482,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <a name="getImports--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getImports</h4>
 <pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../edu/uoc/som/jarvis/intent/PlatformImportDeclaration.html" title="interface in edu.uoc.som.jarvis.intent">PlatformImportDeclaration</a>&gt;&nbsp;getImports()</pre>
@@ -485,6 +499,30 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dd>the value of the '<em>Imports</em>' containment reference list.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_Imports--"><code>PlatformPackage.getPlatformDefinition_Imports()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getEventProviderDefinition-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getEventProviderDefinition</h4>
+<pre><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html" title="interface in edu.uoc.som.jarvis.platform">EventProviderDefinition</a>&nbsp;getEventProviderDefinition(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;eventProviderName)</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc -->
+ <!-- begin-model-doc -->
+ op ActionDefinition[] getAllActions() {
+                var list = newBasicEList()
+                list.addAll(actions)
+                if(^extends !== null) {
+                        list.addAll(^extends.actions)
+                }
+                return list
+        }
+ <!-- end-model-doc --></div>
+<dl>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
