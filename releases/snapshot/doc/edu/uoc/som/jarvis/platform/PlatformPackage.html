@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -243,14 +243,26 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#EVENT_PROVIDER_DEFINITION__EVENT_DEFINITIONS">EVENT_PROVIDER_DEFINITION__EVENT_DEFINITIONS</a></span></code>
-<div class="block">The feature id for the '<em><b>Event Definitions</b></em>' containment reference list.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#EVENT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING">EVENT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING</a></span></code>
+<div class="block">The operation id for the '<em>Get Out Context</em>' operation.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#EVENT_PROVIDER_DEFINITION__EVENT_DEFINITIONS">EVENT_PROVIDER_DEFINITION__EVENT_DEFINITIONS</a></span></code>
+<div class="block">The feature id for the '<em><b>Event Definitions</b></em>' containment reference list.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#EVENT_PROVIDER_DEFINITION__NAME">EVENT_PROVIDER_DEFINITION__NAME</a></span></code>
 <div class="block">The feature id for the '<em><b>Name</b></em>' attribute.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#EVENT_PROVIDER_DEFINITION__OUT_CONTEXTS">EVENT_PROVIDER_DEFINITION__OUT_CONTEXTS</a></span></code>
+<div class="block">The feature id for the '<em><b>Out Contexts</b></em>' containment reference list.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -273,14 +285,26 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#INPUT_PROVIDER_DEFINITION__EVENT_DEFINITIONS">INPUT_PROVIDER_DEFINITION__EVENT_DEFINITIONS</a></span></code>
-<div class="block">The feature id for the '<em><b>Event Definitions</b></em>' containment reference list.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#INPUT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING">INPUT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING</a></span></code>
+<div class="block">The operation id for the '<em>Get Out Context</em>' operation.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#INPUT_PROVIDER_DEFINITION__EVENT_DEFINITIONS">INPUT_PROVIDER_DEFINITION__EVENT_DEFINITIONS</a></span></code>
+<div class="block">The feature id for the '<em><b>Event Definitions</b></em>' containment reference list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#INPUT_PROVIDER_DEFINITION__NAME">INPUT_PROVIDER_DEFINITION__NAME</a></span></code>
 <div class="block">The feature id for the '<em><b>Name</b></em>' attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#INPUT_PROVIDER_DEFINITION__OUT_CONTEXTS">INPUT_PROVIDER_DEFINITION__OUT_CONTEXTS</a></span></code>
+<div class="block">The feature id for the '<em><b>Out Contexts</b></em>' containment reference list.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -425,102 +449,114 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EOperation.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EOperation</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getEventProviderDefinition__GetOutContext__String--">getEventProviderDefinition__GetOutContext__String</a></span>()</code>
+<div class="block">Returns the meta object for the '<a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContext-java.lang.String-"><code><em>Get Out Context</em></code></a>' operation.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getEventProviderDefinition_EventDefinitions--">getEventProviderDefinition_EventDefinitions</a></span>()</code>
 <div class="block">Returns the meta object for the containment reference list '<a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getEventDefinitions--"><code><em>Event Definitions</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getEventProviderDefinition_Name--">getEventProviderDefinition_Name</a></span>()</code>
 <div class="block">Returns the meta object for the attribute '<a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getName--"><code><em>Name</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getEventProviderDefinition_OutContexts--">getEventProviderDefinition_OutContexts</a></span>()</code>
+<div class="block">Returns the meta object for the containment reference list '<a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContexts--"><code><em>Out Contexts</em></code></a>'.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getEventProviderDefinition--">getEventProviderDefinition</a></span>()</code>
 <div class="block">Returns the meta object for class '<a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html" title="interface in edu.uoc.som.jarvis.platform"><code><em>Event Provider Definition</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getInputProviderDefinition--">getInputProviderDefinition</a></span>()</code>
 <div class="block">Returns the meta object for class '<a href="../../../../../edu/uoc/som/jarvis/platform/InputProviderDefinition.html" title="interface in edu.uoc.som.jarvis.platform"><code><em>Input Provider Definition</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getParameter_Key--">getParameter_Key</a></span>()</code>
 <div class="block">Returns the meta object for the attribute '<a href="../../../../../edu/uoc/som/jarvis/platform/Parameter.html#getKey--"><code><em>Key</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getParameter--">getParameter</a></span>()</code>
 <div class="block">Returns the meta object for class '<a href="../../../../../edu/uoc/som/jarvis/platform/Parameter.html" title="interface in edu.uoc.som.jarvis.platform"><code><em>Parameter</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EOperation.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EOperation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition__GetActions__String--">getPlatformDefinition__GetActions__String</a></span>()</code>
 <div class="block">Returns the meta object for the '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getActions-java.lang.String-"><code><em>Get Actions</em></code></a>' operation.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EOperation.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EOperation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition__GetEventProviderDefinition__String--">getPlatformDefinition__GetEventProviderDefinition__String</a></span>()</code>
 <div class="block">Returns the meta object for the '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getEventProviderDefinition-java.lang.String-"><code><em>Get Event Provider Definition</em></code></a>' operation.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_Abstract--">getPlatformDefinition_Abstract</a></span>()</code>
 <div class="block">Returns the meta object for the attribute '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#isAbstract--"><code><em>Abstract</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_Actions--">getPlatformDefinition_Actions</a></span>()</code>
 <div class="block">Returns the meta object for the containment reference list '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getActions--"><code><em>Actions</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_EventProviderDefinitions--">getPlatformDefinition_EventProviderDefinitions</a></span>()</code>
 <div class="block">Returns the meta object for the containment reference list '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getEventProviderDefinitions--"><code><em>Event Provider Definitions</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_Extends--">getPlatformDefinition_Extends</a></span>()</code>
 <div class="block">Returns the meta object for the reference '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getExtends--"><code><em>Extends</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_Imports--">getPlatformDefinition_Imports</a></span>()</code>
 <div class="block">Returns the meta object for the containment reference list '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getImports--"><code><em>Imports</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_Name--">getPlatformDefinition_Name</a></span>()</code>
 <div class="block">Returns the meta object for the attribute '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getName--"><code><em>Name</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition_RuntimePath--">getPlatformDefinition_RuntimePath</a></span>()</code>
 <div class="block">Returns the meta object for the attribute '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html#getRuntimePath--"><code><em>Runtime Path</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformDefinition--">getPlatformDefinition</a></span>()</code>
 <div class="block">Returns the meta object for class '<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform"><code><em>Definition</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformFactory.html" title="interface in edu.uoc.som.jarvis.platform">PlatformFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getPlatformFactory--">getPlatformFactory</a></span>()</code>
 <div class="block">Returns the factory that creates the instances of the model.</div>
@@ -901,6 +937,23 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </dl>
 </li>
 </ul>
+<a name="EVENT_PROVIDER_DEFINITION__OUT_CONTEXTS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EVENT_PROVIDER_DEFINITION__OUT_CONTEXTS</h4>
+<pre>static final&nbsp;int EVENT_PROVIDER_DEFINITION__OUT_CONTEXTS</pre>
+<div class="block">The feature id for the '<em><b>Out Contexts</b></em>' containment reference list.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../constant-values.html#edu.uoc.som.jarvis.platform.PlatformPackage.EVENT_PROVIDER_DEFINITION__OUT_CONTEXTS">Constant Field Values</a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
 <a name="EVENT_PROVIDER_DEFINITION_FEATURE_COUNT">
 <!--   -->
 </a>
@@ -914,6 +967,23 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../constant-values.html#edu.uoc.som.jarvis.platform.PlatformPackage.EVENT_PROVIDER_DEFINITION_FEATURE_COUNT">Constant Field Values</a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="EVENT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EVENT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING</h4>
+<pre>static final&nbsp;int EVENT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING</pre>
+<div class="block">The operation id for the '<em>Get Out Context</em>' operation.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../constant-values.html#edu.uoc.som.jarvis.platform.PlatformPackage.EVENT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING">Constant Field Values</a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -988,6 +1058,23 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </dl>
 </li>
 </ul>
+<a name="INPUT_PROVIDER_DEFINITION__OUT_CONTEXTS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INPUT_PROVIDER_DEFINITION__OUT_CONTEXTS</h4>
+<pre>static final&nbsp;int INPUT_PROVIDER_DEFINITION__OUT_CONTEXTS</pre>
+<div class="block">The feature id for the '<em><b>Out Contexts</b></em>' containment reference list.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../constant-values.html#edu.uoc.som.jarvis.platform.PlatformPackage.INPUT_PROVIDER_DEFINITION__OUT_CONTEXTS">Constant Field Values</a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
 <a name="INPUT_PROVIDER_DEFINITION_FEATURE_COUNT">
 <!--   -->
 </a>
@@ -1001,6 +1088,23 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../constant-values.html#edu.uoc.som.jarvis.platform.PlatformPackage.INPUT_PROVIDER_DEFINITION_FEATURE_COUNT">Constant Field Values</a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="INPUT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>INPUT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING</h4>
+<pre>static final&nbsp;int INPUT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING</pre>
+<div class="block">The operation id for the '<em>Get Out Context</em>' operation.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../constant-values.html#edu.uoc.som.jarvis.platform.PlatformPackage.INPUT_PROVIDER_DEFINITION___GET_OUT_CONTEXT__STRING">Constant Field Values</a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -1439,6 +1543,45 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getEventDefinitions--"><code>EventProviderDefinition.getEventDefinitions()</code></a>, 
 <a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getEventProviderDefinition--"><code>getEventProviderDefinition()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getEventProviderDefinition_OutContexts--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEventProviderDefinition_OutContexts</h4>
+<pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EReference.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EReference</a>&nbsp;getEventProviderDefinition_OutContexts()</pre>
+<div class="block">Returns the meta object for the containment reference list '<a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContexts--"><code><em>Out Contexts</em></code></a>'.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the meta object for the containment reference list '<em>Out Contexts</em>'.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContexts--"><code>EventProviderDefinition.getOutContexts()</code></a>, 
+<a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getEventProviderDefinition--"><code>getEventProviderDefinition()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getEventProviderDefinition__GetOutContext__String--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEventProviderDefinition__GetOutContext__String</h4>
+<pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EOperation.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EOperation</a>&nbsp;getEventProviderDefinition__GetOutContext__String()</pre>
+<div class="block">Returns the meta object for the '<a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContext-java.lang.String-"><code><em>Get Out Context</em></code></a>' operation.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the meta object for the '<em>Get Out Context</em>' operation.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContext-java.lang.String-"><code>EventProviderDefinition.getOutContext(java.lang.String)</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

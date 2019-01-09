@@ -112,6 +112,18 @@
 <div class="block">Contains utility classes used to manipulate Intent models.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#edu.uoc.som.jarvis.platform">edu.uoc.som.jarvis.platform</a></td>
+<td class="colLast">
+<div class="block">Contains the interfaces to manipulate Platform models.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#edu.uoc.som.jarvis.platform.impl">edu.uoc.som.jarvis.platform.impl</a></td>
+<td class="colLast">
+<div class="block">Contains the implementation classes used to manipulate Platform models.</div>
+</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -358,6 +370,85 @@
 <td class="colLast"><span class="typeNameLabel">IntentSwitch.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/util/IntentSwitch.html#caseContext-edu.uoc.som.jarvis.intent.Context-">caseContext</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a>&nbsp;object)</code>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Context</em>'.</div>
 </td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="edu.uoc.som.jarvis.platform">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a> in <a href="../../../../../../edu/uoc/som/jarvis/platform/package-summary.html">edu.uoc.som.jarvis.platform</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/platform/package-summary.html">edu.uoc.som.jarvis.platform</a> that return <a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a></code></td>
+<td class="colLast"><span class="typeNameLabel">EventProviderDefinition.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContext-java.lang.String-">getOutContext</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextName)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/platform/package-summary.html">edu.uoc.som.jarvis.platform</a> that return types with arguments of type <a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">EventProviderDefinition.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContexts--">getOutContexts</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Out Contexts</b></em>' containment reference list.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="edu.uoc.som.jarvis.platform.impl">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a> in <a href="../../../../../../edu/uoc/som/jarvis/platform/impl/package-summary.html">edu.uoc.som.jarvis.platform.impl</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../../edu/uoc/som/jarvis/platform/impl/package-summary.html">edu.uoc.som.jarvis.platform.impl</a> with type parameters of type <a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">EventProviderDefinitionImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/EventProviderDefinitionImpl.html#outContexts">outContexts</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/platform/impl/EventProviderDefinitionImpl.html#getOutContexts--"><code><em>Out Contexts</em></code></a>' containment reference list.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/platform/impl/package-summary.html">edu.uoc.som.jarvis.platform.impl</a> that return <a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a></code></td>
+<td class="colLast"><span class="typeNameLabel">EventProviderDefinitionImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/EventProviderDefinitionImpl.html#getOutContext-java.lang.String-">getOutContext</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextName)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/platform/impl/package-summary.html">edu.uoc.som.jarvis.platform.impl</a> that return types with arguments of type <a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">EventProviderDefinitionImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/platform/impl/EventProviderDefinitionImpl.html#getOutContexts--">getOutContexts</a></span>()</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

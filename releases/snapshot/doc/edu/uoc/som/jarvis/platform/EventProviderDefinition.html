@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -125,6 +125,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
  <ul>
    <li><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getName--"><code><em>Name</em></code></a></li>
    <li><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getEventDefinitions--"><code><em>Event Definitions</em></code></a></li>
+   <li><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContexts--"><code><em>Out Contexts</em></code></a></li>
  </ul></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -162,6 +163,16 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContext-java.lang.String-">getOutContext</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextName)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getOutContexts--">getOutContexts</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Out Contexts</b></em>' containment reference list.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#setName-java.lang.String-">setName</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html#getName--"><code><em>Name</em></code></a>' attribute.</div>
@@ -242,7 +253,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <a name="getEventDefinitions--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getEventDefinitions</h4>
 <pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EventDefinition</a>&gt;&nbsp;getEventDefinitions()</pre>
@@ -259,6 +270,44 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dd>the value of the '<em>Event Definitions</em>' containment reference list.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getEventProviderDefinition_EventDefinitions--"><code>PlatformPackage.getEventProviderDefinition_EventDefinitions()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getOutContexts--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOutContexts</h4>
+<pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a>&gt;&nbsp;getOutContexts()</pre>
+<div class="block">Returns the value of the '<em><b>Out Contexts</b></em>' containment reference list.
+ The list contents are of type <a href="../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent"><code>Context</code></a>.
+ <!-- begin-user-doc -->
+ <p>
+ If the meaning of the '<em>Out Contexts</em>' containment reference list isn't clear,
+ there really should be more of a description here...
+ </p>
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Out Contexts</em>' containment reference list.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../edu/uoc/som/jarvis/platform/PlatformPackage.html#getEventProviderDefinition_OutContexts--"><code>PlatformPackage.getEventProviderDefinition_OutContexts()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getOutContext-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getOutContext</h4>
+<pre><a href="../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a>&nbsp;getOutContext(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contextName)</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
