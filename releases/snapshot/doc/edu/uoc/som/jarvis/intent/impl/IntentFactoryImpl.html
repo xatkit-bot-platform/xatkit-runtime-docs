@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":41,"i23":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":41,"i27":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -312,82 +312,98 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.ht
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createBaseEntityDefinitionReference--">createBaseEntityDefinitionReference</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/CompositeEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CompositeEntityDefinition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createCompositeEntityDefinition--">createCompositeEntityDefinition</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/CompositeEntityDefinitionEntry.html" title="interface in edu.uoc.som.jarvis.intent">CompositeEntityDefinitionEntry</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createCompositeEntityDefinitionEntry--">createCompositeEntityDefinitionEntry</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createContext--">createContext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/ContextInstance.html" title="interface in edu.uoc.som.jarvis.intent">ContextInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createContextInstance--">createContextInstance</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/ContextParameter.html" title="interface in edu.uoc.som.jarvis.intent">ContextParameter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createContextParameter--">createContextParameter</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/ContextParameterValue.html" title="interface in edu.uoc.som.jarvis.intent">ContextParameterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createContextParameterValue--">createContextParameterValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinitionReference.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinitionReference</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createCustomEntityDefinitionReference--">createCustomEntityDefinitionReference</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/EntityTextFragment.html" title="interface in edu.uoc.som.jarvis.intent">EntityTextFragment</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createEntityTextFragment--">createEntityTextFragment</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createEntityTypeFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-">createEntityTypeFromString</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EDataType.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EDataType</a>&nbsp;eDataType,
                           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;initialValue)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EventDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createEventDefinition--">createEventDefinition</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createEventInstance--">createEventInstance</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-">createFromString</a></span>(<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EDataType.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EDataType</a>&nbsp;eDataType,
                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;initialValue)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createIntentDefinition--">createIntentDefinition</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/Library.html" title="interface in edu.uoc.som.jarvis.intent">Library</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createLibrary--">createLibrary</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/LibraryImportDeclaration.html" title="interface in edu.uoc.som.jarvis.intent">LibraryImportDeclaration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createLibraryImportDeclaration--">createLibraryImportDeclaration</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/LiteralTextFragment.html" title="interface in edu.uoc.som.jarvis.intent">LiteralTextFragment</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createLiteralTextFragment--">createLiteralTextFragment</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/MappingEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">MappingEntityDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createMappingEntityDefinition--">createMappingEntityDefinition</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/MappingEntityDefinitionEntry.html" title="interface in edu.uoc.som.jarvis.intent">MappingEntityDefinitionEntry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createMappingEntityDefinitionEntry--">createMappingEntityDefinitionEntry</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/PlatformImportDeclaration.html" title="interface in edu.uoc.som.jarvis.intent">PlatformImportDeclaration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createPlatformImportDeclaration--">createPlatformImportDeclaration</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent">RecognizedIntent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#createRecognizedIntent--">createRecognizedIntent</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentPackage.html" title="interface in edu.uoc.som.jarvis.intent">IntentPackage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#getIntentPackage--">getIntentPackage</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../edu/uoc/som/jarvis/intent/IntentPackage.html" title="interface in edu.uoc.som.jarvis.intent">IntentPackage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#getPackage--">getPackage</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;&nbsp;</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html" title="interface in edu.uoc.som.jarvis.intent">IntentFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/impl/IntentFactoryImpl.html#init--">init</a></span>()</code>
 <div class="block">Creates the default factory implementation.</div>
@@ -887,6 +903,78 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.ht
 <dd><code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html#createMappingEntityDefinitionEntry--">createMappingEntityDefinitionEntry</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html" title="interface in edu.uoc.som.jarvis.intent">IntentFactory</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new object of class '<em>Mapping Entity Definition Entry</em>'.</dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="createCompositeEntityDefinition--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createCompositeEntityDefinition</h4>
+<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/intent/CompositeEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CompositeEntityDefinition</a>&nbsp;createCompositeEntityDefinition()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html#createCompositeEntityDefinition--">createCompositeEntityDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html" title="interface in edu.uoc.som.jarvis.intent">IntentFactory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new object of class '<em>Composite Entity Definition</em>'.</dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="createCompositeEntityDefinitionEntry--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createCompositeEntityDefinitionEntry</h4>
+<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/intent/CompositeEntityDefinitionEntry.html" title="interface in edu.uoc.som.jarvis.intent">CompositeEntityDefinitionEntry</a>&nbsp;createCompositeEntityDefinitionEntry()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html#createCompositeEntityDefinitionEntry--">createCompositeEntityDefinitionEntry</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html" title="interface in edu.uoc.som.jarvis.intent">IntentFactory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new object of class '<em>Composite Entity Definition Entry</em>'.</dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="createEntityTextFragment--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createEntityTextFragment</h4>
+<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityTextFragment.html" title="interface in edu.uoc.som.jarvis.intent">EntityTextFragment</a>&nbsp;createEntityTextFragment()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html#createEntityTextFragment--">createEntityTextFragment</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html" title="interface in edu.uoc.som.jarvis.intent">IntentFactory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new object of class '<em>Entity Text Fragment</em>'.</dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="createLiteralTextFragment--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createLiteralTextFragment</h4>
+<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/intent/LiteralTextFragment.html" title="interface in edu.uoc.som.jarvis.intent">LiteralTextFragment</a>&nbsp;createLiteralTextFragment()</pre>
+<div class="block"><!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html#createLiteralTextFragment--">createLiteralTextFragment</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html" title="interface in edu.uoc.som.jarvis.intent">IntentFactory</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new object of class '<em>Literal Text Fragment</em>'.</dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
