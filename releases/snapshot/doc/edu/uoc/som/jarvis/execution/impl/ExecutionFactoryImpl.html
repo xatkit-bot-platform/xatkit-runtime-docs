@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":41,"i10":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":41,"i7":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -310,28 +310,16 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFact
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionFactoryImpl.html#createParameterValue--">createParameterValue</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/execution/StringLiteral.html" title="interface in edu.uoc.som.jarvis.execution">StringLiteral</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionFactoryImpl.html#createStringLiteral--">createStringLiteral</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/execution/Variable.html" title="interface in edu.uoc.som.jarvis.execution">Variable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionFactoryImpl.html#createVariable--">createVariable</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution">VariableAccess</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionFactoryImpl.html#createVariableAccess--">createVariableAccess</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionPackage.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionPackage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionFactoryImpl.html#getExecutionPackage--">getExecutionPackage</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionPackage.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionPackage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionFactoryImpl.html#getPackage--">getPackage</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;&nbsp;</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFactory.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionFactoryImpl.html#init--">init</a></span>()</code>
 <div class="block">Creates the default factory implementation.</div>
@@ -551,24 +539,6 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFact
 </dl>
 </li>
 </ul>
-<a name="createVariable--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>createVariable</h4>
-<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/execution/Variable.html" title="interface in edu.uoc.som.jarvis.execution">Variable</a>&nbsp;createVariable()</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFactory.html#createVariable--">createVariable</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFactory.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionFactory</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new object of class '<em>Variable</em>'.</dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
 <a name="createParameterValue--">
 <!--   -->
 </a>
@@ -583,42 +553,6 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFact
 <dd><code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFactory.html#createParameterValue--">createParameterValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFactory.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionFactory</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new object of class '<em>Parameter Value</em>'.</dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="createStringLiteral--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>createStringLiteral</h4>
-<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/execution/StringLiteral.html" title="interface in edu.uoc.som.jarvis.execution">StringLiteral</a>&nbsp;createStringLiteral()</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFactory.html#createStringLiteral--">createStringLiteral</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFactory.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionFactory</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new object of class '<em>String Literal</em>'.</dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="createVariableAccess--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>createVariableAccess</h4>
-<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution">VariableAccess</a>&nbsp;createVariableAccess()</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFactory.html#createVariableAccess--">createVariableAccess</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionFactory.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionFactory</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new object of class '<em>Variable Access</em>'.</dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

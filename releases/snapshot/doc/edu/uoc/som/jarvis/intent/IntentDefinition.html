@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../edu/uoc/som/jarvis/intent/ImportDeclaration.html" title="interface in edu.uoc.som.jarvis.intent"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html" title="interface in edu.uoc.som.jarvis.intent"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -123,6 +123,7 @@ extends <a href="../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" 
    <li><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#getFollowedBy--"><code><em>Followed By</em></code></a></li>
    <li><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#getInContexts--"><code><em>In Contexts</em></code></a></li>
    <li><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#getTrainingSentences--"><code><em>Training Sentences</em></code></a></li>
+   <li><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#getDefaultAnswers--"><code><em>Default Answers</em></code></a></li>
  </ul></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -148,30 +149,36 @@ extends <a href="../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" 
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#getDefaultAnswers--">getDefaultAnswers</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Default Answers</b></em>' attribute list.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#getFollowedBy--">getFollowedBy</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Followed By</b></em>' reference list.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#getFollows--">getFollows</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Follows</b></em>' reference.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent">Context</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#getInContexts--">getInContexts</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>In Contexts</b></em>' containment reference list.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#getTrainingSentences--">getTrainingSentences</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Training Sentences</b></em>' attribute list.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#setFollows-edu.uoc.som.jarvis.intent.IntentDefinition-">setFollows</a></span>(<a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html#getFollows--"><code><em>Follows</em></code></a>' reference.</div>
@@ -311,7 +318,7 @@ extends <a href="../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" 
 <a name="getTrainingSentences--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getTrainingSentences</h4>
 <pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getTrainingSentences()</pre>
@@ -328,6 +335,30 @@ extends <a href="../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" 
 <dd>the value of the '<em>Training Sentences</em>' attribute list.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../edu/uoc/som/jarvis/intent/IntentPackage.html#getIntentDefinition_TrainingSentences--"><code>IntentPackage.getIntentDefinition_TrainingSentences()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getDefaultAnswers--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getDefaultAnswers</h4>
+<pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getDefaultAnswers()</pre>
+<div class="block">Returns the value of the '<em><b>Default Answers</b></em>' attribute list.
+ The list contents are of type <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>.
+ <!-- begin-user-doc -->
+ <p>
+ If the meaning of the '<em>Default Answers</em>' attribute list isn't clear,
+ there really should be more of a description here...
+ </p>
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Default Answers</em>' attribute list.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../edu/uoc/som/jarvis/intent/IntentPackage.html#getIntentDefinition_DefaultAnswers--"><code>IntentPackage.getIntentDefinition_DefaultAnswers()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -360,7 +391,7 @@ extends <a href="../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" 
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../edu/uoc/som/jarvis/intent/ImportDeclaration.html" title="interface in edu.uoc.som.jarvis.intent"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../edu/uoc/som/jarvis/intent/IntentFactory.html" title="interface in edu.uoc.som.jarvis.intent"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

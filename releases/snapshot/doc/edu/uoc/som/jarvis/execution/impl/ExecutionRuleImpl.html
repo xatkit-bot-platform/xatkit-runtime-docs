@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionPackageImpl.html" title="class in edu.uoc.som.jarvis.execution.impl"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExpressionImpl.html" title="class in edu.uoc.som.jarvis.execution.impl"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ParameterValueImpl.html" title="class in edu.uoc.som.jarvis.execution.impl"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html" target="_top">Frames</a></li>
@@ -144,8 +144,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule
  </p>
  <ul>
    <li><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getEvent--"><code><em>Event</em></code></a></li>
-   <li><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getActions--"><code><em>Actions</em></code></a></li>
-   <li><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getVariables--"><code><em>Variables</em></code></a></li>
+   <li><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getInstructions--"><code><em>Instructions</em></code></a></li>
  </ul></div>
 <dl>
 <dt><span class="simpleTagLabel">Generated</span></dt>
@@ -212,21 +211,15 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#actions">actions</a></span></code>
-<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getActions--"><code><em>Actions</em></code></a>' containment reference list.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EventDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#event">event</a></span></code>
 <div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getEvent--"><code><em>Event</em></code></a>' reference.</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/Variable.html" title="interface in edu.uoc.som.jarvis.execution">Variable</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#variables">variables</a></span></code>
-<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getVariables--"><code><em>Variables</em></code></a>' containment reference list.</div>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/common/Instruction.html" title="interface in edu.uoc.som.jarvis.common">Instruction</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#instructions">instructions</a></span></code>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getInstructions--"><code><em>Instructions</em></code></a>' containment reference list.</div>
 </td>
 </tr>
 </table>
@@ -325,18 +318,14 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#eUnset-int-">eUnset</a></span>(int&nbsp;featureID)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getActions--">getActions</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EventDefinition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getEvent--">getEvent</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/Variable.html" title="interface in edu.uoc.som.jarvis.execution">Variable</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getVariables--">getVariables</a></span>()</code>&nbsp;</td>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/common/Instruction.html" title="interface in edu.uoc.som.jarvis.common">Instruction</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getInstructions--">getInstructions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#setEvent-edu.uoc.som.jarvis.intent.EventDefinition-">setEvent</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EventDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EventDefinition</a>&nbsp;newEvent)</code>&nbsp;</td>
 </tr>
@@ -428,36 +417,19 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule
 </dl>
 </li>
 </ul>
-<a name="actions">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>actions</h4>
-<pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&gt; actions</pre>
-<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getActions--"><code><em>Actions</em></code></a>' containment reference list.
- <!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getActions--"><code>getActions()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="variables">
+<a name="instructions">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>variables</h4>
-<pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/Variable.html" title="interface in edu.uoc.som.jarvis.execution">Variable</a>&gt; variables</pre>
-<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getVariables--"><code><em>Variables</em></code></a>' containment reference list.
+<h4>instructions</h4>
+<pre>protected&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/common/Instruction.html" title="interface in edu.uoc.som.jarvis.common">Instruction</a>&gt; instructions</pre>
+<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getInstructions--"><code><em>Instructions</em></code></a>' containment reference list.
  <!-- begin-user-doc -->
  <!-- end-user-doc --></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getVariables--"><code>getVariables()</code></a></dd>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getInstructions--"><code>getInstructions()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -563,42 +535,22 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule
 </dl>
 </li>
 </ul>
-<a name="getActions--">
+<a name="getInstructions--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getActions</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&gt;&nbsp;getActions()</pre>
+<h4>getInstructions</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/common/Instruction.html" title="interface in edu.uoc.som.jarvis.common">Instruction</a>&gt;&nbsp;getInstructions()</pre>
 <div class="block"><!-- begin-user-doc -->
  <!-- end-user-doc --></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule.html#getActions--">getActions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionRule</a></code></dd>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule.html#getInstructions--">getInstructions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionRule</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value of the '<em>Actions</em>' containment reference list.</dd>
+<dd>the value of the '<em>Instructions</em>' containment reference list.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionPackage.html#getExecutionRule_Actions--"><code>ExecutionPackage.getExecutionRule_Actions()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="getVariables--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getVariables</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/Variable.html" title="interface in edu.uoc.som.jarvis.execution">Variable</a>&gt;&nbsp;getVariables()</pre>
-<div class="block"><!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule.html#getVariables--">getVariables</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule.html" title="interface in edu.uoc.som.jarvis.execution">ExecutionRule</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value of the '<em>Variables</em>' containment reference list.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionPackage.html#getExecutionRule_Variables--"><code>ExecutionPackage.getExecutionRule_Variables()</code></a></dd>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionPackage.html#getExecutionRule_Instructions--"><code>ExecutionPackage.getExecutionRule_Instructions()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -733,7 +685,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionPackageImpl.html" title="class in edu.uoc.som.jarvis.execution.impl"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExpressionImpl.html" title="class in edu.uoc.som.jarvis.execution.impl"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ParameterValueImpl.html" title="class in edu.uoc.som.jarvis.execution.impl"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html" target="_top">Frames</a></li>

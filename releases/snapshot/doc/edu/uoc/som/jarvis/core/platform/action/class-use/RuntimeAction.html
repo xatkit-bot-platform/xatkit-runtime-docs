@@ -101,18 +101,22 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.giphy.platform.action">edu.uoc.som.jarvis.plugins.giphy.platform.action</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.github.platform.action">edu.uoc.som.jarvis.plugins.github.platform.action</a></td>
 <td class="colLast">
 <div class="block">Contains the action implementations available in the Jarvis Github platform.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.log.platform.action">edu.uoc.som.jarvis.plugins.log.platform.action</a></td>
 <td class="colLast">
 <div class="block">Contains the action implementations available in the Jarvis Log platform.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.slack.platform.action">edu.uoc.som.jarvis.plugins.slack.platform.action</a></td>
 <td class="colLast">
 <div class="block">Contains the action implementations available in the Jarvis Slack platform.</div>
@@ -151,8 +155,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RuntimePlatform.</span><code><span class="memberNameLink"><a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">createRuntimeAction</a></span>(<a href="../../../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
-                   <a href="../../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
+<td class="colLast"><span class="typeNameLabel">RuntimePlatform.</span><code><span class="memberNameLink"><a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-">createRuntimeAction</a></span>(<a href="../../../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
+                   <a href="../../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session,
+                   <a href="../../../../../../../../edu/uoc/som/jarvis/core/interpreter/ExecutionContext.html" title="class in edu.uoc.som.jarvis.core.interpreter">ExecutionContext</a>&nbsp;context)</code>
 <div class="block">Creates a new <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution"><code>ActionInstance</code></a>.</div>
 </td>
 </tr>
@@ -215,6 +220,26 @@
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/core/platform/action/GetTime.html" title="class in edu.uoc.som.jarvis.plugins.core.platform.action">GetTime</a></span></code>
 <div class="block">A <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> that retrieves the current time and returns it.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="edu.uoc.som.jarvis.plugins.giphy.platform.action">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeAction</a> in <a href="../../../../../../../../edu/uoc/som/jarvis/plugins/giphy/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.giphy.platform.action</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeAction</a> in <a href="../../../../../../../../edu/uoc/som/jarvis/plugins/giphy/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.giphy.platform.action</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/giphy/platform/action/GetGif.html" title="class in edu.uoc.som.jarvis.plugins.giphy.platform.action">GetGif</a></span></code>
+<div class="block">A <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> that retrieves a GIF from a given search string.</div>
 </td>
 </tr>
 </tbody>

@@ -1,5 +1,11 @@
 edu.uoc.som.jarvis
+edu.uoc.som.jarvis.common
+edu.uoc.som.jarvis.common.impl
+edu.uoc.som.jarvis.common.util
 edu.uoc.som.jarvis.core
+edu.uoc.som.jarvis.core.interpreter
+edu.uoc.som.jarvis.core.interpreter.operation
+edu.uoc.som.jarvis.core.interpreter.operation.object
 edu.uoc.som.jarvis.core.platform
 edu.uoc.som.jarvis.core.platform.action
 edu.uoc.som.jarvis.core.platform.io
@@ -29,6 +35,8 @@ edu.uoc.som.jarvis.plugins.generic_chat
 edu.uoc.som.jarvis.plugins.generic_chat.platform
 edu.uoc.som.jarvis.plugins.generic_chat.platform.action
 edu.uoc.som.jarvis.plugins.generic_chat.platform.io
+edu.uoc.som.jarvis.plugins.giphy.platform
+edu.uoc.som.jarvis.plugins.giphy.platform.action
 edu.uoc.som.jarvis.plugins.github
 edu.uoc.som.jarvis.plugins.github.platform
 edu.uoc.som.jarvis.plugins.github.platform.action

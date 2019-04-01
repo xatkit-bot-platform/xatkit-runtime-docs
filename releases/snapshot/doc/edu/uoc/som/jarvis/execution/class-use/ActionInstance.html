@@ -83,24 +83,30 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="#edu.uoc.som.jarvis.core">edu.uoc.som.jarvis.core</a></td>
+<td class="colLast">
+<div class="block">Contains the core components of the Jarvis framework.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.core.platform">edu.uoc.som.jarvis.core.platform</a></td>
 <td class="colLast">
 <div class="block">Contains the abstract classes to implement to provide custom platforms.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.execution">edu.uoc.som.jarvis.execution</a></td>
 <td class="colLast">
 <div class="block">Contains the interfaces to manipulate Execution models.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.execution.impl">edu.uoc.som.jarvis.execution.impl</a></td>
 <td class="colLast">
 <div class="block">Contains the implementation classes used to manipulate Execution models.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.execution.util">edu.uoc.som.jarvis.execution.util</a></td>
 <td class="colLast">
 <div class="block">Contains utility classes used to manipulate Execution models.</div>
@@ -111,6 +117,25 @@
 </li>
 <li class="blockList">
 <ul class="blockList">
+<li class="blockList"><a name="edu.uoc.som.jarvis.core">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a> in <a href="../../../../../../edu/uoc/som/jarvis/core/package-summary.html">edu.uoc.som.jarvis.core</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/core/package-summary.html">edu.uoc.som.jarvis.core</a> with parameters of type <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ExecutionService.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/ExecutionService.html#evaluate-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-">evaluate</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&nbsp;a,
+        <a href="../../../../../../edu/uoc/som/jarvis/core/interpreter/ExecutionContext.html" title="class in edu.uoc.som.jarvis.core.interpreter">ExecutionContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li class="blockList"><a name="edu.uoc.som.jarvis.core.platform">
 <!--   -->
 </a>
@@ -124,8 +149,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeAction</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RuntimePlatform.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">createRuntimeAction</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
-                   <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
+<td class="colLast"><span class="typeNameLabel">RuntimePlatform.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-">createRuntimeAction</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
+                   <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session,
+                   <a href="../../../../../../edu/uoc/som/jarvis/core/interpreter/ExecutionContext.html" title="class in edu.uoc.som.jarvis.core.interpreter">ExecutionContext</a>&nbsp;context)</code>
 <div class="block">Creates a new <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution"><code>ActionInstance</code></a>.</div>
 </td>
 </tr>
@@ -159,12 +185,6 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">ExecutionRule.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionRule.html#getActions--">getActions</a></span>()</code>
-<div class="block">Returns the value of the '<em><b>Actions</b></em>' containment reference list.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">ActionInstance.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getOnError--">getOnError</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>On Error</b></em>' containment reference list.</div>
@@ -201,12 +221,6 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">ExecutionRuleImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#actions">actions</a></span></code>
-<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getActions--"><code><em>Actions</em></code></a>' containment reference list.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">ActionInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#onError">onError</a></span></code>
 <div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#getOnError--"><code><em>On Error</em></code></a>' containment reference list.</div>
 </td>
@@ -234,10 +248,6 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">ExecutionRuleImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ExecutionRuleImpl.html#getActions--">getActions</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">ActionInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#getOnError--">getOnError</a></span>()</code>&nbsp;</td>
 </tr>

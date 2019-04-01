@@ -112,7 +112,17 @@ var activeTableTab = "activeTableTab";
 <li><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/MinimalEObjectImpl.Container.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">org.eclipse.emf.ecore.impl.MinimalEObjectImpl.Container</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../../edu/uoc/som/jarvis/common/impl/InstructionImpl.html" title="class in edu.uoc.som.jarvis.common.impl">edu.uoc.som.jarvis.common.impl.InstructionImpl</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../edu/uoc/som/jarvis/common/impl/ExpressionImpl.html" title="class in edu.uoc.som.jarvis.common.impl">edu.uoc.som.jarvis.common.impl.ExpressionImpl</a></li>
+<li>
+<ul class="inheritance">
 <li>edu.uoc.som.jarvis.execution.impl.ActionInstanceImpl</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -129,12 +139,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notifier</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.Internal.DynamicValueHolder.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature.Internal.DynamicValueHolder</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a></dd>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/common/Expression.html" title="interface in edu.uoc.som.jarvis.common">Expression</a>, <a href="../../../../../../edu/uoc/som/jarvis/common/Instruction.html" title="interface in edu.uoc.som.jarvis.common">Instruction</a>, <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notifier</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EObject</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EStructuralFeature.Internal.DynamicValueHolder.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EStructuralFeature.Internal.DynamicValueHolder</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/InternalEObject.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">InternalEObject</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ActionInstanceImpl</span>
-extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/MinimalEObjectImpl.Container.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">MinimalEObjectImpl.Container</a>
+extends <a href="../../../../../../edu/uoc/som/jarvis/common/impl/ExpressionImpl.html" title="class in edu.uoc.som.jarvis.common.impl">ExpressionImpl</a>
 implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a></pre>
 <div class="block"><!-- begin-user-doc -->
  An implementation of the model object '<em><b>Action Instance</b></em>'.
@@ -225,7 +235,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstanc
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution">VariableAccess</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#returnVariable">returnVariable</a></span></code>
 <div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#getReturnVariable--"><code><em>Return Variable</em></code></a>' containment reference.</div>
 </td>
@@ -304,7 +314,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstanc
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#basicSetReturnVariable-edu.uoc.som.jarvis.execution.VariableAccess-org.eclipse.emf.common.notify.NotificationChain-">basicSetReturnVariable</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution">VariableAccess</a>&nbsp;newReturnVariable,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#basicSetReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-org.eclipse.emf.common.notify.NotificationChain-">basicSetReturnVariable</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;newReturnVariable,
                       <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a>&nbsp;msgs)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -345,7 +355,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstanc
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#getOnError--">getOnError</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution">VariableAccess</a></code></td>
+<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#getReturnVariable--">getReturnVariable</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -358,7 +368,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstanc
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#setReturnVariable-edu.uoc.som.jarvis.execution.VariableAccess-">setReturnVariable</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution">VariableAccess</a>&nbsp;newReturnVariable)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#setReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-">setReturnVariable</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;newReturnVariable)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -471,7 +481,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstanc
 <ul class="blockList">
 <li class="blockList">
 <h4>returnVariable</h4>
-<pre>protected&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution">VariableAccess</a> returnVariable</pre>
+<pre>protected&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a> returnVariable</pre>
 <div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#getReturnVariable--"><code><em>Return Variable</em></code></a>' containment reference.
  <!-- begin-user-doc -->
  <!-- end-user-doc --></div>
@@ -540,7 +550,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstanc
  <!-- end-user-doc --></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true#eStaticClass--" title="class or interface in org.eclipse.emf.ecore.impl">eStaticClass</a></code>&nbsp;in class&nbsp;<code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/impl/BasicEObjectImpl.html?is-external=true" title="class or interface in org.eclipse.emf.ecore.impl">BasicEObjectImpl</a></code></dd>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/common/impl/ExpressionImpl.html#eStaticClass--">eStaticClass</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/common/impl/ExpressionImpl.html" title="class in edu.uoc.som.jarvis.common.impl">ExpressionImpl</a></code></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -626,7 +636,7 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstanc
 <ul class="blockList">
 <li class="blockList">
 <h4>getReturnVariable</h4>
-<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution">VariableAccess</a>&nbsp;getReturnVariable()</pre>
+<pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;getReturnVariable()</pre>
 <div class="block"><!-- begin-user-doc -->
  <!-- end-user-doc --></div>
 <dl>
@@ -635,19 +645,19 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstanc
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value of the '<em>Return Variable</em>' containment reference.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#setReturnVariable-edu.uoc.som.jarvis.execution.VariableAccess-"><code>ActionInstance.setReturnVariable(VariableAccess)</code></a>, 
+<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#setReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-"><code>ActionInstance.setReturnVariable(VariableAccess)</code></a>, 
 <a href="../../../../../../edu/uoc/som/jarvis/execution/ExecutionPackage.html#getActionInstance_ReturnVariable--"><code>ExecutionPackage.getActionInstance_ReturnVariable()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
 </ul>
-<a name="basicSetReturnVariable-edu.uoc.som.jarvis.execution.VariableAccess-org.eclipse.emf.common.notify.NotificationChain-">
+<a name="basicSetReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-org.eclipse.emf.common.notify.NotificationChain-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>basicSetReturnVariable</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a>&nbsp;basicSetReturnVariable(<a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution">VariableAccess</a>&nbsp;newReturnVariable,
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a>&nbsp;basicSetReturnVariable(<a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;newReturnVariable,
                                                 <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a>&nbsp;msgs)</pre>
 <div class="block"><!-- begin-user-doc -->
  <!-- end-user-doc --></div>
@@ -656,18 +666,18 @@ implements <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstanc
 </dl>
 </li>
 </ul>
-<a name="setReturnVariable-edu.uoc.som.jarvis.execution.VariableAccess-">
+<a name="setReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setReturnVariable</h4>
-<pre>public&nbsp;void&nbsp;setReturnVariable(<a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution">VariableAccess</a>&nbsp;newReturnVariable)</pre>
+<pre>public&nbsp;void&nbsp;setReturnVariable(<a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;newReturnVariable)</pre>
 <div class="block"><!-- begin-user-doc -->
  <!-- end-user-doc --></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#setReturnVariable-edu.uoc.som.jarvis.execution.VariableAccess-">setReturnVariable</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a></code></dd>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#setReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-">setReturnVariable</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newReturnVariable</code> - the new value of the '<em>Return Variable</em>' containment reference.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>

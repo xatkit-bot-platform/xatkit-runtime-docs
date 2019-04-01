@@ -109,7 +109,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/plugins/core/platform/CorePlatform.html" title="class in edu.uoc.som.jarvis.plugins.core.platform">CorePlatform</a>, <a href="../../../../../../edu/uoc/som/jarvis/plugins/discord/platform/DiscordPlatform.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform">DiscordPlatform</a>, <a href="../../../../../../edu/uoc/som/jarvis/plugins/github/platform/GithubPlatform.html" title="class in edu.uoc.som.jarvis.plugins.github.platform">GithubPlatform</a>, <a href="../../../../../../edu/uoc/som/jarvis/plugins/log/platform/LogPlatform.html" title="class in edu.uoc.som.jarvis.plugins.log.platform">LogPlatform</a>, <a href="../../../../../../edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform">SlackPlatform</a></dd>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/plugins/core/platform/CorePlatform.html" title="class in edu.uoc.som.jarvis.plugins.core.platform">CorePlatform</a>, <a href="../../../../../../edu/uoc/som/jarvis/plugins/discord/platform/DiscordPlatform.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform">DiscordPlatform</a>, <a href="../../../../../../edu/uoc/som/jarvis/plugins/giphy/platform/GiphyPlatform.html" title="class in edu.uoc.som.jarvis.plugins.giphy.platform">GiphyPlatform</a>, <a href="../../../../../../edu/uoc/som/jarvis/plugins/github/platform/GithubPlatform.html" title="class in edu.uoc.som.jarvis.plugins.github.platform">GithubPlatform</a>, <a href="../../../../../../edu/uoc/som/jarvis/plugins/log/platform/LogPlatform.html" title="class in edu.uoc.som.jarvis.plugins.log.platform">LogPlatform</a>, <a href="../../../../../../edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform">SlackPlatform</a></dd>
 </dl>
 <hr>
 <br>
@@ -230,8 +230,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeAction</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">createRuntimeAction</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
-                   <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-">createRuntimeAction</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
+                   <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session,
+                   <a href="../../../../../../edu/uoc/som/jarvis/core/interpreter/ExecutionContext.html" title="class in edu.uoc.som.jarvis.core.interpreter">ExecutionContext</a>&nbsp;context)</code>
 <div class="block">Creates a new <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution"><code>ActionInstance</code></a>.</div>
 </td>
 </tr>
@@ -330,12 +331,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <pre>protected&nbsp;<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a> configuration</pre>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to initialize this class.
  <p>
- This <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> is used by the <a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform"><code>RuntimePlatform</code></a> to initialize the <a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeEventProvider</code></a>s and
+ This <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> is used by the <a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform"><code>RuntimePlatform</code></a> to initialize the
+ <a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeEventProvider</code></a>s and
  <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a>s.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#startEventProvider-edu.uoc.som.jarvis.platform.EventProviderDefinition-"><code>startEventProvider(EventProviderDefinition)</code></a>, 
-<a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a></dd>
+<a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-"><code>createRuntimeAction(ActionInstance, JarvisSession, ExecutionContext)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -353,7 +355,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#enableAction-edu.uoc.som.jarvis.platform.ActionDefinition-"><code>enableAction(ActionDefinition)</code></a>, 
 <a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#disableAction-edu.uoc.som.jarvis.platform.ActionDefinition-"><code>disableAction(ActionDefinition)</code></a>, 
-<a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a></dd>
+<a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-"><code>createRuntimeAction(ActionInstance, JarvisSession, ExecutionContext)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -481,7 +483,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#registerWebhookEventProvider-edu.uoc.som.jarvis.core.platform.io.WebhookEventProvider-"><code>JarvisServer.registerWebhookEventProvider(WebhookEventProvider)</code></a>).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>eventProviderDefinition</code> - the <a href="../../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html" title="interface in edu.uoc.som.jarvis.platform"><code>EventProviderDefinition</code></a> representing the <a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeEventProvider</code></a> to
+<dd><code>eventProviderDefinition</code> - the <a href="../../../../../../edu/uoc/som/jarvis/platform/EventProviderDefinition.html" title="interface in edu.uoc.som.jarvis.platform"><code>EventProviderDefinition</code></a> representing the
+ <a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeEventProvider</code></a> to
                                 start</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>eventProviderDefinition</code> or <code>jarvisCore</code> is <code>null</code></dd>
@@ -516,7 +519,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Retrieves and loads the <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> defined by the provided <a href="../../../../../../edu/uoc/som/jarvis/platform/ActionDefinition.html" title="interface in edu.uoc.som.jarvis.platform"><code>ActionDefinition</code></a>.
  <p>
  This method loads the corresponding <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> based on jarvis' naming convention. The
- <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> must be located under the <code>actionDefinition</code> sub-package of the <a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform"><code>RuntimePlatform</code></a>
+ <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> must be located under the <code>actionDefinition</code> sub-package of the
+ <a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform"><code>RuntimePlatform</code></a>
  concrete subclass package.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -561,32 +565,35 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <p>
  This method returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a>es describing the <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a>s associated to this platform. To
  construct a new <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> from a <a href="../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent"><code>EventInstance</code></a> see
- <a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a> .</div>
+ <a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-"><code>createRuntimeAction(ActionInstance, JarvisSession, ExecutionContext)</code></a> .</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>all the <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a>es associated to this <a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform"><code>RuntimePlatform</code></a></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-"><code>createRuntimeAction(ActionInstance, JarvisSession)</code></a></dd>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-"><code>createRuntimeAction(ActionInstance, JarvisSession, ExecutionContext)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">
+<a name="createRuntimeAction-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.JarvisSession-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createRuntimeAction</h4>
 <pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeAction</a>&nbsp;createRuntimeAction(<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a>&nbsp;actionInstance,
-                                         <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</pre>
+                                         <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session,
+                                         <a href="../../../../../../edu/uoc/som/jarvis/core/interpreter/ExecutionContext.html" title="class in edu.uoc.som.jarvis.core.interpreter">ExecutionContext</a>&nbsp;context)</pre>
 <div class="block">Creates a new <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution"><code>ActionInstance</code></a>.
  <p>
  This methods attempts to construct a <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> defined by the provided <code>actionInstance</code> by
- matching the <code>eventInstance</code> variables to the <a href="../../../../../../edu/uoc/som/jarvis/platform/ActionDefinition.html" title="interface in edu.uoc.som.jarvis.platform"><code>ActionDefinition</code></a>'s parameters, and reusing the provided
+ matching the <code>eventInstance</code> variables to the <a href="../../../../../../edu/uoc/som/jarvis/platform/ActionDefinition.html" title="interface in edu.uoc.som.jarvis.platform"><code>ActionDefinition</code></a>'s parameters, and reusing the
+ provided
  <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getValues--"><code>ActionInstance.getValues()</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>actionInstance</code> - the <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution"><code>ActionInstance</code></a> representing the <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> to create</dd>
 <dd><code>session</code> - the <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> associated to the action</dd>
+<dd><code>context</code> - the execution context used to evaluate the action parameter values</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution"><code>ActionInstance</code></a></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -594,7 +601,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/JarvisException.html" title="class in edu.uoc.som.jarvis.core">JarvisException</a></code> - if the provided <a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution"><code>ActionInstance</code></a> does not match any <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a>,
                               or if an error occurred when building the <a href="../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#getParameterValues-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.RuntimeContexts-"><code>getParameterValues(ActionInstance, RuntimeContexts)</code></a></dd>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#getParameterValues-edu.uoc.som.jarvis.execution.ActionInstance-edu.uoc.som.jarvis.core.session.RuntimeContexts-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-"><code>getParameterValues(ActionInstance, RuntimeContexts, ExecutionContext)</code></a></dd>
 </dl>
 </li>
 </ul>

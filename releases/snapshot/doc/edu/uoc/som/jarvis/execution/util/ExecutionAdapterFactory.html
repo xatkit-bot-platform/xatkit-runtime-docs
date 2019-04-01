@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -226,13 +226,13 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/util/ExecutionAdapterFactory.html#createExpressionAdapter--">createExpressionAdapter</a></span>()</code>
-<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/execution/Expression.html" title="interface in edu.uoc.som.jarvis.execution"><code><em>Expression</em></code></a>'.</div>
+<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/common/Expression.html" title="interface in edu.uoc.som.jarvis.common"><code><em>Expression</em></code></a>'.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/util/ExecutionAdapterFactory.html#createLiteralAdapter--">createLiteralAdapter</a></span>()</code>
-<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/execution/Literal.html" title="interface in edu.uoc.som.jarvis.execution"><code><em>Literal</em></code></a>'.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/util/ExecutionAdapterFactory.html#createInstructionAdapter--">createInstructionAdapter</a></span>()</code>
+<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/common/Instruction.html" title="interface in edu.uoc.som.jarvis.common"><code><em>Instruction</em></code></a>'.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -242,24 +242,6 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/util/ExecutionAdapterFactory.html#createStringLiteralAdapter--">createStringLiteralAdapter</a></span>()</code>
-<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/execution/StringLiteral.html" title="interface in edu.uoc.som.jarvis.execution"><code><em>String Literal</em></code></a>'.</div>
-</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/util/ExecutionAdapterFactory.html#createVariableAccessAdapter--">createVariableAccessAdapter</a></span>()</code>
-<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution"><code><em>Variable Access</em></code></a>'.</div>
-</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/util/ExecutionAdapterFactory.html#createVariableAdapter--">createVariableAdapter</a></span>()</code>
-<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/execution/Variable.html" title="interface in edu.uoc.som.jarvis.execution"><code><em>Variable</em></code></a>'.</div>
-</td>
-</tr>
-<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/util/ExecutionAdapterFactory.html#isFactoryForType-java.lang.Object-">isFactoryForType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>
 <div class="block">Returns whether this factory is applicable for the type of the object.</div>
@@ -467,27 +449,6 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </dl>
 </li>
 </ul>
-<a name="createVariableAdapter--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>createVariableAdapter</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a>&nbsp;createVariableAdapter()</pre>
-<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/execution/Variable.html" title="interface in edu.uoc.som.jarvis.execution"><code><em>Variable</em></code></a>'.
- <!-- begin-user-doc -->
- This default implementation returns null so that we can easily ignore cases;
- it's useful to ignore a case when inheritance will catch all the cases anyway.
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new adapter.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/Variable.html" title="interface in edu.uoc.som.jarvis.execution"><code>Variable</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
 <a name="createParameterValueAdapter--">
 <!--   -->
 </a>
@@ -509,6 +470,27 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </dl>
 </li>
 </ul>
+<a name="createInstructionAdapter--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createInstructionAdapter</h4>
+<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a>&nbsp;createInstructionAdapter()</pre>
+<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/common/Instruction.html" title="interface in edu.uoc.som.jarvis.common"><code><em>Instruction</em></code></a>'.
+ <!-- begin-user-doc -->
+ This default implementation returns null so that we can easily ignore cases;
+ it's useful to ignore a case when inheritance will catch all the cases anyway.
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the new adapter.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/common/Instruction.html" title="interface in edu.uoc.som.jarvis.common"><code>Instruction</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
 <a name="createExpressionAdapter--">
 <!--   -->
 </a>
@@ -516,7 +498,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <li class="blockList">
 <h4>createExpressionAdapter</h4>
 <pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a>&nbsp;createExpressionAdapter()</pre>
-<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/execution/Expression.html" title="interface in edu.uoc.som.jarvis.execution"><code><em>Expression</em></code></a>'.
+<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/common/Expression.html" title="interface in edu.uoc.som.jarvis.common"><code><em>Expression</em></code></a>'.
  <!-- begin-user-doc -->
  This default implementation returns null so that we can easily ignore cases;
  it's useful to ignore a case when inheritance will catch all the cases anyway.
@@ -525,70 +507,7 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the new adapter.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/Expression.html" title="interface in edu.uoc.som.jarvis.execution"><code>Expression</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="createLiteralAdapter--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>createLiteralAdapter</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a>&nbsp;createLiteralAdapter()</pre>
-<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/execution/Literal.html" title="interface in edu.uoc.som.jarvis.execution"><code><em>Literal</em></code></a>'.
- <!-- begin-user-doc -->
- This default implementation returns null so that we can easily ignore cases;
- it's useful to ignore a case when inheritance will catch all the cases anyway.
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new adapter.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/Literal.html" title="interface in edu.uoc.som.jarvis.execution"><code>Literal</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="createStringLiteralAdapter--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>createStringLiteralAdapter</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a>&nbsp;createStringLiteralAdapter()</pre>
-<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/execution/StringLiteral.html" title="interface in edu.uoc.som.jarvis.execution"><code><em>String Literal</em></code></a>'.
- <!-- begin-user-doc -->
- This default implementation returns null so that we can easily ignore cases;
- it's useful to ignore a case when inheritance will catch all the cases anyway.
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new adapter.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/StringLiteral.html" title="interface in edu.uoc.som.jarvis.execution"><code>StringLiteral</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="createVariableAccessAdapter--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>createVariableAccessAdapter</h4>
-<pre>public&nbsp;<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Adapter.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Adapter</a>&nbsp;createVariableAccessAdapter()</pre>
-<div class="block">Creates a new adapter for an object of class '<a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution"><code><em>Variable Access</em></code></a>'.
- <!-- begin-user-doc -->
- This default implementation returns null so that we can easily ignore cases;
- it's useful to ignore a case when inheritance will catch all the cases anyway.
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the new adapter.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../edu/uoc/som/jarvis/execution/VariableAccess.html" title="interface in edu.uoc.som.jarvis.execution"><code>VariableAccess</code></a></dd>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/common/Expression.html" title="interface in edu.uoc.som.jarvis.common"><code>Expression</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
