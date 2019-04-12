@@ -735,6 +735,15 @@
 <dd>
 <div class="block">The '<em><b>COLOR</b></em>' literal value.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/github/platform/action/CommentIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action"><span class="typeNameLink">CommentIssue</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/github/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.github.platform.action</a></dt>
+<dd>
+<div class="block">A <a href="edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> that retrieves the issue with the provided <code>number</code> on the given <code>repository</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/github/platform/action/CommentIssue.html#CommentIssue-edu.uoc.som.jarvis.plugins.github.platform.GithubPlatform-edu.uoc.som.jarvis.core.session.JarvisSession-com.jcabi.github.Issue-java.lang.String-">CommentIssue(GithubPlatform, JarvisSession, Issue, String)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.github.platform.action.<a href="edu/uoc/som/jarvis/plugins/github/platform/action/CommentIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action">CommentIssue</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/github/platform/action/CommentIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action"><code>CommentIssue</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>user</code>,
+ <code>repository</code>, and <code>issueNumber</code>.</div>
+</dd>
 <dt><a href="edu/uoc/som/jarvis/common/util/CommonAdapterFactory.html" title="class in edu.uoc.som.jarvis.common.util"><span class="typeNameLink">CommonAdapterFactory</span></a> - Class in <a href="edu/uoc/som/jarvis/common/util/package-summary.html">edu.uoc.som.jarvis.common.util</a></dt>
 <dd>
 <div class="block">The <b>Adapter Factory</b> for the model.</div>
@@ -920,6 +929,14 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/giphy/platform/action/GetGif.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.plugins.giphy.platform.action.<a href="edu/uoc/som/jarvis/plugins/giphy/platform/action/GetGif.html" title="class in edu.uoc.som.jarvis.plugins.giphy.platform.action">GetGif</a></dt>
 <dd>
 <div class="block">Build and send a REST query to the Giphy API to retrieve GIFs associated to the provided <code>searchString</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/github/platform/action/CommentIssue.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.plugins.github.platform.action.<a href="edu/uoc/som/jarvis/plugins/github/platform/action/CommentIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action">CommentIssue</a></dt>
+<dd>
+<div class="block">Retrieve the issue on the given <code>repository</code> with the provided <code>issueNumber</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/github/platform/action/GetIssue.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.plugins.github.platform.action.<a href="edu/uoc/som/jarvis/plugins/github/platform/action/GetIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action">GetIssue</a></dt>
+<dd>
+<div class="block">Retrieve the issue on the given <code>repository</code> with the provided <code>issueNumber</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/github/platform/action/OpenIssue.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.plugins.github.platform.action.<a href="edu/uoc/som/jarvis/plugins/github/platform/action/OpenIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action">OpenIssue</a></dt>
 <dd>
@@ -4590,6 +4607,15 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProviderFactory.html#getIntentRecognitionProvider-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">getIntentRecognitionProvider(JarvisCore, Configuration)</a></span> - Static method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProviderFactory.html" title="class in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProviderFactory</a></dt>
 <dd>
 <div class="block">Returns the <a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition"><code>IntentRecognitionProvider</code></a> matching the provided <code>configuration</code>.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/github/platform/action/GetIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action"><span class="typeNameLink">GetIssue</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/github/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.github.platform.action</a></dt>
+<dd>
+<div class="block">A <a href="edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> that retrieves the issue with the provided <code>number</code> on the given <code>repository</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/github/platform/action/GetIssue.html#GetIssue-edu.uoc.som.jarvis.plugins.github.platform.GithubPlatform-edu.uoc.som.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-java.lang.String-">GetIssue(GithubPlatform, JarvisSession, String, String, String)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.github.platform.action.<a href="edu/uoc/som/jarvis/plugins/github/platform/action/GetIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action">GetIssue</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/github/platform/action/GetIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action"><code>GetIssue</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>user</code>,
+ <code>repository</code>, and <code>issueNumber</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#getJarvisCore--">getJarvisCore()</a></span> - Method in class edu.uoc.som.jarvis.core.platform.<a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform">RuntimePlatform</a></dt>
 <dd>
