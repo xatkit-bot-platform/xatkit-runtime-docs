@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -214,6 +214,13 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.
 <div class="block">Returns the <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform"><code>RuntimePlatform</code></a> containing this <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeEventProvider</code></a>.</div>
 </td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html#sendEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">sendEventInstance</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a>&nbsp;eventInstance,
+                 <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
+<div class="block">Sends the provided <code>eventInstance</code> and <code>session</code> for computation to the Jarvis core component.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -337,6 +344,25 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform"><code>RuntimePlatform</code></a> containing this <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeEventProvider</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="sendEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sendEventInstance</h4>
+<pre>public&nbsp;void&nbsp;sendEventInstance(<a href="../../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a>&nbsp;eventInstance,
+                              <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</pre>
+<div class="block">Sends the provided <code>eventInstance</code> and <code>session</code> for computation to the Jarvis core component.
+ <p>
+ This method can be extended to perform specific checks before triggering actions (e.g. ensure that a specific
+ context variable has been set).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eventInstance</code> - the <a href="../../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent"><code>EventInstance</code></a> to send to the Jarvis core component</dd>
+<dd><code>session</code> - the <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>eventInstance</code></dd>
 </dl>
 </li>
 </ul>

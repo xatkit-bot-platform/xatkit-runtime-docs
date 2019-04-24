@@ -24,6 +24,9 @@ edu.uoc.som.jarvis.platform
 edu.uoc.som.jarvis.platform.impl
 edu.uoc.som.jarvis.platform.util
 edu.uoc.som.jarvis.plugins
+edu.uoc.som.jarvis.plugins.chat
+edu.uoc.som.jarvis.plugins.chat.platform
+edu.uoc.som.jarvis.plugins.chat.platform.io
 edu.uoc.som.jarvis.plugins.core
 edu.uoc.som.jarvis.plugins.core.platform
 edu.uoc.som.jarvis.plugins.core.platform.action

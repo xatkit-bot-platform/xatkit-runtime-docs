@@ -123,46 +123,50 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.chat.platform.io">edu.uoc.som.jarvis.plugins.chat.platform.io</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.core.platform.action">edu.uoc.som.jarvis.plugins.core.platform.action</a></td>
 <td class="colLast">
 <div class="block">Contains the action implementations available in the Jarvis Core platform.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.discord.platform">edu.uoc.som.jarvis.plugins.discord.platform</a></td>
 <td class="colLast">
 <div class="block">Contains the platform implementation of the Jarvis Discord plugin.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.discord.platform.action">edu.uoc.som.jarvis.plugins.discord.platform.action</a></td>
 <td class="colLast">
 <div class="block">Contains the action implementations available in the Jarvis Discord platform.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.giphy.platform.action">edu.uoc.som.jarvis.plugins.giphy.platform.action</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.github.platform.action">edu.uoc.som.jarvis.plugins.github.platform.action</a></td>
 <td class="colLast">
 <div class="block">Contains the action implementations available in the Jarvis Github platform.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.log.platform.action">edu.uoc.som.jarvis.plugins.log.platform.action</a></td>
 <td class="colLast">
 <div class="block">Contains the action implementations available in the Jarvis Log platform.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.slack.platform">edu.uoc.som.jarvis.plugins.slack.platform</a></td>
 <td class="colLast">
 <div class="block">Contains the platform implementation of the Jarvis Slack plugin.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.slack.platform.action">edu.uoc.som.jarvis.plugins.slack.platform.action</a></td>
 <td class="colLast">
 <div class="block">Contains the action implementations available in the Jarvis Slack platform.</div>
@@ -344,6 +348,13 @@
 <div class="block">Returns the <a href="../../../../../../../edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent"><code>RecognizedIntent</code></a> from the provided user <code>input</code> and <code>session</code>.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">RuntimeEventProvider.</span><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html#sendEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">sendEventInstance</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a>&nbsp;eventInstance,
+                 <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
+<div class="block">Sends the provided <code>eventInstance</code> and <code>session</code> for computation to the Jarvis core component.</div>
+</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -442,6 +453,27 @@
 <td class="colLast"><span class="typeNameLabel">DialogFlowApi.</span><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-edu.uoc.som.jarvis.core.session.JarvisSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
          <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
 <div class="block">Returns the <a href="../../../../../../../edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="edu.uoc.som.jarvis.plugins.chat.platform.io">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a> in <a href="../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.chat.platform.io</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.chat.platform.io</a> with parameters of type <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">ChatIntentProvider.</span><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html#sendEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">sendEventInstance</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a>&nbsp;eventInstance,
+                 <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
+<div class="block">Sends the provided <code>eventInstance</code> and <code>session</code> for computation to the Jarvis core component.</div>
 </td>
 </tr>
 </tbody>

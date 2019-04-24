@@ -638,6 +638,10 @@
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Recognized Intent</em>'.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/util/CommonSwitch.html#caseSessionAccess-edu.uoc.som.jarvis.common.SessionAccess-">caseSessionAccess(SessionAccess)</a></span> - Method in class edu.uoc.som.jarvis.common.util.<a href="edu/uoc/som/jarvis/common/util/CommonSwitch.html" title="class in edu.uoc.som.jarvis.common.util">CommonSwitch</a></dt>
+<dd>
+<div class="block">Returns the result of interpreting the object as an instance of '<em>Session Access</em>'.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/util/CommonSwitch.html#caseStringLiteral-edu.uoc.som.jarvis.common.StringLiteral-">caseStringLiteral(StringLiteral)</a></span> - Method in class edu.uoc.som.jarvis.common.util.<a href="edu/uoc/som/jarvis/common/util/CommonSwitch.html" title="class in edu.uoc.som.jarvis.common.util">CommonSwitch</a></dt>
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>String Literal</em>'.</div>
@@ -662,6 +666,34 @@
 <dd>
 <div class="block">The Slack channel to post the message to.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/chat/ChatUtils.html#CHAT_CHANNEL_CONTEXT_KEY">CHAT_CHANNEL_CONTEXT_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.chat.<a href="edu/uoc/som/jarvis/plugins/chat/ChatUtils.html" title="interface in edu.uoc.som.jarvis.plugins.chat">ChatUtils</a></dt>
+<dd>
+<div class="block">The <a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> variable key used to store chat channel information.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/chat/ChatUtils.html#CHAT_CONTEXT_KEY">CHAT_CONTEXT_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.chat.<a href="edu/uoc/som/jarvis/plugins/chat/ChatUtils.html" title="interface in edu.uoc.som.jarvis.plugins.chat">ChatUtils</a></dt>
+<dd>
+<div class="block">The <a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> key used to store chat-related information.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/chat/ChatUtils.html#CHAT_USERNAME_CONTEXT_KEY">CHAT_USERNAME_CONTEXT_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.chat.<a href="edu/uoc/som/jarvis/plugins/chat/ChatUtils.html" title="interface in edu.uoc.som.jarvis.plugins.chat">ChatUtils</a></dt>
+<dd>
+<div class="block">The <a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> variable key used to store chat username information.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io"><span class="typeNameLink">ChatIntentProvider</span></a>&lt;<a href="edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="type parameter in ChatIntentProvider">T</a> extends <a href="edu/uoc/som/jarvis/plugins/chat/platform/ChatPlatform.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform">ChatPlatform</a>&gt; - Class in <a href="edu/uoc/som/jarvis/plugins/chat/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.chat.platform.io</a></dt>
+<dd>
+<div class="block">An abstract chat <a href="edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeIntentProvider</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html#ChatIntentProvider-T-org.apache.commons.configuration2.Configuration-">ChatIntentProvider(T, Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.chat.platform.io.<a href="edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io">ChatIntentProvider</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io"><code>ChatIntentProvider</code></a> with the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/chat/platform/ChatPlatform.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform"><span class="typeNameLink">ChatPlatform</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/chat/platform/package-summary.html">edu.uoc.som.jarvis.plugins.chat.platform</a></dt>
+<dd>
+<div class="block">An abstract chat <a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform"><code>RuntimePlatform</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/chat/platform/ChatPlatform.html#ChatPlatform-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">ChatPlatform(JarvisCore, Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.chat.platform.<a href="edu/uoc/som/jarvis/plugins/chat/platform/ChatPlatform.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform">ChatPlatform</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/chat/platform/ChatPlatform.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform"><code>ChatPlatform</code></a> from the provided <a href="edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+</dd>
 <dt><a href="edu/uoc/som/jarvis/plugins/discord/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.io"><span class="typeNameLink">ChatProvider</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/discord/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.discord.platform.io</a></dt>
 <dd>
 <div class="block">A generic Discord user <a href="edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeIntentProvider</code></a>.</div>
@@ -677,6 +709,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/platform/io/ChatProvider.html#ChatProvider-edu.uoc.som.jarvis.plugins.slack.platform.SlackPlatform-org.apache.commons.configuration2.Configuration-">ChatProvider(SlackPlatform, Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.slack.platform.io.<a href="edu/uoc/som/jarvis/plugins/slack/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.io">ChatProvider</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/slack/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.io"><code>ChatProvider</code></a> from the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/chat/ChatUtils.html" title="interface in edu.uoc.som.jarvis.plugins.chat"><span class="typeNameLink">ChatUtils</span></a> - Interface in <a href="edu/uoc/som/jarvis/plugins/chat/package-summary.html">edu.uoc.som.jarvis.plugins.chat</a></dt>
+<dd>
+<div class="block">An utility class that holds Chat-related helpers and context variable keys.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowCheckingUtils.html#checkOutContexts-edu.uoc.som.jarvis.intent.IntentDefinition-">checkOutContexts(IntentDefinition)</a></span> - Static method in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowCheckingUtils.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowCheckingUtils</a></dt>
 <dd>
@@ -1786,6 +1822,16 @@
 <dd>
 <div class="block">Creates a new <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> from the provided <code>sessionId</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/CommonFactory.html#createSessionAccess--">createSessionAccess()</a></span> - Method in interface edu.uoc.som.jarvis.common.<a href="edu/uoc/som/jarvis/common/CommonFactory.html" title="interface in edu.uoc.som.jarvis.common">CommonFactory</a></dt>
+<dd>
+<div class="block">Returns a new object of class '<em>Session Access</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/CommonFactoryImpl.html#createSessionAccess--">createSessionAccess()</a></span> - Method in class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/CommonFactoryImpl.html" title="class in edu.uoc.som.jarvis.common.impl">CommonFactoryImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/util/CommonAdapterFactory.html#createSessionAccessAdapter--">createSessionAccessAdapter()</a></span> - Method in class edu.uoc.som.jarvis.common.util.<a href="edu/uoc/som/jarvis/common/util/CommonAdapterFactory.html" title="class in edu.uoc.som.jarvis.common.util">CommonAdapterFactory</a></dt>
+<dd>
+<div class="block">Creates a new adapter for an object of class '<a href="edu/uoc/som/jarvis/common/SessionAccess.html" title="interface in edu.uoc.som.jarvis.common"><code><em>Session Access</em></code></a>'.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/platform/DiscordPlatform.html#createSessionFromChannel-net.dv8tion.jda.core.entities.MessageChannel-">createSessionFromChannel(MessageChannel)</a></span> - Method in class edu.uoc.som.jarvis.plugins.discord.platform.<a href="edu/uoc/som/jarvis/plugins/discord/platform/DiscordPlatform.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform">DiscordPlatform</a></dt>
 <dd>
 <div class="block">Returns the <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>MessageChannel</code>.</div>
@@ -2104,21 +2150,13 @@
 <dd>
 <div class="block">Disables all the <a href="edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a>s of the <a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform"><code>RuntimePlatform</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html#DISCORD_CHANNEL_CONTEXT_KEY">DISCORD_CHANNEL_CONTEXT_KEY</a></span> - Static variable in class edu.uoc.som.jarvis.plugins.discord.<a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">JarvisDiscordUtils</a></dt>
-<dd>
-<div class="block">The <a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> variable key used to store discord channel information.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html#DISCORD_CONTEXT_KEY">DISCORD_CONTEXT_KEY</a></span> - Static variable in class edu.uoc.som.jarvis.plugins.discord.<a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">JarvisDiscordUtils</a></dt>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html#DISCORD_CONTEXT_KEY">DISCORD_CONTEXT_KEY</a></span> - Static variable in class edu.uoc.som.jarvis.plugins.discord.<a href="edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">DiscordUtils</a></dt>
 <dd>
 <div class="block">The <a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> key used to store discord-related information.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html#DISCORD_TOKEN_KEY">DISCORD_TOKEN_KEY</a></span> - Static variable in class edu.uoc.som.jarvis.plugins.discord.<a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">JarvisDiscordUtils</a></dt>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html#DISCORD_TOKEN_KEY">DISCORD_TOKEN_KEY</a></span> - Static variable in class edu.uoc.som.jarvis.plugins.discord.<a href="edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">DiscordUtils</a></dt>
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Discord bot token.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html#DISCORD_USERNAME_CONTEXT_KEY">DISCORD_USERNAME_CONTEXT_KEY</a></span> - Static variable in class edu.uoc.som.jarvis.plugins.discord.<a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">JarvisDiscordUtils</a></dt>
-<dd>
-<div class="block">The <a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> variable key used to store discord username information.</div>
 </dd>
 <dt><a href="edu/uoc/som/jarvis/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.io"><span class="typeNameLink">DiscordIntentProvider</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/discord/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.discord.platform.io</a></dt>
 <dd>
@@ -2137,6 +2175,12 @@
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/discord/platform/DiscordPlatform.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform"><code>DiscordPlatform</code></a> from the provided <a href="edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord"><span class="typeNameLink">DiscordUtils</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/discord/package-summary.html">edu.uoc.som.jarvis.plugins.discord</a></dt>
+<dd>
+<div class="block">An utility class that holds Discord-related helpers.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html#DiscordUtils--">DiscordUtils()</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.discord.<a href="edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">DiscordUtils</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/util/CommonSwitch.html#doSwitch-int-org.eclipse.emf.ecore.EObject-">doSwitch(int, EObject)</a></span> - Method in class edu.uoc.som.jarvis.common.util.<a href="edu/uoc/som/jarvis/common/util/CommonSwitch.html" title="class in edu.uoc.som.jarvis.common.util">CommonSwitch</a></dt>
 <dd>
 <div class="block">Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.</div>
@@ -2263,6 +2307,12 @@
 <dd>
 <div class="block">Contains the Jarvis plugins bundled with the standard Jarvis distribution.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/chat/package-summary.html">edu.uoc.som.jarvis.plugins.chat</a> - package edu.uoc.som.jarvis.plugins.chat</dt>
+<dd>&nbsp;</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/chat/platform/package-summary.html">edu.uoc.som.jarvis.plugins.chat.platform</a> - package edu.uoc.som.jarvis.plugins.chat.platform</dt>
+<dd>&nbsp;</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/chat/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.chat.platform.io</a> - package edu.uoc.som.jarvis.plugins.chat.platform.io</dt>
+<dd>&nbsp;</dd>
 <dt><a href="edu/uoc/som/jarvis/plugins/core/package-summary.html">edu.uoc.som.jarvis.plugins.core</a> - package edu.uoc.som.jarvis.plugins.core</dt>
 <dd>
 <div class="block">The root package of the Jarvis Core plugin.</div>
@@ -2972,6 +3022,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/PropertyAccessImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/PropertyAccessImpl.html" title="class in edu.uoc.som.jarvis.common.impl">PropertyAccessImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/SessionAccessImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/SessionAccessImpl.html" title="class in edu.uoc.som.jarvis.common.impl">SessionAccessImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/StringLiteralImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/StringLiteralImpl.html" title="class in edu.uoc.som.jarvis.common.impl">StringLiteralImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/UnaryOperationImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/UnaryOperationImpl.html" title="class in edu.uoc.som.jarvis.common.impl">UnaryOperationImpl</a></dt>
@@ -3134,6 +3186,11 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/CommonInterpreter.html#evaluate-edu.uoc.som.jarvis.common.ContextAccess-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-">evaluate(ContextAccess, ExecutionContext)</a></span> - Method in class edu.uoc.som.jarvis.core.interpreter.<a href="edu/uoc/som/jarvis/core/interpreter/CommonInterpreter.html" title="class in edu.uoc.som.jarvis.core.interpreter">CommonInterpreter</a></dt>
 <dd>
 <div class="block">Evaluates the provided <a href="edu/uoc/som/jarvis/common/ContextAccess.html" title="interface in edu.uoc.som.jarvis.common"><code>ContextAccess</code></a> <a href="edu/uoc/som/jarvis/common/Expression.html" title="interface in edu.uoc.som.jarvis.common"><code>Expression</code></a> and returns its value from the provided <code>context</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/CommonInterpreter.html#evaluate-edu.uoc.som.jarvis.common.SessionAccess-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-">evaluate(SessionAccess, ExecutionContext)</a></span> - Method in class edu.uoc.som.jarvis.core.interpreter.<a href="edu/uoc/som/jarvis/core/interpreter/CommonInterpreter.html" title="class in edu.uoc.som.jarvis.core.interpreter">CommonInterpreter</a></dt>
+<dd>
+<div class="block">Evaluates the provided <a href="edu/uoc/som/jarvis/common/SessionAccess.html" title="interface in edu.uoc.som.jarvis.common"><code>SessionAccess</code></a> <a href="edu/uoc/som/jarvis/common/Expression.html" title="interface in edu.uoc.som.jarvis.common"><code>Expression</code></a> and returns the corresponding
+ <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/CommonInterpreter.html#evaluate-edu.uoc.som.jarvis.common.Literal-edu.uoc.som.jarvis.core.interpreter.ExecutionContext-">evaluate(Literal, ExecutionContext)</a></span> - Method in class edu.uoc.som.jarvis.core.interpreter.<a href="edu/uoc/som/jarvis/core/interpreter/CommonInterpreter.html" title="class in edu.uoc.som.jarvis.core.interpreter">CommonInterpreter</a></dt>
 <dd>
@@ -3633,6 +3690,10 @@
 </a>
 <h2 class="title">G</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/session/JarvisSession.html#get-java.lang.String-">get(String)</a></span> - Method in class edu.uoc.som.jarvis.core.session.<a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></dt>
+<dd>
+<div class="block">Retrieves the session value associated to the provided <code>key</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#get-java.lang.String-">get(String)</a></span> - Static method in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
 <dd>
 <div class="block">Returns the '<em><b>Entity Type</b></em>' literal with the specified literal value.</div>
@@ -4637,7 +4698,7 @@
 <dd>
 <div class="block">Returns the <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>sessionId</code></div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html#getJDA-java.lang.String-">getJDA(String)</a></span> - Static method in class edu.uoc.som.jarvis.plugins.discord.<a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">JarvisDiscordUtils</a></dt>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html#getJDA-java.lang.String-">getJDA(String)</a></span> - Static method in class edu.uoc.som.jarvis.plugins.discord.<a href="edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">DiscordUtils</a></dt>
 <dd>
 <div class="block">Returns the <code>JDA</code> client associated to the provided <code>token</code>.</div>
 </dd>
@@ -5248,6 +5309,12 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/ExecutionContext.html#getSession--">getSession()</a></span> - Method in class edu.uoc.som.jarvis.core.interpreter.<a href="edu/uoc/som/jarvis/core/interpreter/ExecutionContext.html" title="class in edu.uoc.som.jarvis.core.interpreter">ExecutionContext</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/CommonPackage.html#getSessionAccess--">getSessionAccess()</a></span> - Method in interface edu.uoc.som.jarvis.common.<a href="edu/uoc/som/jarvis/common/CommonPackage.html" title="interface in edu.uoc.som.jarvis.common">CommonPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for class '<a href="edu/uoc/som/jarvis/common/SessionAccess.html" title="interface in edu.uoc.som.jarvis.common"><code><em>Session Access</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/CommonPackageImpl.html#getSessionAccess--">getSessionAccess()</a></span> - Method in class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/CommonPackageImpl.html" title="class in edu.uoc.som.jarvis.common.impl">CommonPackageImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/session/JarvisSession.html#getSessionId--">getSessionId()</a></span> - Method in class edu.uoc.som.jarvis.core.session.<a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></dt>
 <dd>
 <div class="block">Returns the unique identifier of the <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a>.</div>
@@ -5517,7 +5584,7 @@
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.HeaderValue.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>JsonEventMatcher.HeaderValue</code></a> from the provided <code>key</code> and <code>value</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html#HELLO_TYPE">HELLO_TYPE</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">JarvisSlackUtils</a></dt>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html#HELLO_TYPE">HELLO_TYPE</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">SlackUtils</a></dt>
 <dd>
 <div class="block">The Slack API answer type representing a successful authentication.</div>
 </dd>
@@ -6048,12 +6115,6 @@
 <dd>
 <div class="block">The <a href="edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core"><code>JarvisCore</code></a> instance containing this platform.</div>
 </dd>
-<dt><a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord"><span class="typeNameLink">JarvisDiscordUtils</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/discord/package-summary.html">edu.uoc.som.jarvis.plugins.discord</a></dt>
-<dd>
-<div class="block">An utility class that holds Discord-related helpers.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html#JarvisDiscordUtils--">JarvisDiscordUtils()</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.discord.<a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">JarvisDiscordUtils</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="edu/uoc/som/jarvis/core/JarvisException.html" title="class in edu.uoc.som.jarvis.core"><span class="typeNameLink">JarvisException</span></a> - Exception in <a href="edu/uoc/som/jarvis/core/package-summary.html">edu.uoc.som.jarvis.core</a></dt>
 <dd>
 <div class="block">Jarvis top-level exception.</div>
@@ -6097,10 +6158,6 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/session/JarvisSession.html#JarvisSession-java.lang.String-org.apache.commons.configuration2.Configuration-">JarvisSession(String, Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.core.session.<a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></dt>
 <dd>
 <div class="block">Constructs a new, empty <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionId</code> and <code>configuration</code>.</div>
-</dd>
-<dt><a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack"><span class="typeNameLink">JarvisSlackUtils</span></a> - Interface in <a href="edu/uoc/som/jarvis/plugins/slack/package-summary.html">edu.uoc.som.jarvis.plugins.slack</a></dt>
-<dd>
-<div class="block">An utility interface that holds Slack-related helpers.</div>
 </dd>
 <dt><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.html" title="class in edu.uoc.som.jarvis.core.platform.io"><span class="typeNameLink">JsonEventMatcher</span></a> - Class in <a href="edu/uoc/som/jarvis/core/platform/io/package-summary.html">edu.uoc.som.jarvis.core.platform.io</a></dt>
 <dd>
@@ -6517,7 +6574,7 @@
 <dd>
 <div class="block">The message to log.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html#MESSAGE_TYPE">MESSAGE_TYPE</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">JarvisSlackUtils</a></dt>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html#MESSAGE_TYPE">MESSAGE_TYPE</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">SlackUtils</a></dt>
 <dd>
 <div class="block">The Slack API answer type representing a <code>message</code>.</div>
 </dd>
@@ -7589,6 +7646,14 @@
 </a>
 <h2 class="title">S</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html#sendEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">sendEventInstance(EventInstance, JarvisSession)</a></span> - Method in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">RuntimeEventProvider</a></dt>
+<dd>
+<div class="block">Sends the provided <code>eventInstance</code> and <code>session</code> for computation to the Jarvis core component.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html#sendEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">sendEventInstance(EventInstance, JarvisSession)</a></span> - Method in class edu.uoc.som.jarvis.plugins.chat.platform.io.<a href="edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io">ChatIntentProvider</a></dt>
+<dd>
+<div class="block">Sends the provided <code>eventInstance</code> and <code>session</code> for computation to the Jarvis core component.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#SERVER_PORT_KEY">SERVER_PORT_KEY</a></span> - Static variable in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the server port to use.</div>
@@ -7597,6 +7662,32 @@
 <dd>
 <div class="block">The <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> associated to this action.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/CommonPackage.Literals.html#SESSION_ACCESS">SESSION_ACCESS</a></span> - Static variable in interface edu.uoc.som.jarvis.common.<a href="edu/uoc/som/jarvis/common/CommonPackage.Literals.html" title="interface in edu.uoc.som.jarvis.common">CommonPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<a href="edu/uoc/som/jarvis/common/impl/SessionAccessImpl.html" title="class in edu.uoc.som.jarvis.common.impl"><code><em>Session Access</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/CommonPackage.html#SESSION_ACCESS">SESSION_ACCESS</a></span> - Static variable in interface edu.uoc.som.jarvis.common.<a href="edu/uoc/som/jarvis/common/CommonPackage.html" title="interface in edu.uoc.som.jarvis.common">CommonPackage</a></dt>
+<dd>
+<div class="block">The meta object id for the '<a href="edu/uoc/som/jarvis/common/impl/SessionAccessImpl.html" title="class in edu.uoc.som.jarvis.common.impl"><code><em>Session Access</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/CommonPackage.html#SESSION_ACCESS_FEATURE_COUNT">SESSION_ACCESS_FEATURE_COUNT</a></span> - Static variable in interface edu.uoc.som.jarvis.common.<a href="edu/uoc/som/jarvis/common/CommonPackage.html" title="interface in edu.uoc.som.jarvis.common">CommonPackage</a></dt>
+<dd>
+<div class="block">The number of structural features of the '<em>Session Access</em>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/CommonPackage.html#SESSION_ACCESS_OPERATION_COUNT">SESSION_ACCESS_OPERATION_COUNT</a></span> - Static variable in interface edu.uoc.som.jarvis.common.<a href="edu/uoc/som/jarvis/common/CommonPackage.html" title="interface in edu.uoc.som.jarvis.common">CommonPackage</a></dt>
+<dd>
+<div class="block">The number of operations of the '<em>Session Access</em>' class.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/common/SessionAccess.html" title="interface in edu.uoc.som.jarvis.common"><span class="typeNameLink">SessionAccess</span></a> - Interface in <a href="edu/uoc/som/jarvis/common/package-summary.html">edu.uoc.som.jarvis.common</a></dt>
+<dd>
+<div class="block">A representation of the model object '<em><b>Session Access</b></em>'.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/common/impl/SessionAccessImpl.html" title="class in edu.uoc.som.jarvis.common.impl"><span class="typeNameLink">SessionAccessImpl</span></a> - Class in <a href="edu/uoc/som/jarvis/common/impl/package-summary.html">edu.uoc.som.jarvis.common.impl</a></dt>
+<dd>
+<div class="block">An implementation of the model object '<em><b>Session Access</b></em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/SessionAccessImpl.html#SessionAccessImpl--">SessionAccessImpl()</a></span> - Constructor for class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/SessionAccessImpl.html" title="class in edu.uoc.som.jarvis.common.impl">SessionAccessImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#setAbstract-boolean-">setAbstract(boolean)</a></span> - Method in class edu.uoc.som.jarvis.platform.impl.<a href="edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html" title="class in edu.uoc.som.jarvis.platform.impl">PlatformDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/platform/PlatformDefinition.html#setAbstract-boolean-">setAbstract(boolean)</a></span> - Method in interface edu.uoc.som.jarvis.platform.<a href="edu/uoc/som/jarvis/platform/PlatformDefinition.html" title="interface in edu.uoc.som.jarvis.platform">PlatformDefinition</a></dt>
@@ -7937,21 +8028,13 @@
 <dd>
 <div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html#SLACK_CHANNEL_CONTEXT_KEY">SLACK_CHANNEL_CONTEXT_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">JarvisSlackUtils</a></dt>
-<dd>
-<div class="block">The <a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> variable key used to store slack channel information.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html#SLACK_CONTEXT_KEY">SLACK_CONTEXT_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">JarvisSlackUtils</a></dt>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html#SLACK_CONTEXT_KEY">SLACK_CONTEXT_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">SlackUtils</a></dt>
 <dd>
 <div class="block">The <a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> key used to store slack-related information.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html#SLACK_TOKEN_KEY">SLACK_TOKEN_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">JarvisSlackUtils</a></dt>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html#SLACK_TOKEN_KEY">SLACK_TOKEN_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">SlackUtils</a></dt>
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Slack bot API token.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html#SLACK_USERNAME_CONTEXT_KEY">SLACK_USERNAME_CONTEXT_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">JarvisSlackUtils</a></dt>
-<dd>
-<div class="block">The <a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> variable key used to store slack username information.</div>
 </dd>
 <dt><a href="edu/uoc/som/jarvis/plugins/slack/platform/io/SlackIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.io"><span class="typeNameLink">SlackIntentProvider</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/slack/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.slack.platform.io</a></dt>
 <dd>
@@ -7969,6 +8052,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html#SlackPlatform-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">SlackPlatform(JarvisCore, Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.slack.platform.<a href="edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform">SlackPlatform</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform"><code>SlackPlatform</code></a> from the provided <a href="edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack"><span class="typeNameLink">SlackUtils</span></a> - Interface in <a href="edu/uoc/som/jarvis/plugins/slack/package-summary.html">edu.uoc.som.jarvis.plugins.slack</a></dt>
+<dd>
+<div class="block">An utility interface that holds Slack-related helpers.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/OperationCallImpl.html#source">source</a></span> - Variable in class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/OperationCallImpl.html" title="class in edu.uoc.som.jarvis.common.impl">OperationCallImpl</a></dt>
 <dd>
@@ -8001,6 +8088,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#stop--">stop()</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
 <dd>
 <div class="block">Stops the underlying <code>HttpServer</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/session/JarvisSession.html#store-java.lang.String-java.lang.Object-">store(String, Object)</a></span> - Method in class edu.uoc.som.jarvis.core.session.<a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></dt>
+<dd>
+<div class="block">Store the provided <code>value</code> with the given <code>key</code> as a session variable.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#STREET_ADDRESS_VALUE">STREET_ADDRESS_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
 <dd>

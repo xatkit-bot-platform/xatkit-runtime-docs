@@ -103,10 +103,15 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">edu.uoc.som.jarvis.core.platform.io.RuntimeEventProvider</a>&lt;T&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">edu.uoc.som.jarvis.core.platform.io.RuntimeIntentProvider</a>&lt;<a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/platform/DiscordPlatform.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform">DiscordPlatform</a>&gt;</li>
+<li><a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">edu.uoc.som.jarvis.core.platform.io.RuntimeIntentProvider</a>&lt;T&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io">edu.uoc.som.jarvis.plugins.chat.platform.io.ChatIntentProvider</a>&lt;<a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/platform/DiscordPlatform.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform">DiscordPlatform</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>edu.uoc.som.jarvis.plugins.discord.platform.io.DiscordIntentProvider</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -128,7 +133,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DiscordIntentProvider</span>
-extends <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">RuntimeIntentProvider</a>&lt;<a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/platform/DiscordPlatform.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform">DiscordPlatform</a>&gt;</pre>
+extends <a href="../../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io">ChatIntentProvider</a>&lt;<a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/platform/DiscordPlatform.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform">DiscordPlatform</a>&gt;</pre>
 <div class="block">A Discord user <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeIntentProvider</code></a>.
  <p>
  This class relies on the <a href="https://github.com/DV8FromTheWorld/JDA">JDA library</a> to receive direct
@@ -136,11 +141,11 @@ extends <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/Run
  sent to the Discord bot associated to this class.
  <p>
  Instances of this class must be configured with a <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> instance holding the Discord bot API token
- in the property <a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html#DISCORD_TOKEN_KEY"><code>JarvisDiscordUtils.DISCORD_TOKEN_KEY</code></a>. This token is used to authenticate the bot and
+ in the property <a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html#DISCORD_TOKEN_KEY"><code>DiscordUtils.DISCORD_TOKEN_KEY</code></a>. This token is used to authenticate the bot and
  receive messages through the JDA client.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord"><code>JarvisDiscordUtils</code></a>, 
+<dd><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord"><code>DiscordUtils</code></a>, 
 <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeIntentProvider</code></a></dd>
 </dl>
 </li>
@@ -215,6 +220,13 @@ extends <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/Run
 </tr>
 </table>
 <ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.edu.uoc.som.jarvis.plugins.chat.platform.io.ChatIntentProvider">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;edu.uoc.som.jarvis.plugins.chat.platform.io.<a href="../../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io">ChatIntentProvider</a></h3>
+<code><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html#sendEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">sendEventInstance</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.edu.uoc.som.jarvis.core.platform.io.RuntimeIntentProvider">
 <!--   -->
 </a>
@@ -275,7 +287,7 @@ extends <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/Run
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>runtimePlatform</code> or <code>configuration</code> is <code>null</code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided Discord bot token is <code>null</code> or empty</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord"><code>JarvisDiscordUtils</code></a>, 
+<dd><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord"><code>DiscordUtils</code></a>, 
 <a href="../../../../../../../../edu/uoc/som/jarvis/plugins/discord/platform/io/PrivateMessageListener.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.io"><code>PrivateMessageListener</code></a></dd>
 </dl>
 </li>

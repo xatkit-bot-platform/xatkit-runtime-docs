@@ -24,8 +24,11 @@
 <li><a href="edu/uoc/som/jarvis/intent/impl/BaseEntityDefinitionReferenceImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">BaseEntityDefinitionReferenceImpl</a></li>
 <li><a href="edu/uoc/som/jarvis/common/BooleanLiteral.html" title="interface in edu.uoc.som.jarvis.common"><span class="interfaceName">BooleanLiteral</span></a></li>
 <li><a href="edu/uoc/som/jarvis/common/impl/BooleanLiteralImpl.html" title="class in edu.uoc.som.jarvis.common.impl">BooleanLiteralImpl</a></li>
+<li><a href="edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io">ChatIntentProvider</a></li>
+<li><a href="edu/uoc/som/jarvis/plugins/chat/platform/ChatPlatform.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform">ChatPlatform</a></li>
 <li><a href="edu/uoc/som/jarvis/plugins/discord/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.io">ChatProvider</a></li>
 <li><a href="edu/uoc/som/jarvis/plugins/slack/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.io">ChatProvider</a></li>
+<li><a href="edu/uoc/som/jarvis/plugins/chat/ChatUtils.html" title="interface in edu.uoc.som.jarvis.plugins.chat"><span class="interfaceName">ChatUtils</span></a></li>
 <li><a href="edu/uoc/som/jarvis/plugins/github/platform/action/CommentIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action">CommentIssue</a></li>
 <li><a href="edu/uoc/som/jarvis/common/util/CommonAdapterFactory.html" title="class in edu.uoc.som.jarvis.common.util">CommonAdapterFactory</a></li>
 <li><a href="edu/uoc/som/jarvis/common/CommonFactory.html" title="interface in edu.uoc.som.jarvis.common"><span class="interfaceName">CommonFactory</span></a></li>
@@ -62,6 +65,7 @@
 <li><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowSession.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowSession</a></li>
 <li><a href="edu/uoc/som/jarvis/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.io">DiscordIntentProvider</a></li>
 <li><a href="edu/uoc/som/jarvis/plugins/discord/platform/DiscordPlatform.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform">DiscordPlatform</a></li>
+<li><a href="edu/uoc/som/jarvis/plugins/discord/DiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">DiscordUtils</a></li>
 <li><a href="edu/uoc/som/jarvis/util/EMFUtils.html" title="class in edu.uoc.som.jarvis.util">EMFUtils</a></li>
 <li><a href="edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><span class="interfaceName">EntityDefinition</span></a></li>
 <li><a href="edu/uoc/som/jarvis/intent/impl/EntityDefinitionImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">EntityDefinitionImpl</a></li>
@@ -123,11 +127,9 @@
 <li><a href="edu/uoc/som/jarvis/intent/util/IntentSwitch.html" title="class in edu.uoc.som.jarvis.intent.util">IntentSwitch</a></li>
 <li><a href="edu/uoc/som/jarvis/Jarvis.html" title="class in edu.uoc.som.jarvis">Jarvis</a></li>
 <li><a href="edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core">JarvisCore</a></li>
-<li><a href="edu/uoc/som/jarvis/plugins/discord/JarvisDiscordUtils.html" title="class in edu.uoc.som.jarvis.plugins.discord">JarvisDiscordUtils</a></li>
 <li><a href="edu/uoc/som/jarvis/core/JarvisException.html" title="class in edu.uoc.som.jarvis.core">JarvisException</a></li>
 <li><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></li>
 <li><a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></li>
-<li><a href="edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack"><span class="interfaceName">JarvisSlackUtils</span></a></li>
 <li><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonEventMatcher</a></li>
 <li><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.FieldValue.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonEventMatcher.FieldValue</a></li>
 <li><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.HeaderValue.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonEventMatcher.HeaderValue</a></li>
@@ -203,8 +205,11 @@
 <li><a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform">RuntimePlatform</a></li>
 <li><a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.EventProviderThread.html" title="class in edu.uoc.som.jarvis.core.platform">RuntimePlatform.EventProviderThread</a></li>
 <li><a href="edu/uoc/som/jarvis/core/RuntimePlatformRegistry.html" title="class in edu.uoc.som.jarvis.core">RuntimePlatformRegistry</a></li>
+<li><a href="edu/uoc/som/jarvis/common/SessionAccess.html" title="interface in edu.uoc.som.jarvis.common"><span class="interfaceName">SessionAccess</span></a></li>
+<li><a href="edu/uoc/som/jarvis/common/impl/SessionAccessImpl.html" title="class in edu.uoc.som.jarvis.common.impl">SessionAccessImpl</a></li>
 <li><a href="edu/uoc/som/jarvis/plugins/slack/platform/io/SlackIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.io">SlackIntentProvider</a></li>
 <li><a href="edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform">SlackPlatform</a></li>
+<li><a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack"><span class="interfaceName">SlackUtils</span></a></li>
 <li><a href="edu/uoc/som/jarvis/common/StringLiteral.html" title="interface in edu.uoc.som.jarvis.common"><span class="interfaceName">StringLiteral</span></a></li>
 <li><a href="edu/uoc/som/jarvis/common/impl/StringLiteralImpl.html" title="class in edu.uoc.som.jarvis.common.impl">StringLiteralImpl</a></li>
 <li><a href="edu/uoc/som/jarvis/intent/TextFragment.html" title="interface in edu.uoc.som.jarvis.intent"><span class="interfaceName">TextFragment</span></a></li>

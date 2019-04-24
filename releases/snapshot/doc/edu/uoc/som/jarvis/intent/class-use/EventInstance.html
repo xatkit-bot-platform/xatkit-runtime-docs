@@ -112,6 +112,10 @@
 <div class="block">Contains utility classes used to manipulate Intent models.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#edu.uoc.som.jarvis.plugins.chat.platform.io">edu.uoc.som.jarvis.plugins.chat.platform.io</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -168,6 +172,22 @@
 <td class="colLast"><span class="typeNameLabel">JsonEventMatcher.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.html#match-org.apache.http.Header:A-com.google.gson.JsonElement-">match</a></span>(org.apache.http.Header[]&nbsp;headers,
      com.google.gson.JsonElement&nbsp;content)</code>
 <div class="block">Matches the provided <code>headers</code> and <code>content</code> against the registered <a href="../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent"><code>EventInstance</code></a>s.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/package-summary.html">edu.uoc.som.jarvis.core.platform.io</a> with parameters of type <a href="../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">RuntimeEventProvider.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html#sendEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">sendEventInstance</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a>&nbsp;eventInstance,
+                 <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
+<div class="block">Sends the provided <code>eventInstance</code> and <code>session</code> for computation to the Jarvis core component.</div>
 </td>
 </tr>
 </tbody>
@@ -262,6 +282,27 @@
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/intent/util/IntentSwitch.html" title="type parameter in IntentSwitch">T</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IntentSwitch.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/intent/util/IntentSwitch.html#caseEventInstance-edu.uoc.som.jarvis.intent.EventInstance-">caseEventInstance</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a>&nbsp;object)</code>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Event Instance</em>'.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="edu.uoc.som.jarvis.plugins.chat.platform.io">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a> in <a href="../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.chat.platform.io</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.chat.platform.io</a> with parameters of type <a href="../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="typeNameLabel">ChatIntentProvider.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html#sendEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">sendEventInstance</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent">EventInstance</a>&nbsp;eventInstance,
+                 <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a>&nbsp;session)</code>
+<div class="block">Sends the provided <code>eventInstance</code> and <code>session</code> for computation to the Jarvis core component.</div>
 </td>
 </tr>
 </tbody>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -169,15 +169,28 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html#get-java.lang.String-">get</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>
+<div class="block">Retrieves the session value associated to the provided <code>key</code>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session">RuntimeContexts</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html#getRuntimeContexts--">getRuntimeContexts</a></span>()</code>
 <div class="block">Returns the session's <a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> holding context-related variables.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html#getSessionId--">getSessionId</a></span>()</code>
 <div class="block">Returns the unique identifier of the <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html#store-java.lang.String-java.lang.Object-">store</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>
+<div class="block">Store the provided <code>value</code> with the given <code>key</code> as a session variable.</div>
 </td>
 </tr>
 </table>
@@ -264,7 +277,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <a name="getRuntimeContexts--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getRuntimeContexts</h4>
 <pre>public&nbsp;<a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session">RuntimeContexts</a>&nbsp;getRuntimeContexts()</pre>
@@ -272,6 +285,42 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the session's <a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> holding context-related variables</dd>
+</dl>
+</li>
+</ul>
+<a name="store-java.lang.String-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>store</h4>
+<pre>public&nbsp;void&nbsp;store(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key,
+                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
+<div class="block">Store the provided <code>value</code> with the given <code>key</code> as a session variable.
+ <p>
+ Session-related variables are persistent across intent and events, and can contain any <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a>. They
+ are used to store results of specific actions, or set global variables that can be accessed along the
+ conversation.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the key to store and retrieve the provided value</dd>
+<dd><code>value</code> - the value to store</dd>
+</dl>
+</li>
+</ul>
+<a name="get-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>get</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;get(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<div class="block">Retrieves the session value associated to the provided <code>key</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the key to retrieve the value for</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the session value associated to the provided <code>key</code> if it exists, <code>null</code> otherwise</dd>
 </dl>
 </li>
 </ul>

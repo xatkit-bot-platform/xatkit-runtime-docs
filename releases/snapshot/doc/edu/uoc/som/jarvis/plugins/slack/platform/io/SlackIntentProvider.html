@@ -103,10 +103,15 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">edu.uoc.som.jarvis.core.platform.io.RuntimeEventProvider</a>&lt;T&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">edu.uoc.som.jarvis.core.platform.io.RuntimeIntentProvider</a>&lt;<a href="../../../../../../../../edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform">SlackPlatform</a>&gt;</li>
+<li><a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">edu.uoc.som.jarvis.core.platform.io.RuntimeIntentProvider</a>&lt;T&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io">edu.uoc.som.jarvis.plugins.chat.platform.io.ChatIntentProvider</a>&lt;<a href="../../../../../../../../edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform">SlackPlatform</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>edu.uoc.som.jarvis.plugins.slack.platform.io.SlackIntentProvider</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -128,18 +133,18 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">SlackIntentProvider</span>
-extends <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">RuntimeIntentProvider</a>&lt;<a href="../../../../../../../../edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform">SlackPlatform</a>&gt;</pre>
+extends <a href="../../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io">ChatIntentProvider</a>&lt;<a href="../../../../../../../../edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform">SlackPlatform</a>&gt;</pre>
 <div class="block">A Slack user <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeIntentProvider</code></a>.
  <p>
  This class relies on the Slack RTM API to receive direct messages and react to them. Note that this input provider
  only captures direct messages sent to the Slack bot associated to this class.
  <p>
  Instances of this class must be configured with a <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> instance holding the Slack bot API token
- in the property <a href="../../../../../../../../edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html#SLACK_TOKEN_KEY"><code>JarvisSlackUtils.SLACK_TOKEN_KEY</code></a>. This token is used to authenticate the bot and receive
+ in the property <a href="../../../../../../../../edu/uoc/som/jarvis/plugins/slack/SlackUtils.html#SLACK_TOKEN_KEY"><code>SlackUtils.SLACK_TOKEN_KEY</code></a>. This token is used to authenticate the bot and receive
  messages through the RTM API.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/slack/JarvisSlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack"><code>JarvisSlackUtils</code></a>, 
+<dd><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/slack/SlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack"><code>SlackUtils</code></a>, 
 <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeEventProvider</code></a></dd>
 </dl>
 </li>
@@ -213,6 +218,13 @@ extends <a href="../../../../../../../../edu/uoc/som/jarvis/core/platform/io/Run
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/slack/platform/io/SlackIntentProvider.html#run--">run</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.edu.uoc.som.jarvis.plugins.chat.platform.io.ChatIntentProvider">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;edu.uoc.som.jarvis.plugins.chat.platform.io.<a href="../../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io">ChatIntentProvider</a></h3>
+<code><a href="../../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html#sendEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-">sendEventInstance</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.edu.uoc.som.jarvis.core.platform.io.RuntimeIntentProvider">
 <!--   -->
