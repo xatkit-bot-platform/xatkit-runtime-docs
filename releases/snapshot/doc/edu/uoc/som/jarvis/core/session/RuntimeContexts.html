@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -250,12 +250,25 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContext-edu.uoc.som.jarvis.intent.ContextInstance-">setContext</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/ContextInstance.html" title="interface in edu.uoc.som.jarvis.intent">ContextInstance</a>&nbsp;contextInstance)</code>
+<div class="block">Sets the context associated to the provided <code>contextInstance</code>.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContext-java.lang.String-int-">setContext</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;context,
+          int&nbsp;lifespanCount)</code>
+<div class="block">Sets the provided <code>context</code> with the given <code>lifespanCount</code>.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContextValue-edu.uoc.som.jarvis.intent.ContextParameterValue-">setContextValue</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/ContextParameterValue.html" title="interface in edu.uoc.som.jarvis.intent">ContextParameterValue</a>&nbsp;contextParameterValue)</code>
 <div class="block">Stores the provided <code>contextParameterValue</code> in the context.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContextValue-java.lang.String-int-java.lang.String-java.lang.Object-">setContextValue</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;context,
                int&nbsp;lifespanCount,
@@ -374,6 +387,68 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
+<a name="setContext-edu.uoc.som.jarvis.intent.ContextInstance-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setContext</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;setContext(<a href="../../../../../../edu/uoc/som/jarvis/intent/ContextInstance.html" title="interface in edu.uoc.som.jarvis.intent">ContextInstance</a>&nbsp;contextInstance)</pre>
+<div class="block">Sets the context associated to the provided <code>contextInstance</code>.
+ <p>
+ This method retrieves the name of the context to set from the provided <a href="../../../../../../edu/uoc/som/jarvis/intent/ContextInstance.html" title="interface in edu.uoc.som.jarvis.intent"><code>ContextInstance</code></a> by navigating
+ its <code>definition</code> reference. Note that passing a <code>contextInstance</code> without definition to this
+ method will throw an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang"><code>IllegalArgumentException</code></a>.
+ <p>
+ This method is used as syntactic sugar to register <a href="../../../../../../edu/uoc/som/jarvis/intent/ContextInstance.html" title="interface in edu.uoc.som.jarvis.intent"><code>ContextInstance</code></a>s, see
+ <a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContext-java.lang.String-int-"><code>setContext(String, int)</code></a> to register a context from <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> values.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>contextInstance</code> - the <a href="../../../../../../edu/uoc/som/jarvis/intent/ContextInstance.html" title="interface in edu.uoc.som.jarvis.intent"><code>ContextInstance</code></a> to set</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing the variables of the set context</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>contextInstance</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>contextInstance</code>'s <code>definition</code> is not set</dd>
+</dl>
+</li>
+</ul>
+<a name="setContext-java.lang.String-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setContext</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;setContext(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;context,
+                                     int&nbsp;lifespanCount)</pre>
+<div class="block">Sets the provided <code>context</code> with the given <code>lifespanCount</code>.
+ <p>
+ <b>Note:</b> the context lifespan count is only updated if <code>lifespanCount &gt; #getContextLifespanCount
+ (context)</code>. Context lifespan counts can only be decremented by calling <a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#decrementLifespanCounts--"><code>decrementLifespanCounts()</code></a>.
+ This architecture ensures the global lifespan count consistency among context variables.
+ <p>
+ As an example, calling setContextValue("slack", 5, "username", "myUsername") sets the variable
+ <i>username</i> with the value <i>myUsername</i> in the <i>slack</i> context, and sets its lifespan
+ count to <code>5</code>.
+ <p>
+ To retrieve all the variables of a given sub-context see <a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#getContextVariables-java.lang.String-"><code>getContextVariables(String)</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>context</code> - the name of the context to set</dd>
+<dd><code>lifespanCount</code> - the lifespan count of the context to set</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing the variables of the set context</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>context</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>lifespanCount &lt;= 0</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContext-edu.uoc.som.jarvis.intent.ContextInstance-"><code>setContext(ContextInstance)</code></a>, 
+<a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContextValue-edu.uoc.som.jarvis.intent.ContextParameterValue-"><code>setContextValue(ContextParameterValue)</code></a>, 
+<a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContextValue-java.lang.String-int-java.lang.String-java.lang.Object-"><code>setContextValue(String, int, String, Object)</code></a>, 
+<a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#decrementLifespanCounts--"><code>decrementLifespanCounts()</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="setContextValue-java.lang.String-int-java.lang.String-java.lang.Object-">
 <!--   -->
 </a>
@@ -397,7 +472,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  To retrieve all the variables of a given sub-context see <a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#getContextVariables-java.lang.String-"><code>getContextVariables(String)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>context</code> - the sub-context to store the value in</dd>
+<dd><code>context</code> - the name of the context to set</dd>
 <dd><code>lifespanCount</code> - the lifespan count of the context to set</dd>
 <dd><code>key</code> - the sub-context key associated to the value</dd>
 <dd><code>value</code> - the value to store</dd>
@@ -423,7 +498,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <p>
  This method extracts the context name and parameter key from the provided <a href="../../../../../../edu/uoc/som/jarvis/intent/ContextParameterValue.html" title="interface in edu.uoc.som.jarvis.intent"><code>ContextParameterValue</code></a>, by
  navigating its <a href="../../../../../../edu/uoc/som/jarvis/intent/ContextParameter.html" title="interface in edu.uoc.som.jarvis.intent"><code>ContextParameter</code></a> and <a href="../../../../../../edu/uoc/som/jarvis/intent/Context.html" title="interface in edu.uoc.som.jarvis.intent"><code>Context</code></a> references. This method is
- used as syntactic sugar to register <a href="../../../../../../edu/uoc/som/jarvis/intent/ContextParameterValue.html" title="interface in edu.uoc.som.jarvis.intent"><code>ContextParameterValue</code></a>s received from <a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeEventProvider</code></a>s, see
+ used as syntactic sugar to register <a href="../../../../../../edu/uoc/som/jarvis/intent/ContextParameterValue.html" title="interface in edu.uoc.som.jarvis.intent"><code>ContextParameterValue</code></a>s received from <a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/RuntimeEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeEventProvider</code></a>
+ s, see
  <a href="../../../../../../edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContextValue-java.lang.String-int-java.lang.String-java.lang.Object-"><code>setContextValue(String, int, String, Object)</code></a> to register a context value from <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> values.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

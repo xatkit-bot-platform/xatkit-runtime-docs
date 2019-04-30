@@ -2026,6 +2026,10 @@
 <dd>
 <div class="block">Decrements the lifespanCount of all the stored contexts, and remove them if there lifespanCount decreases to 0.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#DEFAULT_FALLBACK_INTENT">DEFAULT_FALLBACK_INTENT</a></span> - Static variable in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">The Default Fallback Intent that is returned when the user input does not match any registered Intent.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#DEFAULT_LANGUAGE_CODE">DEFAULT_LANGUAGE_CODE</a></span> - Static variable in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">The default language processed by DialogFlow.</div>
@@ -2068,7 +2072,7 @@
 </dd>
 <dt><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition"><span class="typeNameLink">DefaultIntentRecognitionProvider</span></a> - Class in <a href="edu/uoc/som/jarvis/core/recognition/package-summary.html">edu.uoc.som.jarvis.core.recognition</a></dt>
 <dd>
-<div class="block">A default <a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition"><code>IntentRecognitionProvider</code></a> that manages <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a>s.</div>
+<div class="block">A default <a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition"><code>IntentRecognitionProvider</code></a> that relies on RegExp to match user inputs.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#DefaultIntentRecognitionProvider-org.apache.commons.configuration2.Configuration-">DefaultIntentRecognitionProvider(Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
 <dd>
@@ -2084,7 +2088,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#deleteEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">deleteEntityDefinition(EntityDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
 <dd>
-<div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
+<div class="block">Deletes the provided <code>entityDefinition</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#deleteEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">deleteEntityDefinition(EntityDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
@@ -2096,7 +2100,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#deleteIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">deleteIntentDefinition(IntentDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
 <dd>
-<div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
+<div class="block">Deletes the provided <code>intentDefinition</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#deleteIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">deleteIntentDefinition(IntentDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
@@ -2891,6 +2895,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/EntityDefinitionReferenceImpl.html#EntityDefinitionReferenceImpl--">EntityDefinitionReferenceImpl()</a></span> - Constructor for class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/EntityDefinitionReferenceImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">EntityDefinitionReferenceImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#entityMapper">entityMapper</a></span> - Variable in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">The <a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>EntityMapper</code></a> used to store system and dynamic entity mappings.</div>
+</dd>
 <dt><a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><span class="typeNameLink">EntityMapper</span></a> - Class in <a href="edu/uoc/som/jarvis/core/recognition/package-summary.html">edu.uoc.som.jarvis.core.recognition</a></dt>
 <dd>
 <div class="block">A mapper that bind concrete entity names to their abstract definitions.</div>
@@ -3691,6 +3699,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#FLIGHT_NUMBER_VALUE">FLIGHT_NUMBER_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
 <dd>
 <div class="block">The '<em><b>FLIGHT NUMBER</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#FOLLOW_CONTEXT_NAME_SUFFIX">FOLLOW_CONTEXT_NAME_SUFFIX</a></span> - Static variable in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">The context name suffix used to identify follow-up contexts.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/IntentDefinitionImpl.html#followedBy">followedBy</a></span> - Variable in class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/IntentDefinitionImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">IntentDefinitionImpl</a></dt>
 <dd>
@@ -4619,7 +4631,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#getIntent-java.lang.String-edu.uoc.som.jarvis.core.session.JarvisSession-">getIntent(String, JarvisSession)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
 <dd>
-<div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
+<div class="block">Computes the <a href="edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent"><code>RecognizedIntent</code></a> associated to the provided <code>input</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-edu.uoc.som.jarvis.core.session.JarvisSession-">getIntent(String, JarvisSession)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
@@ -5971,6 +5983,10 @@
 <dt><a href="edu/uoc/som/jarvis/intent/impl/IntentPackageImpl.html" title="class in edu.uoc.som.jarvis.intent.impl"><span class="typeNameLink">IntentPackageImpl</span></a> - Class in <a href="edu/uoc/som/jarvis/intent/impl/package-summary.html">edu.uoc.som.jarvis.intent.impl</a></dt>
 <dd>
 <div class="block">An implementation of the model <b>Package</b>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#intentPatterns">intentPatterns</a></span> - Variable in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">The <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> used to store RegExp <a href="http://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex"><code>Pattern</code></a>s associated to the registered <a href="edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>IntentDefinition</code></a>.</div>
 </dd>
 <dt><a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition"><span class="typeNameLink">IntentRecognitionProvider</span></a> - Interface in <a href="edu/uoc/som/jarvis/core/recognition/package-summary.html">edu.uoc.som.jarvis.core.recognition</a></dt>
 <dd>
@@ -7477,7 +7493,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">registerEntityDefinition(EntityDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
 <dd>
-<div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
+<div class="block">Registers the provided <code>entityDefinition</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">registerEntityDefinition(EntityDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
@@ -7493,7 +7509,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">registerIntentDefinition(IntentDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
 <dd>
-<div class="block">This method is not implemented and throws an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html?is-external=true" title="class or interface in java.lang"><code>UnsupportedOperationException</code></a>.</div>
+<div class="block">Registers the provided <a href="edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>IntentDefinition</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">registerIntentDefinition(IntentDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
@@ -7738,6 +7754,14 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/IfExpressionImpl.html#setCondition-edu.uoc.som.jarvis.common.Expression-">setCondition(Expression)</a></span> - Method in class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/IfExpressionImpl.html" title="class in edu.uoc.som.jarvis.common.impl">IfExpressionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContext-edu.uoc.som.jarvis.intent.ContextInstance-">setContext(ContextInstance)</a></span> - Method in class edu.uoc.som.jarvis.core.session.<a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session">RuntimeContexts</a></dt>
+<dd>
+<div class="block">Sets the context associated to the provided <code>contextInstance</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html#setContext-java.lang.String-int-">setContext(String, int)</a></span> - Method in class edu.uoc.som.jarvis.core.session.<a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session">RuntimeContexts</a></dt>
+<dd>
+<div class="block">Sets the provided <code>context</code> with the given <code>lifespanCount</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/ContextParameterValue.html#setContextInstance-edu.uoc.som.jarvis.intent.ContextInstance-">setContextInstance(ContextInstance)</a></span> - Method in interface edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/ContextParameterValue.html" title="interface in edu.uoc.som.jarvis.intent">ContextParameterValue</a></dt>
 <dd>
 <div class="block">Sets the value of the '<a href="edu/uoc/som/jarvis/intent/ContextParameterValue.html#getContextInstance--"><code><em>Context Instance</em></code></a>' container reference.</div>
