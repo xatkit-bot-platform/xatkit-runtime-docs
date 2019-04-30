@@ -206,9 +206,21 @@
 <dd>
 <div class="block">The cached value of the '<a href="edu/uoc/som/jarvis/platform/impl/PlatformDefinitionImpl.html#getActions--"><code><em>Actions</em></code></a>' containment reference list.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html#addCustomEntityMapping-edu.uoc.som.jarvis.intent.CustomEntityDefinition-java.lang.String-">addCustomEntityMapping(CustomEntityDefinition, String)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowEntityMapper</a></dt>
+<dd>
+<div class="block">This method is disabled for <a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowEntityMapper</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html#addCustomEntityMapping-edu.uoc.som.jarvis.intent.CustomEntityDefinition-java.lang.String-">addCustomEntityMapping(CustomEntityDefinition, String)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></dt>
+<dd>
+<div class="block">Adds a new mapping between the provided <code>entityDefinition</code> and the given <code>concreteEntity</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html#addEntityMapping-edu.uoc.som.jarvis.intent.EntityType-java.lang.String-">addEntityMapping(EntityType, String)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></dt>
 <dd>
 <div class="block">Adds a new mapping between the provided <code>abstractEntityType</code> and the given <code>concreteEntity</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html#addEntityMapping-edu.uoc.som.jarvis.intent.EntityDefinition-java.lang.String-">addEntityMapping(EntityDefinition, String)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></dt>
+<dd>
+<div class="block">Adds a new mapping between the provided <code>entityDefinition</code> and the given <code>concreteEntity</code>.</div>
 </dd>
 <dt><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/AdditionOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object"><span class="typeNameLink">AdditionOperation</span></a> - Class in <a href="edu/uoc/som/jarvis/core/interpreter/operation/object/package-summary.html">edu.uoc.som.jarvis.core.interpreter.operation.object</a></dt>
 <dd>
@@ -2046,6 +2058,14 @@
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>EObject</em>'.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/core/recognition/DefaultEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><span class="typeNameLink">DefaultEntityMapper</span></a> - Class in <a href="edu/uoc/som/jarvis/core/recognition/package-summary.html">edu.uoc.som.jarvis.core.recognition</a></dt>
+<dd>
+<div class="block">An <a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>EntityMapper</code></a> that uses RegExp to match system entities.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultEntityMapper.html#DefaultEntityMapper--">DefaultEntityMapper()</a></span> - Constructor for class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultEntityMapper</a></dt>
+<dd>
+<div class="block">Constructs a <a href="edu/uoc/som/jarvis/core/recognition/DefaultEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>DefaultEntityMapper</code></a> that uses RegExp to match system entities.</div>
+</dd>
 <dt><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition"><span class="typeNameLink">DefaultIntentRecognitionProvider</span></a> - Class in <a href="edu/uoc/som/jarvis/core/recognition/package-summary.html">edu.uoc.som.jarvis.core.recognition</a></dt>
 <dd>
 <div class="block">A default <a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition"><code>IntentRecognitionProvider</code></a> that manages <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a>s.</div>
@@ -2100,7 +2120,7 @@
 </dd>
 <dt><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><span class="typeNameLink">DialogFlowEntityMapper</span></a> - Class in <a href="edu/uoc/som/jarvis/core/recognition/dialogflow/package-summary.html">edu.uoc.som.jarvis.core.recognition.dialogflow</a></dt>
 <dd>
-<div class="block">An <a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>EntityMapper</code></a> initializes with DialogFlow's system entities.</div>
+<div class="block">An <a href="edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>EntityMapper</code></a> initialized with DialogFlow's system entities.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html#DialogFlowEntityMapper--">DialogFlowEntityMapper()</a></span> - Constructor for class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowEntityMapper</a></dt>
 <dd>

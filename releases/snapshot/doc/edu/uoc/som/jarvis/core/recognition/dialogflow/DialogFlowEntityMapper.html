@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -116,7 +116,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">DialogFlowEntityMapper</span>
 extends <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></pre>
-<div class="block">An <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>EntityMapper</code></a> initializes with DialogFlow's system entities.
+<div class="block">An <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>EntityMapper</code></a> initialized with DialogFlow's system entities.
  <p>
  This class provides a mapping of <a href="../../../../../../../edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent"><code>EntityType</code></a>s to DialogFlow's system entities. Mapped entities can be
  accessed by calling <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-edu.uoc.som.jarvis.intent.EntityDefinition-"><code>EntityMapper.getMappingFor(EntityDefinition)</code></a>.</div>
@@ -173,6 +173,13 @@ extends <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Entity
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html#addCustomEntityMapping-edu.uoc.som.jarvis.intent.CustomEntityDefinition-java.lang.String-">addCustomEntityMapping</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinition</a>&nbsp;entityDefinition,
+                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;concreteEntity)</code>
+<div class="block">This method is disabled for <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowEntityMapper</code></a>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html#getMappingForCustomEntity-edu.uoc.som.jarvis.intent.CustomEntityDefinition-">getMappingForCustomEntity</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinition</a>&nbsp;customEntityDefinition)</code>
 <div class="block">Maps the provided <code>customEntityDefinition</code> to its DialogFlow implementation.</div>
@@ -184,7 +191,7 @@ extends <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Entity
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;edu.uoc.som.jarvis.core.recognition.<a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></h3>
-<code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#addEntityMapping-edu.uoc.som.jarvis.intent.EntityType-java.lang.String-">addEntityMapping</a>, <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-edu.uoc.som.jarvis.intent.EntityDefinition-">getMappingFor</a>, <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-edu.uoc.som.jarvis.intent.EntityType-">getMappingFor</a>, <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#setFallbackEntityMapping-java.lang.String-">setFallbackEntityMapping</a></code></li>
+<code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#addEntityMapping-edu.uoc.som.jarvis.intent.EntityDefinition-java.lang.String-">addEntityMapping</a>, <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#addEntityMapping-edu.uoc.som.jarvis.intent.EntityType-java.lang.String-">addEntityMapping</a>, <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-edu.uoc.som.jarvis.intent.EntityDefinition-">getMappingFor</a>, <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-edu.uoc.som.jarvis.intent.EntityType-">getMappingFor</a>, <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#setFallbackEntityMapping-java.lang.String-">setFallbackEntityMapping</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -225,6 +232,30 @@ extends <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Entity
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addCustomEntityMapping-edu.uoc.som.jarvis.intent.CustomEntityDefinition-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addCustomEntityMapping</h4>
+<pre>public&nbsp;void&nbsp;addCustomEntityMapping(<a href="../../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinition</a>&nbsp;entityDefinition,
+                                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;concreteEntity)</pre>
+<div class="block">This method is disabled for <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowEntityMapper</code></a>.
+ <p>
+ DialogFlow entities are registered independently from the intents. This two-step process allows to reference
+ entities with their names, and do not require to store any mapping information in the
+ <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowEntityMapper</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#addCustomEntityMapping-edu.uoc.som.jarvis.intent.CustomEntityDefinition-java.lang.String-">addCustomEntityMapping</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityDefinition</code> - the <a href="../../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent"><code>CustomEntityDefinition</code></a> to map</dd>
+<dd><code>concreteEntity</code> - the mapped value associated to the provided <code>entityDefinition</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingFor-edu.uoc.som.jarvis.intent.EntityDefinition-"><code>EntityMapper.getMappingFor(EntityDefinition)</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="getMappingForCustomEntity-edu.uoc.som.jarvis.intent.CustomEntityDefinition-">
 <!--   -->
 </a>
@@ -232,7 +263,11 @@ extends <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Entity
 <li class="blockList">
 <h4>getMappingForCustomEntity</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMappingForCustomEntity(<a href="../../../../../../../edu/uoc/som/jarvis/intent/CustomEntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">CustomEntityDefinition</a>&nbsp;customEntityDefinition)</pre>
-<div class="block">Maps the provided <code>customEntityDefinition</code> to its DialogFlow implementation.</div>
+<div class="block">Maps the provided <code>customEntityDefinition</code> to its DialogFlow implementation.
+ <p>
+ DialogFlow entities are registered independently from the intents. This two-step process allows to reference
+ entities with their names, and do not require to store any mapping information in the
+ <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowEntityMapper</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html#getMappingForCustomEntity-edu.uoc.som.jarvis.intent.CustomEntityDefinition-">getMappingForCustomEntity</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/EntityMapper.html" title="class in edu.uoc.som.jarvis.core.recognition">EntityMapper</a></code></dd>
