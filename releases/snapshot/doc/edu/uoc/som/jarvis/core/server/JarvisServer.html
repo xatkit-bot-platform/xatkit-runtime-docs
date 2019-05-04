@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../../../../edu/uoc/som/jarvis/core/server/JsonRestHandler.html" title="interface in edu.uoc.som.jarvis.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?edu/uoc/som/jarvis/core/server/JarvisServer.html" target="_top">Frames</a></li>
@@ -198,11 +198,26 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#isRestEndpoint-java.lang.String-">isRestEndpoint</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
+<div class="block">Returns whether the provided <code>uri</code> is associated to a REST endpoint.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#isStarted--">isStarted</a></span>()</code>
 <div class="block">Returns <code>true</code> if the <a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server"><code>JarvisServer</code></a> is started, <code>false</code> otherwise.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>com.google.gson.JsonElement</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-com.google.gson.JsonElement-">notifyRestHandler</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                 <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;header,
+                 <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
+                 com.google.gson.JsonElement&nbsp;content)</code>
+<div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-org.apache.http.Header:A-">notifyWebhookEventProviders</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
@@ -210,25 +225,32 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Notifies the registered <a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#registerRestEndpoint-java.lang.String-edu.uoc.som.jarvis.core.server.JsonRestHandler-">registerRestEndpoint</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                    <a href="../../../../../../edu/uoc/som/jarvis/core/server/JsonRestHandler.html" title="interface in edu.uoc.som.jarvis.core.server">JsonRestHandler</a>&nbsp;handler)</code>
+<div class="block">Registers the provided <code>handler</code> as a REST endpoint for the provided <code>uri</code>.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#registerWebhookEventProvider-edu.uoc.som.jarvis.core.platform.io.WebhookEventProvider-">registerWebhookEventProvider</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
 <div class="block">Register a <a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>WebhookEventProvider</code></a>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#start--">start</a></span>()</code>
 <div class="block">Starts the underlying <code>HttpServer</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#stop--">stop</a></span>()</code>
 <div class="block">Stops the underlying <code>HttpServer</code>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#unregisterWebhookEventProvider-edu.uoc.som.jarvis.core.platform.io.WebhookEventProvider-">unregisterWebhookEventProvider</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
 <div class="block">Unregistered a <a href="../../../../../../edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>WebhookEventProvider</code></a>.</div>
@@ -373,6 +395,77 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Stops the underlying <code>HttpServer</code>.</div>
 </li>
 </ul>
+<a name="registerRestEndpoint-java.lang.String-edu.uoc.som.jarvis.core.server.JsonRestHandler-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerRestEndpoint</h4>
+<pre>public&nbsp;void&nbsp;registerRestEndpoint(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                                 <a href="../../../../../../edu/uoc/som/jarvis/core/server/JsonRestHandler.html" title="interface in edu.uoc.som.jarvis.core.server">JsonRestHandler</a>&nbsp;handler)</pre>
+<div class="block">Registers the provided <code>handler</code> as a REST endpoint for the provided <code>uri</code>.
+ <p>
+ The provided <code>handler</code> will receive the HTTP requests that are sent to the provided <code>uri</code> through
+ the <a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-com.google.gson.JsonElement-"><code>notifyRestHandler(String, List, List, JsonElement)</code></a> method.
+ <p>
+ <b>Note</b>: the provided <code>uri</code> must start with a leading <code>/</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - the URI of the REST endpoint</dd>
+<dd><code>handler</code> - the <a href="../../../../../../edu/uoc/som/jarvis/core/server/JsonRestHandler.html" title="interface in edu.uoc.som.jarvis.core.server"><code>JsonRestHandler</code></a> to associate to the REST endpoint</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>uri</code> or <code>handler</code> is <code>null</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>uri</code> does not start with a leading <code>/</code></dd>
+</dl>
+</li>
+</ul>
+<a name="isRestEndpoint-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isRestEndpoint</h4>
+<pre>public&nbsp;boolean&nbsp;isRestEndpoint(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</pre>
+<div class="block">Returns whether the provided <code>uri</code> is associated to a REST endpoint.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - the URI of the REST endpoint to check</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if there is a REST endpoint associated to the provided <code>uri</code>, <code>false</code> otherwise</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>uri</code> is <code>null</code></dd>
+</dl>
+</li>
+</ul>
+<a name="notifyRestHandler-java.lang.String-java.util.List-java.util.List-com.google.gson.JsonElement-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notifyRestHandler</h4>
+<pre>public&nbsp;com.google.gson.JsonElement&nbsp;notifyRestHandler(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;header,
+                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
+                                                     <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                                     com.google.gson.JsonElement&nbsp;content)</pre>
+<div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - the URI of the REST endpoint to notify</dd>
+<dd><code>header</code> - the HTTP <code>Header</code>s of the request sent to the endpoint</dd>
+<dd><code>params</code> - the HTTP parameters of the request sent to the endpoint</dd>
+<dd><code>content</code> - the <code>JsonElement</code> representing the content of the request sent to the endpoint</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <code>JsonElement</code> returned by the endpoint, or <code>null</code> if the endpoint does not return
+ anything</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>uri</code>, <code>header</code>, or <code>params</code> is <code>null</code></dd>
+<dd><code><a href="../../../../../../edu/uoc/som/jarvis/core/JarvisException.html" title="class in edu.uoc.som.jarvis.core">JarvisException</a></code> - if there is no REST endpoint registered for the provided <code>uri</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../edu/uoc/som/jarvis/core/server/JarvisServer.html#registerRestEndpoint-java.lang.String-edu.uoc.som.jarvis.core.server.JsonRestHandler-"><code>registerRestEndpoint(String, JsonRestHandler)</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="registerWebhookEventProvider-edu.uoc.som.jarvis.core.platform.io.WebhookEventProvider-">
 <!--   -->
 </a>
@@ -484,7 +577,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../../../../edu/uoc/som/jarvis/core/server/JsonRestHandler.html" title="interface in edu.uoc.som.jarvis.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?edu/uoc/som/jarvis/core/server/JarvisServer.html" target="_top">Frames</a></li>

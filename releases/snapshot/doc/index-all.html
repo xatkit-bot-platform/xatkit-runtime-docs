@@ -3734,6 +3734,11 @@
 <dd>
 <div class="block">Returns the '<em><b>Entity Type</b></em>' literal with the specified integer value.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html#getAccessControlAllowHeaders--">getAccessControlAllowHeaders()</a></span> - Method in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">WebhookEventProvider</a></dt>
+<dd>
+<div class="block">Returns the <code>Access-Control-Allow-Headers</code> HTTP header values that must be set by the server when
+ calling this provider.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/execution/ActionInstance.html#getAction--">getAction()</a></span> - Method in interface edu.uoc.som.jarvis.execution.<a href="edu/uoc/som/jarvis/execution/ActionInstance.html" title="interface in edu.uoc.som.jarvis.execution">ActionInstance</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Action</b></em>' reference.</div>
@@ -5585,6 +5590,10 @@
 </a>
 <h2 class="title">H</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JsonRestHandler.html#handle-java.util.List-java.util.List-com.google.gson.JsonElement-">handle(List&lt;Header&gt;, List&lt;NameValuePair&gt;, JsonElement)</a></span> - Method in interface edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JsonRestHandler.html" title="interface in edu.uoc.som.jarvis.core.server">JsonRestHandler</a></dt>
+<dd>
+<div class="block">Handles the provided HTTP request.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html#handleContent-java.lang.Object-org.apache.http.Header:A-">handleContent(Object, Header[])</a></span> - Method in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">WebhookEventProvider</a></dt>
 <dd>
 <div class="block">Handles the raw HTTP request content and headers.</div>
@@ -6077,6 +6086,10 @@
 <dd>
 <div class="block">Returns whether this factory is applicable for the type of the object.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#isRestEndpoint-java.lang.String-">isRestEndpoint(String)</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
+<dd>
+<div class="block">Returns whether the provided <code>uri</code> is associated to a REST endpoint.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/ExecutionService.html#isShutdown--">isShutdown()</a></span> - Method in class edu.uoc.som.jarvis.core.<a href="edu/uoc/som/jarvis/core/ExecutionService.html" title="class in edu.uoc.som.jarvis.core">ExecutionService</a></dt>
 <dd>
 <div class="block">Returns whether the <a href="edu/uoc/som/jarvis/core/ExecutionService.html" title="class in edu.uoc.som.jarvis.core"><code>ExecutionService</code></a> is shutdown.</div>
@@ -6213,6 +6226,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/JsonWebhookEventProvider.JsonHelper.html#JsonHelper--">JsonHelper()</a></span> - Constructor for class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/JsonWebhookEventProvider.JsonHelper.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonWebhookEventProvider.JsonHelper</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="edu/uoc/som/jarvis/core/server/JsonRestHandler.html" title="interface in edu.uoc.som.jarvis.core.server"><span class="typeNameLink">JsonRestHandler</span></a> - Interface in <a href="edu/uoc/som/jarvis/core/server/package-summary.html">edu.uoc.som.jarvis.core.server</a></dt>
+<dd>
+<div class="block">A handler that receives HTTP requests and process them.</div>
+</dd>
 <dt><a href="edu/uoc/som/jarvis/core/platform/io/JsonWebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><span class="typeNameLink">JsonWebhookEventProvider</span></a>&lt;<a href="edu/uoc/som/jarvis/core/platform/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a> extends <a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform">RuntimePlatform</a>&gt; - Class in <a href="edu/uoc/som/jarvis/core/platform/io/package-summary.html">edu.uoc.som.jarvis.core.platform.io</a></dt>
 <dd>
 <div class="block">A Json <a href="edu/uoc/som/jarvis/core/platform/io/WebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>WebhookEventProvider</code></a> that provides utility methods to parse and manipulate Json HTTP requests.</div>
@@ -6767,6 +6784,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/EventInstanceBuilder.html#newBuilder-edu.uoc.som.jarvis.core.EventDefinitionRegistry-">newBuilder(EventDefinitionRegistry)</a></span> - Static method in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/EventInstanceBuilder.html" title="class in edu.uoc.som.jarvis.core.platform.io">EventInstanceBuilder</a></dt>
 <dd>
 <div class="block">Creates a new <a href="edu/uoc/som/jarvis/core/platform/io/EventInstanceBuilder.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>EventInstanceBuilder</code></a> from the provided <code>registry</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-com.google.gson.JsonElement-">notifyRestHandler(String, List&lt;Header&gt;, List&lt;NameValuePair&gt;, JsonElement)</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
+<dd>
+<div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-org.apache.http.Header:A-">notifyWebhookEventProviders(String, Object, Header[])</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
 <dd>
@@ -7518,6 +7539,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">registerIntentDefinition(IntentDefinition)</a></span> - Method in interface edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProvider</a></dt>
 <dd>
 <div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#registerRestEndpoint-java.lang.String-edu.uoc.som.jarvis.core.server.JsonRestHandler-">registerRestEndpoint(String, JsonRestHandler)</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
+<dd>
+<div class="block">Registers the provided <code>handler</code> as a REST endpoint for the provided <code>uri</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/RuntimePlatformRegistry.html#registerRuntimePlatform-edu.uoc.som.jarvis.core.platform.RuntimePlatform-">registerRuntimePlatform(RuntimePlatform)</a></span> - Method in class edu.uoc.som.jarvis.core.<a href="edu/uoc/som/jarvis/core/RuntimePlatformRegistry.html" title="class in edu.uoc.som.jarvis.core">RuntimePlatformRegistry</a></dt>
 <dd>
