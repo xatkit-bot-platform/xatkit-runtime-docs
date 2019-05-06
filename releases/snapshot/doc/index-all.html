@@ -714,6 +714,14 @@
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/discord/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.io"><code>ChatProvider</code></a> from the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/react/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.io"><span class="typeNameLink">ChatProvider</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/react/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.react.platform.io</a></dt>
+<dd>
+<div class="block">A generic React <a href="edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeIntentProvider</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/io/ChatProvider.html#ChatProvider-edu.uoc.som.jarvis.plugins.react.platform.ReactPlatform-org.apache.commons.configuration2.Configuration-">ChatProvider(ReactPlatform, Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.react.platform.io.<a href="edu/uoc/som/jarvis/plugins/react/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.io">ChatProvider</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/react/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.io"><code>ChatProvider</code></a> from the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
+</dd>
 <dt><a href="edu/uoc/som/jarvis/plugins/slack/platform/io/ChatProvider.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.io"><span class="typeNameLink">ChatProvider</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/slack/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.slack.platform.io</a></dt>
 <dd>
 <div class="block">A generic Slack user <a href="edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>RuntimeIntentProvider</code></a>.</div>
@@ -993,6 +1001,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/log/platform/action/LogAction.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.plugins.log.platform.action.<a href="edu/uoc/som/jarvis/plugins/log/platform/action/LogAction.html" title="class in edu.uoc.som.jarvis.plugins.log.platform.action">LogAction</a></dt>
 <dd>
 <div class="block">Logs the provided <code>message</code> with the given <code>logLevel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/action/PostMessage.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.plugins.react.platform.action.<a href="edu/uoc/som/jarvis/plugins/react/platform/action/PostMessage.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.action">PostMessage</a></dt>
+<dd>
+<div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/platform/action/PostFileMessage.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.plugins.slack.platform.action.<a href="edu/uoc/som/jarvis/plugins/slack/platform/action/PostFileMessage.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.action">PostFileMessage</a></dt>
 <dd>
@@ -1848,6 +1860,10 @@
 <dd>
 <div class="block">Returns the <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>MessageChannel</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html#createSessionFromChannel-java.lang.String-">createSessionFromChannel(String)</a></span> - Method in class edu.uoc.som.jarvis.plugins.react.platform.<a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html" title="class in edu.uoc.som.jarvis.plugins.react.platform">ReactPlatform</a></dt>
+<dd>
+<div class="block">Creates a <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> from the provided <code>channel</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html#createSessionFromChannel-java.lang.String-">createSessionFromChannel(String)</a></span> - Method in class edu.uoc.som.jarvis.plugins.slack.platform.<a href="edu/uoc/som/jarvis/plugins/slack/platform/SlackPlatform.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform">SlackPlatform</a></dt>
 <dd>
 <div class="block">Returns the <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> associated to the provided <code>channel</code>.</div>
@@ -2413,6 +2429,12 @@
 <dd>
 <div class="block">Contains the action implementations available in the Jarvis Log platform.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/react/platform/package-summary.html">edu.uoc.som.jarvis.plugins.react.platform</a> - package edu.uoc.som.jarvis.plugins.react.platform</dt>
+<dd>&nbsp;</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/react/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.react.platform.action</a> - package edu.uoc.som.jarvis.plugins.react.platform.action</dt>
+<dd>&nbsp;</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/react/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.react.platform.io</a> - package edu.uoc.som.jarvis.plugins.react.platform.io</dt>
+<dd>&nbsp;</dd>
 <dt><a href="edu/uoc/som/jarvis/plugins/slack/package-summary.html">edu.uoc.som.jarvis.plugins.slack</a> - package edu.uoc.som.jarvis.plugins.slack</dt>
 <dd>
 <div class="block">The root package of the Jarvis Slack plugin.</div>
@@ -3895,6 +3917,8 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/platform/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class edu.uoc.som.jarvis.plugins.discord.platform.action.<a href="edu/uoc/som/jarvis/plugins/discord/platform/action/PostMessage.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.action">PostMessage</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class edu.uoc.som.jarvis.plugins.react.platform.action.<a href="edu/uoc/som/jarvis/plugins/react/platform/action/PostMessage.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.action">PostMessage</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/platform/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class edu.uoc.som.jarvis.plugins.slack.platform.action.<a href="edu/uoc/som/jarvis/plugins/slack/platform/action/PostMessage.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.action">PostMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/CommonPackage.html#getCommonFactory--">getCommonFactory()</a></span> - Method in interface edu.uoc.som.jarvis.common.<a href="edu/uoc/som/jarvis/common/CommonPackage.html" title="interface in edu.uoc.som.jarvis.common">CommonPackage</a></dt>
@@ -4768,6 +4792,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#getLanguageCode--">getLanguageCode()</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">Returns the code of the language processed by DialogFlow.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html#getLastMessageFor-java.lang.String-">getLastMessageFor(String)</a></span> - Method in class edu.uoc.som.jarvis.plugins.react.platform.<a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html" title="class in edu.uoc.som.jarvis.plugins.react.platform">ReactPlatform</a></dt>
+<dd>
+<div class="block">Returns the last message stored for the provided <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/IntentPackageImpl.html#getLibrary--">getLibrary()</a></span> - Method in class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/IntentPackageImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">IntentPackageImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -7346,6 +7374,14 @@
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/discord/platform/action/PostMessage.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.action"><code>PostMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>message</code> and <code>channel</code>.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/react/platform/action/PostMessage.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.action"><span class="typeNameLink">PostMessage</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/react/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.react.platform.action</a></dt>
+<dd>
+<div class="block">A <a href="edu/uoc/som/jarvis/core/platform/action/RuntimeMessageAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeMessageAction</code></a> that posts a <code>message</code> to a given jarvis-react <code>channel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/action/PostMessage.html#PostMessage-edu.uoc.som.jarvis.plugins.react.platform.ReactPlatform-edu.uoc.som.jarvis.core.session.JarvisSession-java.lang.String-java.lang.String-">PostMessage(ReactPlatform, JarvisSession, String, String)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.react.platform.action.<a href="edu/uoc/som/jarvis/plugins/react/platform/action/PostMessage.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.action">PostMessage</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/react/platform/action/PostMessage.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.action"><code>PostMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>message</code>, and <code>channel</code>.</div>
+</dd>
 <dt><a href="edu/uoc/som/jarvis/plugins/slack/platform/action/PostMessage.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.action"><span class="typeNameLink">PostMessage</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/slack/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.slack.platform.action</a></dt>
 <dd>
 <div class="block">A <a href="edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> that posts a <code>message</code> to a given Slack <code>channel</code>.</div>
@@ -7462,6 +7498,31 @@
 </a>
 <h2 class="title">R</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/ReactUtils.html#REACT_CONTEXT_KEY">REACT_CONTEXT_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.react.platform.<a href="edu/uoc/som/jarvis/plugins/react/platform/ReactUtils.html" title="interface in edu.uoc.som.jarvis.plugins.react.platform">ReactUtils</a></dt>
+<dd>
+<div class="block">The <a href="edu/uoc/som/jarvis/core/session/RuntimeContexts.html" title="class in edu.uoc.som.jarvis.core.session"><code>RuntimeContexts</code></a> key used to store React-related information.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/react/platform/io/ReactIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.io"><span class="typeNameLink">ReactIntentProvider</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/react/platform/io/package-summary.html">edu.uoc.som.jarvis.plugins.react.platform.io</a></dt>
+<dd>
+<div class="block">A React <a href="edu/uoc/som/jarvis/plugins/chat/platform/io/ChatIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform.io"><code>ChatIntentProvider</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/io/ReactIntentProvider.html#ReactIntentProvider-edu.uoc.som.jarvis.plugins.react.platform.ReactPlatform-org.apache.commons.configuration2.Configuration-">ReactIntentProvider(ReactPlatform, Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.react.platform.io.<a href="edu/uoc/som/jarvis/plugins/react/platform/io/ReactIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.io">ReactIntentProvider</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/react/platform/io/ReactIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.io"><code>ReactIntentProvider</code></a> from the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html" title="class in edu.uoc.som.jarvis.plugins.react.platform"><span class="typeNameLink">ReactPlatform</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/react/platform/package-summary.html">edu.uoc.som.jarvis.plugins.react.platform</a></dt>
+<dd>
+<div class="block">A <a href="edu/uoc/som/jarvis/plugins/chat/platform/ChatPlatform.html" title="class in edu.uoc.som.jarvis.plugins.chat.platform"><code>ChatPlatform</code></a> class that interacts with the
+ <a href="https://github.com/jarvis-platform/jarvis-react">Jarvis React component</a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html#ReactPlatform-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">ReactPlatform(JarvisCore, Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.react.platform.<a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html" title="class in edu.uoc.som.jarvis.plugins.react.platform">ReactPlatform</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html" title="class in edu.uoc.som.jarvis.plugins.react.platform"><code>ReactPlatform</code></a> from the provided <a href="edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/react/platform/ReactUtils.html" title="interface in edu.uoc.som.jarvis.plugins.react.platform"><span class="typeNameLink">ReactUtils</span></a> - Interface in <a href="edu/uoc/som/jarvis/plugins/react/platform/package-summary.html">edu.uoc.som.jarvis.plugins.react.platform</a></dt>
+<dd>
+<div class="block">An utility interface that holds jarvis-react related helpers and context keys.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/IntentPackage.Literals.html#RECOGNIZED_INTENT">RECOGNIZED_INTENT</a></span> - Static variable in interface edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/IntentPackage.Literals.html" title="interface in edu.uoc.som.jarvis.intent">IntentPackage.Literals</a></dt>
 <dd>
 <div class="block">The meta object literal for the '<a href="edu/uoc/som/jarvis/intent/impl/RecognizedIntentImpl.html" title="class in edu.uoc.som.jarvis.intent.impl"><code><em>Recognized Intent</em></code></a>' class.</div>
@@ -7564,6 +7625,15 @@
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/discord/platform/action/Reply.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.action"><code>Reply</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>message</code>.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/plugins/react/platform/action/Reply.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.action"><span class="typeNameLink">Reply</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/react/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.react.platform.action</a></dt>
+<dd>
+<div class="block">A <a href="edu/uoc/som/jarvis/core/platform/action/RuntimeMessageAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeMessageAction</code></a> that replies to a message using the input
+ jarvis-react channel.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/action/Reply.html#Reply-edu.uoc.som.jarvis.plugins.react.platform.ReactPlatform-edu.uoc.som.jarvis.core.session.JarvisSession-java.lang.String-">Reply(ReactPlatform, JarvisSession, String)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.react.platform.action.<a href="edu/uoc/som/jarvis/plugins/react/platform/action/Reply.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.action">Reply</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/react/platform/action/Reply.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.action"><code>Reply</code></a> with the provided <code>reactPlatform</code>, <code>session</code>, and <code>message</code>.</div>
+</dd>
 <dt><a href="edu/uoc/som/jarvis/plugins/slack/platform/action/Reply.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.action"><span class="typeNameLink">Reply</span></a> - Class in <a href="edu/uoc/som/jarvis/plugins/slack/platform/action/package-summary.html">edu.uoc.som.jarvis.plugins.slack.platform.action</a></dt>
 <dd>
 <div class="block">A <a href="edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> that replies to a message using the input Slack channel.</div>
@@ -7592,6 +7662,8 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/platform/io/DiscordIntentProvider.html#run--">run()</a></span> - Method in class edu.uoc.som.jarvis.plugins.discord.platform.io.<a href="edu/uoc/som/jarvis/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.io">DiscordIntentProvider</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/github/platform/io/GithubWebhookEventProvider.html#run--">run()</a></span> - Method in class edu.uoc.som.jarvis.plugins.github.platform.io.<a href="edu/uoc/som/jarvis/plugins/github/platform/io/GithubWebhookEventProvider.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.io">GithubWebhookEventProvider</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/io/ReactIntentProvider.html#run--">run()</a></span> - Method in class edu.uoc.som.jarvis.plugins.react.platform.io.<a href="edu/uoc/som/jarvis/plugins/react/platform/io/ReactIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.react.platform.io">ReactIntentProvider</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/platform/io/SlackIntentProvider.html#run--">run()</a></span> - Method in class edu.uoc.som.jarvis.plugins.slack.platform.io.<a href="edu/uoc/som/jarvis/plugins/slack/platform/io/SlackIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.io">SlackIntentProvider</a></dt>
 <dd>&nbsp;</dd>
@@ -8161,6 +8233,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/session/JarvisSession.html#store-java.lang.String-java.lang.Object-">store(String, Object)</a></span> - Method in class edu.uoc.som.jarvis.core.session.<a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></dt>
 <dd>
 <div class="block">Store the provided <code>value</code> with the given <code>key</code> as a session variable.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html#storeMessage-java.lang.String-java.lang.String-">storeMessage(String, String)</a></span> - Method in class edu.uoc.som.jarvis.plugins.react.platform.<a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html" title="class in edu.uoc.som.jarvis.plugins.react.platform">ReactPlatform</a></dt>
+<dd>
+<div class="block">Stores the provided <code>message</code> for the given <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#STREET_ADDRESS_VALUE">STREET_ADDRESS_VALUE</a></span> - Static variable in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
 <dd>

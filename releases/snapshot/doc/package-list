@@ -47,6 +47,9 @@ edu.uoc.som.jarvis.plugins.github.platform.io
 edu.uoc.som.jarvis.plugins.log
 edu.uoc.som.jarvis.plugins.log.platform
 edu.uoc.som.jarvis.plugins.log.platform.action
+edu.uoc.som.jarvis.plugins.react.platform
+edu.uoc.som.jarvis.plugins.react.platform.action
+edu.uoc.som.jarvis.plugins.react.platform.io
 edu.uoc.som.jarvis.plugins.slack
 edu.uoc.som.jarvis.plugins.slack.platform
 edu.uoc.som.jarvis.plugins.slack.platform.action
