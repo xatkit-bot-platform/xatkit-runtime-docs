@@ -215,9 +215,9 @@ extends <a href="../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/C
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html#getLastMessageFor-java.lang.String-">getLastMessageFor</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</code>
-<div class="block">Returns the last message stored for the provided <code>channel</code>.</div>
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util">Queue</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html#getMessagesFor-java.lang.String-">getMessagesFor</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</code>
+<div class="block">Returns the messages stored for the provided <code>channel</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -266,10 +266,23 @@ extends <a href="../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/C
                      <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
 <div class="block">Constructs a new <a href="../../../../../../../edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html" title="class in edu.uoc.som.jarvis.plugins.react.platform"><code>ReactPlatform</code></a> from the provided <a href="../../../../../../../edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core"><code>JarvisCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.
  <p>
- This constructor initializes the underlying REST endpoint at <code>/react/getAnswer</code>, allowing to retrieve
- the last answer associated to a channel.
+ This constructor initializes the underlying REST endpoint at <code>/react/getAnswers</code>, allowing to retrieve
+ the stored answers associated to a channel. The stored message are returned as a <code>json</code> object with the
+ following structure:
+ <pre>
+ <code>
+ {
+  messages: [
+      {value: 'Message 1'},
+      {value: 'Message 2"}
+  ]
+ }
+ </code>
+ </pre>
+ Note that client applications can iterate the <code>messages</code> array to display the messages in the same order
+ they have been produced.
  <p>
- A REST request on <code>/rest/getAnswer</code> must contain a JSON object with a <code>channel</code> field containing
+ A REST request on <code>/rest/getAnswers</code> must contain a JSON object with a <code>channel</code> field containing
  the channel to retrieve the answer for.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -298,7 +311,7 @@ extends <a href="../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/C
                          <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Stores the provided <code>message</code> for the given <code>channel</code>.
  <p>
- The stored message can be accessed by jarvis-react through the <code>/react/getAnswer</code> endpoint.</div>
+ The stored message can be accessed by jarvis-react through the <code>/react/getAnswers</code> endpoint.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>channel</code> - the channel associated to the message to store</dd>
@@ -306,23 +319,22 @@ extends <a href="../../../../../../../edu/uoc/som/jarvis/plugins/chat/platform/C
 </dl>
 </li>
 </ul>
-<a name="getLastMessageFor-java.lang.String-">
+<a name="getMessagesFor-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getLastMessageFor</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLastMessageFor(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</pre>
-<div class="block">Returns the last message stored for the provided <code>channel</code>.
+<h4>getMessagesFor</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util">Queue</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getMessagesFor(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</pre>
+<div class="block">Returns the messages stored for the provided <code>channel</code>.
  <p>
- This method removes the returned message from the message queue, meaning that calling again this method will
- return a different result or <code>null</code>. Storing returned messages is the responsibility of client
- applications.</div>
+ This method returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util"><code>Queue</code></a> containing the stored messages. Note that calling <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true#poll--" title="class or interface in java.util"><code>Queue.poll()</code></a> on
+ the returned object will remove the message.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>channel</code> - the channel to retrieve the message for</dd>
+<dd><code>channel</code> - the channel to retrieve the messages for</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the last message stored for the provided <code>channel</code></dd>
+<dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util"><code>Queue</code></a> containing the messages stored for the provided <code>channel</code></dd>
 </dl>
 </li>
 </ul>
