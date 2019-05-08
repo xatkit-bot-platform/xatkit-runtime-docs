@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -121,7 +121,6 @@ extends <a href="../../../../../edu/uoc/som/jarvis/common/Expression.html" title
  <ul>
    <li><a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getAction--"><code><em>Action</em></code></a></li>
    <li><a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getValues--"><code><em>Values</em></code></a></li>
-   <li><a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getReturnVariable--"><code><em>Return Variable</em></code></a></li>
    <li><a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getOnError--"><code><em>On Error</em></code></a></li>
  </ul></div>
 <dl>
@@ -160,27 +159,15 @@ extends <a href="../../../../../edu/uoc/som/jarvis/common/Expression.html" title
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getReturnVariable--">getReturnVariable</a></span>()</code>
-<div class="block">Returns the value of the '<em><b>Return Variable</b></em>' containment reference.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/util/EList.html?is-external=true" title="class or interface in org.eclipse.emf.common.util">EList</a>&lt;<a href="../../../../../edu/uoc/som/jarvis/execution/ParameterValue.html" title="interface in edu.uoc.som.jarvis.execution">ParameterValue</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getValues--">getValues</a></span>()</code>
 <div class="block">Returns the value of the '<em><b>Values</b></em>' containment reference list.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#setAction-edu.uoc.som.jarvis.platform.ActionDefinition-">setAction</a></span>(<a href="../../../../../edu/uoc/som/jarvis/platform/ActionDefinition.html" title="interface in edu.uoc.som.jarvis.platform">ActionDefinition</a>&nbsp;value)</code>
 <div class="block">Sets the value of the '<a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getAction--"><code><em>Action</em></code></a>' reference.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#setReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-">setReturnVariable</a></span>(<a href="../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;value)</code>
-<div class="block">Sets the value of the '<a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getReturnVariable--"><code><em>Return Variable</em></code></a>' containment reference.</div>
 </td>
 </tr>
 </table>
@@ -275,49 +262,6 @@ extends <a href="../../../../../edu/uoc/som/jarvis/common/Expression.html" title
 <dd>the value of the '<em>Values</em>' containment reference list.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../edu/uoc/som/jarvis/execution/ExecutionPackage.html#getActionInstance_Values--"><code>ExecutionPackage.getActionInstance_Values()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="getReturnVariable--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getReturnVariable</h4>
-<pre><a href="../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;getReturnVariable()</pre>
-<div class="block">Returns the value of the '<em><b>Return Variable</b></em>' containment reference.
- <!-- begin-user-doc -->
- <p>
- If the meaning of the '<em>Return Variable</em>' containment reference isn't clear,
- there really should be more of a description here...
- </p>
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value of the '<em>Return Variable</em>' containment reference.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#setReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-"><code>setReturnVariable(VariableAccess)</code></a>, 
-<a href="../../../../../edu/uoc/som/jarvis/execution/ExecutionPackage.html#getActionInstance_ReturnVariable--"><code>ExecutionPackage.getActionInstance_ReturnVariable()</code></a></dd>
-<dt><span class="simpleTagLabel">Generated</span></dt>
-</dl>
-</li>
-</ul>
-<a name="setReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setReturnVariable</h4>
-<pre>void&nbsp;setReturnVariable(<a href="../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;value)</pre>
-<div class="block">Sets the value of the '<a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getReturnVariable--"><code><em>Return Variable</em></code></a>' containment reference.
- <!-- begin-user-doc -->
- <!-- end-user-doc --></div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>value</code> - the new value of the '<em>Return Variable</em>' containment reference.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getReturnVariable--"><code>getReturnVariable()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

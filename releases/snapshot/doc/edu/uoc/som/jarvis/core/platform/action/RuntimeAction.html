@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":6,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":6,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -160,18 +160,12 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#returnVariable">returnVariable</a></span></code>
-<div class="block">The name of the variable to use to store the result of the <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#call--"><code>call()</code></a> method.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="type parameter in RuntimeAction">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#runtimePlatform">runtimePlatform</a></span></code>
 <div class="block">The <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform"><code>RuntimePlatform</code></a> subclass containing this action.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#session">session</a></span></code>
 <div class="block">The <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> associated to this action.</div>
@@ -225,20 +219,10 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#getReturnVariable--">getReturnVariable</a></span>()</code>
-<div class="block">Return the name of the variable to use to store the result of the <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#call--"><code>call()</code></a> method.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#init--">init</a></span>()</code>
 <div class="block">A hook method that is called after <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a>.</div>
 </td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#setReturnVariable-java.lang.String-">setReturnVariable</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;variableName)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -275,30 +259,11 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 <a name="session">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>session</h4>
 <pre>protected&nbsp;<a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a> session</pre>
 <div class="block">The <a href="../../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> associated to this action.</div>
-</li>
-</ul>
-<a name="returnVariable">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>returnVariable</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> returnVariable</pre>
-<div class="block">The name of the variable to use to store the result of the <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#call--"><code>call()</code></a> method.
- <p>
- The value of this attribute is used by
- <a href="../../../../../../../edu/uoc/som/jarvis/core/ExecutionService.html#handleEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-"><code>ExecutionService.handleEventInstance(EventInstance, JarvisSession)</code></a> to store
- the result of each <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> in the variable defined in the provided execution model.</div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../edu/uoc/som/jarvis/core/ExecutionService.html#handleEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-"><code>ExecutionService.handleEventInstance(EventInstance, JarvisSession)</code></a>, 
-<a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#getReturnVariable--"><code>getReturnVariable()</code></a></dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -348,34 +313,6 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
  <p>
  This method can be extended by subclasses to add post-construction computation, such as setting additional
  fields, checking invariants once the <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> has been initialized, etc.</div>
-</li>
-</ul>
-<a name="setReturnVariable-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setReturnVariable</h4>
-<pre>public final&nbsp;void&nbsp;setReturnVariable(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;variableName)</pre>
-</li>
-</ul>
-<a name="getReturnVariable--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getReturnVariable</h4>
-<pre>public final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getReturnVariable()</pre>
-<div class="block">Return the name of the variable to use to store the result of the <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#call--"><code>call()</code></a> method.
- <p>
- This method is used by <a href="../../../../../../../edu/uoc/som/jarvis/core/ExecutionService.html#handleEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-"><code>ExecutionService.handleEventInstance(EventInstance, JarvisSession)</code></a>  to
- store the result of each <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a> in the variable defined in the provided execution model.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the name of the variable to use to store the result of the <a href="../../../../../../../edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#call--"><code>call()</code></a> method</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../edu/uoc/som/jarvis/core/ExecutionService.html#handleEventInstance-edu.uoc.som.jarvis.intent.EventInstance-edu.uoc.som.jarvis.core.session.JarvisSession-"><code>ExecutionService.handleEventInstance(EventInstance, JarvisSession)</code></a></dd>
-</dl>
 </li>
 </ul>
 <a name="call--">

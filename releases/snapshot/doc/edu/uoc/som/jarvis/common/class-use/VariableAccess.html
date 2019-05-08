@@ -104,18 +104,6 @@
 <td class="colFirst"><a href="#edu.uoc.som.jarvis.core.interpreter">edu.uoc.som.jarvis.core.interpreter</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><a href="#edu.uoc.som.jarvis.execution">edu.uoc.som.jarvis.execution</a></td>
-<td class="colLast">
-<div class="block">Contains the interfaces to manipulate Execution models.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><a href="#edu.uoc.som.jarvis.execution.impl">edu.uoc.som.jarvis.execution.impl</a></td>
-<td class="colLast">
-<div class="block">Contains the implementation classes used to manipulate Execution models.</div>
-</td>
-</tr>
 </tbody>
 </table>
 </li>
@@ -212,92 +200,6 @@
 <div class="block">Evaluates the provided <a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common"><code>VariableAccess</code></a> <a href="../../../../../../edu/uoc/som/jarvis/common/Expression.html" title="interface in edu.uoc.som.jarvis.common"><code>Expression</code></a> and returns its value from the provided
  <code>context</code>.</div>
 </td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="edu.uoc.som.jarvis.execution">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a> in <a href="../../../../../../edu/uoc/som/jarvis/execution/package-summary.html">edu.uoc.som.jarvis.execution</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/execution/package-summary.html">edu.uoc.som.jarvis.execution</a> that return <a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ActionInstance.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getReturnVariable--">getReturnVariable</a></span>()</code>
-<div class="block">Returns the value of the '<em><b>Return Variable</b></em>' containment reference.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/execution/package-summary.html">edu.uoc.som.jarvis.execution</a> with parameters of type <a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">ActionInstance.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#setReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-">setReturnVariable</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;value)</code>
-<div class="block">Sets the value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/ActionInstance.html#getReturnVariable--"><code><em>Return Variable</em></code></a>' containment reference.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="edu.uoc.som.jarvis.execution.impl">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a> in <a href="../../../../../../edu/uoc/som/jarvis/execution/impl/package-summary.html">edu.uoc.som.jarvis.execution.impl</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
-<caption><span>Fields in <a href="../../../../../../edu/uoc/som/jarvis/execution/impl/package-summary.html">edu.uoc.som.jarvis.execution.impl</a> declared as <a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ActionInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#returnVariable">returnVariable</a></span></code>
-<div class="block">The cached value of the '<a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#getReturnVariable--"><code><em>Return Variable</em></code></a>' containment reference.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/execution/impl/package-summary.html">edu.uoc.som.jarvis.execution.impl</a> that return <a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ActionInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#getReturnVariable--">getReturnVariable</a></span>()</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../../edu/uoc/som/jarvis/execution/impl/package-summary.html">edu.uoc.som.jarvis.execution.impl</a> with parameters of type <a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ActionInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#basicSetReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-org.eclipse.emf.common.notify.NotificationChain-">basicSetReturnVariable</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;newReturnVariable,
-                      <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/NotificationChain.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">NotificationChain</a>&nbsp;msgs)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">ActionInstanceImpl.</span><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#setReturnVariable-edu.uoc.som.jarvis.common.VariableAccess-">setReturnVariable</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/common/VariableAccess.html" title="interface in edu.uoc.som.jarvis.common">VariableAccess</a>&nbsp;newReturnVariable)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
