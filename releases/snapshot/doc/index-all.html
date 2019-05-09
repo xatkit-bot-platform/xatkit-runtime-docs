@@ -6055,6 +6055,14 @@
 <dd>
 <div class="block">Computes a boolean <code>and</code> operation over the provided <code>source</code> and <code>args</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/IsNullOperation.html#invoke-java.lang.Object-java.util.List-">invoke(Object, List&lt;Object&gt;)</a></span> - Method in class edu.uoc.som.jarvis.core.interpreter.operation.object.<a href="edu/uoc/som/jarvis/core/interpreter/operation/object/IsNullOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object">IsNullOperation</a></dt>
+<dd>
+<div class="block">Returns whether the provided <code>source</code> <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> is <code>null</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/NonNullOperation.html#invoke-java.lang.Object-java.util.List-">invoke(Object, List&lt;Object&gt;)</a></span> - Method in class edu.uoc.som.jarvis.core.interpreter.operation.object.<a href="edu/uoc/som/jarvis/core/interpreter/operation/object/NonNullOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object">NonNullOperation</a></dt>
+<dd>
+<div class="block">Returns whether the provided <code>source</code> is different from <code>null</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/ObjectOperation.html#invoke-java.lang.Object-java.util.List-">invoke(Object, List&lt;Object&gt;)</a></span> - Method in class edu.uoc.som.jarvis.core.interpreter.operation.object.<a href="edu/uoc/som/jarvis/core/interpreter/operation/object/ObjectOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object">ObjectOperation</a></dt>
 <dd>
 <div class="block">Searches for a source's method matching the provided <code>methodName</code> and <code>args</code> and invoke it.</div>
@@ -6062,6 +6070,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/OrOperation.html#invoke-java.lang.Object-java.util.List-">invoke(Object, List&lt;Object&gt;)</a></span> - Method in class edu.uoc.som.jarvis.core.interpreter.operation.object.<a href="edu/uoc/som/jarvis/core/interpreter/operation/object/OrOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object">OrOperation</a></dt>
 <dd>
 <div class="block">Computes a boolean <code>or</code> operation over the provided <code>source</code> and <code>args</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/SubstractionOperation.html#invoke-java.lang.Object-java.util.List-">invoke(Object, List&lt;Object&gt;)</a></span> - Method in class edu.uoc.som.jarvis.core.interpreter.operation.object.<a href="edu/uoc/som/jarvis/core/interpreter/operation/object/SubstractionOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object">SubstractionOperation</a></dt>
+<dd>
+<div class="block">Computes a generic substraction over the provided <code>source</code> and <code>args</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/operation/Operation.html#invoke-java.lang.Object-java.util.List-">invoke(Object, List&lt;Object&gt;)</a></span> - Method in interface edu.uoc.som.jarvis.core.interpreter.operation.<a href="edu/uoc/som/jarvis/core/interpreter/operation/Operation.html" title="interface in edu.uoc.som.jarvis.core.interpreter.operation">Operation</a></dt>
 <dd>
@@ -6093,6 +6105,12 @@
 <dd>
 <div class="block">Returns whether this factory is applicable for the type of the object.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/IsNullOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object"><span class="typeNameLink">IsNullOperation</span></a> - Class in <a href="edu/uoc/som/jarvis/core/interpreter/operation/object/package-summary.html">edu.uoc.som.jarvis.core.interpreter.operation.object</a></dt>
+<dd>
+<div class="block">Checks if the provided <code>source</code> is <code>null</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/IsNullOperation.html#IsNullOperation--">IsNullOperation()</a></span> - Constructor for class edu.uoc.som.jarvis.core.interpreter.operation.object.<a href="edu/uoc/som/jarvis/core/interpreter/operation/object/IsNullOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object">IsNullOperation</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#isRestEndpoint-java.lang.String-">isRestEndpoint(String)</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
 <dd>
 <div class="block">Returns whether the provided <code>uri</code> is associated to a REST endpoint.</div>
@@ -6792,6 +6810,12 @@
 <dd>
 <div class="block">Creates a new <a href="edu/uoc/som/jarvis/core/platform/io/EventInstanceBuilder.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>EventInstanceBuilder</code></a> from the provided <code>registry</code>.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/NonNullOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object"><span class="typeNameLink">NonNullOperation</span></a> - Class in <a href="edu/uoc/som/jarvis/core/interpreter/operation/object/package-summary.html">edu.uoc.som.jarvis.core.interpreter.operation.object</a></dt>
+<dd>
+<div class="block">Checks if the provided <code>source</code> is different from <code>null</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/NonNullOperation.html#NonNullOperation--">NonNullOperation()</a></span> - Constructor for class edu.uoc.som.jarvis.core.interpreter.operation.object.<a href="edu/uoc/som/jarvis/core/interpreter/operation/object/NonNullOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object">NonNullOperation</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-com.google.gson.JsonElement-">notifyRestHandler(String, List&lt;Header&gt;, List&lt;NameValuePair&gt;, JsonElement)</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
 <dd>
 <div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
@@ -8197,6 +8221,11 @@
 <dd>
 <div class="block">Store the provided <code>value</code> with the given <code>key</code> as a session variable.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/session/JarvisSession.html#storeList-java.lang.String-java.lang.Object-">storeList(String, Object)</a></span> - Method in class edu.uoc.som.jarvis.core.session.<a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session">JarvisSession</a></dt>
+<dd>
+<div class="block">Store the provided <code>value</code> in the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> associated to the provided <code>key</code> as a session
+ variable.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html#storeMessage-java.lang.String-java.lang.String-">storeMessage(String, String)</a></span> - Method in class edu.uoc.som.jarvis.plugins.react.platform.<a href="edu/uoc/som/jarvis/plugins/react/platform/ReactPlatform.html" title="class in edu.uoc.som.jarvis.plugins.react.platform">ReactPlatform</a></dt>
 <dd>
 <div class="block">Stores the provided <code>message</code> for the given <code>channel</code>.</div>
@@ -8238,6 +8267,12 @@
 <div class="block">An implementation of the model object '<em><b>String Literal</b></em>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/StringLiteralImpl.html#StringLiteralImpl--">StringLiteralImpl()</a></span> - Constructor for class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/StringLiteralImpl.html" title="class in edu.uoc.som.jarvis.common.impl">StringLiteralImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/SubstractionOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object"><span class="typeNameLink">SubstractionOperation</span></a> - Class in <a href="edu/uoc/som/jarvis/core/interpreter/operation/object/package-summary.html">edu.uoc.som.jarvis.core.interpreter.operation.object</a></dt>
+<dd>
+<div class="block">A generic substraction <a href="edu/uoc/som/jarvis/core/interpreter/operation/Operation.html" title="interface in edu.uoc.som.jarvis.core.interpreter.operation"><code>Operation</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/interpreter/operation/object/SubstractionOperation.html#SubstractionOperation--">SubstractionOperation()</a></span> - Constructor for class edu.uoc.som.jarvis.core.interpreter.operation.object.<a href="edu/uoc/som/jarvis/core/interpreter/operation/object/SubstractionOperation.html" title="class in edu.uoc.som.jarvis.core.interpreter.operation.object">SubstractionOperation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/MappingEntityDefinitionEntryImpl.html#synonyms">synonyms</a></span> - Variable in class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/MappingEntityDefinitionEntryImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">MappingEntityDefinitionEntryImpl</a></dt>
 <dd>
