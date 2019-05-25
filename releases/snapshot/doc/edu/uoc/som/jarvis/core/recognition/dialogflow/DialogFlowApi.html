@@ -215,6 +215,13 @@ implements <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Int
 <div class="block">Constructs a <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a> with the provided <code>configuration</code>.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#DialogFlowApi-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-edu.uoc.som.jarvis.core.recognition.RecognitionMonitor-">DialogFlowApi</a></span>(<a href="../../../../../../../edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+             <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration,
+             <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition">RecognitionMonitor</a>&nbsp;recognitionMonitor)</code>
+<div class="block">Constructs a <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a> with the provided <code>configuration</code>.</div>
+</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -492,11 +499,38 @@ implements <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Int
 <a name="DialogFlowApi-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>DialogFlowApi</h4>
 <pre>public&nbsp;DialogFlowApi(<a href="../../../../../../../edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
                      <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</pre>
+<div class="block">Constructs a <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a> with the provided <code>configuration</code>.
+ <p>
+ This constructor is a placeholder for <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#DialogFlowApi-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-edu.uoc.som.jarvis.core.recognition.RecognitionMonitor-"><code>DialogFlowApi(JarvisCore, Configuration, RecognitionMonitor)</code></a>
+ with a <code>null</code> <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>RecognitionMonitor</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>jarvisCore</code> - the <a href="../../../../../../../edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core"><code>JarvisCore</code></a> instance managing the <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a></dd>
+<dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> holding the DialogFlow project ID and language code</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>jarvisCore</code>, <code>configuration</code> or one of the
+                              mandatory <code>configuration</code> value is <code>null</code>.</dd>
+<dd><code><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowException.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowException</a></code> - if the client failed to start a new session</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#DialogFlowApi-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-edu.uoc.som.jarvis.core.recognition.RecognitionMonitor-"><code>DialogFlowApi(JarvisCore, Configuration, RecognitionMonitor)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="DialogFlowApi-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-edu.uoc.som.jarvis.core.recognition.RecognitionMonitor-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>DialogFlowApi</h4>
+<pre>public&nbsp;DialogFlowApi(<a href="../../../../../../../edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core">JarvisCore</a>&nbsp;jarvisCore,
+                     <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration,
+                     <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                     <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition">RecognitionMonitor</a>&nbsp;recognitionMonitor)</pre>
 <div class="block">Constructs a <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a> with the provided <code>configuration</code>.
  <p>
  The provided <code>configuration</code> must provide values for the following keys:
@@ -525,6 +559,7 @@ implements <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/Int
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>jarvisCore</code> - the <a href="../../../../../../../edu/uoc/som/jarvis/core/JarvisCore.html" title="class in edu.uoc.som.jarvis.core"><code>JarvisCore</code></a> instance managing the <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a></dd>
 <dd><code>configuration</code> - the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> holding the DialogFlow project ID and language code</dd>
+<dd><code>recognitionMonitor</code> - the <a href="../../../../../../../edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>RecognitionMonitor</code></a> instance storing intent matching information</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>jarvisCore</code>, <code>configuration</code> or one of the mandatory
                               <code>configuration</code> value is <code>null</code>.</dd>

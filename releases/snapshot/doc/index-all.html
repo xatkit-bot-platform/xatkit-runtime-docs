@@ -2097,6 +2097,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#DefaultIntentRecognitionProvider-org.apache.commons.configuration2.Configuration-">DefaultIntentRecognitionProvider(Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
 <dd>
+<div class="block">Constructs a <a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>DefaultIntentRecognitionProvider</code></a> with the provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#DefaultIntentRecognitionProvider-org.apache.commons.configuration2.Configuration-edu.uoc.som.jarvis.core.recognition.RecognitionMonitor-">DefaultIntentRecognitionProvider(Configuration, RecognitionMonitor)</a></span> - Constructor for class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
+<dd>
 <div class="block">Constructs a <a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>DefaultIntentRecognitionProvider</code></a> with the provided <code>configuration</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/impl/ContextInstanceImpl.html#definition">definition</a></span> - Variable in class edu.uoc.som.jarvis.intent.impl.<a href="edu/uoc/som/jarvis/intent/impl/ContextInstanceImpl.html" title="class in edu.uoc.som.jarvis.intent.impl">ContextInstanceImpl</a></dt>
@@ -2136,6 +2140,10 @@
 <div class="block">A concrete wrapper for the DialogFlow API client.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#DialogFlowApi-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-">DialogFlowApi(JarvisCore, Configuration)</a></span> - Constructor for class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
+<dd>
+<div class="block">Constructs a <a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a> with the provided <code>configuration</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#DialogFlowApi-edu.uoc.som.jarvis.core.JarvisCore-org.apache.commons.configuration2.Configuration-edu.uoc.som.jarvis.core.recognition.RecognitionMonitor-">DialogFlowApi(JarvisCore, Configuration, RecognitionMonitor)</a></span> - Constructor for class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">Constructs a <a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow"><code>DialogFlowApi</code></a> with the provided <code>configuration</code>.</div>
 </dd>
@@ -2777,6 +2785,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#ENABLE_LOCAL_CONTEXT_MERGE_KEY">ENABLE_LOCAL_CONTEXT_MERGE_KEY</a></span> - Static variable in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store whether to merge the local <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> in the DialogFlow one.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProviderFactory.html#ENABLE_RECOGNITION_ANALYTICS">ENABLE_RECOGNITION_ANALYTICS</a></span> - Static variable in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProviderFactory.html" title="class in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProviderFactory</a></dt>
+<dd>
+<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key used to specify whether to enable intent recognition monitoring.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html#enableAction-edu.uoc.som.jarvis.platform.ActionDefinition-">enableAction(ActionDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.platform.<a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform">RuntimePlatform</a></dt>
 <dd>
@@ -7608,6 +7620,14 @@
 <dd>
 <div class="block">An utility interface that holds jarvis-react related helpers and context keys.</div>
 </dd>
+<dt><a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition"><span class="typeNameLink">RecognitionMonitor</span></a> - Class in <a href="edu/uoc/som/jarvis/core/recognition/package-summary.html">edu.uoc.som.jarvis.core.recognition</a></dt>
+<dd>
+<div class="block">Provides monitoring capabilities for <a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition"><code>IntentRecognitionProvider</code></a>s.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html#RecognitionMonitor-edu.uoc.som.jarvis.core.server.JarvisServer-">RecognitionMonitor(JarvisServer)</a></span> - Constructor for class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition">RecognitionMonitor</a></dt>
+<dd>
+<div class="block">Constructs a <a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>RecognitionMonitor</code></a> with the provided <code>jarvisServer</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/IntentPackage.Literals.html#RECOGNIZED_INTENT">RECOGNIZED_INTENT</a></span> - Static variable in interface edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/IntentPackage.Literals.html" title="interface in edu.uoc.som.jarvis.intent">IntentPackage.Literals</a></dt>
 <dd>
 <div class="block">The meta object literal for the '<a href="edu/uoc/som/jarvis/intent/impl/RecognizedIntentImpl.html" title="class in edu.uoc.som.jarvis.intent.impl"><code><em>Recognized Intent</em></code></a>' class.</div>
@@ -7686,6 +7706,10 @@
 <dd>
 <div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html#registerMatchedInput-java.lang.String-edu.uoc.som.jarvis.intent.IntentDefinition-">registerMatchedInput(String, IntentDefinition)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition">RecognitionMonitor</a></dt>
+<dd>
+<div class="block">Registers a matched <code>input</code> and the corresponding <code>intent</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#registerRestEndpoint-java.lang.String-edu.uoc.som.jarvis.core.server.JsonRestHandler-">registerRestEndpoint(String, JsonRestHandler)</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
 <dd>
 <div class="block">Registers the provided <code>handler</code> as a REST endpoint for the provided <code>uri</code>.</div>
@@ -7697,6 +7721,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/RuntimePlatformRegistry.html#registerRuntimePlatform-java.lang.String-edu.uoc.som.jarvis.core.platform.RuntimePlatform-">registerRuntimePlatform(String, RuntimePlatform)</a></span> - Method in class edu.uoc.som.jarvis.core.<a href="edu/uoc/som/jarvis/core/RuntimePlatformRegistry.html" title="class in edu.uoc.som.jarvis.core">RuntimePlatformRegistry</a></dt>
 <dd>
 <div class="block">Registers the provided <code>platform</code> with the provided <code>name</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html#registerUnmatchedInput-java.lang.String-">registerUnmatchedInput(String)</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition">RecognitionMonitor</a></dt>
+<dd>
+<div class="block">Registers a unmatched <code>input</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/server/JarvisServer.html#registerWebhookEventProvider-edu.uoc.som.jarvis.core.platform.io.WebhookEventProvider-">registerWebhookEventProvider(WebhookEventProvider)</a></span> - Method in class edu.uoc.som.jarvis.core.server.<a href="edu/uoc/som/jarvis/core/server/JarvisServer.html" title="class in edu.uoc.som.jarvis.core.server">JarvisServer</a></dt>
 <dd>
@@ -8237,6 +8265,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#shutdown--">shutdown()</a></span> - Method in interface edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProvider</a></dt>
 <dd>
 <div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html#shutdown--">shutdown()</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition">RecognitionMonitor</a></dt>
+<dd>
+<div class="block">Commit the pending operations on the database and closes the connection.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html#SLACK_CONTEXT_KEY">SLACK_CONTEXT_KEY</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">SlackUtils</a></dt>
 <dd>
