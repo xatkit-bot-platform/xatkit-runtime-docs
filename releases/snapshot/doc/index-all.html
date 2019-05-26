@@ -967,6 +967,10 @@
 <dd>
 <div class="block">Computes the provided <a href="edu/uoc/som/jarvis/common/VariableDeclaration.html" title="interface in edu.uoc.som.jarvis.common"><code>VariableDeclaration</code></a> <a href="edu/uoc/som/jarvis/common/Instruction.html" title="interface in edu.uoc.som.jarvis.common"><code>Instruction</code></a> with the given <code>context</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RestAction</a></dt>
+<dd>
+<div class="block">Computes the REST request and returned the handled result.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RuntimeAction</a></dt>
 <dd>
 <div class="block">The concrete implementation of the <a href="edu/uoc/som/jarvis/core/platform/action/RuntimeAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RuntimeAction</code></a>'s computation.</div>
@@ -986,10 +990,6 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/platform/action/PostMessage.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.plugins.discord.platform.action.<a href="edu/uoc/som/jarvis/plugins/discord/platform/action/PostMessage.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.action">PostMessage</a></dt>
 <dd>
 <div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/giphy/platform/action/GetGif.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.plugins.giphy.platform.action.<a href="edu/uoc/som/jarvis/plugins/giphy/platform/action/GetGif.html" title="class in edu.uoc.som.jarvis.plugins.giphy.platform.action">GetGif</a></dt>
-<dd>
-<div class="block">Build and send a REST query to the Giphy API to retrieve GIFs associated to the provided <code>searchString</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/github/platform/action/CommentIssue.html#compute--">compute()</a></span> - Method in class edu.uoc.som.jarvis.plugins.github.platform.action.<a href="edu/uoc/som/jarvis/plugins/github/platform/action/CommentIssue.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.action">CommentIssue</a></dt>
 <dd>
@@ -5311,6 +5311,18 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/impl/CommonPackageImpl.html#getPropertyAccess_Source--">getPropertyAccess_Source()</a></span> - Method in class edu.uoc.som.jarvis.common.impl.<a href="edu/uoc/som/jarvis/common/impl/CommonPackageImpl.html" title="class in edu.uoc.som.jarvis.common.impl">CommonPackageImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html#getRecognitionMonitor--">getRecognitionMonitor()</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/DefaultIntentRecognitionProvider.html" title="class in edu.uoc.som.jarvis.core.recognition">DefaultIntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">Returns the <a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>RecognitionMonitor</code></a> associated to this intent recognition provider.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html#getRecognitionMonitor--">getRecognitionMonitor()</a></span> - Method in class edu.uoc.som.jarvis.core.recognition.dialogflow.<a href="edu/uoc/som/jarvis/core/recognition/dialogflow/DialogFlowApi.html" title="class in edu.uoc.som.jarvis.core.recognition.dialogflow">DialogFlowApi</a></dt>
+<dd>
+<div class="block">Returns the <a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>RecognitionMonitor</code></a> associated to this intent recognition provider.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#getRecognitionMonitor--">getRecognitionMonitor()</a></span> - Method in interface edu.uoc.som.jarvis.core.recognition.<a href="edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html" title="interface in edu.uoc.som.jarvis.core.recognition">IntentRecognitionProvider</a></dt>
+<dd>
+<div class="block">Returns the <a href="edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>RecognitionMonitor</code></a> associated to this intent recognition provider.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html#getRecognizedIntent-java.lang.String-edu.uoc.som.jarvis.core.session.JarvisSession-">getRecognizedIntent(String, JarvisSession)</a></span> - Method in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/RuntimeIntentProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">RuntimeIntentProvider</a></dt>
 <dd>
 <div class="block">Returns the <a href="edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent"><code>RecognizedIntent</code></a> from the provided user <code>input</code> and <code>session</code>.</div>
@@ -5676,6 +5688,14 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/github/platform/io/GithubWebhookEventProvider.html#handleParsedContent-com.google.gson.JsonElement-org.apache.http.Header:A-">handleParsedContent(JsonElement, Header[])</a></span> - Method in class edu.uoc.som.jarvis.plugins.github.platform.io.<a href="edu/uoc/som/jarvis/plugins/github/platform/io/GithubWebhookEventProvider.html" title="class in edu.uoc.som.jarvis.plugins.github.platform.io">GithubWebhookEventProvider</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html#handleResponse-com.mashape.unirest.http.Headers-int-com.google.gson.JsonElement-">handleResponse(Headers, int, JsonElement)</a></span> - Method in class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RestAction</a></dt>
+<dd>
+<div class="block">Handles the REST API response and computes the action's results</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/giphy/platform/action/GetGif.html#handleResponse-com.mashape.unirest.http.Headers-int-com.google.gson.JsonElement-">handleResponse(Headers, int, JsonElement)</a></span> - Method in class edu.uoc.som.jarvis.plugins.giphy.platform.action.<a href="edu/uoc/som/jarvis/plugins/giphy/platform/action/GetGif.html" title="class in edu.uoc.som.jarvis.plugins.giphy.platform.action">GetGif</a></dt>
+<dd>
+<div class="block">Handles the Giphy API result and returns the retrieved GIF url.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.FieldValue.html#hashCode--">hashCode()</a></span> - Method in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.FieldValue.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonEventMatcher.FieldValue</a></dt>
 <dd>
 <div class="block">Computes the hash code associated to this <a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.FieldValue.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>JsonEventMatcher.FieldValue</code></a>.</div>
@@ -5683,6 +5703,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.HeaderValue.html#hashCode--">hashCode()</a></span> - Method in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.HeaderValue.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonEventMatcher.HeaderValue</a></dt>
 <dd>
 <div class="block">Computes the hash code associated to this <a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.HeaderValue.html" title="class in edu.uoc.som.jarvis.core.platform.io"><code>JsonEventMatcher.HeaderValue</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html#headers">headers</a></span> - Variable in class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RestAction</a></dt>
+<dd>
+<div class="block">A <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing user-defined headers to include in the request.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.HeaderValue.html#HeaderValue-java.lang.String-java.lang.String-">HeaderValue(String, String)</a></span> - Constructor for class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.HeaderValue.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonEventMatcher.HeaderValue</a></dt>
 <dd>
@@ -6301,6 +6325,10 @@
 <dd>
 <div class="block">Constructs a new, empty <a href="edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> with the provided <code>sessionId</code> and <code>configuration</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html#jsonContent">jsonContent</a></span> - Variable in class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RestAction</a></dt>
+<dd>
+<div class="block">The <code>JsonElement</code> to include in the request's body.</div>
+</dd>
 <dt><a href="edu/uoc/som/jarvis/core/platform/io/JsonEventMatcher.html" title="class in edu.uoc.som.jarvis.core.platform.io"><span class="typeNameLink">JsonEventMatcher</span></a> - Class in <a href="edu/uoc/som/jarvis/core/platform/io/package-summary.html">edu.uoc.som.jarvis.core.platform.io</a></dt>
 <dd>
 <div class="block">A matcher that creates <a href="edu/uoc/som/jarvis/intent/EventInstance.html" title="interface in edu.uoc.som.jarvis.intent"><code>EventInstance</code></a>s from Json webhook calls.</div>
@@ -6735,6 +6763,10 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html#MESSAGE_TYPE">MESSAGE_TYPE</a></span> - Static variable in interface edu.uoc.som.jarvis.plugins.slack.<a href="edu/uoc/som/jarvis/plugins/slack/SlackUtils.html" title="interface in edu.uoc.som.jarvis.plugins.slack">SlackUtils</a></dt>
 <dd>
 <div class="block">The Slack API answer type representing a <code>message</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html#method">method</a></span> - Variable in class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RestAction</a></dt>
+<dd>
+<div class="block">The <a href="edu/uoc/som/jarvis/core/platform/action/RestAction.MethodKind.html" title="enum in edu.uoc.som.jarvis.core.platform.action"><code>RestAction.MethodKind</code></a> of the request to perform.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/common/util/CommonAdapterFactory.html#modelPackage">modelPackage</a></span> - Static variable in class edu.uoc.som.jarvis.common.util.<a href="edu/uoc/som/jarvis/common/util/CommonAdapterFactory.html" title="class in edu.uoc.som.jarvis.common.util">CommonAdapterFactory</a></dt>
 <dd>
@@ -7222,6 +7254,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/execution/impl/ParameterValueImpl.html#ParameterValueImpl--">ParameterValueImpl()</a></span> - Constructor for class edu.uoc.som.jarvis.execution.impl.<a href="edu/uoc/som/jarvis/execution/impl/ParameterValueImpl.html" title="class in edu.uoc.som.jarvis.execution.impl">ParameterValueImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html#params">params</a></span> - Variable in class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RestAction</a></dt>
+<dd>
+<div class="block">A <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing user-defined parameters to include in the request.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/io/JsonWebhookEventProvider.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class edu.uoc.som.jarvis.core.platform.io.<a href="edu/uoc/som/jarvis/core/platform/io/JsonWebhookEventProvider.html" title="class in edu.uoc.som.jarvis.core.platform.io">JsonWebhookEventProvider</a></dt>
 <dd>
 <div class="block">Parses the provided raw HTTP request content into a <code>JsonElement</code>.</div>
@@ -7763,6 +7799,38 @@
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/slack/platform/action/ReplyFileMessage.html#ReplyFileMessage-edu.uoc.som.jarvis.plugins.slack.platform.SlackPlatform-edu.uoc.som.jarvis.core.session.JarvisSession-java.lang.String-java.io.File-">ReplyFileMessage(SlackPlatform, JarvisSession, String, File)</a></span> - Constructor for class edu.uoc.som.jarvis.plugins.slack.platform.action.<a href="edu/uoc/som/jarvis/plugins/slack/platform/action/ReplyFileMessage.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.action">ReplyFileMessage</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="edu/uoc/som/jarvis/plugins/slack/platform/action/ReplyFileMessage.html" title="class in edu.uoc.som.jarvis.plugins.slack.platform.action"><code>ReplyFileMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>message</code>, and <code>file</code>.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><span class="typeNameLink">RestAction</span></a>&lt;<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="type parameter in RestAction">T</a> extends <a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform">RuntimePlatform</a>&gt; - Class in <a href="edu/uoc/som/jarvis/core/platform/action/package-summary.html">edu.uoc.som.jarvis.core.platform.action</a></dt>
+<dd>
+<div class="block">A generic REST action.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html#RestAction-T-edu.uoc.som.jarvis.core.session.JarvisSession-edu.uoc.som.jarvis.core.platform.action.RestAction.MethodKind-java.util.Map-java.lang.String-java.util.Map-com.google.gson.JsonElement-">RestAction(T, JarvisSession, RestAction.MethodKind, Map&lt;String, String&gt;, String, Map&lt;String, Object&gt;, JsonElement)</a></span> - Constructor for class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RestAction</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RestAction</code></a>.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.MethodKind.html" title="enum in edu.uoc.som.jarvis.core.platform.action"><span class="typeNameLink">RestAction.MethodKind</span></a> - Enum in <a href="edu/uoc/som/jarvis/core/platform/action/package-summary.html">edu.uoc.som.jarvis.core.platform.action</a></dt>
+<dd>
+<div class="block">The kind of REST methods supported by this class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html#restEndpoint">restEndpoint</a></span> - Variable in class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RestAction</a></dt>
+<dd>
+<div class="block">The REST API endpoint to request.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/core/platform/action/RestGetAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><span class="typeNameLink">RestGetAction</span></a>&lt;<a href="edu/uoc/som/jarvis/core/platform/action/RestGetAction.html" title="type parameter in RestGetAction">T</a> extends <a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform">RuntimePlatform</a>&gt; - Class in <a href="edu/uoc/som/jarvis/core/platform/action/package-summary.html">edu.uoc.som.jarvis.core.platform.action</a></dt>
+<dd>
+<div class="block">A generic REST GET action.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestGetAction.html#RestGetAction-T-edu.uoc.som.jarvis.core.session.JarvisSession-java.util.Map-java.lang.String-java.util.Map-">RestGetAction(T, JarvisSession, Map&lt;String, String&gt;, String, Map&lt;String, Object&gt;)</a></span> - Constructor for class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestGetAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RestGetAction</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/core/platform/action/RestGetAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RestGetAction</code></a>.</div>
+</dd>
+<dt><a href="edu/uoc/som/jarvis/core/platform/action/RestPostAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><span class="typeNameLink">RestPostAction</span></a>&lt;<a href="edu/uoc/som/jarvis/core/platform/action/RestPostAction.html" title="type parameter in RestPostAction">T</a> extends <a href="edu/uoc/som/jarvis/core/platform/RuntimePlatform.html" title="class in edu.uoc.som.jarvis.core.platform">RuntimePlatform</a>&gt; - Class in <a href="edu/uoc/som/jarvis/core/platform/action/package-summary.html">edu.uoc.som.jarvis.core.platform.action</a></dt>
+<dd>
+<div class="block">A generic REST POST action.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestPostAction.html#RestPostAction-T-edu.uoc.som.jarvis.core.session.JarvisSession-java.util.Map-java.lang.String-java.util.Map-com.google.gson.JsonElement-">RestPostAction(T, JarvisSession, Map&lt;String, String&gt;, String, Map&lt;String, Object&gt;, JsonElement)</a></span> - Constructor for class edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestPostAction.html" title="class in edu.uoc.som.jarvis.core.platform.action">RestPostAction</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="edu/uoc/som/jarvis/core/platform/action/RestPostAction.html" title="class in edu.uoc.som.jarvis.core.platform.action"><code>RestPostAction</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/plugins/discord/platform/io/DiscordIntentProvider.html#run--">run()</a></span> - Method in class edu.uoc.som.jarvis.plugins.discord.platform.io.<a href="edu/uoc/som/jarvis/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in edu.uoc.som.jarvis.plugins.discord.platform.io">DiscordIntentProvider</a></dt>
 <dd>&nbsp;</dd>
@@ -8656,9 +8724,18 @@
 <dd>
 <div class="block">The default value of the '<a href="edu/uoc/som/jarvis/intent/impl/LiteralTextFragmentImpl.html#getValue--"><code><em>Value</em></code></a>' attribute.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.MethodKind.html#valueOf-java.lang.String-">valueOf(String)</a></span> - Static method in enum edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.MethodKind.html" title="enum in edu.uoc.som.jarvis.core.platform.action">RestAction.MethodKind</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this type with the specified name.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/intent/EntityType.html#valueOf-java.lang.String-">valueOf(String)</a></span> - Static method in enum edu.uoc.som.jarvis.intent.<a href="edu/uoc/som/jarvis/intent/EntityType.html" title="enum in edu.uoc.som.jarvis.intent">EntityType</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this type with the specified name.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/core/platform/action/RestAction.MethodKind.html#values--">values()</a></span> - Static method in enum edu.uoc.som.jarvis.core.platform.action.<a href="edu/uoc/som/jarvis/core/platform/action/RestAction.MethodKind.html" title="enum in edu.uoc.som.jarvis.core.platform.action">RestAction.MethodKind</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum type, in
+the order they are declared.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html#values">values</a></span> - Variable in class edu.uoc.som.jarvis.execution.impl.<a href="edu/uoc/som/jarvis/execution/impl/ActionInstanceImpl.html" title="class in edu.uoc.som.jarvis.execution.impl">ActionInstanceImpl</a></dt>
 <dd>

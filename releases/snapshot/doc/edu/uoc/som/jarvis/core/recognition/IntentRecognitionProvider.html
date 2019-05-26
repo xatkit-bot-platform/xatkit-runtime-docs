@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -155,30 +155,36 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition">RecognitionMonitor</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#getRecognitionMonitor--">getRecognitionMonitor</a></span>()</code>
+<div class="block">Returns the <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>RecognitionMonitor</code></a> associated to this intent recognition provider.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#isShutdown--">isShutdown</a></span>()</code>
 <div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#registerEntityDefinition-edu.uoc.som.jarvis.intent.EntityDefinition-">registerEntityDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/EntityDefinition.html" title="interface in edu.uoc.som.jarvis.intent">EntityDefinition</a>&nbsp;entityDefinition)</code>
 <div class="block">Registers the provided <code>entityDefinition</code> in the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#registerIntentDefinition-edu.uoc.som.jarvis.intent.IntentDefinition-">registerIntentDefinition</a></span>(<a href="../../../../../../edu/uoc/som/jarvis/intent/IntentDefinition.html" title="interface in edu.uoc.som.jarvis.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../edu/uoc/som/jarvis/core/recognition/IntentRecognitionProvider.html#trainMLEngine--">trainMLEngine</a></span>()</code>
 <div class="block">Trains the underlying intent recognition provider.</div>
@@ -342,7 +348,7 @@ var activeTableTab = "activeTableTab";
 <a name="getIntent-java.lang.String-edu.uoc.som.jarvis.core.session.JarvisSession-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getIntent</h4>
 <pre><a href="../../../../../../edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent">RecognizedIntent</a>&nbsp;getIntent(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
@@ -357,6 +363,21 @@ var activeTableTab = "activeTableTab";
 <dd><code>session</code> - the <a href="../../../../../../edu/uoc/som/jarvis/core/session/JarvisSession.html" title="class in edu.uoc.som.jarvis.core.session"><code>JarvisSession</code></a> used to access context information</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="../../../../../../edu/uoc/som/jarvis/intent/RecognizedIntent.html" title="interface in edu.uoc.som.jarvis.intent"><code>RecognizedIntent</code></a> extracted from the provided <code>input</code> and <code>session</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getRecognitionMonitor--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getRecognitionMonitor</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+<a href="../../../../../../edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition">RecognitionMonitor</a>&nbsp;getRecognitionMonitor()</pre>
+<div class="block">Returns the <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>RecognitionMonitor</code></a> associated to this intent recognition provider.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../edu/uoc/som/jarvis/core/recognition/RecognitionMonitor.html" title="class in edu.uoc.som.jarvis.core.recognition"><code>RecognitionMonitor</code></a>, or <code>null</code> if analytics monitoring is disabled.</dd>
 </dl>
 </li>
 </ul>
