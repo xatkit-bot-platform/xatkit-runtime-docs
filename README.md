@@ -1,2 +1,2 @@
-# jarvis-docs
-Documentation for the jarvis framework
+# xatkit-docs
+Documentation for the xatkit framework
