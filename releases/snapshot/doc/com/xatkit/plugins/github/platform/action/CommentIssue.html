@@ -124,7 +124,7 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
  <p>
  This class relies on the <a href="../../../../../../com/xatkit/plugins/github/platform/GithubPlatform.html" title="class in com.xatkit.plugins.github.platform"><code>GithubPlatform</code></a> to access the Github API and authenticate the bot.
  <p>
- <b>Note: </b> this class requires that its containing <a href="../../../../../../com/xatkit/plugins/github/platform/GithubPlatform.html" title="class in com.xatkit.plugins.github.platform"><code>GithubPlatform</code></a> has been loaded with valid Github
+ <b>Note:</b> this class requires that its containing <a href="../../../../../../com/xatkit/plugins/github/platform/GithubPlatform.html" title="class in com.xatkit.plugins.github.platform"><code>GithubPlatform</code></a> has been loaded with valid Github
  credentials in order to authenticate the bot and access the Github API.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -167,8 +167,8 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
             <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
             com.jcabi.github.Issue&nbsp;issue,
             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;commentContent)</code>
-<div class="block">Constructs a new <a href="../../../../../../com/xatkit/plugins/github/platform/action/CommentIssue.html" title="class in com.xatkit.plugins.github.platform.action"><code>CommentIssue</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>user</code>,
- <code>repository</code>, and <code>issueNumber</code>.</div>
+<div class="block">Constructs a new <a href="../../../../../../com/xatkit/plugins/github/platform/action/CommentIssue.html" title="class in com.xatkit.plugins.github.platform.action"><code>CommentIssue</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>issue
+ </code>, and {@code commentContent).</div>
 </td>
 </tr>
 </table>
@@ -189,7 +189,7 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/plugins/github/platform/action/CommentIssue.html#compute--">compute</a></span>()</code>
-<div class="block">Retrieve the issue on the given <code>repository</code> with the provided <code>issueNumber</code>.</div>
+<div class="block">Creates a new comment on the provided <code>Issue</code> with the given <code>commentContent</code>.</div>
 </td>
 </tr>
 </table>
@@ -231,8 +231,8 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
                     <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
                     com.jcabi.github.Issue&nbsp;issue,
                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;commentContent)</pre>
-<div class="block">Constructs a new <a href="../../../../../../com/xatkit/plugins/github/platform/action/CommentIssue.html" title="class in com.xatkit.plugins.github.platform.action"><code>CommentIssue</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>user</code>,
- <code>repository</code>, and <code>issueNumber</code>.</div>
+<div class="block">Constructs a new <a href="../../../../../../com/xatkit/plugins/github/platform/action/CommentIssue.html" title="class in com.xatkit.plugins.github.platform.action"><code>CommentIssue</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>issue
+ </code>, and {@code commentContent).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>runtimePlatform</code> - the <a href="../../../../../../com/xatkit/plugins/github/platform/GithubPlatform.html" title="class in com.xatkit.plugins.github.platform"><code>GithubPlatform</code></a> containing this action</dd>
@@ -261,16 +261,12 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
 <li class="blockList">
 <h4>compute</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;compute()</pre>
-<div class="block">Retrieve the issue on the given <code>repository</code> with the provided <code>issueNumber</code>.
- <p>
- This method relies on the containing <a href="../../../../../../com/xatkit/plugins/github/platform/GithubPlatform.html" title="class in com.xatkit.plugins.github.platform"><code>GithubPlatform</code></a> to access the Github API, and will throw a
- <a href="../../../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core"><code>XatkitException</code></a> if the Xatkit <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> does not define
- valid Github authentication credentials.</div>
+<div class="block">Creates a new comment on the provided <code>Issue</code> with the given <code>commentContent</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html#compute--">compute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">RuntimeAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/github/platform/GithubPlatform.html" title="class in com.xatkit.plugins.github.platform">GithubPlatform</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the retrieved <code>Issue</code></dd>
+<dd>the created <code>Comment</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if the <a href="../../../../../../com/xatkit/plugins/github/platform/GithubPlatform.html" title="class in com.xatkit.plugins.github.platform"><code>GithubPlatform</code></a> does not hold a valid Github API client (i.e. if the
                          Xatkit <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> does not define valid
