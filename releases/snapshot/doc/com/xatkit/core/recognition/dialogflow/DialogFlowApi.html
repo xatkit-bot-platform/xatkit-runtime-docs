@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -244,110 +244,116 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#convertParameterValueToString-com.google.protobuf.Value-">convertParameterValueToString</a></span>(com.google.protobuf.Value&nbsp;value)</code>
+<div class="block">Converts the provided <code>value</code> into a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#createInContextNames-com.xatkit.intent.IntentDefinition-">createInContextNames</a></span>(<a href="../../../../../com/xatkit/intent/IntentDefinition.html" title="interface in com.xatkit.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Creates the DialogFlow input <code>Context</code> names from the provided <code>intentDefinition</code>.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;com.google.cloud.dialogflow.v2.Context&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#createOutContexts-com.xatkit.intent.IntentDefinition-">createOutContexts</a></span>(<a href="../../../../../com/xatkit/intent/IntentDefinition.html" title="interface in com.xatkit.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Creates the DialogFlow output <code>Context</code>s from the provided <code>intentDefinition</code>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;com.google.cloud.dialogflow.v2.Intent.Parameter&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#createParameters-java.util.List-">createParameters</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../com/xatkit/intent/Context.html" title="interface in com.xatkit.intent">Context</a>&gt;&nbsp;contexts)</code>
 <div class="block">Creates the DialogFlow context parameters from the provided Xatkit <code>contexts</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#createSession-java.lang.String-">createSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
 <div class="block">Creates a new <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> from the provided <code>sessionId</code>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected com.google.cloud.dialogflow.v2.Intent.TrainingPhrase</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#createTrainingPhrase-java.lang.String-java.util.List-">createTrainingPhrase</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;trainingSentence,
                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../com/xatkit/intent/Context.html" title="interface in com.xatkit.intent">Context</a>&gt;&nbsp;outContexts)</code>
 <div class="block">Creates the DialogFlow's <code>Intent.TrainingPhrase</code> from the provided <code>trainingSentence</code> and <code>outContexts</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#deleteEntityDefinition-com.xatkit.intent.EntityDefinition-">deleteEntityDefinition</a></span>(<a href="../../../../../com/xatkit/intent/EntityDefinition.html" title="interface in com.xatkit.intent">EntityDefinition</a>&nbsp;entityDefinition)</code>
 <div class="block">Deletes the provided <code>entityDefinition</code> from the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#deleteIntentDefinition-com.xatkit.intent.IntentDefinition-">deleteIntentDefinition</a></span>(<a href="../../../../../com/xatkit/intent/IntentDefinition.html" title="interface in com.xatkit.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#finalize--">finalize</a></span>()</code>
 <div class="block">Closes the DialogFlow session if it is not shutdown yet.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/xatkit/intent/RecognizedIntent.html" title="interface in com.xatkit.intent">RecognizedIntent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
          <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
 <div class="block">Returns the <a href="../../../../../com/xatkit/intent/RecognizedIntent.html" title="interface in com.xatkit.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getLanguageCode--">getLanguageCode</a></span>()</code>
 <div class="block">Returns the code of the language processed by DialogFlow.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getProjectId--">getProjectId</a></span>()</code>
 <div class="block">Returns the DialogFlow project unique identifier.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition">RecognitionMonitor</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getRecognitionMonitor--">getRecognitionMonitor</a></span>()</code>
 <div class="block">Returns the <a href="../../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition"><code>RecognitionMonitor</code></a> associated to this intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#isShutdown--">isShutdown</a></span>()</code>
 <div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#mergeLocalSessionInDialogFlow-com.xatkit.core.recognition.dialogflow.DialogFlowSession-">mergeLocalSessionInDialogFlow</a></span>(<a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowSession.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowSession</a>&nbsp;dialogFlowSession)</code>
 <div class="block">Merges the local <a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowSession.html" title="class in com.xatkit.core.recognition.dialogflow"><code>DialogFlowSession</code></a> in the remote DialogFlow API one.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#registerEntityDefinition-com.xatkit.intent.EntityDefinition-">registerEntityDefinition</a></span>(<a href="../../../../../com/xatkit/intent/EntityDefinition.html" title="interface in com.xatkit.intent">EntityDefinition</a>&nbsp;entityDefinition)</code>
 <div class="block">Registers the provided <code>entityDefinition</code> in the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#registerIntentDefinition-com.xatkit.intent.IntentDefinition-">registerIntentDefinition</a></span>(<a href="../../../../../com/xatkit/intent/IntentDefinition.html" title="interface in com.xatkit.intent">IntentDefinition</a>&nbsp;intentDefinition)</code>
 <div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#trainMLEngine--">trainMLEngine</a></span>()</code>
 <div class="block">Trains the underlying intent recognition provider.</div>
@@ -957,6 +963,25 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
                                   underlying DialogFlow engine</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#ENABLE_LOCAL_CONTEXT_MERGE_KEY"><code>ENABLE_LOCAL_CONTEXT_MERGE_KEY</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="convertParameterValueToString-com.google.protobuf.Value-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>convertParameterValueToString</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;convertParameterValueToString(com.google.protobuf.Value&nbsp;value)</pre>
+<div class="block">Converts the provided <code>value</code> into a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>.
+ <p>
+ This method converts protobuf's <code>Value</code>s returned by DialogFlow into <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>s that can be
+ assigned to <a href="../../../../../com/xatkit/intent/ContextParameterValue.html" title="interface in com.xatkit.intent"><code>ContextParameterValue</code></a>s.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the protobuf <code>Value</code> to convert</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representation of the provided <code>value</code>.</dd>
 </dl>
 </li>
 </ul>

@@ -264,6 +264,15 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html#ArithmeticOperation--">ArithmeticOperation()</a></span> - Constructor for class com.xatkit.core.interpreter.operation.object.<a href="com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html" title="class in com.xatkit.core.interpreter.operation.object">ArithmeticOperation</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/xatkit/plugins/github/platform/action/AssignUser.html" title="class in com.xatkit.plugins.github.platform.action"><span class="typeNameLink">AssignUser</span></a> - Class in <a href="com/xatkit/plugins/github/platform/action/package-summary.html">com.xatkit.plugins.github.platform.action</a></dt>
+<dd>
+<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that assigns the provided <code>username</code> to the given <code>issue</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/github/platform/action/AssignUser.html#AssignUser-com.xatkit.plugins.github.platform.GithubPlatform-com.xatkit.core.session.XatkitSession-com.jcabi.github.Issue-java.lang.String-">AssignUser(GithubPlatform, XatkitSession, Issue, String)</a></span> - Constructor for class com.xatkit.plugins.github.platform.action.<a href="com/xatkit/plugins/github/platform/action/AssignUser.html" title="class in com.xatkit.plugins.github.platform.action">AssignUser</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/github/platform/action/AssignUser.html" title="class in com.xatkit.plugins.github.platform.action"><code>AssignUser</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>issue</code>,
+ and <code>username</code>.</div>
+</dd>
 </dl>
 <a name="I:B">
 <!--   -->
@@ -489,6 +498,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/util/IntentSwitch.html#caseCompositeEntityDefinitionEntry-com.xatkit.intent.CompositeEntityDefinitionEntry-">caseCompositeEntityDefinitionEntry(CompositeEntityDefinitionEntry)</a></span> - Method in class com.xatkit.intent.util.<a href="com/xatkit/intent/util/IntentSwitch.html" title="class in com.xatkit.intent.util">IntentSwitch</a></dt>
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Composite Entity Definition Entry</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/util/CommonSwitch.html#caseConfigAccess-com.xatkit.common.ConfigAccess-">caseConfigAccess(ConfigAccess)</a></span> - Method in class com.xatkit.common.util.<a href="com/xatkit/common/util/CommonSwitch.html" title="class in com.xatkit.common.util">CommonSwitch</a></dt>
+<dd>
+<div class="block">Returns the result of interpreting the object as an instance of '<em>Config Access</em>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/util/IntentSwitch.html#caseContext-com.xatkit.intent.Context-">caseContext(Context)</a></span> - Method in class com.xatkit.intent.util.<a href="com/xatkit/intent/util/IntentSwitch.html" title="class in com.xatkit.intent.util">IntentSwitch</a></dt>
 <dd>
@@ -1181,6 +1194,10 @@
 <dd>
 <div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/github/platform/action/AssignUser.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.github.platform.action.<a href="com/xatkit/plugins/github/platform/action/AssignUser.html" title="class in com.xatkit.plugins.github.platform.action">AssignUser</a></dt>
+<dd>
+<div class="block">Assigns the provided <code>username</code> to the given <code>Issue</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/github/platform/action/CommentIssue.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.github.platform.action.<a href="com/xatkit/plugins/github/platform/action/CommentIssue.html" title="class in com.xatkit.plugins.github.platform.action">CommentIssue</a></dt>
 <dd>
 <div class="block">Creates a new comment on the provided <code>Issue</code> with the given <code>commentContent</code>.</div>
@@ -1192,6 +1209,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/github/platform/action/OpenIssue.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.github.platform.action.<a href="com/xatkit/plugins/github/platform/action/OpenIssue.html" title="class in com.xatkit.plugins.github.platform.action">OpenIssue</a></dt>
 <dd>
 <div class="block">Opens a new issue on the given <code>repository</code> with the provided <code>issueTitle</code> and <code>issueContent</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/github/platform/action/SetLabel.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.github.platform.action.<a href="com/xatkit/plugins/github/platform/action/SetLabel.html" title="class in com.xatkit.plugins.github.platform.action">SetLabel</a></dt>
+<dd>
+<div class="block">Sets the provided <code>label</code> to the given <code>Issue</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/log/platform/action/LogAction.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.log.platform.action.<a href="com/xatkit/plugins/log/platform/action/LogAction.html" title="class in com.xatkit.plugins.log.platform.action">LogAction</a></dt>
 <dd>
@@ -1213,6 +1234,40 @@
 <dd>
 <div class="block">The cached value of the '<a href="com/xatkit/common/impl/IfExpressionImpl.html#getCondition--"><code><em>Condition</em></code></a>' containment reference.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.html#CONFIG_ACCESS">CONFIG_ACCESS</a></span> - Static variable in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.html" title="interface in com.xatkit.common">CommonPackage</a></dt>
+<dd>
+<div class="block">The meta object id for the '<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl"><code><em>Config Access</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.Literals.html#CONFIG_ACCESS">CONFIG_ACCESS</a></span> - Static variable in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.Literals.html" title="interface in com.xatkit.common">CommonPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl"><code><em>Config Access</em></code></a>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.html#CONFIG_ACCESS__KEY_NAME">CONFIG_ACCESS__KEY_NAME</a></span> - Static variable in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.html" title="interface in com.xatkit.common">CommonPackage</a></dt>
+<dd>
+<div class="block">The feature id for the '<em><b>Key Name</b></em>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.Literals.html#CONFIG_ACCESS__KEY_NAME">CONFIG_ACCESS__KEY_NAME</a></span> - Static variable in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.Literals.html" title="interface in com.xatkit.common">CommonPackage.Literals</a></dt>
+<dd>
+<div class="block">The meta object literal for the '<em><b>Key Name</b></em>' attribute feature.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.html#CONFIG_ACCESS_FEATURE_COUNT">CONFIG_ACCESS_FEATURE_COUNT</a></span> - Static variable in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.html" title="interface in com.xatkit.common">CommonPackage</a></dt>
+<dd>
+<div class="block">The number of structural features of the '<em>Config Access</em>' class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.html#CONFIG_ACCESS_OPERATION_COUNT">CONFIG_ACCESS_OPERATION_COUNT</a></span> - Static variable in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.html" title="interface in com.xatkit.common">CommonPackage</a></dt>
+<dd>
+<div class="block">The number of operations of the '<em>Config Access</em>' class.</div>
+</dd>
+<dt><a href="com/xatkit/common/ConfigAccess.html" title="interface in com.xatkit.common"><span class="typeNameLink">ConfigAccess</span></a> - Interface in <a href="com/xatkit/common/package-summary.html">com.xatkit.common</a></dt>
+<dd>
+<div class="block">A representation of the model object '<em><b>Config Access</b></em>'.</div>
+</dd>
+<dt><a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl"><span class="typeNameLink">ConfigAccessImpl</span></a> - Class in <a href="com/xatkit/common/impl/package-summary.html">com.xatkit.common.impl</a></dt>
+<dd>
+<div class="block">An implementation of the model object '<em><b>Config Access</b></em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#ConfigAccessImpl--">ConfigAccessImpl()</a></span> - Constructor for class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/RuntimePlatform.html#configuration">configuration</a></span> - Variable in class com.xatkit.core.platform.<a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a></dt>
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to initialize this class.</div>
@@ -1515,6 +1570,10 @@
 <dd>
 <div class="block">Converts the provided <code>jsonObject</code>'s field into out context values set in the provided <code>builder</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#convertParameterValueToString-com.google.protobuf.Value-">convertParameterValueToString(Value)</a></span> - Method in class com.xatkit.core.recognition.dialogflow.<a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowApi</a></dt>
+<dd>
+<div class="block">Converts the provided <code>value</code> into a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/IntentFactoryImpl.html#convertToString-org.eclipse.emf.ecore.EDataType-java.lang.Object-">convertToString(EDataType, Object)</a></span> - Method in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/IntentFactoryImpl.html" title="class in com.xatkit.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core_resources/utils/LibraryLoaderUtils.html#CORE_LIBRARY_PATHMAP">CORE_LIBRARY_PATHMAP</a></span> - Static variable in interface com.xatkit.core_resources.utils.<a href="com/xatkit/core_resources/utils/LibraryLoaderUtils.html" title="interface in com.xatkit.core_resources.utils">LibraryLoaderUtils</a></dt>
@@ -1642,6 +1701,16 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/util/IntentAdapterFactory.html#createCompositeEntityDefinitionEntryAdapter--">createCompositeEntityDefinitionEntryAdapter()</a></span> - Method in class com.xatkit.intent.util.<a href="com/xatkit/intent/util/IntentAdapterFactory.html" title="class in com.xatkit.intent.util">IntentAdapterFactory</a></dt>
 <dd>
 <div class="block">Creates a new adapter for an object of class '<a href="com/xatkit/intent/CompositeEntityDefinitionEntry.html" title="interface in com.xatkit.intent"><code><em>Composite Entity Definition Entry</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/CommonFactory.html#createConfigAccess--">createConfigAccess()</a></span> - Method in interface com.xatkit.common.<a href="com/xatkit/common/CommonFactory.html" title="interface in com.xatkit.common">CommonFactory</a></dt>
+<dd>
+<div class="block">Returns a new object of class '<em>Config Access</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/CommonFactoryImpl.html#createConfigAccess--">createConfigAccess()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/CommonFactoryImpl.html" title="class in com.xatkit.common.impl">CommonFactoryImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/util/CommonAdapterFactory.html#createConfigAccessAdapter--">createConfigAccessAdapter()</a></span> - Method in class com.xatkit.common.util.<a href="com/xatkit/common/util/CommonAdapterFactory.html" title="class in com.xatkit.common.util">CommonAdapterFactory</a></dt>
+<dd>
+<div class="block">Creates a new adapter for an object of class '<a href="com/xatkit/common/ConfigAccess.html" title="interface in com.xatkit.common"><code><em>Config Access</em></code></a>'.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/IntentFactoryImpl.html#createContext--">createContext()</a></span> - Method in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/IntentFactoryImpl.html" title="class in com.xatkit.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -2478,6 +2547,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/BooleanLiteralImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/BooleanLiteralImpl.html" title="class in com.xatkit.common.impl">BooleanLiteralImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ContextAccessImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ContextAccessImpl.html" title="class in com.xatkit.common.impl">ContextAccessImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/IfExpressionImpl.html#eGet-int-boolean-boolean-">eGet(int, boolean, boolean)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/IfExpressionImpl.html" title="class in com.xatkit.common.impl">IfExpressionImpl</a></dt>
@@ -2667,6 +2738,8 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/platform/impl/PlatformDefinitionImpl.html#eInvoke-int-org.eclipse.emf.common.util.EList-">eInvoke(int, EList&lt;?&gt;)</a></span> - Method in class com.xatkit.platform.impl.<a href="com/xatkit/platform/impl/PlatformDefinitionImpl.html" title="class in com.xatkit.platform.impl">PlatformDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/BooleanLiteralImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/BooleanLiteralImpl.html" title="class in com.xatkit.common.impl">BooleanLiteralImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ContextAccessImpl.html#eIsSet-int-">eIsSet(int)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ContextAccessImpl.html" title="class in com.xatkit.common.impl">ContextAccessImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -3001,6 +3074,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/BooleanLiteralImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/BooleanLiteralImpl.html" title="class in com.xatkit.common.impl">BooleanLiteralImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ContextAccessImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ContextAccessImpl.html" title="class in com.xatkit.common.impl">ContextAccessImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/IfExpressionImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/IfExpressionImpl.html" title="class in com.xatkit.common.impl">IfExpressionImpl</a></dt>
@@ -3076,6 +3151,8 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/platform/impl/PlatformDefinitionImpl.html#eSet-int-java.lang.Object-">eSet(int, Object)</a></span> - Method in class com.xatkit.platform.impl.<a href="com/xatkit/platform/impl/PlatformDefinitionImpl.html" title="class in com.xatkit.platform.impl">PlatformDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/BooleanLiteralImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/BooleanLiteralImpl.html" title="class in com.xatkit.common.impl">BooleanLiteralImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ContextAccessImpl.html#eStaticClass--">eStaticClass()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ContextAccessImpl.html" title="class in com.xatkit.common.impl">ContextAccessImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -3177,6 +3254,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/BooleanLiteralImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/BooleanLiteralImpl.html" title="class in com.xatkit.common.impl">BooleanLiteralImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ContextAccessImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ContextAccessImpl.html" title="class in com.xatkit.common.impl">ContextAccessImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/IfExpressionImpl.html#eUnset-int-">eUnset(int)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/IfExpressionImpl.html" title="class in com.xatkit.common.impl">IfExpressionImpl</a></dt>
@@ -3272,6 +3351,11 @@
 <dd>
 <div class="block">Evaluates the provided <a href="com/xatkit/common/SessionAccess.html" title="interface in com.xatkit.common"><code>SessionAccess</code></a> <a href="com/xatkit/common/Expression.html" title="interface in com.xatkit.common"><code>Expression</code></a> and returns the corresponding
  <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/interpreter/CommonInterpreter.html#evaluate-com.xatkit.common.ConfigAccess-com.xatkit.core.interpreter.ExecutionContext-">evaluate(ConfigAccess, ExecutionContext)</a></span> - Method in class com.xatkit.core.interpreter.<a href="com/xatkit/core/interpreter/CommonInterpreter.html" title="class in com.xatkit.core.interpreter">CommonInterpreter</a></dt>
+<dd>
+<div class="block">Evaluates the provided <a href="com/xatkit/common/ConfigAccess.html" title="interface in com.xatkit.common"><code>ConfigAccess</code></a> <a href="com/xatkit/common/Expression.html" title="interface in com.xatkit.common"><code>Expression</code></a> and returns the corresponding
+ <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/interpreter/CommonInterpreter.html#evaluate-com.xatkit.common.Literal-com.xatkit.core.interpreter.ExecutionContext-">evaluate(Literal, ExecutionContext)</a></span> - Method in class com.xatkit.core.interpreter.<a href="com/xatkit/core/interpreter/CommonInterpreter.html" title="class in com.xatkit.core.interpreter">CommonInterpreter</a></dt>
 <dd>
@@ -3990,6 +4074,22 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/IfExpressionImpl.html#getCondition--">getCondition()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/IfExpressionImpl.html" title="class in com.xatkit.common.impl">IfExpressionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.html#getConfigAccess--">getConfigAccess()</a></span> - Method in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.html" title="interface in com.xatkit.common">CommonPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for class '<a href="com/xatkit/common/ConfigAccess.html" title="interface in com.xatkit.common"><code><em>Config Access</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/CommonPackageImpl.html#getConfigAccess--">getConfigAccess()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/CommonPackageImpl.html" title="class in com.xatkit.common.impl">CommonPackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.html#getConfigAccess_KeyName--">getConfigAccess_KeyName()</a></span> - Method in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.html" title="interface in com.xatkit.common">CommonPackage</a></dt>
+<dd>
+<div class="block">Returns the meta object for the attribute '<a href="com/xatkit/common/ConfigAccess.html#getKeyName--"><code><em>Key Name</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/CommonPackageImpl.html#getConfigAccess_KeyName--">getConfigAccess_KeyName()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/CommonPackageImpl.html" title="class in com.xatkit.common.impl">CommonPackageImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/session/XatkitSession.html#getConfiguration--">getConfiguration()</a></span> - Method in class com.xatkit.core.session.<a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></dt>
+<dd>
+<div class="block">Returns the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> defining the session behavior.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/IntentPackageImpl.html#getContext--">getContext()</a></span> - Method in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/IntentPackageImpl.html" title="class in com.xatkit.intent.impl">IntentPackageImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/IntentPackage.html#getContext--">getContext()</a></span> - Method in interface com.xatkit.intent.<a href="com/xatkit/intent/IntentPackage.html" title="interface in com.xatkit.intent">IntentPackage</a></dt>
@@ -4794,6 +4894,12 @@
 <dd>
 <div class="block">Returns the value of the '<em><b>Key</b></em>' attribute.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/ConfigAccess.html#getKeyName--">getKeyName()</a></span> - Method in interface com.xatkit.common.<a href="com/xatkit/common/ConfigAccess.html" title="interface in com.xatkit.common">ConfigAccess</a></dt>
+<dd>
+<div class="block">Returns the value of the '<em><b>Key Name</b></em>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#getKeyName--">getKeyName()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getLanguageCode--">getLanguageCode()</a></span> - Method in class com.xatkit.core.recognition.dialogflow.<a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">Returns the code of the language processed by DialogFlow.</div>
@@ -6309,6 +6415,14 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/platform/impl/ParameterImpl.html#KEY_EDEFAULT">KEY_EDEFAULT</a></span> - Static variable in class com.xatkit.platform.impl.<a href="com/xatkit/platform/impl/ParameterImpl.html" title="class in com.xatkit.platform.impl">ParameterImpl</a></dt>
 <dd>
 <div class="block">The default value of the '<a href="com/xatkit/platform/impl/ParameterImpl.html#getKey--"><code><em>Key</em></code></a>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#KEY_NAME_EDEFAULT">KEY_NAME_EDEFAULT</a></span> - Static variable in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
+<dd>
+<div class="block">The default value of the '<a href="com/xatkit/common/impl/ConfigAccessImpl.html#getKeyName--"><code><em>Key Name</em></code></a>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#keyName">keyName</a></span> - Variable in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
+<dd>
+<div class="block">The cached value of the '<a href="com/xatkit/common/impl/ConfigAccessImpl.html#getKeyName--"><code><em>Key Name</em></code></a>' attribute.</div>
 </dd>
 </dl>
 <a name="I:L">
@@ -8074,6 +8188,21 @@
 <dd>
 <div class="block">Sets the value of the '<a href="com/xatkit/platform/Parameter.html#getKey--"><code><em>Key</em></code></a>' attribute.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/ConfigAccess.html#setKeyName-java.lang.String-">setKeyName(String)</a></span> - Method in interface com.xatkit.common.<a href="com/xatkit/common/ConfigAccess.html" title="interface in com.xatkit.common">ConfigAccess</a></dt>
+<dd>
+<div class="block">Sets the value of the '<a href="com/xatkit/common/ConfigAccess.html#getKeyName--"><code><em>Key Name</em></code></a>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#setKeyName-java.lang.String-">setKeyName(String)</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/xatkit/plugins/github/platform/action/SetLabel.html" title="class in com.xatkit.plugins.github.platform.action"><span class="typeNameLink">SetLabel</span></a> - Class in <a href="com/xatkit/plugins/github/platform/action/package-summary.html">com.xatkit.plugins.github.platform.action</a></dt>
+<dd>
+<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that set the provided <code>label</code> to the given <code>issue</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/github/platform/action/SetLabel.html#SetLabel-com.xatkit.plugins.github.platform.GithubPlatform-com.xatkit.core.session.XatkitSession-com.jcabi.github.Issue-java.lang.String-">SetLabel(GithubPlatform, XatkitSession, Issue, String)</a></span> - Constructor for class com.xatkit.plugins.github.platform.action.<a href="com/xatkit/plugins/github/platform/action/SetLabel.html" title="class in com.xatkit.plugins.github.platform.action">SetLabel</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/github/platform/action/SetLabel.html" title="class in com.xatkit.plugins.github.platform.action"><code>SetLabel</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>issue</code>,
+ and <code>username</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/Context.html#setLifeSpan-int-">setLifeSpan(int)</a></span> - Method in interface com.xatkit.intent.<a href="com/xatkit/intent/Context.html" title="interface in com.xatkit.intent">Context</a></dt>
 <dd>
 <div class="block">Sets the value of the '<a href="com/xatkit/intent/Context.html#getLifeSpan--"><code><em>Life Span</em></code></a>' attribute.</div>
@@ -8447,6 +8576,8 @@
 <div class="block">The '<em><b>TIME</b></em>' literal value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/BooleanLiteralImpl.html#toString--">toString()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/BooleanLiteralImpl.html" title="class in com.xatkit.common.impl">BooleanLiteralImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ConfigAccessImpl.html#toString--">toString()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ConfigAccessImpl.html" title="class in com.xatkit.common.impl">ConfigAccessImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/ContextAccessImpl.html#toString--">toString()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/ContextAccessImpl.html" title="class in com.xatkit.common.impl">ContextAccessImpl</a></dt>
 <dd>&nbsp;</dd>
