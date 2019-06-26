@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -191,24 +191,30 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getPort--">getPort</a></span>()</code>
+<div class="block">Returns the port the server is listening to.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getRegisteredWebhookEventProviders--">getRegisteredWebhookEventProviders</a></span>()</code>
 <div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>s.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#isRestEndpoint-java.lang.String-">isRestEndpoint</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
 <div class="block">Returns whether the provided <code>uri</code> is associated to a REST endpoint.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#isStarted--">isStarted</a></span>()</code>
 <div class="block">Returns <code>true</code> if the <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a> is started, <code>false</code> otherwise.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>com.google.gson.JsonElement</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-com.google.gson.JsonElement-">notifyRestHandler</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
                  <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;header,
@@ -217,7 +223,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-org.apache.http.Header:A-">notifyWebhookEventProviders</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
@@ -225,32 +231,32 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Notifies the registered <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-java.lang.String-com.xatkit.core.server.JsonRestHandler-">registerRestEndpoint</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
                     <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="interface in com.xatkit.core.server">JsonRestHandler</a>&nbsp;handler)</code>
 <div class="block">Registers the provided <code>handler</code> as a REST endpoint for the provided <code>uri</code>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerWebhookEventProvider-com.xatkit.core.platform.io.WebhookEventProvider-">registerWebhookEventProvider</a></span>(<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
 <div class="block">Register a <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#start--">start</a></span>()</code>
 <div class="block">Starts the underlying <code>HttpServer</code>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#stop--">stop</a></span>()</code>
 <div class="block">Stops the underlying <code>HttpServer</code>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#unregisterWebhookEventProvider-com.xatkit.core.platform.io.WebhookEventProvider-">unregisterWebhookEventProvider</a></span>(<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
 <div class="block">Unregistered a <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>.</div>
@@ -342,6 +348,20 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getPort--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPort</h4>
+<pre>public&nbsp;int&nbsp;getPort()</pre>
+<div class="block">Returns the port the server is listening to.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the port the server is listening to</dd>
+</dl>
+</li>
+</ul>
 <a name="getHttpServer--">
 <!--   -->
 </a>

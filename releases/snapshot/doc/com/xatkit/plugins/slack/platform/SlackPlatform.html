@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -207,12 +207,18 @@ extends <a href="../../../../../com/xatkit/plugins/chat/platform/ChatPlatform.ht
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html#getChannelId-java.lang.String-">getChannelId</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channelName)</code>
+<div class="block">Retrieves the ID of the provided <code>channelName</code>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>com.github.seratch.jslack.Slack</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html#getSlack--">getSlack</a></span>()</code>
 <div class="block">Returns the Slack API client used to post messages.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html#getSlackToken--">getSlackToken</a></span>()</code>
 <div class="block">Returns the Slack bot API token used to initialize this class.</div>
@@ -311,7 +317,7 @@ extends <a href="../../../../../com/xatkit/plugins/chat/platform/ChatPlatform.ht
 <a name="createSessionFromChannel-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>createSessionFromChannel</h4>
 <pre>public&nbsp;<a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;createSessionFromChannel(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</pre>
@@ -321,6 +327,29 @@ extends <a href="../../../../../com/xatkit/plugins/chat/platform/ChatPlatform.ht
 <dd><code>channel</code> - the <code>channel</code> identifier to retrieve the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> from</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the provided <code>channel</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getChannelId-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getChannelId</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getChannelId(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channelName)</pre>
+<div class="block">Retrieves the ID of the provided <code>channelName</code>.
+ <p>
+ This method supports channel IDs, names, as well as user names, real names, and display names (in this case
+ the private <code>im</code> channel ID between the bot and the user is returned). The returned ID can be used to
+ send messages to the channel.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>channelName</code> - the name of the channel to retrieve the ID from</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the channel ID if it exists</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if the provided <code>channelName</code> does not correspond to any channel accessible by
+                         the bot</dd>
 </dl>
 </li>
 </ul>
