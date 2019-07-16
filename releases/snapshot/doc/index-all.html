@@ -273,6 +273,8 @@
 <div class="block">Constructs a new <a href="com/xatkit/plugins/github/platform/action/AssignUser.html" title="class in com.xatkit.plugins.github.platform.action"><code>AssignUser</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>issue</code>,
  and <code>username</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#attachments">attachments</a></span> - Variable in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:B">
 <!--   -->
@@ -1221,6 +1223,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/action/PostMessage.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.react.platform.action.<a href="com/xatkit/plugins/react/platform/action/PostMessage.html" title="class in com.xatkit.plugins.react.platform.action">PostMessage</a></dt>
 <dd>
 <div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
+<dd>
+<div class="block">Posts the provided <code>attachments</code> to the given <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostFileMessage.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostFileMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostFileMessage</a></dt>
 <dd>
@@ -7532,6 +7538,29 @@
 <dd>
 <div class="block">Creates an instance of the switch.</div>
 </dd>
+<dt><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><span class="typeNameLink">PostAttachmentsMessage</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/action/package-summary.html">com.xatkit.plugins.slack.platform.action</a></dt>
+<dd>
+<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that posts a <code>message</code> to a given Slack
+ <code>channel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#PostAttachmentsMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.util.List-java.lang.String-">PostAttachmentsMessage(SlackPlatform, XatkitSession, List&lt;Attachment&gt;, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
+ <code>runtimePlatform</code>, <code>session</code>, <code>attachments</code> and
+ <code>channel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#PostAttachmentsMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">PostAttachmentsMessage(SlackPlatform, XatkitSession, String, String, String, String, String, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
+ <code>runtimePlatform</code>, <code>session</code>, <code>pretext</code>, <code>title</code>,
+ <code>text</code>, <code>attchColor</code>, <code>timestamp</code> and <code>channel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#PostAttachmentsMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">PostAttachmentsMessage(SlackPlatform, XatkitSession, String, String, String, String, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
+ <code>runtimePlatform</code>, <code>session</code>, <code>pretext</code>, <code>title</code>,
+ <code>text</code>, <code>attchColor</code>, and <code>channel</code>.</div>
+</dd>
 <dt><a href="com/xatkit/plugins/slack/platform/action/PostFileMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><span class="typeNameLink">PostFileMessage</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/action/package-summary.html">com.xatkit.plugins.slack.platform.action</a></dt>
 <dd>
 <div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that uploads a <code>file</code> with an associated <code>message</code> to a
@@ -7844,6 +7873,28 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/Reply.html#Reply-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-">Reply(SlackPlatform, XatkitSession, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/Reply.html" title="class in com.xatkit.plugins.slack.platform.action">Reply</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/Reply.html" title="class in com.xatkit.plugins.slack.platform.action"><code>Reply</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>message</code>.</div>
+</dd>
+<dt><a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><span class="typeNameLink">ReplyAttachmentsMessage</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/action/package-summary.html">com.xatkit.plugins.slack.platform.action</a></dt>
+<dd>
+<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that replies to a message by uploading
+ <code>Attachment</code>} using the input Slack channel.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html#ReplyAttachmentsMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.util.List-">ReplyAttachmentsMessage(SlackPlatform, XatkitSession, List&lt;Attachment&gt;)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">ReplyAttachmentsMessage</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
+ <code>runtimePlatform</code>, <code>session</code>, and <code>attachments</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html#ReplyAttachmentsMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">ReplyAttachmentsMessage(SlackPlatform, XatkitSession, String, String, String, String, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">ReplyAttachmentsMessage</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
+ <code>runtimePlatform</code>, <code>session</code>, <code>pretext</code>, <code>title</code>,
+ <code>text</code>, <code>attchColor</code>, and <code>timestamp</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html#ReplyAttachmentsMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">ReplyAttachmentsMessage(SlackPlatform, XatkitSession, String, String, String, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">ReplyAttachmentsMessage</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
+ <code>runtimePlatform</code>, <code>session</code>, <code>pretext</code>, <code>title</code>,
+ <code>text</code>, and <code>attchColor</code>.</div>
 </dd>
 <dt><a href="com/xatkit/plugins/slack/platform/action/ReplyFileMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><span class="typeNameLink">ReplyFileMessage</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/action/package-summary.html">com.xatkit.plugins.slack.platform.action</a></dt>
 <dd>
