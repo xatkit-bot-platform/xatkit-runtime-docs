@@ -285,7 +285,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>construct</h4>
 <pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;construct(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;clazz,
                               <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;parameters)
-                       throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodException.html?is-external=true" title="class or interface in java.lang">NoSuchMethodException</a></pre>
+                       throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodException.html?is-external=true" title="class or interface in java.lang">NoSuchMethodException</a>,
+                              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/InvocationTargetException.html?is-external=true" title="class or interface in java.lang.reflect">InvocationTargetException</a></pre>
 <div class="block">Constructs a new instance of <code>clazz</code> with the given <code>parameters</code>.
  <p>
  This method iterates through the <code>clazz</code> <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect"><code>Constructor</code></a>s and attempt to find one that accepts the
@@ -301,8 +302,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the constructed instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodException.html?is-external=true" title="class or interface in java.lang">NoSuchMethodException</a></code> - if the provided <code>clazz</code> does not define a constructor matching the provided
-                               <code>parameters</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodException.html?is-external=true" title="class or interface in java.lang">NoSuchMethodException</a></code> - if the provided <code>clazz</code> does not define a constructor matching the
+ provided
+                                   <code>parameters</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/reflect/InvocationTargetException.html?is-external=true" title="class or interface in java.lang.reflect">InvocationTargetException</a></code> - if the called constructor throws an exception</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/xatkit/util/Loader.html#construct-java.lang.Class-java.util.List-java.util.List-"><code>construct(Class, List, List)</code></a></dd>
 </dl>
@@ -483,7 +486,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <code>configuration</code>.
  <p>
  This method first tries to construct an instance of the provided <code>eventProviderClass</code> with the provided
- <code>xatkitCore</code> and <code>configuration</code>. If the <a href="../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> does not define such constructor,
+ <code>xatkitCore</code> and <code>configuration</code>. If the <a href="../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> does not define such
+ constructor,
  the method logs a warning and tries to construct an instance with only the <code>xatkitCore</code> parameter.
  <p>
  The <code>eventProviderClass</code> parameter can be loaded by using this class" <a href="../../../com/xatkit/util/Loader.html#loadClass-java.lang.String-java.lang.Class-"><code>loadClass(String, Class)</code></a>
