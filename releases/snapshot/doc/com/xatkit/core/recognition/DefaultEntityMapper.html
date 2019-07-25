@@ -112,7 +112,7 @@
 extends <a href="../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition">EntityMapper</a></pre>
 <div class="block">An <a href="../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition"><code>EntityMapper</code></a> that uses RegExp to match system entities.
  <p>
- This class matches all the system entities using the same RegExp ((\w|-)+), meaning that system entities can only be
+ This class matches all the system entities using the same RegExp ((\D)+), meaning that system entities can only be
  matched from a single word.
  <p>
  Custom entities can be registered using <a href="../../../../com/xatkit/core/recognition/EntityMapper.html#addEntityMapping-com.xatkit.intent.EntityDefinition-java.lang.String-"><code>EntityMapper.addEntityMapping(EntityDefinition, String)</code></a> and associated to the
