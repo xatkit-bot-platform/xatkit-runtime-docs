@@ -124,7 +124,7 @@ implements <a href="../../../../../../com/xatkit/core/interpreter/operation/Oper
  <p>
  This abstract class contains common behavior reused by all the concrete arithmetic operations (in particular
  <code>source</code> and <code>args</code> checks). The core logic of subclasses' operations is implemented in the
- <a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html#doOperation-java.lang.Integer-java.lang.Integer-"><code>doOperation(Integer, Integer)</code></a> method.</div>
+ <a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html#doOperation-java.lang.Number-java.lang.Number-"><code>doOperation(Number, Number)</code></a> method.</div>
 </li>
 </ul>
 </div>
@@ -162,8 +162,8 @@ implements <a href="../../../../../../com/xatkit/core/interpreter/operation/Oper
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html#doOperation-java.lang.Integer-java.lang.Integer-">doOperation</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;source,
-           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;target)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html#doOperation-java.lang.Number-java.lang.Number-">doOperation</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;source,
+           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;target)</code>
 <div class="block">The concrete arithmetic operation to compute.</div>
 </td>
 </tr>
@@ -224,10 +224,10 @@ implements <a href="../../../../../../com/xatkit/core/interpreter/operation/Oper
 <div class="block">Computes the <a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html" title="class in com.xatkit.core.interpreter.operation.object"><code>ArithmeticOperation</code></a> over the provided <code>source</code> and <code>args</code>.
  <p>
  This method performs generic checks reused by concrete arithmetic operations. The core logic of subclasses'
- operations is implemented in the <a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html#doOperation-java.lang.Integer-java.lang.Integer-"><code>doOperation(Integer, Integer)</code></a> method.
+ operations is implemented in the <a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html#doOperation-java.lang.Number-java.lang.Number-"><code>doOperation(Number, Number)</code></a> method.
  <p>
- This method checks that the provided <code>source</code> is an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> instance, and that the provided
- <code>args</code> list contains a single element which is also an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> instance.</div>
+ This method checks that the provided <code>source</code> is an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang"><code>Number</code></a> instance, and that the provided
+ <code>args</code> list contains a single element which is also an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang"><code>Number</code></a> instance.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../com/xatkit/core/interpreter/operation/Operation.html#invoke-java.lang.Object-java.util.List-">invoke</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/xatkit/core/interpreter/operation/Operation.html" title="interface in com.xatkit.core.interpreter.operation">Operation</a></code></dd>
@@ -240,20 +240,20 @@ implements <a href="../../../../../../com/xatkit/core/interpreter/operation/Oper
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>source</code>, <code>args</code>, or <code>args</code>'s first element is
                                   <code>null</code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>source</code> or <code>args</code>'s first element is not an
-                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> instance</dd>
+                                  <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang"><code>Number</code></a> instance</dd>
 </dl>
 </li>
 </ul>
-<a name="doOperation-java.lang.Integer-java.lang.Integer-">
+<a name="doOperation-java.lang.Number-java.lang.Number-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>doOperation</h4>
 <pre>protected abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;doOperation(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;source,
+                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;source,
                                       <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;target)</pre>
+                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;target)</pre>
 <div class="block">The concrete arithmetic operation to compute.
  <p>
  This method is extended by concrete subclasses to define the operation's logic. Note that this method takes

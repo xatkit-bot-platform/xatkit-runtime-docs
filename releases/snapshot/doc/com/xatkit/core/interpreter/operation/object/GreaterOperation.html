@@ -123,7 +123,7 @@ extends <a href="../../../../../../com/xatkit/core/interpreter/operation/object/
 <div class="block">Computes a <i>greater than</i> comparison between the provided <code>source</code> and <code>args</code>.
  <p>
  This <a href="../../../../../../com/xatkit/core/interpreter/operation/Operation.html" title="interface in com.xatkit.core.interpreter.operation"><code>Operation</code></a> accepts a single mandatory <code>args</code> element (the element to compare against the
- provided <code>source</code>). Note that both the <code>source</code> and the <code>args</code> elements must be <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a>
+ provided <code>source</code>). Note that both the <code>source</code> and the <code>args</code> elements must be <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang"><code>Number</code></a>
  instances.</div>
 </li>
 </ul>
@@ -162,8 +162,8 @@ extends <a href="../../../../../../com/xatkit/core/interpreter/operation/object/
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/core/interpreter/operation/object/GreaterOperation.html#doOperation-java.lang.Integer-java.lang.Integer-">doOperation</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;source,
-           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;target)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/core/interpreter/operation/object/GreaterOperation.html#doOperation-java.lang.Number-java.lang.Number-">doOperation</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;source,
+           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;target)</code>
 <div class="block">Computes a <i>greater than</i> comparison between the provided <code>source</code> and <code>target</code>.</div>
 </td>
 </tr>
@@ -213,22 +213,22 @@ extends <a href="../../../../../../com/xatkit/core/interpreter/operation/object/
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="doOperation-java.lang.Integer-java.lang.Integer-">
+<a name="doOperation-java.lang.Number-java.lang.Number-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>doOperation</h4>
 <pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;doOperation(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;source,
+                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;source,
                              <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;target)</pre>
+                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang">Number</a>&nbsp;target)</pre>
 <div class="block">Computes a <i>greater than</i> comparison between the provided <code>source</code> and <code>target</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html#doOperation-java.lang.Integer-java.lang.Integer-">doOperation</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html" title="class in com.xatkit.core.interpreter.operation.object">ArithmeticOperation</a></code></dd>
+<dd><code><a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html#doOperation-java.lang.Number-java.lang.Number-">doOperation</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html" title="class in com.xatkit.core.interpreter.operation.object">ArithmeticOperation</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>source</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang"><code>Integer</code></a> to invoke the <a href="../../../../../../com/xatkit/core/interpreter/operation/object/GreaterOperation.html" title="class in com.xatkit.core.interpreter.operation.object"><code>GreaterOperation</code></a> on</dd>
+<dd><code>source</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Number.html?is-external=true" title="class or interface in java.lang"><code>Number</code></a> to invoke the <a href="../../../../../../com/xatkit/core/interpreter/operation/object/GreaterOperation.html" title="class in com.xatkit.core.interpreter.operation.object"><code>GreaterOperation</code></a> on</dd>
 <dd><code>target</code> - the arguments of the operation to invoke</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if <code>source</code> is greater than <code>target</code>, <code>false</code> otherwise</dd>
