@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":6,"i55":6,"i56":6,"i57":6,"i58":6,"i59":6,"i60":6,"i61":6,"i62":6,"i63":6,"i64":6,"i65":6,"i66":6,"i67":6,"i68":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":6,"i55":6,"i56":6,"i57":6,"i58":6,"i59":6,"i60":6,"i61":6,"i62":6,"i63":6,"i64":6,"i65":6,"i66":6,"i67":6,"i68":6,"i69":6,"i70":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -909,8 +909,20 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/IntentPackage.html#RECOGNIZED_INTENT__MATCHED_INPUT">RECOGNIZED_INTENT__MATCHED_INPUT</a></span></code>
+<div class="block">The feature id for the '<em><b>Matched Input</b></em>' attribute.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/IntentPackage.html#RECOGNIZED_INTENT__OUT_CONTEXT_INSTANCES">RECOGNIZED_INTENT__OUT_CONTEXT_INSTANCES</a></span></code>
 <div class="block">The feature id for the '<em><b>Out Context Instances</b></em>' containment reference list.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/IntentPackage.html#RECOGNIZED_INTENT__RECOGNITION_CONFIDENCE">RECOGNIZED_INTENT__RECOGNITION_CONFIDENCE</a></span></code>
+<div class="block">The feature id for the '<em><b>Recognition Confidence</b></em>' attribute.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -1361,12 +1373,24 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 </td>
 </tr>
 <tr id="i67" class="rowColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/IntentPackage.html#getRecognizedIntent_MatchedInput--">getRecognizedIntent_MatchedInput</a></span>()</code>
+<div class="block">Returns the meta object for the attribute '<a href="../../../com/xatkit/intent/RecognizedIntent.html#getMatchedInput--"><code><em>Matched Input</em></code></a>'.</div>
+</td>
+</tr>
+<tr id="i68" class="altColor">
+<td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/IntentPackage.html#getRecognizedIntent_RecognitionConfidence--">getRecognizedIntent_RecognitionConfidence</a></span>()</code>
+<div class="block">Returns the meta object for the attribute '<a href="../../../com/xatkit/intent/RecognizedIntent.html#getRecognitionConfidence--"><code><em>Recognition Confidence</em></code></a>'.</div>
+</td>
+</tr>
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/IntentPackage.html#getRecognizedIntent--">getRecognizedIntent</a></span>()</code>
 <div class="block">Returns the meta object for class '<a href="../../../com/xatkit/intent/RecognizedIntent.html" title="interface in com.xatkit.intent"><code><em>Recognized Intent</em></code></a>'.</div>
 </td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EClass.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EClass</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/IntentPackage.html#getTextFragment--">getTextFragment</a></span>()</code>
 <div class="block">Returns the meta object for class '<a href="../../../com/xatkit/intent/TextFragment.html" title="interface in com.xatkit.intent"><code><em>Text Fragment</em></code></a>'.</div>
@@ -2263,6 +2287,40 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../constant-values.html#com.xatkit.intent.IntentPackage.RECOGNIZED_INTENT__OUT_CONTEXT_INSTANCES">Constant Field Values</a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="RECOGNIZED_INTENT__MATCHED_INPUT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RECOGNIZED_INTENT__MATCHED_INPUT</h4>
+<pre>static final&nbsp;int RECOGNIZED_INTENT__MATCHED_INPUT</pre>
+<div class="block">The feature id for the '<em><b>Matched Input</b></em>' attribute.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#com.xatkit.intent.IntentPackage.RECOGNIZED_INTENT__MATCHED_INPUT">Constant Field Values</a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="RECOGNIZED_INTENT__RECOGNITION_CONFIDENCE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RECOGNIZED_INTENT__RECOGNITION_CONFIDENCE</h4>
+<pre>static final&nbsp;int RECOGNIZED_INTENT__RECOGNITION_CONFIDENCE</pre>
+<div class="block">The feature id for the '<em><b>Recognition Confidence</b></em>' attribute.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../constant-values.html#com.xatkit.intent.IntentPackage.RECOGNIZED_INTENT__RECOGNITION_CONFIDENCE">Constant Field Values</a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>
@@ -4179,6 +4237,46 @@ extends <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/e
 <dd>the meta object for class '<em>Recognized Intent</em>'.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/xatkit/intent/RecognizedIntent.html" title="interface in com.xatkit.intent"><code>RecognizedIntent</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getRecognizedIntent_MatchedInput--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRecognizedIntent_MatchedInput</h4>
+<pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a>&nbsp;getRecognizedIntent_MatchedInput()</pre>
+<div class="block">Returns the meta object for the attribute '<a href="../../../com/xatkit/intent/RecognizedIntent.html#getMatchedInput--"><code><em>Matched Input</em></code></a>'.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the meta object for the attribute '<em>Matched Input</em>'.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/xatkit/intent/RecognizedIntent.html#getMatchedInput--"><code>RecognizedIntent.getMatchedInput()</code></a>, 
+<a href="../../../com/xatkit/intent/IntentPackage.html#getRecognizedIntent--"><code>getRecognizedIntent()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getRecognizedIntent_RecognitionConfidence--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRecognizedIntent_RecognitionConfidence</h4>
+<pre><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/ecore/EAttribute.html?is-external=true" title="class or interface in org.eclipse.emf.ecore">EAttribute</a>&nbsp;getRecognizedIntent_RecognitionConfidence()</pre>
+<div class="block">Returns the meta object for the attribute '<a href="../../../com/xatkit/intent/RecognizedIntent.html#getRecognitionConfidence--"><code><em>Recognition Confidence</em></code></a>'.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the meta object for the attribute '<em>Recognition Confidence</em>'.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/xatkit/intent/RecognizedIntent.html#getRecognitionConfidence--"><code>RecognizedIntent.getRecognitionConfidence()</code></a>, 
+<a href="../../../com/xatkit/intent/IntentPackage.html#getRecognizedIntent--"><code>getRecognizedIntent()</code></a></dd>
 <dt><span class="simpleTagLabel">Generated</span></dt>
 </dl>
 </li>

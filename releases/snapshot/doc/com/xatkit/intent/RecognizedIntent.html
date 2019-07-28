@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -71,13 +77,13 @@
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -107,7 +113,15 @@
 extends <a href="../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent">EventInstance</a></pre>
 <div class="block"><!-- begin-user-doc -->
  A representation of the model object '<em><b>Recognized Intent</b></em>'.
- <!-- end-user-doc --></div>
+ <!-- end-user-doc -->
+
+ <p>
+ The following features are supported:
+ </p>
+ <ul>
+   <li><a href="../../../com/xatkit/intent/RecognizedIntent.html#getMatchedInput--"><code><em>Matched Input</em></code></a></li>
+   <li><a href="../../../com/xatkit/intent/RecognizedIntent.html#getRecognitionConfidence--"><code><em>Recognition Confidence</em></code></a></li>
+ </ul></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../com/xatkit/intent/IntentPackage.html#getRecognizedIntent--"><code>IntentPackage.getRecognizedIntent()</code></a></dd>
@@ -125,6 +139,37 @@ extends <a href="../../../com/xatkit/intent/EventInstance.html" title="interface
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/RecognizedIntent.html#getMatchedInput--">getMatchedInput</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Matched Input</b></em>' attribute.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/RecognizedIntent.html#getRecognitionConfidence--">getRecognitionConfidence</a></span>()</code>
+<div class="block">Returns the value of the '<em><b>Recognition Confidence</b></em>' attribute.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/RecognizedIntent.html#setMatchedInput-java.lang.String-">setMatchedInput</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
+<div class="block">Sets the value of the '<a href="../../../com/xatkit/intent/RecognizedIntent.html#getMatchedInput--"><code><em>Matched Input</em></code></a>' attribute.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/intent/RecognizedIntent.html#setRecognitionConfidence-float-">setRecognitionConfidence</a></span>(float&nbsp;value)</code>
+<div class="block">Sets the value of the '<a href="../../../com/xatkit/intent/RecognizedIntent.html#getRecognitionConfidence--"><code><em>Recognition Confidence</em></code></a>' attribute.</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.xatkit.intent.EventInstance">
 <!--   -->
@@ -145,6 +190,106 @@ extends <a href="../../../com/xatkit/intent/EventInstance.html" title="interface
 </a>
 <h3>Methods inherited from interface&nbsp;org.eclipse.emf.common.notify.<a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true" title="class or interface in org.eclipse.emf.common.notify">Notifier</a></h3>
 <code><a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true#eAdapters--" title="class or interface in org.eclipse.emf.common.notify">eAdapters</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true#eDeliver--" title="class or interface in org.eclipse.emf.common.notify">eDeliver</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true#eNotify-org.eclipse.emf.common.notify.Notification-" title="class or interface in org.eclipse.emf.common.notify">eNotify</a>, <a href="http://download.eclipse.org/modeling/emf/emf/javadoc/2.11/org/eclipse/emf/common/notify/Notifier.html?is-external=true#eSetDeliver-boolean-" title="class or interface in org.eclipse.emf.common.notify">eSetDeliver</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getMatchedInput--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMatchedInput</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMatchedInput()</pre>
+<div class="block">Returns the value of the '<em><b>Matched Input</b></em>' attribute.
+ <!-- begin-user-doc -->
+ <p>
+ If the meaning of the '<em>Matched Input</em>' attribute isn't clear,
+ there really should be more of a description here...
+ </p>
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Matched Input</em>' attribute.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/xatkit/intent/RecognizedIntent.html#setMatchedInput-java.lang.String-"><code>setMatchedInput(String)</code></a>, 
+<a href="../../../com/xatkit/intent/IntentPackage.html#getRecognizedIntent_MatchedInput--"><code>IntentPackage.getRecognizedIntent_MatchedInput()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="setMatchedInput-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMatchedInput</h4>
+<pre>void&nbsp;setMatchedInput(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<div class="block">Sets the value of the '<a href="../../../com/xatkit/intent/RecognizedIntent.html#getMatchedInput--"><code><em>Matched Input</em></code></a>' attribute.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the new value of the '<em>Matched Input</em>' attribute.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/xatkit/intent/RecognizedIntent.html#getMatchedInput--"><code>getMatchedInput()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="getRecognitionConfidence--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRecognitionConfidence</h4>
+<pre>float&nbsp;getRecognitionConfidence()</pre>
+<div class="block">Returns the value of the '<em><b>Recognition Confidence</b></em>' attribute.
+ <!-- begin-user-doc -->
+ <p>
+ If the meaning of the '<em>Recognition Confidence</em>' attribute isn't clear,
+ there really should be more of a description here...
+ </p>
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the '<em>Recognition Confidence</em>' attribute.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/xatkit/intent/RecognizedIntent.html#setRecognitionConfidence-float-"><code>setRecognitionConfidence(float)</code></a>, 
+<a href="../../../com/xatkit/intent/IntentPackage.html#getRecognizedIntent_RecognitionConfidence--"><code>IntentPackage.getRecognizedIntent_RecognitionConfidence()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
+</ul>
+<a name="setRecognitionConfidence-float-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setRecognitionConfidence</h4>
+<pre>void&nbsp;setRecognitionConfidence(float&nbsp;value)</pre>
+<div class="block">Sets the value of the '<a href="../../../com/xatkit/intent/RecognizedIntent.html#getRecognitionConfidence--"><code><em>Recognition Confidence</em></code></a>' attribute.
+ <!-- begin-user-doc -->
+ <!-- end-user-doc --></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the new value of the '<em>Recognition Confidence</em>' attribute.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/xatkit/intent/RecognizedIntent.html#getRecognitionConfidence--"><code>getRecognitionConfidence()</code></a></dd>
+<dt><span class="simpleTagLabel">Generated</span></dt>
+</dl>
+</li>
 </ul>
 </li>
 </ul>
@@ -202,13 +347,13 @@ extends <a href="../../../com/xatkit/intent/EventInstance.html" title="interface
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
