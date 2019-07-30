@@ -274,7 +274,9 @@
  and <code>username</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#attachments">attachments</a></span> - Variable in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">The attachments to post to Slack channel.</div>
+</dd>
 </dl>
 <a name="I:B">
 <!--   -->
@@ -461,9 +463,9 @@
 <dd>
 <div class="block">Runs the <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> and returns its result wrapped in a <a href="com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action"><code>RuntimeActionResult</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeMessageAction.html#call--">call()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">RuntimeMessageAction</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html#call--">call()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a></dt>
 <dd>
-<div class="block">Runs the <a href="com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeMessageAction</code></a> and returns its result wrapped in a <a href="com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action"><code>RuntimeActionResult</code></a>.</div>
+<div class="block">Runs the <a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeArtifactAction</code></a> and returns its result wrapped in a <a href="com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action"><code>RuntimeActionResult</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/EntityType.html#CAPITAL_VALUE">CAPITAL_VALUE</a></span> - Static variable in enum com.xatkit.intent.<a href="com/xatkit/intent/EntityType.html" title="enum in com.xatkit.intent">EntityType</a></dt>
 <dd>
@@ -700,6 +702,14 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/common/util/CommonSwitch.html#caseVariableDeclaration-com.xatkit.common.VariableDeclaration-">caseVariableDeclaration(VariableDeclaration)</a></span> - Method in class com.xatkit.common.util.<a href="com/xatkit/common/util/CommonSwitch.html" title="class in com.xatkit.common.util">CommonSwitch</a></dt>
 <dd>
 <div class="block">Returns the result of interpreting the object as an instance of '<em>Variable Declaration</em>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#channel">channel</a></span> - Variable in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
+<dd>
+<div class="block">The Slack channel to post the attachments to.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostFileMessage.html#channel">channel</a></span> - Variable in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostFileMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostFileMessage</a></dt>
+<dd>
+<div class="block">The Slack channel to post the attachments to.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostMessage.html#channel">channel</a></span> - Variable in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostMessage</a></dt>
 <dd>
@@ -4176,13 +4186,17 @@
 <dd>
 <div class="block">Retrieves the ID of the provided <code>channelName</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeMessageAction.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">RuntimeMessageAction</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a></dt>
 <dd>
-<div class="block">Returns the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the message to send.</div>
+<div class="block">Returns the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.plugins.discord.platform.action.<a href="com/xatkit/plugins/discord/platform/action/PostMessage.html" title="class in com.xatkit.plugins.discord.platform.action">PostMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.plugins.react.platform.action.<a href="com/xatkit/plugins/react/platform/action/PostMessage.html" title="class in com.xatkit.plugins.react.platform.action">PostMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostFileMessage.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostFileMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostFileMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostMessage</a></dt>
 <dd>&nbsp;</dd>
@@ -6164,9 +6178,9 @@
 <dd>
 <div class="block">A hook method that is called after <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeMessageAction.html#init--">init()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">RuntimeMessageAction</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html#init--">init()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a></dt>
 <dd>
-<div class="block">Retrieve the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the message and merges it with the current one.</div>
+<div class="block">Retrieve the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact and merges it with the current one.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/execution/impl/ExecutionFactoryImpl.html#init--">init()</a></span> - Static method in class com.xatkit.execution.impl.<a href="com/xatkit/execution/impl/ExecutionFactoryImpl.html" title="class in com.xatkit.execution.impl">ExecutionFactoryImpl</a></dt>
 <dd>
@@ -7856,31 +7870,26 @@
 </dd>
 <dt><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><span class="typeNameLink">PostAttachmentsMessage</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/action/package-summary.html">com.xatkit.plugins.slack.platform.action</a></dt>
 <dd>
-<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that posts a <code>message</code> to a given Slack
- <code>channel</code>.</div>
+<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that posts <code>Attachment</code> to a given Slack <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#PostAttachmentsMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.util.List-java.lang.String-">PostAttachmentsMessage(SlackPlatform, XatkitSession, List&lt;Attachment&gt;, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
- <code>runtimePlatform</code>, <code>session</code>, <code>attachments</code> and
- <code>channel</code>.</div>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>,
+ <code>attachments</code> and <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#PostAttachmentsMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">PostAttachmentsMessage(SlackPlatform, XatkitSession, String, String, String, String, String, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
- <code>runtimePlatform</code>, <code>session</code>, <code>pretext</code>, <code>title</code>,
- <code>text</code>, <code>attchColor</code>, <code>timestamp</code> and <code>channel</code>.</div>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>,
+ <code>pretext</code>, <code>title</code>, <code>text</code>, <code>attchColor</code>, <code>timestamp</code> and <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#PostAttachmentsMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-">PostAttachmentsMessage(SlackPlatform, XatkitSession, String, String, String, String, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
 <dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
- <code>runtimePlatform</code>, <code>session</code>, <code>pretext</code>, <code>title</code>,
- <code>text</code>, <code>attchColor</code>, and <code>channel</code>.</div>
+<div class="block">Constructs a new <a href="com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>,
+ <code>pretext</code>, <code>title</code>, <code>text</code>, <code>attchColor</code>, and <code>channel</code>.</div>
 </dd>
 <dt><a href="com/xatkit/plugins/slack/platform/action/PostFileMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><span class="typeNameLink">PostFileMessage</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/action/package-summary.html">com.xatkit.plugins.slack.platform.action</a></dt>
 <dd>
-<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that uploads a <code>file</code> with an associated <code>message</code> to a
- given Slack <code>channel</code>.</div>
+<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that uploads a <code>file</code> with an associated <code>message</code> to a given Slack <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostFileMessage.html#PostFileMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.io.File-java.lang.String-">PostFileMessage(SlackPlatform, XatkitSession, String, File, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostFileMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostFileMessage</a></dt>
 <dd>
@@ -8309,6 +8318,14 @@
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action"><code>RuntimeActionResult</code></a> from the provided <code>partialResult</code>, <code>thrownException</code>,
  and <code>executionTime</code>.</div>
+</dd>
+<dt><a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action"><span class="typeNameLink">RuntimeArtifactAction</span></a>&lt;<a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="type parameter in RuntimeArtifactAction">T</a> extends <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&gt; - Class in <a href="com/xatkit/core/platform/action/package-summary.html">com.xatkit.core.platform.action</a></dt>
+<dd>
+<div class="block">An abstract <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html#RuntimeArtifactAction-T-com.xatkit.core.session.XatkitSession-">RuntimeArtifactAction(T, XatkitSession)</a></span> - Constructor for class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeArtifactAction</code></a> with the provided <code>runtimePlatform</code> and <code>session</code>.</div>
 </dd>
 <dt><a href="com/xatkit/core/session/RuntimeContexts.html" title="class in com.xatkit.core.session"><span class="typeNameLink">RuntimeContexts</span></a> - Class in <a href="com/xatkit/core/session/package-summary.html">com.xatkit.core.session</a></dt>
 <dd>

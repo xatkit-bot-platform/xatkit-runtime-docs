@@ -315,8 +315,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
-<td class="colLast"><span class="typeNameLabel">RuntimeMessageAction.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#getClientSession--">getClientSession</a></span>()</code>
-<div class="block">Returns the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the message to send.</div>
+<td class="colLast"><span class="typeNameLabel">RuntimeArtifactAction.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#getClientSession--">getClientSession</a></span>()</code>
+<div class="block">Returns the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send.</div>
 </td>
 </tr>
 </tbody>
@@ -364,6 +364,12 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#RuntimeArtifactAction-T-com.xatkit.core.session.XatkitSession-">RuntimeArtifactAction</a></span>(<a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="type parameter in RuntimeArtifactAction">T</a>&nbsp;runtimePlatform,
+                     <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Constructs a new <a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeArtifactAction</code></a> with the provided <code>runtimePlatform</code> and <code>session</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#RuntimeMessageAction-T-com.xatkit.core.session.XatkitSession-java.lang.String-">RuntimeMessageAction</a></span>(<a href="../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="type parameter in RuntimeMessageAction">T</a>&nbsp;runtimePlatform,
                     <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;rawMessage)</code>
@@ -868,6 +874,14 @@
 <td class="colFirst"><code>protected <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PostMessage.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html#getClientSession--">getClientSession</a></span>()</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PostAttachmentsMessage.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#getClientSession--">getClientSession</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PostFileMessage.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html#getClientSession--">getClientSession</a></span>()</code>&nbsp;</td>
+</tr>
 </tbody>
 </table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
@@ -895,9 +909,8 @@
                       <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;com.github.seratch.jslack.api.model.Attachment&gt;&nbsp;attachments,
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</code>
-<div class="block">Constructs a new <a href="../../../../../com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
- <code>runtimePlatform</code>, <code>session</code>, <code>attachments</code> and
- <code>channel</code>.</div>
+<div class="block">Constructs a new <a href="../../../../../com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>,
+ <code>attachments</code> and <code>channel</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -908,9 +921,8 @@
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;text,
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;attchColor,
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</code>
-<div class="block">Constructs a new <a href="../../../../../com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
- <code>runtimePlatform</code>, <code>session</code>, <code>pretext</code>, <code>title</code>,
- <code>text</code>, <code>attchColor</code>, and <code>channel</code>.</div>
+<div class="block">Constructs a new <a href="../../../../../com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>,
+ <code>pretext</code>, <code>title</code>, <code>text</code>, <code>attchColor</code>, and <code>channel</code>.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -922,9 +934,8 @@
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;attchColor,
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;timestamp,
                       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</code>
-<div class="block">Constructs a new <a href="../../../../../com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided
- <code>runtimePlatform</code>, <code>session</code>, <code>pretext</code>, <code>title</code>,
- <code>text</code>, <code>attchColor</code>, <code>timestamp</code> and <code>channel</code>.</div>
+<div class="block">Constructs a new <a href="../../../../../com/xatkit/plugins/slack/platform/action/ReplyAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ReplyAttachmentsMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>,
+ <code>pretext</code>, <code>title</code>, <code>text</code>, <code>attchColor</code>, <code>timestamp</code> and <code>channel</code>.</div>
 </td>
 </tr>
 <tr class="rowColor">

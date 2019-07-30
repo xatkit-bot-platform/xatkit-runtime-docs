@@ -103,10 +103,15 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeAction</a>&lt;T&gt;</li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeArtifactAction</a>&lt;T&gt;</li>
+<li>
+<ul class="inheritance">
 <li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeMessageAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/react/platform/ReactPlatform.html" title="class in com.xatkit.plugins.react.platform">ReactPlatform</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>com.xatkit.plugins.react.platform.action.PostMessage</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -201,7 +206,7 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessag
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/plugins/react/platform/action/PostMessage.html#getClientSession--">getClientSession</a></span>()</code>
-<div class="block">Returns the <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the message to send.</div>
+<div class="block">Returns the <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send.</div>
 </td>
 </tr>
 </table>
@@ -210,7 +215,14 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessag
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.xatkit.core.platform.action.<a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">RuntimeMessageAction</a></h3>
-<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#call--">call</a>, <a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#getMessage--">getMessage</a>, <a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#init--">init</a></code></li>
+<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#getMessage--">getMessage</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.xatkit.core.platform.action.RuntimeArtifactAction">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.xatkit.core.platform.action.<a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a></h3>
+<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#call--">call</a>, <a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#init--">init</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -290,16 +302,16 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessag
 <li class="blockList">
 <h4>getClientSession</h4>
 <pre>protected&nbsp;<a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;getClientSession()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#getClientSession--">RuntimeMessageAction</a></code></span></div>
-<div class="block">Returns the <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the message to send.
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#getClientSession--">RuntimeArtifactAction</a></code></span></div>
+<div class="block">Returns the <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send.
  <p>
- This method is used by the <a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeMessageAction</code></a> constructor to pass client-independent context
+ This method is used by the <a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeArtifactAction</code></a> constructor to pass client-independent context
  variables (e.g. from <a href="../../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a>s) to the client session.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#getClientSession--">getClientSession</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">RuntimeMessageAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/react/platform/ReactPlatform.html" title="class in com.xatkit.plugins.react.platform">ReactPlatform</a>&gt;</code></dd>
+<dd><code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#getClientSession--">getClientSession</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/react/platform/ReactPlatform.html" title="class in com.xatkit.plugins.react.platform">ReactPlatform</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the message to send</dd>
+<dd>the <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send</dd>
 </dl>
 </li>
 </ul>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostMessage">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -103,15 +103,10 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeAction</a>&lt;T&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeMessageAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</li>
-<li>
-<ul class="inheritance">
-<li><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action">com.xatkit.plugins.slack.platform.action.PostMessage</a></li>
+<li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeArtifactAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>com.xatkit.plugins.slack.platform.action.PostFileMessage</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -133,9 +128,8 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">PostFileMessage</span>
-extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostMessage</a></pre>
-<div class="block">A <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that uploads a <code>file</code> with an associated <code>message</code> to a
- given Slack <code>channel</code>.
+extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</pre>
+<div class="block">A <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that uploads a <code>file</code> with an associated <code>message</code> to a given Slack <code>channel</code>.
  <p>
  This class relies on the <a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform"><code>SlackPlatform</code></a>'s <code>Slack</code> client and Slack bot API
  token to connect to the Slack API and post messages.
@@ -158,20 +152,19 @@ extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/Post
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostMessage">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;com.xatkit.plugins.slack.platform.action.<a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostMessage</a></h3>
-<code><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html#channel">channel</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.com.xatkit.core.platform.action.RuntimeMessageAction">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;com.xatkit.core.platform.action.<a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">RuntimeMessageAction</a></h3>
-<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#message">message</a></code></li>
-</ul>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html#channel">channel</a></span></code>
+<div class="block">The Slack channel to post the attachments to.</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.com.xatkit.core.platform.action.RuntimeAction">
 <!--   -->
@@ -232,20 +225,19 @@ extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/Post
 <div class="block">Uploads the provided <code>file</code> and post it with the associated <code>message</code> to the given <code>channel</code>.</div>
 </td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html#getClientSession--">getClientSession</a></span>()</code>
+<div class="block">Returns the <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostMessage">
+<li class="blockList"><a name="methods.inherited.from.class.com.xatkit.core.platform.action.RuntimeArtifactAction">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.xatkit.plugins.slack.platform.action.<a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostMessage</a></h3>
-<code><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html#getClientSession--">getClientSession</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.com.xatkit.core.platform.action.RuntimeMessageAction">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;com.xatkit.core.platform.action.<a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">RuntimeMessageAction</a></h3>
-<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#call--">call</a>, <a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#getMessage--">getMessage</a>, <a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#init--">init</a></code></li>
+<h3>Methods inherited from class&nbsp;com.xatkit.core.platform.action.<a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a></h3>
+<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#call--">call</a>, <a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#init--">init</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -262,6 +254,24 @@ extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/Post
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="channel">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>channel</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> channel</pre>
+<div class="block">The Slack channel to post the attachments to.</div>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -296,7 +306,8 @@ extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/Post
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>message</code> or <code>channel</code> is <code>null</code> or empty,
                                   or if the provided <code>file</code> is <code>null</code> or does not exist</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html#PostFileMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-"><code>PostFileMessage(SlackPlatform, XatkitSession, String, String, String, String)</code></a></dd>
+<dd><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html#PostFileMessage-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-java.lang.String-java.lang.String-"><code>PostFileMessage(SlackPlatform, XatkitSession, String, String, String,
+ String)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -344,7 +355,7 @@ extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/Post
 <a name="compute--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>compute</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;compute()</pre>
@@ -353,10 +364,30 @@ extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/Post
  This method relies on the containing <a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform"><code>SlackPlatform</code></a>'s Slack bot API token to authenticate the bot and
  upload the <code>file</code> to the given <code>channel</code>.</div>
 <dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html#compute--">compute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostMessage</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html#compute--">compute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">RuntimeAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>null</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getClientSession--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getClientSession</h4>
+<pre>protected&nbsp;<a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;getClientSession()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#getClientSession--">RuntimeArtifactAction</a></code></span></div>
+<div class="block">Returns the <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send.
+ <p>
+ This method is used by the <a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeArtifactAction</code></a> constructor to pass client-independent context
+ variables (e.g. from <a href="../../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a>s) to the client session.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#getClientSession--">getClientSession</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send</dd>
 </dl>
 </li>
 </ul>
@@ -414,13 +445,13 @@ extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/Post
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostMessage">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

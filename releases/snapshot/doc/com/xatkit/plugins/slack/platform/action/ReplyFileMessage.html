@@ -69,7 +69,7 @@
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostMessage">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostFileMessage">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#methods.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostFileMessage">Method</a></li>
 </ul>
@@ -97,18 +97,13 @@
 <li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeAction</a>&lt;T&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeMessageAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</li>
-<li>
-<ul class="inheritance">
-<li><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action">com.xatkit.plugins.slack.platform.action.PostMessage</a></li>
+<li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeArtifactAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html" title="class in com.xatkit.plugins.slack.platform.action">com.xatkit.plugins.slack.platform.action.PostFileMessage</a></li>
 <li>
 <ul class="inheritance">
 <li>com.xatkit.plugins.slack.platform.action.ReplyFileMessage</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -157,18 +152,11 @@ extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/Post
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostMessage">
+<li class="blockList"><a name="fields.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostFileMessage">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;com.xatkit.plugins.slack.platform.action.<a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostMessage</a></h3>
-<code><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html#channel">channel</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.com.xatkit.core.platform.action.RuntimeMessageAction">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;com.xatkit.core.platform.action.<a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">RuntimeMessageAction</a></h3>
-<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#message">message</a></code></li>
+<h3>Fields inherited from class&nbsp;com.xatkit.plugins.slack.platform.action.<a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostFileMessage</a></h3>
+<code><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html#channel">channel</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.com.xatkit.core.platform.action.RuntimeAction">
@@ -212,21 +200,14 @@ extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/Post
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.xatkit.plugins.slack.platform.action.<a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostFileMessage</a></h3>
-<code><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html#compute--">compute</a></code></li>
+<code><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html#compute--">compute</a>, <a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostFileMessage.html#getClientSession--">getClientSession</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostMessage">
+<li class="blockList"><a name="methods.inherited.from.class.com.xatkit.core.platform.action.RuntimeArtifactAction">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;com.xatkit.plugins.slack.platform.action.<a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostMessage</a></h3>
-<code><a href="../../../../../../com/xatkit/plugins/slack/platform/action/PostMessage.html#getClientSession--">getClientSession</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.com.xatkit.core.platform.action.RuntimeMessageAction">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;com.xatkit.core.platform.action.<a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action">RuntimeMessageAction</a></h3>
-<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#call--">call</a>, <a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#getMessage--">getMessage</a>, <a href="../../../../../../com/xatkit/core/platform/action/RuntimeMessageAction.html#init--">init</a></code></li>
+<h3>Methods inherited from class&nbsp;com.xatkit.core.platform.action.<a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a></h3>
+<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#call--">call</a>, <a href="../../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#init--">init</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -331,7 +312,7 @@ extends <a href="../../../../../../com/xatkit/plugins/slack/platform/action/Post
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostMessage">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostFileMessage">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#methods.inherited.from.class.com.xatkit.plugins.slack.platform.action.PostFileMessage">Method</a></li>
 </ul>
