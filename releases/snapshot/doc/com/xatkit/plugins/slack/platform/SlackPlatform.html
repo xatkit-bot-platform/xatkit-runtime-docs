@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -224,6 +224,12 @@ extends <a href="../../../../../com/xatkit/plugins/chat/platform/ChatPlatform.ht
 <div class="block">Returns the Slack bot API token used to initialize this class.</div>
 </td>
 </tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html#isGroupChannel-java.lang.String-">isGroupChannel</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channelId)</code>
+<div class="block">Returns whether the provided <code>channelId</code> is a group channel (that can contain multiple users) or not.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.xatkit.core.platform.RuntimePlatform">
@@ -333,7 +339,7 @@ extends <a href="../../../../../com/xatkit/plugins/chat/platform/ChatPlatform.ht
 <a name="getChannelId-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getChannelId</h4>
 <pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getChannelId(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channelName)</pre>
@@ -350,6 +356,22 @@ extends <a href="../../../../../com/xatkit/plugins/chat/platform/ChatPlatform.ht
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if the provided <code>channelName</code> does not correspond to any channel accessible by
                          the bot</dd>
+</dl>
+</li>
+</ul>
+<a name="isGroupChannel-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isGroupChannel</h4>
+<pre>public&nbsp;boolean&nbsp;isGroupChannel(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channelId)</pre>
+<div class="block">Returns whether the provided <code>channelId</code> is a group channel (that can contain multiple users) or not.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>channelId</code> - the identifier of the Slack channel to check</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the channel is a group channel, <code>false</code> otherwise</dd>
 </dl>
 </li>
 </ul>
