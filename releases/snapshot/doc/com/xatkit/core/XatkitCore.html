@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -244,42 +244,55 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform">Formatter</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/XatkitCore.html#getFormatter-java.lang.String-">getFormatter</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatterName)</code>
+<div class="block">Returns the <a href="../../../com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform"><code>Formatter</code></a> associated to the provided <code>formatterName</code>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/XatkitCore.html#getIntentRecognitionProvider--">getIntentRecognitionProvider</a></span>()</code>
 <div class="block">Returns the underlying <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/XatkitCore.html#getOrCreateXatkitSession-java.lang.String-">getOrCreateXatkitSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
 <div class="block">Retrieves or creates the <a href="../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the provided <code>sessionId</code>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html" title="class in com.xatkit.core">RuntimePlatformRegistry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/XatkitCore.html#getRuntimePlatformRegistry--">getRuntimePlatformRegistry</a></span>()</code>
 <div class="block">Returns the <a href="../../../com/xatkit/core/RuntimePlatformRegistry.html" title="class in com.xatkit.core"><code>RuntimePlatformRegistry</code></a> associated to this instance.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/XatkitCore.html#getXatkitServer--">getXatkitServer</a></span>()</code>
 <div class="block">Returns the <a href="../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a> used to capture incoming webhooks.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/XatkitCore.html#getXatkitSession-java.lang.String-">getXatkitSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
 <div class="block">Returns the <a href="../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the provided <code>sessionId</code></div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/XatkitCore.html#isShutdown--">isShutdown</a></span>()</code>
 <div class="block">Returns whether the <a href="../../../com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> client is shutdown.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/XatkitCore.html#registerFormatter-java.lang.String-com.xatkit.core.platform.Formatter-">registerFormatter</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatterName,
+                 <a href="../../../com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform">Formatter</a>&nbsp;formatter)</code>
+<div class="block">Registers the provided <code>formatter</code> with the given <code>formatterName</code>.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/XatkitCore.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shuts down the <a href="../../../com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> and the underlying engines.</div>
@@ -449,6 +462,40 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="registerFormatter-java.lang.String-com.xatkit.core.platform.Formatter-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerFormatter</h4>
+<pre>public&nbsp;void&nbsp;registerFormatter(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatterName,
+                              <a href="../../../com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform">Formatter</a>&nbsp;formatter)</pre>
+<div class="block">Registers the provided <code>formatter</code> with the given <code>formatterName</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>formatterName</code> - the name of the formatter</dd>
+<dd><code>formatter</code> - the <a href="../../../com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform"><code>Formatter</code></a> to register</dd>
+</dl>
+</li>
+</ul>
+<a name="getFormatter-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFormatter</h4>
+<pre>public&nbsp;<a href="../../../com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform">Formatter</a>&nbsp;getFormatter(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatterName)</pre>
+<div class="block">Returns the <a href="../../../com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform"><code>Formatter</code></a> associated to the provided <code>formatterName</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>formatterName</code> - the name of the <a href="../../../com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform"><code>Formatter</code></a> to retrieve</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform"><code>Formatter</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if there is no <a href="../../../com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform"><code>Formatter</code></a> associated to the provided <code>formatterName</code>.</dd>
+</dl>
+</li>
+</ul>
 <a name="getExecutionModel-org.apache.commons.configuration2.Configuration-">
 <!--   -->
 </a>

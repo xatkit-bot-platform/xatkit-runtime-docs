@@ -756,14 +756,6 @@
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/plugins/discord/platform/io/ChatProvider.html" title="class in com.xatkit.plugins.discord.platform.io"><code>ChatProvider</code></a> from the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
 </dd>
-<dt><a href="com/xatkit/plugins/react/platform/io/ChatProvider.html" title="class in com.xatkit.plugins.react.platform.io"><span class="typeNameLink">ChatProvider</span></a> - Class in <a href="com/xatkit/plugins/react/platform/io/package-summary.html">com.xatkit.plugins.react.platform.io</a></dt>
-<dd>
-<div class="block">A generic React <a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeIntentProvider</code></a>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/io/ChatProvider.html#ChatProvider-com.xatkit.plugins.react.platform.ReactPlatform-org.apache.commons.configuration2.Configuration-">ChatProvider(ReactPlatform, Configuration)</a></span> - Constructor for class com.xatkit.plugins.react.platform.io.<a href="com/xatkit/plugins/react/platform/io/ChatProvider.html" title="class in com.xatkit.plugins.react.platform.io">ChatProvider</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/react/platform/io/ChatProvider.html" title="class in com.xatkit.plugins.react.platform.io"><code>ChatProvider</code></a> from the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
-</dd>
 <dt><a href="com/xatkit/plugins/slack/platform/io/ChatProvider.html" title="class in com.xatkit.plugins.slack.platform.io"><span class="typeNameLink">ChatProvider</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/io/package-summary.html">com.xatkit.plugins.slack.platform.io</a></dt>
 <dd>
 <div class="block">A generic Slack user <a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeIntentProvider</code></a>.</div>
@@ -935,6 +927,8 @@
 <dd>&nbsp;</dd>
 <dt><a href="com/xatkit/plugins/chat/platform/package-summary.html">com.xatkit.plugins.chat.platform</a> - package com.xatkit.plugins.chat.platform</dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/xatkit/plugins/chat/platform/action/package-summary.html">com.xatkit.plugins.chat.platform.action</a> - package com.xatkit.plugins.chat.platform.action</dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/xatkit/plugins/chat/platform/io/package-summary.html">com.xatkit.plugins.chat.platform.io</a> - package com.xatkit.plugins.chat.platform.io</dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/xatkit/plugins/core/package-summary.html">com.xatkit.plugins.core</a> - package com.xatkit.plugins.core</dt>
@@ -997,12 +991,6 @@
 <dd>
 <div class="block">Contains the action implementations available in the Xatkit Log platform.</div>
 </dd>
-<dt><a href="com/xatkit/plugins/react/platform/package-summary.html">com.xatkit.plugins.react.platform</a> - package com.xatkit.plugins.react.platform</dt>
-<dd>&nbsp;</dd>
-<dt><a href="com/xatkit/plugins/react/platform/action/package-summary.html">com.xatkit.plugins.react.platform.action</a> - package com.xatkit.plugins.react.platform.action</dt>
-<dd>&nbsp;</dd>
-<dt><a href="com/xatkit/plugins/react/platform/io/package-summary.html">com.xatkit.plugins.react.platform.io</a> - package com.xatkit.plugins.react.platform.io</dt>
-<dd>&nbsp;</dd>
 <dt><a href="com/xatkit/plugins/slack/package-summary.html">com.xatkit.plugins.slack</a> - package com.xatkit.plugins.slack</dt>
 <dd>
 <div class="block">The root package of the Xatkit Slack plugin.</div>
@@ -1206,6 +1194,10 @@
 <dd>
 <div class="block">The concrete implementation of the <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>'s computation.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/chat/platform/action/FormatList.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.chat.platform.action.<a href="com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">FormatList</a></dt>
+<dd>
+<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> and stores it in the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/core/platform/action/GetDate.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.core.platform.action.<a href="com/xatkit/plugins/core/platform/action/GetDate.html" title="class in com.xatkit.plugins.core.platform.action">GetDate</a></dt>
 <dd>
 <div class="block">Retrieves the current date and formats it.</div>
@@ -1245,26 +1237,6 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/log/platform/action/LogAction.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.log.platform.action.<a href="com/xatkit/plugins/log/platform/action/LogAction.html" title="class in com.xatkit.plugins.log.platform.action">LogAction</a></dt>
 <dd>
 <div class="block">Logs the provided <code>message</code> with the given <code>logLevel</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/action/EnumerateList.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.react.platform.action.<a href="com/xatkit/plugins/react/platform/action/EnumerateList.html" title="class in com.xatkit.plugins.react.platform.action">EnumerateList</a></dt>
-<dd>
-<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into an enumeration.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/action/ItemizeList.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.react.platform.action.<a href="com/xatkit/plugins/react/platform/action/ItemizeList.html" title="class in com.xatkit.plugins.react.platform.action">ItemizeList</a></dt>
-<dd>
-<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into a set of items.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/action/PostMessage.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.react.platform.action.<a href="com/xatkit/plugins/react/platform/action/PostMessage.html" title="class in com.xatkit.plugins.react.platform.action">PostMessage</a></dt>
-<dd>
-<div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/EnumerateList.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/EnumerateList.html" title="class in com.xatkit.plugins.slack.platform.action">EnumerateList</a></dt>
-<dd>
-<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into an enumeration.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/ItemizeList.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/ItemizeList.html" title="class in com.xatkit.plugins.slack.platform.action">ItemizeList</a></dt>
-<dd>
-<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into a set of items.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
 <dd>
@@ -2205,10 +2177,6 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/DiscordPlatform.html#createSessionFromChannel-net.dv8tion.jda.core.entities.MessageChannel-">createSessionFromChannel(MessageChannel)</a></span> - Method in class com.xatkit.plugins.discord.platform.<a href="com/xatkit/plugins/discord/platform/DiscordPlatform.html" title="class in com.xatkit.plugins.discord.platform">DiscordPlatform</a></dt>
 <dd>
 <div class="block">Returns the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the provided <code>MessageChannel</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/ReactPlatform.html#createSessionFromChannel-java.lang.String-">createSessionFromChannel(String)</a></span> - Method in class com.xatkit.plugins.react.platform.<a href="com/xatkit/plugins/react/platform/ReactPlatform.html" title="class in com.xatkit.plugins.react.platform">ReactPlatform</a></dt>
-<dd>
-<div class="block">Creates a <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> from the provided <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/SlackPlatform.html#createSessionFromChannel-java.lang.String-">createSessionFromChannel(String)</a></span> - Method in class com.xatkit.plugins.slack.platform.<a href="com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a></dt>
 <dd>
@@ -3152,14 +3120,6 @@
 <dd>
 <div class="block">The cached value of the '<a href="com/xatkit/intent/impl/MappingEntityDefinitionImpl.html#getEntries--"><code><em>Entries</em></code></a>' containment reference list.</div>
 </dd>
-<dt><a href="com/xatkit/plugins/react/platform/action/EnumerateList.html" title="class in com.xatkit.plugins.react.platform.action"><span class="typeNameLink">EnumerateList</span></a> - Class in <a href="com/xatkit/plugins/react/platform/action/package-summary.html">com.xatkit.plugins.react.platform.action</a></dt>
-<dd>
-<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into an enumeration that can be embedded in React messages.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/action/EnumerateList.html#EnumerateList-com.xatkit.plugins.react.platform.ReactPlatform-com.xatkit.core.session.XatkitSession-java.util.List-">EnumerateList(ReactPlatform, XatkitSession, List&lt;?&gt;)</a></span> - Constructor for class com.xatkit.plugins.react.platform.action.<a href="com/xatkit/plugins/react/platform/action/EnumerateList.html" title="class in com.xatkit.plugins.react.platform.action">EnumerateList</a></dt>
-<dd>
-<div class="block">Constructs an <a href="com/xatkit/plugins/react/platform/action/EnumerateList.html" title="class in com.xatkit.plugins.react.platform.action"><code>EnumerateList</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>list</code>.</div>
-</dd>
 <dt><a href="com/xatkit/plugins/slack/platform/action/EnumerateList.html" title="class in com.xatkit.plugins.slack.platform.action"><span class="typeNameLink">EnumerateList</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/action/package-summary.html">com.xatkit.plugins.slack.platform.action</a></dt>
 <dd>
 <div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into an enumeration that can be embedded in Slack messages.</div>
@@ -3168,6 +3128,8 @@
 <dd>
 <div class="block">Constructs an <a href="com/xatkit/plugins/slack/platform/action/EnumerateList.html" title="class in com.xatkit.plugins.slack.platform.action"><code>EnumerateList</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>list</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/EnumerateList.html#EnumerateList-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.util.List-java.lang.String-">EnumerateList(SlackPlatform, XatkitSession, List&lt;?&gt;, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/EnumerateList.html" title="class in com.xatkit.plugins.slack.platform.action">EnumerateList</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonEventMatcher.FieldValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonEventMatcher.FieldValue.html" title="class in com.xatkit.core.platform.io">JsonEventMatcher.FieldValue</a></dt>
 <dd>
 <div class="block">Checks if the provided <code>obj</code> is equal to this <a href="com/xatkit/core/platform/io/JsonEventMatcher.FieldValue.html" title="class in com.xatkit.core.platform.io"><code>JsonEventMatcher.FieldValue</code></a>.</div>
@@ -4015,6 +3977,40 @@
 <dd>
 <div class="block">The cached value of the '<a href="com/xatkit/intent/impl/IntentDefinitionImpl.html#getFollows--"><code><em>Follows</em></code></a>' reference.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/Formatter.html#format-java.lang.Object-">format(Object)</a></span> - Method in class com.xatkit.core.platform.<a href="com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform">Formatter</a></dt>
+<dd>
+<div class="block">Formats the provided <code>obj</code>.</div>
+</dd>
+<dt><a href="com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action"><span class="typeNameLink">FormatList</span></a>&lt;<a href="com/xatkit/plugins/chat/platform/action/FormatList.html" title="type parameter in FormatList">T</a> extends <a href="com/xatkit/plugins/chat/platform/ChatPlatform.html" title="class in com.xatkit.plugins.chat.platform">ChatPlatform</a>&gt; - Class in <a href="com/xatkit/plugins/chat/platform/action/package-summary.html">com.xatkit.plugins.chat.platform.action</a></dt>
+<dd>
+<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> and stores it in the user's <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/chat/platform/action/FormatList.html#FormatList-T-com.xatkit.core.session.XatkitSession-java.util.List-java.lang.String-">FormatList(T, XatkitSession, List&lt;?&gt;, String)</a></span> - Constructor for class com.xatkit.plugins.chat.platform.action.<a href="com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">FormatList</a></dt>
+<dd>
+<div class="block">Constructs a <a href="com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action"><code>FormatList</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>list</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/chat/platform/action/FormatList.html#formatList--">formatList()</a></span> - Method in class com.xatkit.plugins.chat.platform.action.<a href="com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">FormatList</a></dt>
+<dd>
+<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/EnumerateList.html#formatList--">formatList()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/EnumerateList.html" title="class in com.xatkit.plugins.slack.platform.action">EnumerateList</a></dt>
+<dd>
+<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into an enumeration.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/ItemizeList.html#formatList--">formatList()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/ItemizeList.html" title="class in com.xatkit.plugins.slack.platform.action">ItemizeList</a></dt>
+<dd>
+<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into a set of items.</div>
+</dd>
+<dt><a href="com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform"><span class="typeNameLink">Formatter</span></a> - Class in <a href="com/xatkit/core/platform/package-summary.html">com.xatkit.core.platform</a></dt>
+<dd>
+<div class="block">Provides mapping function from execution-level <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a>s to their <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representation.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/Formatter.html#Formatter--">Formatter()</a></span> - Constructor for class com.xatkit.core.platform.<a href="com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform">Formatter</a></dt>
+<dd>
+<div class="block">Constructs the <a href="com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform"><code>Formatter</code></a> and initializes its <code>format functions</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/chat/platform/action/FormatList.html#formatter">formatter</a></span> - Variable in class com.xatkit.plugins.chat.platform.action.<a href="com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">FormatList</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/CompositeEntityDefinitionEntryImpl.html#fragments">fragments</a></span> - Variable in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/CompositeEntityDefinitionEntryImpl.html" title="class in com.xatkit.intent.impl">CompositeEntityDefinitionEntryImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="com/xatkit/intent/impl/CompositeEntityDefinitionEntryImpl.html#getFragments--"><code><em>Fragments</em></code></a>' containment reference list.</div>
@@ -4195,8 +4191,6 @@
 <div class="block">Returns the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.plugins.discord.platform.action.<a href="com/xatkit/plugins/discord/platform/action/PostMessage.html" title="class in com.xatkit.plugins.discord.platform.action">PostMessage</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.plugins.react.platform.action.<a href="com/xatkit/plugins/react/platform/action/PostMessage.html" title="class in com.xatkit.plugins.react.platform.action">PostMessage</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/PostAttachmentsMessage.html" title="class in com.xatkit.plugins.slack.platform.action">PostAttachmentsMessage</a></dt>
 <dd>&nbsp;</dd>
@@ -4851,6 +4845,10 @@
 <dd>
 <div class="block">Returns the value of the '<em><b>Follows</b></em>' reference.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/XatkitCore.html#getFormatter-java.lang.String-">getFormatter(String)</a></span> - Method in class com.xatkit.core.<a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core">XatkitCore</a></dt>
+<dd>
+<div class="block">Returns the <a href="com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform"><code>Formatter</code></a> associated to the provided <code>formatterName</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/CompositeEntityDefinitionEntry.html#getFragments--">getFragments()</a></span> - Method in interface com.xatkit.intent.<a href="com/xatkit/intent/CompositeEntityDefinitionEntry.html" title="interface in com.xatkit.intent">CompositeEntityDefinitionEntry</a></dt>
 <dd>
 <div class="block">Returns the value of the '<em><b>Fragments</b></em>' containment reference list.</div>
@@ -5249,10 +5247,6 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/log/platform/action/LogAction.html#getMessage--">getMessage()</a></span> - Method in class com.xatkit.plugins.log.platform.action.<a href="com/xatkit/plugins/log/platform/action/LogAction.html" title="class in com.xatkit.plugins.log.platform.action">LogAction</a></dt>
 <dd>
 <div class="block">Returns the <a href="com/xatkit/plugins/log/platform/action/LogAction.html#message"><code>LogAction.message</code></a> to log.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/ReactPlatform.html#getMessagesFor-java.lang.String-">getMessagesFor(String)</a></span> - Method in class com.xatkit.plugins.react.platform.<a href="com/xatkit/plugins/react/platform/ReactPlatform.html" title="class in com.xatkit.plugins.react.platform">ReactPlatform</a></dt>
-<dd>
-<div class="block">Returns the messages stored for the provided <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/OperationCallImpl.html#getName--">getName()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/OperationCallImpl.html" title="class in com.xatkit.common.impl">OperationCallImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -6639,14 +6633,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/BooleanLiteralImpl.html#isValue--">isValue()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/BooleanLiteralImpl.html" title="class in com.xatkit.common.impl">BooleanLiteralImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/xatkit/plugins/react/platform/action/ItemizeList.html" title="class in com.xatkit.plugins.react.platform.action"><span class="typeNameLink">ItemizeList</span></a> - Class in <a href="com/xatkit/plugins/react/platform/action/package-summary.html">com.xatkit.plugins.react.platform.action</a></dt>
-<dd>
-<div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into a set of items that can be embedded in React messages.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/action/ItemizeList.html#ItemizeList-com.xatkit.plugins.react.platform.ReactPlatform-com.xatkit.core.session.XatkitSession-java.util.List-">ItemizeList(ReactPlatform, XatkitSession, List&lt;?&gt;)</a></span> - Constructor for class com.xatkit.plugins.react.platform.action.<a href="com/xatkit/plugins/react/platform/action/ItemizeList.html" title="class in com.xatkit.plugins.react.platform.action">ItemizeList</a></dt>
-<dd>
-<div class="block">Constructs a <a href="com/xatkit/plugins/react/platform/action/ItemizeList.html" title="class in com.xatkit.plugins.react.platform.action"><code>ItemizeList</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>list</code>.</div>
-</dd>
 <dt><a href="com/xatkit/plugins/slack/platform/action/ItemizeList.html" title="class in com.xatkit.plugins.slack.platform.action"><span class="typeNameLink">ItemizeList</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/action/package-summary.html">com.xatkit.plugins.slack.platform.action</a></dt>
 <dd>
 <div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into a set of items that can be embedded in Slack messages.</div>
@@ -6655,6 +6641,8 @@
 <dd>
 <div class="block">Constructs a <a href="com/xatkit/plugins/slack/platform/action/ItemizeList.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ItemizeList</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>list</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/action/ItemizeList.html#ItemizeList-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.util.List-java.lang.String-">ItemizeList(SlackPlatform, XatkitSession, List&lt;?&gt;, String)</a></span> - Constructor for class com.xatkit.plugins.slack.platform.action.<a href="com/xatkit/plugins/slack/platform/action/ItemizeList.html" title="class in com.xatkit.plugins.slack.platform.action">ItemizeList</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:J">
 <!--   -->
@@ -6737,6 +6725,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/EntityType.html#LANGUAGE_VALUE">LANGUAGE_VALUE</a></span> - Static variable in enum com.xatkit.intent.<a href="com/xatkit/intent/EntityType.html" title="enum in com.xatkit.intent">EntityType</a></dt>
 <dd>
 <div class="block">The '<em><b>LANGUAGE</b></em>' literal value.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/chat/platform/action/FormatList.html#LAST_FORMATTED_LIST">LAST_FORMATTED_LIST</a></span> - Static variable in class com.xatkit.plugins.chat.platform.action.<a href="com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">FormatList</a></dt>
+<dd>
+<div class="block">The <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a>'s key used to stored the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/EntityType.html#LAST_NAME_VALUE">LAST_NAME_VALUE</a></span> - Static variable in enum com.xatkit.intent.<a href="com/xatkit/intent/EntityType.html" title="enum in com.xatkit.intent">EntityType</a></dt>
 <dd>
@@ -6857,6 +6849,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/ContextInstanceImpl.html#lifespanCount">lifespanCount</a></span> - Variable in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/ContextInstanceImpl.html" title="class in com.xatkit.intent.impl">ContextInstanceImpl</a></dt>
 <dd>
 <div class="block">The cached value of the '<a href="com/xatkit/intent/impl/ContextInstanceImpl.html#getLifespanCount--"><code><em>Lifespan Count</em></code></a>' attribute.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/plugins/chat/platform/action/FormatList.html#list">list</a></span> - Variable in class com.xatkit.plugins.chat.platform.action.<a href="com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">FormatList</a></dt>
+<dd>
+<div class="block">The <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> to format.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.html#LITERAL">LITERAL</a></span> - Static variable in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.html" title="interface in com.xatkit.common">CommonPackage</a></dt>
 <dd>
@@ -7919,14 +7915,6 @@
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/plugins/discord/platform/action/PostMessage.html" title="class in com.xatkit.plugins.discord.platform.action"><code>PostMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>message</code> and <code>channel</code>.</div>
 </dd>
-<dt><a href="com/xatkit/plugins/react/platform/action/PostMessage.html" title="class in com.xatkit.plugins.react.platform.action"><span class="typeNameLink">PostMessage</span></a> - Class in <a href="com/xatkit/plugins/react/platform/action/package-summary.html">com.xatkit.plugins.react.platform.action</a></dt>
-<dd>
-<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeMessageAction</code></a> that posts a <code>message</code> to a given xatkit-react <code>channel</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/action/PostMessage.html#PostMessage-com.xatkit.plugins.react.platform.ReactPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-">PostMessage(ReactPlatform, XatkitSession, String, String)</a></span> - Constructor for class com.xatkit.plugins.react.platform.action.<a href="com/xatkit/plugins/react/platform/action/PostMessage.html" title="class in com.xatkit.plugins.react.platform.action">PostMessage</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/react/platform/action/PostMessage.html" title="class in com.xatkit.plugins.react.platform.action"><code>PostMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>message</code>, and <code>channel</code>.</div>
-</dd>
 <dt><a href="com/xatkit/plugins/slack/platform/action/PostMessage.html" title="class in com.xatkit.plugins.slack.platform.action"><span class="typeNameLink">PostMessage</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/action/package-summary.html">com.xatkit.plugins.slack.platform.action</a></dt>
 <dd>
 <div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that posts a <code>message</code> to a given Slack <code>channel</code>.</div>
@@ -8051,31 +8039,6 @@
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/plugins/core/platform/action/Random.html" title="class in com.xatkit.plugins.core.platform.action"><code>Random</code></a> action from the provided <code>runtimePlatform</code>, <code>session</code>, and <code>bound</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/ReactUtils.html#REACT_CONTEXT_KEY">REACT_CONTEXT_KEY</a></span> - Static variable in interface com.xatkit.plugins.react.platform.<a href="com/xatkit/plugins/react/platform/ReactUtils.html" title="interface in com.xatkit.plugins.react.platform">ReactUtils</a></dt>
-<dd>
-<div class="block">The <a href="com/xatkit/core/session/RuntimeContexts.html" title="class in com.xatkit.core.session"><code>RuntimeContexts</code></a> key used to store React-related information.</div>
-</dd>
-<dt><a href="com/xatkit/plugins/react/platform/io/ReactIntentProvider.html" title="class in com.xatkit.plugins.react.platform.io"><span class="typeNameLink">ReactIntentProvider</span></a> - Class in <a href="com/xatkit/plugins/react/platform/io/package-summary.html">com.xatkit.plugins.react.platform.io</a></dt>
-<dd>
-<div class="block">A React <a href="com/xatkit/plugins/chat/platform/io/ChatIntentProvider.html" title="class in com.xatkit.plugins.chat.platform.io"><code>ChatIntentProvider</code></a>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/io/ReactIntentProvider.html#ReactIntentProvider-com.xatkit.plugins.react.platform.ReactPlatform-org.apache.commons.configuration2.Configuration-">ReactIntentProvider(ReactPlatform, Configuration)</a></span> - Constructor for class com.xatkit.plugins.react.platform.io.<a href="com/xatkit/plugins/react/platform/io/ReactIntentProvider.html" title="class in com.xatkit.plugins.react.platform.io">ReactIntentProvider</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/react/platform/io/ReactIntentProvider.html" title="class in com.xatkit.plugins.react.platform.io"><code>ReactIntentProvider</code></a> from the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
-</dd>
-<dt><a href="com/xatkit/plugins/react/platform/ReactPlatform.html" title="class in com.xatkit.plugins.react.platform"><span class="typeNameLink">ReactPlatform</span></a> - Class in <a href="com/xatkit/plugins/react/platform/package-summary.html">com.xatkit.plugins.react.platform</a></dt>
-<dd>
-<div class="block">A <a href="com/xatkit/plugins/chat/platform/ChatPlatform.html" title="class in com.xatkit.plugins.chat.platform"><code>ChatPlatform</code></a> class that interacts with the
- <a href="https://github.com/xatkit-bot-platform/xatkit-react">Xatkit React component</a>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/ReactPlatform.html#ReactPlatform-com.xatkit.core.XatkitCore-org.apache.commons.configuration2.Configuration-">ReactPlatform(XatkitCore, Configuration)</a></span> - Constructor for class com.xatkit.plugins.react.platform.<a href="com/xatkit/plugins/react/platform/ReactPlatform.html" title="class in com.xatkit.plugins.react.platform">ReactPlatform</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/react/platform/ReactPlatform.html" title="class in com.xatkit.plugins.react.platform"><code>ReactPlatform</code></a> from the provided <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
-</dd>
-<dt><a href="com/xatkit/plugins/react/platform/ReactUtils.html" title="interface in com.xatkit.plugins.react.platform"><span class="typeNameLink">ReactUtils</span></a> - Interface in <a href="com/xatkit/plugins/react/platform/package-summary.html">com.xatkit.plugins.react.platform</a></dt>
-<dd>
-<div class="block">An utility interface that holds xatkit-react related helpers and context keys.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/RecognizedIntentImpl.html#RECOGNITION_CONFIDENCE_EDEFAULT">RECOGNITION_CONFIDENCE_EDEFAULT</a></span> - Static variable in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/RecognizedIntentImpl.html" title="class in com.xatkit.intent.impl">RecognizedIntentImpl</a></dt>
 <dd>
 <div class="block">The default value of the '<a href="com/xatkit/intent/impl/RecognizedIntentImpl.html#getRecognitionConfidence--"><code><em>Recognition Confidence</em></code></a>' attribute.</div>
@@ -8174,6 +8137,14 @@
 <dd>
 <div class="block">Registers the provided <code>eventDefinition</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/Formatter.html#registerFormatFunction-java.lang.Class-java.util.function.Function-">registerFormatFunction(Class&lt;T&gt;, Function&lt;T, String&gt;)</a></span> - Method in class com.xatkit.core.platform.<a href="com/xatkit/core/platform/Formatter.html" title="class in com.xatkit.core.platform">Formatter</a></dt>
+<dd>
+<div class="block">Registers the provided <code>function</code> to the given <code>clazz</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/XatkitCore.html#registerFormatter-java.lang.String-com.xatkit.core.platform.Formatter-">registerFormatter(String, Formatter)</a></span> - Method in class com.xatkit.core.<a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core">XatkitCore</a></dt>
+<dd>
+<div class="block">Registers the provided <code>formatter</code> with the given <code>formatterName</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/DefaultIntentRecognitionProvider.html#registerIntentDefinition-com.xatkit.intent.IntentDefinition-">registerIntentDefinition(IntentDefinition)</a></span> - Method in class com.xatkit.core.recognition.<a href="com/xatkit/core/recognition/DefaultIntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">DefaultIntentRecognitionProvider</a></dt>
 <dd>
 <div class="block">Registers the provided <a href="com/xatkit/intent/IntentDefinition.html" title="interface in com.xatkit.intent"><code>IntentDefinition</code></a>.</div>
@@ -8217,15 +8188,6 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/action/Reply.html#Reply-com.xatkit.plugins.discord.platform.DiscordPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-">Reply(DiscordPlatform, XatkitSession, String)</a></span> - Constructor for class com.xatkit.plugins.discord.platform.action.<a href="com/xatkit/plugins/discord/platform/action/Reply.html" title="class in com.xatkit.plugins.discord.platform.action">Reply</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/plugins/discord/platform/action/Reply.html" title="class in com.xatkit.plugins.discord.platform.action"><code>Reply</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>message</code>.</div>
-</dd>
-<dt><a href="com/xatkit/plugins/react/platform/action/Reply.html" title="class in com.xatkit.plugins.react.platform.action"><span class="typeNameLink">Reply</span></a> - Class in <a href="com/xatkit/plugins/react/platform/action/package-summary.html">com.xatkit.plugins.react.platform.action</a></dt>
-<dd>
-<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeMessageAction</code></a> that replies to a message using the input
- xatkit-react channel.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/action/Reply.html#Reply-com.xatkit.plugins.react.platform.ReactPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-">Reply(ReactPlatform, XatkitSession, String)</a></span> - Constructor for class com.xatkit.plugins.react.platform.action.<a href="com/xatkit/plugins/react/platform/action/Reply.html" title="class in com.xatkit.plugins.react.platform.action">Reply</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/react/platform/action/Reply.html" title="class in com.xatkit.plugins.react.platform.action"><code>Reply</code></a> with the provided <code>reactPlatform</code>, <code>session</code>, and <code>message</code>.</div>
 </dd>
 <dt><a href="com/xatkit/plugins/slack/platform/action/Reply.html" title="class in com.xatkit.plugins.slack.platform.action"><span class="typeNameLink">Reply</span></a> - Class in <a href="com/xatkit/plugins/slack/platform/action/package-summary.html">com.xatkit.plugins.slack.platform.action</a></dt>
 <dd>
@@ -8301,8 +8263,6 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html#run--">run()</a></span> - Method in class com.xatkit.plugins.discord.platform.io.<a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in com.xatkit.plugins.discord.platform.io">DiscordIntentProvider</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/github/platform/io/GithubWebhookEventProvider.html#run--">run()</a></span> - Method in class com.xatkit.plugins.github.platform.io.<a href="com/xatkit/plugins/github/platform/io/GithubWebhookEventProvider.html" title="class in com.xatkit.plugins.github.platform.io">GithubWebhookEventProvider</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/io/ReactIntentProvider.html#run--">run()</a></span> - Method in class com.xatkit.plugins.react.platform.io.<a href="com/xatkit/plugins/react/platform/io/ReactIntentProvider.html" title="class in com.xatkit.plugins.react.platform.io">ReactIntentProvider</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/slack/platform/io/SlackIntentProvider.html#run--">run()</a></span> - Method in class com.xatkit.plugins.slack.platform.io.<a href="com/xatkit/plugins/slack/platform/io/SlackIntentProvider.html" title="class in com.xatkit.plugins.slack.platform.io">SlackIntentProvider</a></dt>
 <dd>&nbsp;</dd>
@@ -8914,10 +8874,6 @@
 <dd>
 <div class="block">Store the provided <code>value</code> in the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> associated to the provided <code>key</code> as a session
  variable.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/react/platform/ReactPlatform.html#storeMessage-java.lang.String-java.lang.String-">storeMessage(String, String)</a></span> - Method in class com.xatkit.plugins.react.platform.<a href="com/xatkit/plugins/react/platform/ReactPlatform.html" title="class in com.xatkit.plugins.react.platform">ReactPlatform</a></dt>
-<dd>
-<div class="block">Stores the provided <code>message</code> for the given <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/EntityType.html#STREET_ADDRESS_VALUE">STREET_ADDRESS_VALUE</a></span> - Static variable in enum com.xatkit.intent.<a href="com/xatkit/intent/EntityType.html" title="enum in com.xatkit.intent">EntityType</a></dt>
 <dd>

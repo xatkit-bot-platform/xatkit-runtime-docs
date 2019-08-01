@@ -75,7 +75,7 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.xatkit.core.platform.action.RuntimeAction">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.xatkit.plugins.chat.platform.action.FormatList">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
@@ -100,10 +100,15 @@ var activeTableTab = "activeTableTab";
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</li>
+<li><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">com.xatkit.core.platform.action.RuntimeAction</a>&lt;T&gt;</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">com.xatkit.plugins.chat.platform.action.FormatList</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>com.xatkit.plugins.slack.platform.action.ItemizeList</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -119,8 +124,11 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ItemizeList</span>
-extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">RuntimeAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</pre>
+extends <a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">FormatList</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</pre>
 <div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into a set of items that can be embedded in Slack messages.
+ <p>
+ The provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> is stored in the <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> with the <a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html#LAST_FORMATTED_LIST"><code>FormatList.LAST_FORMATTED_LIST</code></a>
+ key, allowing to retrieve and manipulate it in custom actions.
  <p>
  This action supports any kind of <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a>, and call the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang"><code>Object.toString()</code></a> method on each object.
  <p>
@@ -138,6 +146,13 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
 <!--   -->
 </a>
 <h3>Field Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.com.xatkit.plugins.chat.platform.action.FormatList">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.xatkit.plugins.chat.platform.action.<a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">FormatList</a></h3>
+<code><a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html#formatter">formatter</a>, <a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html#LAST_FORMATTED_LIST">LAST_FORMATTED_LIST</a>, <a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html#list">list</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.com.xatkit.core.platform.action.RuntimeAction">
 <!--   -->
@@ -165,6 +180,12 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
 <div class="block">Constructs a <a href="../../../../../../com/xatkit/plugins/slack/platform/action/ItemizeList.html" title="class in com.xatkit.plugins.slack.platform.action"><code>ItemizeList</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>list</code>.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/plugins/slack/platform/action/ItemizeList.html#ItemizeList-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.util.List-java.lang.String-">ItemizeList</a></span>(<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&nbsp;runtimePlatform,
+           <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+           <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;?&gt;&nbsp;list,
+           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatterName)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -182,11 +203,18 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/plugins/slack/platform/action/ItemizeList.html#compute--">compute</a></span>()</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/xatkit/plugins/slack/platform/action/ItemizeList.html#formatList--">formatList</a></span>()</code>
 <div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into a set of items.</div>
 </td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.xatkit.plugins.chat.platform.action.FormatList">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.xatkit.plugins.chat.platform.action.<a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">FormatList</a></h3>
+<code><a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html#compute--">compute</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.xatkit.core.platform.action.RuntimeAction">
 <!--   -->
@@ -218,7 +246,7 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
 <a name="ItemizeList-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.util.List-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ItemizeList</h4>
 <pre>public&nbsp;ItemizeList(<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&nbsp;runtimePlatform,
@@ -236,6 +264,18 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
 </dl>
 </li>
 </ul>
+<a name="ItemizeList-com.xatkit.plugins.slack.platform.SlackPlatform-com.xatkit.core.session.XatkitSession-java.util.List-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ItemizeList</h4>
+<pre>public&nbsp;ItemizeList(<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&nbsp;runtimePlatform,
+                   <a href="../../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;?&gt;&nbsp;list,
+                   <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;formatterName)</pre>
+</li>
+</ul>
 </li>
 </ul>
 <!-- ============ METHOD DETAIL ========== -->
@@ -244,24 +284,21 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="compute--">
+<a name="formatList--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>compute</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;compute()
-                  throws <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<h4>formatList</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;formatList()</pre>
 <div class="block">Formats the provided <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> into a set of items.
  <p>
  Each item is represented with the following pattern: <code>"- item.toString()\n"</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html#compute--">compute</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">RuntimeAction</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</code></dd>
+<dd><code><a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html#formatList--">formatList</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/xatkit/plugins/chat/platform/action/FormatList.html" title="class in com.xatkit.plugins.chat.platform.action">FormatList</a>&lt;<a href="../../../../../../com/xatkit/plugins/slack/platform/SlackPlatform.html" title="class in com.xatkit.plugins.slack.platform">SlackPlatform</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the formatted <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code> - if an error occurred when computing the <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -319,7 +356,7 @@ extends <a href="../../../../../../com/xatkit/core/platform/action/RuntimeAction
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.com.xatkit.core.platform.action.RuntimeAction">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.com.xatkit.plugins.chat.platform.action.FormatList">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
