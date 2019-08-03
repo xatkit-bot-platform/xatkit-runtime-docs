@@ -35,8 +35,6 @@ com.xatkit.plugins.discord
 com.xatkit.plugins.discord.platform
 com.xatkit.plugins.discord.platform.action
 com.xatkit.plugins.discord.platform.io
-com.xatkit.plugins.giphy.platform
-com.xatkit.plugins.giphy.platform.action
 com.xatkit.plugins.github
 com.xatkit.plugins.github.platform
 com.xatkit.plugins.github.platform.action
