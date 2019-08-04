@@ -723,14 +723,6 @@
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/plugins/chat/platform/ChatPlatform.html" title="class in com.xatkit.plugins.chat.platform"><code>ChatPlatform</code></a> from the provided <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
 </dd>
-<dt><a href="com/xatkit/plugins/discord/platform/io/ChatProvider.html" title="class in com.xatkit.plugins.discord.platform.io"><span class="typeNameLink">ChatProvider</span></a> - Class in <a href="com/xatkit/plugins/discord/platform/io/package-summary.html">com.xatkit.plugins.discord.platform.io</a></dt>
-<dd>
-<div class="block">A generic Discord user <a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeIntentProvider</code></a>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/io/ChatProvider.html#ChatProvider-com.xatkit.plugins.discord.platform.DiscordPlatform-org.apache.commons.configuration2.Configuration-">ChatProvider(DiscordPlatform, Configuration)</a></span> - Constructor for class com.xatkit.plugins.discord.platform.io.<a href="com/xatkit/plugins/discord/platform/io/ChatProvider.html" title="class in com.xatkit.plugins.discord.platform.io">ChatProvider</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/discord/platform/io/ChatProvider.html" title="class in com.xatkit.plugins.discord.platform.io"><code>ChatProvider</code></a> from the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
-</dd>
 <dt><a href="com/xatkit/plugins/chat/ChatUtils.html" title="interface in com.xatkit.plugins.chat"><span class="typeNameLink">ChatUtils</span></a> - Interface in <a href="com/xatkit/plugins/chat/package-summary.html">com.xatkit.plugins.chat</a></dt>
 <dd>
 <div class="block">An utility class that holds Chat-related helpers and context variable keys.</div>
@@ -779,10 +771,6 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/RuntimeEventProvider.html#close--">close()</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io">RuntimeEventProvider</a></dt>
 <dd>
 <div class="block">Closes the <a href="com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> and releases internal resources.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html#close--">close()</a></span> - Method in class com.xatkit.plugins.discord.platform.io.<a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in com.xatkit.plugins.discord.platform.io">DiscordIntentProvider</a></dt>
-<dd>
-<div class="block">Disconnects the underlying <code>JDA</code> client.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/EntityType.html#COLOR_VALUE">COLOR_VALUE</a></span> - Static variable in enum com.xatkit.intent.<a href="com/xatkit/intent/EntityType.html" title="enum in com.xatkit.intent">EntityType</a></dt>
 <dd>
@@ -1159,10 +1147,6 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/core/platform/action/Random.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.core.platform.action.<a href="com/xatkit/plugins/core/platform/action/Random.html" title="class in com.xatkit.plugins.core.platform.action">Random</a></dt>
 <dd>
 <div class="block">Returns a random number smaller than the provided <code>bound</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/action/PostMessage.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.discord.platform.action.<a href="com/xatkit/plugins/discord/platform/action/PostMessage.html" title="class in com.xatkit.plugins.discord.platform.action">PostMessage</a></dt>
-<dd>
-<div class="block">Posts the provided <code>message</code> to the given <code>channel</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/plugins/log/platform/action/LogAction.html#compute--">compute()</a></span> - Method in class com.xatkit.plugins.log.platform.action.<a href="com/xatkit/plugins/log/platform/action/LogAction.html" title="class in com.xatkit.plugins.log.platform.action">LogAction</a></dt>
 <dd>
@@ -2092,10 +2076,6 @@
 <dd>
 <div class="block">Creates a new adapter for an object of class '<a href="com/xatkit/common/SessionAccess.html" title="interface in com.xatkit.common"><code><em>Session Access</em></code></a>'.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/DiscordPlatform.html#createSessionFromChannel-net.dv8tion.jda.core.entities.MessageChannel-">createSessionFromChannel(MessageChannel)</a></span> - Method in class com.xatkit.plugins.discord.platform.<a href="com/xatkit/plugins/discord/platform/DiscordPlatform.html" title="class in com.xatkit.plugins.discord.platform">DiscordPlatform</a></dt>
-<dd>
-<div class="block">Returns the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the provided <code>MessageChannel</code>.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/CommonFactory.html#createStringLiteral--">createStringLiteral()</a></span> - Method in interface com.xatkit.common.<a href="com/xatkit/common/CommonFactory.html" title="interface in com.xatkit.common">CommonFactory</a></dt>
 <dd>
 <div class="block">Returns a new object of class '<em>String Literal</em>'.</div>
@@ -2430,37 +2410,6 @@
 <dd>
 <div class="block">Disables all the <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>s of the <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/DiscordUtils.html#DISCORD_CONTEXT_KEY">DISCORD_CONTEXT_KEY</a></span> - Static variable in class com.xatkit.plugins.discord.<a href="com/xatkit/plugins/discord/DiscordUtils.html" title="class in com.xatkit.plugins.discord">DiscordUtils</a></dt>
-<dd>
-<div class="block">The <a href="com/xatkit/core/session/RuntimeContexts.html" title="class in com.xatkit.core.session"><code>RuntimeContexts</code></a> key used to store discord-related information.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/DiscordUtils.html#DISCORD_TOKEN_KEY">DISCORD_TOKEN_KEY</a></span> - Static variable in class com.xatkit.plugins.discord.<a href="com/xatkit/plugins/discord/DiscordUtils.html" title="class in com.xatkit.plugins.discord">DiscordUtils</a></dt>
-<dd>
-<div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the Discord bot token.</div>
-</dd>
-<dt><a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in com.xatkit.plugins.discord.platform.io"><span class="typeNameLink">DiscordIntentProvider</span></a> - Class in <a href="com/xatkit/plugins/discord/platform/io/package-summary.html">com.xatkit.plugins.discord.platform.io</a></dt>
-<dd>
-<div class="block">A Discord user <a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeIntentProvider</code></a>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html#DiscordIntentProvider-com.xatkit.plugins.discord.platform.DiscordPlatform-org.apache.commons.configuration2.Configuration-">DiscordIntentProvider(DiscordPlatform, Configuration)</a></span> - Constructor for class com.xatkit.plugins.discord.platform.io.<a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in com.xatkit.plugins.discord.platform.io">DiscordIntentProvider</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in com.xatkit.plugins.discord.platform.io"><code>DiscordIntentProvider</code></a> from the provided <code>runtimePlatform</code> and
- <code>configuration</code>.</div>
-</dd>
-<dt><a href="com/xatkit/plugins/discord/platform/DiscordPlatform.html" title="class in com.xatkit.plugins.discord.platform"><span class="typeNameLink">DiscordPlatform</span></a> - Class in <a href="com/xatkit/plugins/discord/platform/package-summary.html">com.xatkit.plugins.discord.platform</a></dt>
-<dd>
-<div class="block">A <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a> class that connects and interacts with Discord.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/DiscordPlatform.html#DiscordPlatform-com.xatkit.core.XatkitCore-org.apache.commons.configuration2.Configuration-">DiscordPlatform(XatkitCore, Configuration)</a></span> - Constructor for class com.xatkit.plugins.discord.platform.<a href="com/xatkit/plugins/discord/platform/DiscordPlatform.html" title="class in com.xatkit.plugins.discord.platform">DiscordPlatform</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/discord/platform/DiscordPlatform.html" title="class in com.xatkit.plugins.discord.platform"><code>DiscordPlatform</code></a> from the provided <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> and <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
-</dd>
-<dt><a href="com/xatkit/plugins/discord/DiscordUtils.html" title="class in com.xatkit.plugins.discord"><span class="typeNameLink">DiscordUtils</span></a> - Class in <a href="com/xatkit/plugins/discord/package-summary.html">com.xatkit.plugins.discord</a></dt>
-<dd>
-<div class="block">An utility class that holds Discord-related helpers.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/DiscordUtils.html#DiscordUtils--">DiscordUtils()</a></span> - Constructor for class com.xatkit.plugins.discord.<a href="com/xatkit/plugins/discord/DiscordUtils.html" title="class in com.xatkit.plugins.discord">DiscordUtils</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html#doOperation-java.lang.Number-java.lang.Number-">doOperation(Number, Number)</a></span> - Method in class com.xatkit.core.interpreter.operation.object.<a href="com/xatkit/core/interpreter/operation/object/ArithmeticOperation.html" title="class in com.xatkit.core.interpreter.operation.object">ArithmeticOperation</a></dt>
 <dd>
 <div class="block">The concrete arithmetic operation to compute.</div>
@@ -4074,8 +4023,6 @@
 <dd>
 <div class="block">Returns the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/action/PostMessage.html#getClientSession--">getClientSession()</a></span> - Method in class com.xatkit.plugins.discord.platform.action.<a href="com/xatkit/plugins/discord/platform/action/PostMessage.html" title="class in com.xatkit.plugins.discord.platform.action">PostMessage</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.html#getCommonFactory--">getCommonFactory()</a></span> - Method in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.html" title="interface in com.xatkit.common">CommonPackage</a></dt>
 <dd>
 <div class="block">Returns the factory that creates the instances of the model.</div>
@@ -4912,18 +4859,6 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/XatkitCore.html#getIntentRecognitionProvider--">getIntentRecognitionProvider()</a></span> - Method in class com.xatkit.core.<a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core">XatkitCore</a></dt>
 <dd>
 <div class="block">Returns the underlying <a href="com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/DiscordUtils.html#getJDA-java.lang.String-">getJDA(String)</a></span> - Static method in class com.xatkit.plugins.discord.<a href="com/xatkit/plugins/discord/DiscordUtils.html" title="class in com.xatkit.plugins.discord">DiscordUtils</a></dt>
-<dd>
-<div class="block">Returns the <code>JDA</code> client associated to the provided <code>token</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/DiscordPlatform.html#getJdaClient--">getJdaClient()</a></span> - Method in class com.xatkit.plugins.discord.platform.<a href="com/xatkit/plugins/discord/platform/DiscordPlatform.html" title="class in com.xatkit.plugins.discord.platform">DiscordPlatform</a></dt>
-<dd>
-<div class="block">Returns the <code>JDA</code> client managing the Discord connection.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html#getJdaClient--">getJdaClient()</a></span> - Method in class com.xatkit.plugins.discord.platform.io.<a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in com.xatkit.plugins.discord.platform.io">DiscordIntentProvider</a></dt>
-<dd>
-<div class="block">Returns the <code>JDA</code> client associated to this class.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RestAction.html#getJsonBody-java.io.InputStream-">getJsonBody(InputStream)</a></span> - Static method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RestAction.html" title="class in com.xatkit.core.platform.action">RestAction</a></dt>
 <dd>
@@ -5765,10 +5700,6 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/RuntimePlatform.html#getXatkitCore--">getXatkitCore()</a></span> - Method in class com.xatkit.core.platform.<a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a></dt>
 <dd>
 <div class="block">Returns the <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> instance associated to this platform.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/io/PrivateMessageListener.html#getXatkitCore--">getXatkitCore()</a></span> - Method in class com.xatkit.plugins.discord.platform.io.<a href="com/xatkit/plugins/discord/platform/io/PrivateMessageListener.html" title="class in com.xatkit.plugins.discord.platform.io">PrivateMessageListener</a></dt>
-<dd>
-<div class="block">Returns the <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> instance used to handled received messages.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/Xatkit.html#getXatkitCore--">getXatkitCore()</a></span> - Static method in class com.xatkit.<a href="com/xatkit/Xatkit.html" title="class in com.xatkit">Xatkit</a></dt>
 <dd>
@@ -7187,10 +7118,6 @@
 <dd>
 <div class="block">The cached value of the '<a href="com/xatkit/execution/impl/ActionInstanceImpl.html#getOnError--"><code><em>On Error</em></code></a>' containment reference list.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/io/PrivateMessageListener.html#onPrivateMessageReceived-net.dv8tion.jda.core.events.message.priv.PrivateMessageReceivedEvent-">onPrivateMessageReceived(PrivateMessageReceivedEvent)</a></span> - Method in class com.xatkit.plugins.discord.platform.io.<a href="com/xatkit/plugins/discord/platform/io/PrivateMessageListener.html" title="class in com.xatkit.plugins.discord.platform.io">PrivateMessageListener</a></dt>
-<dd>
-<div class="block">Handles the received private message event and forward it to the <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a>.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.Literals.html#OPERATION">OPERATION</a></span> - Static variable in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.Literals.html" title="interface in com.xatkit.common">CommonPackage.Literals</a></dt>
 <dd>
 <div class="block">The meta object literal for the '<a href="com/xatkit/common/impl/OperationImpl.html" title="class in com.xatkit.common.impl"><code><em>Operation</em></code></a>' class.</div>
@@ -7639,14 +7566,6 @@
 <dd>
 <div class="block">Creates an instance of the switch.</div>
 </dd>
-<dt><a href="com/xatkit/plugins/discord/platform/action/PostMessage.html" title="class in com.xatkit.plugins.discord.platform.action"><span class="typeNameLink">PostMessage</span></a> - Class in <a href="com/xatkit/plugins/discord/platform/action/package-summary.html">com.xatkit.plugins.discord.platform.action</a></dt>
-<dd>
-<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that posts a <code>message</code> to a given Discord <code>channel</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/action/PostMessage.html#PostMessage-com.xatkit.plugins.discord.platform.DiscordPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-">PostMessage(DiscordPlatform, XatkitSession, String, String)</a></span> - Constructor for class com.xatkit.plugins.discord.platform.action.<a href="com/xatkit/plugins/discord/platform/action/PostMessage.html" title="class in com.xatkit.plugins.discord.platform.action">PostMessage</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/discord/platform/action/PostMessage.html" title="class in com.xatkit.plugins.discord.platform.action"><code>PostMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>message</code> and <code>channel</code>.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/EventInstanceBuilder.html#prettyPrintEventDefinition--">prettyPrintEventDefinition()</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/EventInstanceBuilder.html" title="class in com.xatkit.core.platform.io">EventInstanceBuilder</a></dt>
 <dd>
 <div class="block">Prints a pretty representation of the current <a href="com/xatkit/intent/EventDefinition.html" title="interface in com.xatkit.intent"><code>EventDefinition</code></a> to instantiate with this builder.</div>
@@ -7660,14 +7579,6 @@
 <dd>
 <div class="block">A flag telling whether to print the <a href="com/xatkit/core/platform/io/EventInstanceBuilder.html" title="class in com.xatkit.core.platform.io"><code>EventInstanceBuilder</code></a> content before building the matched
  <a href="com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent"><code>EventInstance</code></a>.</div>
-</dd>
-<dt><a href="com/xatkit/plugins/discord/platform/io/PrivateMessageListener.html" title="class in com.xatkit.plugins.discord.platform.io"><span class="typeNameLink">PrivateMessageListener</span></a> - Class in <a href="com/xatkit/plugins/discord/platform/io/package-summary.html">com.xatkit.plugins.discord.platform.io</a></dt>
-<dd>
-<div class="block">A <code>ListenerAdapter</code> that listen private messages and send them to the underlying <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/io/PrivateMessageListener.html#PrivateMessageListener-com.xatkit.core.XatkitCore-com.xatkit.plugins.discord.platform.io.DiscordIntentProvider-">PrivateMessageListener(XatkitCore, DiscordIntentProvider)</a></span> - Constructor for class com.xatkit.plugins.discord.platform.io.<a href="com/xatkit/plugins/discord/platform/io/PrivateMessageListener.html" title="class in com.xatkit.plugins.discord.platform.io">PrivateMessageListener</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/discord/platform/io/PrivateMessageListener.html" title="class in com.xatkit.plugins.discord.platform.io"><code>PrivateMessageListener</code></a> from the provided <code>xatkitCore</code> and <code>discordIntentProvider</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.Literals.html#PROGRAM">PROGRAM</a></span> - Static variable in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.Literals.html" title="interface in com.xatkit.common">CommonPackage.Literals</a></dt>
 <dd>
@@ -7905,14 +7816,6 @@
 <dd>
 <div class="block">Register a <a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>.</div>
 </dd>
-<dt><a href="com/xatkit/plugins/discord/platform/action/Reply.html" title="class in com.xatkit.plugins.discord.platform.action"><span class="typeNameLink">Reply</span></a> - Class in <a href="com/xatkit/plugins/discord/platform/action/package-summary.html">com.xatkit.plugins.discord.platform.action</a></dt>
-<dd>
-<div class="block">A <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> that replies to a message using the input Discord channel.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/action/Reply.html#Reply-com.xatkit.plugins.discord.platform.DiscordPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-">Reply(DiscordPlatform, XatkitSession, String)</a></span> - Constructor for class com.xatkit.plugins.discord.platform.action.<a href="com/xatkit/plugins/discord/platform/action/Reply.html" title="class in com.xatkit.plugins.discord.platform.action">Reply</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/plugins/discord/platform/action/Reply.html" title="class in com.xatkit.plugins.discord.platform.action"><code>Reply</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>message</code>.</div>
-</dd>
 <dt><a href="com/xatkit/core/platform/action/RestAction.html" title="class in com.xatkit.core.platform.action"><span class="typeNameLink">RestAction</span></a>&lt;<a href="com/xatkit/core/platform/action/RestAction.html" title="type parameter in RestAction">T</a> extends <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&gt; - Class in <a href="com/xatkit/core/platform/action/package-summary.html">com.xatkit.core.platform.action</a></dt>
 <dd>
 <div class="block">A generic REST action.</div>
@@ -7945,8 +7848,6 @@
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/core/platform/action/RestPostAction.html" title="class in com.xatkit.core.platform.action"><code>RestPostAction</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html#run--">run()</a></span> - Method in class com.xatkit.plugins.discord.platform.io.<a href="com/xatkit/plugins/discord/platform/io/DiscordIntentProvider.html" title="class in com.xatkit.plugins.discord.platform.io">DiscordIntentProvider</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/platform/impl/PlatformDefinitionImpl.html#RUNTIME_PATH_EDEFAULT">RUNTIME_PATH_EDEFAULT</a></span> - Static variable in class com.xatkit.platform.impl.<a href="com/xatkit/platform/impl/PlatformDefinitionImpl.html" title="class in com.xatkit.platform.impl">PlatformDefinitionImpl</a></dt>
 <dd>
 <div class="block">The default value of the '<a href="com/xatkit/platform/impl/PlatformDefinitionImpl.html#getRuntimePath--"><code><em>Runtime Path</em></code></a>' attribute.</div>

@@ -143,18 +143,6 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#com.xatkit.plugins.discord.platform">com.xatkit.plugins.discord.platform</a></td>
-<td class="colLast">
-<div class="block">Contains the platform implementation of the Xatkit Discord plugin.</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><a href="#com.xatkit.plugins.discord.platform.action">com.xatkit.plugins.discord.platform.action</a></td>
-<td class="colLast">
-<div class="block">Contains the action implementations available in the Xatkit Discord platform.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="#com.xatkit.plugins.log.platform.action">com.xatkit.plugins.log.platform.action</a></td>
 <td class="colLast">
 <div class="block">Contains the action implementations available in the Xatkit Log platform.</div>
@@ -569,67 +557,6 @@
       <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
       <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;bound)</code>
 <div class="block">Constructs a new <a href="../../../../../com/xatkit/plugins/core/platform/action/Random.html" title="class in com.xatkit.plugins.core.platform.action"><code>Random</code></a> action from the provided <code>runtimePlatform</code>, <code>session</code>, and <code>bound</code>.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="com.xatkit.plugins.discord.platform">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a> in <a href="../../../../../com/xatkit/plugins/discord/platform/package-summary.html">com.xatkit.plugins.discord.platform</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../com/xatkit/plugins/discord/platform/package-summary.html">com.xatkit.plugins.discord.platform</a> that return <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DiscordPlatform.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/discord/platform/DiscordPlatform.html#createSessionFromChannel-net.dv8tion.jda.core.entities.MessageChannel-">createSessionFromChannel</a></span>(net.dv8tion.jda.core.entities.MessageChannel&nbsp;messageChannel)</code>
-<div class="block">Returns the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the provided <code>MessageChannel</code>.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="com.xatkit.plugins.discord.platform.action">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a> in <a href="../../../../../com/xatkit/plugins/discord/platform/action/package-summary.html">com.xatkit.plugins.discord.platform.action</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../com/xatkit/plugins/discord/platform/action/package-summary.html">com.xatkit.plugins.discord.platform.action</a> that return <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
-<td class="colLast"><span class="typeNameLabel">PostMessage.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/discord/platform/action/PostMessage.html#getClientSession--">getClientSession</a></span>()</code>&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructors in <a href="../../../../../com/xatkit/plugins/discord/platform/action/package-summary.html">com.xatkit.plugins.discord.platform.action</a> with parameters of type <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/discord/platform/action/PostMessage.html#PostMessage-com.xatkit.plugins.discord.platform.DiscordPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-">PostMessage</a></span>(<a href="../../../../../com/xatkit/plugins/discord/platform/DiscordPlatform.html" title="class in com.xatkit.plugins.discord.platform">DiscordPlatform</a>&nbsp;runtimePlatform,
-           <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
-           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
-           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;channel)</code>
-<div class="block">Constructs a new <a href="../../../../../com/xatkit/plugins/discord/platform/action/PostMessage.html" title="class in com.xatkit.plugins.discord.platform.action"><code>PostMessage</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, <code>message</code> and <code>channel</code>.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/plugins/discord/platform/action/Reply.html#Reply-com.xatkit.plugins.discord.platform.DiscordPlatform-com.xatkit.core.session.XatkitSession-java.lang.String-">Reply</a></span>(<a href="../../../../../com/xatkit/plugins/discord/platform/DiscordPlatform.html" title="class in com.xatkit.plugins.discord.platform">DiscordPlatform</a>&nbsp;runtimePlatform,
-     <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
-     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
-<div class="block">Constructs a new <a href="../../../../../com/xatkit/plugins/discord/platform/action/Reply.html" title="class in com.xatkit.plugins.discord.platform.action"><code>Reply</code></a> with the provided <code>runtimePlatform</code>, <code>session</code>, and <code>message</code>.</div>
 </td>
 </tr>
 </tbody>
