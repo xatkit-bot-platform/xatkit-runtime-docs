@@ -24,10 +24,6 @@ com.xatkit.platform
 com.xatkit.platform.impl
 com.xatkit.platform.util
 com.xatkit.plugins
-com.xatkit.plugins.chat
-com.xatkit.plugins.chat.platform
-com.xatkit.plugins.chat.platform.action
-com.xatkit.plugins.chat.platform.io
 com.xatkit.plugins.core
 com.xatkit.plugins.core.platform
 com.xatkit.plugins.core.platform.action
