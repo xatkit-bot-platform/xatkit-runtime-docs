@@ -1093,6 +1093,10 @@
 <div class="block">Constructs a new instance of the provided <code>runtimePlatformClass</code> with the given <code>xatkitCore</code> and
  <code>configuration</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/util/XatkitEnvironmentConfiguration.html#containsKeyInternal-java.lang.String-">containsKeyInternal(String)</a></span> - Method in class com.xatkit.util.<a href="com/xatkit/util/XatkitEnvironmentConfiguration.html" title="class in com.xatkit.util">XatkitEnvironmentConfiguration</a></dt>
+<dd>
+<div class="block">Returns <code>true</code> if the configuration contains the provided <code>key</code>, <code>false</code> otherwise.</div>
+</dd>
 <dt><a href="com/xatkit/intent/Context.html" title="interface in com.xatkit.intent"><span class="typeNameLink">Context</span></a> - Interface in <a href="com/xatkit/intent/package-summary.html">com.xatkit.intent</a></dt>
 <dd>
 <div class="block">A representation of the model object '<em><b>Context</b></em>'.</div>
@@ -3930,6 +3934,10 @@
 <dd>
 <div class="block">Returns the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> defining the session behavior.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/Xatkit.html#getConfiguration--">getConfiguration()</a></span> - Static method in class com.xatkit.<a href="com/xatkit/Xatkit.html" title="class in com.xatkit">Xatkit</a></dt>
+<dd>
+<div class="block">Returns the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> used to initialize the <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> instance.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/IntentPackageImpl.html#getContext--">getContext()</a></span> - Method in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/IntentPackageImpl.html" title="class in com.xatkit.intent.impl">IntentPackageImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/IntentPackage.html#getContext--">getContext()</a></span> - Method in interface com.xatkit.intent.<a href="com/xatkit/intent/IntentPackage.html" title="interface in com.xatkit.intent">IntentPackage</a></dt>
@@ -5220,6 +5228,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/CommonPackageImpl.html#getPropertyAccess_Source--">getPropertyAccess_Source()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/CommonPackageImpl.html" title="class in com.xatkit.common.impl">CommonPackageImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/util/XatkitEnvironmentConfiguration.html#getPropertyInternal-java.lang.String-">getPropertyInternal(String)</a></span> - Method in class com.xatkit.util.<a href="com/xatkit/util/XatkitEnvironmentConfiguration.html" title="class in com.xatkit.util">XatkitEnvironmentConfiguration</a></dt>
+<dd>
+<div class="block">Retrieves the value associated to the provided <code>key</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/RecognizedIntentImpl.html#getRecognitionConfidence--">getRecognitionConfidence()</a></span> - Method in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/RecognizedIntentImpl.html" title="class in com.xatkit.intent.impl">RecognizedIntentImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/RecognizedIntent.html#getRecognitionConfidence--">getRecognitionConfidence()</a></span> - Method in interface com.xatkit.intent.<a href="com/xatkit/intent/RecognizedIntent.html" title="interface in com.xatkit.intent">RecognizedIntent</a></dt>
@@ -6459,8 +6471,7 @@
 <dl>
 <dt><span class="memberNameLink"><a href="com/xatkit/Xatkit.html#main-java.lang.String:A-">main(String[])</a></span> - Static method in class com.xatkit.<a href="com/xatkit/Xatkit.html" title="class in com.xatkit">Xatkit</a></dt>
 <dd>
-<div class="block">Starts the underlying <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> engine with the
- <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> retrieved from the provided <code>args</code>.</div>
+<div class="block">Starts the underlying <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> engine.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/IntentPackage.Literals.html#MAPPING_ENTITY_DEFINITION">MAPPING_ENTITY_DEFINITION</a></span> - Static variable in interface com.xatkit.intent.<a href="com/xatkit/intent/IntentPackage.Literals.html" title="interface in com.xatkit.intent">IntentPackage.Literals</a></dt>
 <dd>
@@ -8656,6 +8667,14 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/XatkitCore.html#XatkitCore-org.apache.commons.configuration2.Configuration-">XatkitCore(Configuration)</a></span> - Constructor for class com.xatkit.core.<a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core">XatkitCore</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> instance from the provided <code>configuration</code>.</div>
+</dd>
+<dt><a href="com/xatkit/util/XatkitEnvironmentConfiguration.html" title="class in com.xatkit.util"><span class="typeNameLink">XatkitEnvironmentConfiguration</span></a> - Class in <a href="com/xatkit/util/package-summary.html">com.xatkit.util</a></dt>
+<dd>
+<div class="block">A <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/MapConfiguration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>MapConfiguration</code></a> initialized with <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/System.html?is-external=true#getenv--" title="class or interface in java.lang"><code>System.getenv()</code></a> variables.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/util/XatkitEnvironmentConfiguration.html#XatkitEnvironmentConfiguration--">XatkitEnvironmentConfiguration()</a></span> - Constructor for class com.xatkit.util.<a href="com/xatkit/util/XatkitEnvironmentConfiguration.html" title="class in com.xatkit.util">XatkitEnvironmentConfiguration</a></dt>
+<dd>
+<div class="block">Creates a <a href="com/xatkit/util/XatkitEnvironmentConfiguration.html" title="class in com.xatkit.util"><code>XatkitEnvironmentConfiguration</code></a> initialized with <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/System.html?is-external=true#getenv--" title="class or interface in java.lang"><code>System.getenv()</code></a> values.</div>
 </dd>
 <dt><a href="com/xatkit/core/XatkitException.html" title="class in com.xatkit.core"><span class="typeNameLink">XatkitException</span></a> - Exception in <a href="com/xatkit/core/package-summary.html">com.xatkit.core</a></dt>
 <dd>
