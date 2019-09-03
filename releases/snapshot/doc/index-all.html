@@ -5250,7 +5250,7 @@
 <dd>
 <div class="block">Returns the <a href="com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition"><code>RecognitionMonitor</code></a> associated to this intent recognition provider.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html#getRecognizedIntent-java.lang.String-com.xatkit.core.session.XatkitSession-">getRecognizedIntent(String, XatkitSession)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="class in com.xatkit.core.platform.io">RuntimeIntentProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/IntentRecognitionHelper.html#getRecognizedIntent-java.lang.String-com.xatkit.core.session.XatkitSession-com.xatkit.core.XatkitCore-">getRecognizedIntent(String, XatkitSession, XatkitCore)</a></span> - Static method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/IntentRecognitionHelper.html" title="class in com.xatkit.core.platform.io">IntentRecognitionHelper</a></dt>
 <dd>
 <div class="block">Returns the <a href="com/xatkit/intent/RecognizedIntent.html" title="interface in com.xatkit.intent"><code>RecognizedIntent</code></a> from the provided user <code>input</code> and <code>session</code>.</div>
 </dd>
@@ -6017,6 +6017,12 @@
 <dd>
 <div class="block">The <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> used to store RegExp <a href="http://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html?is-external=true" title="class or interface in java.util.regex"><code>Pattern</code></a>s associated to the registered <a href="com/xatkit/intent/IntentDefinition.html" title="interface in com.xatkit.intent"><code>IntentDefinition</code></a>.</div>
 </dd>
+<dt><a href="com/xatkit/core/platform/io/IntentRecognitionHelper.html" title="class in com.xatkit.core.platform.io"><span class="typeNameLink">IntentRecognitionHelper</span></a> - Class in <a href="com/xatkit/core/platform/io/package-summary.html">com.xatkit.core.platform.io</a></dt>
+<dd>
+<div class="block">A helper class that provides method to extract intents from input text.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/IntentRecognitionHelper.html#IntentRecognitionHelper--">IntentRecognitionHelper()</a></span> - Constructor for class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/IntentRecognitionHelper.html" title="class in com.xatkit.core.platform.io">IntentRecognitionHelper</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><span class="typeNameLink">IntentRecognitionProvider</span></a> - Interface in <a href="com/xatkit/core/recognition/package-summary.html">com.xatkit.core.recognition</a></dt>
 <dd>
 <div class="block">A unified wrapper for concrete intent recognition providers.</div>
@@ -7673,18 +7679,6 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/RuntimeEventProvider.html#RuntimeEventProvider-T-org.apache.commons.configuration2.Configuration-">RuntimeEventProvider(T, Configuration)</a></span> - Constructor for class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io">RuntimeEventProvider</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> with the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
-</dd>
-<dt><a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="class in com.xatkit.core.platform.io"><span class="typeNameLink">RuntimeIntentProvider</span></a>&lt;<a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="type parameter in RuntimeIntentProvider">T</a> extends <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&gt; - Class in <a href="com/xatkit/core/platform/io/package-summary.html">com.xatkit.core.platform.io</a></dt>
-<dd>
-<div class="block">A specialised <a href="com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> that extracts <a href="com/xatkit/intent/RecognizedIntent.html" title="interface in com.xatkit.intent"><code>RecognizedIntent</code></a> from textual user inputs.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html#RuntimeIntentProvider-T-">RuntimeIntentProvider(T)</a></span> - Constructor for class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="class in com.xatkit.core.platform.io">RuntimeIntentProvider</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeIntentProvider</code></a> from the provided <code>xatkitCore</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html#RuntimeIntentProvider-T-org.apache.commons.configuration2.Configuration-">RuntimeIntentProvider(T, Configuration)</a></span> - Constructor for class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="class in com.xatkit.core.platform.io">RuntimeIntentProvider</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/core/platform/io/RuntimeIntentProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeIntentProvider</code></a> with the provided <code>runtimePlatform</code> and <code>configuration</code>.</div>
 </dd>
 <dt><a href="com/xatkit/core/platform/action/RuntimeMessageAction.html" title="class in com.xatkit.core.platform.action"><span class="typeNameLink">RuntimeMessageAction</span></a>&lt;<a href="com/xatkit/core/platform/action/RuntimeMessageAction.html" title="type parameter in RuntimeMessageAction">T</a> extends <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&gt; - Class in <a href="com/xatkit/core/platform/action/package-summary.html">com.xatkit.core.platform.action</a></dt>
 <dd>
