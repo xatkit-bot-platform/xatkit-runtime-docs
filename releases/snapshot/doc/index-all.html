@@ -86,13 +86,13 @@
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the abstract platform bindings.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html#acceptContentType-java.lang.String-">acceptContentType(String)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html" title="class in com.xatkit.core.platform.io">JsonWebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.html#acceptContentType-java.lang.String-">acceptContentType(String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></dt>
 <dd>
 <div class="block">Returns <code>true</code> if the provided <code>contentType</code> represents a Json content, <code>false</code> otherwise.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#acceptContentType-java.lang.String-">acceptContentType(String)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandler.html#acceptContentType-java.lang.String-">acceptContentType(String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></dt>
 <dd>
-<div class="block">Returns whether the <a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> accepts the provided <code>contentType</code>.</div>
+<div class="block">Returns whether the <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> accepts the provided <code>contentType</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/execution/impl/ActionInstanceImpl.html#action">action</a></span> - Variable in class com.xatkit.execution.impl.<a href="com/xatkit/execution/impl/ActionInstanceImpl.html" title="class in com.xatkit.execution.impl">ActionInstanceImpl</a></dt>
 <dd>
@@ -722,6 +722,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/EventDefinitionRegistry.html#clearEventDefinitions--">clearEventDefinitions()</a></span> - Method in class com.xatkit.core.<a href="com/xatkit/core/EventDefinitionRegistry.html" title="class in com.xatkit.core">EventDefinitionRegistry</a></dt>
 <dd>
 <div class="block">Unregisters all the <a href="com/xatkit/intent/EventDefinition.html" title="interface in com.xatkit.intent"><code>EventDefinition</code></a>s from this registry.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#clearRegisteredRestHandlers--">clearRegisteredRestHandlers()</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dd>
+<div class="block">Clears the registered <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>s.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/RuntimePlatformRegistry.html#clearRuntimePlatforms--">clearRuntimePlatforms()</a></span> - Method in class com.xatkit.core.<a href="com/xatkit/core/RuntimePlatformRegistry.html" title="class in com.xatkit.core">RuntimePlatformRegistry</a></dt>
 <dd>
@@ -1669,6 +1673,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/IntentFactoryImpl.html#createFromString-org.eclipse.emf.ecore.EDataType-java.lang.String-">createFromString(EDataType, String)</a></span> - Method in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/IntentFactoryImpl.html" title="class in com.xatkit.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/HttpEntityHelper.html#createHttpEntity-java.lang.Object-">createHttpEntity(Object)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/HttpEntityHelper.html" title="class in com.xatkit.core.server">HttpEntityHelper</a></dt>
+<dd>
+<div class="block">Creates an <code>HttpEntity</code> from the provided <code>object</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/CommonFactory.html#createIfExpression--">createIfExpression()</a></span> - Method in interface com.xatkit.common.<a href="com/xatkit/common/CommonFactory.html" title="interface in com.xatkit.common">CommonFactory</a></dt>
 <dd>
 <div class="block">Returns a new object of class '<em>If Expression</em>'.</div>
@@ -1724,6 +1732,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/util/IntentAdapterFactory.html#createIntentDefinitionAdapter--">createIntentDefinitionAdapter()</a></span> - Method in class com.xatkit.intent.util.<a href="com/xatkit/intent/util/IntentAdapterFactory.html" title="class in com.xatkit.intent.util">IntentAdapterFactory</a></dt>
 <dd>
 <div class="block">Creates a new adapter for an object of class '<a href="com/xatkit/intent/IntentDefinition.html" title="interface in com.xatkit.intent"><code><em>Definition</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerFactory.html#createJsonRestHandler-com.xatkit.core.server.RestHandlerFactory.JsonRestHandlerFunction-">createJsonRestHandler(RestHandlerFactory.JsonRestHandlerFunction)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server">RestHandlerFactory</a></dt>
+<dd>
+<div class="block">Creates a <a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><code>JsonRestHandler</code></a> and sets its handling method with the provided <code>function</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/IntentFactoryImpl.html#createLibrary--">createLibrary()</a></span> - Method in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/IntentFactoryImpl.html" title="class in com.xatkit.intent.impl">IntentFactoryImpl</a></dt>
 <dd>&nbsp;</dd>
@@ -1910,6 +1922,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/util/IntentAdapterFactory.html#createRecognizedIntentAdapter--">createRecognizedIntentAdapter()</a></span> - Method in class com.xatkit.intent.util.<a href="com/xatkit/intent/util/IntentAdapterFactory.html" title="class in com.xatkit.intent.util">IntentAdapterFactory</a></dt>
 <dd>
 <div class="block">Creates a new adapter for an object of class '<a href="com/xatkit/intent/RecognizedIntent.html" title="interface in com.xatkit.intent"><code><em>Recognized Intent</em></code></a>'.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#createRestHandler--">createRestHandler()</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
+<dd>
+<div class="block">Returns the concrete <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> instance that handles incoming Rest requests.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-com.xatkit.execution.ActionInstance-com.xatkit.core.session.XatkitSession-com.xatkit.core.interpreter.ExecutionContext-">createRuntimeAction(ActionInstance, XatkitSession, ExecutionContext)</a></span> - Method in class com.xatkit.core.platform.<a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a></dt>
 <dd>
@@ -3721,10 +3737,10 @@
 <dd>
 <div class="block">Returns the '<em><b>Entity Type</b></em>' literal with the specified integer value.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#getAccessControlAllowHeaders--">getAccessControlAllowHeaders()</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandler.html#getAccessControlAllowHeaders--">getAccessControlAllowHeaders()</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></dt>
 <dd>
 <div class="block">Returns the <code>Access-Control-Allow-Headers</code> HTTP header values that must be set by the server when
- calling this provider.</div>
+ calling this handler.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/execution/ActionInstance.html#getAction--">getAction()</a></span> - Method in interface com.xatkit.execution.<a href="com/xatkit/execution/ActionInstance.html" title="interface in com.xatkit.execution">ActionInstance</a></dt>
 <dd>
@@ -4156,6 +4172,10 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/IfExpressionImpl.html#getElseInstructions--">getElseInstructions()</a></span> - Method in class com.xatkit.common.impl.<a href="com/xatkit/common/impl/IfExpressionImpl.html" title="class in com.xatkit.common.impl">IfExpressionImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#getEndpointURI--">getEndpointURI()</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
+<dd>
+<div class="block">Returns the URI of the Rest endpoint to register the provider to.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/CompositeEntityDefinitionEntry.html#getEntities--">getEntities()</a></span> - Method in interface com.xatkit.intent.<a href="com/xatkit/intent/CompositeEntityDefinitionEntry.html" title="interface in com.xatkit.intent">CompositeEntityDefinitionEntry</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/CompositeEntityDefinitionEntryImpl.html#getEntities--">getEntities()</a></span> - Method in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/CompositeEntityDefinitionEntryImpl.html" title="class in com.xatkit.intent.impl">CompositeEntityDefinitionEntryImpl</a></dt>
@@ -4523,7 +4543,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/CompositeEntityDefinitionEntryImpl.html#getFragments--">getFragments()</a></span> - Method in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/CompositeEntityDefinitionEntryImpl.html" title="class in com.xatkit.intent.impl">CompositeEntityDefinitionEntryImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#getHeaderValue-org.apache.http.Header:A-java.lang.String-">getHeaderValue(Header[], String)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandler.html#getHeaderValue-java.util.List-java.lang.String-">getHeaderValue(List&lt;Header&gt;, String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></dt>
 <dd>
 <div class="block">Returns the <code>Header</code> value associated to the provided <code>headerKey</code>.</div>
 </dd>
@@ -4707,7 +4727,7 @@
 <dd>
 <div class="block">Extracts the <code>JsonElement</code> contained in the provided <code>is</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.JsonHelper.html#getJsonElementFromJsonObject-com.google.gson.JsonObject-java.lang.String-">getJsonElementFromJsonObject(JsonObject, String)</a></span> - Static method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.JsonHelper.html" title="class in com.xatkit.core.platform.io">JsonWebhookEventProvider.JsonHelper</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.JsonHelper.html#getJsonElementFromJsonObject-com.google.gson.JsonObject-java.lang.String-">getJsonElementFromJsonObject(JsonObject, String)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.JsonHelper.html" title="class in com.xatkit.core.server">JsonRestHandler.JsonHelper</a></dt>
 <dd>
 <div class="block">Returns the <code>JsonElement</code> associated to the given <code>key</code> in the provided <code>object</code>.</div>
 </dd>
@@ -5296,9 +5316,17 @@
 <dd>
 <div class="block">Returns the value of the '<em><b>Referred Variable</b></em>' reference.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#getRegisteredWebhookEventProviders--">getRegisteredWebhookEventProviders()</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#getRegisteredRestHandler-java.lang.String-">getRegisteredRestHandler(String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
 <dd>
-<div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>s.</div>
+<div class="block">Returns the <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> associated to the provided <code>uri</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#getRegisteredRestHandlers--">getRegisteredRestHandlers()</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dd>
+<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>s.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#getRestHandler--">getRestHandler()</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
+<dd>
+<div class="block">Returns the <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> embedded in this provider.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeActionResult.html#getResult--">getResult()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action">RuntimeActionResult</a></dt>
 <dd>
@@ -5574,26 +5602,26 @@
 </a>
 <h2 class="title">H</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.html#handle-java.util.List-java.util.List-com.google.gson.JsonElement-">handle(List&lt;Header&gt;, List&lt;NameValuePair&gt;, JsonElement)</a></span> - Method in interface com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.html" title="interface in com.xatkit.core.server">JsonRestHandler</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html#handle-java.util.List-java.util.List-com.google.gson.JsonElement-">handle(List&lt;Header&gt;, List&lt;NameValuePair&gt;, JsonElement)</a></span> - Method in interface com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server">RestHandlerFactory.JsonRestHandlerFunction</a></dt>
 <dd>
-<div class="block">Handles the provided HTTP request.</div>
+<div class="block">The handling function of <a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><code>JsonRestHandler</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#handleContent-java.lang.Object-org.apache.http.Header:A-">handleContent(Object, Header[])</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandler.html#handleContent-java.util.List-java.util.List-java.lang.Object-">handleContent(List&lt;Header&gt;, List&lt;NameValuePair&gt;, Object)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></dt>
 <dd>
-<div class="block">Handles the raw HTTP request content and headers.</div>
+<div class="block">Handles the raw HTTP request.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/ExecutionService.html#handleEventInstance-com.xatkit.intent.EventInstance-com.xatkit.core.session.XatkitSession-">handleEventInstance(EventInstance, XatkitSession)</a></span> - Method in class com.xatkit.core.<a href="com/xatkit/core/ExecutionService.html" title="class in com.xatkit.core">ExecutionService</a></dt>
 <dd>
 <div class="block">Handles the provided <code>eventInstance</code> and executes the corresponding <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>s defined in the
  <a href="com/xatkit/execution/ExecutionModel.html" title="interface in com.xatkit.execution"><code>ExecutionModel</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html#handleParsedContent-com.google.gson.JsonElement-org.apache.http.Header:A-">handleParsedContent(JsonElement, Header[])</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html" title="class in com.xatkit.core.platform.io">JsonWebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.html#handleParsedContent-java.util.List-java.util.List-com.google.gson.JsonElement-">handleParsedContent(List&lt;Header&gt;, List&lt;NameValuePair&gt;, JsonElement)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></dt>
 <dd>
-<div class="block">Handles the <code>JsonElement</code> representing the request content.</div>
+<div class="block">Handles the received <code>headers</code>, <code>params</code>, and <code>JsonElement</code> parsed from the request payload.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#handleParsedContent-C-org.apache.http.Header:A-">handleParsedContent(C, Header[])</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandler.html#handleParsedContent-java.util.List-java.util.List-C-">handleParsedContent(List&lt;Header&gt;, List&lt;NameValuePair&gt;, C)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></dt>
 <dd>
-<div class="block">Handles the parsed request content and headers.</div>
+<div class="block">Handles the received <code>headers</code>, <code>params</code>, and parsed payload.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RestAction.html#handleResponse-com.mashape.unirest.http.Headers-int-java.io.InputStream-">handleResponse(Headers, int, InputStream)</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RestAction.html" title="class in com.xatkit.core.platform.action">RestAction</a></dt>
 <dd>
@@ -5615,6 +5643,12 @@
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/core/platform/io/JsonEventMatcher.HeaderValue.html" title="class in com.xatkit.core.platform.io"><code>JsonEventMatcher.HeaderValue</code></a> from the provided <code>key</code> and <code>value</code>.</div>
 </dd>
+<dt><a href="com/xatkit/core/server/HttpEntityHelper.html" title="class in com.xatkit.core.server"><span class="typeNameLink">HttpEntityHelper</span></a> - Class in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
+<dd>
+<div class="block">Contains utility methods to manipulate and create <code>HttpEntity</code> instances.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/HttpEntityHelper.html#HttpEntityHelper--">HttpEntityHelper()</a></span> - Constructor for class com.xatkit.core.server.<a href="com/xatkit/core/server/HttpEntityHelper.html" title="class in com.xatkit.core.server">HttpEntityHelper</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:I">
 <!--   -->
@@ -6218,27 +6252,18 @@
 <dd>
 <div class="block">A pair representing a <code>Header</code> value to match.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.JsonHelper.html#JsonHelper--">JsonHelper()</a></span> - Constructor for class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.JsonHelper.html" title="class in com.xatkit.core.platform.io">JsonWebhookEventProvider.JsonHelper</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.JsonHelper.html#JsonHelper--">JsonHelper()</a></span> - Constructor for class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.JsonHelper.html" title="class in com.xatkit.core.server">JsonRestHandler.JsonHelper</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/xatkit/core/server/JsonRestHandler.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">JsonRestHandler</span></a> - Interface in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
+<dt><a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><span class="typeNameLink">JsonRestHandler</span></a> - Class in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
 <dd>
 <div class="block">A handler that receives HTTP requests and process them.</div>
 </dd>
-<dt><a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><span class="typeNameLink">JsonWebhookEventProvider</span></a>&lt;<a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html" title="type parameter in JsonWebhookEventProvider">T</a> extends <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&gt; - Class in <a href="com/xatkit/core/platform/io/package-summary.html">com.xatkit.core.platform.io</a></dt>
-<dd>
-<div class="block">A Json <a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> that provides utility methods to parse and manipulate Json HTTP requests.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-T-">JsonWebhookEventProvider(T)</a></span> - Constructor for class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html" title="class in com.xatkit.core.platform.io">JsonWebhookEventProvider</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>JsonWebhookEventProvider</code></a> with the provided <code>runtimePlatform</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html#JsonWebhookEventProvider-T-org.apache.commons.configuration2.Configuration-">JsonWebhookEventProvider(T, Configuration)</a></span> - Constructor for class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html" title="class in com.xatkit.core.platform.io">JsonWebhookEventProvider</a></dt>
-<dd>
-<div class="block">Constructs a new <a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>JsonWebhookEventProvider</code></a> with the provided <code>runtimePlatform</code> and
- <code>configuration</code>.</div>
-</dd>
-<dt><a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.JsonHelper.html" title="class in com.xatkit.core.platform.io"><span class="typeNameLink">JsonWebhookEventProvider.JsonHelper</span></a> - Class in <a href="com/xatkit/core/platform/io/package-summary.html">com.xatkit.core.platform.io</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.html#JsonRestHandler--">JsonRestHandler()</a></span> - Constructor for class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/xatkit/core/server/JsonRestHandler.JsonHelper.html" title="class in com.xatkit.core.server"><span class="typeNameLink">JsonRestHandler.JsonHelper</span></a> - Class in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
+<dd>
+<div class="block">A static class containing utility methods to manipulate Json contents.</div>
+</dd>
 </dl>
 <a name="I:K">
 <!--   -->
@@ -6571,7 +6596,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/MappingEntityDefinitionImpl.html#MappingEntityDefinitionImpl--">MappingEntityDefinitionImpl()</a></span> - Constructor for class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/MappingEntityDefinitionImpl.html" title="class in com.xatkit.intent.impl">MappingEntityDefinitionImpl</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonEventMatcher.html#match-org.apache.http.Header:A-com.google.gson.JsonElement-">match(Header[], JsonElement)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonEventMatcher.html" title="class in com.xatkit.core.platform.io">JsonEventMatcher</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonEventMatcher.html#match-java.util.List-com.google.gson.JsonElement-">match(List&lt;Header&gt;, JsonElement)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonEventMatcher.html" title="class in com.xatkit.core.platform.io">JsonEventMatcher</a></dt>
 <dd>
 <div class="block">Matches the provided <code>headers</code> and <code>content</code> against the registered <a href="com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent"><code>EventInstance</code></a>s.</div>
 </dd>
@@ -6827,13 +6852,9 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/interpreter/operation/object/NotEqualOperation.html#NotEqualOperation--">NotEqualOperation()</a></span> - Constructor for class com.xatkit.core.interpreter.operation.object.<a href="com/xatkit/core/interpreter/operation/object/NotEqualOperation.html" title="class in com.xatkit.core.interpreter.operation.object">NotEqualOperation</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-com.google.gson.JsonElement-">notifyRestHandler(String, List&lt;Header&gt;, List&lt;NameValuePair&gt;, JsonElement)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-java.lang.Object-java.lang.String-">notifyRestHandler(String, List&lt;Header&gt;, List&lt;NameValuePair&gt;, Object, String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
 <dd>
 <div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-org.apache.http.Header:A-">notifyWebhookEventProviders(String, Object, Header[])</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
-<dd>
-<div class="block">Notifies the registered <a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.Literals.html#NUMBER_LITERAL">NUMBER_LITERAL</a></span> - Static variable in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.Literals.html" title="interface in com.xatkit.common">CommonPackage.Literals</a></dt>
 <dd>
@@ -7129,11 +7150,11 @@
 <dd>
 <div class="block">A <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing user-defined parameters to include in the request.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonWebhookEventProvider.html" title="class in com.xatkit.core.platform.io">JsonWebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></dt>
 <dd>
 <div class="block">Parses the provided raw HTTP request content into a <code>JsonElement</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandler.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></dt>
 <dd>
 <div class="block">Parses the provided raw HTTP request content.</div>
 </dd>
@@ -7571,7 +7592,7 @@
 <dd>
 <div class="block">Registers a matched <code>input</code> and the corresponding <code>intent</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-java.lang.String-com.xatkit.core.server.JsonRestHandler-">registerRestEndpoint(String, JsonRestHandler)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-java.lang.String-com.xatkit.core.server.RestHandler-">registerRestEndpoint(String, RestHandler)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
 <dd>
 <div class="block">Registers the provided <code>handler</code> as a REST endpoint for the provided <code>uri</code>.</div>
 </dd>
@@ -7615,6 +7636,22 @@
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/core/platform/action/RestGetAction.html" title="class in com.xatkit.core.platform.action"><code>RestGetAction</code></a>.</div>
 </dd>
+<dt><a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><span class="typeNameLink">RestHandler</span></a>&lt;<a href="com/xatkit/core/server/RestHandler.html" title="type parameter in RestHandler">C</a>&gt; - Class in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
+<dd>
+<div class="block">A generic Rest request handler.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandler.html#RestHandler--">RestHandler()</a></span> - Constructor for class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server"><span class="typeNameLink">RestHandlerFactory</span></a> - Class in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
+<dd>
+<div class="block">A <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> factory providing utility methods to create specific <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> instances.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerFactory.html#RestHandlerFactory--">RestHandlerFactory()</a></span> - Constructor for class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server">RestHandlerFactory</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">RestHandlerFactory.JsonRestHandlerFunction</span></a> - Interface in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
+<dd>
+<div class="block">A functional interface representing the handling function of <a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><code>JsonRestHandler</code></a>.</div>
+</dd>
 <dt><a href="com/xatkit/core/platform/action/RestPostAction.html" title="class in com.xatkit.core.platform.action"><span class="typeNameLink">RestPostAction</span></a>&lt;<a href="com/xatkit/core/platform/action/RestPostAction.html" title="type parameter in RestPostAction">T</a> extends <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&gt; - Class in <a href="com/xatkit/core/platform/action/package-summary.html">com.xatkit.core.platform.action</a></dt>
 <dd>
 <div class="block">A generic REST POST action.</div>
@@ -7622,6 +7659,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RestPostAction.html#RestPostAction-T-com.xatkit.core.session.XatkitSession-java.util.Map-java.lang.String-java.util.Map-com.google.gson.JsonElement-">RestPostAction(T, XatkitSession, Map&lt;String, String&gt;, String, Map&lt;String, Object&gt;, JsonElement)</a></span> - Constructor for class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RestPostAction.html" title="class in com.xatkit.core.platform.action">RestPostAction</a></dt>
 <dd>
 <div class="block">Constructs a new <a href="com/xatkit/core/platform/action/RestPostAction.html" title="class in com.xatkit.core.platform.action"><code>RestPostAction</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#run--">run()</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
+<dd>
+<div class="block">Runs the provider.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/platform/impl/PlatformDefinitionImpl.html#RUNTIME_PATH_EDEFAULT">RUNTIME_PATH_EDEFAULT</a></span> - Static variable in class com.xatkit.platform.impl.<a href="com/xatkit/platform/impl/PlatformDefinitionImpl.html" title="class in com.xatkit.platform.impl">PlatformDefinitionImpl</a></dt>
 <dd>
@@ -8620,10 +8661,9 @@ the order they are declared.</div>
 </a>
 <h2 class="title">W</h2>
 <dl>
-<dt><a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><span class="typeNameLink">WebhookEventProvider</span></a>&lt;<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a> extends <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>,<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">C</a>&gt; - Class in <a href="com/xatkit/core/platform/io/package-summary.html">com.xatkit.core.platform.io</a></dt>
+<dt><a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><span class="typeNameLink">WebhookEventProvider</span></a>&lt;<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">T</a> extends <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>,<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">H</a> extends <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&gt; - Class in <a href="com/xatkit/core/platform/io/package-summary.html">com.xatkit.core.platform.io</a></dt>
 <dd>
-<div class="block">A specialised <a href="com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> that handles HTTP requests sent by the
- <a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.</div>
+<div class="block">A specialised <a href="com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> that handles Rest requests sent by the <a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/WebhookEventProvider.html#WebhookEventProvider-T-">WebhookEventProvider(T)</a></span> - Constructor for class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a></dt>
 <dd>

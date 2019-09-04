@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":10,"i1":6,"i2":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -49,8 +49,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li><a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/HttpEntityHelper.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/JsonRestHandler.JsonHelper.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/xatkit/core/server/JsonRestHandler.html" target="_top">Frames</a></li>
@@ -74,15 +74,15 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -93,20 +93,29 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">com.xatkit.core.server</div>
-<h2 title="Interface JsonRestHandler" class="title">Interface JsonRestHandler</h2>
+<h2 title="Class JsonRestHandler" class="title">Class JsonRestHandler</h2>
 </div>
 <div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">com.xatkit.core.server.RestHandler</a>&lt;com.google.gson.JsonElement&gt;</li>
+<li>
+<ul class="inheritance">
+<li>com.xatkit.core.server.JsonRestHandler</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>Functional Interface:</dt>
-<dd>This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.</dd>
-</dl>
 <hr>
 <br>
-<pre><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang">@FunctionalInterface</a>
-public interface <span class="typeNameLabel">JsonRestHandler</span></pre>
+<pre>public abstract class <span class="typeNameLabel">JsonRestHandler</span>
+extends <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&lt;com.google.gson.JsonElement&gt;</pre>
 <div class="block">A handler that receives HTTP requests and process them.
  <p>
  This interface can be used to define REST endpoint from <a href="../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a>s.
@@ -131,6 +140,44 @@ public interface <span class="typeNameLabel">JsonRestHandler</span></pre>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/JsonRestHandler.JsonHelper.html" title="class in com.xatkit.core.server">JsonRestHandler.JsonHelper</a></span></code>
+<div class="block">A static class containing utility methods to manipulate Json contents.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/JsonRestHandler.html#JsonRestHandler--">JsonRestHandler</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -138,20 +185,46 @@ public interface <span class="typeNameLabel">JsonRestHandler</span></pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>com.google.gson.JsonElement</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/JsonRestHandler.html#handle-java.util.List-java.util.List-com.google.gson.JsonElement-">handle</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;headers,
-      <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
-      com.google.gson.JsonElement&nbsp;content)</code>
-<div class="block">Handles the provided HTTP request.</div>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/JsonRestHandler.html#acceptContentType-java.lang.String-">acceptContentType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>
+<div class="block">Returns <code>true</code> if the provided <code>contentType</code> represents a Json content, <code>false</code> otherwise.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>abstract com.google.gson.JsonElement</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/JsonRestHandler.html#handleParsedContent-java.util.List-java.util.List-com.google.gson.JsonElement-">handleParsedContent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;headers,
+                   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
+                   com.google.gson.JsonElement&nbsp;content)</code>
+<div class="block">Handles the received <code>headers</code>, <code>params</code>, and <code>JsonElement</code> parsed from the request payload.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected com.google.gson.JsonElement</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/JsonRestHandler.html#parseContent-java.lang.Object-">parseContent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)</code>
+<div class="block">Parses the provided raw HTTP request content into a <code>JsonElement</code>.</div>
 </td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.xatkit.core.server.RestHandler">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.xatkit.core.server.<a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></h3>
+<code><a href="../../../../com/xatkit/core/server/RestHandler.html#getAccessControlAllowHeaders--">getAccessControlAllowHeaders</a>, <a href="../../../../com/xatkit/core/server/RestHandler.html#getHeaderValue-java.util.List-java.lang.String-">getHeaderValue</a>, <a href="../../../../com/xatkit/core/server/RestHandler.html#handleContent-java.util.List-java.util.List-java.lang.Object-">handleContent</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -160,35 +233,96 @@ public interface <span class="typeNameLabel">JsonRestHandler</span></pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="JsonRestHandler--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>JsonRestHandler</h4>
+<pre>public&nbsp;JsonRestHandler()</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="handle-java.util.List-java.util.List-com.google.gson.JsonElement-">
+<a name="acceptContentType-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>acceptContentType</h4>
+<pre>public final&nbsp;boolean&nbsp;acceptContentType(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
+<div class="block">Returns <code>true</code> if the provided <code>contentType</code> represents a Json content, <code>false</code> otherwise.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/xatkit/core/server/RestHandler.html#acceptContentType-java.lang.String-">acceptContentType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&lt;com.google.gson.JsonElement&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>contentType</code> - the content type to check</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><code>true</code> if the provided <code>contentType</code> represents a Json content, <code>false</code> otherwise</dd>
+</dl>
+</li>
+</ul>
+<a name="parseContent-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parseContent</h4>
+<pre>protected final&nbsp;com.google.gson.JsonElement&nbsp;parseContent(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)</pre>
+<div class="block">Parses the provided raw HTTP request content into a <code>JsonElement</code>.
+ <p>
+ This method is internally used to fill the <a href="../../../../com/xatkit/core/server/JsonRestHandler.html#handleParsedContent-java.util.List-java.util.List-com.google.gson.JsonElement-"><code>handleParsedContent(List, List, JsonElement)</code></a> parameter
+ with the <code>JsonElement</code> constructed from the raw request content.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/xatkit/core/server/RestHandler.html#parseContent-java.lang.Object-">parseContent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&lt;com.google.gson.JsonElement&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>content</code> - the raw HTTP request content to parse</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a <code>JsonElement</code> representing the raw request content</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if the provided <code>content</code> is cannot be parsed by the <code>JsonParser</code>.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/xatkit/core/server/JsonRestHandler.html#handleParsedContent-java.util.List-java.util.List-com.google.gson.JsonElement-"><code>handleParsedContent(List, List, JsonElement)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="handleParsedContent-java.util.List-java.util.List-com.google.gson.JsonElement-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>handle</h4>
-<pre>com.google.gson.JsonElement&nbsp;handle(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                                   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;headers,
-                                   <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
-                                   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
-                                   <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                   com.google.gson.JsonElement&nbsp;content)</pre>
-<div class="block">Handles the provided HTTP request.
- <p>
- This method is called by the <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a> when receiving a HTTP request on the URI associated to this
- <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="interface in com.xatkit.core.server"><code>JsonRestHandler</code></a>.</div>
+<h4>handleParsedContent</h4>
+<pre>public abstract&nbsp;com.google.gson.JsonElement&nbsp;handleParsedContent(<a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                                <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;headers,
+                                                                <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                                <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
+                                                                <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                                                com.google.gson.JsonElement&nbsp;content)</pre>
+<div class="block">Handles the received <code>headers</code>, <code>params</code>, and <code>JsonElement</code> parsed from the request payload.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../com/xatkit/core/server/RestHandler.html#handleParsedContent-java.util.List-java.util.List-C-">handleParsedContent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&lt;com.google.gson.JsonElement&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>headers</code> - the <code>Header</code>s of the HTTP request</dd>
-<dd><code>params</code> - the parameters of the HTTP request</dd>
+<dd><code>headers</code> - the HTTP headers of the received request</dd>
+<dd><code>params</code> - the request parameters</dd>
 <dd><code>content</code> - the <code>JsonElement</code> representing the content of the HTTP request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <code>JsonElement</code> containing the endpoint response, or <code>null</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/xatkit/core/server/RestHandler.html#parseContent-java.lang.Object-"><code>RestHandler.parseContent(Object)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -220,8 +354,8 @@ public interface <span class="typeNameLabel">JsonRestHandler</span></pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li><a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/HttpEntityHelper.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/JsonRestHandler.JsonHelper.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/xatkit/core/server/JsonRestHandler.html" target="_top">Frames</a></li>
@@ -245,15 +379,15 @@ public interface <span class="typeNameLabel">JsonRestHandler</span></pre>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

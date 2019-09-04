@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
@@ -185,78 +185,83 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#clearRegisteredRestHandlers--">clearRegisteredRestHandlers</a></span>()</code>
+<div class="block">Clears the registered <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>s.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected org.apache.http.impl.bootstrap.HttpServer</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getHttpServer--">getHttpServer</a></span>()</code>
 <div class="block">Returns the underlying <code>HttpServer</code> used to receive requests.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getPort--">getPort</a></span>()</code>
 <div class="block">Returns the port the server is listening to.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getRegisteredWebhookEventProviders--">getRegisteredWebhookEventProviders</a></span>()</code>
-<div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>s.</div>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getRegisteredRestHandler-java.lang.String-">getRegisteredRestHandler</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
+<div class="block">Returns the <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> associated to the provided <code>uri</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getRegisteredRestHandlers--">getRegisteredRestHandlers</a></span>()</code>
+<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>s.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#isRestEndpoint-java.lang.String-">isRestEndpoint</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
 <div class="block">Returns whether the provided <code>uri</code> is associated to a REST endpoint.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#isStarted--">isStarted</a></span>()</code>
 <div class="block">Returns <code>true</code> if the <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a> is started, <code>false</code> otherwise.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>com.google.gson.JsonElement</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-com.google.gson.JsonElement-">notifyRestHandler</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                 <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;header,
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-java.lang.Object-java.lang.String-">notifyRestHandler</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                 <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;headers,
                  <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
-                 com.google.gson.JsonElement&nbsp;content)</code>
+                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
+                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>
 <div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-org.apache.http.Header:A-">notifyWebhookEventProviders</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
-                           <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
-                           org.apache.http.Header[]&nbsp;headers)</code>
-<div class="block">Notifies the registered <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-java.lang.String-com.xatkit.core.server.JsonRestHandler-">registerRestEndpoint</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                    <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="interface in com.xatkit.core.server">JsonRestHandler</a>&nbsp;handler)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-java.lang.String-com.xatkit.core.server.RestHandler-">registerRestEndpoint</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                    <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&nbsp;handler)</code>
 <div class="block">Registers the provided <code>handler</code> as a REST endpoint for the provided <code>uri</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerWebhookEventProvider-com.xatkit.core.platform.io.WebhookEventProvider-">registerWebhookEventProvider</a></span>(<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
 <div class="block">Register a <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#start--">start</a></span>()</code>
 <div class="block">Starts the underlying <code>HttpServer</code>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#stop--">stop</a></span>()</code>
 <div class="block">Stops the underlying <code>HttpServer</code>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#unregisterWebhookEventProvider-com.xatkit.core.platform.io.WebhookEventProvider-">unregisterWebhookEventProvider</a></span>(<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
 <div class="block">Unregistered a <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>.</div>
@@ -415,24 +420,24 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Stops the underlying <code>HttpServer</code>.</div>
 </li>
 </ul>
-<a name="registerRestEndpoint-java.lang.String-com.xatkit.core.server.JsonRestHandler-">
+<a name="registerRestEndpoint-java.lang.String-com.xatkit.core.server.RestHandler-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>registerRestEndpoint</h4>
 <pre>public&nbsp;void&nbsp;registerRestEndpoint(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                                 <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="interface in com.xatkit.core.server">JsonRestHandler</a>&nbsp;handler)</pre>
+                                 <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&nbsp;handler)</pre>
 <div class="block">Registers the provided <code>handler</code> as a REST endpoint for the provided <code>uri</code>.
  <p>
  The provided <code>handler</code> will receive the HTTP requests that are sent to the provided <code>uri</code> through
- the <a href="../../../../com/xatkit/core/server/XatkitServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-com.google.gson.JsonElement-"><code>notifyRestHandler(String, List, List, JsonElement)</code></a> method.
+ the <a href="../../../../com/xatkit/core/server/XatkitServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-java.lang.Object-java.lang.String-"><code>notifyRestHandler(String, List, List, Object, String)</code></a> method.
  <p>
  <b>Note</b>: the provided <code>uri</code> must start with a leading <code>/</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uri</code> - the URI of the REST endpoint</dd>
-<dd><code>handler</code> - the <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="interface in com.xatkit.core.server"><code>JsonRestHandler</code></a> to associate to the REST endpoint</dd>
+<dd><code>handler</code> - the <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><code>JsonRestHandler</code></a> to associate to the REST endpoint</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>uri</code> or <code>handler</code> is <code>null</code></dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the provided <code>uri</code> does not start with a leading <code>/</code></dd>
@@ -457,22 +462,67 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="notifyRestHandler-java.lang.String-java.util.List-java.util.List-com.google.gson.JsonElement-">
+<a name="getRegisteredRestHandler-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRegisteredRestHandler</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&nbsp;getRegisteredRestHandler(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</pre>
+<div class="block">Returns the <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> associated to the provided <code>uri</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>uri</code> - the URI to retrieve the handler for</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the retrieved <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> if it exists, <code>null</code> otherwise</dd>
+</dl>
+</li>
+</ul>
+<a name="getRegisteredRestHandlers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRegisteredRestHandlers</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&gt;&nbsp;getRegisteredRestHandlers()</pre>
+<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>s.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>s</dd>
+</dl>
+</li>
+</ul>
+<a name="clearRegisteredRestHandlers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearRegisteredRestHandlers</h4>
+<pre>public&nbsp;void&nbsp;clearRegisteredRestHandlers()</pre>
+<div class="block">Clears the registered <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>s.
+ <p>
+ This method only removes the <code>uri -&gt; handler</code> bindings, and does not ensure the the <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>s
+ have been properly stopped.</div>
+</li>
+</ul>
+<a name="notifyRestHandler-java.lang.String-java.util.List-java.util.List-java.lang.Object-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>notifyRestHandler</h4>
-<pre>public&nbsp;com.google.gson.JsonElement&nbsp;notifyRestHandler(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
-                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;header,
-                                                     <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
-                                                     <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                                     com.google.gson.JsonElement&nbsp;content)</pre>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;notifyRestHandler(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+                                <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;headers,
+                                <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
+                                <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
+                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
 <div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uri</code> - the URI of the REST endpoint to notify</dd>
-<dd><code>header</code> - the HTTP <code>Header</code>s of the request sent to the endpoint</dd>
+<dd><code>headers</code> - the HTTP <code>Header</code>s of the request sent to the endpoint</dd>
 <dd><code>params</code> - the HTTP parameters of the request sent to the endpoint</dd>
 <dd><code>content</code> - the <code>JsonElement</code> representing the content of the request sent to the endpoint</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -482,7 +532,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>uri</code>, <code>header</code>, or <code>params</code> is <code>null</code></dd>
 <dd><code><a href="../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if there is no REST endpoint registered for the provided <code>uri</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-java.lang.String-com.xatkit.core.server.JsonRestHandler-"><code>registerRestEndpoint(String, JsonRestHandler)</code></a></dd>
+<dd><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-java.lang.String-com.xatkit.core.server.RestHandler-"><code>registerRestEndpoint(String, RestHandler)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -495,25 +545,25 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <pre>public&nbsp;void&nbsp;registerWebhookEventProvider(<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</pre>
 <div class="block">Register a <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>.
  <p>
- The registered <code>webhookEventProvider</code> will be notified when a new request is received. If the provider
- supports the request content type (see <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#acceptContentType-java.lang.String-"><code>WebhookEventProvider.acceptContentType(String)</code></a>, it will receive
- the request content that will be used to create the associated <a href="../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent"><code>EventInstance</code></a>.</div>
+ The registered <code>webhookEventProvider</code>'s handler will be notified when a new request is received. If the
+ provider's handler supports the request content type (see <a href="../../../../com/xatkit/core/server/RestHandler.html#acceptContentType-java.lang.String-"><code>RestHandler.acceptContentType(String)</code></a>, it will
+ receive the request content that will be used to create the associated <a href="../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent"><code>EventInstance</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>webhookEventProvider</code> - the <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> to register</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>webhookEventProvider</code> is <code>null</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/xatkit/core/server/XatkitServer.html#notifyWebhookEventProviders-java.lang.String-java.lang.Object-org.apache.http.Header:A-"><code>notifyWebhookEventProviders(String, Object, Header[])</code></a>, 
-<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#acceptContentType-java.lang.String-"><code>WebhookEventProvider.acceptContentType(String)</code></a>, 
-<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#handleContent-java.lang.Object-org.apache.http.Header:A-"><code>WebhookEventProvider.handleContent(Object, Header[])</code></a></dd>
+<dd><a href="../../../../com/xatkit/core/server/XatkitServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-java.lang.Object-java.lang.String-"><code>notifyRestHandler(String, List, List, Object, String)</code></a>, 
+<a href="../../../../com/xatkit/core/server/RestHandler.html#acceptContentType-java.lang.String-"><code>RestHandler.acceptContentType(String)</code></a>, 
+<a href="../../../../com/xatkit/core/server/RestHandler.html#handleContent-java.util.List-java.util.List-java.lang.Object-"><code>RestHandler.handleContent(List, List, Object)</code></a></dd>
 </dl>
 </li>
 </ul>
 <a name="unregisterWebhookEventProvider-com.xatkit.core.platform.io.WebhookEventProvider-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>unregisterWebhookEventProvider</h4>
 <pre>public&nbsp;void&nbsp;unregisterWebhookEventProvider(<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</pre>
@@ -526,45 +576,6 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dd><code>webhookEventProvider</code> - the <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> to unregister</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>webhookEventProvider</code> is <code>null</code></dd>
-</dl>
-</li>
-</ul>
-<a name="getRegisteredWebhookEventProviders--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getRegisteredWebhookEventProviders</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&gt;&nbsp;getRegisteredWebhookEventProviders()</pre>
-<div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>s.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containiong the registered <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="notifyWebhookEventProviders-java.lang.String-java.lang.Object-org.apache.http.Header:A-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>notifyWebhookEventProviders</h4>
-<pre>public&nbsp;void&nbsp;notifyWebhookEventProviders(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType,
-                                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
-                                        org.apache.http.Header[]&nbsp;headers)</pre>
-<div class="block">Notifies the registered <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>s that a new request has been handled.
- <p>
- This method asks each registered <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> if it accepts the given <code>contentType</code>. If
- so, the provided <code>content</code> is sent to the <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> that will create the associated
- <a href="../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent"><code>EventInstance</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>contentType</code> - the content type of the received request</dd>
-<dd><code>content</code> - the content of the received request</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerWebhookEventProvider-com.xatkit.core.platform.io.WebhookEventProvider-"><code>registerWebhookEventProvider(WebhookEventProvider)</code></a>, 
-<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#acceptContentType-java.lang.String-"><code>WebhookEventProvider.acceptContentType(String)</code></a>, 
-<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#handleContent-java.lang.Object-org.apache.http.Header:A-"><code>WebhookEventProvider.handleContent(Object, Header[])</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -596,7 +607,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">

@@ -254,7 +254,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent">EventInstance</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/JsonEventMatcher.html#match-org.apache.http.Header:A-com.google.gson.JsonElement-">match</a></span>(org.apache.http.Header[]&nbsp;headers,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/JsonEventMatcher.html#match-java.util.List-com.google.gson.JsonElement-">match</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;headers,
      com.google.gson.JsonElement&nbsp;content)</code>
 <div class="block">Matches the provided <code>headers</code> and <code>content</code> against the registered <a href="../../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent"><code>EventInstance</code></a>s.</div>
 </td>
@@ -394,13 +394,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
-<a name="match-org.apache.http.Header:A-com.google.gson.JsonElement-">
+<a name="match-java.util.List-com.google.gson.JsonElement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>match</h4>
-<pre>public&nbsp;<a href="../../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent">EventInstance</a>&nbsp;match(org.apache.http.Header[]&nbsp;headers,
+<pre>public&nbsp;<a href="../../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent">EventInstance</a>&nbsp;match(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;headers,
                            com.google.gson.JsonElement&nbsp;content)</pre>
 <div class="block">Matches the provided <code>headers</code> and <code>content</code> against the registered <a href="../../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent"><code>EventInstance</code></a>s.
  <p>
@@ -410,7 +410,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <p>Note:</p> the current implementation only check top-level field from the provided <code>content</code>. (see #139)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>headers</code> - the array containing the <code>Header</code>s to match</dd>
+<dd><code>headers</code> - the list containing the <code>Header</code>s to match</dd>
 <dd><code>content</code> - the <code>JsonElement</code> representing the content of the request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the matched <a href="../../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent"><code>EventInstance</code></a> if it exists, <code>null</code> otherwise</dd>

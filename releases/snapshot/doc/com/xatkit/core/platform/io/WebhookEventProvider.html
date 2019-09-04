@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":10,"i2":10,"i3":10,"i4":6,"i5":6};
+var methods = {"i0":6,"i1":6,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -93,7 +93,7 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">com.xatkit.core.platform.io</div>
-<h2 title="Class WebhookEventProvider" class="title">Class WebhookEventProvider&lt;T extends <a href="../../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>,C&gt;</h2>
+<h2 title="Class WebhookEventProvider" class="title">Class WebhookEventProvider&lt;T extends <a href="../../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>,H extends <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
@@ -103,7 +103,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io">com.xatkit.core.platform.io.RuntimeEventProvider</a>&lt;T&gt;</li>
 <li>
 <ul class="inheritance">
-<li>com.xatkit.core.platform.io.WebhookEventProvider&lt;T,C&gt;</li>
+<li>com.xatkit.core.platform.io.WebhookEventProvider&lt;T,H&gt;</li>
 </ul>
 </li>
 </ul>
@@ -115,25 +115,26 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the concrete <a href="../../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a> subclass type containing the provider</dd>
-<dd><code>C</code> - the type of the parsed HTTP request content</dd>
+<dd><code>H</code> - the <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> type processing incoming Rest requests</dd>
 </dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
 <dd><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a></dd>
 </dl>
-<dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../com/xatkit/core/platform/io/JsonWebhookEventProvider.html" title="class in com.xatkit.core.platform.io">JsonWebhookEventProvider</a></dd>
-</dl>
 <hr>
 <br>
-<pre>public abstract class <span class="typeNameLabel">WebhookEventProvider&lt;T extends <a href="../../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>,C&gt;</span>
+<pre>public abstract class <span class="typeNameLabel">WebhookEventProvider&lt;T extends <a href="../../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>,H extends <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&gt;</span>
 extends <a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io">RuntimeEventProvider</a>&lt;T&gt;</pre>
-<div class="block">A specialised <a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> that handles HTTP requests sent by the
- <a href="../../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.
+<div class="block">A specialised <a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> that handles Rest requests sent by the <a href="../../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.
  <p>
- This class defines primitives to handle raw HTTP request contents, manipulate the parsed content, and provides an
- utility method that checks if the <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> accepts a given <code>contentType</code>.</div>
+ Concrete subclasses <b>must</b> implement the <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#getEndpointURI--"><code>getEndpointURI()</code></a> that sets the URI to register the provider
+ to, and <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#createRestHandler--"><code>createRestHandler()</code></a> that creates the concrete <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> instance handling incoming Rest
+ requests.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>, 
+<a href="../../../../../com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server"><code>RestHandlerFactory</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -194,43 +195,27 @@ extends <a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>abstract boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#acceptContentType-java.lang.String-">acceptContentType</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</code>
-<div class="block">Returns whether the <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> accepts the provided <code>contentType</code>.</div>
+<td class="colFirst"><code>protected abstract <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">H</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#createRestHandler--">createRestHandler</a></span>()</code>
+<div class="block">Returns the concrete <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> instance that handles incoming Rest requests.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#getAccessControlAllowHeaders--">getAccessControlAllowHeaders</a></span>()</code>
-<div class="block">Returns the <code>Access-Control-Allow-Headers</code> HTTP header values that must be set by the server when
- calling this provider.</div>
+<td class="colFirst"><code>abstract <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#getEndpointURI--">getEndpointURI</a></span>()</code>
+<div class="block">Returns the URI of the Rest endpoint to register the provider to.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#getHeaderValue-org.apache.http.Header:A-java.lang.String-">getHeaderValue</a></span>(org.apache.http.Header[]&nbsp;headers,
-              <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;headerKey)</code>
-<div class="block">Returns the <code>Header</code> value associated to the provided <code>headerKey</code>.</div>
+<td class="colFirst"><code><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">H</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#getRestHandler--">getRestHandler</a></span>()</code>
+<div class="block">Returns the <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> embedded in this provider.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#handleContent-java.lang.Object-org.apache.http.Header:A-">handleContent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
-             org.apache.http.Header[]&nbsp;headers)</code>
-<div class="block">Handles the raw HTTP request content and headers.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>protected abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#handleParsedContent-C-org.apache.http.Header:A-">handleParsedContent</a></span>(<a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">C</a>&nbsp;parsedContent,
-                   org.apache.http.Header[]&nbsp;headers)</code>
-<div class="block">Handles the parsed request content and headers.</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>protected abstract <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">C</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#parseContent-java.lang.Object-">parseContent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)</code>
-<div class="block">Parses the provided raw HTTP request content.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#run--">run</a></span>()</code>
+<div class="block">Runs the provider.</div>
 </td>
 </tr>
 </table>
@@ -247,13 +232,6 @@ extends <a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.java.lang.Runnable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a></h3>
-<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true#run--" title="class or interface in java.lang">run</a></code></li>
 </ul>
 </li>
 </ul>
@@ -323,132 +301,65 @@ extends <a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getAccessControlAllowHeaders--">
+<a name="getEndpointURI--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getAccessControlAllowHeaders</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getAccessControlAllowHeaders()</pre>
-<div class="block">Returns the <code>Access-Control-Allow-Headers</code> HTTP header values that must be set by the server when
- calling this provider.
+<h4>getEndpointURI</h4>
+<pre>public abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getEndpointURI()</pre>
+<div class="block">Returns the URI of the Rest endpoint to register the provider to.
  <p>
- This method is used to ensure that cross-origin requests are accepted by client applications. Note that this
- headers can be empty if this provider is not intended to be accessed in the browser.</div>
+ The returned <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> must be prefixed by a <code>'/'</code>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the HTTP headers to set</dd>
+<dd>the URI of the Rest endpoint to register the provider to</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/xatkit/core/server/XatkitServer.html#registerWebhookEventProvider-com.xatkit.core.platform.io.WebhookEventProvider-"><code>XatkitServer.registerWebhookEventProvider(WebhookEventProvider)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="acceptContentType-java.lang.String-">
+<a name="createRestHandler--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>acceptContentType</h4>
-<pre>public abstract&nbsp;boolean&nbsp;acceptContentType(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
-<div class="block">Returns whether the <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> accepts the provided <code>contentType</code>.</div>
+<h4>createRestHandler</h4>
+<pre>protected abstract&nbsp;<a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">H</a>&nbsp;createRestHandler()</pre>
+<div class="block">Returns the concrete <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> instance that handles incoming Rest requests.
+ <p>
+ This handler can be defined with the utility methods provided in
+ <a href="../../../../../com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server"><code>RestHandlerFactory</code></a>.</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>contentType</code> - the content type to check</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd><code>true</code> if the <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> accepts the provided <code>contentType</code>, <code>false</code> otherwise</dd>
+<dd>the concrete <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> instance that handles incoming Rest requests</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server"><code>RestHandlerFactory</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="parseContent-java.lang.Object-">
+<a name="getRestHandler--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>parseContent</h4>
-<pre>protected abstract&nbsp;<a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">C</a>&nbsp;parseContent(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)</pre>
-<div class="block">Parses the provided raw HTTP request content.
- <p>
- This method is internally used to fill the <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#handleParsedContent-C-org.apache.http.Header:A-"><code>handleParsedContent(Object, Header[])</code></a> parameter with a parsed
- representation of the raw request content.</div>
+<h4>getRestHandler</h4>
+<pre>public final&nbsp;<a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">H</a>&nbsp;getRestHandler()</pre>
+<div class="block">Returns the <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> embedded in this provider.</div>
 <dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>content</code> - the raw HTTP request content to parse</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a parsed representation of the raw request content</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#handleParsedContent-C-org.apache.http.Header:A-"><code>handleParsedContent(Object, Header[])</code></a></dd>
+<dd>the <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> embedded in this provider</dd>
 </dl>
 </li>
 </ul>
-<a name="handleParsedContent-java.lang.Object-org.apache.http.Header:A-">
-<!--   -->
-</a><a name="handleParsedContent-C-org.apache.http.Header:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>handleParsedContent</h4>
-<pre>protected abstract&nbsp;void&nbsp;handleParsedContent(<a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="type parameter in WebhookEventProvider">C</a>&nbsp;parsedContent,
-                                            org.apache.http.Header[]&nbsp;headers)</pre>
-<div class="block">Handles the parsed request content and headers.
- <p>
- This method embeds the request content management that creates the associated
- <a href="../../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent"><code>EventInstance</code></a>. The <code>parsedContent</code> parameter is set by an internal call
- to <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#parseContent-java.lang.Object-"><code>parseContent(Object)</code></a>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>parsedContent</code> - the parsed request content to handle</dd>
-<dd><code>headers</code> - the HTTP headers of the received request</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#parseContent-java.lang.Object-"><code>parseContent(Object)</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="handleContent-java.lang.Object-org.apache.http.Header:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>handleContent</h4>
-<pre>public final&nbsp;void&nbsp;handleContent(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
-                                org.apache.http.Header[]&nbsp;headers)</pre>
-<div class="block">Handles the raw HTTP request content and headers.
- <p>
- This method parses the provided <code>content</code> and internally calls
- <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#handleParsedContent-C-org.apache.http.Header:A-"><code>handleParsedContent(Object, Header[])</code></a> to
- create the associated <a href="../../../../../com/xatkit/intent/EventInstance.html" title="interface in com.xatkit.intent"><code>EventInstance</code></a>s.
- <p>
- This method is part of the core API and cannot be reimplemented by concrete subclasses. Use
- <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#handleParsedContent-C-org.apache.http.Header:A-"><code>handleParsedContent(Object, Header[])</code></a> to tune the request content processing.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>content</code> - the raw HTTP request content to handle</dd>
-<dd><code>headers</code> - the HTTP headers of the received request</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#parseContent-java.lang.Object-"><code>parseContent(Object)</code></a>, 
-<a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#handleParsedContent-C-org.apache.http.Header:A-"><code>handleParsedContent(Object, Header[])</code></a></dd>
-</dl>
-</li>
-</ul>
-<a name="getHeaderValue-org.apache.http.Header:A-java.lang.String-">
+<a name="run--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getHeaderValue</h4>
-<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHeaderValue(org.apache.http.Header[]&nbsp;headers,
-                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;headerKey)</pre>
-<div class="block">Returns the <code>Header</code> value associated to the provided <code>headerKey</code>.
- <p>
- This method is an utility method that can be called by subclasses'
- <a href="../../../../../com/xatkit/core/platform/io/WebhookEventProvider.html#handleParsedContent-C-org.apache.http.Header:A-"><code>handleParsedContent(Object, Header[])</code></a> implementation to retrieve specific values from the request
- <code>Header</code>s.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>headers</code> - the array of <code>Header</code> to retrieve the value from</dd>
-<dd><code>headerKey</code> - the <code>Header</code> key to retrieve the value of</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <code>Header</code> value associated to the provided <code>headerKey</code> if it exists, <code>null</code>
- otherwise</dd>
-</dl>
+<h4>run</h4>
+<pre>public&nbsp;void&nbsp;run()</pre>
+<div class="block">Runs the provider.</div>
 </li>
 </ul>
 </li>
