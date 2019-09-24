@@ -125,6 +125,12 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#com.xatkit.core.server">com.xatkit.core.server</a></td>
+<td class="colLast">
+<div class="block">Contains the Xatkit server implementation.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#com.xatkit.core.session">com.xatkit.core.session</a></td>
 <td class="colLast">
 <div class="block">Contains the classes to manage sessions and contexts.</div>
@@ -448,6 +454,49 @@
 <td class="colLast"><span class="typeNameLabel">DialogFlowApi.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
          <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
 <div class="block">Returns the <a href="../../../../../com/xatkit/intent/RecognizedIntent.html" title="interface in com.xatkit.intent"><code>RecognizedIntent</code></a> extracted from te provided <code>input</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.xatkit.core.server">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a> in <a href="../../../../../com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a> with parameters of type <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><span class="typeNameLabel">XatkitServer.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-byte:A-">createOrReplacePublicFile</a></span>(<a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+                         byte[]&nbsp;content)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><span class="typeNameLabel">XatkitServer.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-java.io.File-">createOrReplacePublicFile</a></span>(<a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;origin)</code>
+<div class="block">Creates a publicly accessible file from the provided <code>session</code>, <code>path</code>, and <code>origin</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><span class="typeNameLabel">XatkitServer.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-">createOrReplacePublicFile</a></span>(<a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;content)</code>
+<div class="block">Creates a publicly accessible file from the provided <code>session</code>, <code>path</code>, and <code>content</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><span class="typeNameLabel">XatkitServer.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/server/XatkitServer.html#getPublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-">getPublicFile</a></span>(<a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filePath)</code>
+<div class="block">Retrieves the public <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> associated to the provided <code>session</code> and <code>filePath</code>.</div>
 </td>
 </tr>
 </tbody>

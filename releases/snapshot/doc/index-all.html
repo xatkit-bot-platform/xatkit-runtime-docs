@@ -1101,6 +1101,14 @@
 <dd>
 <div class="block">Returns <code>true</code> if the configuration contains the provided <code>key</code>, <code>false</code> otherwise.</div>
 </dd>
+<dt><a href="com/xatkit/core/server/ContentHttpHandler.html" title="class in com.xatkit.core.server"><span class="typeNameLink">ContentHttpHandler</span></a> - Class in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
+<dd>
+<div class="block">Handles the HTTP requests performed on the <code>/content/</code> path.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/ContentHttpHandler.html#ContentHttpHandler-com.xatkit.core.server.XatkitServer-">ContentHttpHandler(XatkitServer)</a></span> - Constructor for class com.xatkit.core.server.<a href="com/xatkit/core/server/ContentHttpHandler.html" title="class in com.xatkit.core.server">ContentHttpHandler</a></dt>
+<dd>
+<div class="block">Constructs a new <a href="com/xatkit/core/server/ContentHttpHandler.html" title="class in com.xatkit.core.server"><code>ContentHttpHandler</code></a> managed by the provided <code>xatkitServer</code>.</div>
+</dd>
 <dt><a href="com/xatkit/intent/Context.html" title="interface in com.xatkit.intent"><span class="typeNameLink">Context</span></a> - Interface in <a href="com/xatkit/intent/package-summary.html">com.xatkit.intent</a></dt>
 <dd>
 <div class="block">A representation of the model object '<em><b>Context</b></em>'.</div>
@@ -1829,6 +1837,16 @@
 <dd>
 <div class="block">Creates a new adapter for an object of class '<a href="com/xatkit/common/OperationCall.html" title="interface in com.xatkit.common"><code><em>Operation Call</em></code></a>'.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-java.io.File-">createOrReplacePublicFile(XatkitSession, String, File)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dd>
+<div class="block">Creates a publicly accessible file from the provided <code>session</code>, <code>path</code>, and <code>origin</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-">createOrReplacePublicFile(XatkitSession, String, String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dd>
+<div class="block">Creates a publicly accessible file from the provided <code>session</code>, <code>path</code>, and <code>content</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-byte:A-">createOrReplacePublicFile(XatkitSession, String, byte[])</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#createOutContexts-com.xatkit.intent.IntentDefinition-">createOutContexts(IntentDefinition)</a></span> - Method in class com.xatkit.core.recognition.dialogflow.<a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">Creates the DialogFlow output <code>Context</code>s from the provided <code>intentDefinition</code>.</div>
@@ -3876,6 +3894,10 @@
 <dd>
 <div class="block">Returns the meta object for the containment reference '<a href="com/xatkit/intent/BaseEntityDefinitionReference.html#getBaseEntity--"><code><em>Base Entity</em></code></a>'.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#getBaseURL--">getBaseURL()</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dd>
+<div class="block">Returns the URL of the <a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/CommonPackage.html#getBooleanLiteral--">getBooleanLiteral()</a></span> - Method in interface com.xatkit.common.<a href="com/xatkit/common/CommonPackage.html" title="interface in com.xatkit.common">CommonPackage</a></dt>
 <dd>
 <div class="block">Returns the meta object for class '<a href="com/xatkit/common/BooleanLiteral.html" title="interface in com.xatkit.common"><code><em>Boolean Literal</em></code></a>'.</div>
@@ -5266,6 +5288,18 @@
 <dd>
 <div class="block">Retrieves the value associated to the provided <code>key</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#getPublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-">getPublicFile(XatkitSession, String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dd>
+<div class="block">Retrieves the public <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> associated to the provided <code>session</code> and <code>filePath</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#getPublicFile-java.lang.String-">getPublicFile(String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dd>
+<div class="block">Retrieves the public <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> associated to the provided <code>filePath</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#getPublicURL-java.io.File-">getPublicURL(File)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
+<dd>
+<div class="block">Retrieves the public URL associated to the provided <code>file</code> if it exists.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/impl/RecognizedIntentImpl.html#getRecognitionConfidence--">getRecognitionConfidence()</a></span> - Method in class com.xatkit.intent.impl.<a href="com/xatkit/intent/impl/RecognizedIntentImpl.html" title="class in com.xatkit.intent.impl">RecognizedIntentImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/intent/RecognizedIntent.html#getRecognitionConfidence--">getRecognitionConfidence()</a></span> - Method in interface com.xatkit.intent.<a href="com/xatkit/intent/RecognizedIntent.html" title="interface in com.xatkit.intent">RecognizedIntent</a></dt>
@@ -5620,6 +5654,11 @@
 </a>
 <h2 class="title">H</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/ContentHttpHandler.html#handle-org.apache.http.HttpRequest-org.apache.http.HttpResponse-org.apache.http.protocol.HttpContext-">handle(HttpRequest, HttpResponse, HttpContext)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/ContentHttpHandler.html" title="class in com.xatkit.core.server">ContentHttpHandler</a></dt>
+<dd>
+<div class="block">Handles the received <code>request</code> and fill the provided <code>response</code> with the retrieved <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> to
+ serve.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html#handle-java.util.List-java.util.List-com.google.gson.JsonElement-">handle(List&lt;Header&gt;, List&lt;NameValuePair&gt;, JsonElement)</a></span> - Method in interface com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server">RestHandlerFactory.JsonRestHandlerFunction</a></dt>
 <dd>
 <div class="block">The handling function of <a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><code>JsonRestHandler</code></a>.</div>
@@ -7482,6 +7521,14 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/common/impl/PropertyAccessImpl.html#PropertyAccessImpl--">PropertyAccessImpl()</a></span> - Constructor for class com.xatkit.common.impl.<a href="com/xatkit/common/impl/PropertyAccessImpl.html" title="class in com.xatkit.common.impl">PropertyAccessImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServerUtils.html#PUBLIC_CONTENT_URL_FRAGMENT">PUBLIC_CONTENT_URL_FRAGMENT</a></span> - Static variable in interface com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServerUtils.html" title="interface in com.xatkit.core.server">XatkitServerUtils</a></dt>
+<dd>
+<div class="block">The URL fragment used to access Xatkit public content.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServerUtils.html#PUBLIC_DIRECTORY_NAME">PUBLIC_DIRECTORY_NAME</a></span> - Static variable in interface com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServerUtils.html" title="interface in com.xatkit.core.server">XatkitServerUtils</a></dt>
+<dd>
+<div class="block">The directory name used to store Xatkit public content.</div>
+</dd>
 </dl>
 <a name="I:R">
 <!--   -->

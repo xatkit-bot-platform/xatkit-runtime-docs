@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -164,42 +164,89 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-byte:A-">createOrReplacePublicFile</a></span>(<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+                         byte[]&nbsp;content)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-java.io.File-">createOrReplacePublicFile</a></span>(<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;origin)</code>
+<div class="block">Creates a publicly accessible file from the provided <code>session</code>, <code>path</code>, and <code>origin</code>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-">createOrReplacePublicFile</a></span>(<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+                         <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;content)</code>
+<div class="block">Creates a publicly accessible file from the provided <code>session</code>, <code>path</code>, and <code>content</code>.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getBaseURL--">getBaseURL</a></span>()</code>
+<div class="block">Returns the URL of the <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected org.apache.http.impl.bootstrap.HttpServer</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getHttpServer--">getHttpServer</a></span>()</code>
 <div class="block">Returns the underlying <code>HttpServer</code> used to receive requests.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getPort--">getPort</a></span>()</code>
 <div class="block">Returns the port the server is listening to.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getPublicFile-java.lang.String-">getPublicFile</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filePath)</code>
+<div class="block">Retrieves the public <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> associated to the provided <code>filePath</code>.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getPublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-">getPublicFile</a></span>(<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filePath)</code>
+<div class="block">Retrieves the public <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> associated to the provided <code>session</code> and <code>filePath</code>.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getPublicURL-java.io.File-">getPublicURL</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>
+<div class="block">Retrieves the public URL associated to the provided <code>file</code> if it exists.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getRegisteredRestHandler-java.lang.String-">getRegisteredRestHandler</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
 <div class="block">Returns the <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> associated to the provided <code>uri</code>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#getRegisteredRestHandlers--">getRegisteredRestHandlers</a></span>()</code>
 <div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing the registered <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>s.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#isRestEndpoint-java.lang.String-">isRestEndpoint</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
 <div class="block">Returns whether the provided <code>uri</code> is associated to a REST endpoint.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#isStarted--">isStarted</a></span>()</code>
 <div class="block">Returns <code>true</code> if the <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a> is started, <code>false</code> otherwise.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#notifyRestHandler-java.lang.String-java.util.List-java.util.List-java.lang.Object-java.lang.String-">notifyRestHandler</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
                  <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.Header&gt;&nbsp;headers,
@@ -209,32 +256,32 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-java.lang.String-com.xatkit.core.server.RestHandler-">registerRestEndpoint</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
                     <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&nbsp;handler)</code>
 <div class="block">Registers the provided <code>handler</code> as a REST endpoint for the provided <code>uri</code>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerWebhookEventProvider-com.xatkit.core.platform.io.WebhookEventProvider-">registerWebhookEventProvider</a></span>(<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
 <div class="block">Register a <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#start--">start</a></span>()</code>
 <div class="block">Starts the underlying <code>HttpServer</code>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#stop--">stop</a></span>()</code>
 <div class="block">Stops the underlying <code>HttpServer</code>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/XatkitServer.html#unregisterWebhookEventProvider-com.xatkit.core.platform.io.WebhookEventProvider-">unregisterWebhookEventProvider</a></span>(<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</code>
 <div class="block">Unregistered a <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a>.</div>
@@ -272,7 +319,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Constructs a new <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a> with the given <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.
  <p>
  The provided <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> is used to specify the port the server should listen to (see
- <a href="../../../../com/xatkit/core/server/XatkitServerUtils.html#SERVER_PORT_KEY"><code>XatkitServerUtils.SERVER_PORT_KEY</code></a>). If the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> does not specify a port the default value (<code>5000</code>) is used.
+ <a href="../../../../com/xatkit/core/server/XatkitServerUtils.html#SERVER_PORT_KEY"><code>XatkitServerUtils.SERVER_PORT_KEY</code></a>). If the <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> does not specify a port the default
+ value (<code>5000</code>) is used.
  <p>
  <b>Note:</b> this method does not start the underlying <code>HttpServer</code>. Use <a href="../../../../com/xatkit/core/server/XatkitServer.html#start--"><code>start()</code></a> to start the
  <code>HttpServer</code> in a dedicated thread.</div>
@@ -306,6 +354,23 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the port the server is listening to</dd>
+</dl>
+</li>
+</ul>
+<a name="getBaseURL--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBaseURL</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getBaseURL()</pre>
+<div class="block">Returns the URL of the <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.
+ <p>
+ This URL contains the base address and port (<code>&lt;address:port&gt;</code>), and can be used to access the
+ <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a> handlers.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the URL of the <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -505,7 +570,7 @@ public&nbsp;<a href="../../../../com/xatkit/core/server/RestHandler.html" title=
 <a name="unregisterWebhookEventProvider-com.xatkit.core.platform.io.WebhookEventProvider-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>unregisterWebhookEventProvider</h4>
 <pre>public&nbsp;void&nbsp;unregisterWebhookEventProvider(<a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io">WebhookEventProvider</a>&nbsp;webhookEventProvider)</pre>
@@ -518,6 +583,149 @@ public&nbsp;<a href="../../../../com/xatkit/core/server/RestHandler.html" title=
 <dd><code>webhookEventProvider</code> - the <a href="../../../../com/xatkit/core/platform/io/WebhookEventProvider.html" title="class in com.xatkit.core.platform.io"><code>WebhookEventProvider</code></a> to unregister</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>webhookEventProvider</code> is <code>null</code></dd>
+</dl>
+</li>
+</ul>
+<a name="createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-java.io.File-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createOrReplacePublicFile</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;createOrReplacePublicFile(<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;origin)</pre>
+<div class="block">Creates a publicly accessible file from the provided <code>session</code>, <code>path</code>, and <code>origin</code>.
+ <p>
+ The created file can be accessed through <code>&lt;baseURL/content/sessionId/path&gt;</code>, and contains the content of
+ the provided <code>origin</code> <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - the <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> used to create the file</dd>
+<dd><code>path</code> - the path of the file to create</dd>
+<dd><code>origin</code> - the origin file to copy</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the created <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>session</code>, <code>path</code>, or <code>origin</code> is <code>null</code></dd>
+<dd><code><a href="../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if an error occurred when reading the provided <code>origin</code> <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>, or if
+                              the existing file at the given <code>path</code> cannot be deleted or if the provided
+                              <code>path</code> refers to an illegal location</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-"><code>createOrReplacePublicFile(XatkitSession, String, String)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createOrReplacePublicFile</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;createOrReplacePublicFile(<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;content)</pre>
+<div class="block">Creates a publicly accessible file from the provided <code>session</code>, <code>path</code>, and <code>content</code>.
+ <p>
+ The created file can be accessed through <code>&lt;baseURL/content/sessionId/path</code>, and contains the provided
+ <code>content</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - the <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> used to create the file</dd>
+<dd><code>path</code> - the the path of the file to create</dd>
+<dd><code>content</code> - the content of the file to create</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the created <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>session</code> or <code>path</code> is <code>null</code></dd>
+<dd><code><a href="../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if an error occurred when computing the provided <code>path</code>, or if the existing
+                              file at the given <code>path</code> cannot be deleted, or if the provided <code>path</code>
+                              refers to an illegal location</dd>
+</dl>
+</li>
+</ul>
+<a name="createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-byte:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createOrReplacePublicFile</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;createOrReplacePublicFile(<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                                      <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;path,
+                                      byte[]&nbsp;content)</pre>
+</li>
+</ul>
+<a name="getPublicURL-java.io.File-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPublicURL</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPublicURL(<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</pre>
+<div class="block">Retrieves the public URL associated to the provided <code>file</code> if it exists.
+ <p>
+ This method is typically called to retrieve the public URL of a file created with
+ <a href="../../../../com/xatkit/core/server/XatkitServer.html#createOrReplacePublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-java.lang.String-"><code>createOrReplacePublicFile(XatkitSession, String, String)</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>file</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> to retrieve the public URL for</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the retrieved URL if it exists, <code>null</code> otherwise</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>file</code> is <code>null</code></dd>
+<dd><code><a href="../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if the provided <code>file</code> corresponds to an illegal location</dd>
+</dl>
+</li>
+</ul>
+<a name="getPublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPublicFile</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getPublicFile(<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filePath)</pre>
+<div class="block">Retrieves the public <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> associated to the provided <code>session</code> and <code>filePath</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>session</code> - the <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> to retrieve the <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> from</dd>
+<dd><code>filePath</code> - the path of the <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> to retrieve</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the retrieved <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> if it exists, <code>null</code> otherwise</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>session</code> if <code>filePath</code> is <code>null</code></dd>
+<dd><code><a href="../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if the provided <code>filePath</code> refers to an illegal location</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/xatkit/core/server/XatkitServer.html#getPublicFile-java.lang.String-"><code>getPublicFile(String)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getPublicFile-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getPublicFile</h4>
+<pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getPublicFile(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filePath)</pre>
+<div class="block">Retrieves the public <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> associated to the provided <code>filePath</code>.
+ <p>
+ This method expects a full relative path under the <code>/content/</code> location. This means that <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a>
+ associated to <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a>s must be retrieved with the following path: <code>sessionId/path</code>. Check
+ <a href="../../../../com/xatkit/core/server/XatkitServer.html#getPublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-"><code>getPublicFile(XatkitSession, String)</code></a> to easily retrieve a <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> associated to a
+ <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>filePath</code> - the path of the <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> to retrieve</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the retrieved <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> if it exists, <code>null</code> otherwise</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>filePath</code> is <code>null</code></dd>
+<dd><code><a href="../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if the provided <code>filePath</code> refers to an illegal location</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/xatkit/core/server/XatkitServer.html#getPublicFile-com.xatkit.core.session.XatkitSession-java.lang.String-"><code>getPublicFile(XatkitSession, String)</code></a></dd>
 </dl>
 </li>
 </ul>
