@@ -1,7 +1,4 @@
 com.xatkit
-com.xatkit.common
-com.xatkit.common.impl
-com.xatkit.common.util
 com.xatkit.core
 com.xatkit.core.interpreter
 com.xatkit.core.interpreter.operation
@@ -13,14 +10,4 @@ com.xatkit.core.recognition
 com.xatkit.core.recognition.dialogflow
 com.xatkit.core.server
 com.xatkit.core.session
-com.xatkit.core_resources.utils
-com.xatkit.execution
-com.xatkit.execution.impl
-com.xatkit.execution.util
-com.xatkit.intent
-com.xatkit.intent.impl
-com.xatkit.intent.util
-com.xatkit.platform
-com.xatkit.platform.impl
-com.xatkit.platform.util
 com.xatkit.util
