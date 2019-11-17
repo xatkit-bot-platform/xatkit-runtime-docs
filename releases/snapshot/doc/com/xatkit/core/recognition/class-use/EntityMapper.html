@@ -83,57 +83,20 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><a href="#com.xatkit.core.recognition">com.xatkit.core.recognition</a></td>
-<td class="colLast">
-<div class="block">Contains the abstract classes to implement to provide custom intent recognition.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><a href="#com.xatkit.core.recognition.dialogflow">com.xatkit.core.recognition.dialogflow</a></td>
 <td class="colLast">
 <div class="block">An intent recognition provider implementation for the DialogFlow platform.</div>
 </td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#com.xatkit.core.recognition.regex">com.xatkit.core.recognition.regex</a></td>
+<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
 </li>
 <li class="blockList">
 <ul class="blockList">
-<li class="blockList"><a name="com.xatkit.core.recognition">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition">EntityMapper</a> in <a href="../../../../../com/xatkit/core/recognition/package-summary.html">com.xatkit.core.recognition</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
-<caption><span>Subclasses of <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition">EntityMapper</a> in <a href="../../../../../com/xatkit/core/recognition/package-summary.html">com.xatkit.core.recognition</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/DefaultEntityMapper.html" title="class in com.xatkit.core.recognition">DefaultEntityMapper</a></span></code>
-<div class="block">An <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition"><code>EntityMapper</code></a> that uses RegExp to match system entities.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
-<caption><span>Fields in <a href="../../../../../com/xatkit/core/recognition/package-summary.html">com.xatkit.core.recognition</a> declared as <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition">EntityMapper</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition">EntityMapper</a></code></td>
-<td class="colLast"><span class="typeNameLabel">DefaultIntentRecognitionProvider.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/DefaultIntentRecognitionProvider.html#entityMapper">entityMapper</a></span></code>
-<div class="block">The <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition"><code>EntityMapper</code></a> used to store system and dynamic entity mappings.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
 <li class="blockList"><a name="com.xatkit.core.recognition.dialogflow">
 <!--   -->
 </a>
@@ -149,6 +112,41 @@
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowEntityMapper</a></span></code>
 <div class="block">An <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition"><code>EntityMapper</code></a> initialized with DialogFlow's system entities.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.xatkit.core.recognition.regex">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition">EntityMapper</a> in <a href="../../../../../com/xatkit/core/recognition/regex/package-summary.html">com.xatkit.core.recognition.regex</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition">EntityMapper</a> in <a href="../../../../../com/xatkit/core/recognition/regex/package-summary.html">com.xatkit.core.recognition.regex</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/regex/RegExEntityMapper.html" title="class in com.xatkit.core.recognition.regex">RegExEntityMapper</a></span></code>
+<div class="block">An <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition"><code>EntityMapper</code></a> that uses RegExp to match system entities.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../com/xatkit/core/recognition/regex/package-summary.html">com.xatkit.core.recognition.regex</a> declared as <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition">EntityMapper</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition">EntityMapper</a></code></td>
+<td class="colLast"><span class="typeNameLabel">RegExIntentRecognitionProvider.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/regex/RegExIntentRecognitionProvider.html#entityMapper">entityMapper</a></span></code>
+<div class="block">The <a href="../../../../../com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition"><code>EntityMapper</code></a> used to store system and dynamic entity mappings.</div>
 </td>
 </tr>
 </tbody>

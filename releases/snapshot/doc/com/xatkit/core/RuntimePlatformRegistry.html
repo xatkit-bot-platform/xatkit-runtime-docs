@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -131,7 +131,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#RuntimePlatformRegistry--">RuntimePlatformRegistry</a></span>()</code>
-<div class="block">Constructs a new instance of the registry and initializes its <a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#platformMap"><code>platformMap</code></a>.</div>
+<div class="block">Constructs a new instance of the registry and initializes its <a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#platformToRuntime"><code>platformToRuntime</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -156,37 +156,53 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;com.xatkit.platform.PlatformDefinition&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#getLoadedPlatformDefinitions--">getLoadedPlatformDefinitions</a></span>()</code>
+<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing all the loaded <code>PlatformDefinition</code>s.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>com.xatkit.platform.PlatformDefinition</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#getPlatformDefinition-java.lang.String-">getPlatformDefinition</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;platformName)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#getRuntimePlatform-com.xatkit.platform.PlatformDefinition-">getRuntimePlatform</a></span>(com.xatkit.platform.PlatformDefinition&nbsp;platformDefinition)</code>
 <div class="block">Returns the <a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a> associated to the provided <code>platformDefinition</code>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#getRuntimePlatform-java.lang.String-">getRuntimePlatform</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;platformName)</code>
 <div class="block">Returns the <a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a> associated to the provided <code>platformName</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#getRuntimePlatforms--">getRuntimePlatforms</a></span>()</code>
 <div class="block">Returns all the <a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a>s stored in this registry.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#registerLoadedPlatformDefinition-com.xatkit.platform.PlatformDefinition-">registerLoadedPlatformDefinition</a></span>(com.xatkit.platform.PlatformDefinition&nbsp;platformDefinition)</code>
+<div class="block">Registeres the provided <code>platformDefinition</code> using its <code>name</code>.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#registerRuntimePlatform-com.xatkit.core.platform.RuntimePlatform-">registerRuntimePlatform</a></span>(<a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&nbsp;platform)</code>
 <div class="block">Registers the provided <code>platform</code> using its <code>name</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#registerRuntimePlatform-java.lang.String-com.xatkit.core.platform.RuntimePlatform-">registerRuntimePlatform</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;platformName,
                        <a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&nbsp;platform)</code>
 <div class="block">Registers the provided <code>platform</code> with the provided <code>name</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#unregisterRuntimePlatform-com.xatkit.core.platform.RuntimePlatform-">unregisterRuntimePlatform</a></span>(<a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&nbsp;platform)</code>
 <div class="block">Unregisters the provided <code>platform</code>.</div>
@@ -221,7 +237,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <li class="blockList">
 <h4>RuntimePlatformRegistry</h4>
 <pre>public&nbsp;RuntimePlatformRegistry()</pre>
-<div class="block">Constructs a new instance of the registry and initializes its <a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#platformMap"><code>platformMap</code></a>.</div>
+<div class="block">Constructs a new instance of the registry and initializes its <a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#platformToRuntime"><code>platformToRuntime</code></a>.</div>
 </li>
 </ul>
 </li>
@@ -232,6 +248,40 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="registerLoadedPlatformDefinition-com.xatkit.platform.PlatformDefinition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerLoadedPlatformDefinition</h4>
+<pre>public&nbsp;void&nbsp;registerLoadedPlatformDefinition(com.xatkit.platform.PlatformDefinition&nbsp;platformDefinition)</pre>
+<div class="block">Registeres the provided <code>platformDefinition</code> using its <code>name</code>.
+ <p>
+ Registered <code>PlatformDefinition</code>s can be accessed using <a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#getLoadedPlatformDefinitions--"><code>getLoadedPlatformDefinitions()</code></a>. Note that a
+ registered <code>PlatformDefinition</code> does not imply that the corresponding <a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a> has been
+ loaded.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>platformDefinition</code> - the <code>PlatformDefinition</code> to register</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../com/xatkit/core/RuntimePlatformRegistry.html#getLoadedPlatformDefinitions--"><code>getLoadedPlatformDefinitions()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getLoadedPlatformDefinitions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLoadedPlatformDefinitions</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;com.xatkit.platform.PlatformDefinition&gt;&nbsp;getLoadedPlatformDefinitions()</pre>
+<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing all the loaded <code>PlatformDefinition</code>s.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing all the loaded <code>PlatformDefinition</code>s</dd>
+</dl>
+</li>
+</ul>
 <a name="registerRuntimePlatform-com.xatkit.core.platform.RuntimePlatform-">
 <!--   -->
 </a>
@@ -290,6 +340,15 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <h4>clearRuntimePlatforms</h4>
 <pre>public&nbsp;void&nbsp;clearRuntimePlatforms()</pre>
 <div class="block">Unregisters all the <a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a>s from this registry.</div>
+</li>
+</ul>
+<a name="getPlatformDefinition-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPlatformDefinition</h4>
+<pre>public&nbsp;com.xatkit.platform.PlatformDefinition&nbsp;getPlatformDefinition(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;platformName)</pre>
 </li>
 </ul>
 <a name="getRuntimePlatform-java.lang.String-">

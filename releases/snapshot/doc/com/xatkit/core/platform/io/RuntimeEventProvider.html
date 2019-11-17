@@ -357,6 +357,9 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.
                               <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</pre>
 <div class="block">Sends the provided <code>eventInstance</code> and <code>session</code> for computation to the Xatkit core component.
  <p>
+ This method sets the <i>triggeredBy</i> field of the provided <code>eventInstance</code> with the name of the
+ containing platform of this provider.
+ <p>
  This method can be extended to perform specific checks before triggering actions (e.g. ensure that a specific
  context variable has been set).</div>
 <dl>

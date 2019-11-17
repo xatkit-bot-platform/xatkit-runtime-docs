@@ -8,6 +8,7 @@ com.xatkit.core.platform.action
 com.xatkit.core.platform.io
 com.xatkit.core.recognition
 com.xatkit.core.recognition.dialogflow
+com.xatkit.core.recognition.regex
 com.xatkit.core.server
 com.xatkit.core.session
 com.xatkit.util

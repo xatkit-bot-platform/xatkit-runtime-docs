@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -226,10 +226,10 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">RuntimeAction</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-com.xatkit.execution.ActionInstance-com.xatkit.core.session.XatkitSession-com.xatkit.core.interpreter.ExecutionContext-">createRuntimeAction</a></span>(com.xatkit.execution.ActionInstance&nbsp;actionInstance,
-                   <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
-                   <a href="../../../../com/xatkit/core/interpreter/ExecutionContext.html" title="class in com.xatkit.core.interpreter">ExecutionContext</a>&nbsp;context)</code>
-<div class="block">Creates a new <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <code>ActionInstance</code>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-org.eclipse.xtext.xbase.XMemberFeatureCall-java.util.List-com.xatkit.core.session.XatkitSession-">createRuntimeAction</a></span>(org.eclipse.xtext.xbase.XMemberFeatureCall&nbsp;actionCall,
+                   <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;arguments,
+                   <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Creates a new <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <code>XMemberFeatureCall</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -257,30 +257,36 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#getConfiguration--">getConfiguration</a></span>()</code>
+<div class="block">Returns the platform's <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../com/xatkit/core/platform/RuntimePlatform.EventProviderThread.html" title="class in com.xatkit.core.platform">RuntimePlatform.EventProviderThread</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#getEventProviderMap--">getEventProviderMap</a></span>()</code>
 <div class="block">Returns <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing the <a href="../../../../com/xatkit/core/platform/RuntimePlatform.EventProviderThread.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform.EventProviderThread</code></a>s associated to this platform.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the name of the platform.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core">XatkitCore</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#getXatkitCore--">getXatkitCore</a></span>()</code>
 <div class="block">Returns the <a href="../../../../com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> instance associated to this platform.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shuts down the <a href="../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#startEventProvider-com.xatkit.platform.EventProviderDefinition-">startEventProvider</a></span>(com.xatkit.platform.EventProviderDefinition&nbsp;eventProviderDefinition)</code>
 <div class="block">Starts the <a href="../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> corresponding to the provided <code>eventProviderDefinition</code>.</div>
@@ -333,7 +339,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#startEventProvider-com.xatkit.platform.EventProviderDefinition-"><code>startEventProvider(EventProviderDefinition)</code></a>, 
-<a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-com.xatkit.execution.ActionInstance-com.xatkit.core.session.XatkitSession-com.xatkit.core.interpreter.ExecutionContext-"><code>createRuntimeAction(ActionInstance, XatkitSession, ExecutionContext)</code></a></dd>
+<a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-org.eclipse.xtext.xbase.XMemberFeatureCall-java.util.List-com.xatkit.core.session.XatkitSession-"><code>createRuntimeAction(XMemberFeatureCall, List, XatkitSession)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -351,7 +357,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#enableAction-com.xatkit.platform.ActionDefinition-"><code>enableAction(ActionDefinition)</code></a>, 
 <a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#disableAction-com.xatkit.platform.ActionDefinition-"><code>disableAction(ActionDefinition)</code></a>, 
-<a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-com.xatkit.execution.ActionInstance-com.xatkit.core.session.XatkitSession-com.xatkit.core.interpreter.ExecutionContext-"><code>createRuntimeAction(ActionInstance, XatkitSession, ExecutionContext)</code></a></dd>
+<a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-org.eclipse.xtext.xbase.XMemberFeatureCall-java.util.List-com.xatkit.core.session.XatkitSession-"><code>createRuntimeAction(XMemberFeatureCall, List, XatkitSession)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -464,6 +470,20 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </dl>
 </li>
 </ul>
+<a name="getConfiguration--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConfiguration</h4>
+<pre>public final&nbsp;<a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;getConfiguration()</pre>
+<div class="block">Returns the platform's <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the platform's <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="startEventProvider-com.xatkit.platform.EventProviderDefinition-">
 <!--   -->
 </a>
@@ -480,7 +500,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>eventProviderDefinition</code> - the <code>EventProviderDefinition</code> representing the
- <a href="../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> to
+                                <a href="../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> to
                                 start</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>eventProviderDefinition</code> or <code>xatkitCore</code> is <code>null</code></dd>
@@ -560,44 +580,40 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Returns all the <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a>es associated to this <a href="../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a>.
  <p>
  This method returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a>es describing the <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>s associated to this platform. To
- construct a new <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> from a <code>EventInstance</code> see
- <a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-com.xatkit.execution.ActionInstance-com.xatkit.core.session.XatkitSession-com.xatkit.core.interpreter.ExecutionContext-"><code>createRuntimeAction(ActionInstance, XatkitSession, ExecutionContext)</code></a> .</div>
+ construct a new <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> see <a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-org.eclipse.xtext.xbase.XMemberFeatureCall-java.util.List-com.xatkit.core.session.XatkitSession-"><code>createRuntimeAction(XMemberFeatureCall, List, XatkitSession)</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>all the <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang"><code>Class</code></a>es associated to this <a href="../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-com.xatkit.execution.ActionInstance-com.xatkit.core.session.XatkitSession-com.xatkit.core.interpreter.ExecutionContext-"><code>createRuntimeAction(ActionInstance, XatkitSession, ExecutionContext)</code></a></dd>
+<dd><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#createRuntimeAction-org.eclipse.xtext.xbase.XMemberFeatureCall-java.util.List-com.xatkit.core.session.XatkitSession-"><code>createRuntimeAction(XMemberFeatureCall, List, XatkitSession)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="createRuntimeAction-com.xatkit.execution.ActionInstance-com.xatkit.core.session.XatkitSession-com.xatkit.core.interpreter.ExecutionContext-">
+<a name="createRuntimeAction-org.eclipse.xtext.xbase.XMemberFeatureCall-java.util.List-com.xatkit.core.session.XatkitSession-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createRuntimeAction</h4>
-<pre>public&nbsp;<a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">RuntimeAction</a>&nbsp;createRuntimeAction(com.xatkit.execution.ActionInstance&nbsp;actionInstance,
-                                         <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
-                                         <a href="../../../../com/xatkit/core/interpreter/ExecutionContext.html" title="class in com.xatkit.core.interpreter">ExecutionContext</a>&nbsp;context)</pre>
-<div class="block">Creates a new <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <code>ActionInstance</code>.
+<pre>public&nbsp;<a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">RuntimeAction</a>&nbsp;createRuntimeAction(org.eclipse.xtext.xbase.XMemberFeatureCall&nbsp;actionCall,
+                                         <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;arguments,
+                                         <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</pre>
+<div class="block">Creates a new <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <code>XMemberFeatureCall</code>.
  <p>
- This methods attempts to construct a <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> defined by the provided <code>actionInstance</code> by
- matching the <code>eventInstance</code> variables to the <code>ActionDefinition</code>'s parameters, and reusing the
- provided
- <code>ActionInstance.getValues()</code>.</div>
+ This methods attempts to construct a <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> defined by the provided <code>actionCall</code> by
+ matching the provided <code>arguments</code> to the <code>ActionDefinition</code>'s parameters.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>actionInstance</code> - the <code>ActionInstance</code> representing the <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> to create</dd>
+<dd><code>actionCall</code> - the <code>XMemberFeatureCall</code> representing the <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> to create</dd>
+<dd><code>arguments</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> of computed values used as arguments for the created <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a></dd>
 <dd><code>session</code> - the <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the action</dd>
-<dd><code>context</code> - the execution context used to evaluate the action parameter values</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a new <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <code>ActionInstance</code></dd>
+<dd>a new <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> instance from the provided <code>actionCall</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>actionInstance</code> or <code>session</code> is <code>null</code></dd>
-<dd><code><a href="../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if the provided <code>ActionInstance</code> does not match any <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>,
+<dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>actionCall</code>, <code>arguments</code>, or <code>session</code> is
+                              <code>null</code></dd>
+<dd><code><a href="../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if the provided <code>actionCall</code> does not match any <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>,
                               or if an error occurred when building the <a href="../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/xatkit/core/platform/RuntimePlatform.html#getParameterValues-com.xatkit.execution.ActionInstance-com.xatkit.core.session.RuntimeContexts-com.xatkit.core.interpreter.ExecutionContext-"><code>getParameterValues(ActionInstance, RuntimeContexts, ExecutionContext)</code></a></dd>
 </dl>
 </li>
 </ul>

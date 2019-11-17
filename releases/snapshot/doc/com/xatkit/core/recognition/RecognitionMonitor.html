@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -113,22 +113,22 @@ var activeTableTab = "activeTableTab";
 extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">Provides monitoring capabilities for <a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>s.
  <p>
- This class stores analytics information related to (un)matched intents, and registers a set of REST endpoints
- allowing to query them from external applications. <b>Warning</b>: the REST endpoints must be accessed using the
- <i>POST</i> method, this is a current limitation of the <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.
+ This class stores analytics information related to intent recognition, and registers a set of REST endpoints
+ allowing to query them from external applications.
  <p>
  The following endpoints can be used to access the stored information:
  <ul>
- <li><b>/analytics/unmatched</b>: returns a JSON object containing a list of inputs that have been received
- by the bot and hasn't been matched to an intent</li>
- <li><b>/analytics/matched</b>: returns a JSON object containing the intents matched by the bot and their
- associated inputs</li>
+ <li><b>/analytics/monitoring</b>: returns a JSON array containing all the persisted monitoring information (note
+ that this method doesn't support pagination yet, so the returned JSON may be big for long-running applications).</li>
+ <li><b>/analytics/monitoring/session?sessionId=id</b>: returns a JSON object containing the monitoring information
+ for the provided <code>sessionId</code></li>
+ <li><b>/analytics/monitoring/unmatched</b>: returns a JSON array containing all the monitoring entries
+ corresponding to unmatched inputs (i.e. inputs that haven't been successfully translated into intents)</li>
+ <li><b>/analytics/monitoring/matched</b>: returns a JSON array containing all the monitoring entries
+ corresponding to matched inputs (i.e. inputs that have been successfully translated into intents)</li>
+ <li><b>/analytics/monitoring/sessions/stats</b>: returns a JSON object containing computed statistics over
+ stored sessions (e.g. average time/session, average number of matched inputs/sessions, etc)</li>
  </ul></div>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html#registerMatchedInput-java.lang.String-com.xatkit.intent.IntentDefinition-"><code>registerMatchedInput(String, IntentDefinition)</code></a>, 
-<a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html#registerUnmatchedInput-java.lang.String-"><code>registerUnmatchedInput(String)</code></a></dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -169,18 +169,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html#registerMatchedInput-java.lang.String-com.xatkit.intent.IntentDefinition-">registerMatchedInput</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
-                    com.xatkit.intent.IntentDefinition&nbsp;intent)</code>
-<div class="block">Registers a matched <code>input</code> and the corresponding <code>intent</code>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html#logRecognizedIntent-com.xatkit.core.session.XatkitSession-com.xatkit.intent.RecognizedIntent-">logRecognizedIntent</a></span>(<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                   com.xatkit.intent.RecognizedIntent&nbsp;recognizedIntent)</code>
+<div class="block">Logs the recognition information from the provided <code>recognizedIntent</code> and <code>session</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html#registerUnmatchedInput-java.lang.String-">registerUnmatchedInput</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</code>
-<div class="block">Registers a unmatched <code>input</code>.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Commit the pending operations on the database and closes the connection.</div>
@@ -221,17 +215,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  This constructor loads the stored information from the <i>analytics</i> database and create the in-memory
  data structures used to monitor intent recognition providers.
  <p>
- This constructor also registers two REST endpoints allowing to query the stored information from external
- applications. <b>Warning</b>: the REST endpoints must be accessed using the
- <i>POST</i> method, this is a current limitation of the <a href="../../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.
- <p>
- The following endpoints can be used to access the stored information:
- <ul>
- <li><b>/analytics/unmatched</b>: returns a JSON object containing a list of inputs that have been received
- by the bot and hasn't been matched to an intent</li>
- <li><b>/analytics/matched</b>: returns a JSON object containing the intents matched by the bot and their
- associated inputs</li>
- </ul>
+ This constructor also registers the REST endpoints allowing to query the stored information from external
+ applications.
  <p>
  This method also registers a shutdown hook which ensures that the database is closed properly when the JVM is
  stopped.
@@ -254,37 +239,19 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="registerUnmatchedInput-java.lang.String-">
+<a name="logRecognizedIntent-com.xatkit.core.session.XatkitSession-com.xatkit.intent.RecognizedIntent-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>registerUnmatchedInput</h4>
-<pre>public&nbsp;void&nbsp;registerUnmatchedInput(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input)</pre>
-<div class="block">Registers a unmatched <code>input</code>.
- <p>
- The input can be accessed through the <code>/analytics/unmatched</code> REST endpoint.</div>
+<h4>logRecognizedIntent</h4>
+<pre>public&nbsp;void&nbsp;logRecognizedIntent(<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
+                                com.xatkit.intent.RecognizedIntent&nbsp;recognizedIntent)</pre>
+<div class="block">Logs the recognition information from the provided <code>recognizedIntent</code> and <code>session</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>input</code> - the unmatched input</dd>
-</dl>
-</li>
-</ul>
-<a name="registerMatchedInput-java.lang.String-com.xatkit.intent.IntentDefinition-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>registerMatchedInput</h4>
-<pre>public&nbsp;void&nbsp;registerMatchedInput(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
-                                 com.xatkit.intent.IntentDefinition&nbsp;intent)</pre>
-<div class="block">Registers a matched <code>input</code> and the corresponding <code>intent</code>.
- <p>
- The match record can be accessed through the <code>/analytics/matched</code> REST endpoint.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>input</code> - the matched input</dd>
-<dd><code>intent</code> - the corresponding <code>IntentDefinition</code></dd>
+<dd><code>session</code> - the <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> from which the <code>RecognizedIntent</code> has been created</dd>
+<dd><code>recognizedIntent</code> - the <code>RecognizedIntent</code> to log</dd>
 </dl>
 </li>
 </ul>

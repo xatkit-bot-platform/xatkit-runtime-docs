@@ -115,16 +115,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
  <p>
  This factory inspects the provided <code>configuration</code> and finds the concrete <a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>
  to construct. If the provided <code>configuration</code> does not define any <a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>, a
- <a href="../../../../com/xatkit/core/recognition/DefaultIntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>DefaultIntentRecognitionProvider</code></a> is returned, providing minimal support to
+ <a href="../../../../com/xatkit/core/recognition/regex/RegExIntentRecognitionProvider.html" title="class in com.xatkit.core.recognition.regex"><code>RegExIntentRecognitionProvider</code></a> is returned, providing minimal support to
  <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> management.
  <p>
- <b>Note:</b> <a href="../../../../com/xatkit/core/recognition/DefaultIntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>DefaultIntentRecognitionProvider</code></a> does not handle <code>IntentDefinition</code> and
+ <b>Note:</b> <a href="../../../../com/xatkit/core/recognition/regex/RegExIntentRecognitionProvider.html" title="class in com.xatkit.core.recognition.regex"><code>RegExIntentRecognitionProvider</code></a> does not handle <code>IntentDefinition</code> and
  <code>RecognizedIntent</code> computation. If the bot application requires such features a valid
  <a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a> must be specified in the provided configuration.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>, 
-<a href="../../../../com/xatkit/core/recognition/DefaultIntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>DefaultIntentRecognitionProvider</code></a></dd>
+<a href="../../../../com/xatkit/core/recognition/regex/RegExIntentRecognitionProvider.html" title="class in com.xatkit.core.recognition.regex"><code>RegExIntentRecognitionProvider</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -261,7 +261,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Returns the <a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a> matching the provided <code>configuration</code>.
  <p>
  If the provided <code>configuration</code> does not define any <a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>, a
- <a href="../../../../com/xatkit/core/recognition/DefaultIntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>DefaultIntentRecognitionProvider</code></a> is returned, providing minimal support to
+ <a href="../../../../com/xatkit/core/recognition/regex/RegExIntentRecognitionProvider.html" title="class in com.xatkit.core.recognition.regex"><code>RegExIntentRecognitionProvider</code></a> is returned, providing minimal support to
  <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> management.
  <p>
  The created <a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a> embeds a <a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition"><code>RecognitionMonitor</code></a> that logs monitoring

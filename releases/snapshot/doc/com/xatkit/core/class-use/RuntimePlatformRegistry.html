@@ -88,6 +88,12 @@
 <div class="block">Contains the core components of the Xatkit framework.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#com.xatkit.util">com.xatkit.util</a></td>
+<td class="colLast">
+<div class="block">Utility classes that are used by the Xatkit framework.</div>
+</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -125,9 +131,31 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/ExecutionService.html#ExecutionService-com.xatkit.execution.ExecutionModel-com.xatkit.core.RuntimePlatformRegistry-">ExecutionService</a></span>(com.xatkit.execution.ExecutionModel&nbsp;executionModel,
-                <a href="../../../../com/xatkit/core/RuntimePlatformRegistry.html" title="class in com.xatkit.core">RuntimePlatformRegistry</a>&nbsp;runtimePlatformRegistry)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/ExecutionService.html#ExecutionService-com.xatkit.execution.ExecutionModel-com.xatkit.core.RuntimePlatformRegistry-org.apache.commons.configuration2.Configuration-">ExecutionService</a></span>(com.xatkit.execution.ExecutionModel&nbsp;executionModel,
+                <a href="../../../../com/xatkit/core/RuntimePlatformRegistry.html" title="class in com.xatkit.core">RuntimePlatformRegistry</a>&nbsp;runtimePlatformRegistry,
+                <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2">Configuration</a>&nbsp;configuration)</code>
 <div class="block">Constructs a new <a href="../../../../com/xatkit/core/ExecutionService.html" title="class in com.xatkit.core"><code>ExecutionService</code></a> based on the provided <code>executionModel</code> and <code>runtimePlatformRegistry</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.xatkit.util">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../com/xatkit/core/RuntimePlatformRegistry.html" title="class in com.xatkit.core">RuntimePlatformRegistry</a> in <a href="../../../../com/xatkit/util/package-summary.html">com.xatkit.util</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../com/xatkit/util/package-summary.html">com.xatkit.util</a> with parameters of type <a href="../../../../com/xatkit/core/RuntimePlatformRegistry.html" title="class in com.xatkit.core">RuntimePlatformRegistry</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">XbaseUtils.</span><code><span class="memberNameLink"><a href="../../../../com/xatkit/util/XbaseUtils.html#isPlatformActionCall-org.eclipse.xtext.xbase.XMemberFeatureCall-com.xatkit.core.RuntimePlatformRegistry-">isPlatformActionCall</a></span>(org.eclipse.xtext.xbase.XMemberFeatureCall&nbsp;featureCall,
+                    <a href="../../../../com/xatkit/core/RuntimePlatformRegistry.html" title="class in com.xatkit.core">RuntimePlatformRegistry</a>&nbsp;registry)</code>
+<div class="block">Returns <code>true</code> if the provided <code>featureCall</code> is a platform's action call, <code>false</code> otherwise.</div>
 </td>
 </tr>
 </tbody>

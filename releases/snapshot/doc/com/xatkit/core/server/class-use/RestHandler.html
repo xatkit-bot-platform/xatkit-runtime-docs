@@ -147,8 +147,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></code></td>
-<td class="colLast"><span class="typeNameLabel">XatkitServer.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/server/XatkitServer.html#getRegisteredRestHandler-java.lang.String-">getRegisteredRestHandler</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
-<div class="block">Returns the <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> associated to the provided <code>uri</code>.</div>
+<td class="colLast"><span class="typeNameLabel">XatkitServer.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/server/XatkitServer.html#getRegisteredRestHandler-com.xatkit.core.server.HttpMethod-java.lang.String-">getRegisteredRestHandler</a></span>(<a href="../../../../../com/xatkit/core/server/HttpMethod.html" title="enum in com.xatkit.core.server">HttpMethod</a>&nbsp;httpMethod,
+                        <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri)</code>
+<div class="block">Returns the <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> associated to the provided <code>uri</code> with the given <code>httpMethod</code>.</div>
 </td>
 </tr>
 </tbody>
@@ -177,7 +178,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><span class="typeNameLabel">XatkitServer.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-java.lang.String-com.xatkit.core.server.RestHandler-">registerRestEndpoint</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
+<td class="colLast"><span class="typeNameLabel">XatkitServer.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-com.xatkit.core.server.HttpMethod-java.lang.String-com.xatkit.core.server.RestHandler-">registerRestEndpoint</a></span>(<a href="../../../../../com/xatkit/core/server/HttpMethod.html" title="enum in com.xatkit.core.server">HttpMethod</a>&nbsp;httpMethod,
+                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;uri,
                     <a href="../../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a>&nbsp;handler)</code>
 <div class="block">Registers the provided <code>handler</code> as a REST endpoint for the provided <code>uri</code>.</div>
 </td>
