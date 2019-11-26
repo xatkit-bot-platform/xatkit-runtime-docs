@@ -864,9 +864,17 @@
 <div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing the output context parameters to bind to the
  <code>EventInstance</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/HttpUtils.html#getParameters-org.apache.http.HttpRequest-">getParameters(HttpRequest)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/HttpUtils.html" title="class in com.xatkit.core.server">HttpUtils</a></dt>
+<dd>
+<div class="block">Returns a <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util"><code>List</code></a> containing the parameters associated to the provided <code>httpRequest</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/HttpUtils.html#getParameterValue-java.lang.String-java.util.List-">getParameterValue(String, List&lt;NameValuePair&gt;)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/HttpUtils.html" title="class in com.xatkit.core.server">HttpUtils</a></dt>
 <dd>
 <div class="block">Returns the value associated to the provided <code>parameterName</code> from the given <code>parameters</code> list.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/HttpUtils.html#getPath-org.apache.http.HttpRequest-">getPath(HttpRequest)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/HttpUtils.html" title="class in com.xatkit.core.server">HttpUtils</a></dt>
+<dd>
+<div class="block">Returns the path associated to the provided <code>httpRequest</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/RuntimePlatformRegistry.html#getPlatformDefinition-java.lang.String-">getPlatformDefinition(String)</a></span> - Method in class com.xatkit.core.<a href="com/xatkit/core/RuntimePlatformRegistry.html" title="class in com.xatkit.core">RuntimePlatformRegistry</a></dt>
 <dd>&nbsp;</dd>
@@ -962,6 +970,10 @@
 <dd>
 <div class="block">Returns all the <a href="com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a>s stored in this registry.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeAction.html#getSession--">getSession()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">RuntimeAction</a></dt>
+<dd>
+<div class="block">Returns the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> used to compute this action.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/session/XatkitSession.html#getSessionId--">getSessionId()</a></span> - Method in class com.xatkit.core.session.<a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></dt>
 <dd>
 <div class="block">Returns the unique identifier of the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a>.</div>
@@ -981,6 +993,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeActionResult.html#getThrownException--">getThrownException()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action">RuntimeActionResult</a></dt>
 <dd>
 <div class="block">Return the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang"><code>Exception</code></a> that has been thrown during the computation.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/HttpUtils.html#getURIBuilderFrom-org.apache.http.HttpRequest-">getURIBuilderFrom(HttpRequest)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/HttpUtils.html" title="class in com.xatkit.core.server">HttpUtils</a></dt>
+<dd>
+<div class="block">Returns a <code>URIBuilder</code> from the provided <code>httpRequest</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonEventMatcher.FieldValue.html#getValue--">getValue()</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonEventMatcher.FieldValue.html" title="class in com.xatkit.core.platform.io">JsonEventMatcher.FieldValue</a></dt>
 <dd>
@@ -1274,7 +1290,9 @@
 <div class="block">Merges the provided <code>other</code> <a href="com/xatkit/core/session/RuntimeContexts.html" title="class in com.xatkit.core.session"><code>RuntimeContexts</code></a> into this one.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/session/XatkitSession.html#merge-com.xatkit.core.session.XatkitSession-">merge(XatkitSession)</a></span> - Method in class com.xatkit.core.session.<a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Merges this <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> with the provided <code>other</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#mergeLocalSessionInDialogFlow-com.xatkit.core.recognition.dialogflow.DialogFlowSession-">mergeLocalSessionInDialogFlow(DialogFlowSession)</a></span> - Method in class com.xatkit.core.recognition.dialogflow.<a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">Merges the local <a href="com/xatkit/core/recognition/dialogflow/DialogFlowSession.html" title="class in com.xatkit.core.recognition.dialogflow"><code>DialogFlowSession</code></a> in the remote DialogFlow API one.</div>

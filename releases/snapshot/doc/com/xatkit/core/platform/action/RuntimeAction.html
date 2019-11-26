@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":6,"i2":10};
+var methods = {"i0":10,"i1":6,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -219,6 +219,12 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/action/RuntimeAction.html#getSession--">getSession</a></span>()</code>
+<div class="block">Returns the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> used to compute this action.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/action/RuntimeAction.html#init--">init</a></span>()</code>
 <div class="block">A hook method that is called after <a href="../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>.</div>
@@ -338,6 +344,24 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/util/concurren
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../com/xatkit/core/ExecutionService.html" title="class in com.xatkit.core"><code>ExecutionService</code></a>, 
 <a href="../../../../../com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action"><code>RuntimeActionResult</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getSession--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSession</h4>
+<pre>public&nbsp;<a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;getSession()</pre>
+<div class="block">Returns the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> used to compute this action.
+ <p>
+ The returned <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> can be different from the one provided in the constructor if the
+ <a href="../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> needs to create a dedicated session. This is for example the case with messaging
+ actions, that typically need to create a session representing the <code>channel</code> to send messages to.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> used to compute this action</dd>
 </dl>
 </li>
 </ul>
