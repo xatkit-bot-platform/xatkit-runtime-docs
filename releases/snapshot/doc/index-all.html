@@ -78,6 +78,10 @@
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key prefix to store the abstract platform bindings.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/EmptyContentRestHandler.html#acceptContentType-java.lang.String-">acceptContentType(String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server">EmptyContentRestHandler</a></dt>
+<dd>
+<div class="block">Returns <code>true</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.html#acceptContentType-java.lang.String-">acceptContentType(String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></dt>
 <dd>
 <div class="block">Returns <code>true</code> if the provided <code>contentType</code> represents a Json content, <code>false</code> otherwise.</div>
@@ -290,6 +294,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#convertParameterValueToString-com.google.protobuf.Value-">convertParameterValueToString(Value)</a></span> - Method in class com.xatkit.core.recognition.dialogflow.<a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">Converts the provided <code>value</code> into a <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerFactory.html#createEmptyContentRestHandler-com.xatkit.core.server.RestHandlerFactory.EmptyContentRestHandlerFunction-">createEmptyContentRestHandler(RestHandlerFactory.EmptyContentRestHandlerFunction)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server">RestHandlerFactory</a></dt>
+<dd>
+<div class="block">Creates an <a href="com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server"><code>EmptyContentRestHandler</code></a> and sets its handling method with the provided <code>function</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonEventMatcher.html#createEventInstance-java.lang.String-com.google.gson.JsonElement-">createEventInstance(String, JsonElement)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonEventMatcher.html" title="class in com.xatkit.core.platform.io">JsonEventMatcher</a></dt>
 <dd>
@@ -507,6 +515,12 @@
 <dd>
 <div class="block">A static <a href="com/xatkit/core/platform/io/JsonEventMatcher.FieldValue.html" title="class in com.xatkit.core.platform.io"><code>JsonEventMatcher.FieldValue</code></a> used to match requests without inspecting its Json fields.</div>
 </dd>
+<dt><a href="com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server"><span class="typeNameLink">EmptyContentRestHandler</span></a> - Class in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
+<dd>
+<div class="block">A handler that receives HTTP requests with empty content and process them.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/EmptyContentRestHandler.html#EmptyContentRestHandler--">EmptyContentRestHandler()</a></span> - Constructor for class com.xatkit.core.server.<a href="com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server">EmptyContentRestHandler</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#ENABLE_ENTITY_LOADING_KEY">ENABLE_ENTITY_LOADING_KEY</a></span> - Static variable in class com.xatkit.core.recognition.dialogflow.<a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store whether to initialize the <a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#registeredEntityTypes"><code>DialogFlowApi.registeredEntityTypes</code></a> <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a>
@@ -1045,6 +1059,10 @@
 <div class="block">Handles the received <code>request</code> and fill the provided <code>response</code> with the retrieved <a href="http://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io"><code>File</code></a> to
  serve.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerFactory.EmptyContentRestHandlerFunction.html#handle-java.util.List-java.util.List-java.lang.Object-">handle(List&lt;Header&gt;, List&lt;NameValuePair&gt;, Object)</a></span> - Method in interface com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerFactory.EmptyContentRestHandlerFunction.html" title="interface in com.xatkit.core.server">RestHandlerFactory.EmptyContentRestHandlerFunction</a></dt>
+<dd>
+<div class="block">The handling function of <a href="com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server"><code>EmptyContentRestHandler</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html#handle-java.util.List-java.util.List-com.google.gson.JsonElement-">handle(List&lt;Header&gt;, List&lt;NameValuePair&gt;, JsonElement)</a></span> - Method in interface com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server">RestHandlerFactory.JsonRestHandlerFunction</a></dt>
 <dd>
 <div class="block">The handling function of <a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><code>JsonRestHandler</code></a>.</div>
@@ -1057,6 +1075,10 @@
 <dd>
 <div class="block">Handles the provided <code>eventInstance</code> and executes the corresponding <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>s defined in the
  <code>ExecutionModel</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/EmptyContentRestHandler.html#handleParsedContent-java.util.List-java.util.List-java.lang.Object-">handleParsedContent(List&lt;Header&gt;, List&lt;NameValuePair&gt;, Object)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server">EmptyContentRestHandler</a></dt>
+<dd>
+<div class="block">Handles the request.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.html#handleParsedContent-java.util.List-java.util.List-com.google.gson.JsonElement-">handleParsedContent(List&lt;Header&gt;, List&lt;NameValuePair&gt;, JsonElement)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></dt>
 <dd>
@@ -1227,7 +1249,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><span class="typeNameLink">JsonRestHandler</span></a> - Class in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
 <dd>
-<div class="block">A handler that receives HTTP requests and process them.</div>
+<div class="block">A handler that receives HTTP requests containing JSON and process them.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.html#JsonRestHandler--">JsonRestHandler()</a></span> - Constructor for class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></dt>
 <dd>&nbsp;</dd>
@@ -1347,6 +1369,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RestAction.html#params">params</a></span> - Variable in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RestAction.html" title="class in com.xatkit.core.platform.action">RestAction</a></dt>
 <dd>
 <div class="block">A <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing user-defined parameters to include in the request.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/EmptyContentRestHandler.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server">EmptyContentRestHandler</a></dt>
+<dd>
+<div class="block">Checks that the provided <code>content</code> object is <code>null</code> and returns it.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.html#parseContent-java.lang.Object-">parseContent(Object)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></dt>
 <dd>
@@ -1506,12 +1532,40 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandler.html#RestHandler--">RestHandler()</a></span> - Constructor for class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server">RestHandler</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><span class="typeNameLink">RestHandlerException</span></a> - Exception in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
+<dd>
+<div class="block">An exception thrown by <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>s to notify the <a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException--">RestHandlerException()</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
+<dd>
+<div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.String-">RestHandlerException(String)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
+<dd>
+<div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code></div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.String-java.lang.Throwable-">RestHandlerException(String, Throwable)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
+<dd>
+<div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code> and <code>cause</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.Throwable-">RestHandlerException(Throwable)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
+<dd>
+<div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>cause</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.String-java.lang.Throwable-boolean-boolean-">RestHandlerException(String, Throwable, boolean, boolean)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
+<dd>
+<div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code>, <code>cause</code>, <code>enableSuppression</code>, and <code>writeableStackTrace</code>.</div>
+</dd>
 <dt><a href="com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server"><span class="typeNameLink">RestHandlerFactory</span></a> - Class in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
 <dd>
 <div class="block">A <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> factory providing utility methods to create specific <a href="com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a> instances.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerFactory.html#RestHandlerFactory--">RestHandlerFactory()</a></span> - Constructor for class com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server">RestHandlerFactory</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/xatkit/core/server/RestHandlerFactory.EmptyContentRestHandlerFunction.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">RestHandlerFactory.EmptyContentRestHandlerFunction</span></a> - Interface in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
+<dd>
+<div class="block">A functional interface representing the handling function of <a href="com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server"><code>EmptyContentRestHandler</code></a>.</div>
+</dd>
 <dt><a href="com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">RestHandlerFactory.JsonRestHandlerFunction</span></a> - Interface in <a href="com/xatkit/core/server/package-summary.html">com.xatkit.core.server</a></dt>
 <dd>
 <div class="block">A functional interface representing the handling function of <a href="com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><code>JsonRestHandler</code></a>.</div>

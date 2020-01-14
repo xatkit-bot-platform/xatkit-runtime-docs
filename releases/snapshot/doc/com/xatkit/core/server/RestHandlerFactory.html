@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9};
+var methods = {"i0":9,"i1":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,8 +49,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/RestHandlerFactory.EmptyContentRestHandlerFunction.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/xatkit/core/server/RestHandlerFactory.html" target="_top">Frames</a></li>
@@ -132,6 +132,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerFactory.EmptyContentRestHandlerFunction.html" title="interface in com.xatkit.core.server">RestHandlerFactory.EmptyContentRestHandlerFunction</a></span></code>
+<div class="block">A functional interface representing the handling function of <a href="../../../../com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server"><code>EmptyContentRestHandler</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server">RestHandlerFactory.JsonRestHandlerFunction</a></span></code>
 <div class="block">A functional interface representing the handling function of <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><code>JsonRestHandler</code></a>.</div>
 </td>
@@ -169,6 +175,12 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server">EmptyContentRestHandler</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerFactory.html#createEmptyContentRestHandler-com.xatkit.core.server.RestHandlerFactory.EmptyContentRestHandlerFunction-">createEmptyContentRestHandler</a></span>(<a href="../../../../com/xatkit/core/server/RestHandlerFactory.EmptyContentRestHandlerFunction.html" title="interface in com.xatkit.core.server">RestHandlerFactory.EmptyContentRestHandlerFunction</a>&nbsp;function)</code>
+<div class="block">Creates an <a href="../../../../com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server"><code>EmptyContentRestHandler</code></a> and sets its handling method with the provided <code>function</code>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerFactory.html#createJsonRestHandler-com.xatkit.core.server.RestHandlerFactory.JsonRestHandlerFunction-">createJsonRestHandler</a></span>(<a href="../../../../com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server">RestHandlerFactory.JsonRestHandlerFunction</a>&nbsp;function)</code>
 <div class="block">Creates a <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><code>JsonRestHandler</code></a> and sets its handling method with the provided <code>function</code>.</div>
@@ -216,7 +228,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <a name="createJsonRestHandler-com.xatkit.core.server.RestHandlerFactory.JsonRestHandlerFunction-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>createJsonRestHandler</h4>
 <pre>public static&nbsp;<a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a>&nbsp;createJsonRestHandler(<a href="../../../../com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server">RestHandlerFactory.JsonRestHandlerFunction</a>&nbsp;function)</pre>
@@ -226,6 +238,22 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <dd><code>function</code> - the <a href="../../../../com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server"><code>RestHandlerFactory.JsonRestHandlerFunction</code></a> used to define the handler behavior</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the created <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server"><code>JsonRestHandler</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="createEmptyContentRestHandler-com.xatkit.core.server.RestHandlerFactory.EmptyContentRestHandlerFunction-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>createEmptyContentRestHandler</h4>
+<pre>public static&nbsp;<a href="../../../../com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server">EmptyContentRestHandler</a>&nbsp;createEmptyContentRestHandler(<a href="../../../../com/xatkit/core/server/RestHandlerFactory.EmptyContentRestHandlerFunction.html" title="interface in com.xatkit.core.server">RestHandlerFactory.EmptyContentRestHandlerFunction</a>&nbsp;function)</pre>
+<div class="block">Creates an <a href="../../../../com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server"><code>EmptyContentRestHandler</code></a> and sets its handling method with the provided <code>function</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>function</code> - the <a href="../../../../com/xatkit/core/server/RestHandlerFactory.EmptyContentRestHandlerFunction.html" title="interface in com.xatkit.core.server"><code>RestHandlerFactory.EmptyContentRestHandlerFunction</code></a> used to define the handler behavior</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the created <a href="../../../../com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server"><code>EmptyContentRestHandler</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -257,8 +285,8 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/xatkit/core/server/RestHandlerFactory.JsonRestHandlerFunction.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/RestHandlerFactory.EmptyContentRestHandlerFunction.html" title="interface in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/xatkit/core/server/RestHandlerFactory.html" target="_top">Frames</a></li>

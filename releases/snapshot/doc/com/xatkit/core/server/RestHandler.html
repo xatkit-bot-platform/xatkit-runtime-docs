@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/xatkit/core/server/JsonRestHandler.JsonHelper.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/xatkit/core/server/RestHandler.html" target="_top">Frames</a></li>
@@ -113,7 +113,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></dd>
+<dd><a href="../../../../com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server">EmptyContentRestHandler</a>, <a href="../../../../com/xatkit/core/server/JsonRestHandler.html" title="class in com.xatkit.core.server">JsonRestHandler</a></dd>
 </dl>
 <hr>
 <br>
@@ -310,8 +310,16 @@ protected abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/l
                                                         <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                         <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
                                                         <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                                        <a href="../../../../com/xatkit/core/server/RestHandler.html" title="type parameter in RestHandler">C</a>&nbsp;content)</pre>
-<div class="block">Handles the received <code>headers</code>, <code>params</code>, and parsed payload.</div>
+                                                        <a href="../../../../com/xatkit/core/server/RestHandler.html" title="type parameter in RestHandler">C</a>&nbsp;content)
+                                                 throws <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></pre>
+<div class="block">Handles the received <code>headers</code>, <code>params</code>, and parsed payload.
+ <p>
+ The value returned by this method is embedded in the sever's response. If the return value is an intance of
+ <code>HttpEntity</code> it is embedded as is, otherwise the server attempts to convert it into a
+ valid <code>HttpEntity</code> using <a href="../../../../com/xatkit/core/server/HttpEntityHelper.html#createHttpEntity-java.lang.Object-"><code>HttpEntityHelper.createHttpEntity(Object)</code></a>.
+ <p>
+ The exception thrown by this method is used to determine the HTTP response's status. By default the server
+ returns a status code <code>200</code>, but it will return a <code>404</code> if this method threw an exception.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>headers</code> - the HTTP headers of the received request</dd>
@@ -319,8 +327,11 @@ protected abstract&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/l
 <dd><code>content</code> - the parsed request payload to handle</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> to embed in the server's response</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></code> - if an error occurred when handling the request</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../com/xatkit/core/server/RestHandler.html#parseContent-java.lang.Object-"><code>parseContent(Object)</code></a></dd>
+<dd><a href="../../../../com/xatkit/core/server/RestHandler.html#parseContent-java.lang.Object-"><code>parseContent(Object)</code></a>, 
+<a href="../../../../com/xatkit/core/server/HttpEntityHelper.html#createHttpEntity-java.lang.Object-"><code>HttpEntityHelper.createHttpEntity(Object)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -336,7 +347,8 @@ public final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Ob
                                             <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                             <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
                                             <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)</pre>
+                                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content)
+                                     throws <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></pre>
 <div class="block">Handles the raw HTTP request.
  <p>
  This method parses the provided <code>content</code> and internally calls
@@ -351,6 +363,8 @@ public final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Ob
 <dd><code>content</code> - the raw HTTP request content to handle</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> to embed in the server's response</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></code> - TODO</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../com/xatkit/core/server/RestHandler.html#parseContent-java.lang.Object-"><code>parseContent(Object)</code></a>, 
 <a href="../../../../com/xatkit/core/server/RestHandler.html#handleParsedContent-java.util.List-java.util.List-C-"><code>handleParsedContent(List, List, Object)</code></a></dd>
@@ -409,7 +423,7 @@ public final&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Ob
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../com/xatkit/core/server/JsonRestHandler.JsonHelper.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/xatkit/core/server/RestHandlerFactory.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/xatkit/core/server/RestHandler.html" target="_top">Frames</a></li>

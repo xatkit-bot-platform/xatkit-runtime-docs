@@ -535,7 +535,8 @@ public&nbsp;<a href="../../../../com/xatkit/core/server/RestHandler.html" title=
                                 <a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.http.NameValuePair&gt;&nbsp;params,
                                 <a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                 <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;content,
-                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)</pre>
+                                <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;contentType)
+                         throws <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></pre>
 <div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -550,6 +551,7 @@ public&nbsp;<a href="../../../../com/xatkit/core/server/RestHandler.html" title=
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>uri</code>, <code>header</code>, or <code>params</code> is <code>null</code></dd>
 <dd><code><a href="../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if there is no REST endpoint registered for the provided <code>uri</code></dd>
+<dd><code><a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></code> - if an error occurred when processing the <a href="../../../../com/xatkit/core/server/RestHandler.html" title="class in com.xatkit.core.server"><code>RestHandler</code></a>'s logic</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../com/xatkit/core/server/XatkitServer.html#registerRestEndpoint-com.xatkit.core.server.HttpMethod-java.lang.String-com.xatkit.core.server.RestHandler-"><code>registerRestEndpoint(HttpMethod, String, RestHandler)</code></a></dd>
 </dl>
