@@ -256,9 +256,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></td>
+<td class="colFirst"><code><a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../com/xatkit/core/XatkitCore.html#getIntentRecognitionProvider--">getIntentRecognitionProvider</a></span>()</code>
-<div class="block">Returns the underlying <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>.</div>
+<div class="block">Returns the underlying <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -561,16 +561,16 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getIntentRecognitionProvider</h4>
-<pre>public&nbsp;<a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a>&nbsp;getIntentRecognitionProvider()</pre>
-<div class="block">Returns the underlying <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>.
+<pre>public&nbsp;<a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a>&nbsp;getIntentRecognitionProvider()</pre>
+<div class="block">Returns the underlying <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>.
  <p>
  <b>Note:</b> this method is designed to ease debugging and testing, direct interactions with the
- <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a> API may create consistency issues. In particular, xatkit does not ensure
+ <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a> API may create consistency issues. In particular, xatkit does not ensure
  that <a href="../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>s will be triggered in case of direct queries to the
- <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a> API.</div>
+ <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a> API.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the underlying <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a></dd>
+<dd>the underlying <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -632,11 +632,11 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <pre>public&nbsp;void&nbsp;shutdown()</pre>
 <div class="block">Shuts down the <a href="../../../com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> and the underlying engines.
  <p>
- This method shuts down the underlying <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>, unloads and shuts down all the
+ This method shuts down the underlying <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>, unloads and shuts down all the
  <a href="../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a>s associated to this instance, unregisters the <code>EventDefinition</code> from the associated
  <a href="../../../com/xatkit/core/EventDefinitionRegistry.html" title="class in com.xatkit.core"><code>EventDefinitionRegistry</code></a>, shuts down the <a href="../../../com/xatkit/core/ExecutionService.html" title="class in com.xatkit.core"><code>ExecutionService</code></a>, and stops the <a href="../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.
  <p>
- <b>Note:</b> calling this method invalidates the <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a> connection, and thus shuts
+ <b>Note:</b> calling this method invalidates the <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a> connection, and thus shuts
  down intent recognition features. New <a href="../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>s cannot be processed either.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -658,7 +658,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?
 <div class="block">Returns whether the <a href="../../../com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> client is shutdown.
  <p>
  This class is considered as shutdown if its underlying <a href="../../../com/xatkit/core/ExecutionService.html" title="class in com.xatkit.core"><code>ExecutionService</code></a>,
- <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>, and <a href="../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a> are shutdown.</div>
+ <a href="../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a>, and <a href="../../../com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a> are shutdown.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if the <a href="../../../com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> client is shutdown, <code>false</code> otherwise</dd>

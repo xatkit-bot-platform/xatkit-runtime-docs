@@ -100,22 +100,22 @@ var activeTableTab = "activeTableTab";
 <li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">com.xatkit.core.recognition.IntentRecognitionProvider</a></li>
+<li>
+<ul class="inheritance">
 <li>com.xatkit.core.recognition.dialogflow.DialogFlowApi</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DialogFlowApi</span>
-extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></pre>
+extends <a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></pre>
 <div class="block">A concrete wrapper for the DialogFlow API client.
  <p>
  This class is used to easily setup a connection to a given DialogFlow agent. Note that in addition to the
@@ -300,9 +300,9 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>com.xatkit.intent.RecognizedIntent</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
-         <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
-<div class="block">Returns the <code>RecognizedIntent</code> extracted from te provided <code>input</code>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getIntentInternal-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntentInternal</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+                 <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Returns the raw <code>RecognizedIntent</code> extracted from the provided <code>input</code>.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
@@ -360,6 +360,13 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
 </td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.xatkit.core.recognition.IntentRecognitionProvider">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.xatkit.core.recognition.<a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></h3>
+<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntent</a>, <a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#setPostProcessors-java.util.List-">setPostProcessors</a>, <a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#setPreProcessors-java.util.List-">setPreProcessors</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -659,7 +666,7 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
  DialogFlow <code>EntityType</code> and add it to the current project.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#registerEntityDefinition-com.xatkit.intent.EntityDefinition-">registerEntityDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#registerEntityDefinition-com.xatkit.intent.EntityDefinition-">registerEntityDefinition</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>entityDefinition</code> - the <code>EntityDefinition</code> to register to the DialogFlow project</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -688,7 +695,7 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
  DialogFlow <code>Intent</code> and add it to the current project.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#registerIntentDefinition-com.xatkit.intent.IntentDefinition-">registerIntentDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#registerIntentDefinition-com.xatkit.intent.IntentDefinition-">registerIntentDefinition</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>intentDefinition</code> - the <code>IntentDefinition</code> to register to the DialogFlow project</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -815,7 +822,7 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
  <a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a> to train the ML engine.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#deleteEntityDefinition-com.xatkit.intent.EntityDefinition-">deleteEntityDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#deleteEntityDefinition-com.xatkit.intent.EntityDefinition-">deleteEntityDefinition</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>entityDefinition</code> - the <code>EntityDefinition</code> to delete from the underlying intent recognition provider</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -840,7 +847,7 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
  <a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#trainMLEngine--"><code>IntentRecognitionProvider.trainMLEngine()</code></a> to train the ML engine.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#deleteIntentDefinition-com.xatkit.intent.IntentDefinition-">deleteIntentDefinition</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#deleteIntentDefinition-com.xatkit.intent.IntentDefinition-">deleteIntentDefinition</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>intentDefinition</code> - the <code>IntentDefinition</code> to delete from the underlying intent recognition provider</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -867,7 +874,7 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
  occurred on the DialogFlow side.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#trainMLEngine--">trainMLEngine</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#trainMLEngine--">trainMLEngine</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowException.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowException</a></code> - if the <a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html" title="class in com.xatkit.core.recognition.dialogflow"><code>DialogFlowApi</code></a> is shutdown</dd>
 </dl>
@@ -889,7 +896,7 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
  <a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#DialogFlowApi-com.xatkit.core.XatkitCore-org.apache.commons.configuration2.Configuration-"><code>DialogFlowApi(XatkitCore, Configuration)</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#createSession-java.lang.String-">createSession</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#createSession-java.lang.String-">createSession</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sessionId</code> - the identifier to create a session from</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -923,22 +930,24 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
 <dd><code><a href="../../../../../com/xatkit/core/XatkitException.html" title="class in com.xatkit.core">XatkitException</a></code> - if at least one of the local context values' type is not supported</dd>
 <dd><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the provided <code>dialogFlowSession</code> is <code>null</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-"><code>getIntent(String, XatkitSession)</code></a></dd>
+<dd><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-"><code>IntentRecognitionProvider.getIntent(String, XatkitSession)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-">
+<a name="getIntentInternal-java.lang.String-com.xatkit.core.session.XatkitSession-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getIntent</h4>
-<pre>public&nbsp;com.xatkit.intent.RecognizedIntent&nbsp;getIntent(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
-                                                    <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</pre>
-<div class="block">Returns the <code>RecognizedIntent</code> extracted from te provided <code>input</code>.
+<h4>getIntentInternal</h4>
+<pre>public&nbsp;com.xatkit.intent.RecognizedIntent&nbsp;getIntentInternal(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+                                                            <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</pre>
+<div class="block">Returns the raw <code>RecognizedIntent</code> extracted from the provided <code>input</code>.
  <p>
- This method uses the provided <code>session</code> to extract contextual intents, such as follow-up or
- context-based intents.
+ This method is called <b>after</b> pre-processing of the <code>input</code> (i.e. the given <code>input</code> is
+ already pre-processed), and does not apply any post-processing function (this is done by
+ <a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-"><code>IntentRecognitionProvider.getIntent(String, XatkitSession)</code></a>). Subclasses implementing this method should not take care of
+ pre/post processing.
  <p>
  The returned <code>RecognizedIntent</code> is constructed from the raw <code>Intent</code> returned by the DialogFlow
  API, using the mapping defined in <a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#convertDialogFlowIntentToRecognizedIntent-com.google.cloud.dialogflow.v2.QueryResult-"><code>convertDialogFlowIntentToRecognizedIntent(QueryResult)</code></a>.
@@ -950,9 +959,9 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
  propagated to the recognition engine.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getIntentInternal-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntentInternal</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>input</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representing the textual input to process and extract the intent from</dd>
+<dd><code>input</code> - the textual input to process and extract the intent from</dd>
 <dd><code>session</code> - the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> used to access context information</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <code>RecognizedIntent</code> extracted from the provided <code>input</code> and <code>session</code></dd>
@@ -998,7 +1007,7 @@ implements <a href="../../../../../com/xatkit/core/recognition/IntentRecognition
  class cannot be used to access the intent recognition provider anymore.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#shutdown--">shutdown</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#shutdown--">shutdown</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1013,7 +1022,7 @@ public&nbsp;<a href="../../../../../com/xatkit/core/recognition/RecognitionMonit
 <div class="block">Returns the <a href="../../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition"><code>RecognitionMonitor</code></a> associated to this intent recognition provider.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getRecognitionMonitor--">getRecognitionMonitor</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getRecognitionMonitor--">getRecognitionMonitor</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <a href="../../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition"><code>RecognitionMonitor</code></a>, or <code>null</code> if analytics monitoring is disabled.</dd>
 </dl>
@@ -1029,7 +1038,7 @@ public&nbsp;<a href="../../../../../com/xatkit/core/recognition/RecognitionMonit
 <div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#isShutdown--">isShutdown</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="interface in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
+<dd><code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#isShutdown--">isShutdown</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if the intent recognition provider client is shutdown, <code>false</code> otherwise</dd>
 </dl>

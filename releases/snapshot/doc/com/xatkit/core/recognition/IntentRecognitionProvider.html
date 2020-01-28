@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":10,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":10,"i10":10,"i11":6,"i12":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -76,13 +76,13 @@ var activeTableTab = "activeTableTab";
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -93,19 +93,28 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">com.xatkit.core.recognition</div>
-<h2 title="Interface IntentRecognitionProvider" class="title">Interface IntentRecognitionProvider</h2>
+<h2 title="Class IntentRecognitionProvider" class="title">Class IntentRecognitionProvider</h2>
 </div>
 <div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>com.xatkit.core.recognition.IntentRecognitionProvider</li>
+</ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Known Implementing Classes:</dt>
+<dt>Direct Known Subclasses:</dt>
 <dd><a href="../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowApi</a>, <a href="../../../../com/xatkit/core/recognition/regex/RegExIntentRecognitionProvider.html" title="class in com.xatkit.core.recognition.regex">RegExIntentRecognitionProvider</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">IntentRecognitionProvider</span></pre>
+<pre>public abstract class <span class="typeNameLabel">IntentRecognitionProvider</span>
+extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">A unified wrapper for concrete intent recognition providers.
  <p>
  This interface provides utility methods to connect to a given intent recognition provider, register and delete
@@ -117,6 +126,23 @@ var activeTableTab = "activeTableTab";
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#IntentRecognitionProvider--">IntentRecognitionProvider</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -124,25 +150,25 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
+<td class="colFirst"><code>abstract <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#createSession-java.lang.String-">createSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
 <div class="block">Creates a new <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> from the provided <code>sessionId</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#deleteEntityDefinition-com.xatkit.intent.EntityDefinition-">deleteEntityDefinition</a></span>(com.xatkit.intent.EntityDefinition&nbsp;entityDefinition)</code>
 <div class="block">Deletes the provided <code>entityDefinition</code> from the underlying intent recognition provider.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#deleteIntentDefinition-com.xatkit.intent.IntentDefinition-">deleteIntentDefinition</a></span>(com.xatkit.intent.IntentDefinition&nbsp;intentDefinition)</code>
 <div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent recognition provider.</div>
 </td>
@@ -155,42 +181,68 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition">RecognitionMonitor</a></code></td>
+<td class="colFirst"><code>protected abstract com.xatkit.intent.RecognizedIntent</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getIntentInternal-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntentInternal</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+                 <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Returns the raw <code>RecognizedIntent</code> extracted from the provided <code>input</code>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>abstract <a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition">RecognitionMonitor</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getRecognitionMonitor--">getRecognitionMonitor</a></span>()</code>
 <div class="block">Returns the <a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition"><code>RecognitionMonitor</code></a> associated to this intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#isShutdown--">isShutdown</a></span>()</code>
 <div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#registerEntityDefinition-com.xatkit.intent.EntityDefinition-">registerEntityDefinition</a></span>(com.xatkit.intent.EntityDefinition&nbsp;entityDefinition)</code>
 <div class="block">Registers the provided <code>entityDefinition</code> in the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#registerIntentDefinition-com.xatkit.intent.IntentDefinition-">registerIntentDefinition</a></span>(com.xatkit.intent.IntentDefinition&nbsp;intentDefinition)</code>
 <div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#setPostProcessors-java.util.List-">setPostProcessors</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../../com/xatkit/core/recognition/processor/IntentPostProcessor.html" title="interface in com.xatkit.core.recognition.processor">IntentPostProcessor</a>&gt;&nbsp;postProcessors)</code>
+<div class="block">Set the <a href="../../../../com/xatkit/core/recognition/processor/IntentPostProcessor.html" title="interface in com.xatkit.core.recognition.processor"><code>IntentPostProcessor</code></a>s.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#setPreProcessors-java.util.List-">setPreProcessors</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../../com/xatkit/core/recognition/processor/InputPreProcessor.html" title="interface in com.xatkit.core.recognition.processor">InputPreProcessor</a>&gt;&nbsp;preProcessors)</code>
+<div class="block">Sets the <a href="../../../../com/xatkit/core/recognition/processor/InputPreProcessor.html" title="interface in com.xatkit.core.recognition.processor"><code>InputPreProcessor</code></a>s.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#trainMLEngine--">trainMLEngine</a></span>()</code>
 <div class="block">Trains the underlying intent recognition provider.</div>
 </td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -199,19 +251,64 @@ var activeTableTab = "activeTableTab";
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="IntentRecognitionProvider--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>IntentRecognitionProvider</h4>
+<pre>public&nbsp;IntentRecognitionProvider()</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="setPreProcessors-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPreProcessors</h4>
+<pre>public final&nbsp;void&nbsp;setPreProcessors(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../../com/xatkit/core/recognition/processor/InputPreProcessor.html" title="interface in com.xatkit.core.recognition.processor">InputPreProcessor</a>&gt;&nbsp;preProcessors)</pre>
+<div class="block">Sets the <a href="../../../../com/xatkit/core/recognition/processor/InputPreProcessor.html" title="interface in com.xatkit.core.recognition.processor"><code>InputPreProcessor</code></a>s.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>preProcessors</code> - the <a href="../../../../com/xatkit/core/recognition/processor/InputPreProcessor.html" title="interface in com.xatkit.core.recognition.processor"><code>InputPreProcessor</code></a> to set</dd>
+</dl>
+</li>
+</ul>
+<a name="setPostProcessors-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPostProcessors</h4>
+<pre>public final&nbsp;void&nbsp;setPostProcessors(<a href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../../com/xatkit/core/recognition/processor/IntentPostProcessor.html" title="interface in com.xatkit.core.recognition.processor">IntentPostProcessor</a>&gt;&nbsp;postProcessors)</pre>
+<div class="block">Set the <a href="../../../../com/xatkit/core/recognition/processor/IntentPostProcessor.html" title="interface in com.xatkit.core.recognition.processor"><code>IntentPostProcessor</code></a>s.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>postProcessors</code> - the <a href="../../../../com/xatkit/core/recognition/processor/IntentPostProcessor.html" title="interface in com.xatkit.core.recognition.processor"><code>IntentPostProcessor</code></a> to set</dd>
+</dl>
+</li>
+</ul>
 <a name="registerEntityDefinition-com.xatkit.intent.EntityDefinition-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>registerEntityDefinition</h4>
-<pre>void&nbsp;registerEntityDefinition(com.xatkit.intent.EntityDefinition&nbsp;entityDefinition)</pre>
+<pre>public abstract&nbsp;void&nbsp;registerEntityDefinition(com.xatkit.intent.EntityDefinition&nbsp;entityDefinition)</pre>
 <div class="block">Registers the provided <code>entityDefinition</code> in the underlying intent recognition provider.
  <p>
  <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
@@ -232,7 +329,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>registerIntentDefinition</h4>
-<pre>void&nbsp;registerIntentDefinition(com.xatkit.intent.IntentDefinition&nbsp;intentDefinition)</pre>
+<pre>public abstract&nbsp;void&nbsp;registerIntentDefinition(com.xatkit.intent.IntentDefinition&nbsp;intentDefinition)</pre>
 <div class="block">Registers the provided <code>intentDefinition</code> in the underlying intent recognition provider.
  <p>
  <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
@@ -253,7 +350,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>deleteEntityDefinition</h4>
-<pre>void&nbsp;deleteEntityDefinition(com.xatkit.intent.EntityDefinition&nbsp;entityDefinition)</pre>
+<pre>public abstract&nbsp;void&nbsp;deleteEntityDefinition(com.xatkit.intent.EntityDefinition&nbsp;entityDefinition)</pre>
 <div class="block">Deletes the provided <code>entityDefinition</code> from the underlying intent recognition provider.
  <p>
  <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
@@ -274,7 +371,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>deleteIntentDefinition</h4>
-<pre>void&nbsp;deleteIntentDefinition(com.xatkit.intent.IntentDefinition&nbsp;intentDefinition)</pre>
+<pre>public abstract&nbsp;void&nbsp;deleteIntentDefinition(com.xatkit.intent.IntentDefinition&nbsp;intentDefinition)</pre>
 <div class="block">Deletes the provided <code>intentDefinition</code> from the underlying intent recognition provider.
  <p>
  <b>Note:</b> unless explicitly stated in subclasses, this method does not train the underlying machine
@@ -295,7 +392,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>trainMLEngine</h4>
-<pre>void&nbsp;trainMLEngine()</pre>
+<pre>public abstract&nbsp;void&nbsp;trainMLEngine()</pre>
 <div class="block">Trains the underlying intent recognition provider.
  <p>
  <b>Note:</b> this method returns once the intent recognition provider's training is complete. However, the
@@ -308,7 +405,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>createSession</h4>
-<pre><a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;createSession(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</pre>
+<pre>public abstract&nbsp;<a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;createSession(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</pre>
 <div class="block">Creates a new <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> from the provided <code>sessionId</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -324,7 +421,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>shutdown</h4>
-<pre>void&nbsp;shutdown()</pre>
+<pre>public abstract&nbsp;void&nbsp;shutdown()</pre>
 <div class="block">Shuts down the intent recognition provider client and invalidates the remaining sessions.
  <p>
  <b>Note:</b> calling this method invalidates the intent recognition provider client connection, and thus this
@@ -337,7 +434,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>isShutdown</h4>
-<pre>boolean&nbsp;isShutdown()</pre>
+<pre>public abstract&nbsp;boolean&nbsp;isShutdown()</pre>
 <div class="block">Returns whether the intent recognition provider client is shutdown.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -351,15 +448,43 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getIntent</h4>
-<pre>com.xatkit.intent.RecognizedIntent&nbsp;getIntent(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
-                                             <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</pre>
+<pre>public final&nbsp;com.xatkit.intent.RecognizedIntent&nbsp;getIntent(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+                                                          <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</pre>
 <div class="block">Returns the <code>RecognizedIntent</code> extracted from te provided <code>input</code>.
  <p>
  This method uses the provided <code>session</code> to extract contextual intents, such as follow-up or
- context-based intents.</div>
+ context-based intents.
+ <p>
+ This method applies the pre-processing functions associated to this <a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition"><code>IntentRecognitionProvider</code></a> on the
+ given <code>input</code>, and the post-processing functions on the returned <code>RecognizedIntent</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>input</code> - the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representing the textual input to process and extract the intent from</dd>
+<dd><code>session</code> - the <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> used to access context information</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the post-processed <code>RecognizedIntent</code> extracted from the provided <code>input</code> and <code>session</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../com/xatkit/core/recognition/IntentRecognitionProviderFactory.html#getIntentRecognitionProvider-com.xatkit.core.XatkitCore-org.apache.commons.configuration2.Configuration-"><code>IntentRecognitionProviderFactory.getIntentRecognitionProvider(XatkitCore, Configuration)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getIntentInternal-java.lang.String-com.xatkit.core.session.XatkitSession-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIntentInternal</h4>
+<pre>protected abstract&nbsp;com.xatkit.intent.RecognizedIntent&nbsp;getIntentInternal(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+                                                                        <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</pre>
+<div class="block">Returns the raw <code>RecognizedIntent</code> extracted from the provided <code>input</code>.
+ <p>
+ This method is called <b>after</b> pre-processing of the <code>input</code> (i.e. the given <code>input</code> is
+ already pre-processed), and does not apply any post-processing function (this is done by
+ <a href="../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-"><code>getIntent(String, XatkitSession)</code></a>). Subclasses implementing this method should not take care of
+ pre/post processing.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>input</code> - the textual input to process and extract the intent from</dd>
 <dd><code>session</code> - the <a href="../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> used to access context information</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <code>RecognizedIntent</code> extracted from the provided <code>input</code> and <code>session</code></dd>
@@ -373,7 +498,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getRecognitionMonitor</h4>
 <pre><a href="http://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-<a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition">RecognitionMonitor</a>&nbsp;getRecognitionMonitor()</pre>
+public abstract&nbsp;<a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition">RecognitionMonitor</a>&nbsp;getRecognitionMonitor()</pre>
 <div class="block">Returns the <a href="../../../../com/xatkit/core/recognition/RecognitionMonitor.html" title="class in com.xatkit.core.recognition"><code>RecognitionMonitor</code></a> associated to this intent recognition provider.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -436,13 +561,13 @@ var activeTableTab = "activeTableTab";
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

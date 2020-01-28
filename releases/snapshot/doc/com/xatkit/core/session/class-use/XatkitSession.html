@@ -119,16 +119,20 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><a href="#com.xatkit.core.recognition.regex">com.xatkit.core.recognition.regex</a></td>
+<td class="colFirst"><a href="#com.xatkit.core.recognition.processor">com.xatkit.core.recognition.processor</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#com.xatkit.core.recognition.regex">com.xatkit.core.recognition.regex</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#com.xatkit.core.server">com.xatkit.core.server</a></td>
 <td class="colLast">
 <div class="block">Contains the Xatkit server implementation.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#com.xatkit.core.session">com.xatkit.core.session</a></td>
 <td class="colLast">
 <div class="block">Contains the classes to manage sessions and contexts.</div>
@@ -344,7 +348,7 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
+<td class="colFirst"><code>abstract <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
 <td class="colLast"><span class="typeNameLabel">IntentRecognitionProvider.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#createSession-java.lang.String-">createSession</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sessionId)</code>
 <div class="block">Creates a new <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> from the provided <code>sessionId</code>.</div>
 </td>
@@ -366,6 +370,13 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>protected abstract com.xatkit.intent.RecognizedIntent</code></td>
+<td class="colLast"><span class="typeNameLabel">IntentRecognitionProvider.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/IntentRecognitionProvider.html#getIntentInternal-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntentInternal</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+                 <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Returns the raw <code>RecognizedIntent</code> extracted from the provided <code>input</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">RecognitionMonitor.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/RecognitionMonitor.html#logRecognizedIntent-com.xatkit.core.session.XatkitSession-com.xatkit.intent.RecognizedIntent-">logRecognizedIntent</a></span>(<a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session,
                    com.xatkit.intent.RecognizedIntent&nbsp;recognizedIntent)</code>
@@ -418,9 +429,45 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>com.xatkit.intent.RecognizedIntent</code></td>
-<td class="colLast"><span class="typeNameLabel">DialogFlowApi.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
-         <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
-<div class="block">Returns the <code>RecognizedIntent</code> extracted from te provided <code>input</code>.</div>
+<td class="colLast"><span class="typeNameLabel">DialogFlowApi.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#getIntentInternal-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntentInternal</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+                 <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Returns the raw <code>RecognizedIntent</code> extracted from the provided <code>input</code>.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="com.xatkit.core.recognition.processor">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a> in <a href="../../../../../com/xatkit/core/recognition/processor/package-summary.html">com.xatkit.core.recognition.processor</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../com/xatkit/core/recognition/processor/package-summary.html">com.xatkit.core.recognition.processor</a> with parameters of type <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>com.xatkit.intent.RecognizedIntent</code></td>
+<td class="colLast"><span class="typeNameLabel">IntentPostProcessor.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/processor/IntentPostProcessor.html#process-com.xatkit.intent.RecognizedIntent-com.xatkit.core.session.XatkitSession-">process</a></span>(com.xatkit.intent.RecognizedIntent&nbsp;recognizedIntent,
+       <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Processes the provided <code>recognizedIntent</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>com.xatkit.intent.RecognizedIntent</code></td>
+<td class="colLast"><span class="typeNameLabel">RemoveEnglishStopWordsPostProcessor.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/processor/RemoveEnglishStopWordsPostProcessor.html#process-com.xatkit.intent.RecognizedIntent-com.xatkit.core.session.XatkitSession-">process</a></span>(com.xatkit.intent.RecognizedIntent&nbsp;recognizedIntent,
+       <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Removes the English stop words from the <code>recognizedIntent</code>'s parameter values extracted from <code>any</code>
+ entities.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="typeNameLabel">InputPreProcessor.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/processor/InputPreProcessor.html#process-java.lang.String-com.xatkit.core.session.XatkitSession-">process</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+       <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Processes the provided <code>input</code>.</div>
 </td>
 </tr>
 </tbody>
@@ -454,8 +501,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>com.xatkit.intent.RecognizedIntent</code></td>
-<td class="colLast"><span class="typeNameLabel">RegExIntentRecognitionProvider.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/regex/RegExIntentRecognitionProvider.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntent</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
-         <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<td class="colLast"><span class="typeNameLabel">RegExIntentRecognitionProvider.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/regex/RegExIntentRecognitionProvider.html#getIntentInternal-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntentInternal</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+                 <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
 <div class="block">Computes the <code>RecognizedIntent</code> associated to the provided <code>input</code>.</div>
 </td>
 </tr>
