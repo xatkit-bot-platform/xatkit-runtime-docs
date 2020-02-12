@@ -449,6 +449,20 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>protected edu.stanford.nlp.pipeline.Annotation</code></td>
+<td class="colLast"><span class="typeNameLabel">StanfordNLPPostProcessor.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html#getAnnotation-java.lang.String-com.xatkit.core.session.XatkitSession-">getAnnotation</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
+             <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Computes the <code>Annotation</code> for the provided <code>input</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>com.xatkit.intent.RecognizedIntent</code></td>
+<td class="colLast"><span class="typeNameLabel">IsEnglishYesNoQuestionPostProcessor.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html#process-com.xatkit.intent.RecognizedIntent-com.xatkit.core.session.XatkitSession-">process</a></span>(com.xatkit.intent.RecognizedIntent&nbsp;recognizedIntent,
+       <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Processes the provided <code>recognizedIntent</code> and sets the <code>nlp.isYesNo</code> context parameter.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>com.xatkit.intent.RecognizedIntent</code></td>
 <td class="colLast"><span class="typeNameLabel">IntentPostProcessor.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/processor/IntentPostProcessor.html#process-com.xatkit.intent.RecognizedIntent-com.xatkit.core.session.XatkitSession-">process</a></span>(com.xatkit.intent.RecognizedIntent&nbsp;recognizedIntent,
        <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
@@ -457,13 +471,20 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>com.xatkit.intent.RecognizedIntent</code></td>
+<td class="colLast"><span class="typeNameLabel">EnglishSentimentPostProcessor.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html#process-com.xatkit.intent.RecognizedIntent-com.xatkit.core.session.XatkitSession-">process</a></span>(com.xatkit.intent.RecognizedIntent&nbsp;recognizedIntent,
+       <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
+<div class="block">Processes the provided <code>recognizedIntent</code> and sets the <code>nlp.sentiment</code> context parameter.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>com.xatkit.intent.RecognizedIntent</code></td>
 <td class="colLast"><span class="typeNameLabel">RemoveEnglishStopWordsPostProcessor.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/processor/RemoveEnglishStopWordsPostProcessor.html#process-com.xatkit.intent.RecognizedIntent-com.xatkit.core.session.XatkitSession-">process</a></span>(com.xatkit.intent.RecognizedIntent&nbsp;recognizedIntent,
        <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
 <div class="block">Removes the English stop words from the <code>recognizedIntent</code>'s parameter values extracted from <code>any</code>
  entities.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><span class="typeNameLabel">InputPreProcessor.</span><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/recognition/processor/InputPreProcessor.html#process-java.lang.String-com.xatkit.core.session.XatkitSession-">process</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;input,
        <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>

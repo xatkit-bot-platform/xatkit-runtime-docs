@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":6,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":6,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -129,9 +129,6 @@ var activeTableTab = "activeTableTab";
 <pre>public abstract class <span class="typeNameLabel">RuntimeArtifactAction&lt;T extends <a href="../../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform">RuntimePlatform</a>&gt;</span>
 extends <a href="../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action">RuntimeAction</a>&lt;T&gt;</pre>
 <div class="block">An abstract <a href="../../../../../com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a>.
- <p>
- This class relies on <code>RuntimeContexts#fillContextValues(String)</code> to replace context
- variable accesses by their concrete value.
  <p></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -212,18 +209,24 @@ extends <a href="../../../../../com/xatkit/core/platform/action/RuntimeAction.ht
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#beforeDelay-int-">beforeDelay</a></span>(int&nbsp;delayValue)</code>
+<div class="block">A hook that is executed before any delay specified by <a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#MESSAGE_DELAY_KEY"><code>MESSAGE_DELAY_KEY</code></a>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action">RuntimeActionResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#call--">call</a></span>()</code>
 <div class="block">Runs the <a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeArtifactAction</code></a> and returns its result wrapped in a <a href="../../../../../com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action"><code>RuntimeActionResult</code></a>.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected abstract <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#getClientSession--">getClientSession</a></span>()</code>
 <div class="block">Returns the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact to send.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#init--">init</a></span>()</code>
 <div class="block">Retrieve the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact and merges it with the current one.</div>
@@ -382,6 +385,23 @@ extends <a href="../../../../../com/xatkit/core/platform/action/RuntimeAction.ht
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../com/xatkit/core/ExecutionService.html" title="class in com.xatkit.core"><code>ExecutionService</code></a>, 
 <a href="../../../../../com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action"><code>RuntimeActionResult</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="beforeDelay-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>beforeDelay</h4>
+<pre>protected&nbsp;void&nbsp;beforeDelay(int&nbsp;delayValue)</pre>
+<div class="block">A hook that is executed before any delay specified by <a href="../../../../../com/xatkit/core/platform/action/RuntimeArtifactAction.html#MESSAGE_DELAY_KEY"><code>MESSAGE_DELAY_KEY</code></a>.
+ <p>
+ This method can be extended by concrete sub-classes if an action must be performed before a potential delay (e
+ .g. notifying a client application to display writing dots).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>delayValue</code> - the value of the delay (in ms)</dd>
 </dl>
 </li>
 </ul>

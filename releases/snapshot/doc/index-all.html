@@ -94,6 +94,14 @@
 <dd>
 <div class="block">The <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> containing the <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> associated to this platform.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPService.html#addAnnotator-java.lang.String-">addAnnotator(String)</a></span> - Method in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPService.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPService</a></dt>
+<dd>
+<div class="block">Adds the provided <code>annotator</code> to the service.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPService.html#addAnnotators-java.util.List-">addAnnotators(List&lt;String&gt;)</a></span> - Method in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPService.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPService</a></dt>
+<dd>
+<div class="block">Adds the provided list of <code>annotators</code> to the service.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/dialogflow/DialogFlowEntityMapper.html#addCustomEntityMapping-com.xatkit.intent.CustomEntityDefinition-java.lang.String-">addCustomEntityMapping(CustomEntityDefinition, String)</a></span> - Method in class com.xatkit.core.recognition.dialogflow.<a href="com/xatkit/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowEntityMapper</a></dt>
 <dd>
 <div class="block">This method is disabled for <a href="com/xatkit/core/recognition/dialogflow/DialogFlowEntityMapper.html" title="class in com.xatkit.core.recognition.dialogflow"><code>DialogFlowEntityMapper</code></a>.</div>
@@ -114,12 +122,20 @@
 <dd>
 <div class="block">Registers a new <code>EventInstance</code> to match from the provided <code>headerValue</code> and <code>fieldValue</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPService.html#annotate-java.lang.String-">annotate(String)</a></span> - Method in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPService.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPService</a></dt>
+<dd>
+<div class="block">Annotates the provided <code>input</code> with the specified <code>annotators</code>.</div>
+</dd>
 </dl>
 <a name="I:B">
 <!--   -->
 </a>
 <h2 class="title">B</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html#beforeDelay-int-">beforeDelay(int)</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a></dt>
+<dd>
+<div class="block">A hook that is executed before any delay specified by <a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html#MESSAGE_DELAY_KEY"><code>RuntimeArtifactAction.MESSAGE_DELAY_KEY</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/EventInstanceBuilder.html#build--">build()</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/EventInstanceBuilder.html" title="class in com.xatkit.core.platform.io">EventInstanceBuilder</a></dt>
 <dd>
 <div class="block">Creates a new <code>EventInstance</code> from the provided information.</div>
@@ -385,6 +401,10 @@
 <dd>
 <div class="block">The Default Fallback Intent that is returned when the user input does not match any registered Intent.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html#DEFAULT_IS_YES_NO_VALUE">DEFAULT_IS_YES_NO_VALUE</a></span> - Static variable in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html" title="class in com.xatkit.core.recognition.processor">IsEnglishYesNoQuestionPostProcessor</a></dt>
+<dd>
+<div class="block">The default value of the <a href="com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html#IS_YES_NO_PARAMETER_KEY"><code>IsEnglishYesNoQuestionPostProcessor.IS_YES_NO_PARAMETER_KEY</code></a> parameter.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html#DEFAULT_LANGUAGE_CODE">DEFAULT_LANGUAGE_CODE</a></span> - Static variable in class com.xatkit.core.recognition.dialogflow.<a href="com/xatkit/core/recognition/dialogflow/DialogFlowApi.html" title="class in com.xatkit.core.recognition.dialogflow">DialogFlowApi</a></dt>
 <dd>
 <div class="block">The default language processed by DialogFlow.</div>
@@ -392,6 +412,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html#DEFAULT_MESSAGE_DELAY">DEFAULT_MESSAGE_DELAY</a></span> - Static variable in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html" title="class in com.xatkit.core.platform.action">RuntimeArtifactAction</a></dt>
 <dd>
 <div class="block">The default value of the <a href="com/xatkit/core/platform/action/RuntimeArtifactAction.html#MESSAGE_DELAY_KEY"><code>RuntimeArtifactAction.MESSAGE_DELAY_KEY</code></a> configuration key (<code>0</code>).</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html#DEFAULT_SENTIMENT_VALUE">DEFAULT_SENTIMENT_VALUE</a></span> - Static variable in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html" title="class in com.xatkit.core.recognition.processor">EnglishSentimentPostProcessor</a></dt>
+<dd>
+<div class="block">The default value for the <a href="com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html#SENTIMENT_PARAMETER_KEY"><code>EnglishSentimentPostProcessor.SENTIMENT_PARAMETER_KEY</code></a> parameter.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServerUtils.html#DEFAULT_SERVER_LOCATION">DEFAULT_SERVER_LOCATION</a></span> - Static variable in interface com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServerUtils.html" title="interface in com.xatkit.core.server">XatkitServerUtils</a></dt>
 <dd>
@@ -545,6 +569,14 @@
 <dd>
 <div class="block">Retrieves and loads the <a href="com/xatkit/core/platform/action/RuntimeAction.html" title="class in com.xatkit.core.platform.action"><code>RuntimeAction</code></a> defined by the provided <code>ActionDefinition</code>.</div>
 </dd>
+<dt><a href="com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html" title="class in com.xatkit.core.recognition.processor"><span class="typeNameLink">EnglishSentimentPostProcessor</span></a> - Class in <a href="com/xatkit/core/recognition/processor/package-summary.html">com.xatkit.core.recognition.processor</a></dt>
+<dd>
+<div class="block">Computes the sentiment associated to the last sentence of the user input.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html#EnglishSentimentPostProcessor--">EnglishSentimentPostProcessor()</a></span> - Constructor for class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html" title="class in com.xatkit.core.recognition.processor">EnglishSentimentPostProcessor</a></dt>
+<dd>
+<div class="block">Constructs an instance of this post-processor.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/EntityMapper.html#entities">entities</a></span> - Variable in class com.xatkit.core.recognition.<a href="com/xatkit/core/recognition/EntityMapper.html" title="class in com.xatkit.core.recognition">EntityMapper</a></dt>
 <dd>
 <div class="block">The <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> storing the abstract-to-concrete entity mappings.</div>
@@ -690,6 +722,10 @@
 <dd>
 <div class="block">Returns an unmodifiable <a href="http://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util"><code>Collection</code></a> containing all the registered <code>IntentDefinition</code>s.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html#getAnnotation-java.lang.String-com.xatkit.core.session.XatkitSession-">getAnnotation(String, XatkitSession)</a></span> - Method in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPPostProcessor</a></dt>
+<dd>
+<div class="block">Computes the <code>Annotation</code> for the provided <code>input</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#getBaseURL--">getBaseURL()</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
 <dd>
 <div class="block">Returns the URL of the <a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server"><code>XatkitServer</code></a>.</div>
@@ -790,6 +826,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#getHttpServer--">getHttpServer()</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
 <dd>
 <div class="block">Returns the underlying <code>HttpServer</code> used to receive requests.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPService.html#getInstance--">getInstance()</a></span> - Static method in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPService.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPService</a></dt>
+<dd>
+<div class="block">Returns the singleton instance of this class.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/IntentRecognitionProvider.html#getIntent-java.lang.String-com.xatkit.core.session.XatkitSession-">getIntent(String, XatkitSession)</a></span> - Method in class com.xatkit.core.recognition.<a href="com/xatkit/core/recognition/IntentRecognitionProvider.html" title="class in com.xatkit.core.recognition">IntentRecognitionProvider</a></dt>
 <dd>
@@ -1144,6 +1184,22 @@
 <dd>
 <div class="block">Retrieve the <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the client of the artifact and merges it with the current one.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/InputPreProcessor.html#init--">init()</a></span> - Method in interface com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/InputPreProcessor.html" title="interface in com.xatkit.core.recognition.processor">InputPreProcessor</a></dt>
+<dd>
+<div class="block">Initializes the pre-processor.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/IntentPostProcessor.html#init--">init()</a></span> - Method in interface com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/IntentPostProcessor.html" title="interface in com.xatkit.core.recognition.processor">IntentPostProcessor</a></dt>
+<dd>
+<div class="block">Initializes the post-processor.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html#init--">init()</a></span> - Method in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPPostProcessor</a></dt>
+<dd>
+<div class="block">Initialize the underlying <a href="com/xatkit/core/recognition/processor/StanfordNLPService.html" title="class in com.xatkit.core.recognition.processor"><code>StanfordNLPService</code></a> and performs a warm-up annotation on it.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPService.html#init--">init()</a></span> - Method in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPService.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPService</a></dt>
+<dd>
+<div class="block">Initialize the underlying <code>StanfordCoreNLP</code> pipeline with the provided annotators.</div>
+</dd>
 <dt><a href="com/xatkit/core/recognition/processor/InputPreProcessor.html" title="interface in com.xatkit.core.recognition.processor"><span class="typeNameLink">InputPreProcessor</span></a> - Interface in <a href="com/xatkit/core/recognition/processor/package-summary.html">com.xatkit.core.recognition.processor</a></dt>
 <dd>
 <div class="block">Applies a pre-processing function on the provided <code>input</code>.</div>
@@ -1199,6 +1255,18 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/IntentRecognitionProviderFactory.html#IntentRecognitionProviderFactory--">IntentRecognitionProviderFactory()</a></span> - Constructor for class com.xatkit.core.recognition.<a href="com/xatkit/core/recognition/IntentRecognitionProviderFactory.html" title="class in com.xatkit.core.recognition">IntentRecognitionProviderFactory</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html#IS_YES_NO_PARAMETER_KEY">IS_YES_NO_PARAMETER_KEY</a></span> - Static variable in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html" title="class in com.xatkit.core.recognition.processor">IsEnglishYesNoQuestionPostProcessor</a></dt>
+<dd>
+<div class="block">The context parameter key used to store whether the user input is a yes/no question.</div>
+</dd>
+<dt><a href="com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html" title="class in com.xatkit.core.recognition.processor"><span class="typeNameLink">IsEnglishYesNoQuestionPostProcessor</span></a> - Class in <a href="com/xatkit/core/recognition/processor/package-summary.html">com.xatkit.core.recognition.processor</a></dt>
+<dd>
+<div class="block">Computes whether the last sentence of the user input is a yes/no question.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html#IsEnglishYesNoQuestionPostProcessor--">IsEnglishYesNoQuestionPostProcessor()</a></span> - Constructor for class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html" title="class in com.xatkit.core.recognition.processor">IsEnglishYesNoQuestionPostProcessor</a></dt>
+<dd>
+<div class="block">Constructs an instance of this post-processor.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeActionResult.html#isError--">isError()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action">RuntimeActionResult</a></dt>
 <dd>
 <div class="block">Returns whether the <a href="com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action"><code>RuntimeActionResult</code></a> represents an errored computation.</div>
@@ -1358,6 +1426,18 @@
 <dd>
 <div class="block">Creates a new <a href="com/xatkit/core/platform/io/EventInstanceBuilder.html" title="class in com.xatkit.core.platform.io"><code>EventInstanceBuilder</code></a> from the provided <code>registry</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html#NLP_ANNOTATION_SESSION_KEY">NLP_ANNOTATION_SESSION_KEY</a></span> - Static variable in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPPostProcessor</a></dt>
+<dd>
+<div class="block">The <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> key used to store the last annotation.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html#NLP_CONTEXT_KEY">NLP_CONTEXT_KEY</a></span> - Static variable in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPPostProcessor</a></dt>
+<dd>
+<div class="block">The context key used to store Stanford NLP information.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html#NLP_INPUT_SESSION_KEY">NLP_INPUT_SESSION_KEY</a></span> - Static variable in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPPostProcessor</a></dt>
+<dd>
+<div class="block">The <a href="com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> key used to store the last annotated input.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#notifyRestHandler-com.xatkit.core.server.HttpMethod-java.lang.String-java.util.List-java.util.List-java.lang.Object-java.lang.String-">notifyRestHandler(HttpMethod, String, List&lt;Header&gt;, List&lt;NameValuePair&gt;, Object, String)</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
 <dd>
 <div class="block">Notifies the REST endpoint associated with the provided <code>uri</code>.</div>
@@ -1412,6 +1492,10 @@
 <div class="block">A flag telling whether to print the <a href="com/xatkit/core/platform/io/EventInstanceBuilder.html" title="class in com.xatkit.core.platform.io"><code>EventInstanceBuilder</code></a> content before building the matched
  <code>EventInstance</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html#process-com.xatkit.intent.RecognizedIntent-com.xatkit.core.session.XatkitSession-">process(RecognizedIntent, XatkitSession)</a></span> - Method in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html" title="class in com.xatkit.core.recognition.processor">EnglishSentimentPostProcessor</a></dt>
+<dd>
+<div class="block">Processes the provided <code>recognizedIntent</code> and sets the <code>nlp.sentiment</code> context parameter.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/InputPreProcessor.html#process-java.lang.String-com.xatkit.core.session.XatkitSession-">process(String, XatkitSession)</a></span> - Method in interface com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/InputPreProcessor.html" title="interface in com.xatkit.core.recognition.processor">InputPreProcessor</a></dt>
 <dd>
 <div class="block">Processes the provided <code>input</code>.</div>
@@ -1419,6 +1503,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/IntentPostProcessor.html#process-com.xatkit.intent.RecognizedIntent-com.xatkit.core.session.XatkitSession-">process(RecognizedIntent, XatkitSession)</a></span> - Method in interface com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/IntentPostProcessor.html" title="interface in com.xatkit.core.recognition.processor">IntentPostProcessor</a></dt>
 <dd>
 <div class="block">Processes the provided <code>recognizedIntent</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html#process-com.xatkit.intent.RecognizedIntent-com.xatkit.core.session.XatkitSession-">process(RecognizedIntent, XatkitSession)</a></span> - Method in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/IsEnglishYesNoQuestionPostProcessor.html" title="class in com.xatkit.core.recognition.processor">IsEnglishYesNoQuestionPostProcessor</a></dt>
+<dd>
+<div class="block">Processes the provided <code>recognizedIntent</code> and sets the <code>nlp.isYesNo</code> context parameter.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/RemoveEnglishStopWordsPostProcessor.html#process-com.xatkit.intent.RecognizedIntent-com.xatkit.core.session.XatkitSession-">process(RecognizedIntent, XatkitSession)</a></span> - Method in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/RemoveEnglishStopWordsPostProcessor.html" title="class in com.xatkit.core.recognition.processor">RemoveEnglishStopWordsPostProcessor</a></dt>
 <dd>
@@ -1733,6 +1821,10 @@
 <dd>
 <div class="block">Sends the provided <code>eventInstance</code> and <code>session</code> for computation to the Xatkit core component.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html#SENTIMENT_PARAMETER_KEY">SENTIMENT_PARAMETER_KEY</a></span> - Static variable in class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/EnglishSentimentPostProcessor.html" title="class in com.xatkit.core.recognition.processor">EnglishSentimentPostProcessor</a></dt>
+<dd>
+<div class="block">The context parameter key used to store the sentiment extracted from the user input.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServerUtils.html#SERVER_KEYSTORE_KEY_PASSWORD_KEY">SERVER_KEYSTORE_KEY_PASSWORD_KEY</a></span> - Static variable in interface com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServerUtils.html" title="interface in com.xatkit.core.server">XatkitServerUtils</a></dt>
 <dd>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key used to specify the <code>key password</code> of the SSL keystore.</div>
@@ -1820,6 +1912,16 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/XatkitCore.html#shutdown--">shutdown()</a></span> - Method in class com.xatkit.core.<a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core">XatkitCore</a></dt>
 <dd>
 <div class="block">Shuts down the <a href="com/xatkit/core/XatkitCore.html" title="class in com.xatkit.core"><code>XatkitCore</code></a> and the underlying engines.</div>
+</dd>
+<dt><a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html" title="class in com.xatkit.core.recognition.processor"><span class="typeNameLink">StanfordNLPPostProcessor</span></a> - Class in <a href="com/xatkit/core/recognition/processor/package-summary.html">com.xatkit.core.recognition.processor</a></dt>
+<dd>
+<div class="block">A <a href="com/xatkit/core/recognition/processor/IntentPostProcessor.html" title="interface in com.xatkit.core.recognition.processor"><code>IntentPostProcessor</code></a> using Stanford NLP library to extract information from the user input.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html#StanfordNLPPostProcessor--">StanfordNLPPostProcessor()</a></span> - Constructor for class com.xatkit.core.recognition.processor.<a href="com/xatkit/core/recognition/processor/StanfordNLPPostProcessor.html" title="class in com.xatkit.core.recognition.processor">StanfordNLPPostProcessor</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/xatkit/core/recognition/processor/StanfordNLPService.html" title="class in com.xatkit.core.recognition.processor"><span class="typeNameLink">StanfordNLPService</span></a> - Class in <a href="com/xatkit/core/recognition/processor/package-summary.html">com.xatkit.core.recognition.processor</a></dt>
+<dd>
+<div class="block">A singleton class that wraps a <code>StanfordCoreNLP</code> pipeline used to process user messages.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/XatkitServer.html#start--">start()</a></span> - Method in class com.xatkit.core.server.<a href="com/xatkit/core/server/XatkitServer.html" title="class in com.xatkit.core.server">XatkitServer</a></dt>
 <dd>
