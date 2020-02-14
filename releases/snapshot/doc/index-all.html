@@ -317,6 +317,10 @@
 <dd>
 <div class="block">Creates an <a href="com/xatkit/core/server/EmptyContentRestHandler.html" title="class in com.xatkit.core.server"><code>EmptyContentRestHandler</code></a> and sets its handling method with the provided <code>function</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/HttpEntityHelper.html#createErrorEntity-com.xatkit.core.server.RestHandlerException-">createErrorEntity(RestHandlerException)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/HttpEntityHelper.html" title="class in com.xatkit.core.server">HttpEntityHelper</a></dt>
+<dd>
+<div class="block">Creates an <code>HttpEntity</code> representing the error wrapped in the provided <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/io/JsonEventMatcher.html#createEventInstance-java.lang.String-com.google.gson.JsonElement-">createEventInstance(String, JsonElement)</a></span> - Method in class com.xatkit.core.platform.io.<a href="com/xatkit/core/platform/io/JsonEventMatcher.html" title="class in com.xatkit.core.platform.io">JsonEventMatcher</a></dt>
 <dd>
 <div class="block">Creates an <code>EventInstance</code> from the provided <code>eventDefinitionName</code> and <code>content</code>.</div>
@@ -770,6 +774,10 @@
 <dd>
 <div class="block">Returns the URI of the REST endpoint to register the provider to.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#getErrorCode--">getErrorCode()</a></span> - Method in exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
+<dd>
+<div class="block">Returns the HTTP error code associated to this exception.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/EventDefinitionRegistry.html#getEventDefinition-java.lang.String-">getEventDefinition(String)</a></span> - Method in class com.xatkit.core.<a href="com/xatkit/core/EventDefinitionRegistry.html" title="class in com.xatkit.core">EventDefinitionRegistry</a></dt>
 <dd>
 <div class="block">Returns the <code>EventDefinition</code> matching the provided <code>name</code>.</div>
@@ -862,6 +870,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RestAction.html#getJsonBody-java.io.InputStream-">getJsonBody(InputStream)</a></span> - Static method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RestAction.html" title="class in com.xatkit.core.platform.action">RestAction</a></dt>
 <dd>
 <div class="block">Extracts the <code>JsonElement</code> contained in the provided <code>is</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/HttpEntityHelper.html#getJsonElementFromHttpEntity-org.apache.http.HttpEntity-">getJsonElementFromHttpEntity(HttpEntity)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/HttpEntityHelper.html" title="class in com.xatkit.core.server">HttpEntityHelper</a></dt>
+<dd>
+<div class="block">Returns a <code>JsonElement</code> extracted from the content of the provided <code>entity</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/JsonRestHandler.JsonHelper.html#getJsonElementFromJsonObject-com.google.gson.JsonObject-java.lang.String-">getJsonElementFromJsonObject(JsonObject, String)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/JsonRestHandler.JsonHelper.html" title="class in com.xatkit.core.server">JsonRestHandler.JsonHelper</a></dt>
 <dd>
@@ -1049,6 +1061,10 @@
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RestAction.html#getStringBody-java.io.InputStream-">getStringBody(InputStream)</a></span> - Static method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RestAction.html" title="class in com.xatkit.core.platform.action">RestAction</a></dt>
 <dd>
 <div class="block">Extracts the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> contained in the provided <code>is</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/HttpEntityHelper.html#getStringFromHttpEntity-org.apache.http.HttpEntity-">getStringFromHttpEntity(HttpEntity)</a></span> - Static method in class com.xatkit.core.server.<a href="com/xatkit/core/server/HttpEntityHelper.html" title="class in com.xatkit.core.server">HttpEntityHelper</a></dt>
+<dd>
+<div class="block">Returns the <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><code>String</code></a> representation of the content of the provided <code>entity</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/platform/action/RuntimeActionResult.html#getThrownException--">getThrownException()</a></span> - Method in class com.xatkit.core.platform.action.<a href="com/xatkit/core/platform/action/RuntimeActionResult.html" title="class in com.xatkit.core.platform.action">RuntimeActionResult</a></dt>
 <dd>
@@ -1675,17 +1691,29 @@
 <dd>
 <div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-int-java.lang.String-">RestHandlerException(int, String)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
+<dd>
+<div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> with the provided HTTP <code>errorCode</code> and <code>message</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.String-">RestHandlerException(String)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
 <dd>
-<div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code></div>
+<div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.String-java.lang.Throwable-">RestHandlerException(String, Throwable)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
 <dd>
 <div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code> and <code>cause</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-int-java.lang.String-java.lang.Throwable-">RestHandlerException(int, String, Throwable)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
+<dd>
+<div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided HTTP <code>errorCode</code>, <code>message</code>, and <code>cause</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.Throwable-">RestHandlerException(Throwable)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
 <dd>
 <div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>cause</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-int-java.lang.Throwable-">RestHandlerException(int, Throwable)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
+<dd>
+<div class="block">Constructs a <a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided HTTP <code>errorCode</code> and <code>cause</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.String-java.lang.Throwable-boolean-boolean-">RestHandlerException(String, Throwable, boolean, boolean)</a></span> - Constructor for exception com.xatkit.core.server.<a href="com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server">RestHandlerException</a></dt>
 <dd>

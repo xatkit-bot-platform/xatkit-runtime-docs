@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -71,13 +77,13 @@
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Throwable">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -154,18 +160,40 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.ht
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.String-">RestHandlerException</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
-<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code></div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerException.html#RestHandlerException-int-java.lang.String-">RestHandlerException</a></span>(int&nbsp;errorCode,
+                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> with the provided HTTP <code>errorCode</code> and <code>message</code>.</div>
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerException.html#RestHandlerException-int-java.lang.String-java.lang.Throwable-">RestHandlerException</a></span>(int&nbsp;errorCode,
+                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</code>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided HTTP <code>errorCode</code>, <code>message</code>, and <code>cause</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerException.html#RestHandlerException-int-java.lang.Throwable-">RestHandlerException</a></span>(int&nbsp;errorCode,
+                    <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</code>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided HTTP <code>errorCode</code> and <code>cause</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.String-">RestHandlerException</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code>.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.String-java.lang.Throwable-">RestHandlerException</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</code>
 <div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code> and <code>cause</code>.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.String-java.lang.Throwable-boolean-boolean-">RestHandlerException</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
                     <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause,
@@ -174,7 +202,7 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.ht
 <div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code>, <code>cause</code>, <code>enableSuppression</code>, and <code>writeableStackTrace</code>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerException.html#RestHandlerException-java.lang.Throwable-">RestHandlerException</a></span>(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</code>
 <div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>cause</code>.</div>
@@ -189,6 +217,19 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.ht
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/xatkit/core/server/RestHandlerException.html#getErrorCode--">getErrorCode</a></span>()</code>
+<div class="block">Returns the HTTP error code associated to this exception.</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Throwable">
 <!--   -->
@@ -224,7 +265,25 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.ht
 <li class="blockList">
 <h4>RestHandlerException</h4>
 <pre>public&nbsp;RestHandlerException()</pre>
-<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a>.</div>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a>.
+ <p>
+ The <code>errorCode</code> of the created exception is set to <code>HttpStatus.SC_NOT_FOUND</code>.</div>
+</li>
+</ul>
+<a name="RestHandlerException-int-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RestHandlerException</h4>
+<pre>public&nbsp;RestHandlerException(int&nbsp;errorCode,
+                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> with the provided HTTP <code>errorCode</code> and <code>message</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>errorCode</code> - the HTTP error code</dd>
+<dd><code>message</code> - the exception's message</dd>
+</dl>
 </li>
 </ul>
 <a name="RestHandlerException-java.lang.String-">
@@ -234,7 +293,9 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.ht
 <li class="blockList">
 <h4>RestHandlerException</h4>
 <pre>public&nbsp;RestHandlerException(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
-<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code></div>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code>.
+ <p>
+ The <code>errorCode</code> of the created exception is set to <code>HttpStatus.SC_NOT_FOUND</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>message</code> - the exception's message</dd>
@@ -249,9 +310,29 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.ht
 <h4>RestHandlerException</h4>
 <pre>public&nbsp;RestHandlerException(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
                             <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</pre>
-<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code> and <code>cause</code>.</div>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>message</code> and <code>cause</code>.
+ <p>
+ The <code>errorCode</code> of the created exception is set to <code>HttpStatus.SC_NOT_FOUND</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the exception's message</dd>
+<dd><code>cause</code> - the exception's cause</dd>
+</dl>
+</li>
+</ul>
+<a name="RestHandlerException-int-java.lang.String-java.lang.Throwable-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RestHandlerException</h4>
+<pre>public&nbsp;RestHandlerException(int&nbsp;errorCode,
+                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</pre>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided HTTP <code>errorCode</code>, <code>message</code>, and <code>cause</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>errorCode</code> - errorCode the HTTP error code</dd>
 <dd><code>message</code> - the exception's message</dd>
 <dd><code>cause</code> - the exception's cause</dd>
 </dl>
@@ -264,9 +345,27 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.ht
 <li class="blockList">
 <h4>RestHandlerException</h4>
 <pre>public&nbsp;RestHandlerException(<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</pre>
-<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>cause</code>.</div>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided <code>cause</code>.
+ <p>
+ The <code>errorCode</code> of the created exception is set to <code>HttpStatus.SC_NOT_FOUND</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cause</code> - the exception's cause</dd>
+</dl>
+</li>
+</ul>
+<a name="RestHandlerException-int-java.lang.Throwable-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RestHandlerException</h4>
+<pre>public&nbsp;RestHandlerException(int&nbsp;errorCode,
+                            <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</pre>
+<div class="block">Constructs a <a href="../../../../com/xatkit/core/server/RestHandlerException.html" title="class in com.xatkit.core.server"><code>RestHandlerException</code></a> from the provided HTTP <code>errorCode</code> and <code>cause</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>errorCode</code> - the HTTP error code</dd>
 <dd><code>cause</code> - the exception's cause</dd>
 </dl>
 </li>
@@ -288,6 +387,28 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.ht
 <dd><code>cause</code> - the exception's cause</dd>
 <dd><code>enableSuppression</code> - whether or not suppression is enabled</dd>
 <dd><code>writeableStackTrace</code> - whether or not the stack trace should be writable</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getErrorCode--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getErrorCode</h4>
+<pre>public&nbsp;int&nbsp;getErrorCode()</pre>
+<div class="block">Returns the HTTP error code associated to this exception.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the HTTP error code associated to this exception</dd>
 </dl>
 </li>
 </ul>
@@ -347,13 +468,13 @@ extends <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Exception.ht
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Throwable">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
