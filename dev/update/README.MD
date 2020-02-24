@@ -1,0 +1,1 @@
+This page is an eclipse update site. You can use this URL to install Xatkit in Eclipse.
