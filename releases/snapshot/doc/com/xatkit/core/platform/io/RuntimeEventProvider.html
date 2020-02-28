@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -204,17 +204,21 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html#broadcastEventInstance-com.xatkit.intent.EventInstance-">broadcastEventInstance</a></span>(com.xatkit.intent.EventInstance&nbsp;eventInstance)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html#close--">close</a></span>()</code>
 <div class="block">Closes the <a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a> and releases internal resources.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="type parameter in RuntimeEventProvider">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html#getRuntimePlatform--">getRuntimePlatform</a></span>()</code>
 <div class="block">Returns the <a href="../../../../../com/xatkit/core/platform/RuntimePlatform.html" title="class in com.xatkit.core.platform"><code>RuntimePlatform</code></a> containing this <a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html" title="class in com.xatkit.core.platform.io"><code>RuntimeEventProvider</code></a>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/xatkit/core/platform/io/RuntimeEventProvider.html#sendEventInstance-com.xatkit.intent.EventInstance-com.xatkit.core.session.XatkitSession-">sendEventInstance</a></span>(com.xatkit.intent.EventInstance&nbsp;eventInstance,
                  <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session">XatkitSession</a>&nbsp;session)</code>
@@ -367,6 +371,15 @@ implements <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.
 <dd><code>eventInstance</code> - the <code>EventInstance</code> to send to the Xatkit core component</dd>
 <dd><code>session</code> - the <a href="../../../../../com/xatkit/core/session/XatkitSession.html" title="class in com.xatkit.core.session"><code>XatkitSession</code></a> associated to the provided <code>eventInstance</code></dd>
 </dl>
+</li>
+</ul>
+<a name="broadcastEventInstance-com.xatkit.intent.EventInstance-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>broadcastEventInstance</h4>
+<pre>public&nbsp;void&nbsp;broadcastEventInstance(com.xatkit.intent.EventInstance&nbsp;eventInstance)</pre>
 </li>
 </ul>
 <a name="close--">
