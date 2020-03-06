@@ -542,7 +542,10 @@ extends <a href="../../../../../com/xatkit/core/recognition/IntentRecognitionPro
 <pre>public static&nbsp;<a href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> CONFIDENCE_THRESHOLD_KEY</pre>
 <div class="block">The <a href="https://commons.apache.org/proper/commons-configuration/apidocs/org/apache/commons/configuration2/Configuration.html?is-external=true" title="class or interface in org.apache.commons.configuration2"><code>Configuration</code></a> key to store the DialogFlow confidence threshold.
  <p>
- This threshold is used to accept/reject a matched intent based on its confidence. The default value is <code>0</code> (accept all intents).</div>
+ This threshold is used to accept/reject a matched intent based on its confidence. The default value is <code>0</code> (accept all intents).
+ <p>
+ <b>Note</b>: recognized intents that contain an <code>any</code> entity are never rejected based on the threshold,
+ these entities typically have a low confidence value.</div>
 </li>
 </ul>
 </li>
